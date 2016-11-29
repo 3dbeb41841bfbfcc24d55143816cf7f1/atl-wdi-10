@@ -3,7 +3,7 @@
 
 #### [Class Wiki!](https://github.com/ga-students/wdi-remote-matey/wiki)
 
-#### [Bug Journal](https://github.com/ga-students/wdi-remote-matey/wiki)
+#### [Bug Journal](https://github.com/ga-students/wdi-remote-matey/wiki/Bug-Journal)
 
 #### Course Content
 
