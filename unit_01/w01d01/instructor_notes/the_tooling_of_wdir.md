@@ -5,7 +5,7 @@ duration: 2hrs
 creator:
   name: Colin Hart
   campus: WDIR
-competencies: Programming
+competencies: Computer Usage
 ---
 
 # The Tooling of WDIR
