@@ -5,7 +5,7 @@
 | Monday                           | Tuesday                 | Wednesday                 | Thursday            | Friday      |
 |----------------------------------|-------------------------|---------------------------|---------------------|-------------|
 | Culture Setting and Ice Breakers | Intro to Git and GitHub | Data Structures and loops | Functions and Scope | Week Review |
-| Intro to CLI and Bash            | Intro to JS             | Diagnostic                |                     | Lab         |
+| WDI Tooling            | Intro to JS             | Diagnostic                |                     | Lab         |
 | Installation                     | Control FLow            | Outcomes                  |                     |             |
 
 ### Supplemental Reading
