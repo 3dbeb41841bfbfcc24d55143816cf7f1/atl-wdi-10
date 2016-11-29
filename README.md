@@ -25,7 +25,7 @@ December 5, 2016 - March 21, 2016
 - Samuel Weisse- Homework TA (Unit 1)
 
 
-### Holidays -
+### Holidays - No Class: 
 - January 16, 2016
 - February 20, 2016
 
@@ -45,7 +45,7 @@ December 5, 2016 - March 21, 2016
 | 1:30-2:30      | Lunch                 | Lunch      | Lunch | Lunch | Lunch |
 | 2:30-3:00 | Review  |  Review        | Lesson |  Review | Review  |
 | 3:00-4:30       | Lesson     | Lecture       | Outcomes 4pm | Lesson | Lesson  |
-| 4:30-5:30| Lab | Lab | Outcomes| Lab | Lab OR Review |
+| 4:30-5:30| Lab | Lab | Outcomes| Lab | Lab  |
 | 5:30-6:00 | Standup + HW | Standup + HW | Outcomes | Standup + HW | Standup + HW |
 
 
