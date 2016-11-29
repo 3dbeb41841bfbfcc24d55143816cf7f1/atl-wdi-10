@@ -5,7 +5,8 @@
 - Colin Hart - Instructional Lead
 - Christine Yi - Instructional Associate
 - Matt Brendzel - Instructional Associate
-- Sam Weisse - Evening / Weekend TA / Grader
+- Jesse Mills - Evening / Weekend TA
+- Sam Weisse -  Grader
 
 ## Roles
 1. Instructor Lead
