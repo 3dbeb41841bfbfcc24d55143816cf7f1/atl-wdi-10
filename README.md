@@ -2,7 +2,8 @@
 # Welcome to WDIR-Matey
 December 5, 2016 - March 21, 2016
 
-![r2d2](http://i44.photobucket.com/albums/f1/christineyi1/r2d2_poster_zpskhryuvyk.jpg )
+![matey](
+http://i127.photobucket.com/albums/p142/cy360/GA%20home%20page/matey.jpg  )
 
 
 ### Instructors 
