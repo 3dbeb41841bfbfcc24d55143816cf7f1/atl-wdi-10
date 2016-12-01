@@ -8,24 +8,25 @@ creator:
 competencies: Programming
 ---
 
-
 # Arrays, Objects and Loops
 
-# Lesson Objectives
+## Lesson Objectives
 
-  - Arrays
-  - Objects
-  - Loops
-
+  - Declare array literals
+  - Interact with and manipulate arrays
+  - Loop over arrays using a `for` loop
+  - Declare object literals
+  - Interact with and manipulate objects
+  - Loop over objects using a `for...in` loop
+  - distinguish differences between arrays and objects
 
 # Intro
 
-
+Yesterday you reviewed basic datatypes in Javascript. Strings, Integers, variables, etc. These are the building blocks of most programming languages. But you're limited in how high you can build without a good way of storing those datatypes. This is where `data structures` like Arrays and Objects are invaluable.
 
 ## Arrays - Demo (5 mins)
 
-Unfortunately, strings and numbers are not enough for most programming purposes.
-What is needed are collections of data that we can use efficiently, Arrays.
+An array is syntactically defined with an opening and close square brace `[ ]`. Between those braces we'll have pieces of data separated by commas.
 
 Arrays are great for:
 
@@ -34,7 +35,6 @@ Arrays are great for:
 * Quickly reordering data
 
 Arrays, ultimately, are a data structure that is similar in concept to a comma separated list. Each item in an array is called an element, and the collection can contain data of the same or different types. In JavaScript, they can dynamically grow and shrink in size.
-
 
 ```javascript
 var friends = ['Moe', 'Larry', 'Curly'];
@@ -61,7 +61,6 @@ friend[0]
 //=> 'b'
 friend.length
 ```
-
 
 ## Working with Arrays - Codealong (15 mins)
 
@@ -96,7 +95,7 @@ a.length;
 => 3
 ```
 
-#### Length method
+#### Length property
 
 The `length` method works in an interesting way in Javascript. It is always one more than the highest index in the array.
 
