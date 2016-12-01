@@ -1,0 +1,12 @@
+<h1>Im the index</h1>
+
+<h1> users index page</h1>
+
+{{users}}
+
+{{#each users}}
+  <ul>
+    <li>{{username}}</li>
+    <a href="/users/{{_id}}">show</a>
+  </ul>
+{{/each}}
