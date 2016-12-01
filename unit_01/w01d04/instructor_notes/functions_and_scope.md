@@ -25,13 +25,25 @@
 
 ---
 <a name="opening"></a>
-## Introduction to Functions (10 min)
+## Introduction to Functions (25 min)
+
+![Imgur](http://i.imgur.com/ylb6WX9.gif)
+
+&#x1F535; Take 15 minutes and read this:
+
+http://eloquentjavascript.net/03_functions.html
+
+**Give me a thumbs up in Slack when you're done.**
+
+<br>
+
+**QUESTION:** In your own words, what is a function? Put your answers into Slack.
 
 A function is a reusable statement, or a group of reusable statements, that can be called anywhere in the program. This avoids the need to rewrite the same statement over and over. Functions enable the software developer to segment large, unwieldy applications into smaller, more manageable pieces.
 
 A critical component of programming, functions address a key tenet of engineering: Don't Repeat Yourself, or DRY. Our goal is to create programs with as little code as possible, while maintaining complete clarity.
 
-Another important trait of functions is that they are similar to objects or strings. Function can be passed into other functions as an argument, and they can also be used like any other object we've been working with.
+Another important trait of functions is that they are similar to objects or strings. Functions can be passed into other functions as an argument (they're called Higher Order Functions), and they can also be used like any other object we've been working with.
 
 ---
 <a name="codealong1"></a>
@@ -40,6 +52,7 @@ Another important trait of functions is that they are similar to objects or stri
 Before we call, or "use", a function, we must define it. In JavaScript, functions can be defined in several ways. Two common methods are __function declarations__ and __function expressions__.
 
 __Function Declarations:__
+
 ```javascript
 function speak (words) {
   console.log(words);
@@ -47,19 +60,20 @@ function speak (words) {
 ```
 
 __Function Expressions:__
+
 ```javascript
 var speak = function (words) {
   console.log(words);
 }
 ```
 
-While both methods share some similarities, only function declarations define functions that can be used anywhere in the scope where they're defined. In other words, you can call a function that is defined using function declaration before the part of the code where you actually define it:
+While both methods share some similarities, only function declarations define functions that can be used anywhere in the scope where they're defined (using **hoisting**). In other words, you can call a function that is defined using function declaration before the part of the code where you actually define it:
 
 ```javascript
-speak('hello, world!')
+speak('hello, world!');
 
 function speak(words) {
-  console.log(words)
+  console.log(words);
 }
 
 // DOES NOT RESULT IN ERROR
@@ -68,10 +82,10 @@ function speak(words) {
 Function expressions, however, must be defined before they are called:
 
 ```javascript
-speak('hello, world!')
+speak('hello, world!');
 
 var speak = function (words) {
-  console.log(words)
+  console.log(words);
 }
 
 // RESULTS IN ERROR:
@@ -105,21 +119,22 @@ function hello () {
 
 hello();
 
-=> hello there!
+//=> hello there!
 ```
 
 JavaScript functions are often defined as methods on objects. To call a function as a method:
 
 ```javascript
 var person = {
-  name: 'Obama',
+  name: 'Rihanna',
   speak: function () {
-    console.log('Hello, World!')
+    console.log('Work, work, work, work, work');
   }
-}
+};
 
-person.speak()
-=> 'Hello, World!'
+person.speak();
+
+//=> 'Hello, World!'
 ```
 
 <br>
@@ -130,12 +145,14 @@ person.speak()
 
 * Write a function that logs "I come from out of a function!" to the console.
 * Invoke the function
+* **Give me a thumbs up in Slack when you're done**
 
 
 &#x1F535; **Activity (4 min)**
 
 * Write a function that logs the sum of 2 + 2
 * Invoke the function
+* **Give me a thumbs up in Slack when you're done**
 
 &#x1F535; **Activity (2 min)**
 
@@ -152,12 +169,12 @@ If a function did the same thing every time it was called, it wouldn't be a very
 
 ```javascript
 // Bad idea...
-function helloMark () {
-  console.log('hello, Mark');
+function helloMarc () {
+  console.log('hello, Marc');
 }
 
-function helloObama () {
-  console.log('hello, Obama')
+function helloRihanna () {
+  console.log('hello, Rihanna')
 }
 ```
 
@@ -170,11 +187,11 @@ function sayHello (name) {
   console.log('Hello ' + name);
 }
 
-sayHello('Mark');
-=> 'Hello Mark'
+sayHello('Marc');
+=> 'Hello Marc'
 
-sayHello('Obama');
-=> 'Hello Obama'
+sayHello('Rihanna');
+=> 'Hello Rihanna'
 ```
 
 In this example, the function `sayHello` is declared with one parameter, `name`. To write functions with **more than one parameter**, use a comma-separated list: `(param1, param2, param3, param4)`. In JavaScript, functions can accept up to 255 parameters!
@@ -209,10 +226,11 @@ doSomething(argument)
 
 &#x1F535; **Activity (5 min)**
 
-* Write a function that takes a parameter. The function should simply console.log the value of the parameter.
+* Write a function that takes a parameter. The function should simply console.log() the value of the parameter.
 * Invoke the function with an argument.
+* **Give me a thumbs up in Slack when you're done**
 
-
+<br>
 
 **Multiple parameters (5 mins)**
 
@@ -235,7 +253,7 @@ multiply(4, 4)
 
 ![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
-&#x1F535; **Activity (10 min)**
+&#x1F535; **Activity (15 min)**
 
 **In Pairs**
 
@@ -243,7 +261,6 @@ Write the following functions and test to make sure they work:
 
 * Write a function called `calculateArea` that takes two parameters `width` and `length` and multiplies them. This will give us the area of a rectangle.
 * Invoke the function a couple of times with different arguments each time
-
 * Write a function that takes three parameters (numbers), sums them, and converts the sum into a string (eg. `"123"`)
 * Invoke the function a couple of times with different arguments each time
 
@@ -256,6 +273,7 @@ EXPERIMENT
 * What happens if you supply more arguments than there are parameters?
 * What happens if you supply fewer arguments than there are parameters?
 
+**Give me a thumbs up in Slack when you're done**
 
 <br>
 ---
@@ -323,6 +341,8 @@ PROBLEM SOLVING
 
 * Write a function `Palindrome` that checks whether a string is a palindrome. A palindrome is the same forwards as it is in reverse. The function should return either `true` or `false`.
 
+* **Give me a thumbs up in slack when you're done**
+
 
 <br>
 
@@ -341,7 +361,7 @@ Before you write a line of JavaScript, you're in what we call the `Global Scope`
 For example, when you declare a variable right away, it's defined globally:
 
 ```javascript
-var name = 'Gerry';
+var name = 'Marc';
 ```
 
 Global scope can be confusing when you run into namespace clashes. You don't want to use global scoping for all your variables--because using it correctly is highly complex--but every Javascript program uses the global scope in one way or another, so it’s important to be familiar with it.
@@ -364,10 +384,13 @@ Take a look at the code below:
 
 ```javascript
 var a = "this is the global scope";
+
 function myFunction() {
   var b = "this variable is defined in the local scope";
 }
+
 myFunction();
+
 console.log(b);
 ```
 
@@ -383,7 +406,7 @@ var a = "Hello";
 
 // This function is defined in the global scope
 function sayHello(name) {
-    return a + " " + name;
+    return `${a} ${name}`;
 }
 
 sayHello("JavaScript");
@@ -402,7 +425,7 @@ function getScore () {
   c = 3;
 
   function add() {
-  return a + b + c;
+    return a + b + c;
   }
 
   return add();
@@ -433,6 +456,7 @@ this.document === document
 
 this.aValue = "WDI";
 => "WDI"
+
 console.log(window.aValue);
 => "WDI"
 ```
@@ -444,64 +468,67 @@ If a function is part of an object (we then call it a method), `this` refers to 
 ```javascript
 var wdi = {
   name: "WDI",
-  whatsTheName = function() {
+  whatsTheName: function() {
     return this.name;
   }
+};
 
 wdi.whatsTheName();
 => "WDI"
 ```
 
-## Independent Practice - Write some functions (15 mins)
+## Independent Practice #1 - Write some functions (20 mins)
 
-Work through as many as these exercises as you can within the next 15 mins - use the [starter-code](starter-code) provided!
+Work through as many as these exercises as you can within the next 15 mins - use the `js-independent-practice starter-code` provided in your student_labs folder!
 
-1. Write a function `lengths` that accepts a single parameter as an argument, namely
-an array of strings. The function should return an array of numbers where each
-number is the length of the corresponding string.
+1. Write a function `lengths` that accepts a single parameter as an argument, namely an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
 
-```javascript
+    ```javascript
 var words = ["hello", "what", "is", "up", "dude"]
-lengths(words)  # => [5, 4, 2, 2, 4]
+lengths(words)  
+# => [5, 4, 2, 2, 4]
 ```
 
 2. Write a Javascript function called `transmogrifier`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
 
-The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
+    The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
 
-For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the power of 2` is 225. Use your function to find the following answers.
+    For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the power of 2` is 225. Use your function to find the following answers.
 
-```javascript
-
+    ```javascript
 transmogrifier(5, 4, 3)
 transmogrifier(13, 12, 5)
 transmogrifier(42, 13, 7)
-
 ```
+
 
 3.  Write a function `wordReverse` that accepts a single argument, a string. The
 method should return a string with the order of the words reversed. Don't worry
 about punctuation.
 
-```javascript
+    ```javascript
 wordReverse("Now I know what a TV dinner feels like")
 # => "like feels dinner TV a what know I Now"
 wordReverse("Put Hans back on the line")
 # => "line the on back Hans Put"
 ```
 
----
-## Independent Practice - Rolling Dice: Lab (40 min)
+<br>
+
+## Independent Practice #2 - JS Functions Lab (40 min)
 
 [js-functions-lab](../student_labs/js-functions-lab) in student labs folder
 
----
+I'll put you into groups. Each group will be responsible for sharing the solution to their assigned problem.
+
+<br>
+
 <a name="lab1"></a>
-## Independent Practice - Rolling Dice: Lab (40 min)
+## BONUS Independent Practice #3 - Rolling Dice: Lab (40 min)
 
-For this lab, you'll be creating a page that displays a random update of two dice every time the user hits the "Roll Dice" button. To get started, open the [app.js file](starter-code/dice/js/app.js). Use the HTML and CSS code included in the starter code folder.
+For this lab, you'll be creating a page that displays a random update of two dice every time the user hits the "Roll Dice" button. To get started, open the [app.js file](../student_labs/starter-code/dice/js/app.js). Use the HTML and CSS code included in the starter code folder.
 
-![](starter-code/dice/img/diceroller.png)
+![](https://i.imgur.com/EEORrtk.png)
 
 Before creating code, be sure to write down the pseudocode for the exercise!
 
