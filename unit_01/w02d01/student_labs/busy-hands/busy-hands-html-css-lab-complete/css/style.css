@@ -1,0 +1,314 @@
+/*----------------------------------------------------------------------------- 
+=01 GENERAL 
+-----------------------------------------------------------------------------*/
+/* In General we set up all our default styles for the site: body, h1-h6, p, a, etc. */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background: url(../images/bg_body.jpg);
+	line-height: 1.1;
+}
+
+
+a {
+	text-decoration:none;
+	color:#1FA2E1;
+}
+
+	a:hover {
+		text-decoration:underline;
+	}
+
+p {
+	margin:0 0 15px 0; /* 15px bottom margin is a nice default for <p> tags */
+}
+
+/* LOGO with image replacement for the text */
+h1 {
+	font-size: 25px;
+	background: url('../images/logo.png') no-repeat;
+	margin-top: 32px;
+	float: left; 
+	
+	/* Old "Phark Method (2003)" for image replacement
+ 		/* text-indent:-9999em; /* 
+
+	 /* New "Scott Kellum Method (2012)" for image replacement */
+     text-indent: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+}
+	/* LOGO */
+	h1 a {
+		width: 291px;
+		height: 54px;
+		display: block;
+	}
+
+h2 {
+	font-size:24px;
+	font-weight:normal;
+}
+
+/* even though there are no h3 tags, it's sometimes good practice to just set up all the h1-h4 tags */
+h3 { 
+	font-size:18px;
+}
+
+h4 { 
+	font-size:16px;
+}
+
+/*----------------------------------------------------------------------------- 
+=02 LAYOUT 
+-----------------------------------------------------------------------------*/
+
+#wrapper {
+	background:url(../images/bg_wrapper.png) repeat-x;
+}
+
+#container {
+	margin:0 auto;
+	width:960px;
+}
+
+/*----------------------------------------------------------------------------- 
+=03 NAVIGATION 
+-----------------------------------------------------------------------------*/
+
+nav ul li{
+	float:left;
+}
+
+nav ul li a {
+	display:block;
+	height:49px;
+	color:#ccc;
+	padding:36px 18px 0 18px;
+	font-size:17px; /* makes the nav text a bit larger than the default body font-size */
+}
+
+	nav ul li a:hover {
+		text-decoration:none;
+		background:url(../images/bg_nav_rollover.png) repeat-x;
+		color:#96DDFC;
+	}
+
+
+/*----------------------------------------------------------------------------- 
+=04 SOCIAL MEDIA  
+-----------------------------------------------------------------------------*/
+
+#social-media {
+	float: right; /* float the #social-media element right */
+	padding: 25px 0 25px 0;
+	
+}
+
+#social-media ul li {
+	 float: left; /* float the <li> elements inside #social-media element left */
+	 background:url(../images/socialNav.png);
+	 margin: 3px;
+
+	 /* "Scott Kellum Method (2012)" for image replacement */
+	     text-indent: 100%;
+	     white-space: nowrap;
+	     overflow: hidden;
+}
+	#social-media ul li a {
+		display: block; /* we make the <a> block, so that we can assign a width/height and create the "button" click area */
+		width:60px;
+		height:60px;
+	}
+
+	/* social-media normal state */
+	#social-media ul li.linkedIn {
+		background-position:0px 64px;
+	}
+	#social-media ul li.twitter {
+		background-position:-60px 64px; 
+	}
+
+	#social-media ul li.facebook {
+		background-position:-120px 64px; 
+	}
+
+	#social-media ul li.rss {
+		background-position:-180px 64px; 
+	}
+
+
+	/* social-media hover */
+	#social-media ul li.linkedIn:hover {
+		background-position:0px 0px; 
+	}
+
+	#social-media ul li.twitter:hover {
+		background-position:-60px 0px; 
+	}
+
+	#social-media ul li.facebook:hover {
+		background-position:-120px 0px; 
+	}
+
+	#social-media ul li.rss:hover {
+		background-position:-180px 0px; 
+	}
+
+/*----------------------------------------------------------------------------- 
+=05 COLUMNS 
+-----------------------------------------------------------------------------*/
+
+#home-boxes {
+	overflow:hidden;
+}
+
+	#home-boxes .home-box {
+		float:left;
+		width:290px;
+		margin-right:40px;
+		background:url(../images/bk_dotted_thick.png) repeat-x;
+	}
+
+		#home-boxes .home-box img {
+			border:6px solid #E2E2E2;
+		}
+
+		#home-boxes .home-box img:hover {
+			border-color:#F9F9F9;
+		}
+
+	#home-boxes .last{ 
+		margin-right:0; /* removes the right margin so that the image is both flush right, and so that it doesn't get pushed down to the next line */
+	}
+
+	#home-boxes .home-box h2 {
+		padding: 10px 0 15px 0;
+	}
+
+
+/*----------------------------------------------------------------------------- 
+=06 BLURB 
+-----------------------------------------------------------------------------*/
+
+#blurb {
+    border-color:#BDBDBD #FFFFFF #FFFFFF #BDBDBD; /* adds a beveled border: grey on top/left, white on bottom/right */
+    border-style:solid;
+    border-width:1px;
+
+    font-size:18px;
+    margin-bottom:25px;
+    padding:15px 20px 25px;
+}
+
+	#blurb p {
+		margin:0;
+	}
+
+	#blurb img {
+		float:right;
+		border:none;
+		margin-top:5px;
+	}
+
+
+
+/*----------------------------------------------------------------------------- 
+=07 FOOTER 
+-----------------------------------------------------------------------------*/
+
+footer {
+	background:#000;
+	padding-top:32px;
+	margin-top: 18px;
+}
+
+#footer-widgets-inner {
+	width:960px;
+	margin:0 auto;
+	padding:20px 0 35px;
+	overflow:hidden;
+}
+
+	#footer-widgets-inner .box-footer {
+		float:left;
+		width:210px;
+		padding-right:30px;
+		overflow:hidden;
+		margin-bottom:40px;
+	}
+
+	#footer-widgets-inner .middle-widget {
+		width:400px;	
+	}
+
+	#footer-widgets-inner h2 {
+		font-size:20px;
+		border-bottom:1px solid #292929;
+		padding:7px 0 12px;
+		margin-bottom:2px;
+		color:#ccc;
+	}
+
+	#footer-widgets-inner .box-footer ul li {
+		padding:7px 0;
+		border-bottom:1px solid #292929;
+		color:#986123;
+		font-size:10px;
+		font-style:italic;
+	}
+
+	#footer-widgets-inner .box-footer ul li a {
+		text-decoration:none;
+		color:#515151;
+		font-size:13px;
+		font-style:normal;
+	}
+
+	#footer-widgets-inner .box-footer ul li a:hover {
+		color:#ccc;
+	}
+
+/* Copyright */
+
+#copyright {	
+	float:left;
+	width:290px;
+}
+
+#companybottom {
+	float:right;
+	width:290px;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+=08 MISC 
+-----------------------------------------------------------------------------*/
+
+.photobanner {
+	line-height:0px; /* removes the blank space below the image */
+}
+
+.imageshadow {
+	background:url(../images/shadow_slider.png) no-repeat; 
+	height:50px;	
+}
+
+.alignleft {
+	float:left;
+	margin:5px 15px 5px 0;
+}
+
+.alignright {
+	float:right;
+	margin:5px 0 5px 15px;
+}
+
+.clear {
+	clear:both;	
+}
+

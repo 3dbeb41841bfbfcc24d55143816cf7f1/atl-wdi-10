@@ -1,0 +1,86 @@
+	body {
+		background-color: black;
+		color: yellow;
+	}
+
+	#container { 
+		width: 960px;
+		height: 650px;
+		border: 5px solid black;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-family: 'Bowlby One SC', monospace;
+		font-size: 64px;
+		text-align: center;
+	}
+
+	p {
+		font-family: monospace;
+		font-size: 16px;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	.lightsaber {	
+		position: relative;
+		top: 50px;
+		left: 25px;
+		margin: 55px;
+	}
+
+	.handle { 
+		width: 125px;
+		height: 35px;
+		background-color: #ccc;
+		border-radius: 5%;
+		float: left;
+	}
+
+	.pommel {
+		margin-left: -15px;
+		width: 15px;
+		height: 35px;
+		background-color: #222;
+		float: left;
+		border-radius: 15px 0 0 15px;
+	}
+
+	.hilt {
+		width: 65px;
+		height: 35px;
+		background-color: #555;
+		margin-left: 15px;
+		float: left;
+	}
+
+	.blade {
+		width: 650px;
+		height: 20px;
+		border-radius: 0 1200px 1200px 0 / 0 400px 400px 0;
+		background-color: #fff;
+		float: left;
+		position: relative;
+		top: 7px;
+		z-index: -1;
+		box-shadow: inset 0 0 5px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000,0 0 20px #ff0000
+	}
+
+	#obiwan, #luke {
+		display: none;
+	}
+
+	#vader .blade {
+		box-shadow: inset 0 0 5px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000,0 0 20px #ff0000
+	}
+
+	#obiwan .blade {
+		box-shadow: inset 0 0 5px #00ccff, 0 0 20px #00ccff, 0 0 30px #00ccff,0 0 20px #00ccff
+	}
+
+	#luke .blade {
+		box-shadow: inset 0 0 5px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,0 0 20px #00ff00
+	}
