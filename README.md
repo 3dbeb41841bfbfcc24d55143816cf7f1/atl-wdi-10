@@ -6,7 +6,7 @@ December 5, 2016 - March 21, 2016
 http://i127.photobucket.com/albums/p142/cy360/GA%20home%20page/matey.jpg  )
 
 
-### Instructors 
+### Instructors
 ##### Instructional Leads
 - Marc Wright
 	- marc@generalassemb.ly
@@ -16,7 +16,7 @@ http://i127.photobucket.com/albums/p142/cy360/GA%20home%20page/matey.jpg  )
 
 ##### Instructional Associates
 - Matt Brendzel
-	- matt.brendzel@generalassemb.ly 
+	- matt.brendzel@generalassemb.ly
 - Christine Yi
   - christine.yi@generalassemb.ly
 
@@ -26,13 +26,14 @@ http://i127.photobucket.com/albums/p142/cy360/GA%20home%20page/matey.jpg  )
 - Samuel Weisse- Homework TA (Unit 1)
 
 
-### Holidays - No Class: 
+### Holidays - No Class:
 - January 16, 2016
 - February 20, 2016
 
 ### Class Hours
 - Monday - Friday: 10:00am - 6:00pm EDT
-- After hours: 6:30pm - 9:30pm EDT
+- After hours: 7:00pm - 10:00pm EDT
+- Saturday: 12:00pm - 3:00pm EDT
 
 
 ### Tentative Weekly Schedule
