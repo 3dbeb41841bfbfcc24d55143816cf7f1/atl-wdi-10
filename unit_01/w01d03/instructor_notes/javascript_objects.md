@@ -164,7 +164,7 @@ Think back to our morning lecture with functions: remember our last example?
 var classroom = {
   name: "WDIr", // key: value,
   campus: "Everywhere!", // key: value,
-  start: "5/16/2016",
+  start: "12/05/2016",
   students: ['Lyn', 'Josie', 'Karl', 'Joy', 'Eden']
   sayHello: function() {
     console.log("Hello");
