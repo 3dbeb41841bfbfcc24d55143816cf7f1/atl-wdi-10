@@ -64,7 +64,7 @@ We're going install Node using brew. We're going to learn a lot about Node over 
 1. Run the following command from any directory:
 
   ```bash
-  brew install node
+  brew install node 7.0.0
   ```
 
 ## Installing Brew Cask

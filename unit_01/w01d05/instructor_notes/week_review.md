@@ -1,5 +1,5 @@
 ---
-title: Week Review
+title: Week Review as Debugging
 type: Lesson
 duration: 1hr 30m
 creator:

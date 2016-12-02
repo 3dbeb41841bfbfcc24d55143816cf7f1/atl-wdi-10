@@ -8,7 +8,7 @@
 - Jesse Mills - Evening / Weekend TA
 - Sam Weisse -  Grader
 
-## Roles
+## Roles (Marc)
 1. Instructor Lead
   - Lesson Blocks
   - Code-alongs
@@ -16,15 +16,23 @@
   - Each instructor takes a different topic for each unit
 2. Instructor Associate
   - Morning Exercises
-  - Afternoon Code Reviews
+  - Afternoon Code Reviews (At least once a week)
+  - Weekly Diagnostic
   - Creating Homework
   - In class support
 3. Evening / Weekend TA
+  - 7pm - 10pm EDT (M-TH) / 12pm - 3pm EDT (SAT)
   - one-on-one help
+4. Outcomes
+  - Weekly Circuits Assignments
+  - Weekly Outcomes sessions
+  - Prioritize!
 
-## Student Handbook
+## Student Handbook (Christine)
 
-## Emotional Framing
+[link to wiki]
+
+## Emotional Framing (Colin)
 - Programming is not about learning a sequence of steps, it's about developing a mindset to solve problems and think programmatically.
 - Language not important
     - critical/analytical/programatic thinking.
@@ -36,18 +44,19 @@
 	- Debugging your own mistakes
 	- Being a good "Googler" and reading tech documents takes practice
 	- You learn more by doing than by listening
-	- We try not to hold your hand
+	- We will not to hold your hand
 		- There is a decent amount of failure that happens initially
 			- good to get that out of the way before starting work
+- ERRORS are GOOD
 - Hard Work: 80-90hrs/wk minimum
 - The maximum point of learning is right at the edge of learning and panic.
 ![learning zone](learning-zone.jpeg)
 - This experience is a rollercoaster.
 ![informed optimism?](informed-optimism.jpeg)
 
-## You Are Not Your Code!
+## You Are Not Your Code!(Matt)
 
-## Classroom Culture
+## Classroom Culture (Christine)
 - Open safe environment
 - Take ownership of your experience
 - Check your ego at the door
@@ -55,7 +64,7 @@
 - Don't compare yourself to others, compare yourself to who you were yesterday
 - You get what you put in
 
-## Mentorship Culture
+## Mentorship Culture (Colin)
 - Take care of each other
 - Benchmarking; some are good at one thing, others at another. Leverage each other's strengths.
 - Teaching is the best way of truly solidifying your understanding of a concept.
@@ -65,7 +74,7 @@
   - After class hours
   - COLLABORATE!!
 
-## Student Expectations
+## Student Expectations (Matt)
 1. Be Present
   - Attendance at 10:15 EST
   - Pay attention
@@ -79,7 +88,7 @@
 1. Be Creative
   - this is not paint by numbers
 
-## Plagiarism
+## Plagiarism (Marc)
 ### Statement
 
 General Assembly takes academic honesty very seriously, and as such will not tolerate any student who plagiarizes in order to satisfy class requirements.  Programs at General Assembly are intensive, require a lot of work on the part of the student, and students will occasionally not be able to complete work in a timely fashion.  
@@ -100,7 +109,7 @@ If an instructor is in doubt of a students work or has evidence of plagiarism, t
 
 Instances of plagiarism will be evaluated on a case by case basis, but will most likely result in removal from the program
 
-## Intro to Assessments and Exit Tickets
+## Intro to Assessments and Exit Tickets (Marc)
 
 ## Stand-Up
 - Wins (What's been a win since your last Standup?)
@@ -124,7 +133,7 @@ Instances of plagiarism will be evaluated on a case by case basis, but will most
 		- Scaffolded lecture notes, homework, and projects
 	- We make sure you understand at least the most important concepts
 6. Having an amazing portfolio/completing all assignments
-	- all projects suck
+	- all projects suck CHANGE THIS WORDING
 		- what matters is the ability to think
 	- don't worry about completing every lab/homework
 		- they're there as an exercise in thinking
