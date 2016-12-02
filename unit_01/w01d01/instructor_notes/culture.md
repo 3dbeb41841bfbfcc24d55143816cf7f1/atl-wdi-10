@@ -111,15 +111,15 @@ Instances of plagiarism will be evaluated on a case by case basis, but will most
 
 ## Intro to Assessments and Exit Tickets (Marc)
 
-## Stand-Up
+## Stand-Up (Christine)
 - Wins (What's been a win since your last Standup?)
 - Repass (What is something you'd like to see again since your last standup?)
 - Feeling (How are you feeling?)
 
-## Team Building
+## Team Building (Christine)
 - Try to pair with someone new everyday.
 
-## Common Student Worries
+## Common Student Worries (Colin)
 1. I'm making a lot of mistakes
 2. Imposter syndrome
 3. I don't "do" math
@@ -147,7 +147,7 @@ Instances of plagiarism will be evaluated on a case by case basis, but will most
 		- receiving an answer stops the learning process
 		- only ask a question if you've been stuck for about a day
 
-## Advice
+## Advice ( Each instructional member )
 1. Constant feedback
 2. Stand up and walk around
 3. Get out of home for a little bit each day

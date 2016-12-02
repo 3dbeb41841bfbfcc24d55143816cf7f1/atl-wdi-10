@@ -110,5 +110,5 @@ We're going to install one more application using brew cask. It's an App called 
 
   Click the padlock in the bottom left corner so you can make changes and then check the box next to Spectacle to allow the app to control your computer.
 
-  Spectacle gives you the ability to move your windows around quickly so you're not wasting time draggin your mouse around
+  Spectacle gives you the ability to move your windows around quickly so you're not wasting time dragging your mouse around
   ![](.md_resources/specs.gif)
