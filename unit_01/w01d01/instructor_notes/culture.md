@@ -157,6 +157,7 @@ Instances of plagiarism will be evaluated on a case by case basis, but will most
 ## Briefly Tell Us About You
 - What's your name?
 - Where are you from?
+- What were you doing before WDIR?
+- Why are you here?
 - What's your home town like?
-
-## What Have You Enjoyed About The Programming You Did In Fundamentals
+- What Have You Enjoyed About The Programming You Did In Fundamentals
