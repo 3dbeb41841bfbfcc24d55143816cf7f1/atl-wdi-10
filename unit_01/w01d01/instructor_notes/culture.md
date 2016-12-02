@@ -30,7 +30,7 @@
 
 ## Student Handbook (Christine)
 
-[link to wiki]
+https://github.com/ga-students/wdi-remote-matey/wiki/Student-Handbook
 
 ## Emotional Framing (Colin)
 - Programming is not about learning a sequence of steps, it's about developing a mindset to solve problems and think programmatically.
