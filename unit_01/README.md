@@ -22,6 +22,16 @@
 | Intro to HTML and CSS | Click Events and html-data | Diagnostic           |                 | Lab         |
 | Intro the DOM         |                            | Outcomes             |                 |             |
 
+---
+# Week 3
+
+### What are we doing this week?
+
+| Monday                | Tuesday                    | Wednesday            | Thursday        | Friday      |
+|-----------------------|----------------------------|----------------------|-----------------|-------------|
+| Present Vacation Projects      | Box Model and Positioning  | Integrative Exercise | Intro to jQuery | Week Review |
+| Intro to HTML and CSS | Click Events and html-data | Diagnostic           |                 | Lab         |
+| Intro the DOM         |                            | Outcomes             |                 |             |
 
 ### Supplemental Reading
 
