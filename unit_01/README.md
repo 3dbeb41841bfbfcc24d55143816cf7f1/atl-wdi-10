@@ -18,9 +18,9 @@
 
 | Monday                | Tuesday                    | Wednesday            | Thursday        | Friday      |
 |-----------------------|----------------------------|----------------------|-----------------|-------------|
-| Chrome Dev tools      | Box Model and Positioning  | Integrative Exercise | Intro to jQuery | Week Review |
-| Intro to HTML and CSS | Click Events and html-data | Diagnostic           |                 | Lab         |
-| Intro the DOM         |                            | Outcomes             |                 |             |
+| Chrome Dev tools      | Box Model and Positioning  | Integrative Exercise | Flexbox         | Project Management, User Stories, GitHub Issues |
+| Intro to HTML and CSS | Click Events and html-data | Diagnostic           | Thinking Design | Project 1 Launch         |
+|                       |                            | Outcomes             |                 |             |
 
 ---
 # Week 3
