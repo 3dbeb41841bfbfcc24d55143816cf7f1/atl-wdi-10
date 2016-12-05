@@ -56,6 +56,8 @@ https://github.com/ga-students/wdi-remote-matey/wiki/Student-Handbook
 
 ## You Are Not Your Code!(Matt)
 
+https://vimeo.com/85040589
+
 ## Classroom Culture (Christine)
 - Open safe environment
 - Take ownership of your experience
