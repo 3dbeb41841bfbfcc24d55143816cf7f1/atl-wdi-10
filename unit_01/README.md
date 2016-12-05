@@ -29,8 +29,8 @@
 
 | Monday                | Tuesday                    | Wednesday            | Thursday        | Friday      |
 |-----------------------|----------------------------|----------------------|-----------------|-------------|
-| Present Vacation Projects      | Box Model and Positioning  | Integrative Exercise | Intro to jQuery | Week Review |
-| Intro to HTML and CSS | Click Events and html-data | Diagnostic           |                 | Lab         |
+| Present Vacation Projects      | Fonts + Responsive Design  | CSS + jQuery Transition/Animation/Transform | Intro to jQuery | Week Review |
+| Advanced Inline Layout + Floats | Advanced + Pseudo Selectors | Diagnostic           |                 | Lab         |
 | Intro the DOM         |                            | Outcomes             |                 |             |
 
 ### Supplemental Reading
