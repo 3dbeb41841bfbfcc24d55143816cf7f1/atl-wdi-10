@@ -5,7 +5,7 @@ duration: 1hr
 creator:
   name: Colin Hart
   campus: WDIR
-competencies: Terminal navigation
+competencies: Course Prep
 ---
 
 # Installation
