@@ -31,7 +31,7 @@ creator:
 
 <br>
 
-## Installing Brew, Git and setting up our local machine (15m / 10:00-10:15am)
+## Installing Brew, Git and setting up our local machine (15m)
 
 1. First install brew:
 
@@ -72,13 +72,13 @@ $ brew cask install spectacle
 
 <br>
 
-## Setting up Git with GitHub (10m / 10:15-10:25am)
+## Setting up Git with GitHub (10m)
 
 [generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 
 <br>
 
-## Why Version Control? (15m / 10:25-10:40am)
+## Why Version Control? (15m)
 
 
 * Spend a few minutes thinking about the following questions:
@@ -94,7 +94,7 @@ $ brew cask install spectacle
 
 <br>
 
-## Git vs GitHub and version control - Intro (20 m / 10:40-11:00am)
+## Git vs GitHub and version control - Intro (20m)
 
 First things first - Git is not GitHub. This is a common mistake that people make.
 
@@ -117,6 +117,8 @@ A codebase in Git is referred to as a **repository**, or **repo**, for short.
 I'm going to give you a hint: Git is pretty confusing and complex at first but you'll pick it up before you know it. When we talk about repos and codebases we're really just talking about a directory that has a file in it named .git. This file tells the git binary to treat the directory as a repo and listen for changes, track files, and do git-things when asked.
 
 Git was created by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), the principal developer of Linux.
+
+**I DO:** I'll `ls -la` into our class repo and show the `.git` directory.
 
 #### What is GitHub?
 
@@ -142,11 +144,13 @@ You can certainly use Git without GitHub!
 
 <br>
 
-## Why is Git tricky to understand? Demo (20 m / 11:00-11:20am)
+## Why is Git tricky to understand? Demo (20m)
 
 Git is tricky to understand because describing 'how' it works, like many things in programming, requires a breadth of technical knowledge. This is going to be a tricky mindset to work with at first.
 
 We need to work with Git and many other complex technologies and approach them critically (i.e. as a critical thinker: the objective analysis and evaluation of an issue in order to form a judgment). But we need to also suspend our disbelief as it were and accept that at their core these technologies are complex, built by some of the best programming minds, and are the result of sometimes 50 years of iteration.
+
+I don't need to explain the internal combustion engine to operate a car.
 
 SO, all that being said, we can totally learn a little about how Git works, but for now it's enough to learn how to use it—for this class that means using it to keep track of homework and classwork and through this process better understand how we'll use it as professional developers.
 
@@ -200,11 +204,7 @@ Once you have committed a file and it becomes "unmodified" then it's contents ar
 
 <br>
 
-## Break (15m / 11:20-11:35am)
-
-<br>
-
-## Set up Git Prompt (15 m / 11:35-11:50am)
+## Set up Git Prompt (15m)
 
 1. Copy and paste the contents of this [file](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh ) into `~/.git-prompt.sh`
 
@@ -244,7 +244,7 @@ $ git config --global core.editor "atom -n -w"
 <br>
 
 
-## Let's use Git (25 m / 11:50-12:15pm)
+## Let's use Git (25m)
 
 1. First, create a directory on your Desktop:
 
@@ -270,6 +270,8 @@ Initialized empty Git repository in <location>
 
 **EXERCISE:** Take 3 minutes to go through this process on your own. React with a thumbs up when you're finished. Can you write down what actual changes have been made to our directory and to your Terminal?
 
+**Give me a thumbs up in Slack when you're done**
+
 #### The .git folder
 
 If we look at the contents of this empty folder using:
@@ -289,7 +291,7 @@ We should see that there is now a hidden folder called `.git` this is where all 
 $ touch a.txt
 ```
 
-2. A small `%` should show next to your prompt!
+2. A small `%` should show next to your prompt! (_I have a `?` because I set mine up differently, do not panic_) 
 
     ```bash
 <your name>:<current directory> (master #%)
@@ -347,9 +349,10 @@ Now let's open a.txt in Sublime or Atom:
 $ atom a.txt
 ```
 
-Inside the file, write something.
+Inside the file, write something. Save the file.
 
-If you press `return` in the terminal, you will now see that you have untracked changes marked by a red *
+If you press `return` in the terminal, you will now see that you have untracked changes marked by a red `*`. (_Mine may look different, do not panic_) 
+
 
 Running `git status` again will show you that a.txt has been **modified**.
 
@@ -371,7 +374,7 @@ $ git commit -m "Second commit"
 
 > NOTE: if you get the message `git config --global --edit`, open it in Atom with `atom git config --global --edit`
 
-#### Making repositories - Codealong (15m / 12:15-12:30pm)
+#### Making repositories - Codealong (15m)
 
 Let's do this together:
 
@@ -382,7 +385,6 @@ Let's do this together:
 ![](https://help.github.com/assets/images/help/repository/repo-create-name.png)
 4. **Initialize this repository with a README** (So that we can `git pull`)
 4. Click the big green Create Repository button
-
 5. We now need to connect our local Git repo with our remote repository on GitHub. We have to add a "remote" repository, an address where we can send our local files to be stored.
 
     The remote URL is found under the green button on the right named "Clone or download"
@@ -396,7 +398,7 @@ Let's do this together:
 git remote add origin <git@github.com:github-name/test-repo.git>
 ```
 
-#### What are Remotes? (5m / 12:30-12:35pm)
+#### What are Remotes? (5m)
 
 Remotes are pointers or aliases we set up to tell git where to go on github.
 
@@ -408,7 +410,7 @@ $ git remote
 $ git remote -v
 ```
 
-#### Pushing to GitHub (5m / 12:35-12:40pm)
+#### Pushing to GitHub (5m)
 
 In order to send files from our local machine to our remote repository on GitHub, we need to use the command `git push`. However, you also need to add the name of the remote, in this case we called it `origin` and the name of the branch, in this case `master`.
 
@@ -418,7 +420,7 @@ git push origin master
 
 This should fail due to new files on the remote repo.
 
-#### Pulling from GitHub (5m / 12:40-12:45pm)
+#### Pulling from GitHub (5m)
 
 1. As we added the README.md in our repo, we need to first `pull` that file to our local repository to check that we haven't got a 'conflict'.
 
@@ -438,13 +440,13 @@ Refresh your GitHub webpage, and the files should be there.
 
 # Forking and Cloning your first repository
 
-## What is forking? Intro (5m / 12:40-12:45pm)
+## What is forking? Intro (5m)
 
 The `fork` & `pull` model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository.
 
 Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea. This is how most open source projects operate.
 
-## Now that everyone has their first repository on GitHub, let's fork and clone our first repository! (20m / 12:45-1:05pm)
+## Now that everyone has their first repository on GitHub, let's fork and clone our first repository! (20m)
 
 #### Clone practice
 
@@ -454,7 +456,7 @@ Cloning allows you to get a local copy of a remote repository.
 
     ```bash
 cd ~/Desktop
-rm -rf test_repo
+rm -Rf test_repo
 ```
 
 2. Go to your GitHub repo for `test_repo`
@@ -462,7 +464,7 @@ rm -rf test_repo
 
     ![clone](https://i.imgur.com/FjdRT66.png)
     
-4. From the terminal prompt, clone the repo with the following command:
+4. From the terminal prompt, clone the repo with the following command (you can clone the repo to your Desktop):
 
     ```bash
 git clone <YOUR_TEST_REPO_URL>
@@ -472,10 +474,9 @@ git clone <YOUR_TEST_REPO_URL>
  
 2. Go to the link below, this is going to be our class repo where you'll receive your morning exercises, classwork, and homework. It's also where you'll push to submit your homework.
 
-    [R2D2 REMOTE REPO](https://github.com/ga-students/wdi-remote-r2d2)
+    https://github.com/ga-students/wdi-remote-matey
 
 2. Click fork, and select your name then on your fork of the repo.
-
 3. Click on the Green Button on the right hand side you will see:
 
     ![clone](https://i.imgur.com/FjdRT66.png)
@@ -487,7 +488,7 @@ git clone <YOUR_TEST_REPO_URL>
 To retrieve the contents of your repo, all you need to do is:
 
 ```bash
-$ git clone git@github.com:<your-github-name>/wdi-remote-r2d2.git
+$ git clone git@github.com:<your-github-name>/wdi-remote-matey.git
 ```
 
 Git should reply:
@@ -512,14 +513,20 @@ When you clone a repository, unless you have been added as a contributor, you wi
 #### Setting your upstream remote to get updates using Git
 
 ```bash
-$ git remote add upstream git@github.com:ga-students/wdi-remote-r2d2.git
+$ git remote add upstream git@github.com:ga-students/wdi-remote-matey.git
 ```
 
 Run `git remote -v` again! What's changed?
 
 <br>
 
-## Assess - Independent Practice (10m / 1:05-1:15pm)
+## Git Branch
+
+You can create branches of your master branch to work on or experiment with new features. When ready, you can merge the branch into the master branch. Why might branches be beneficial?
+
+**Demo:** GitUp - https://github.com/git-up/GitUp
+
+## Assess - Independent Practice (10m)
 
 Use the internet and what you've learned today to answer the following questions with a partner:
 
@@ -532,7 +539,7 @@ Use the internet and what you've learned today to answer the following questions
 
 <br>
 
-## Conclusion (5m / 1:15-1:20pm)
+## Conclusion (5m)
 
 As a developer, you'll have to use Git pretty much everyday, the learning curve is steep and all the principles of version control can  be a bit blurry sometimes, hence why we ask students to push their homework everyday and to commit regularly during project time.
 

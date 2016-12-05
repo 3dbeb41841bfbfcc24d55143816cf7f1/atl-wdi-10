@@ -23,14 +23,6 @@
 
 <br>
 
-## Cloud9 Lesson Repo
-
-[Cloud9 Repo for this HTML lesson](https://ide.c9.io/marc_wright/wdir-r2d2-html-lesson)
-
-Open this link in a separate tab to follow along and copy code.
-
-
-
 ## Describe what HTML is - 10 min (2:10-2:20pm)
 
 HTML stands for "Hyper Text Markup Language". It is not a general purpose programming language like *JavaScript* or _Ruby_ but rather a _markup_ language, i.e. a language for representing structured text.
