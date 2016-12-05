@@ -56,6 +56,8 @@ https://github.com/ga-students/wdi-remote-matey/wiki/Student-Handbook
 
 ## You Are Not Your Code!(Matt)
 
+https://vimeo.com/85040589
+
 ## Classroom Culture (Christine)
 - Open safe environment
 - Take ownership of your experience
@@ -133,7 +135,6 @@ Instances of plagiarism will be evaluated on a case by case basis, but will most
 		- Scaffolded lecture notes, homework, and projects
 	- We make sure you understand at least the most important concepts
 6. Having an amazing portfolio/completing all assignments
-	- all projects suck CHANGE THIS WORDING
 		- what matters is the ability to think
 	- don't worry about completing every lab/homework
 		- they're there as an exercise in thinking
