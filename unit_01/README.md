@@ -23,19 +23,6 @@
 |                       |                            | Outcomes             |                 |             |
 
 ---
-# Week 3
-
-### What are we doing this week?
-
-| Monday                | Tuesday                    | Wednesday            | Thursday        | Friday      |
-|-----------------------|----------------------------|----------------------|-----------------|-------------|
-| Present Vacation Projects      | Fonts + Responsive Design  | CSS + jQuery Transition/Animation/Transform | Intro to jQuery | Week Review |
-| Advanced Inline Layout + Floats | Advanced + Pseudo Selectors | Diagnostic           |                 | Lab         |
-| Intro the DOM         |                            | Outcomes             |                 |             |
-
-### Supplemental Reading
-
----
 
 # Week 5
 
