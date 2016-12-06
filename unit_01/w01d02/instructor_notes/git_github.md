@@ -27,7 +27,6 @@ creator:
 
 - Use the command line
 - Use a text editor
-- Have a Cloud9 account
 
 <br>
 
