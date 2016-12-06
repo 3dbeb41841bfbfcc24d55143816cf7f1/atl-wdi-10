@@ -1,7 +1,7 @@
 ---
 title: Arrays
 type: Lesson
-duration: 1hr 30m
+duration: 1hr
 creator:
   name: Colin Hart
   campus: WDIR

@@ -22,10 +22,10 @@ creator:
 	- [Strings](#strings)
 	- [String Helper Methods](#string-helper-methods)
 - [String Concatentation and Coercion](#string-concat)
-	- [Converting Strings to Integers with parseInt() and parseFloat()](#string-to-int) 
+	- [Converting Strings to Integers with parseInt() and parseFloat()](#string-to-int)
 	- [NaN](#nan)
 - [Variables - Codealong](#var-and-keywords)
-	- [Assignment Operators](#ass-ops) 
+	- [Assignment Operators](#ass-ops)
 - [Conclusion](#conclusion)
 
 ### Objectives
@@ -47,7 +47,7 @@ creator:
 
 ## YOU DO
 
-Take 10 minutes and read through this: 
+Take 10 minutes and read through this:
 
 http://eloquentjavascript.net/01_values.html
 
@@ -66,7 +66,7 @@ _In computer science and computer programming, a data type or simply 'type' is a
 
 Data types are really similar across different languages:
 
-What this means is that being confident in working with these concepts critically will enable you to walk into any programming language with some base knowledge that is translateable.
+What this means is that being confident in working with these concepts critically will enable you to walk into any programming language with some base knowledge that is translatable.
 
 | Data Type | Description | Example |
 | --- | --- | --- |

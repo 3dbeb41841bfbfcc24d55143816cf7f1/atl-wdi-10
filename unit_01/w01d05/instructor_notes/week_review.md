@@ -11,8 +11,24 @@ competencies: Programming
 
 # Week Review
 
-# Lesson Objectives
+## Lesson Objectives
 
 
 
 # Intro
+
+
+
+## Git
+
+
+
+## Data types
+
+
+
+## Data Structures and loops
+
+
+
+## Functions
