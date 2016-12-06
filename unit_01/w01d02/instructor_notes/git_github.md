@@ -19,7 +19,7 @@ creator:
 - Practice using Git to push to a GitHub repo
 - Explain basic git commands — init, add, commit, push, pull and clone
 - Differentiate between remotes — origin and upstream
-- Distinguish between different environments — local, Cloud9, and remote repositories
+- Distinguish between different environments — local and remote repositories
 - Fork and clone remote repositories
 
 ### Preparation
