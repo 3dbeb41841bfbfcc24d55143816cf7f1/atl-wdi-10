@@ -1,7 +1,7 @@
 ---
 title: JavaScript Objects
 type: lesson
-duration: "1:25"
+duration: 1hr
 creator:
   name: Alex Chin, Gerry Mathe, Sean Shannon
   adapted for WDIr by: Colin Hart
@@ -27,20 +27,20 @@ competencies: Programming
 - Create and manipulate variables with JavaScript
 - Create and manipulate arrays in JavaScript
 Objects in JavaScript
-=====
+
 
 ## Opening
 
 ### What is an object?
 
-* Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they're called a dictionary, in Ruby they're called Hashes)
+* Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they're called a dictionary, in Ruby they're called a hash)
 * Like arrays, objects can hold multiple pieces of data of varying types; but unlike arrays, objects use named keys rather than ordered indices to order and access those pieces of data
 * In JavaScript, an object is a type of key-value store, or a way to group many pairs of keys and values together
 
 Example: A car has properties, a type of engine, a color, a certain number of seats etc. Following the same logic, a JavaScript object may have **properties** and **values** for these properties.
 
 
-Primitives are values, they have no properties. In JavaScript there are 5 primitive types: undefined , null , boolean , string and number. **Everything in JavaScript is an object**.
+<!-- Primitives are values, they have no properties. In JavaScript there are 5 primitive types: undefined , null , boolean , string and number. **Everything in JavaScript is an object**.
 
 
 EXERCISE: Run the following commands. Is this what you expected? Respond in slack why or why not?
@@ -56,13 +56,13 @@ SideNote: this is a little misleading because we have see that string and number
 ```
 var ten = new Number(5) + 5
 var show = new String('jekyl') + '& mr hyde'
-```
+``` -->
 
 ### Collections of name-value pairs
 
 #### Object literal syntax
 
-Strings are 'quotes', arrays are ['square braces'], objects follow the same lexical pattern but use {curlyBraces: 'and are structured as pairs'}, the `key` is before the colon, the `value` is after the colon.
+Strings are 'quotes', arrays are ['square braces'], objects follow the same lexical pattern but use `{curlyBraces: 'and are structured as pairs'}`, the `key` is before the colon, the `value` is after the colon.
 Like arrays, these key-value pairs will be comma separated!
 
 ```javascript
@@ -94,9 +94,9 @@ var person = {
 person.name
 => "Colin"
 
-person.name = "Huntington"
+person.name = "Brendzel"
 person.name
-=> "Huntington"
+=> "Brendzel"
 ```
 
 ## Creating an object with properties
@@ -123,7 +123,7 @@ There is another way to set properties on a JavaScript object.
 
 ```javascript
 classroom["name"]   = "WDIr";
-classroom["campus"] = "Lyn's house";
+classroom["campus"] = "Your house";
 ```
 
 This syntax can also be used to read properties of an object:
@@ -132,10 +132,10 @@ This syntax can also be used to read properties of an object:
 console.log(classroom["name"]);
 => "WDIr";
 
-var property = "Lyn's house";
+var property = "Your house";
 
 console.log(classroom[property]);
-=> "Lyn's house";
+=> "Your house";
 ```
 
 For more details see [MDN's Documentation on Property Accessors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors).
@@ -148,7 +148,7 @@ If you want to delete a property of an object (and by extension, the value attac
 The following code shows how to remove a property:
 
 ```javascript
-var classroom = {name: "WDIr", campus: "Everywhere!", start: "5/16/2016"};
+var classroom = {name: "WDIr", campus: "Everywhere!", start: "12/05/2016"};
 delete classroom.start;
 classroom
 => {name: "WDIr", campus: "Everywhere!"}
@@ -165,7 +165,7 @@ var classroom = {
   name: "WDIr", // key: value,
   campus: "Everywhere!", // key: value,
   start: "12/05/2016",
-  students: ['Lyn', 'Josie', 'Karl', 'Joy', 'Eden']
+  students: ['Alejandra', 'Sophia', 'Alan', 'Audrey', 'David']
   sayHello: function() {
     console.log("Hello");
   }
@@ -206,7 +206,7 @@ var classroom = {
   name: "WDIr",
   campus: "Everywhere!",
   start: "5/16/2016",
-  students: ['Lyn', 'Josie', 'Karl', 'Joy', 'Eden']
+  students: ['Alejandra', 'Sophia', 'Alan', 'Audrey', 'David']
   sayHelloToEveryone: function() {
     console.log("Hello " + this.students);
   },

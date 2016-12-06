@@ -1,3 +1,30 @@
+---
+title: Loops and iterating over Arrays
+type: Lesson
+duration: 1hr
+creator:
+  name: Colin Hart
+  campus: WDIR
+competencies: Programming
+---
+
+# Loops and iterating over Arrays
+
+## Lesson Objectives
+
+  - Explain what does it means to iterate or loop?
+  - Write the for loop syntax
+  - Describe the order a for loop runs in
+
+
+## What does it mean to iterate or loop
+
+**Exercise:** In your own words define a loop and an iteration. (Does not need to be technical)
+
+Iterating in programming is a way of incrementally repeating a task.
+
+If I wanted to console.log something 5 times, how would I do that without a loop?
+
 ## Iterating through an array - Codealong (10 mins)
 
 Iterating through the elements of an array, one at a time, is a very common practice in programming.
@@ -20,7 +47,7 @@ for (var i = 0; i < teams.length; i++) {
 ```
 
 
-JavaScript arrays have several advanced _iterator methods_. Like forEach, map, reduce, and filter. Several of these methods require a function be supplied as an argument, and the code you write in the function will be applied to _each_ item in the array, individually. We'll get to these in the coming weeks, but for now you can either stick to the for ... in loop or explore these methods on your own!
+JavaScript arrays have several advanced _iterator methods_. Like forEach, map, reduce, and filter. Several of these methods require a function be supplied as an argument, and the code you write in the function will be applied to _each_ item in the array, individually. We'll get to these in the coming weeks, but for now you can either stick to the `for loop` or explore these methods on your own!
 
 
 ## Iterating over an object

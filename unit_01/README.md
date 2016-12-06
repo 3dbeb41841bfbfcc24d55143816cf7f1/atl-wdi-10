@@ -10,6 +10,7 @@
 
 ### Supplemental Reading
 - [Getting Started with HomeBrew](https://www.safaribooksonline.com/blog/2014/03/03/homebrew/)
+- [Intro to Loops](https://www.teamten.com/lawrence/programming/intro/intro8.html)
 
 ---
 # Week 2

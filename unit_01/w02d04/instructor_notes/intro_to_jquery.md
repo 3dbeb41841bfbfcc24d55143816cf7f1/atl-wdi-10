@@ -356,7 +356,6 @@ So, say we have the following form:
 
 
 
-
 ## Conclusion
 
 - jQuery makes JavaScript super friendly and easy to write. a lot of websites are using jQuery, soon you will too.  Remember that it's always good to know how to use what is called vanilla JavaScript, or JavaScript without a library.

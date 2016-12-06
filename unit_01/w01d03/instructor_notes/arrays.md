@@ -1,5 +1,5 @@
 ---
-title: Arrays, Objects and Loops
+title: Arrays
 type: Lesson
 duration: 1hr 30m
 creator:
@@ -128,7 +128,6 @@ typeof a[90];
 
 EXERCISE: 10 minutes As for the 90th value in your array. Ask for the first item in your array. Ask for the last item in your array. Bonus: Can you come up with a way of asking for a random index (whole number) between zero and the length of your array? HINT: Math.random and Math.floor
 
-####
 
 #### Array helper methods
 
