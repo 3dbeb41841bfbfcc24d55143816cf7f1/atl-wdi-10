@@ -16,9 +16,6 @@ competencies: Programming
   - Interact with and manipulate arrays
   - Loop over arrays using a `for` loop
   - Declare object literals
-  - Interact with and manipulate objects
-  - Loop over objects using a `for...in` loop
-  - distinguish differences between arrays and objects
 
 # Intro
 

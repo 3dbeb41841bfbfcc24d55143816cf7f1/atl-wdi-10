@@ -16,7 +16,6 @@ competencies: Programming
   - Write the for loop syntax
   - Describe the order a for loop runs in
 
-
 ## What does it mean to iterate or loop
 
 **Exercise:** In your own words define a loop and an iteration. (Does not need to be technical)
@@ -29,25 +28,49 @@ If I wanted to console.log something 5 times, how would I do that without a loop
 
 Iterating through the elements of an array, one at a time, is a very common practice in programming.
 
-Iterating is a way of incrementally repeating a task.
-
 We can use a `for` loop to iterate over the elements of an array like this:
 
 ```javascript
-var a = [1, 2, 3, 4, 5];
+var array = [1, 2, 3, 4, 5];
+
 for (var i = 0; i < a.length; i++) {
   console.log(i);
 }
+```
+
+#### Elements of a for loop
+
+The for loop starts with the keyword `for`. `for` takes three arguments in the parenthesis:
+
+1. **initialization**
+  `var i = 0;` the loop starts at zero. `i` is just a counter, a way to keep track of how many times we've looped and a way to keep track of where we are in the array.
+2. **condition**
+  `i < array.length;` this is the condition that indicates whether the loop is at completion or if it should keep going. In this case, in english we could say this as if the variable i is less than the length of the array keep looping
+3. **increment**
+  `i++` this syntax is going to add `1` to the variable. Each time the loop runs it's going to _increment_ `i` by one
+
+For each iteration, it will run the code in the block. A block refers to the `{ }`
+
+**Exercise:** Take three minutes and write everything you can do with a pen.
+
+**Exercise:** Take three minutes and write everything you could do with the variable `i` in a for loop.
 
 
+```js
 var teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
 for (var i = 0; i < teams.length; i++) {
-    console.log(teams[i]);
+  console.log(teams[i]);
 }
 ```
 
+Code is creative.
 
-JavaScript arrays have several advanced _iterator methods_. Like forEach, map, reduce, and filter. Several of these methods require a function be supplied as an argument, and the code you write in the function will be applied to _each_ item in the array, individually. We'll get to these in the coming weeks, but for now you can either stick to the `for loop` or explore these methods on your own!
+JavaScript arrays have several advanced _iterator methods_. Like forEach, map, reduce, and filter. These methods require a function be supplied as an argument and the code you write in the function will be called on _each_ item in the array, individually. We'll get to these in the coming weeks, but for now you can either stick to the `for loop` or explore these methods on your own!
+
+Independent practice:
+
+1. loop over an array of numbers and console.log i
+2. loop over an array of names and console.log each name
 
 
 ## Iterating over an object
@@ -65,8 +88,7 @@ We have two different ways of looping through an object.
 First is `for ... in`
 
 ```javascript
-
-var ourObj = { one: 'Lyn', two: 'Josie', three: 'Karl', four: 'Joy', five: 'Eden' }
+var ourObj = { one: 'Alejandra', two: 'Sophia', three: 'Alan', four: 'Audrey', five: 'David' }
 
 for (eachKey in ourObj) {
   console.log(eachKey)
@@ -82,7 +104,7 @@ How can we access the missing pieces in our loop?
 
 ```javascript
 
-var ourObj = { one: 'Lyn', two: 'Josie', three: 'Karl', four: 'Joy', five: 'Eden' }
+var ourObj = { one: 'Alejandra', two: 'Sophia', three: 'Alan', four: 'Audrey', five: 'David' }
 
 for (eachKey in ourObj) {
   console.log(ourObj[eachKey])
