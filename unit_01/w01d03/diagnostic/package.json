@@ -1,0 +1,21 @@
+{
+  "name": "w01-diagnostic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/diagnostic.js",
+  "scripts": {
+    "test": "mocha spec/diagnostic-spec.js"
+  },
+  "keywords": [
+    "bash",
+    "git",
+    "javascript",
+    "flow control"
+  ],
+  "author": "Matt Brendzel (matt.brendzel@generalassemb.ly)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
