@@ -172,7 +172,7 @@ function helloMarc () {
 }
 
 function helloRihanna () {
-  console.log('hello, Rihanna')
+  console.log('hello, Rihanna');
 }
 ```
 
@@ -216,7 +216,7 @@ function doSomething (parameter) {
 }
 
 // Argument
-doSomething(argument)
+doSomething(argument);
 ```
 
 <br>
@@ -236,13 +236,13 @@ We can also use multiple parameters in our functions. A function can take any nu
 
 ```js
 var multiply = function(num1, num2) {
-	console.log(num1 * num2)
-}
+	console.log(num1 * num2);
+};
 ```
 When you invoke the function, you generally want to supply the right number of arguments.
 
 ```js
-multiply(4, 4)
+multiply(4, 4);
 
 => 16
 ```
