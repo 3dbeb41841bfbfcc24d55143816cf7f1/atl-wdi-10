@@ -64,9 +64,6 @@ Open the file `functions.js` - all the function names are already inside the fil
 
 Use the Chrome dev tools console to practice executing your code.
 
-#### Deliverable
-
-You'll review the answers with the instructor in class.
 
 ## Additional Resources
 
