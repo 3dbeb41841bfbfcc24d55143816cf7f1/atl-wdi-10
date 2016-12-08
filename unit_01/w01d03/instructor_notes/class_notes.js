@@ -55,3 +55,9 @@ for (var i = 0; i < nums.length; i++) {
 for (var i = 0; i < 15; i++) {
   console.log(i * 5)
 }
+
+
+// ==================
+// Arrays []
+      //     key      value
+var myObj = { item1: 'I am item 1', }
