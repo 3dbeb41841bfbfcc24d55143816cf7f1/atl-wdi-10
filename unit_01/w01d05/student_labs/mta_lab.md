@@ -64,13 +64,9 @@ We'll use this method to act as an interface for our MTA application
   ```
 
 3. A user can calculate the total number of stops between two stations.
-  ```bash
- node mta.js calculate L union_square 6 33rd
- => 3
- ```
 
  ```bash
-  node mta.js calculate L union_square L 8th
+  node mta.js calculate L union_square 8th
   => 2
  ```
 
