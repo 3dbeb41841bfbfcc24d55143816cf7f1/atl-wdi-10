@@ -21,8 +21,6 @@
 - Differentiate between true, false, 'truth-y', and 'false-y'
 - Use Boolean logic (!, &&, ||) to combine and manipulate conditionals
 
->Note: Last class, we worked on data types, conditional statements, and logical and comparison operators. Check with students to make sure that everyone is comfortable with the materials covered in the last class.
-
 ---
 <a name="opening"></a>
 ## Introduction to Functions (25 min)
@@ -33,7 +31,7 @@
 
 http://eloquentjavascript.net/03_functions.html
 
-**Give me a thumbs up in Slack when you're done.**
+Make a note of anything that "clicks" for you. **Give me a thumbs up in Slack when you're done.**
 
 <br>
 
@@ -174,11 +172,11 @@ function helloMarc () {
 }
 
 function helloRihanna () {
-  console.log('hello, Rihanna')
+  console.log('hello, Rihanna');
 }
 ```
 
-> __Instructor's Note:__ Ask students why they think writing such specific functions is a bad idea. If no one has an answer, ask what happens to the above program structure if it has 1,000 users. If we have to write 1,000 different functions, is this a scalable and maintainable program?
+> __Question:__ Why is writing such specific functions a bad idea?
 
 Parameters remedy this problem by allowing us to call, or invoke, the same function with different values:
 
@@ -198,7 +196,7 @@ In this example, the function `sayHello` is declared with one parameter, `name`.
 
 ```javascript
 function sum(x, y, z) {
-  console.log(x + y + z)
+  console.log(x + y + z);
 }
 
 sum(1, 2, 3);
@@ -218,7 +216,7 @@ function doSomething (parameter) {
 }
 
 // Argument
-doSomething(argument)
+doSomething(argument);
 ```
 
 <br>
@@ -236,15 +234,15 @@ doSomething(argument)
 
 We can also use multiple parameters in our functions. A function can take any number of parameters.
 
-```
+```js
 var multiply = function(num1, num2) {
-	console.log(num1 * num2)
-}
+	console.log(num1 * num2);
+};
 ```
 When you invoke the function, you generally want to supply the right number of arguments.
 
-```
-multiply(4, 4)
+```js
+multiply(4, 4);
 
 => 16
 ```
@@ -281,7 +279,7 @@ EXPERIMENT
 
 ## The Return Statement (25 min)
 
-Sometimes we don't want to print to the console or update the DOM; rather, we want to update a variable or even call another function. This requires a `return` statement. When we return something, it ends the function's execution and "spits out" what we are returning. We can then store this returned value in another variable...
+Sometimes we don't want to print to the console or update the DOM, rather, we want to update a variable or even call another function. This requires a `return` statement. When we return something, it ends the function's execution and "spits out" what we are returning. We can then store this returned value in another variable...
 
 ```javascript
 function sum (x, y) {
