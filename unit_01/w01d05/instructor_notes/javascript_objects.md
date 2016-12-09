@@ -79,7 +79,7 @@ var person = {
   name: "Colin"
 }
 
-person.name
+person['name']
 => "Colin"
 ```
 
@@ -90,11 +90,11 @@ var person = {
   name: "Colin"
 }
 
-person.name
+person['name']
 => "Colin"
 
-person.name = "Brendzel"
-person.name
+person['name'] = "Brendzel"
+person['name']
 => "Brendzel"
 ```
 
@@ -106,35 +106,30 @@ We are going to create an object `classroom` that contains properties `name` and
 var classroom = {};
 => undefined
 
-classroom.name = "WDIr";
+classroom['name']= "WDIr";
 => "WDIr"
 
-classroom.campus = "The World!";
+classroom['campus'] = "The World!";
 => "The World!"
 
 classroom
 => Object {name: "WDIr", campus: "The World!"}
 ```
 
-#### Bracket notation
+#### Dot notation
 
 There is another way to set properties on a JavaScript object.
 
 ```javascript
-classroom["name"]   = "WDIr";
-classroom["campus"] = "Your house";
+classroom.name   = "WDIr";
+classroom.campus = "Your house";
 ```
 
 This syntax can also be used to read properties of an object:
 
 ```javascript
-console.log(classroom["name"]);
+console.log(classroom.name);
 => "WDIr";
-
-var property = "Your house";
-
-console.log(classroom[property]);
-=> "Your house";
 ```
 
 For more details see [MDN's Documentation on Property Accessors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors).
@@ -177,6 +172,11 @@ To call the method, we add a pair of parentheses to execute it:
 
 ```javascript
 classroom.sayHello();
+=> Hello
+
+// OR
+
+classroom['sayHello']()
 => Hello
 ```
 
