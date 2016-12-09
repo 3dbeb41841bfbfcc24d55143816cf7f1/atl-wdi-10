@@ -34,7 +34,7 @@ var mta = {
     },
 
     complexCalculate: function(line1, stop1, line2, stop2) {
-      // This function uses the distanceSingleLine to compute
+      // This function uses the calculate to compute
       // the stops traveled on line1 from stop1 to the hub
       // and then on line2 from the hub to stop2
       var distance1 = this.calculate(line1, stop1, this.hub);
