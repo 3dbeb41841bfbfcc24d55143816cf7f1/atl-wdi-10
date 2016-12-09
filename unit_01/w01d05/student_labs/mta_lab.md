@@ -17,9 +17,9 @@ Feel free to use any data structure you find comfortable, but we suggest you use
 
 ```javascript
 var mta = {
-  "N": ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"],
-  "L": ["8th", "6th", "Union Square", "3rd", "1st"],
-  "6": ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]
+  "N": ["Times_Square", "34th", "28th", "23rd", "Union_Square", "8th"],
+  "L": ["8th", "6th", "Union_Square", "3rd", "1st"],
+  "6": ["Grand_Central", "33rd", "28th", "23rd", "Union_Square", "Astor_Place"]
 }
 ```
 
@@ -52,38 +52,41 @@ We'll use this method to act as an interface for our MTA application
 
   ```bash
   node mta.js lines
-  N
-  L
-  6
+  => N
+  => L
+  => 6
   ```
 
 2. A user can see all of the stops for a line.
   ```bash
   node mta.js stops L
-  => [ '8th', '6th', 'Union Square', '3rd', '1st' ]
+  => [ '8th', '6th', 'Union_Square', '3rd', '1st' ]
   ```
 
 3. A user can calculate the total number of stops between two stations.
   ```bash
  node mta.js calculate L union_square 6 33rd
- 3
+ => 3
  ```
 
  ```bash
   node mta.js calculate L union_square L 8th
-  2
+  => 2
  ```
 
 4. A user is notified if they don't provide the correct number of arguments.
   ```bash
   node mta.js calculate sadasd
-  You must provide the 4 arguments - STARTINGLINE STOP ENDINGLINE STOP
+  => You must provide the 4 arguments - STARTINGLINE STOP ENDINGLINE STOP
   ```
 
 5. A user can calculate the total number of stops between two stations on two different lines
+
   ```bash
-    node mta.js complexCalculate L union_square 6 28th
+    node mta.js complexCalculate L 8th 6 28th
   ```
+
+  **[HINT]:** Union_Square is a `hub`, all three lines intersect at Union_Square
 
 ## Keep in mind
 - Break it down and follow your errors! Maybe try getting the program to work for a single train line before trying to tackle multiple lines.
