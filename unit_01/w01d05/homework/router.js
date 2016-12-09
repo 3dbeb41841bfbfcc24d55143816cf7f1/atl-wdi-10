@@ -6,7 +6,7 @@
 
 var dataStore = require('./data-store-stub');
 
-var route = function(cliArgs){
+var route = function(inputArgs){
   // Your Code Here
 };
 
