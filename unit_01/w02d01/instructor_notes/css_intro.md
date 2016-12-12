@@ -27,6 +27,16 @@
 
 <br>
 
+## YOU DO - Questions
+
+- Describe 3 ways to add CSS to an app. Which is preferred? **(David + Sophia)**
+- Describe the 3 components of a CSS rule. **(Kiran + Michael)**
+- Describe `id` and `class` and use cases for each. **(Kristina + Alan)**
+- Explain specificity. **(Alejandra + Daniel)**
+- Describe 3 ways to combine CSS selctors. **(Matt + Audrey + Deb)**
+
+<br>
+
 ## Define CSS and describe its use 
 
 **QUESTION**: Can anyone define CSS for us?
