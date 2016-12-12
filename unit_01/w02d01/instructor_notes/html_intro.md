@@ -107,7 +107,7 @@ Note that when placing a tag inside another tag, you should indent the new tag t
 
 As a quick review, I will give you some examples of broken HTML and you tell me what's wrong with them. 
 
-[HTML Fixit](../instructor_examples/html_fixit.md)
+[HTML Fixit](./html_fixit.md)
 
 <hr>
 
