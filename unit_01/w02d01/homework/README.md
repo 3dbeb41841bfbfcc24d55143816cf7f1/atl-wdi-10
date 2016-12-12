@@ -186,3 +186,7 @@ The issue should include:
 
 -   A 'comfort' score on how you feel about the material, from 1 (very
     uncomfortable) to 5 (very comfortable)
+
+Then, once you file this issue, please go through these
+[preparatory materials](./prep.md)
+to help get you ready for tomorrow's material on layout.
