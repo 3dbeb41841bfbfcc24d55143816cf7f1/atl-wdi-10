@@ -9,13 +9,15 @@ See if you can create the HTML for this mockup by following the steps below. Don
 
 
 ## Initializing a page
-1. In Cloud9, Set up a basic html page with `DOCTYPE`, `html`, `head`, and `body` tags.
+1. In your `dev` folder:
+    - create a new folder called `html_blog_practice`
+    - create an `index.html`
+    - set up a basic html page with `DOCTYPE`, `html`, `head`, and `body` tags.
 1. Add some content to the page
-1. Hit the run button
-1. Click the link in the console and chose open to view the page
+1. Open the page in your browser
 
 ## basic tags
-1. Pretend you are preparing an paper with title, headings, and sub headings
+1. Pretend you are preparing a paper with title, headings, and sub headings
 1. Add the relevant heading tags
 1. Add some fake content as if they were paragraphs
 

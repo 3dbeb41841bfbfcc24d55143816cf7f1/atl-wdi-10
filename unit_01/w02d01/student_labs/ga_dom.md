@@ -26,9 +26,13 @@ Is it gone? ... Nice work. Okay, so we know for sure that that's the div we want
 
 ![](https://i.imgur.com/hYwtexr.png)
 
-Nice job. Now we need to build a function to start documenting each of these scripts so we can ultimately write one complete function that will mod our google homepage in one go!
+Nice job. Now we need to build a function to start documenting each of these scripts so we can ultimately write one complete function that will mod our google homepage in one go! We're gonna do this using a snippet. Here is the documentation: https://developers.google.com/web/tools/chrome-devtools/javascript/snippets
 
-1. touch a file called ga_mod.js inside of student_labs
+1. Open your dev tools. Select the Sources tab, then select the Snippets tab.
+
+![](https://i.imgur.com/p0FTfZS.png)
+
+1. Right click (control + click) inside the snippets window on the left and create a new snippet.
 2. write a function called ga_mod()
 
 ```javascript
@@ -45,6 +49,8 @@ var ga_mod = function() {
   header.remove();
 }
 ```
+
+4. Right click (control + click) and select "run" to run the code.
 
 Nice now move on to the footer. The rest of this job is up to you! Good luck.
 

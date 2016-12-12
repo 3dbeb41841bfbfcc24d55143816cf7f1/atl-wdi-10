@@ -64,13 +64,14 @@ Let's create a web page and begin to inspect its structure.
 ![](http://i.imgur.com/ylb6WX9.gif)
 
 - Open Terminal
-- `cd` to your Desktop
-- Create a new file: `touch index.html` 
-- Open the file in Sublime text or Atom
-- Copy this code into the file:
+- `cd` to your `dev` folder
+- Create a new `mkdir dom_intro_lesson`
+- `cd` and create a new file `touch index.html` 
+- Open the file in Atom
+- Copy this code into the file then open in Chrome:
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -172,12 +173,9 @@ Open up the HTML file from earlier. Inside of the `<head>` tag write a script ta
 	
 ```html
 <script>
-  var response;
-	
   alert(`Hi! What's your favorite food?`);
-  response = prompt();
-  alert(`I wish I liked ${response} too. It's sad being a computer :( `);
-	
+  var response = prompt();
+  alert(`I wish I liked ${response} too. It's sad being a computer :( `);	
 </script>	
 ```
 
@@ -195,10 +193,8 @@ Instead of `<link>` we'll keep using our script tag. And we're also going to mov
 2. let's move the JS code that you wrote inside of the script tag in index.html to your script.js file. However, we're change it up a bit and add the message to the DOM via a new Element like so:
 
     ```javascript
-    var response;
-
     alert(`Hi! What's your favorite food?`);
-    response = prompt();
+    var response = prompt();
     alert(`I wish I liked ${response} too. It's sad being a computer :( `);
 
     var newElement = document.createElement("P");

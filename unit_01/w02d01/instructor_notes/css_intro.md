@@ -17,7 +17,7 @@
 
 <br>
 
-## Hook - 10min (2:00-2:10pm)
+## Hook
 
 - Fist to Five
     - 1 - Iffy on CSS
@@ -27,7 +27,7 @@
 
 <br>
 
-## Define CSS and describe its use - 5 min (2:10-2:15pm)
+## Define CSS and describe its use 
 
 **QUESTION**: Can anyone define CSS for us?
 
@@ -39,7 +39,7 @@ HTML gives our site structure, but it doesn't do much in terms of how the site l
 
 <br>
 
-## How to add CSS to your app - 10 min (2:15-2:25pm)
+## How to add CSS to your app
 
 **QUESTION**: What are 3 ways to add CSS to an app?
 
@@ -88,7 +88,7 @@ What are 3 ways to add CSS rules to your page? Which is the best practice?
 
 <br>
 
-## Diagram the structure of CSS - 5 min (2:25-2:30pm)
+## Diagram the structure of CSS
 
 A CSS file is composed of many rules.  Each rule governs the appearance of certain elements.  The generalized form looks like:
 
@@ -103,7 +103,7 @@ selector {
 Everything inside the curly braces is called the "declaration block"
  
 <br>
-## Demonstrate how to apply rules to a specific tag - 10 min (2:30-2:40pm)
+## Demonstrate how to apply rules to a specific tag
 
 <details>
     <summary>In Slack, can someone create the CSS rule to give all my `p` tags a red Georgia font and a yellow background?</summary>
@@ -130,25 +130,9 @@ p {
 What are the 3 components of a CSS rule?
 
 <br>
-![YOU DO](http://i.imgur.com/ylb6WX9.gif)
-
-## YOU DO - Pair and Share (10 min / 2:40-2:50pm)
-
-We're gonna set up a project in Cloud9 to work on the next few sections. I'll put you guys into breakout rooms so you can help each other as you create individual pages.
-
-1. Create a new Cloud9 workspace with the following settings:
-
-    ![](https://i.imgur.com/fAZLjQY.png) 
-    
-1. From the Cloud9 Terminal, `touch index.html style.css`
-2. Link the CSS file in the `head` of your HTML
 
 
-##### After each section, we need one person to demo what they created and at least one question before we move forward.
-
-<br>
-
-## List some common element properties that can be styled (25 min / 2:50-3:15pm)
+## List some common element properties that can be styled
 
 Here are some properties that you can set for an element
 
@@ -201,7 +185,7 @@ Here are some properties that you can set for an element
 
 <br>
 
-## Describe ids and classes. Explain when should we use which (25 min / 3:15-3:40pm)
+## Describe ids and classes. Explain when should we use which
 
 Sometimes just targeting an element is not enough.  We can target other attributes of elements in our selectors.
 
@@ -233,9 +217,7 @@ Sometimes just targeting an element is not enough.  We can target other attribut
 
 <br>
 
-## Break (15 min / 3:40-3:55pm)
-
-## Describe "The Cascade" (15 min / 3:55-4:10pm)
+## Describe "The Cascade"
 
 Some properties of elements are passed down to their children. In general:
 
@@ -256,7 +238,7 @@ Some properties of elements are passed down to their children. In general:
 
 <br>
 
-## Describe how to combine various selectors (25 min / 4:10-4:35pm) 
+## Describe how to combine various selectors 
 
 Selectors can be more complex than just an element, id, or class.
 
@@ -308,7 +290,7 @@ Selectors can be more complex than just an element, id, or class.
 
 <br>
 
-## Describe Specificity (25 min / 4:35-5:00pm)
+## Describe Specificity
 
 When an element is being styled by two rules at the same time, the browser calculates which rule is more specific and applies that rule.  To do this it looks at the selector.  If both rules have the same specificity, the last rule is applied.
 
@@ -373,7 +355,7 @@ What type of CSS rule would take precidence?
 
 
 ![Imgur](http://i.imgur.com/WzTTdIe.jpg)
-## Labtime (30 min / 5:00-5:30pm)
+## Labtime
 ####Exercise #1
 [Add CSS to the Blog Mockup](../student_labs/css-lab/README.mkd)
 
