@@ -42,7 +42,7 @@ If we used traditional layout properties, when elements were added/changed they 
 
 <br>
 
-## Diagram the box model (15m / 11:10-11:25am)
+## Diagram the box model (15m)
 
 We can instead define different properties of elements so that they won't collide with each other.
 
@@ -74,7 +74,7 @@ _From [www.theslate.org](http://www.theslate.org)_
 
 ![We Do](http://i.imgur.com/ylb6WX9.gif)
 
-&#x1F535; **(Activity 15m / 11:25-11:40am)**
+&#x1F535; **(Activity 15m)**
 
 We're gonna set up a project in `w02d02/student_labs` to work on the next few sections.
 
@@ -92,7 +92,7 @@ Create an element with the following:
 - view the page
 
 
-### additional properties (10m / 11:40-11:50am)
+### additional properties (10m)
 
 1. height/width
 	- can explicitly define the height and width of the content area of an element
@@ -184,7 +184,7 @@ An element can be placed on the page in many ways using the `display` property
 
 <br>
 
-## Differentiate between units of measure in layout (10m / 12:35-12:45pm)
+## Differentiate between units of measure in layout (10m)
 
 1. px
 	- pixels.  most basic unit
@@ -209,7 +209,7 @@ An element can be placed on the page in many ways using the `display` property
 
 ![We Do](http://i.imgur.com/ylb6WX9.gif)
 
-&#x1F535;  **(Activity 5 min / 12:45-12:50pm)**
+&#x1F535;  **(Activity 5 min)**
 
 
 1. create a p tag with
@@ -231,7 +231,7 @@ An element can be placed on the page in many ways using the `display` property
 
 <br>
 
-## Describe some common techniques used in layout (5 min / 12:50-12:55pm)
+## Describe some common techniques used in layout (5 min)
 
 1. fluid layout
 	- use % widths so that content scales with the width of the browser
@@ -251,7 +251,7 @@ An element can be placed on the page in many ways using the `display` property
 
 <br>
 
-## List the different ways an element can be positioned (15 min / 12:55-1:10pm)
+## List the different ways an element can be positioned (15 min)
 
 Sometimes we do want elements to overlay each other.  In this case we can use the `position` property in conjunction with top/left properties to define layout the traditional way.
 
@@ -391,7 +391,7 @@ Add `z-index: 1;` to your `#square1` selector
 
 ![We Do](http://i.imgur.com/ylb6WX9.gif)
 
-&#x1F535;  **(Activity 20 min / 1:10-1:30pm)**
+&#x1F535;  **(Activity 20 min)**
 
 
 1. create a p tag with
