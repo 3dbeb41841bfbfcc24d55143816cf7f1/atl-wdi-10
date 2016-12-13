@@ -1,0 +1,22 @@
+{
+  "name": "js-dom-hw-progress-bars",
+  "version": "1.0.0",
+  "description": "Update the DOM in sync with a timer.",
+  "main": "hw.js",
+  "scripts": {
+    "test": "mocha spec/hw-spec.js && mocha spec/hw-spec.js -R json-stream > spec/.summary-report"
+  },
+  "keywords": [
+    "javascript",
+    "functions",
+    "dom"
+  ],
+  "author": "Matt Brendzel (matt.brendzel@generalassemb.ly)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "jsdom": "^9.4.5",
+    "mocha": "^3.0.2",
+    "mocha-jsdom": "^1.1.0"
+  }
+}
