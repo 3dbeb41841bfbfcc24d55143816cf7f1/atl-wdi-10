@@ -21,7 +21,7 @@ competencies: Front-end Development
 
 <br>
 
-## Define elements of standard layout and why they don't work on the web (10m / 11:00-11:10am)
+## Define elements of standard layout and why they don't work on the web (10m)
 
 ### The standard elements of layout
 
@@ -70,28 +70,25 @@ _From [www.theslate.org](http://www.theslate.org)_
 	- usually used to create space between sibling elements
 	- if two elements with top and bottom margins are placed on top of each other, the space between the two elements will be that of the larger margin
 	- _the space between pictures on the wall_
-
 <br>
 
 ![We Do](http://i.imgur.com/ylb6WX9.gif)
 
 &#x1F535; **(Activity 15m / 11:25-11:40am)**
 
-We're gonna set up a project in Cloud9 to work on the next few sections.
+We're gonna set up a project in `w02d02/student_labs` to work on the next few sections.
 
-1. Create a new Cloud9 workspace.    
-2. From the Terminal, `touch index.html style.css`
+1. mkdir css_lesson    
+2. From the Terminal, `touch css_lesson/index.html css_lesson/style.css`
 3. Link the CSS file in the `head` of your HTML
-
-I will Slack out a link to my Cloud9 so you can follow along and grab code if needed.
 
 Create an element with the following:
 
 - some short random content
-- yellow background
-- 1px solid black border
-- 10px padding
-- 10px margin
+- background-color #00bcd4
+- 5px solid red border
+- 25px padding
+- 25px margin
 - view the page
 
 
@@ -118,7 +115,7 @@ Create an element with the following:
 
 ![We Do](http://i.imgur.com/ylb6WX9.gif)
 
-&#x1F535;  **(Activity 15m / 11:50-12:05pm)** On your previous element
+&#x1F535;  **(Activity 15m)** On your previous element
 
 1. set height to 50px
 2. set width to 50px
@@ -133,7 +130,13 @@ Create an element with the following:
 
 <br>
 
-## List and define the different ways to display an element (15m / 12:05-12:20pm)
+## Calculating the actual size of an element
+**Width:** width + padding-left + padding-right + border-left + border-right
+**Height:**	height + padding-top + padding-bottom + border-top + border-bottom
+
+With `box-sizing: border-box;` "the padding and border press their way inside the box rather than expand the box. The result is a box the exact width you set it to be and can count on."
+
+## List and define the different ways to display an element (15m )
 
 An element can be placed on the page in many ways using the `display` property
 
@@ -143,7 +146,7 @@ An element can be placed on the page in many ways using the `display` property
 	- _create 2 divs with text inside_
 2. inline
 	- the element is placed on the same line as its other inline siblings
-	- width defaults to with width of the content
+	- width defaults to the width of the content
 	- width and height properties are ignored
 	- only horizontal margin and padding are respected (not top/bottom margin/padding)
 		- text must flow normally on the next line in a paragraph
@@ -187,6 +190,7 @@ An element can be placed on the page in many ways using the `display` property
 	- pixels.  most basic unit
 2. em
 	- a proportion of the element's font size
+  - default font size is 16px
 	- e.g. if the element's font-size is 16px, 0.5em is 8px
 3. rem
 	- a proportion of the browser's font size (or html)
@@ -248,8 +252,6 @@ An element can be placed on the page in many ways using the `display` property
 <br>
 
 ## List the different ways an element can be positioned (15 min / 12:55-1:10pm)
-
-
 
 Sometimes we do want elements to overlay each other.  In this case we can use the `position` property in conjunction with top/left properties to define layout the traditional way.
 
