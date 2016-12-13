@@ -1,0 +1,46 @@
+p {
+  background-color: #00bcd4;
+  border: 5px solid red;
+  /*border-width: 5px;
+  border-style: solid;
+  border-color: red;*/
+  padding: 25px; /* all sides */
+  margin: 25px;
+  /*padding: 25px 10px; /*top/bottom right/left */
+  /*padding: 10px 5px 40px 15px;*/
+  /*padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;*/
+}
+
+span {
+  text-transform: uppercase;
+}
+
+
+#container {
+    height: 500px;
+    width: 500px;
+    background-color: gray;
+}
+#square1 {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+#square2 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+#square3 {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+#square4 {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
