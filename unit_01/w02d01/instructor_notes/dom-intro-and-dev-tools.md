@@ -42,7 +42,7 @@ The DOM (Document Object Model) is the browser's intrepretation of the HTML. You
 
 examples: 
 
-- skeleton => HTML, body => DOM
+- blueprint => HTML, finished building => DOM
 - recipe ingredients => HTML, finished dish => DOM
 
 </details>
@@ -220,7 +220,7 @@ The console shell also allows us to execute Javascript and interact with the cur
 
 Let's try this:
 
-```
+```javascript
 > 1 + 1
 < 2
 

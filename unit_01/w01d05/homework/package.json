@@ -1,0 +1,22 @@
+{
+  "name": "js-basics-integrative",
+  "version": "1.0.0",
+  "description": "Learn about building an app, using good design principles.",
+  "main": "router.js",
+  "scripts": {
+    "test": "mocha spec/hw-spec.js"
+  },
+  "keywords": [
+    "javascript",
+    "variables",
+    "flow control",
+    "problem solving",
+    "application architecture"
+  ],
+  "author": "Matt Brendzel (matt.brendzel@generalassemb.ly)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}

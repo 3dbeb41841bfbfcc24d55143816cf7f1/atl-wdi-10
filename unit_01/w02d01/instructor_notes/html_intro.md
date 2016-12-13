@@ -12,7 +12,7 @@
 1. List some common tags that have attributes
 1. Describe what Semantic HTML means
 
-## Hook - 10 min (2:00-2:10pm)
+## Hook - 10 min
 
 - Fist to Five
     - 1 - Very uncomfortable
@@ -23,7 +23,7 @@
 
 <br>
 
-## Describe what HTML is - 10 min (2:10-2:20pm)
+## Describe what HTML is - 10 min
 
 HTML stands for "Hyper Text Markup Language". It is not a general purpose programming language like *JavaScript* or _Ruby_ but rather a _markup_ language, i.e. a language for representing structured text.
 
@@ -32,6 +32,18 @@ HTML stands for "Hyper Text Markup Language". It is not a general purpose progra
 HTML is the skeleton of a website. It is the *structured content* of the website. 
 
 > You can also think of HTML as a blueprint and the rendered page as a building structure
+
+<br>
+
+## YOU DO - Questions
+
+- What are self-closing tags? Give 3 examples. **(David + Sophia)**
+- Describe an HTML tag and it's components. **(Kiran + Michael)**
+- What are `link` and `script` tags used for? **(Kristina + Alan)**
+- What are the 4 tags that a basic html page must have. **(Alejandra + Daniel)**
+- What is Accessibility? Provide 2 examples of HTML tags that reflect this concept. **(Matt + Audrey + Deb)**
+
+<br>
 
 ![Anatomy of an HTML Document](images/anatomy-of-an-html-doc.jpg)
 
@@ -51,7 +63,7 @@ The `<head>` section is for metadata and the `<body>` section is for the visible
 
 <br>
 
-## Describe what a tag is - 5 min (2:20-2:25pm)
+## Describe what a tag is - 5 min
 
 HTML creates this meaning by surrounding text with tags.  Tags look like this: `<example-tag></example-tag>`.  Note that there is an opening and a closing part of the tag.  We call these "opening" and "closing" tags.
 
@@ -60,7 +72,7 @@ HTML creates this meaning by surrounding text with tags.  Tags look like this: `
 
 <br>
 
-## Describe what the content of a tag is - 5 min (2:25-2:30pm)
+## Describe what the content of a tag is - 5 min
 
 Between the opening and closing tags, we insert the text or "content" of the tag.  The final result would look like this: `<example-tag>Content Goes in here</example-tag>`.  Tags can also be placed within other tags:
 
@@ -91,11 +103,11 @@ Note that when placing a tag inside another tag, you should indent the new tag t
 
 ![We Do](http://i.imgur.com/6Kce0ca.png)
 
-#####WE DO - 20 min (2:30-2:50pm)
+#####WE DO - 20 min
 
 As a quick review, I will give you some examples of broken HTML and you tell me what's wrong with them. 
 
-[HTML Fixit](../instructor_examples/html_fixit.md)
+[HTML Fixit](./html_fixit.md)
 
 <hr>
 
@@ -104,7 +116,7 @@ As a quick review, I will give you some examples of broken HTML and you tell me 
 ![We Do](http://i.imgur.com/6Kce0ca.png)
 
 
-# WE DO - CODE ALONG -  90 min (2:50-4:20pm)
+# WE DO - CODE ALONG -  90 min 
 
 
 ## List some common tags
@@ -140,9 +152,21 @@ Every site should start with:
 **YOU DO**
 
 1. Create the initial structure of the page
+    - `cd ~/dev`
+    - `mkdir html_css_intro`
+    - `cd` into the folder
+    - `touch index.html`
+    - `atom .`
+    - Create the basic html structure
 2. Add meta tags for external `css` and `javascript` files.
 
 <br>
+
+**YOU DO - 2 minutes**
+
+I want you to put every html tag you can think of into Slack with a description. Don't worry about duplicates and don't overthink it. Just type 'em in there!
+
+For example: `<p></p>` - paragraph tag, block element, used for basic text on a page
 
 ### basic tags
 
@@ -176,6 +200,8 @@ See also [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.a
 <br>
 
 **YOU DO**
+
+In the `index.html` file you created earlier...
 
 1. Add a `header` tag for your post WDI plans
 2. Add `title` tags and empty `nav` tags inside the `body` 
@@ -213,6 +239,8 @@ Some elements are not structural, but actually make the content display differen
 <br>
 
 **YOU DO**
+
+In the `index.html` file you created earlier...
 
 1. Add a `ul` with 4 `li` tags to your `nav`
 2. Add styled text tags to some piece of content
@@ -266,6 +294,8 @@ We can add more meaning to a tag by adding "attributes" to it.  It looks like `<
 
 **YOU DO**
 
+In the `index.html` file you created earlier...
+
 1. Add a link to your GitHub repo in the `footer` section of your page.
 2. Add an image to your page
 
@@ -290,7 +320,7 @@ _STOP READING HERE AND WORK ON THE [HTML PRACTICE EXERCISE](../student_labs/html
 
 <br>
 
-## Review Questions - 10 min (4:20-4:30pm)
+## Review Questions - 10 min
 
 1. Why should we use the `<strong>` tag instead of the `<b>` tag?
 2. What does Accessibility mean?
@@ -301,7 +331,7 @@ _STOP READING HERE AND WORK ON THE [HTML PRACTICE EXERCISE](../student_labs/html
 ![Imgur](http://i.imgur.com/WzTTdIe.jpg)
 
 
-## Labtime - 60 min (4:30-5:30pm)
+## Labtime - 60 min
 
 ### Exercise #1
 
