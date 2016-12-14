@@ -51,11 +51,10 @@ jQuery is a client side library, which means we need to include it in our HTML. 
 1. Reference jQuery from a server on the internet:
 
 	- Directly from jQuery's website (http://code.jquery.com/)
-	`<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>`
-	From a CDN (content delivery network) like [CDNJS](https://cdnjs.com/) or [Google Hosted Libraries](https://developers.google.com/speed/libraries/)
-
-
-	`<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>`
+	`<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>`
 
 2. Download a copy of jQuery to host on your own server:
 
@@ -75,7 +74,7 @@ Minified scripts can be difficult to read, so most servers that host jQuery and 
 
 **Even if you don't fully understand the code, it's a good exercise to visit code.jquery.com and take a look at minified and non-minified jQuery.**
 
-EXERCISE: Take 20 minutes to explore the jQuery documentation. The first step in understanding any new language or tool is to familiarze yourself with the doucmentation.
+EXERCISE: Take 20 minutes to explore the jQuery documentation. The first step in understanding any new language or tool is to familiarize yourself with the documentation.
 
 http://learn.jquery.com/using-jquery-core/
 https://api.jquery.com/
@@ -85,36 +84,37 @@ I'd like all of you to come back in 20 minutes with one thing to share about jQu
 ## DOM manipulation with jQuery - Intro (40 mins)
 
 Before we get into jQuery, let's just think about how we would perform the following tasks:
+
   - `select` a DIV and change it's content
   - `append` a new DIV with some content to a web page
   - `listen` for events on a collection of DIVs or other HTML elements
 
 
 
-#### First, let's just talk about some differences in jQuery syntax
+#### First, let's talk about some differences in jQuery syntax
 
 Four things to keep in mind:
 
-1. jQuery always starts with a `$` this might seem weird, but it's really just a variable. jQuery is essentially a giant object with a tond of methods and at the beginning it says:
+1. jQuery always starts with a `$` this might seem weird, but it's really just a variable. jQuery is essentially a giant object with a ton of methods and at the beginning it says:
 
 	```javascript
 	var $ = jQuery = {
-		// all of jquery!
+		// all of the jquery sourcecode!
 	}
 	```
 
-2. Every response in jQuery is returned inside of jQuery object that looks like this
+2. Every response in jQuery is returned inside of `jQuery object` that looks like this
 
 	```
 	$('h1'); // query for all <h1> tags
 	=> [ <h1>first h1</h1>, <h1>second h1</h1> ]
 	```
 
-	In order to call jQuery methods on a node. It must be wraped in a jquery object `[ ]`
+	In order to call jQuery methods on a node. It must be wrapped in a jquery object `[ ]`
 
 3. jQuery objects look like arrays! Sorry all, they're close to arrays, they're almost arrays, they're array-like. But in jQuery land they're not arrays... they're jQuery objects.
 
-4. Final thing to keep in mind is that when we create variables that hold jQuery objects we always preface the evariable with a `$`
+4. Final thing to keep in mind is that when we create variables that hold jQuery objects we always preface the variable with a `$`
 
 ```
 var $everyH1 = $('h1'); // query for all <h1> tags
@@ -125,9 +125,9 @@ $everyH1
 
 ```
 
-This is just a good practice to help distinguish our jQuery code from our regular Javscript.
+This is just a good practice to help distinguish our jQuery code from our regular Javascript.
 
-Why is this good practice? Because _remember_ every node created or queried using jQuery, is returned in a jQuery object, which looks like an array but is not an array.
+Why is this good practice? Because every node created or queried using jQuery, is returned in a jQuery object, which looks like an array but is not an array.
 
 
 #### let's just talk about selecting an element with jQuery
@@ -297,8 +297,7 @@ So, let's imagine we have a web page with the following content on it:
       <div class="innerItem innerItemHeader">Enjoy some hipster ipsum:
       </div>
       <div class="innerItem">
-      	Aesthetic migas paleo McSweeney's, pork belly Kickstarter Echo Park
-      	sriracha keytar disrupt viral drinking vinegar fanny pack typewriter.
+      	Aesthetic migas paleo McSweeney's, pork belly Kickstarter Echo Park sriracha keytar disrupt viral drinking vinegar fanny pack typewriter.
       </div>
    </div>
 </body>
@@ -334,9 +333,6 @@ $('#outerContainer').append($newDiv);
 ```
 
 ## Forms
-
-
-On Tuesday, Matt introduced forms in html.
 
 I'm going to briefly talk about forms, default functionality, and how to use jquery to use the text a user input.
 
