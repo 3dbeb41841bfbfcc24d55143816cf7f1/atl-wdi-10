@@ -1,0 +1,35 @@
+/*
+General Assembly, WDI (Web Development Immersive) Remote, Cohort 02 (R2D2)
+Copyright (C) 2016 Matt Brendzel under the GNU General Public License.
+See LICENSE for details.
+*/
+
+body {
+  padding: 10px 20% 10px;
+  text-align: center;
+}
+
+main, aside {
+  padding: 10px;
+  border: 1px black solid;
+  background-color: #EEEEEE;
+}
+
+main section {
+  padding: 0 30% 0;
+  font-size: 3em;
+}
+
+main section button {
+  height: 3em;
+  min-width: 5em;
+}
+
+aside hr {
+  width: 60%;
+}
+
+aside ol {
+  font-size: 2em;
+  margin: 0 30% 0;
+}
