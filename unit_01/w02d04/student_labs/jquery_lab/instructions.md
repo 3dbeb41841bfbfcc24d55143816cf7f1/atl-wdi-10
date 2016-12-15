@@ -15,4 +15,4 @@ Use jQuery!!
 	- Hide the other remaining teams
 	- Upon clicking anywhere, it will display all teams again and the `<p>` tag will be removed
 
-- [Bonus] Style this page and make it sexy!
+- [Bonus] Style this page and make it stylish!
