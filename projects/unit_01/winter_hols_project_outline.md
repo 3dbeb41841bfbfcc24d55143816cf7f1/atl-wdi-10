@@ -22,6 +22,7 @@ Complete at least 1 CodeWars challenge from our curated list per day, with an ex
 
 ## STUDENT SUPPORT DURING THE TWO WEEKS
 
+- Project tracker
 - Debugging Channel
 - Github Issues 
 - Your buddy
