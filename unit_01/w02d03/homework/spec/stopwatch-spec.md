@@ -35,7 +35,7 @@
 ```markdown
 1.  If the stopwatch is not running,
   a. it sets the state of the stopwatch to 'running'.
-  b. it calls `advanceTheClock` in order to start the ticking of the clock.
+  b. it calls `tickClock` in order to start the ticking of the clock.
 2.  If the stopwatch is running,
   a. it does nothing.
 ```
