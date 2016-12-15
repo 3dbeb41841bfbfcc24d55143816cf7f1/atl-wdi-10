@@ -1,6 +1,6 @@
 
 ## FIRST WEEKEND PROJECT (2.5 DAYS)
-This assignment would be given Friday evening for students to complete over the weekend (Tic-Tac-Toe, Hangman, Pokemon Battle game, or something similar).
+This assignment would be given Friday evening for students to complete over the weekend.
 
 ## Meet with Partner (~5 hours)
 
