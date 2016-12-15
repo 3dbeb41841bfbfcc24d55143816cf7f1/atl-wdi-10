@@ -132,4 +132,9 @@ describe('w02 Diagnostic', function(){
       });
     });
   });
+  
+  after(function(){
+    sitepage.close();
+    phInstance.exit();
+  });
 });
