@@ -1,0 +1,11 @@
+body {
+	background-color: papayawhip;
+}
+
+.show {
+	display: block
+}
+
+.hide {
+	display:none;
+}
