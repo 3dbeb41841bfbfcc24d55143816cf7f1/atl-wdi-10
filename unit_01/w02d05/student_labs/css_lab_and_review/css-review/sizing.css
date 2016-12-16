@@ -1,0 +1,56 @@
+.el{
+  width:10em;
+}
+
+.el{
+  border:5px solid red;
+}
+
+.el{
+  margin:5px;
+}
+
+.el{
+  outline:5px solid red;
+}
+
+.el{
+  margin:5px 5px 10px 10px;
+}
+
+.el{
+  padding:5px;
+}
+
+.el{
+  margin:5px 10px;
+}
+
+.el{
+  width:50px;
+  border:5px solid red;
+  padding:5px;
+}
+
+.el{
+  padding:5px 5px 10px 10px;
+}
+
+.el{
+  width:10%;
+}
+
+.el{
+  width:10vw;
+}
+
+.el{
+  width:10vh;
+}
+
+.el{
+  width:50px;
+  border:5px solid red;
+  padding:5px;
+  box-sizing:border-box;
+}

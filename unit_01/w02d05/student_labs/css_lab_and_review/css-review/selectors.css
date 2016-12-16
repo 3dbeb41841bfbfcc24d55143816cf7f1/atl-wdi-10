@@ -1,0 +1,57 @@
+.el{
+  outline:1px solid red;
+}
+
+a:before{
+  content:"link: ";
+  outline:1px solid red;
+}
+
+p.el{
+  outline:1px solid red;
+}
+
+p{
+  outline:1px solid red;
+}
+
+p .el{
+  outline:1px solid red;
+}
+
+section p:nth-of-type(2n+1){
+  outline:1px solid red;
+}
+
+.el p{
+  outline:1px solid red;
+}
+
+input[type=radio]~label{
+  outline:1px solid red;
+}
+
+a:active:after{
+  content:"!";
+  outline:1px solid red;
+}
+
+input[type=radio]:checked+label{
+  outline:1px solid red;
+}
+
+a:hover{
+  outline:1px solid red;
+}
+
+input[type=radio]+label{
+  outline:1px solid red;
+}
+
+a:active{
+  outline:1px solid red;
+}
+
+section p:nth-of-type(2n){
+  outline:1px solid red;
+}

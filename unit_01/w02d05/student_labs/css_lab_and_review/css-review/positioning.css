@@ -1,0 +1,34 @@
+.el{
+  position:relative;
+  top:10px;
+  left:20px;
+}
+
+.el{
+  float:left;
+}
+
+.el{
+  text-align:center;
+}
+
+.el{
+  position:absolute;
+  top:10px;
+  left:20px;
+}
+
+.el{
+  position:fixed;
+  top:10px;
+  left:20px;
+}
+
+.el{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.el{
+  float:right;
+}
