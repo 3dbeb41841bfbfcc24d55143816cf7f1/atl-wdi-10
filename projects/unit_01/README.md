@@ -44,6 +44,7 @@ You will come with your choice of project, pseudo-code, wireframes and user stor
 5. Project tracker: link [here](https://docs.google.com/spreadsheets/d/1F-JlNmi1u0Ajuqe0JcAX_Y5FYagpb89B47YvmOnvNtY/edit#gid=0)
 6. Ask questions and communicate with your classmates over the Debugging Channel
 7. Post to Stack Overflow, be sure to follow the format for submitting bug reports, provide lots of context!
+
 ## Formatting your GitHub Issue for wdi-remote to ask for help
 
 *PUSH OFTEN! Your code on GitHub should be up to date. Submitting an issue and linking your classmates to old, out-of-date code will hinder the process.*
@@ -52,7 +53,7 @@ You will come with your choice of project, pseudo-code, wireframes and user stor
   - Write a detailed explanation of the feature or user story you're working on.
 
 2. **DETAILED DESCRIPTION OF THE BUG/ERROR:**
-  - A detailed description of the problem, the bug, and/or the error. This means: the full steps to reproduce, a link to the file on github, and the line number of where the relavent code is.
+  - A detailed description of the problem, the bug, and/or the error. This means: the full steps to reproduce, a link to the file on github, and the line number of where the relevant code is.
 The error(s) returned, copy and pasted/typed out/screenshot, not paraphrased.
   - If there is other code in a different file that is also essential to the functioning of the code that currently works point us to that and explain the relationship.
 
