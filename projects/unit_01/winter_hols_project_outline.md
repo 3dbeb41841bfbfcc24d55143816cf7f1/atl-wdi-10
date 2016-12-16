@@ -1,3 +1,7 @@
+## Screen recording of in-class intro the Winter assignments!
+
+https://youtu.be/LzQcfb6P8_w 
+
 
 ## FIRST WEEKEND PROJECT (2.5 DAYS)
 
