@@ -31,7 +31,7 @@ Remember: being a good web designer is like being a good artist. We can teach yo
 
 Walk through these [slides](html_css_review.pdf) with your buddy.
 
-## You Do: CSS Crash Course (30 min)
+## You Do: CSS Crash Course (25 min)
 
 In pairs, please work to complete this exercise:
 
@@ -45,13 +45,17 @@ Work on them in this order:
 
 ## Questions (15 min)
 
+Each group will share one question or something they learned.
+
 ## You Do: Wendy Bite (30 min)
 
 Please count off again, and complete this exercise:
 
 [Wendy Bite](./wendy_bite)
 
-## Questions (10 min)
+## Questions (15 min)
+
+Each group will share one question or something they learned.
 
 ## Conclusion
 
