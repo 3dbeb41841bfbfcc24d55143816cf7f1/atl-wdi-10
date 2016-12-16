@@ -44,6 +44,7 @@ You will come with your choice of project, pseudo-code, wireframes and user stor
 5. Project tracker: link [here](https://docs.google.com/spreadsheets/d/1F-JlNmi1u0Ajuqe0JcAX_Y5FYagpb89B47YvmOnvNtY/edit#gid=0)
 6. Ask questions and communicate with your classmates over the Debugging Channel
 7. Post to Stack Overflow, be sure to follow the format for submitting bug reports, provide lots of context!
+8. Javascript and Jquery [videos](https://www.youtube.com/playlist?list=PLw1xVKFboueks5UMLogE01mdThRU577oa) produced by GA! 
 
 ## Formatting your GitHub Issue for wdi-remote to ask for help
 

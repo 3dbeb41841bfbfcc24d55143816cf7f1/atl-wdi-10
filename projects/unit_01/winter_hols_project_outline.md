@@ -11,7 +11,7 @@ You will meet with your week two buddy after the weekend assignment to go over b
 
 One student from the group will submit another GitHub issue with a link to the updated assignment and notes about what the group talked about, problems solved, encountered, etc.
 
-##  UNIT 1 GAME PROJECT (BLACKJACK OR CONNECT FOUR) (5-6 DAYS)
+##  UNIT 1 GAME PROJECT (BLACKJACK OR CONNECT FOUR) (5 - 6 DAYS)
 
 Outlined in the projects directory of the repo:
 
@@ -51,6 +51,7 @@ Remember to sleep!
 ## STUDENT SUPPORT DURING THE TWO WEEKS
 
 - Project tracker: link [here](https://docs.google.com/spreadsheets/d/1F-JlNmi1u0Ajuqe0JcAX_Y5FYagpb89B47YvmOnvNtY/edit#gid=0)
+- Javascript and Jquery [videos](https://www.youtube.com/playlist?list=PLw1xVKFboueks5UMLogE01mdThRU577oa) produced by GA!
 - Ask questions and communicate with your classmates over the Debugging Channel
 - Create Github Issues asking your question and share the link in the debugging channel
 - Your buddy!
