@@ -49,7 +49,7 @@ Each group will share one question or something they learned.
 
 ## You Do: Wendy Bite (30 min)
 
-Please count off again, and complete this exercise:
+Complete this exercise with your buddy:
 
 [Wendy Bite](./wendy_bite)
 
