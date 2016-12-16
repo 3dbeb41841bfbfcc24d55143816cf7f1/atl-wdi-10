@@ -6,7 +6,7 @@
 
 ### The game
 
-[Blackjack](http://en.wikipedia.org/wiki/Blackjack) is a one player game where people down on their luck generally transform their lives.  It's probably a thing in your universe, but feel free to read up on it if you have to.
+[Blackjack](http://en.wikipedia.org/wiki/Blackjack) is a one player game where people down on their luck generally transform their lives.  It's probably a thing in your universe, but feel free to read up on the rules if you have to.
 
 ## Project Details
 
@@ -20,7 +20,6 @@ Your game of Blackjack must have at minimum:
 4. A way for the player to bust
 5. A way for the player to win
 6. Game logic for the dealer to hit until a certain point
-
 
 ### Recommended features
 
@@ -65,15 +64,18 @@ You will be expected to use the following technologies to implement this project
 As a student you should be doing the following things:
 
 - **Code Planning**
+
   Plan out your project before you begin. Pseudo-code your project thoroughly! What data structures will you need (objects, arrays)? How will you organize your code? Pseudo-code out any thorny issues you might already anticipate.
-  
+
 - **User Experience planning** What **layout** will your project have on the page (wireframes)? Check out `https://wireframe.cc/` for an in-browser wireframer, or just make a sketch and upload the image somewhere. Write *user stories* from the perspective of the user: "As a user I want to be able to click on x and have y happen". Sign up for Trello `https://trello.com/`, a handy to-do list style project planner.
 
 - **Version Control**  
-  Use **git** and **github** for version control, and make frequent incremental commits to prevent large scale implosions. Make a fresh repo outside the class repo for your project. 
+  Use **git** and **github** for version control, and make frequent incremental commits to prevent large scale implosions. Make a fresh repo outside the class repo for your project.
 
-- **Hosting**  
-  Host your application on **githubpages**, or something similar so the class and instructors can use it. Your game must be in its own repo (not in the class repo) in order to have it hosted. 
+- **Hosting [OPTIONAL]**  
+  Host your application on **githubpages**, or something similar so the class and instructors can use it. Your game must be in its own repo (not in the class repo) in order to have it hosted.
+
+  Documentation / walkthrough [here](https://pages.github.com/). In the first step select the `Start from scratch option` instead of ~`Generate a site`~.
 
 ### Us
 
@@ -98,10 +100,10 @@ Are you able to defend why you implemented your solution in a certain way? Can y
 
 By the time the project is over, we will expect the following from you:
 
-* A **working game, built by you**, hosted somewhere on the internet
-* A **link to your hosted working app** 
+* A **working game, built by you**,
+* A **link to your hosted working app** [Optional]
 * A **git repository hosted on Github**  NOT inside your wdi-remote repository. Frequent commits dating back to the very beginning of the project
-* **A ``readme.md`` file** with explanations of the technologies used, the approach taken, a link to your live site, installation instructions, unsolved problems, etc.
+* **A `readme.md` file** with explanations of the technologies used, the approach taken, a link to your live site, installation instructions, unsolved problems, etc.
 
 Most importantly a **technical demonstration** of your app which:
 
@@ -120,7 +122,7 @@ Most importantly a **technical demonstration** of your app which:
 ​
 * **Wireframe** Make a drawing of what your app will look like in all of the stages of the game (what does it look like as soon as you log on to the site? What does it look like while the player is playing? What does it look like when the player wins / loses?).
 
-* **Break the project down into different components** (data, presentation, views, style, DOM manipulation) and brainstorm each component individually. 
+* **Break the project down into different components** (data, presentation, views, style, DOM manipulation) and brainstorm each component individually.
 
 * **Use your Development Tools** (console.log, inspector, alert statements, etc) to debug and solve problems
 
