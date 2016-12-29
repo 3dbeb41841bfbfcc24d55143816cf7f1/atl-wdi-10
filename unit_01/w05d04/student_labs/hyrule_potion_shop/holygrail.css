@@ -1,0 +1,55 @@
+body{
+  min-height:100vh;
+}
+main{
+  /* display: */
+}
+.content{
+  /* flex-grow: */
+}
+aside{
+  /* order: */
+}
+
+main>*{
+  background-color:#eee;
+  margin:10px;
+}
+main>*:not(:nth-child(1)){
+  margin-left:0px;
+}
+header, footer{
+  background-color:#ccc;
+}
+
+nav, aside{
+  min-width:160px;
+  max-width:160px;
+}
+
+@media screen and (max-width: 620px){
+  main{
+    /* flex-direction: */
+  }
+  main>*:not(:nth-child(1)){
+    margin-left:10px;
+    margin-top:0px;
+  }
+  nav{
+    /* order: */
+  }
+  aside{
+    /* order: */
+  }
+  nav ul{
+    text-align:center;
+  }
+  nav figure img{
+    width:100px;
+    float:left;
+  }
+  nav, aside{
+    min-width:none;
+    max-width:none;
+  }
+}

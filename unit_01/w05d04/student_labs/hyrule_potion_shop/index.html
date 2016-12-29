@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="holygrail.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+window.onload = function(){
+  if(document.querySelectorAll("section:target").length == 0){
+    window.location = "#potions";
+  }
+}
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Hyrule Potion Store</h1>
+    </header>
+
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#potions">Potions</a></li>
+          <li><a href="#bottles">Things in bottles</a></li>
+          <li><a href="#other">Other</a></li>
+        </ul>
+        <figure>
+          <img src="images/owner.png" />
+          <figcaption>Welcome to my store! For 18 years, we've been Hyrule Castle's go-to source for potions in all colors, bugs in bottles, fish in bottles, ghosts in bottles, and pretty much anything else you can think of in bottles.</figcaption>
+        </figure>
+      </nav>
+      <aside>
+        <figure>
+          <img src="images/link.png" />
+          <figcaption>Have you seen this rapscallion? He's wanted for breaking, entering, destroying clay pots, and stealing rupees. Reward: A date with Princess Zelda.</figcaption>
+        </figure>
+      </aside>
+      <div class="content">
+        <section id="potions">
+          <h2>Potions</h2>
+          <figure>
+            <img src="images/potion/blue.png" />
+            <figcaption>This delicious, vegan, blueberry-flavored elixir is perfect after a long day of destroying clay pots that don't belong to you.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/potion/green.png" />
+            <figcaption>Don't let the color scare you! This is made from the freshest kale greens and wheatgrass shoots. Contains spirulina.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/potion/red.png" />
+            <figcaption>Sriracha is great on food; why not put it in potions? Aged in oak casks for 1 year beneath Lake Hylia, this potion pairs wonderfully with medium-rare steak.</figcaption>
+          </figure>
+        </section>
+        <section id="bottles">
+          <h2>Bottles</h2>
+          <figure>
+            <img src="images/bugs.png" />
+            <figcaption>Feeling hungry? Try this as a protein-rich post-workout snack &mdash; you've earned it!</figcaption>
+          </figure>
+          <figure>
+            <img src="images/poe.png" />
+            <figcaption>This is the ghost of my mother-in-law. The price is so low, I'll actually pay you to take it.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/fish.png" />
+            <figcaption>Simply immerse yourself in this bottle and enjoy a gentle exfoliation provided by these little guys. The latest rage in Asian spa treatments!</figcaption>
+          </figure>
+        </section>
+        <section id="other">
+          <h2>Other</h2>
+          <figure>
+            <img src="images/fire.png" />
+            <figcaption>Tired of traditional romantic atmospheres? Try lighting a blue candle to provide a delightfully depressing atmosphere.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/fairy.png" />
+            <figcaption>The multi-tool of bottled objects, fairies provide a light source, a listening ear, an occasional granting-of-wishes, and, in a pinch, a light meal.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/nut.png" />
+            <figcaption>Is this the ripened ovule of an enormous angiosperm? Is it a fossil of a now-extinct species of Pac-Men? Is it simply an enormous mussel, waiting for steaming? We're not sure!</figcaption>
+          </figure>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Visit us in Hyrule Castle, 24 hours a day, next to the Bombchu Shop.</p>
+    </footer>
+  </body>
+</html>
