@@ -1,0 +1,44 @@
+html{
+  background-color:black;
+}
+body{
+  position:relative;
+  width:450px;
+  height:450px;
+  margin:0 auto;
+  margin-top:100px;
+  font-size:0;
+}
+div{
+  position:absolute;
+  top:0;
+  left:0;
+}
+hr{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  display:inline-block;
+  width:50px;
+  height:50px;
+  border-color:rgba(255,255,255,0.3);
+  border-style:dashed;
+  border-width:0 1px 1px 0;
+  opacity:0.3;
+}
+
+.replaceMe{
+  background-color:#f00;
+}
+
+.replaceMe{
+  background-color:#0f0;
+}
+
+.replaceMe{
+  background-color:#00f;
+}
+
+.replaceMe{
+  opacity:0.7;
+}
