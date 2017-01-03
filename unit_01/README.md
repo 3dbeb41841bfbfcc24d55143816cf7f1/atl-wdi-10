@@ -32,8 +32,8 @@
 | Monday                            | Tuesday               | Wednesday                    | Thursday                                        | Friday               |
 |-----------------------------------|-----------------------|------------------------------|-------------------------------------------------|----------------------|
 | Holiday                           | Holiday Project Demos | Advanced Pseudo Selectors    |CSS and jQuery Transitions/Animation/Transform   |Fonts and Responsive Design  |
-|                                   |                       | Diagnostic                   |                                                 |Project Management, User stories, GitHub Issues|
-|                                   | Advanced Inline Layout and Floats | Outcomes         | FlexBox                                         | Project Intro |
+|                                   |Advanced Inline Layout and Floats     | Diagnostic    |Flexbox                                          |Project Management, User stories, GitHub Issues|
+|                                   |                       | Outcomes                     |                                                 |Project Intro |
 
 
 ### Supplemental Reading
