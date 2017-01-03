@@ -36,9 +36,9 @@ competencies: CSS
 Advanced selectors help eliminate extra classes.  They provide no new functionality, but they make your code cleaner. Some examples are:
 
 - family selectors 
-    - `*` selects everything
+    - `* {}` selects everything
 - attribute selectors 
-    - `a[href="http://www.google.com"]` selects any `a` element with an `href` value of "http://www.google.com"
+    - `a[href="http://www.google.com"] {}` selects any `a` element with an `href` value of "http://www.google.com"
 
 <br>
 
@@ -58,7 +58,7 @@ Pseudo-selectors all start with a colon. So if I wanted to select every `div` th
 
 ## Pscavenger Hunt
 
-There are lots of CSS advanced and pseudo-selectors, and they're really useful. Look up each of the selectors below, and write down what it does. 
+There are lots of CSS advanced and pseudo-selectors, and they're really useful. Look up each of the selectors below, write down what it does and provide an example. Each group will come back and share what they learned.
 
 For reference, http://www.w3schools.com/cssref/css_selectors.asp
 
@@ -130,29 +130,15 @@ You can do **very simple math** in these pseudo-selectors. If I wanted to select
 
 `n` is the number of the current element. So when CSS looks at the first `li`, it multiples `3 * 1`, and actually selects the 3rd `li`. When CSS looks at the second `li`, it multiplies `3 * 2`, and actually selects the 6th `li`.
 
-If I wanted to select the first 4 `li`, I'd use `li:nth-child(-n + 4)`. When the browser looks at the first `li`, it evaluates `-1 + 4`, and selects the 4th indexed `li`. When it looks at the second `li` it evaluates `-2 + 4` and selects the 3rd indexed `li`.
-
+If I wanted to select the first 4 `li`, I'd use `li:nth-child(-n + 4)`. When the browser looks at the first `li`, it evaluates `-1 + 4`, and selects up to the 4th `li`. 
 
 ### Odds and evens
 
-You *could* do `:nth-child(2n)`, but you can also just use the words "odd" and "even", as in `:nth-child(odd) and `:nth-child(even)`.
+You *could* do `:nth-child(2n)`, but you can also just use the words "odd" and "even", as in `:nth-child(odd)` and `:nth-child(even)`.
 
 Here's a handy site for demonstrating all this:
 
 https://css-tricks.com/examples/nth-child-tester/
-
-### Negate a selector
-
-1. :not()
-	- selects everything except whatever elements are selected by the selector inside the parentheses
-
-Add this to your Codepen.io
-
-```css
-:not(div) {
-  color: orange;
-}
-```
 
 ### Getting really crazy
 
@@ -212,7 +198,7 @@ input[type=radio]:checked+label{
 
 Why go to all that trouble on the radio button?
 
-I'd use `display:none`, but in some (dumb) browsers, display:none means the element isn't included in form submissions.
+I'd use `display:none`, but in some (dumb) browsers, `display:none` means the element isn't included in form submissions.
 
 <br>
 
@@ -264,7 +250,7 @@ section:target{
 
 ## Pseudo-selector translation
 
-With the person at your table, write out *in English* what each of the following is selecting:
+In groups, write out *in English* what each of the following is selecting:
 
 - `*:first-letter:after`
 - `input:checked+label:hover`
@@ -280,25 +266,14 @@ With the person at your table, write out *in English* what each of the following
 
 ## Lab 1 - Make CSS proud to be American
 
-To begin, I'd like you to "warm up" by using CSS to take an HTML table and make it look like the American flag.
+Look in today's student labs folder for `murican_css`
 
-I've provided the table. However, there are no classes or IDs on any of the elements. Nonetheless, your goal is to accomplish this *without* touching the HTML at all -- just the CSS.
+Let's use CSS to take an HTML table and make it look like the American flag. I've provided the table. However, there are no classes or IDs on any of the elements. Nonetheless, your goal is to accomplish this *without* touching the HTML at all -- just the CSS.
 
-You may have never used the CSS involved here before, so as you work on this, think about what you'd need to Google to make this happen. When you successfully Google something, **please write down what you Googled**.
-
-Please work individually:
-
-https://github.com/ga-dc/murican_css
-
-#### What did you Google?
-
-#### What were the results?
-
-### Let's look at the solution...
 
 <br>
 
 
 ## Lab 2 - CSS Color Box
 
-https://github.com/ga-dc/css_color_box
+Look in today's student labs folder for `css_color_box`

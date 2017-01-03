@@ -46,9 +46,7 @@ The easiest way to do this is with [prefix free](http://leaverou.github.io/prefi
 
 ## Group Breakouts (50 minutes)
 
-Breakout into groups of 4... each group will have 20 minutes to prepare a short
-explanation / demo of their assigned topic. Your demos should take **no longer than
-5 minutes**.
+Each group will have 20 minutes to prepare a short explanation / demo of their assigned topic. Your demos should take **no longer than 5 minutes**. Explore the next topic if you finish yours.
 
 | Group | Topic                                              |
 |-------|----------------------------------------------------|
@@ -177,6 +175,13 @@ Transitions are great for going from one state to another, but sometimes you nee
 </details>
 <br>
 
+
+## Extra Reading
+
+There are a lot of pre-built CSS libraries out there that are easy to include in your app. Here's a sample: https://www.sitepoint.com/top-9-animation-libraries-use-2016/
+
+<br>
+
 ## Using jQuery for animations
 
 
@@ -189,9 +194,11 @@ Take 5 minutes and read through these two links:
 
 <br>
 
+jQuery can be useful for animations because you can pass in a callback function and potentially chain methods together.
+
 ### `fadeIn()`
 
-jQuery has some simple animations methods like `fadeIn()` for example. Let's try this in Codepen.io (make sure to add jQuery under settings.
+jQuery has some simple animations methods like `fadeIn()` for example. Let's try this in Codepen.io (make sure to include the jQuery library under Settings -> Quick Add).
 
 1. html:
 
@@ -211,7 +218,7 @@ jQuery has some simple animations methods like `fadeIn()` for example. Let's try
 1. javascript:
 
     ```js
-$('#box1').fadeIn(3000);
+$('#box1').fadeIn(3000).fadeOut(4000);
 ```
 Here are some [common jQuery effects](http://www.w3schools.com/jquery/jquery_ref_effects.asp) you can use.
 
@@ -242,7 +249,7 @@ Here are some [common jQuery effects](http://www.w3schools.com/jquery/jquery_ref
 $("button").click(function(){
       $("#box2").animate({
         height: 'toggle'
-    }, 4000);
+      }, 4000);
 });
 ```
 
@@ -254,11 +261,10 @@ $("button").click(function(){
 
 ## Lab
 
-Work with a partner to implement as many of these exercises as you can:
+Look in today's student labs folder and complete as many of these exercises as you can:
 
 * [CSS Accordion](https://github.com/ga-dc/css-accordion)
 * [DolphinCat!](https://github.com/ga-dc/dolphin-cat-css-animations)
-* [Clock](https://github.com/adambray/clock-bro)
 
 ### Bonuses
 
@@ -269,6 +275,8 @@ starter code as possible.
 * [Image Hover Effects](http://tympanus.net/Tutorials/OriginalHoverEffects/) (Transitions and Animations)
 * [Solar System in CSS](http://neography.com/journal/our-solar-system-in-css3/) (Transitions and Animations)
 
+<br>
+
 ## Questions / Recap
 
 ### CSS / JS Animations
@@ -277,6 +285,7 @@ CSS Animations are easy and mostly compatible, so they're often a good choice
 for basic animation needs. For anything more complex, such as animation that
 depends on user input, you'll need to use Javascript. There are good libraries
 for animation, including jQuery UI, and [GSAP (Greensock Animation Platform)](http://greensock.com/gsap)
+
 
 
 

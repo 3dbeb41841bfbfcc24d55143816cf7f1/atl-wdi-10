@@ -1,6 +1,7 @@
 # Flexbox
 
 Screencasts
+
 - [Part 1](http://youtu.be/wBlBTO7mqoI)
 - [Part 2](http://youtu.be/_I58MXDnBEs)
 
@@ -32,6 +33,8 @@ Let's start out by talking about a problem that anybody who has written CSS has 
 ![centered div](http://i.imgur.com/2jbrXMp.png)
 
 #### You Tell Me: What Should I Try?
+
+Open up a new Codepen.io and copy the starter code below. Try to center the div.
 
 ```html
 <body>
@@ -202,8 +205,10 @@ Time for you to research some more Flexbox properties. You will be split into gr
 - `flex-grow`
 - `flex-wrap`
 - `order`
+- `flex-basis`
 
 Your task is to...
+
 * Come up with [ELI5 ("Explain Like I'm 5")](https://www.reddit.com/r/explainlikeimfive) definition for the property.
 * List the different values this property can take.
 * Create [a Codepen](http://codepen.io) demonstrating the property's usage.
@@ -296,18 +301,10 @@ body {
 
 [Example](http://codepen.io/takeradi/pen/MyYqKX)
 
-## You Do: [Hyrule Potion Shop](https://github.com/ga-dc/hyrule_potion_shop) (10 minutes / 1:25)
+## Lab #1: [Hyrule Potion Shop](https://github.com/ga-dc/hyrule_potion_shop) (10 minutes / 1:25)
 
-## Break (10 minutes / 1:35)
+## Lab #2: [Airbnb](https://github.com/ga-wdi-exercises/css-airbnb) (30 minutes / 2:05)
 
-## You Do: [Airbnb](https://github.com/ga-wdi-exercises/css-airbnb) (30 minutes / 2:05)
-
-## Closing / Questions (5 minutes / 2:10)
----
-
-## Homework
-
-[Fashion Blog](https://github.com/ga-wdi-exercises/fashion-blog)
 
 ## Resources
 
