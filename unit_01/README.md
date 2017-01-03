@@ -29,11 +29,11 @@
 
 # Week 5
 
-| Monday                            | Tuesday                                        | Wednesday  | Thursday                                        | Friday |
-|-----------------------------------|------------------------------------------------|------------|-------------------------------------------------|--------|
-| Advanced Inline Layout and Floats | Advanced Pseudo Selectors                      | FlexBox    | Thinking Design                                 |        |
-| Fonts and Responsive Design       | CSS and jQuery Transitions/Animation/Transform | Diagnostic | Project Management, User stories, GitHub Issues | Lab    |
-|                                   |                                                | Outcomes   | Project Intro                                   |        |
+| Monday                            | Tuesday               | Wednesday                    | Thursday                                        | Friday               |
+|-----------------------------------|-----------------------|------------------------------|-------------------------------------------------|----------------------|
+| Holiday                           | Holiday Project Demos | Advanced Pseudo Selectors    |CSS and jQuery Transitions/Animation/Transform   |Fonts and Responsive Design  |
+|                                   |                       | Diagnostic                   |                                                 |Project Management, User stories, GitHub Issues|
+|                                   | Advanced Inline Layout and Floats | Outcomes         | FlexBox                                         | Project Intro |
 
 
 ### Supplemental Reading
