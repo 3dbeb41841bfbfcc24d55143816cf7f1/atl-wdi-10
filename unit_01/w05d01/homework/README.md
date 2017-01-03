@@ -35,9 +35,8 @@ Refer to the mockup: the visual elements live within a centered container, and t
 - Refactor your code and use `%` (left/right values) and `em` (bottom/top values) instead of fixed `px` values to make the site responsive to the browser width.
 - Make it so that the title 'Brook & Lyn' is a fixed header/nav-bar and doesn't move when you scroll through the page.
 - Let's add Javascript (or jQuery, your choice) and make this fun & interactive in `script.js`!
-  - Clicking on the title "Brook & Lyn" makes the logo 3x larger
+  - Clicking on the title "Brook & Lyn" changes the title to a pink Color
   - Mousing over one of the bottom images will change that image's border to black
-  - Clicking on the bottom image will hide the image, and clicking again will make it reappear
 - Change the font (ex. [GoogleFonts](https://fonts.google.com/))
 
 ## Submitting Your Work
