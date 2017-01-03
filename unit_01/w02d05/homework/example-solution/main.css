@@ -1,0 +1,30 @@
+/*
+General Assembly, WDI (Web Development Immersive) Remote, Cohort 04 (Matey)
+Copyright (C) 2016 Matt Brendzel under the GNU General Public License.
+See LICENSE for details.
+*/
+
+body {
+  padding: 20px;
+}
+
+main {
+  width: auto;
+  float: left;
+}
+
+.board {
+  height: 400px;
+  width: 400px;
+  background-color: #333;
+}
+
+.board > div {
+  float: left;
+  height: 31%;
+  width: 31%;
+  margin: 1%;
+  background-color: #CCC;
+  text-align: center;
+  font-size: 110px;
+}

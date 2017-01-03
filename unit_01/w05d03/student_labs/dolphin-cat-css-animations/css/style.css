@@ -1,0 +1,28 @@
+body {
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#cat {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -20px;
+}
+
+/*
+@keyframes walk {
+}
+
+@keyframes moonwalk {
+}
+
+@keyframes pacer {
+}
+
+@keyframes beffies {
+}
+
+@keyframes larrybird {
+}
+*/

@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     // Invoke your chain of functions and listeners within $(document).ready()
 
-})
+});
 
 var memoryGame = {
   tiles: ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E'],
@@ -14,19 +14,19 @@ var memoryGame = {
   },
 
   start: function() {
-    
+
   },
 
   makeAndDisplayTiles: function() {
-   
+
   },
-  
+
   makePlay: function(tile) {
 
   },
 
   checkForMatch: function() {
- 
+
   },
 
   checkForWin: function() {

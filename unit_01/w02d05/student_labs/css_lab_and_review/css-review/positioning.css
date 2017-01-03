@@ -5,15 +5,13 @@
 }
 
 .el{
-  float:left;
-}
-
-.el{
   text-align:center;
 }
 
+
+
 .el{
-  position:absolute;
+  position:absolute;;
   top:10px;
   left:20px;
 }

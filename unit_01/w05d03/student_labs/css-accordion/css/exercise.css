@@ -1,0 +1,57 @@
+/* Edit the CSS (hint: near the bottom) to make it so that clicking on a header
+causes a smooth transition in height of the div over 0.4 seconds */
+
+.accordion {
+    background: #eee;
+    border: 1px solid #999;
+    padding: 0 1em 24px;
+    width: 500px;
+    margin: 2em auto;
+}
+
+.accordion h2 {
+    margin: 12px 0;
+}
+
+.accordion .section {
+    border-bottom: 1px solid #ccc;
+    padding: 0 1em;
+    background: #fff;
+}
+
+.accordion h3 a {
+    display: block;
+    font-weight: normal;
+    padding: 1em 0;
+}
+
+.accordion h3 a:hover {
+    text-decoration: none;
+}
+
+.accordion .section div {
+    height: 0;
+    overflow: hidden;
+    transition: height .4s linear;
+}
+
+/*
+the target pseudoselector activates when an element has been targeted
+via an anchor
+ */
+.accordion :target h3 a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.accordion :target > div {
+    height: 100px;
+}
+
+/*
+  BONUS: add to this CSS so that when a section has the large class, the content
+  is scrollable in the inner div
+*/
+.accordion .section.large:target h3 + div {
+    overflow: auto;
+}
