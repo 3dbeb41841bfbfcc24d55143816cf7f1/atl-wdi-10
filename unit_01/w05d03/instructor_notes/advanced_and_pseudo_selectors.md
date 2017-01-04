@@ -15,12 +15,6 @@ competencies: CSS
 
 # Advanced and Pseudo-selectors
 
-- Screencasts
-  - [Part 1](http://youtu.be/O9dpZj4XWmA)
-  - [Part 2](http://youtu.be/sd8xY2jUXpc)
-  - [Part 3](http://youtu.be/c-AsuaboyeI)
-  - [Part 4](http://youtu.be/s7hM9RDgkRY)
-
 ## Lesson Objectives
 - Describe what "pseudo" means in the context of CSS
 - Describe how to select even and odd elements on a page
@@ -277,3 +271,6 @@ Let's use CSS to take an HTML table and make it look like the American flag. I'v
 ## Lab 2 - CSS Color Box
 
 Look in today's student labs folder for `css_color_box`
+
+## Extra Resources
+Additional GA YouTube content is here: https://www.youtube.com/playlist?list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J
