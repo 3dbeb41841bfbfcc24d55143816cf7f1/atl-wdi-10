@@ -143,13 +143,6 @@ If I wanted to select all the elements between 2 and 5, I'd use `li:nth-child(n 
 There are probably more interesting things you can select, but my brain starts to hurt after thinking about it after a while.
 
 
-#### What does this select, in English?
-
-`nav a:nth-of-type(odd):active`
-
-> "Inside every `nav`, select every odd-numbered anchor that is currently being clicked upon."
-
-
 <br>
 
 ## Forms
@@ -243,6 +236,16 @@ section:target{
 <br>
 
 ## Pseudo-selector translation
+
+#### What does this select, in English?
+
+`nav a:nth-of-type(odd):active`
+
+> "Inside every `nav`, select every odd-numbered anchor that is currently being clicked upon."
+
+<br>
+
+![](http://i.imgur.com/ylb6WX9.gif)
 
 In groups, write out *in English* what each of the following is selecting:
 
