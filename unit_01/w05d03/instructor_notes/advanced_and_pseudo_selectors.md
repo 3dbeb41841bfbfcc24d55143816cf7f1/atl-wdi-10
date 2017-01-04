@@ -62,39 +62,39 @@ There are lots of CSS advanced and pseudo-selectors, and they're really useful. 
 
 For reference, http://www.w3schools.com/cssref/css_selectors.asp
 
-- Group 1
+- **Group 1 (David + Alejandra)**
   - `:hover`
   - `:visited`
   - `:active`
   - `:first-letter`
   - `:first-line`
+  - `:nth-child`
   - `~`
-- Group 2
+- **Group 2 (Kiran + Alan)**
   - `:disabled`
   - `:checked`
   - `:focus`
   - `:target`
+  - `:only-child`
   - `+`
   - `>`
-- Group 3
+- **Group 3 (Matt + Sophia)**
   - `:empty`
   - `:not`
   - `:after`
   - `:before`
+  - `:last-child`
   - `[attribute]`
   - `[attribute^=value]`
-- Group 4
+- **Group 4 (Audrey + Michael)**
   - `:first-of-type`
   - `:last-of-type`
   - `:only-of-type`
   - `:nth-of-type`
-  - `[attribute~=value]`
-- Group 5
   - `:first-child`
-  - `:last-child`
-  - `:only-child`
-  - `:nth-child`
   - `[attribute*=value]`
+  - `[attribute~=value]`
+ 
 
 <br>
 
