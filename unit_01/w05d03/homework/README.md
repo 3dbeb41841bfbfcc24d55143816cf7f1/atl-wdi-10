@@ -18,7 +18,7 @@ flag down an instructor right away.
 
 #### Directions
 
-1.  Touch a `style.css` file in the `pseudo_selector` homeworld folder. In it, use CSS selectors, including advanced and/or pseudo selectors, and CSS properties to recreate the layout seen below. You will *not* be modifying any of the HTML in `index.html`, as it is provided already. The logo image is provided for you in the `images` directory.
+1.  Touch a `style.css` file in the `pseudo_selector` homework folder. In it, use CSS selectors, including advanced and/or pseudo selectors, and CSS properties to recreate the layout seen below. You will *not* be modifying any of the HTML in `index.html`, as it is provided already. The logo image is provided for you in the `images` directory.
 
 After completing each spec, make a commit with the message being the spec itself.
 
