@@ -55,7 +55,7 @@ Q8. What is "this"? Describe it as though you're explaining it to your mom.
 > acts like a possessive pronoun (i.e. 'myself').
 
 > To mom:
-> "this" is a special Javascript keyword, and its value depends on where it is called, > such as in a global context (where "this" would refer to the global object) or in a > function. Think of functions as different, separate shops, and let's say each shop  > sells a particular white T-shirt. If you're in Shop A, and you grab "this" T-shirt, > "this" would be referring to the white T-shirt you are holding, found particularly  > in Shop A. Now, let's walk to Shop C, and they have the same white T-shirt, and as  > you grab "this" shirt, it's not the same shirt you picked up in Shop A. "this"  > refers to a particular value depending on its location.
+> "this" is a special Javascript keyword, and its value depends on where it is called, such as in a global context (where "this" would refer to the global object) or in a function. Think of functions as different, separate shops, and let's say each shop sells a particular white T-shirt. If you're in Shop A, and you grab "this" T-shirt,  "this" would be referring to the white T-shirt you are holding, found particularly in Shop A. Now, let's walk to Shop C, and they have the same white T-shirt, and as  you grab "this" shirt, it's not the same shirt you picked up in Shop A. "this" refers to a particular value depending on its location.
 
 Q9. $(".someClass") returns...
 
