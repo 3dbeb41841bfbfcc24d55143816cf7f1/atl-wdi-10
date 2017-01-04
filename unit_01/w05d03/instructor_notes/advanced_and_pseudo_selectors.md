@@ -15,12 +15,6 @@ competencies: CSS
 
 # Advanced and Pseudo-selectors
 
-- Screencasts
-  - [Part 1](http://youtu.be/O9dpZj4XWmA)
-  - [Part 2](http://youtu.be/sd8xY2jUXpc)
-  - [Part 3](http://youtu.be/c-AsuaboyeI)
-  - [Part 4](http://youtu.be/s7hM9RDgkRY)
-
 ## Lesson Objectives
 - Describe what "pseudo" means in the context of CSS
 - Describe how to select even and odd elements on a page
@@ -62,39 +56,39 @@ There are lots of CSS advanced and pseudo-selectors, and they're really useful. 
 
 For reference, http://www.w3schools.com/cssref/css_selectors.asp
 
-- Group 1
+- **Group 1 (David + Alejandra)**
   - `:hover`
   - `:visited`
   - `:active`
   - `:first-letter`
   - `:first-line`
+  - `:nth-child`
   - `~`
-- Group 2
+- **Group 2 (Kiran + Alan)**
   - `:disabled`
   - `:checked`
   - `:focus`
   - `:target`
+  - `:only-child`
   - `+`
   - `>`
-- Group 3
+- **Group 3 (Matt + Sophia)**
   - `:empty`
   - `:not`
   - `:after`
   - `:before`
+  - `:last-child`
   - `[attribute]`
   - `[attribute^=value]`
-- Group 4
+- **Group 4 (Audrey + Michael)**
   - `:first-of-type`
   - `:last-of-type`
   - `:only-of-type`
   - `:nth-of-type`
-  - `[attribute~=value]`
-- Group 5
   - `:first-child`
-  - `:last-child`
-  - `:only-child`
-  - `:nth-child`
   - `[attribute*=value]`
+  - `[attribute~=value]`
+ 
 
 <br>
 
@@ -147,13 +141,6 @@ You can treat pseudo-selectors just like any other selector in that you can chai
 If I wanted to select all the elements between 2 and 5, I'd use `li:nth-child(n + 2):nth-child(-n + 5)`.
 
 There are probably more interesting things you can select, but my brain starts to hurt after thinking about it after a while.
-
-
-#### What does this select, in English?
-
-`nav a:nth-of-type(odd):active`
-
-> "Inside every `nav`, select every odd-numbered anchor that is currently being clicked upon."
 
 
 <br>
@@ -250,6 +237,16 @@ section:target{
 
 ## Pseudo-selector translation
 
+#### What does this select, in English?
+
+`nav a:nth-of-type(odd):active`
+
+> "Inside every `nav`, select every odd-numbered anchor that is currently being clicked upon."
+
+<br>
+
+![](http://i.imgur.com/ylb6WX9.gif)
+
 In groups, write out *in English* what each of the following is selecting:
 
 - `*:first-letter:after`
@@ -277,3 +274,6 @@ Let's use CSS to take an HTML table and make it look like the American flag. I'v
 ## Lab 2 - CSS Color Box
 
 Look in today's student labs folder for `css_color_box`
+
+## Extra Resources
+Additional GA YouTube content is here: https://www.youtube.com/playlist?list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J
