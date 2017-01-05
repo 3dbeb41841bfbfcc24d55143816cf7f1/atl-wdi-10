@@ -13,7 +13,7 @@
 
 <br>
 
-## Intro (10 minutes)
+## Intro
 
 Today we'll be covering 3 major topics, each somewhat related:
 
@@ -58,6 +58,83 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 
 <br>
 
+## CSS Transform
+
+You can check out the `transform` options in Atom (or the Dev Tools) using autocomplete. The `transform` property has the following values...
+
+### Use the CSS3 transform property to visually manipulate DOM elements in a 2D space
+
+1. transform:rotate(10deg);
+1. transform:scale(1.1);
+1. transform:translateX(10px);
+1. transform:skewX(45deg);
+
+You can perform multiple transforms in one statement
+
+1. transform: scale(2) skewY(0.3) rotate(4deg);
+
+<br>
+
+### Use the CSS3 transform property to visually manipulate DOM elements in a 3D space
+
+The Z axis extends out of the screen
+
+1. rotateX();
+1. rotateY();
+1. rotateZ();
+1. translateX();
+1. translateY();
+1. translateZ();
+1. scaleX();
+1. scaleY();
+1. scaleZ();
+
+If you know the math, you can write your own transformation matrix
+
+1. matrix(n,n,n,n,n,n)
+1. matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
+1. http://periodic.famo.us/
+
+<br>
+
+
+![](http://i.imgur.com/ylb6WX9.gif)
+
+
+1. Create a 100px by 100px square box that has a background color of red
+1. Rotate it 45 degrees
+1. Translate it along the X axis by 200px
+1. Translate it along the Y axis by 200px
+2. Try `transform: translate(200px, 200px)`
+1. Scale the div so it is twice as big
+2. Skew the div by 10 degrees
+3. You can also combine multiple values: `transform: translateX(200px) skew(30deg) scale(3)`
+4. `transform: perspective(35px) translate3d(20px, 30px, 15px)`
+    - x, y, z axis
+    - perspective is distance from the user 
+    - when perspective == z-axis you're behind the element
+
+<br>
+
+
+
+## Explain why using transform for animation is better than using position
+
+Why don't we just use something like `position: relative` and `left: 200px`?
+
+
+Transforms are better for animation for two reasons
+
+1. When elements are changed in the DOM, the browser checks to see if other elements are being pushed around.  When using transforms, the browser doesn't do this which makes it faster.
+    * Add `display: inline-block` to your CSS rule
+    * Add some lorem ipsum 
+   
+1. If you're doing a 3D transform, the computer's GPU is engaged, which is really fast
+    - http://codepen.io/paulirish/pen/nkwKs (uses top/left position)
+    - http://codepen.io/paulirish/pen/LsxyF (uses translate)
+
+<br>
+
 ## Explain the roles in traditional animation and how they apply to computer animation
 
 1. In traditional (hand-drawn) animation, there were two kinds of animators
@@ -73,23 +150,25 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 
 <br>
 
-<details>
-<summary>
-**Create basic transitions between a start and end state in CSS**
-</summary>
+## Create basic transitions between a start and end state in CSS
 
-Define a start state and an end state
+Transitions are a way to introduce timing to a given effect. To start, define a start state and an end state
 
 ```css
 a {
-	background:yellow; /* start state */
+  	padding:2em; /* start state */
+  	display:inline-block;
+  	border:1px solid black;
+  	position:relative;
+  	left:0;
+  	background:yellow;
 }
 a:hover {
 	background:green; /* end state */
 }
 ```
 
-Three main properties:
+Next, add a transition property (there are more):
 
 - `transition-property: background, left, top, height;`
 - `transition-duration: 0.5s;`
@@ -105,26 +184,70 @@ Three main properties:
 Shorthand
 
 - `transition: <property> <duration> <timing-function> <delay>`
-
+    - Example: `transition: transform 1s ease-in-out;` 
 
 <br>
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
 
-1. Create a `p` tag that has a yellow background-color
-1. Write a CSS rule that changes the background color to blue when you hover over the element with your mouse
-1. Create a transition so that this happens over 2 seconds
-</details>
+1. Write a CSS rule that will transition your div from this start state:
+
+    ```css
+    div {
+        background:red;
+        width:100px;
+        height:100px;
+}
+```
+
+1. To this end state... Write a CSS rule that changes the background color to blue when you hover over the element with your mouse
+
+    ```css
+    div:hover{
+      background: blue;
+    }
+```
+
+1. Let's make that transition a little smoother:
+
+    ```css
+  div {
+        ...  
+        transition-duration: 3s;
+        transition-property: background; /* specify which property you want to transition */
+        transition-timing-function: linear;
+  }
+    ```
+
+    > There are many timing functions. Check out http://easings.net
+    
+2. Let's also add a `translateX()`
+
+    ```css
+    div {
+      ...
+      transition-property: background, transform; /* make sure to add transform here */
+      transform: translateX(0); /* start state */    
+    }
+    
+    div:hover {
+        ...
+        transform: translateX(100px); /* end state */
+    }    
+    ```
 
 <br>
 
-<details>
-<summary>**Write complex animations with multiple states**</summary>
+## Write complex animations with multiple states
 
-Transitions are great for going from one state to another, but sometimes you need more than a start and end state.  To do this, there are two steps
+Transitions are great for going from one state to another, but sometimes you need more than a start and end state.
 
-1. Create a named animation with a set of keyframes.
+<br>
+
+![](http://i.imgur.com/ylb6WX9.gif)
+
+1. Define a named animation with a set of keyframes. These are similar to the traditional animation "tweeners" that were mentioned earlier.
 	
 	```css
 	@keyframes example {
@@ -135,6 +258,8 @@ Transitions are great for going from one state to another, but sometimes you nee
 	    100% {background-color:red; left:0px; top:0px;}
 	}
 	```
+    > Note, remember that for production, `translate` will be faster than `left`, `top`, etc.
+
 
 1. Assign the animation to a rule and give it a duration
 	
@@ -146,6 +271,7 @@ Transitions are great for going from one state to another, but sometimes you nee
 	    position: relative;
 	    animation-name: example;
 	    animation-duration: 4s;
+	    animation-timing-function: linear;
 	}
 	```
 1. Additional properties
@@ -159,38 +285,51 @@ Transitions are great for going from one state to another, but sometimes you nee
 		- paused
 		- running
 
+1. Try adding the following properties
+
+    ```css
+    div {
+        ...
+        animation-iteration-count: inifinite;
+        animation-direction: alternate;    
+    }
+    ```
+    
+1. Try adding another keyframe
+
+    ```css
+15%  {background-color: orange; left:400px; top:400px;}
+```
+
 <br>
 
-![](http://i.imgur.com/ylb6WX9.gif)
 
-1. Create a box with a background color
-1. Over the course of 4 seconds, have it do the following:
-	1. move right and change background color
-	1. move down and change background color
-	1. move left and change background color
-	1. move up and change background color
-1. Have this animation loop indefinitely and alternate direction
-
-
-</details>
-<br>
-
-
-## Extra Reading
+## 3rd Party CSS Libraries
 
 There are a lot of pre-built CSS libraries out there that are easy to include in your app. Here's a sample: https://www.sitepoint.com/top-9-animation-libraries-use-2016/
+
+- animate.css
+- greensock.com (js - Koty Recommends!)
+- jQueryUI (js)
+- Angular Animate (js)
 
 <br>
 
 ## Using jQuery for animations
 
+CSS Animations are easy and mostly compatible, so they're often a good choice
+for basic animation needs. For anything more complex, such as animation that
+depends on user input, you'll need to use Javascript. There are good libraries
+for animation (see above). 
+
+<br>
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
 Take 5 minutes and read through these two links:
  
-- [W3Schools jQuery .animate()](http://www.w3schools.com/jquery/eff_animate.asp) 
-- https://www.sitepoint.com/guide-jquery-animate-method/
+- http://www.w3schools.com/jquery/eff_animate.asp
+- https://www.sitepoint.com/guide-jquery-animate-method
 
 <br>
 
@@ -252,12 +391,7 @@ $("button").click(function(){
       }, 4000);
 });
 ```
-
- 
-
 <br>
-
-
 
 ## Lab
 
@@ -266,7 +400,9 @@ Look in today's student labs folder and complete as many of these exercises as y
 * [CSS Accordion](https://github.com/ga-dc/css-accordion)
 * [DolphinCat!](https://github.com/ga-dc/dolphin-cat-css-animations)
 
-### Bonuses
+<br>
+
+## Bonuses
 
 Look at the following examples, try to re-create them from scratch using as little
 starter code as possible.
@@ -275,16 +411,10 @@ starter code as possible.
 * [Image Hover Effects](http://tympanus.net/Tutorials/OriginalHoverEffects/) (Transitions and Animations)
 * [Solar System in CSS](http://neography.com/journal/our-solar-system-in-css3/) (Transitions and Animations)
 
-<br>
 
-## Questions / Recap
 
-### CSS / JS Animations
 
-CSS Animations are easy and mostly compatible, so they're often a good choice
-for basic animation needs. For anything more complex, such as animation that
-depends on user input, you'll need to use Javascript. There are good libraries
-for animation, including jQuery UI, and [GSAP (Greensock Animation Platform)](http://greensock.com/gsap)
+
 
 
 

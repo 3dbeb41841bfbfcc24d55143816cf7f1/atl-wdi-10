@@ -301,9 +301,10 @@ body {
 
 [Example](http://codepen.io/takeradi/pen/MyYqKX)
 
-## Lab #1: [Hyrule Potion Shop](https://github.com/ga-dc/hyrule_potion_shop) (10 minutes / 1:25)
+## Lab #1: [Hyrule Potion Shop](https://github.com/ga-dc/hyrule_potion_shop)
+## Lab #2: http://flexboxfroggy.com/
+## Lab #3: [Airbnb](https://github.com/ga-wdi-exercises/css-airbnb) 
 
-## Lab #2: [Airbnb](https://github.com/ga-wdi-exercises/css-airbnb) (30 minutes / 2:05)
 
 
 ## Resources
