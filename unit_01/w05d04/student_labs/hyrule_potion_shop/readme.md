@@ -26,8 +26,9 @@ Feel free to take a look at our solution at the link below -- but only peek at t
 
 Here's one solution: http://ga-wdi-exercises.github.io/hyrule_potion_shop/
 
+<br>
 
-## The Holy Grail Layout (5 minutes / 1:15)
+## The Holy Grail Layout
 
 ![holy grail layout](https://mdn.mozillademos.org/files/3760/HolyGrailLayout.png)
 
