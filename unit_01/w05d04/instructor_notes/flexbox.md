@@ -12,9 +12,27 @@ Screencasts
 - Contrast flex containers and flex items.
 - Explain what is meant by the "Holy Grail Layout".
 
+
+## Intro
+
+![](https://camo.githubusercontent.com/5d81007fece17219ff6ece0ed8da9920b6a2cc55/687474703a2f2f692e696d6775722e636f6d2f796c62365758392e676966)
+
+Read these: 
+
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://css-tricks.com/centering-in-the-unknown/
+
+<br>
+
 ## Framing
 
-Check out [this GIF](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif). Developers used to feel that way all the time defining page layout using CSS. Why is that?
+Check out this GIF
+
+<br>
+![](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif)
+
+<br>
+Developers used to feel that way all the time defining page layout using CSS. Why is that?
 
 HTML was created as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word.
 
@@ -201,11 +219,11 @@ footer {
 
 Time for you to research some more Flexbox properties. You will be split into groups and assigned one of the following flex properties...
 
-- `align-content`
-- `flex-grow`
-- `flex-wrap`
-- `order`
-- `flex-basis`
+- `align-content` **(David + Alejandra)**
+- `flex-grow` **(Kiran + Alan)**
+- `flex-wrap` **(Matt + Sophia)**
+- `order` **(Audrey + Michael)**
+- `flex-basis` **(everyone check this one out)**
 
 Your task is to...
 
