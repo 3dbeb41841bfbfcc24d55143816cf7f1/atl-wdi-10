@@ -35,7 +35,7 @@ For example, we have more control over how the animation repeats, change between
 multiple values at once, etc.
 
 **Prefixing** - If you're using chrome, you won't need to prefix any properties
-for this lesson, but in general, it's a good idea to check [Can I Use](caniuse.com)
+for this lesson, but in general, it's a good idea to check [Can I Use](http://www.caniuse.com)
 to see if you need to use prefixes to support most users. For CSS Animations,
 you should use prefixes to ensure support for Safari, IE, and other browsers.
 
