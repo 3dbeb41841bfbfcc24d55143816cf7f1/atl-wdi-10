@@ -48,9 +48,7 @@ If you're not planning before you begin to create a responsive design, you'r doi
 
 #### Examples of non-responsive sites:
 
-It is becoming harder and harder to find non-responsive websites.
-
-> Note: Find examples of non-responsive sites to show to students.
+It is becoming harder and harder to find non-responsive websites. (I actually couldn't really find one)
 
 #### Examples of responsive sites:
 
