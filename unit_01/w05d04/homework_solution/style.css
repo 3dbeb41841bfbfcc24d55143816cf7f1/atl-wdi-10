@@ -1,0 +1,43 @@
+/***************************
+  INDEX.HTML FUNKY SQUARES
+****************************/
+
+.funky-square {
+  display: inline-block;
+  background-color: #0074d9;
+  height: 200px;
+  width: 200px;
+  margin-right: 5px;
+  margin-left: 5px;
+  opacity: .7;
+  /*
+  Your code here
+  */
+}
+
+/* funky-square keyframes here */
+
+/***************************
+  SONIC.HTML SONIC
+****************************/
+.sonic > img {
+  /* your code here*/
+}
+
+/* sonic hover code here*/
+
+/***************************
+  ZEN.HTML
+****************************/
+
+/*
+ your code here
+*/
+
+/***************************
+  FLEXBOX.HTML DOGS IN VESTS
+****************************/
+
+/*
+  your code here
+*/
