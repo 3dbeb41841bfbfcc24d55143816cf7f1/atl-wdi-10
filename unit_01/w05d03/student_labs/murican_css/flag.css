@@ -1,0 +1,13 @@
+td
+{
+width:400px;
+height:28px;
+}
+tr:nth-of-type(odd) td
+{
+background-color:red;
+}
+tr td[rowspan]
+{
+background-color:blue;
+}

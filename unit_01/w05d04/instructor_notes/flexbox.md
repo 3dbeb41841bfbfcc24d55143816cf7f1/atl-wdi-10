@@ -1,6 +1,7 @@
 # Flexbox
 
 Screencasts
+
 - [Part 1](http://youtu.be/wBlBTO7mqoI)
 - [Part 2](http://youtu.be/_I58MXDnBEs)
 
@@ -11,9 +12,27 @@ Screencasts
 - Contrast flex containers and flex items.
 - Explain what is meant by the "Holy Grail Layout".
 
+
+## Intro
+
+![](https://camo.githubusercontent.com/5d81007fece17219ff6ece0ed8da9920b6a2cc55/687474703a2f2f692e696d6775722e636f6d2f796c62365758392e676966)
+
+Read these: 
+
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://css-tricks.com/centering-in-the-unknown/
+
+<br>
+
 ## Framing
 
-Check out [this GIF](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif). Developers used to feel that way all the time defining page layout using CSS. Why is that?
+Check out this GIF
+
+<br>
+![](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif)
+
+<br>
+Developers used to feel that way all the time defining page layout using CSS. Why is that?
 
 HTML was created as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word.
 
@@ -32,6 +51,8 @@ Let's start out by talking about a problem that anybody who has written CSS has 
 ![centered div](http://i.imgur.com/2jbrXMp.png)
 
 #### You Tell Me: What Should I Try?
+
+Open up a new Codepen.io and copy the starter code below. Try to center the div.
 
 ```html
 <body>
@@ -198,12 +219,14 @@ footer {
 
 Time for you to research some more Flexbox properties. You will be split into groups and assigned one of the following flex properties...
 
-- `align-content`
-- `flex-grow`
-- `flex-wrap`
-- `order`
+- `align-content` **(David + Alejandra)**
+- `flex-grow` **(Kiran + Alan)**
+- `flex-wrap` **(Matt + Sophia)**
+- `order` **(Audrey + Michael)**
+- `flex-basis` **(everyone check this one out)**
 
 Your task is to...
+
 * Come up with [ELI5 ("Explain Like I'm 5")](https://www.reddit.com/r/explainlikeimfive) definition for the property.
 * List the different values this property can take.
 * Create [a Codepen](http://codepen.io) demonstrating the property's usage.
@@ -296,18 +319,11 @@ body {
 
 [Example](http://codepen.io/takeradi/pen/MyYqKX)
 
-## You Do: [Hyrule Potion Shop](https://github.com/ga-dc/hyrule_potion_shop) (10 minutes / 1:25)
+## Lab #1: [Hyrule Potion Shop](../student_labs/hyrule_potion_shop)
+## Lab #2: http://flexboxfroggy.com/
+## Lab #3: [Airbnb](../student_labs/css-airbnb) 
 
-## Break (10 minutes / 1:35)
 
-## You Do: [Airbnb](https://github.com/ga-wdi-exercises/css-airbnb) (30 minutes / 2:05)
-
-## Closing / Questions (5 minutes / 2:10)
----
-
-## Homework
-
-[Fashion Blog](https://github.com/ga-wdi-exercises/fashion-blog)
 
 ## Resources
 

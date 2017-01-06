@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: cornsilk;
+  font-family: Arial, sans-serif;
+}
+
+/* NAV BAR */
+nav > ul {
+  background: darkblue;
+  color: white;
+  height: 50px;
+
+}
+
+nav > ul > li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 1em 2em;
+}
+
+nav > ul > li:hover{
+ background: lightblue;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  color: pink;
+}
+
+/* ANCHOR LOGO */
+img{
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* HEADLINES STYLING */
+h1, h3{
+  text-align: center;
+}
+
+h3:nth-of-type(2){
+  text-decoration: underline;;
+}
+
+h1:first-of-type{
+  color: blue;
+  font-size: 3em;
+}
+
+/* PRICES SPAN */
+span{
+  text-decoration: bold;
+  float: right;
+}
+
+/* MENU DIVS */
+
+div:first-of-type{
+  margin: 2em 0;
+}
+
+.appetizers-container,
+.entrees-container{
+  width: 80%;
+  margin: 0 auto;
+  background: lightblue;
+  padding: 3em 0;
+}
+
+.appetizers-container > div,
+.entrees-container > div{
+  width: 75%;
+  background: white;
+  margin: 0 auto;
+  padding: 2em;
+  border-radius: 30px;
+}
+
+.appetizers-container  li,
+.entrees-container li {
+  list-style-type: square;
+}
+
+.appetizers-container li:nth-of-type(odd),
+.entrees-container li:nth-of-type(odd){
+  color:  orange;
+}
