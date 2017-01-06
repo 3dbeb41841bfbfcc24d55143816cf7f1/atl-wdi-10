@@ -17,7 +17,7 @@ We've compiled a list of videos and articles for you to introduce you to the wor
 - "The Protocol Every Web Developer Must Know" HTTP. You've seen it and use it daily. But what IS IT? Here's a two part web tutorial on HTTP through the lens of a web developer:
 
 
-[Youtube: Web Apps + the HTTP Protocol](https://www.youtube.com/watch?v=RsQ1tFLwldY)
+[Youtube: Web Apps + the HTTP Protocol](https://www.youtube.com/watch?v=eesqK59rhGA)
 
 - This video visually breaks down what a web application is, and what HTTP has to do with it. Concepts covered include "request/response cycle" and "URL".
 
