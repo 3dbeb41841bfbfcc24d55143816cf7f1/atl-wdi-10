@@ -73,7 +73,7 @@ $ npm install --save hbs
 
     > What does `--save` do for us again?
 
-1. We need to require the hbs module in `index.js`. (should be around line #3, below `var express` and `var app`):
+1. We need to require the hbs module in `server.js`. (should be around line #3, below `var express` and `var app`):
 
     ```js
 var express = require('express'); // Loading express on our server
@@ -83,7 +83,7 @@ var hbs = require('hbs');
 
     > What does `require()` do?
 
-2. Then we need to set Express's view engine to be handlebars inside of `index.js`. We'll also tell our app where to find our views. We're using the Express method `.set`:
+2. Then we need to set Express's view engine to be handlebars inside of `server.js`. We'll also tell our app where to find our views. We're using the Express method `.set`:
 
     ```javascript
 app.set("view engine", "hbs"); //tells Express what to use for rendering templates
@@ -183,7 +183,7 @@ Walk through the steps above in the "How do we use Handlebars?" section to add o
 
 ## One step further...
 
-What if we had an array for our favorite foods in `index.js` and we wanted to render them into a view?
+What if we had an array for our favorite foods in `server.js` and we wanted to render them into a view?
 
 1. Create a new file in views:
 
@@ -281,7 +281,7 @@ This is also a great time to note how we serve static assets. Notice that we lin
 
 Let's add an external stylesheet:
 
-1. In our `index.js`, let's add:  
+1. In our `server.js`, let's add:  
 
     ```javascript
 app.use(express.static(__dirname + '/public')); // VERY IMPORTANT!! Make sure to add a '/'
@@ -324,11 +324,11 @@ $ npm install --save hbs
 $ touch index.js
 ```
 
-1. Create the necessary variables and require the appropriate modules in `index.js`
+1. Create the necessary variables and require the appropriate modules in `server.js`
 
 1. Set up your server and port using `app.listen()`
 
-1. In `index.js`, create an `app.get()` route for `/shows`.  
+1. In `server.js`, create an `app.get()` route for `/shows`.  
 1. Create an array called `var favShows` and add your faves.
 2. Test out your route using `res.send` before dealing with views.
 
