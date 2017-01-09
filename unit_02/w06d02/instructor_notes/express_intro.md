@@ -128,9 +128,9 @@ $ npm install --save express
 
 <br>
 
-### STEP 3 - Create an `index.js`
+### STEP 3 - Create an `server.js`
 
-2. Let's make a new file `$ touch index.js` and place the following contents. In `index.js`:
+2. Let's make a new file `$ touch server.js` and place the following contents. In `server.js`:
 
     ```javascript
     var express = require('express'); // Loading the express module on our server
@@ -181,7 +181,7 @@ With express invoked and running we now have access to various functions and pro
 
 ### Run our App
 
-If we run the application (`$ node index.js`) we can see in the terminal `app listening on port 3000`. This means our server is running. Let's try going to the localhost of that port number. What happens?
+If we run the application (`$ node server.js`) we can see in the terminal `app listening on port 3000`. This means our server is running. Let's try going to the localhost of that port number. What happens?
 
 
 #### OH NOES, what's going on here?
@@ -190,7 +190,7 @@ Basically we've told the server what port to listen on (3000), but we didn't spe
     
 1. Use `ctrl + c` to stop the server.
     
-2. Let's update `index.js`:
+2. Let's update `server.js`:
 
     ```javascript
     app.get("/", function(req, res){
@@ -202,7 +202,7 @@ Basically we've told the server what port to listen on (3000), but we didn't spe
     });
 ```
     
-1. Let's try restarting the server (`$ node index.js`). You should now see `Hello World`
+1. Let's try restarting the server (`$ node server.js`). You should now see `Hello World`
 
 
 
@@ -234,7 +234,7 @@ all of our node applications.
 Then we start up our application a bit differently now. In the terminal:
 
 ```bash
-$ nodemon index.js
+$ nodemon server.js
 ```
 
 <br>
@@ -249,7 +249,7 @@ $ nodemon index.js
 
 We, and actually you, just built the foundation of a server and your first web application!
 
-- We created a file (`index.js`) that contains instructions for the server (Node).
+- We created a file (`server.js`) that contains instructions for the server (Node).
 - **Node** is our server software that we've configured to run on a port to listen for incoming HTTP requests from the browser.
 - We installed **Express** which is our lightweight JS framework built to help simplify our job of building an application that can interact with HTTP requests coming from the internet.
 - We defined a single root route (`/`). When Node hears a request to `http://localhost:3000` it will serve "Hello World" as a response. All of our local routes for this app will start with `http://localhost:3000`
