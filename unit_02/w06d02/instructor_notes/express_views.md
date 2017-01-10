@@ -108,7 +108,7 @@ $ touch views/layout.hbs
 
 &#x1F535; **YOU DO**
 
-Folow the 4 steps above and add Handlebars to your app.
+Follow the 4 steps above and add Handlebars to your app.
 
 <br>
 
