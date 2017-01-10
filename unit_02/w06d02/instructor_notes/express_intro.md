@@ -92,7 +92,7 @@ $ atom .
 - If we hit enter and use all of the default values and we take a look at the contents of the `package.json` file, we'll see something like this:
 
 
-![](https://i.imgur.com/eTJAzoF.png)
+![](https://i.imgur.com/mP6KyeW.png)
 
 
 - The `package.json` file contains meta data about your app or module. More importantly, it includes the list of dependencies to install from npm when running npm install. **We** certainly don't want to keep track of them!
@@ -175,7 +175,7 @@ With express invoked and running we now have access to various functions and pro
 
 &#x1F535; **YOU DO:**
 
-1. Walk through STEP 3 above and create an `index.js`.
+1. Walk through STEP 3 above and create an `server.js`.
 
 <br>
 
