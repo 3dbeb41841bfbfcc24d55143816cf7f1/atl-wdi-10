@@ -328,7 +328,7 @@ You can check out the Request and Reponse headers in the dev tools Network tab. 
 
 ## URL Params
 
-Params (short for "parameters") is an object attached each `request` to the server. We can send params via the URL. Let's update `index.js` to include:
+Params (short for "parameters") is an object attached each `request` to the server. We can send params via the URL. Let's update `server.js` to include:
 
 ```javascript
 app.get("/:name", function(req, res){
