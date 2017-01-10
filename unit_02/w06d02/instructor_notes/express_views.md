@@ -188,7 +188,7 @@ What if we had an array for our favorite foods in `server.js` and we wanted to r
 1. Create a new file in views:
 
     ```bash
-touch views/foods.hbs
+touch views/favorite-foods.hbs
 ```
 
 2. Let's create a new route for favorite foods and add an array of faves.
@@ -197,7 +197,7 @@ touch views/foods.hbs
     app.get('/favorite-foods', function(req, res) {
         var favoriteFoods = ["Reese's Peanutbutter Cups", 'Taco Soup', 'Grape Nuts', 'Beer', 'Whatever Blue Apron brings me'];
 
-        res.render('foods', {
+        res.render('favorite-foods', {
 		      data: ____
         });
     });
@@ -209,7 +209,7 @@ touch views/foods.hbs
     app.get('/favorite-foods', function(req, res) {
         var favoriteFoods = ["Reese's Peanutbutter Cups", 'Taco Soup', 'Grape Nuts', 'Beer', 'Whatever Blue Apron brings me'];
         
-        res.render('foods', {
+        res.render('favorite-foods', {
 		      data: favoriteFoods
         });
     });
