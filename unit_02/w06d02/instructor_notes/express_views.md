@@ -321,7 +321,7 @@ $ cd shows_app
 $ npm init
 $ npm install --save express
 $ npm install --save hbs
-$ touch index.js
+$ touch server.js
 ```
 
 1. Create the necessary variables and require the appropriate modules in `server.js`
