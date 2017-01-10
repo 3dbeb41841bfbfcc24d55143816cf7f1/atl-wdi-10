@@ -108,7 +108,7 @@ $ touch views/layout.hbs
 
 &#x1F535; **YOU DO**
 
-Folow the 4 steps above and add Handlebars to your app.
+Follow the 4 steps above and add Handlebars to your app.
 
 <br>
 
@@ -188,7 +188,7 @@ What if we had an array for our favorite foods in `server.js` and we wanted to r
 1. Create a new file in views:
 
     ```bash
-touch views/foods.hbs
+touch views/favorite-foods.hbs
 ```
 
 2. Let's create a new route for favorite foods and add an array of faves.
@@ -197,7 +197,7 @@ touch views/foods.hbs
     app.get('/favorite-foods', function(req, res) {
         var favoriteFoods = ["Reese's Peanutbutter Cups", 'Taco Soup', 'Grape Nuts', 'Beer', 'Whatever Blue Apron brings me'];
 
-        res.render('foods', {
+        res.render('favorite-foods', {
 		      data: ____
         });
     });
@@ -209,7 +209,7 @@ touch views/foods.hbs
     app.get('/favorite-foods', function(req, res) {
         var favoriteFoods = ["Reese's Peanutbutter Cups", 'Taco Soup', 'Grape Nuts', 'Beer', 'Whatever Blue Apron brings me'];
         
-        res.render('foods', {
+        res.render('favorite-foods', {
 		      data: favoriteFoods
         });
     });
@@ -321,7 +321,7 @@ $ cd shows_app
 $ npm init
 $ npm install --save express
 $ npm install --save hbs
-$ touch index.js
+$ touch server.js
 ```
 
 1. Create the necessary variables and require the appropriate modules in `server.js`

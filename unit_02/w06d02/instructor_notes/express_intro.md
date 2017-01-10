@@ -92,7 +92,7 @@ $ atom .
 - If we hit enter and use all of the default values and we take a look at the contents of the `package.json` file, we'll see something like this:
 
 
-![](https://i.imgur.com/eTJAzoF.png)
+![](https://i.imgur.com/mP6KyeW.png)
 
 
 - The `package.json` file contains meta data about your app or module. More importantly, it includes the list of dependencies to install from npm when running npm install. **We** certainly don't want to keep track of them!
@@ -175,7 +175,7 @@ With express invoked and running we now have access to various functions and pro
 
 &#x1F535; **YOU DO:**
 
-1. Walk through STEP 3 above and create an `index.js`.
+1. Walk through STEP 3 above and create an `server.js`.
 
 <br>
 
@@ -328,7 +328,7 @@ You can check out the Request and Reponse headers in the dev tools Network tab. 
 
 ## URL Params
 
-Params (short for "parameters") is an object attached each `request` to the server. We can send params via the URL. Let's update `index.js` to include:
+Params (short for "parameters") is an object attached each `request` to the server. We can send params via the URL. Let's update `server.js` to include:
 
 ```javascript
 app.get("/:name", function(req, res){
@@ -401,12 +401,14 @@ app.get("/:name", function(req, res){
 
 Let's add a 2nd query param
 
+```js
 app.get("/:name", function(req, res){
   console.log(req.params);
   console.log(req.route);
   console.log(req.query);
   res.send(`hello ${req.params.name}, my name is ${req.query.first_name} ${req.query.last_name}`);
 });
+```
 
 **Try this example:** `http://localhost:3000/schmitty?first_name=marc&last_name=wright`
 
