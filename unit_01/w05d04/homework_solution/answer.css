@@ -1,0 +1,85 @@
+/***************************
+  INDEX.HTML FUNKY SQUARES
+****************************/
+
+.funky-square {
+  display: inline-block;
+  background-color: #0074d9;
+  height: 200px;
+  width: 200px;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: roll 3s infinite;
+  opacity: .7;
+}
+
+
+/* funky-square keyframes here */
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+
+/***************************
+  SONIC.HTML SONIC
+****************************/
+.sonic > img {
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  transform: translateX(0);
+}
+
+.sonic > img:hover {
+    transform: translateX(1100px);
+}
+
+/***************************
+  ZEN.HTML
+****************************/
+#box {
+  width: 100%;
+  height: 100vh;
+  background-color: papayawhip;
+  animation-name: zen;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes zen{
+  0% {background-color: papayawhip;}
+  10% {background-color: orange}
+  20% {background-color: red}
+  30% {background-color: salmon}
+  40% {background-color: lightblue}
+  50% {background-color: lightyellow}
+  60% {background-color: #FCDDF2}
+  70% {background-color: violet}
+  80% {background-color: #854798}
+  90% {background-color: papayawhip}
+  100% {background-color: #680E4B}
+}
+
+/***************************
+  FLEXBOX.HTML DOGS IN VESTS
+****************************/
+
+/* container div properties*/
+.flex-grid{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 614px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* inner divs should take about 1/3 of the container div */
+.col{
+  flex: 0 0 32%;
+}

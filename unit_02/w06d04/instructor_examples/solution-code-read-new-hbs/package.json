@@ -1,0 +1,17 @@
+{
+  "name": "burger_heaven",
+  "version": "1.0.0",
+  "description": "An app to build your own custom burger",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Seminara",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "hbs": "^4.0.0",
+    "morgan": "^1.6.1"
+  }
+}
