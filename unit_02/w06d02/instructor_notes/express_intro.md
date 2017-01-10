@@ -401,12 +401,14 @@ app.get("/:name", function(req, res){
 
 Let's add a 2nd query param
 
+```js
 app.get("/:name", function(req, res){
   console.log(req.params);
   console.log(req.route);
   console.log(req.query);
   res.send(`hello ${req.params.name}, my name is ${req.query.first_name} ${req.query.last_name}`);
 });
+```
 
 **Try this example:** `http://localhost:3000/schmitty?first_name=marc&last_name=wright`
 
