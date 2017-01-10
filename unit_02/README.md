@@ -13,6 +13,8 @@
 - [client side vs. server side ](https://spin.atomicobject.com/2015/04/06/web-app-client-side-server-side/)
 - [Express routing docs](https://expressjs.com/en/guide/routing.html)
 - [Express Router](https://scotch.io/tutorials/keeping-api-routing-clean-using-express-routers)
+- [1. module.exports](http://openmymind.net/2012/2/3/Node-Require-and-Exports/)
+- [2. module.exports](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
 
 ---
 # Week 7
