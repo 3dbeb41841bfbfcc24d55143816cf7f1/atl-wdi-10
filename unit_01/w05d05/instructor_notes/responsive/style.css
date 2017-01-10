@@ -1,0 +1,24 @@
+body {
+  /*white-space: normal;*/
+}
+
+div {
+  width: 300px;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+@media (min-width: 500px) {
+  div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  div {
+    float: left;
+    width: calc(25% - 2px);
+    border: 1px solid black;
+    /*box-sizing: border-box;*/
+  }
+}
