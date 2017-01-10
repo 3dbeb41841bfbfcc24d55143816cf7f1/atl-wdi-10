@@ -74,7 +74,7 @@ http://i127.photobucket.com/albums/p142/cy360/GA%20home%20page/matey.jpg  )
 
 #### [Class Wiki!](https://github.com/ga-students/wdi-remote-matey/wiki)
 
-#### [Bug Journal](https://github.com/ga-students/wdi-remote-matey/wiki/Bug-Journal)
+#### [Bug Journal](https://github.com/ga-students/wdi-remote-matey/labels/bug)
 
 #### Course Content
 
