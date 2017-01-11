@@ -90,4 +90,4 @@ The model is any of the logic or the database or any of the data itself. For now
 
 The view is simply how you display the data out. With Handlebars, we have been able to display data on the page.
 
-The controller handles all the traffic coming in (and out). We have been using controllers to send HTTP requests and receive data in our response.
+The controller handles all the traffic coming in (and out). We have been using controllers to handle HTTP requests and manages, and sends back data through a response.
