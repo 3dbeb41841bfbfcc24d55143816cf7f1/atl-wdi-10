@@ -6,19 +6,23 @@
 
   ```js
   console.log('Red');
-  console.log('Blue')
+  console.log('Blue');
   ```
 
   What about now? Try it out for yourself and see what happens.
 
   ```js
-  setTimeout(function(){ console.log('Red'); }, 0);
+  setTimeout(function(){ 
+    console.log('Red'); 
+  }, 0);
   console.log('Blue');
   ```
 
   JavaScript code is _non-blocking_ -- this means that each line of code begins
-  to execute as soon as it possibly can, _including before previous lines of
+  to execute as soon as it possibly can, including before previous lines of
   code have finished executing.
+  
+  Consider that as humans we have the ability to multitask in a __non-blocking__ way. We can drive, talk on the phone, check the radio and chew gum at the same time (well, most of us anyway). However, a sneeze is an example of __blocking__. I don't know about you, but when I sneeze I can't do anything else at that moment.
 
   > "Isn't that really confusing? How could anyone write code when they can't be
   > sure about the order in which their lines will run?"
@@ -42,15 +46,15 @@
 
   -   Waiting for the **filesystem** to read from, or to write to, a file.
 
-  In all of these examples, your JavaScript code is
-  _waiting for something to happen_, and there's no telling how long that
-  'something' will take.
+  -   Hitting a 3rd party API for **authentication** (Facebook, Twitter, etc)
 
-  So how can we tell our code to wait for something to finish?
-  Node actually uses the same approach that the browser does -- callbacks.
-  By setting a callback as an event handler, we can defer its execution until
-  the event it's listening for occurs. Future steps can then be triggered
-  by more callbacks.
+In all of these examples, your JavaScript code is _waiting for something to happen_, and there's no telling how long that 'something' will take.
+
+So how can we tell our code to wait for something to finish?
+Node actually uses the same approach that the browser does -- callbacks.
+By setting a callback as an event handler, we can defer its execution until
+the event it's listening for occurs. Future steps can then be triggered
+by more callbacks.
 
   ```js
   var stepTwo = function(num){
@@ -64,7 +68,9 @@
   }
   ```
 
-### "Callback Hell" : Drawbacks to Callbacks
+<br>
+
+## "Callback Hell" : Drawbacks to Callbacks
 
   OK, that's fine for doing things that involve one 'slow' step. But what if
   there's _more than one_ 'slow' thing we have to deal with?
@@ -81,10 +87,9 @@
   4. Take the response and store data into a database.
   5. Send a response back to the user.
 
-  Phew. How might that look if we try to use callbacks to handle that whole
-  process?
+Phew. How might that look if we try to use callbacks to handle that whole process?
 
-  Maybe something like this?
+Maybe something like this?
 
   ```js
   fs.readFile('./data-csv', function(err, data){  // read a file
@@ -124,8 +129,37 @@
   It's not easy to follow. And on top of all that, it's duplicative -- do you
   really need a separate system for handling errors at every stage in the
   process?
+  
+<br>
 
-### Promises
+## Drawbacks to Callbacks
+
+Asynchronous code necessitates callbacks.
+But dealing with lots of callbacks can be tricky:
+
+-   Callbacks can be messy when they're nested: "callback hell". See [`lib/copy-json.js`](lib/copy-json.js).
+-   Each callback will have to handle it's own errors if necessary.
+-   In complex programs, it will be hard to tell in what order callbacks fire.
+
+Fortunately, there's a better way: Promises.
+
+<br>
+  
+## Why Promises?
+
+Promises are an alternative to directly using callbacks. Promises allow us to write asynchronous code that looks like synchronous code. Promises create the illusion of returning values or throwing errors from within our callbacks. While promises do not replace callbacks--promises depend on callbacks--they provide a layer of abstraction between you and callbacks, enabling you to prevent callback hell.
+
+Promises offer several advantages over callbacks.
+
+-   Promises, like callbacks, make asynchronicity explicit.
+-   Promises, unlike callbacks, clarify the order of execution.
+-   Promises are easier to read than callbacks.
+-   Promises can simplify error handling.
+
+
+<br>
+
+## Promises
 
   Fortunately, there's another way. Promises are an easy way of setting up
   processes involving any number of 'slow' steps. The core idea is a
@@ -316,7 +350,12 @@
   p.catch(function(err){ /* ... */});
   ```
 
-### Further Reading
+<br>
 
--  [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
--  [Spring.io : Understanding JavaScript Promises](https://spring.io/understanding/javascript-promises)
+## Additional Resources
+
+-   [Promise - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+-   [Promises](https://www.promisejs.org/)
+-   [Promisees · Courtesy of ponyfoo.com](http://bevacqua.github.io/promisees/)
+-   [wbinnssmith/awesome-promises: A curated list of useful resources for JavaScript Promises](https://github.com/wbinnssmith/awesome-promises)
+-   [How to escape Promise Hell — Medium](https://medium.com/@pyrolistical/how-to-get-out-of-promise-hell-8c20e0ab0513#.4wtj9hlvw)

@@ -5,6 +5,9 @@ duration: "1:25"
 creator:
     name: Alex Chin
     city: London
+adapted:
+    name: Marc Wright
+    city: WDIR
 competencies: Programming
 ---
 
@@ -81,8 +84,6 @@ myObj.key = value;
 
 A constructor is any Javascript function that is used to return a new object. The language doesn’t make a distinction. A function can be written to be used as a constructor or to be called as a normal function, or to be used either way.
 
-If we wanted to simulate a class in JavaScript:
-
 ```javascript
 function Person(name){
   this.name = name;
@@ -109,111 +110,24 @@ jenny instanceof Person;
 // true
 ```
 
-<br>
-
-####YOU DO
-
-Go into the console of your browser and take five minutes to construct a few objects and then assert its reference. You can do this with a string, array and even your own custom constructor! I'll get you started with a String example:
+Remember, do this all the time using built in constructors like String, Array, etc:
 
 ```javascript
 var str = new String("abc") // "abc"
-
 str instanceof String // true
 ```
 
-#### Assign with `var`
+<br>
 
-You could also call `Person` as a normal function - without the new:
+## &#x1F535; **YOU DO** - Constructor Practice
 
-```javascript
-Person('Jenny')
-// undefined
-```
+Go into the console of your browser (or Repl.it) to create a few constructor functions. Instantiate a few nenw objects from each constructor and then assert its reference. 
 
-However, the `this` value inside the constructor would point to the `window` object and therefore would create a global variable called `name`:
-
-```javascript
-window.name
-// "Jenny"
-```
-
-But global variables are dangerous and we can prevent it by writing something like this:
-
-```javascript
-function Person(name){
-  if (!(this instanceof Person)) {  
-    return new Person(name);
-  }
-  this.name = name;
-}
-
-Person("Alex")
-// Person {name: "Alex"}
-```
-
-Let's what through this line by line:
-
-- First, this checks to see if `this` is a Person - which it would be if called using new
-- Then, if it is a Person, we'll carry on to the third line
-- But if what's being passed into this function is not a Person, we'll use `new` to create a new Person and then return it.
-
-It is much easier, however, to remember: always assign an object to a variable with `var`!
+For example, create constructor functions for `Dog`, `Car`, or `Book` and instantiate new objects from them.
 
 <br>
 
-## Independent Practice - Model a Hero
 
-Suppose we had the following object describing a favorite comic book hero:
-
-```js
-var batman = {
-  name: 'Bruce Wayne',
-  alias: 'The Bat-man',
-  power: "works out alot",
-  usePower: function() {
-    return 'Batman works out a lot';
-  },
-};
-```
-
-And now we want another object describing a different hero:
-
-```js
-var wonderWoman = {
-  name: 'Diana Prince',
-  alias: 'Wonder Woman',
-  power: 'lasso',
-  usePower: function() {
-    return 'Wonder Woman uses lasso';
-  },
-};
-```
-
-What features do `batman` and `wonderWoman` share?  Remember to think about
-attributes and methods when you're modeling.  Also take note of what differs
-between them.
-
-Make a `Hero` constructor function based on the above objects.
-
-
-<details>
-<summary>SOLUTION</summary>
-
-```
-var Hero = function (name, alias, power) {
-  this.name = name;
-  this.alias = alias;
-  this.power = power;
-  this.usePower = function(power){
-    return `${this.alias} is using ${this.power}`;
-  };
-};
-
-var wonderWoman = new Hero("Diana Prince", "Wonder Woman", "lasso");
-```
-</details>
-
-<br>
 
 ## Literal vs Constructor Notation - Codealong (15 mins)
 
@@ -280,6 +194,61 @@ Object.getPrototypeOf(alex)
 
 <br>
 
+## &#x1F535; **YOU DO** - Model a Hero
+
+Suppose we had the following object describing a favorite comic book hero:
+
+```js
+var batman = {
+  name: 'Bruce Wayne',
+  alias: 'The Bat-man',
+  power: "works out alot",
+  usePower: function() {
+    return 'Batman works out a lot';
+  },
+};
+```
+
+And now we want another object describing a different hero:
+
+```js
+var wonderWoman = {
+  name: 'Diana Prince',
+  alias: 'Wonder Woman',
+  power: 'lasso',
+  usePower: function() {
+    return 'Wonder Woman lasso';
+  },
+};
+```
+
+What features do `batman` and `wonderWoman` share?  Remember to think about
+attributes and methods when you're modeling.  Also take note of what differs
+between them.
+
+Make a `Hero` constructor function based on the above objects (remember to pass in the appropriate arguments).
+
+
+<details>
+<summary>SOLUTION</summary>
+
+```js
+var Hero = function (name, alias, power) {
+  this.name = name;
+  this.alias = alias;
+  this.power = power;
+  this.usePower = function(power){
+    return `${this.alias} ${this.power}`;
+  };
+};
+
+var wonderWoman = new Hero("Diana Prince", "Wonder Woman", "lasso");
+```
+</details>
+
+<br>
+
+
 ## Prototype chains and inheritance - Intro (10 mins)
 
 There is only one construct when it comes to inheritance in JavaScript - objects.
@@ -293,7 +262,7 @@ We know that objects are basically key/value pairs. When you ask for a key's val
 For example:
 
 ```js
-var marc = "Marc";
+var marc = new String("Marc");
 marc.length
 
 => 4 
@@ -304,8 +273,33 @@ Where did the `.length` property come from? I didn't explictly define it on `mar
 ```js
 marc.constructor
 => [Function: String]
+
+marc instanceof String
+=> true
+```
+
+Open the Dev Tools and check out the methods available under `__proto__`
+
+I could even add new properties to the `String` object's prototype that will be passed to all instances:
+
+```js
+String.prototype.schmitty = "Hey there, my name is Schmitty"
+
+marc.schmitty;
+=> "Hey there, my name is Schmitty"
+
+
 ```
 <br>
+
+## &#x1F535; **YOU DO** - Hack the JS String
+
+- Create an instance of a String using the String constructor
+- Using the String's `.prototype`, add a property that will return "WDI Rules!"
+- Check out the new property on your instance's `__proto__` in the Dev Tools
+
+<br>
+
 
 ## Adding Properties and Methods to Objects - Codealong (15 mins)
 
