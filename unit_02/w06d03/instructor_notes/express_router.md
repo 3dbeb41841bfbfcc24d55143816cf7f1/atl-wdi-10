@@ -20,7 +20,11 @@ creator:
 
 **Optional reading for later:**
 
-https://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161
+- [3 Key Software Principles](https://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161)
+- [Express routing docs](https://expressjs.com/en/guide/routing.html)
+- [Express Router](https://scotch.io/tutorials/keeping-api-routing-clean-using-express-routers)
+- [1. module.exports](http://openmymind.net/2012/2/3/Node-Require-and-Exports/)
+- [2. module.exports](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
 
 
 ## DRY and Code smells
@@ -61,7 +65,7 @@ app.get('/todos/:id/edit', function(req, res){
 });
 ```
 
-These routes are all related to todos.  Let's put them in a separate "controller" file.  To do this, let's create a "controllers" directory and create a file called todos.js.  This will be our todos controller file.
+These routes are all related to todos.  Let's put them in a separate "controller" file and directory.  To do this, let's create a "controllers" directory and create a file called todos.js.  This will be our todos controller file.
 
 Now move the routes pertaining to todos into that todos.js file.
 
