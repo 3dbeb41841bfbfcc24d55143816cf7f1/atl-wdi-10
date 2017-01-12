@@ -240,7 +240,7 @@ Convention dictates that the `show` route returns one instance of of a given res
 
 &#x1F535; **YOU DO**
 
-Using what we learned about "wildcard" params (e.g. - `http://localhost:3000/:name`), see if you can create a route and a view to render a single todo from our `data.seededTodos` array. For example:
+Using what we learned about "wildcard" params (e.g. - `http://localhost:3000/:id`), see if you can create a route and a view to render a single todo from our `data.seededTodos` array. For example:
 
 ![](https://i.imgur.com/xOpoMui.png)
 
