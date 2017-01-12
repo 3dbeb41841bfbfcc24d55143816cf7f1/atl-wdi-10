@@ -431,7 +431,7 @@ We have our `views/todos/new.hbs` file that includes the form. Now write a NEW r
 ```js
 /* NEW TODO */
 router.get('/new', function(req, res){
-  res.render('/todos/new');
+  res.render('todos/new');
 });
 ```
 </details>
