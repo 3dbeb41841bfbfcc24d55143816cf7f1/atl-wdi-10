@@ -625,7 +625,7 @@ Why do we need to redirect after a `.post` action?
 
     ![](https://i.imgur.com/Bi2U4Lw.png)
 
-2. Add a nav bar to your layouts page with links to your INDEX (`/todos`) and NEW(`/todos/new`) routes. For example:
+2. Add a nav bar to your layout view with links to your INDEX (`/todos`) and NEW(`/todos/new`) routes. For example:
 
 
        ![](https://i.imgur.com/32xDLQF.png)
