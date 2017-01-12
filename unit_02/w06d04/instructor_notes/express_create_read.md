@@ -25,6 +25,8 @@ creator:
 - Build routes
 - Pass parameters via dynamic segments and query parameters
 
+<br>
+
 ## Intro
 
 So far we've created routes in Express and passed parameters from the browser to our server. We've constructed our views and dynamically built our html using Handlebars.
@@ -37,41 +39,52 @@ So in your `/unit_02/w06d04/student_labs` folder, you should see a starter appli
 
 <br>
 
-&#x1F535; **YOU DO: Starter Code Set-up**
+&#x1F535; **YOU DO: PART 2 - Starter Code Set-up**
 
 1. `cd` into `starter-code-hbs` and run the command `npm install` which will read the `package.json` file and install all of the dependencies specified in a `node_modules` folder. 
 
-2. Then, run `nodemon server.js` to start our server. What port will the app be on?
+2. Then, run `nodemon server.js` to start our server.
 
-In `server.js`, notice that we have a `/todos` route. It contains `var seededTodos` which is an array of 2 seeded todos:
+    ![](https://i.imgur.com/SNHzqDp.png)
 
-```js
-/* HOME */
+    In `server.js`, notice that we have a `/todos` route. It contains `var seededTodos` which is an array of 2 seeded todos:
+
+    ```js
+/* INDEX */
 app.get('/todos', function(req,res) {
-  var seededTodos = [
-    {
-      description: "get beer",
-      urgent: true
-    }, {
-      description: "dry cleaning",
-      urgent: false
-    }
-  ]
-
-  res.render('/todos/index', {
-    todos: seededTodos
-  })
+      var seededTodos = [
+        {
+          description: "get beer",
+            urgent: true
+          }, {
+            description: "dry cleaning",
+            urgent: false
+          }
+      ];
+        
+      res.render('/todos/index', {
+        todos: seededTodos
+      });
 })
 ``` 
+
+
+3. Walk back thorough yesterday's Express Router lesson and refactor this app with the following:
+
+    - A `controllers/todos.js` file
+    - Move your `/todos` route to the file.
+
+
 <br>
 
-&#x1F535; **YOU DO**
+
+&#x1F535; **YOU DO - PART 1**
 
 1. Check out the `views/todos/index.hbs` file. Using Handlebars, add some code that shows us how many todos we have. Like so: 
 
     ![](https://i.imgur.com/4VhZNh3.png)
 
-1. Add a 3rd todo to the `seededTodos` object.
+1. Add a 3 (or more) todos to the `seededTodos` object.
 
 <br>
 
@@ -687,6 +700,7 @@ description=take%20out%20the%20trash
 <br>
 
 </details>
+
 <details>
 
 <summary>**RECAP: ServerSide**</summary>
@@ -746,3 +760,86 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 ```
 </details>
+
+</details>
+
+<details>
+
+<summary>**Set-up Solution**</summary>
+
+
+# Set-up Solution
+
+
+These routes are all related to todos.  Let's put them in a separate "controller" file and directory.  Create a a "controllers" directory and create a file called `todos.js`.  This will be our todos controller file.
+
+Now move the routes pertaining to todos into that todos.js file.
+
+```javascript
+/* INDEX TODOS */
+app.get('/todos', function(req,res) {
+  var seededTodos = [
+    {
+      description: "get beer",
+      urgent: true
+    }, {
+      description: "dry cleaning",
+      urgent: false
+    }
+  ];
+
+  res.render('todos/index', {
+    todos: seededTodos
+  });
+});
+```
+
+Require express at the top of that `todos.js` file
+
+```javascript
+var express = require('express');
+```
+
+invoke the router
+
+```javascript
+var router = express.Router();
+```
+
+Change app to router
+
+```javascript
+/* INDEX TODOS */
+router.get('/todos', function(req,res) {
+  ...
+});
+```
+
+At the bottom of the file, export the router
+
+```javascript
+module.exports = router;
+```
+
+Now in your `server.js`, require the controller file we created.  **Be sure to include ./ at the beginning of the path to the controller, so node knows that this is not an NPM package.**
+
+```javascript
+var todosController = require('./controllers/todos.js');
+```
+
+Use the controller for all routes that start with `/todos`
+
+```javascript
+app.use('/todos', todosController);
+```
+
+Since we are specifying that the controller will be used for all routes starting with `/todos`, we don't need to show `/todos` in our actual routes within our controller file.
+
+```javascript
+/* INDEX TODOS */
+router.get('/', function(req,res) {
+  ...
+});
+```
+</details>
+
