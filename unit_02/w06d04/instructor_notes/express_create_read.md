@@ -98,7 +98,7 @@ As our app grows in size and complexity, we'll want to move logic out of our `se
 as one global variable. The global variable isn't assigned until we require the
 file.
 
-1. For example, let's remove the `seededTodos` data from `server.js` to our `data.js` file by adding it to `module.exports` like so:
+1. For example, let's remove the `seededTodos` data from `controllers/todos.js` to our `data.js` file by adding it as a property to `module.exports` like so:
 
     ```js
     module.exports = {
@@ -116,13 +116,13 @@ file.
 
     Now our `module.exports` will have a property of `seededTodos` which is an Array of todo objects.
 
-1. In `server.js`, instantiate a global variable to grant access to module we've created:
+1. In `controllers/todos.js`, instantiate a variable to grant access to module we've created:
 
     ```js
-var data = require('./data.js');
+var data = require('../data.js');
 ```
 
-1. Now, our global variable `data` is our `module.exports` object. We can access our `seededTodos` via our `data.js` file like so:
+1. Now, our variable `data` is our `module.exports` object. We can access our `seededTodos` via our `controllers/todos.js` file like so:
     
     ```js
     res.render('todos/index.hbs', {
@@ -170,7 +170,7 @@ We're going to follow a very specific pattern at first.
 |---------------:	|----------------------------------------------------------------------------	|---------------------------------------------------------	|---------------------------------------------------	|
 | show.hbs  	| Shows a individual resource                                                	| A page that shows a single blog post                    	| localhost:3000/posts/1 | GET /posts/:id           	|
 | index.hbs 	| Shows all instances of a resource                                          	| A page that shows all blog posts                        	| localhost:3000/posts | GET /posts                 	|
-| new.hbs   	| Displays a form to create a new resource (form makes a post request)       	| A page that lets you create a new blog post            	| localhost:3000/posts | GET /posts/new             	|
+| new.hbs   	| Displays a form to create a new resource (form makes a post request)       	| A page that lets you create a new blog post            	| localhost:3000/posts/new | GET /posts/new             	|
 | edit.hbs  	| Displays a form that lets you edit a resource (form makes a post request) 	| A page that lets you edit an already created blog post 	| localhost:3000/posts/1/edit | GET /posts/:id/edit 	|
 
 
@@ -178,7 +178,7 @@ We're going to follow a very specific pattern at first.
 <br>
 
 
-Roughly, here's how the table above would look in our `server.js`:
+Roughly, here's how the table above would look in our `server.js` (this generic example is BEFORE DRY-ing up our code with express.Router and a separate controller file.):
 
 ```javascript
 app.get('/posts', function(req, res) {
@@ -252,7 +252,7 @@ Route
 
 ```js
 /* SHOW TODO */
-app.get('/todos/:id', function(req,res) {
+router.get('/:id', function(req,res) {
   var todo = data.seededTodos[req.params.id];
 
   res.render('todos/show', {
@@ -388,20 +388,20 @@ Finish fleshing out your form with the code above.
 
 #### Server Side
 
-Some of the the `server.js` (specifically an INDEX route to show all of our todos, which we're storing in an array and our server/express configuration) is already written for you in the `starter-code`, we should walk through it to reiterate how it works.
+Some of the the `controllers/todos.js` (specifically an INDEX route to show all of our todos, which we're storing in an array and our server/express configuration) is already written for you in the `starter-code`, we should walk through it to reiterate how it works.
 
 ```javascript
-// server.js
+// controllers/todos.js
 
 // This pulls in the module.exports object from 
 // data.js and assigns it to var data
 // specifically it contains our seeded todos
-var data = require('./data.js');
+var data = require('../data.js');
 
 
 // Index shows all of a specific resource
 // INDEX TODOS - returns All todos
-app.get('/todos', function(req,res) {
+router.get('/', function(req,res) {
   res.render('todos/index.hbs', {
     todos: data.seededTodos
   });
@@ -430,7 +430,7 @@ We have our `views/todos/new.hbs` file that includes the form. Now write a NEW r
     
 ```js
 /* NEW TODO */
-app.get('/todos/new', function(req, res){
+router.get('/new', function(req, res){
   res.render('/todos/new');
 });
 ```
@@ -478,7 +478,7 @@ Build a todo CREATE route using `app.post`. Don't worry about accessing the para
     
 ```js
 /* CREATE TODO */
-app.post('/todos', function(req, res){
+router.post('/', function(req, res){
   res.send("Create a new todo is working!");
 });
 ```
@@ -597,7 +597,7 @@ Now the form data is accessible via `req.body`. Our next step is to add our todo
     
 ```js
 /* CREATE TODO */
-app.post('/todos', function(req, res){
+router.post('/', function(req, res){
     var newTodo = {
         description: req.body.description,
         urgent: req.body.urgent
