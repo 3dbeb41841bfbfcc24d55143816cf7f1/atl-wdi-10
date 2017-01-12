@@ -3,7 +3,6 @@ var path        = require('path');
 var logger      = require('morgan');
 var express     = require('express');
 var hbs         = require('hbs');
-// var data        = require('./data.js');
 /* app settings*/
 var app         = express();
 var port        = process.env.PORT || 3000;
