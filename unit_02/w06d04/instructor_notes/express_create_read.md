@@ -471,7 +471,7 @@ Awesome so now we have a form that renders on the page. So let's engage in some 
 
 &#x1F535; **YOU DO**
 
-Build a todo CREATE route using `app.post`. Don't worry about accessing the params from the form yet. Just send a response back ("Create a new todo is working!") to the client so you can verify the route works.
+Build a todo CREATE route using `router.post`. Don't worry about accessing the params from the form yet. Just send a response back ("Create a new todo is working!") to the client so you can verify the route works.
 
 <details>
     <summary>Create Todo Route Solution</summary>
