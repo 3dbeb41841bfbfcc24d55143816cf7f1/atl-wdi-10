@@ -39,7 +39,7 @@ So in your `/unit_02/w06d04/student_labs` folder, you should see a starter appli
 
 <br>
 
-&#x1F535; **YOU DO: PART 2 - Starter Code Set-up**
+&#x1F535; **YOU DO: PART 1 - Starter Code Set-up**
 
 1. `cd` into `starter-code-hbs` and run the command `npm install` which will read the `package.json` file and install all of the dependencies specified in a `node_modules` folder. 
 
@@ -78,7 +78,7 @@ app.get('/todos', function(req,res) {
 <br>
 
 
-&#x1F535; **YOU DO - PART 1**
+&#x1F535; **YOU DO - PART 2**
 
 1. Check out the `views/todos/index.hbs` file. Using Handlebars, add some code that shows us how many todos we have. Like so: 
 
