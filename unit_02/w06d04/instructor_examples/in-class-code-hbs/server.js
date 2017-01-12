@@ -3,6 +3,7 @@ var path        = require('path');
 var logger      = require('morgan');
 var express     = require('express');
 var hbs         = require('hbs');
+var bodyParser  = require('body-parser');
 var todosController = require('./controllers/todos.js');
 /* app settings*/
 var app         = express();
@@ -10,6 +11,9 @@ var port        = process.env.PORT || 3000;
 /* set up the application params*/
 
 // log
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use( logger('dev'));
 app.use('/todos', todosController);
 

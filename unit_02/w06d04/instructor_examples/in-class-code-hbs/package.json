@@ -9,6 +9,7 @@
   "author": "Jason Seminara",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "hbs": "^4.0.0",
