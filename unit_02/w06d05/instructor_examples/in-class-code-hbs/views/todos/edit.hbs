@@ -1,0 +1,12 @@
+<h1>Edit</h1>
+<form action="/todos/{{todo.id}}?_method=PUT", method="POST">
+  <div class="">
+    <label for="description">description:</label>
+    <input type="text" name="description" value="{{todo.description}}">
+  </div>
+  <div>
+    <label for="urgent">urgent:</label>
+    <input type="text" name="urgent" value="{{todo.urgent}}">
+  </div>
+  <input type="submit" name="" value="Submit Changes">
+</form>

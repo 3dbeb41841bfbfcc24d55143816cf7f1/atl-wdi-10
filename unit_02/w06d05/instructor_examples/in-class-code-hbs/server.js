@@ -4,6 +4,8 @@ var logger      = require('morgan');
 var express     = require('express');
 var hbs         = require('hbs');
 var bodyParser  = require('body-parser');
+var methodOverride = require('method-override');
+
 var todosController = require('./controllers/todos.js');
 /* app settings*/
 var app         = express();
@@ -15,6 +17,8 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use( logger('dev'));
+app.use(methodOverride('_method'));
+
 app.use('/todos', todosController);
 
 /*Views*/
