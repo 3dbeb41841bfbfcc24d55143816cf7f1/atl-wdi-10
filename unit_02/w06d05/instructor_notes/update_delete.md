@@ -46,7 +46,7 @@ Acronyms galore. But let's quickly revisit what these are and how we've applied 
 Inside our `controllers/todos.js` file, add a DELETE route:
 
 ```javascript
-app.delete('/:id', function(req, res){
+router.delete('/:id', function(req, res){
 	data.seededTodos.splice(req.params.id, 1); //remove the item from the array
 
 	res.redirect('/todos');  //redirect back to index route
@@ -136,10 +136,10 @@ You can read the conversation about adding PUT and DELETE form functionality to 
 In our `controllers/todos.js`, create a GET route which will display an edit form for a single todo item.
 
 ```javascript
-app.get('/:id/edit', function(req, res){
+router.get('/:id/edit', function(req, res){
   res.render('/todos/edit', {
     todo: {
-      description: data.seededTodos[req.params.id],
+      description: data.seededTodos[req.params.id].description,
       urgent: data.seededTodos[req.params.id].urgent,
       id: req.params.id
     }
@@ -190,13 +190,15 @@ In order to UPDATE, we use the http verb PUT.
 Inside server.js add the following:
 
 ```javascript
-app.put('/:id', function(req, res){ //:id is the index of our todos array that we want to change
-	todos[req.params.id] = req.body.description; //in our todo array, find the index that is specified in the url (:id).  Set that index to the value of the "description" input in our edit form
-	res.redirect('/todos'); //redirect to the index page
-});
-```
+router.put('/:id', function(req, res) {
+  var todoToEdit = data.seededTodos[req.params.id];
 
-*[Side Note]* put vs patch
+  todoToEdit.description = req.body.description;
+  todoToEdit.urgent = req.body.urgent;
+
+  res.redirect('/todos');
+})
+```
 
 ### Make the edit page send a PUT request
 
@@ -205,16 +207,18 @@ Check the server logs, what happens when we hit submit changes?
 When we click "Submit Changes" on our edit page (edit.hbs), the form needs to make a PUT request to our update route
 
 ```html
-<html>
-	<body>
-		<h1>Edit</h1>
-		<!-- add action -->
-		<form action="/todos/{{@index}}">
-			<input type="text" name="description" value="{{todo.description}}" />
-			<input type="submit" value="Submit Changes"/>
-		</form>
-	</body>
-</html>
+<form action="/todos/{{todo.id}}" method="">
+  <div class="">
+    <label for="description">description:</label>
+    <input type="text" name="description" value="{{todo.description}}">
+  </div>
+  <div>
+    <label for="urgent">urgent:</label>
+    <input type="text" name="urgent" value="{{todo.urgent}}">
+  </div>
+  <input type="submit" name="" value="Submit Changes">
+</form>
+
 ```
 
 The problem is that forms can't make PUT requests.  Only POST and GET.  So we need to use method-override again
