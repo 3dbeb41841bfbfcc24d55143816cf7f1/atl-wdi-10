@@ -4,7 +4,7 @@
 
 Welcome to the Promise land! (sorry) You have been sneakily using promises this whole class, but today, we will illuminate what exactly a promise is, and shed light on best practices to use while playing with promises.
 
-## Objectives:
+## Objectives
 
 * Describe the anatomy of a Promise
 * Utilize Promises to manage asynchronous operations
@@ -13,9 +13,11 @@ Welcome to the Promise land! (sorry) You have been sneakily using promises this 
 
 <br>
 
-## YOU DO
+## You Do
 
-https://spring.io/understanding/javascript-promises
+&#x1F535; **YOU DO**
+
+Read this: https://spring.io/understanding/javascript-promises
 
 <br>
 
@@ -87,6 +89,8 @@ by more callbacks.
   }
   ```
 
+<br>
+
 ## "Callback Hell" : Drawbacks to Callbacks
 
   OK, that's fine for doing things that involve one 'slow' step. But what if
@@ -154,7 +158,8 @@ Maybe something like this?
 Asynchronous code necessitates callbacks.
 But dealing with lots of callbacks can be tricky:
 
--   Callbacks can be messy when they're nested: "callback hell". See [`lib/copy-json.js`](lib/copy-json.js).
+-   Callbacks can be messy when they're nested: "callback hell".
+    - http://callbackhell.com/
 -   Each callback will have to handle it's own errors if necessary.
 -   In complex programs, it will be hard to tell in what order callbacks fire.
 
@@ -243,102 +248,143 @@ handler for the promise's "reject" event. When the promise rejects, the handler
 is invoked and passed the value (usually an `Error` object) the promised rejected
 with as its argument.
 
-## Labs 1 & 2
 
-* Write a JS file for node that `requires` promise_lesson.js
+<br>
 
-`lab.one` contains a pre-made promise that will always resolve. Call its then method with a handler function that prints its result.
+## Promises Example
 
-`lab.two` contains a pre-made promise that will always reject. Call its catch method with a handler function that prints its result.
-
-## Group Activity
-
-Pair with the person next to you. One of you writes code to create a Promise. The other writes code to operate on the promise.
-
-At least one of each:
-* then
-* catch
-
-### More `then` and `catch`
-
-Promises allow us to reclaim the `return` and `throw` keywords. We can return a value from our `then` handler, and that value will be used to fulfill the promise returned by `then`. It will be available as a parameter to the following then handler.
-
-We can throw errors from our `then` handler, and they will be used to reject the promise returned by `then`. It will be available as a parameter to the nearest catch handler down the chain.
-
-#### More `then`
-
-There is a little more to `then` that this. It returns a new promise that resolves
-(or rejects) based on whether the upstream promise resolves or rejects, and what
-goes on in its resolution handler. Here is a code demonstration:
+A promise is like an IOU in real life. Let's say that your kid promises to clean his room by the end of the day. If he doesn't, the promise fails. Further, let's say that we also have a taking out the garbage function that depends on the room successfully being cleaned. Also, once the room has been cleaned and we've taken out the garbage we will get some ice cream as a reward.
 
 ```js
-somePromise.then(function(resVal) {
-    console.log("somePromise resolved!");
-
-    if(Math.random() > .5) {
-        return "The promise returned by `then` will now also resolve.";
-    } else {
-        throw new Error("The promise returned by `then` will now reject!");
-    }
-}).then(function(rV) {
-    console.log("The promise returned by the previous call to `then` resolved!");
-});
+var promiseToCleanTheRoom = new Promise(function(resolve, reject) {
+  // cleaning the room code would go here
+};
 ```
 
-`Promise.then` returning a new promise is what enables us to build 
-**promise chains**. A chained promise resolves only if its upstream promise
-resolves AND the resolution handler does not throw an error. Otherwise, it
-rejects. This is important to understanding the next section.
+- We can use the `new Promise()` constructor function to instantiate a new instance of a promise.
+- Promises take a callback function with 2 arguments:
+    - **resolve** means the promise is fulfilled
+    - **reject** means the promise has not been fulfilled 
 
-#### More `catch`
-
-Like above, there's a little more to `catch`. Since `then` lets us build promise 
-chains, and chained promises reject if their upstream promise rejects, `catch`
-can be used at the end of a promise chain to catch all upstream rejections. Here 
-is a code example:
+Let's set up a status based on whether or not the room has been cleaned
 
 ```js
-somePromise.then(function(rV) {
-    if(Math.random() > .5) {
-        return "Resolve 1!";
-    } else {
-        throw new Error("Reject 1!");
-    }
-}).then(function(resVal) {
-    if(Math.random() > .5) {
-        return "Resolve 2!";
-    } else {
-        throw new Error("Reject 2!");
-    }
-}).then(function(resolutionValue) {
-    if(Math.random() > .5) {
-        return "Resolve 3!";
-    } else {
-        throw new Error("Reject 3!");
-    }
-}).catch(function(err) {
-    console.error(err);
+var promiseToCleanTheRoom = new Promise(function(resolve, reject) {
+  // cleaning the room code would go here (e.g.- vaccum, dust, make the bed, etc)
+    
+  var isClean = true;
+
+  if (isClean) {
+    resolve('Clean'); //run this function if true
+  } else {
+    reject('not Clean'); //run this function if false
+  }
 });
 ```
+#### Promise Execution
 
-### Arrays of Promises
+Our promise may take some time to execute which means we're gonna have to wait for it. The `.then` method is called when the promise is resolved. `.then` takes a callback function that will only fire if the promise is resolved. We can pass arguments into the callback.
 
-A tricky aspect of promises is iterating over an array of them. Looping doesn't work.
+```js
+var promiseToCleanTheRoom = new Promise(function(resolve, reject) {
+// cleaning the room code would go here (e.g.- vaccum, dust, make the bed, etc)
+    
+  var isClean = true;
 
-Enter `Promise.all`.
+  if (isClean) {
+    resolve('Clean'); //run this function if true
+  } else {
+    reject('not Clean'); //run this function if false
+  }
+});
 
-It lets you provide a handler to be called once all async functions have finished. `Promise.all` collapses an array of promises into a single promise, which resolves once all its constituent promises have resolved.
+promiseToCleanTheRoom.then(function(fromResolve){
+  console.log(`The room is ${fromResolve}`);
+})
+```
 
-… but what if you're not waiting for them all to finish? `Promise.race` collapses an array of promises into a promise as well, but this one resolves once the first constituent promise resolves.
+We can chain another method called `.catch` to execute if the promise is rejected:
 
-## Labs 3 & 4
+```js
+var promiseToCleanTheRoom = new Promise(function(resolve, reject) {
+// cleaning the room code would go here (e.g.- vaccum, dust, make the bed, etc)
+    
+  var isClean = true;
 
-Call `Promise.all` on the array contained in `lab.three`, then compute the mean of the numeric results.
+  if (isClean) {
+    resolve('Clean'); //run this function if true
+  } else {
+    reject('not Clean'); //run this function if false
+  }
+});
 
-Call `Promise.race` on the array contained in `lab.four`, then log the numeric result.
+promiseToCleanTheRoom
+  .then(function(fromResolve){
+    console.log(`The room is ${fromResolve}`);
+  })
+  .catch(function(fromReject){
+    console.log(`The room is ${fromReject}`);
+  })
+```
 
-# Further Reading
+Update `var isClean = false;` and run the code again. The `.catch` method should execute.
 
-[Promise on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
-[We Have a Problem with Promises](http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
+#### Let's remove some garbage and get ice cream!
+
+Promises depend on each other. We have to finish one promise before we can start another one. So, we can't remove the garbage until we finish cleaning the room. Further, we can't get some ice cream until we finish taking out the garbage.
+
+Assuming the room has been cleaned, let's add another `.then` method to the chain (remember to set your `var isClean` back to `true`. We'll aso add a `return` statement to pass something onto the next `.then()` handler in the chain. This could be data, a message, etc.
+
+```js
+var promiseToCleanTheRoom = new Promise(function(resolve, reject) {
+// cleaning the room code would go here (e.g.- vaccum, dust, make the bed, etc)
+    
+  var isClean = true;
+
+  if (isClean) {
+    resolve('Clean'); //run this function if true
+  } else {
+    reject('not Clean'); //run this function if false
+  }
+});
+
+promiseToCleanTheRoom
+  .then(function(fromResolve){
+    console.log(`The room is ${fromResolve}`);
+    return "Let's take out the garbage!"; // whatever is returned will be passed to the next `.then()` handler
+  })
+  .then(function(message){
+    console.log(message);
+  })
+  .catch(function(fromReject){
+    console.log(`The room is ${fromReject}`);
+  })
+  
+// The room is Clean
+// Let's take out the garbage!
+```
+
+<br>
+
+&#x1F535; **YOU DO**
+
+Add a 3rd `.then()` handler that will console.log "Room cleaned, garbage taken out, let's go get some ice cream!"
+
+<br>
+
+## Independent Practice
+Look in today's student labs folder for `promises-lab-starter`.
+
+<br>
+
+## Additional Resources
+
+-   [Clean Room Example Video](https://www.youtube.com/watch?v=s6SH72uAn3Q)
+-   [Promise - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+-   [Promises](https://www.promisejs.org/)
+-   [Promisees · Courtesy of ponyfoo.com](http://bevacqua.github.io/promisees/)
+-   [wbinnssmith/awesome-promises: A curated list of useful resources for JavaScript Promises](https://github.com/wbinnssmith/awesome-promises)
+-   [How to escape Promise Hell — Medium](https://medium.com/@pyrolistical/how-to-get-out-of-promise-hell-8c20e0ab0513#.4wtj9hlvw)
+-   [Promise on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+-   [We Have a Problem with Promises](http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)

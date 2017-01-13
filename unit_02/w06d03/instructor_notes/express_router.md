@@ -17,6 +17,7 @@ creator:
   - Bring the C of MVC
   - Dry up our routes
   - Apply Single Responsibility to our application and specifically our main server file (server.js)
+5. Describe and apply principles of Refactoring
 
 **Optional reading for later:**
 
@@ -144,3 +145,25 @@ router.get('/:id/edit', function(req, res){
     //do stuff
 });
 ```
+
+
+## Refactoring
+
+>noun: a change made to the internal structure of software to make it easier to understand and cheaper to modify without changing its observable behavior
+
+> verb: to restructure software by applying a series of refactorings without changing its observable behavior
+
+From: _www.refactoring.com_
+
+>Code refactoring is the process of restructuring existing computer code—changing the factoring—without changing its external behavior. Refactoring improves nonfunctional attributes of the software. Advantages include improved code readability and reduced complexity [...]
+
+From: _wikipedia.org/wiki/Code_refactoring_
+
+---
+
+We're going to refactor the hello app from yesterday so that each of the routes exists in a separate router.
+
+
+## LAB
+
+Routes on routes on routes!

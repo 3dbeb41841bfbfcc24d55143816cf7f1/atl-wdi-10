@@ -1,0 +1,22 @@
+<h1> Todos </h1>
+<div>
+  <a href="/todos/new">New Todo</a>
+</div>
+<ul>
+  {{#each todos}}
+    <li>Description: {{description}}</li>
+    <li>Urgent: {{urgent}}</li>
+    <br>
+
+
+    <li style="list-style: none; display: inline;"><a style="text-decoration: none" href="/todos/{{@index}}">Show</a> | </li>
+    <li style="list-style: none; display: inline;"><a style="text-decoration: none" href="/todos/{{@index}}/edit">Edit</a> | </li>
+    <li style="list-style: none; display: inline;">
+      <form style="display: inline;"action="/todos/{{@index}}?_method=DELETE" method="POST">
+        <input type="submit" value="X">
+      </form>
+    </li>
+    <br> <br>
+    <hr>
+  {{/each}}
+</ul>

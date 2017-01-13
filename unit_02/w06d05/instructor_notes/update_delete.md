@@ -27,43 +27,56 @@ REST
 
 MVC
 
-Acronyms galore. But let's quickly revisit what these are and how we've applied them thus far. 
+Acronyms galore. But let's quickly revisit what these are and how we've applied them thus far.
 
-###
+### Exercise: Steps to create a node app
+
+### Naming Conventions
+
+1. controller files (plural)
+
+2. routes (plural or singular depending)
+
+3. views dir (plural)
+
+4. view files (index, new, show, edit)
 
 ### Create a Delete Route
 
-Inside our server.js file, add a DELETE route:
+Inside our `controllers/todos.js` file, add a DELETE route:
 
 ```javascript
-app.delete('/todos/:id', function(req, res){
+app.delete('/:id', function(req, res){
 	data.seededTodos.splice(req.params.id, 1); //remove the item from the array
+
 	res.redirect('/todos');  //redirect back to index route
 });
 ```
 
 ### Make the index page send a DELETE request
 
-In our `server.js` file, make sure your index route looks something like this:
+In our `controllers/todos.js` file, make sure your index route looks something like this:
 
 ```javascript
-app.get('/todos', function(req, res){
-	res.render( 'todos/index', {
-      todos: data.seededTodos //pass in the entire todos array
- });
+router.get('/', function(req,res) {
+
+  res.render('todos/index', {
+    todos: data.seededTodos
+  });
 });
+
 ```
 
 Inside our `index.hbs` file, add a form with just a delete button.
 
 ```html
-<h1> You have {{ todos.length }} Todos </h1>
+<h1> Todos </h1>
 <ul>
   {{#each todos}}
     <li>Description: {{description}}</li>
     <li>Urgent: {{urgent}}</li>
     <br>
-    <form>
+    <form action="/todos/{{@index}}">
       <input type="submit" value="DELETE"/>
     </form>
   {{/each}}
@@ -75,7 +88,7 @@ When we click "DELETE" on our index page (index.hbs), the form needs to make a D
 
 Click the button and watch your server logs in the terminal. Where did the request go?
 
-The problem is that forms can't make DELETE requests.  Only POST and GET.  We can , though.  First we need to install an npm package called `method-override`
+The problem is that forms can't make DELETE requests.  Only POST and GET.  We can, though.  First we need to install an npm package called `method-override`
 
 ```
 npm install method-override --save
@@ -120,10 +133,10 @@ You can read the conversation about adding PUT and DELETE form functionality to 
 
 ### Create an edit route
 
-In our `server.js`, create a GET route which will just display an edit form for a single todo item.
+In our `controllers/todos.js`, create a GET route which will display an edit form for a single todo item.
 
 ```javascript
-app.get('/todos/:id/edit', function(req, res){
+app.get('/:id/edit', function(req, res){
   res.render('/todos/edit', {
     todo: {
       description: data.seededTodos[req.params.id],
@@ -151,27 +164,17 @@ Now create a very basic form for editing in `views/edit.hbs`
 
 ### Create a link to the edit route
 
-In our `server.js` file, make sure your index route looks something like this:
-
-```javascript
-app.get('/todos', function(req, res){
-	res.render('todos/index.hbs',
-		{ todos: data.seededTodos } //pass in the entire todos array
-	);
-});
-```
-
 Inside our `index.hbs` file, add a link to our edit route which passes in the index of that item in the url
 
 ```html
-<h1> You have {{ todos.length }} Todos </h1>
+<h1> Todos </h1>
 <ul>
   {{#each todos}}
     <li>Description: {{description}}</li>
     <li>Urgent: {{urgent}}</li>
     <br>
-    <form action="/todos/{{@index}}?_method=PUT" method="POST">
-      <input type="submit" value="EDIT"/>
+    <form action="/todos/{{@index}}">
+      <input type="submit" value="DELETE"/>
     </form>
     <div><a href="/todos/{{@index}}/edit">Edit</a></div>
     <hr>
@@ -187,11 +190,13 @@ In order to UPDATE, we use the http verb PUT.
 Inside server.js add the following:
 
 ```javascript
-app.put('/todos/:id', function(req, res){ //:id is the index of our todos array that we want to change
+app.put('/:id', function(req, res){ //:id is the index of our todos array that we want to change
 	todos[req.params.id] = req.body.description; //in our todo array, find the index that is specified in the url (:id).  Set that index to the value of the "description" input in our edit form
 	res.redirect('/todos'); //redirect to the index page
 });
 ```
+
+*[Side Note]* put vs patch
 
 ### Make the edit page send a PUT request
 
@@ -204,7 +209,7 @@ When we click "Submit Changes" on our edit page (edit.hbs), the form needs to ma
 	<body>
 		<h1>Edit</h1>
 		<!-- add action -->
-		<form action="/todos/{{todo.id}}">
+		<form action="/todos/{{@index}}">
 			<input type="text" name="description" value="{{todo.description}}" />
 			<input type="submit" value="Submit Changes"/>
 		</form>
@@ -218,134 +223,40 @@ The problem is that forms can't make PUT requests.  Only POST and GET.  So we ne
 Now go back and set up our edit form to send a PUT request
 
 ```html
-<form action="/todos/{{todo.id}}?_method=PUT" method="POST">
+<form action="/todos/{{@index}}?_method=PUT" method="POST">
 ```
 
-## All code
+## Independent/Group Exercise (1hr)
 
-index.js
-```javascript
-/* packages */
-var path        = require('path');
-var logger      = require('morgan');
-var express     = require('express');
-var hbs         = require('hbs');
-var methodOverride = require('method-override');
-var data        = require('./data.js');
-var bodyParser = require('body-parser');
-  /* app settings*/
-var app         = express();
-var port        = process.env.PORT || 3000;
+Documentation!
 
-/* set up the application params*/
+I'm going to share a link to a repo with the source code of this basic CRUD application.
 
-/*  Middleware */
-app.use( logger('dev'));
-app.use(express.static(__dirname + '/public'))
-app.use(methodOverride('_method'));
-app.use(bodyParser.urlencoded({ extended: false }));
-
-/*Views*/
-app.set('view engine', 'hbs');
-
- /* HOME */
- app.get('/', function(req,res) {
-   res.send('This is our Home Page');
- });
-
-  /* INDEX TODOS */
- app.get('/todos', function(req,res) {
-  res.render('todos/index', {
-    todos: data.seededTodos
-  });
- });
-
- /* NEW TODO */
- app.get('/todos/new', function(req, res){
-   res.render('todos/new');
- });
-
- /* GET UPDATE FORM TO EDIT TODO */
- app.get('/todos/:id/edit', function(req, res) {
-   res.render('todos/edit', {
-     todo: {
-       description: data.seededTodos[req.params.id].description,
-       urgent: data.seededTodos[req.params.id].urgent,
-       id: req.params.id
-     }
-   });
- });
-
- /* UPDATE TODO */
- app.put('/todos/:id', function(req, res) {
-   console.log(req.body)
-   data.seededTodos[req.params.id].description = req.body.description
-   data.seededTodos[req.params.id].urgent = req.body.urgent
-   res.redirect('/todos');
- });
-
- /* DELETE TODO */
- app.delete('/todos/:id', function(req, res) {
-   console.log('hey')
-   data.seededTodos.splice(req.params.id, 1)
-
-   res.redirect('/todos');
- });
-
-  // Start server
- app.listen(port, function() {
-   console.info('Server Up -- Ready to serve hot todos on port', port,"//", new Date())
- });
-```
-
-package.json
-```json
-{
-  "name": "express_update_delete",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "hbs": "^4.0.1",
-    "method-override": "^2.3.6",
-    "morgan": "^1.7.0"
-  }
-}
-```
-
-edit.hbs
-```html
-
-<h1>Edit</h1>
- <form action="/todos/{{todo.id}}?_method=PUT" method="POST">
-  <input type="text" name="description" value="{{todo.description}}" />
-  <input type="text" name="urgent" value="{{todo.urgent}}" />
-  <input type="submit" value="Submit Changes"/>
-</form>
+I'd like you to document this application as robustly as possible using three types of issues:
 
 ```
+- [documentation]
+- [syntax question]
+- [process question]
+```
 
-index.hbs
-```html
-<h1> You have {{ todos.length }} Todos </h1>
-<ul>
-  {{#each todos}}
-    <li>Description: {{description}}</li>
-    <li>Urgent: {{urgent}}</li>
-    <br>
-    <form action="/todos/{{@index}}?_method=DELETE" method="POST">
-      <input type="submit" value="DELETE"/>
-    </form>
-    <div><a href="/todos/{{@index}}/edit">Edit</a></div>
-    <hr>
-  {{/each}}
-</ul>
+You're going to open issues on the repo formatting the title with the name of the file, the line you're starting from and ending at, and a small description of what you're describing.
 
 ```
+  Issue Example 1: [documentation] server.js, lines 33-35, app.listen + callback
+  Issue Example 2: [documentation] views/edit.hbs, line 2, form action w/ method override
+
+  Issue Example 3: [syntax question] views/index.hbs, line 6, {{#each todos}}
+
+  Issue Example 4: [process question] views/edit.hbs, lines 2,5,9, how to pass data to the view?
+```
+
+It might be a multi-line function or maybe just what a piece of middle ware is doing, or several different lines about configuring the Express Router etc.
+
+You also might open issues on lines of code that you don't understand. Your fellow students or myself will respond.
+
+At the end of this exercise we should hopefully of most if not all of this application documented with one if not more explanations of what each piece is doing.
+
+This repo can then be used as a resource!
+
+*(NOT AS A PLACE TO COPY + PASTE FROM)*
