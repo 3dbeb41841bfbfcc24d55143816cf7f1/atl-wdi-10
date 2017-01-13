@@ -27,6 +27,10 @@ describe("clock hand angles tests", function(){
     expect(clock(1,59)).to.eql([294.5, 65.5]);
   });
 
+  it("clock(9, 45) should return [22.5, 337.5]", function(){
+    expect(clock(1,59)).to.eql([294.5, 65.5]);
+  });
+
   it("clock(500, 34) should return 'out of range'", function(){
     expect(clock(500, 34)).to.eql("out of range");
   });
