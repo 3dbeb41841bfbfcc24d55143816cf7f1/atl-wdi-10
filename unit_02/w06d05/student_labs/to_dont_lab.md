@@ -13,10 +13,10 @@ It's a ToDont app to help you keep track of all the things you shouldn't do!
 
   This will help you keep track of you're currently working on as well as making sure you don't forget something small.
 
-  1a. npm init
-  1b. add what you need in the server file
-  1c. create the controller folder, the views folder
-  2d. configure your router file for `toDonts`
+  - 1a. npm init
+  - 1b. add what you need in the server file
+  - 1c. create the controller folder, the views folder
+  - 2d. configure your router file for `toDonts`
 
 2. add a data file
 
@@ -44,9 +44,9 @@ It's a ToDont app to help you keep track of all the things you shouldn't do!
 
   All four CRUD actions, 6 routes in total!
 
-  3a. Create or finish configuring your router file
-  3b. index route and view
-  3c. show route and view
-  3d. create route and view
-  3e. edit route, view, and put route
-  3f. delete route
+  - 3a. Create or finish configuring your router file
+  - 3b. index route and view
+  - 3c. show route and view
+  - 3d. create route and view
+  - 3e. edit route, view, and put route
+  - 3f. delete route
