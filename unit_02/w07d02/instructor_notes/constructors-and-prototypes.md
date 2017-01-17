@@ -376,7 +376,7 @@ function Person(name){
 }
 
 Person.prototype.speak = function(){
-  alert("My name is, " + this.name);
+  alert("My name is, " + name);
 }
 
 var mum = Person("mum");
@@ -407,6 +407,24 @@ Create a constructor for playing cards that have the following attributes
 
 - Suit 
 - cardValue
+
+<br>
+
+## Create your own - Independent Practice Part 3
+
+Create a constructor for a BlogPost class.
+
+- The important attributes of a post are title, date, author, and text.
+- Implement a method named publish which console.logs the text
+
+When you are done, the following code should create an appropriate object:
+
+```js
+var blog = new BlogPost ("Day 4 of WDI! (wutwut)", 'Thursday, October 1', 'Margie EveryStudent', 'Wow, what a week! I love WDI');
+```
+
+- Create 3 Blog posts
+- Implement a prototype method that will console.log the number of characters in the text.
 
 <br>
 
