@@ -376,7 +376,7 @@ function Person(name){
 }
 
 Person.prototype.speak = function(){
-  alert("My name is, " + name);
+  alert("My name is, " + this.name);
 }
 
 var mum = Person("mum");
