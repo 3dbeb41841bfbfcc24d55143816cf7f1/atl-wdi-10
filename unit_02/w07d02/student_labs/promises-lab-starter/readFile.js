@@ -4,7 +4,7 @@ const fs = require('fs');
 
 let inFile = process.argv[2];
 
-fs.readFile(inFile, { encoding: 'utf8' }, (error, content) => {
+fs.readFile(inFile, { encoding: 'utf8' }, function(error, content) {
   if (error) {
     console.error(error);
   }
@@ -16,7 +16,7 @@ fs.readFile(inFile, { encoding: 'utf8' }, (error, content) => {
   // clean up the array by removing the empty line
   lines.pop();
 
-  lines.forEach((line) => {
+  lines.forEach(function(line) {
     console.log('Hello, ' + line + '!');
   });
 });
