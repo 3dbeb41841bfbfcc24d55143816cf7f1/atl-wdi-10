@@ -43,8 +43,6 @@ Read this: https://spring.io/understanding/javascript-promises
   to execute as soon as it possibly can, including before previous lines of
   code have finished executing.
   
-  Consider that as humans we have the ability to multitask in a __non-blocking__ way. We can drive, talk on the phone, check the radio and chew gum at the same time (well, most of us anyway). However, a sneeze is an example of __blocking__. I don't know about you, but when I sneeze I can't do anything else at that moment.
-
   > "Isn't that really confusing? How could anyone write code when they can't be
   > sure about the order in which their lines will run?"
 
@@ -208,31 +206,29 @@ A promise takes an anonymous function with two parameters; `resolve` and `reject
 The promise resolves when `resolve` is called, and is rejected when `reject` is 
 called.
 
+
+
+### `Promise.then` and `Promise.catch`
+
 The value passed to `resolve` will be the argument passed to the resolution 
 handler you register by calling the promise's `then` method. Likewise with the 
 value passed to `reject` and the rejection handler registered by calling 
 the promise's (or a chained promise's) `catch` method.
 
-### `Promise.then` and `Promise.catch`
-
-These two methods on every `Promise` object are the primary means of interacting
-with them. This section covers what they have in common.
-
-They can be used the same way. Each takes one argument, a function. Here is a
+Each takes one argument, a function. Here is a
 usage example featuring an arbitrary promise, `somePromise`:
 
 ```js
-somePromise.then(function(resolutionValue) {
-    console.log("somePromise resolved with value " + resolutionValue);
-    doSomethingWith(resolutionValue);
-});
-```
-```js
-somePromise.catch(function(rejectionValue) {
-    console.error(rejectionValue instanceof Error ?
-        rejectionValue :
-        "somePromise rejected with value " + rejectionValue);
-});
+somePromise
+    .then(function(resolutionValue) {
+        console.log("somePromise resolved with value " + resolutionValue);
+        doSomethingWith(resolutionValue);
+    })
+    .catch(function(rejectionValue) {
+        console.error(rejectionValue instanceof Error ?
+            rejectionValue :
+            "somePromise rejected with value " + rejectionValue);
+    });
 ```
 
 #### `.then`

@@ -29,6 +29,13 @@ competencies: Programming
 - Describe the difference between functions and methods in JavaScript
 - Describe how functions work with variables in JavaScript
 
+<br>
+## &#x1F535; **You Do**
+
+Read this article: https://blog.pivotal.io/labs/labs/javascript-constructors-prototypes-and-the-new-keyword
+
+<br>
+
 ## Intro (10 min)
 
 > Prototype-based programming is a style of object-oriented programming in which behavior reuse (known as inheritance) is performed via a process of cloning existing objects that serve as prototypes. This model can also be known as prototypal, prototype-oriented, classless, or instance-based programming. Delegation is the language feature that supports prototype-based programming. - wikipedia
@@ -47,7 +54,6 @@ When we talk about classes in Object Oriented Programming, we're describing a wa
 
 But, technically speaking, there are no classes in JavaScript - that's because even though JavaScript is object-oriented, it is not a class-based language. Rather, let's describe it as [prototype-based](https://en.wikipedia.org/wiki/Prototype-based_programming). But, we can use JavaScript just like we're used to - as a class-based language - if we think of the constructor functions like classes, like so many people do.
 
-> Note: Explain the difference between prototypical inheritance, not classical inheritance.
 
 #### Prototypal Inheritance:
 
@@ -110,7 +116,7 @@ jenny instanceof Person;
 // true
 ```
 
-Remember, do this all the time using built in constructors like String, Array, etc:
+Remember, we do this all the time using built in constructors like String, Array, etc:
 
 ```javascript
 var str = new String("abc") // "abc"
@@ -119,9 +125,9 @@ str instanceof String // true
 
 <br>
 
-## &#x1F535; **YOU DO** - Constructor Practice
+## &#x1F535; **You Do** - Constructor Practice (15 min)
 
-Go into the console of your browser (or Repl.it) to create a few constructor functions. Instantiate a few nenw objects from each constructor and then assert its reference. 
+Go into the console of your browser (or Repl.it) to create a few constructor functions like the Person example above. Instantiate a few new objects from each constructor and then assert its reference. 
 
 For example, create constructor functions for `Dog`, `Car`, or `Book` and instantiate new objects from them.
 
@@ -136,17 +142,17 @@ Okay - if we can use both literal and constructor syntax to create objects, what
 - An object defined with a constructor allows for multiple instances of the object
 - Object literals are basically singletons with public variables/methods
 
-  -  _"The Singleton Pattern limits the number of instances of a particular object to just one. This single instance is called the singleton."_ - dofactory.com:
+  -  _"The Singleton Pattern limits the number of instances of a particular object to just one. This single instance is called the singleton."_ - dofactory.com
 
 If we created a person with the literal notation:
 
 ```javascript
 var Person = {
-  name: "alex",
+  name: "Schmitty"
 }
 
 Person
-// Object {name: "alex"}
+// Object {name: "Schmitty"}
 ```
 
 To create another Person, we would need to type this code out again. Or we could use a constructor and do:
@@ -194,9 +200,9 @@ Object.getPrototypeOf(alex)
 
 <br>
 
-## &#x1F535; **YOU DO** - Model a Hero
+## &#x1F535; **You Do** - Model a Hero (15 min)
 
-Suppose we had the following object describing a favorite comic book hero:
+Suppose we had the following object literal describing a favorite comic book hero:
 
 ```js
 var batman = {
@@ -209,7 +215,7 @@ var batman = {
 };
 ```
 
-And now we want another object describing a different hero:
+And now we want another object literal describing a different hero:
 
 ```js
 var wonderWoman = {
@@ -255,9 +261,11 @@ There is only one construct when it comes to inheritance in JavaScript - objects
 
 All objects have internal links to other objects - we call these "other objects" prototypes; and that prototype object will have an inherited prototype of its own.  This goes on until we find an object with a `null` prototype. By definition `null` does not have a prototype; it acts as the end of the prototype chain.
 
+For example, lets say we try to call a `.kind` property on a `zack` object: `zack.kind`
+
 ![spyqq7jwqubh4oyfvqnnw7g](https://cloud.githubusercontent.com/assets/40461/8396752/737ff1c0-1dab-11e5-83b0-4f380980b2b5.png)
 
-We know that objects are basically key/value pairs. When you ask for a key's value from an object, JavaScript will look, first, to find the value in the instance of the object, and then, if it doesn't exist, it will look to that object's prototype 'default value', just like single-parent inheritance in Ruby. Note that this inheritance chains can go as long as you want, but generally, it's better to keep them short and have your code easier to understand.
+We know that objects are basically key/value pairs. When you ask for a key's value from an object, JavaScript will look, first, to find the value in the instance of the object, and then, if it doesn't exist, it will look to that object's prototype 'default value'. Note that these inheritance chains can go as long as you want, but generally, it's better to keep them short and have your code easier to understand.
 
 For example:
 
@@ -292,7 +300,7 @@ marc.schmitty;
 ```
 <br>
 
-## &#x1F535; **YOU DO** - Hack the JS String
+## &#x1F535; **You Do** - Hack the JS String Constructor (5 min)
 
 - Create an instance of a String using the String constructor
 - Using the String's `.prototype`, add a property that will return "WDI Rules!"
@@ -355,7 +363,6 @@ dad.species
 
 Amazing!
 
-<br>
 
 #### Use the Prototype
 
@@ -381,7 +388,39 @@ mum.speak == dad.speak;
 
 So if you have methods that are going to be shared by all instances of an Object, they can all have access to them.
 
-#### Multiple inheritance - Codealong (10 mins)
+<br>
+
+
+## Create your own - Independent Practice Part 1
+
+You are going to take over the Javascript world with a new army of Soldier objects.
+
+- Create a new soldier constructor function that allows you to create soldiers
+- A soldier should be able to have a `name` and `number`
+- The default type of a soldier should be `foot-soldier`
+- Each soldier in the army should have the same battleCry, an alert of "FREEDOM!"
+
+<br>
+
+## Create your own - Independent Practice Part 2
+Create a constructor for playing cards that have the following attributes 
+
+- Suit 
+- cardValue
+
+<br>
+
+## Closure
+
+Thinking of real world problems in this object context is a new challenge. Identify another problem domain and white board the JavaScript representation in an object.
+
+For Example: A bank ATM could use what kind of objects? With what attributes? With what abilities? account user withdraw ...etc.
+
+- Describe the purpose of a constructor function.
+
+<br>
+
+## Further Reading - Multiple inheritance
 
 At the moment, we are only using constructors to create an instance of one Object. You can do multiple inheritance in Javascript using a number of different methods:
 
@@ -444,26 +483,4 @@ makePerson("Alex");
 
 ![alex](https://cloud.githubusercontent.com/assets/40461/8397536/ddd90c1c-1dc6-11e5-89f3-546254537061.jpg)
 
-## Create your own - Independent Practice (15 mins)
 
-You are going to take over the Javascript world with a new army of Soldier objects.
-
-- Create a new soldier constructor function that allows you to create soldiers
-- A soldier should be able to have a `name` and `number`
-- The default type of a solder should be `foot-soldier`
-- The soldier's `number` should sequentially increase
-- Each soldier in the army should have the same battleCry, an alert of "FREEDOM!"
-- Your army should have a general who's type is `general`
-- Your general's number should be incremented inline with your foot-solders
-
-
-## Create your own - Independent Practice (15 mins)
-
-## Closure - (5 mins)
-
-Thinking of real world problems in this object context is a new challenge. Identify another problem domain and white board the JavaScript representation in an object.
-
-For Example: A bank ATM could use what kind of objects? With what attributes? With what abilities? account user withdraw ...etc.
-
-- Explain how classes differ in Ruby versus JavaScript.
-- Describe the purpose of a constructor function.
