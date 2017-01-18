@@ -4,7 +4,7 @@ type: lesson
 duration: '2:00'
 creator:
     name: Colin Hart
-    class: WDIr-R2D2
+    class: WDIr-matey
 ---
 
 ### Lesson Objectives
@@ -84,8 +84,3 @@ Pick one one of the following to model with your partner on paper:
 - A social media site, with users and posts/tweets/pins
 - An online ordering system, with customers and orders
 - A bar drink system, with orders, customers, drinks, and/or liquors
-
-Once you've outlined it, create the collections necessary and the documents.
-
-
-##

@@ -9,7 +9,7 @@ let inFile = process.argv[2];
 //     console.error(error);
 //   }
 //
-//   // 'Billy\nJames\nNick\n' --> ['Billy', 'James', 'Nick']
+//   // 'Billy\nJames\nNick\n' > ['Billy', 'James', 'Nick']
 //
 //   let lines = content.split('\n');
 //
