@@ -4,7 +4,7 @@ type: lesson
 duration: '2:00'
 creator:
     name: Colin Hart
-    class: WDIr-R2D2
+    class: WDIr-matey
 ---
 
 ### Lesson Objectives
