@@ -36,30 +36,30 @@ var StudentModel = mongoose.model("Student", StudentSchema);
 
 // MONGOOSE QUERIES START HERE
 // NEW + SAVE
-var chuck = new StudentModel({name: "Chuck", age: 30});
-
-chuck.save(function(err, student){
-  if(err){
-    console.log(err);
-  } else {
-    console.log(student);
-  }
-});
+// var chuck = new StudentModel({name: "Chuck", age: 30});
+//
+// chuck.save(function(err, student){
+//   if(err){
+//     console.log(err);
+//   } else {
+//     console.log(student);
+//   }
+// });
 
 // CREATE A PROJECT - EMBEDDED DOCUMENT
 
-var anna = new StudentModel({name: "Anna", age: 30});
-var project1 = new ProjectModel({title: "Memory Game", unit: "JS"});
-
-anna.projects.push(project1);
-
-anna.save(function(err, student){
-  if(err){
-    console.log(err);
-  } else {
-    console.log(student + " was saved to our db");
-  }
-});
+// var anna = new StudentModel({name: "Anna", age: 30});
+// var project1 = new ProjectModel({title: "Memory Game", unit: "JS"});
+//
+// anna.projects.push(project1);
+//
+// anna.save(function(err, student){
+//   if(err){
+//     console.log(err);
+//   } else {
+//     console.log(student + " was saved to our db");
+//   }
+// });
 
 
 
