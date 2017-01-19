@@ -33,6 +33,8 @@ competencies: Server Applications
 
 ## Using MongoDB with Node - Intro (5 mins)
 
+This morning we created an app that used Mongoose methods and queries to add/retreive data from a database. This afternoon we're gonna build an Express app using those same REST-ful methods and queries. Now, we will wrap that Mongoose code in the appropriate route. We'll use Express to send and receive the JSON data. Tomorrow we'll add Handlebars to render that data into views.
+
 NodeJS and MongoDB work really well together. To handle HTTP requests and read from or send data to MongoDB, Mongoose is the most common Node.js ORM to manipulate data using MongoDB: CRUD functionality is something that is necessary in almost most every application, as we still have to create, read, update, and delete data.
 
 Since we'll be able to use JSON across our application - with Mongo and Node - using JavaScript in our application is much easier. The MEAN stack - Mongo, Express, Angular, and Node - is becoming increasingly popular because of this.
@@ -47,7 +49,7 @@ Mongoose is an object modeling package - think ORM for Node; this gives us the M
 
 ## Setting up your app - Codealong (5 mins)
 
-I've included starter code in your student labs folder here: https://github.com/ga-students/wdi-remote-r2d2/tree/master/unit_02/w06d03/student_labs
+I've included starter code in your **w07d04/student_labs** folder called `express-mongoose-lesson-starter`
 
 1. `cd` into the folder
 2. run `npm install`
@@ -59,7 +61,9 @@ I've included starter code in your student labs folder here: https://github.com/
     - Keep another tab open to  the Terminal prompt `$` to run commands
 
 
-In this example, we are connecting to a local database named `family-tree`. You can now execute all the mongoDB commands over the database `family-tree`.
+In this example, we are connecting to a local database named `express-mongoose-lesson-starter`. You can now execute all the mongoDB commands in the database `express-mongoose-lesson-starter`.
+
+![](https://i.imgur.com/ebX8wCK.png)
 
 <br>
 
@@ -75,9 +79,11 @@ In this example, we are connecting to a local database named `family-tree`. You 
 
 #### Defining a Model
 
-Further, you can define methods to help automatically populate key(s) of your model. For example, if we wanted to automatically add `updated_at` and `created_at` fields to our users:
+You can define methods to help automatically populate key(s) of your model. For example, if we wanted to automatically add `updated_at` and `created_at` fields to our users:
 
 ```javascript
+// db/schema.js
+
 UserSchema.pre('save', function(next){
   now = new Date();
   this.updated_at = now;
@@ -87,6 +93,37 @@ UserSchema.pre('save', function(next){
   next();
 });
 ```
+<br>
+
+#### Adding Mongoose validations
+
+<details>
+<summary>When might we want to use validations on our data?</summary>
+
+- Unique email or user name
+- Confirm that an email field has a `@` symbol
+- Confirm that an phone field has the correct number of digits and formatting
+- Confirm that form fields aren't left empty
+- Confirm that a password matches it's confirmation field
+- Confirm that a password has a minimum number of digits or includes certain characters.
+
+</details>
+
+
+```js
+// db/schema.js
+
+var UserSchema = new Schema({
+  first_name: String,
+  last_name: String,
+  email: { type: String, required: true, unique: true },
+  created_at: Date,
+  updated_at: Date,
+  items: [ItemSchema]
+});
+```
+
+Check out this morning's Mongoose Intro lesson (near the bottom) for more custom validation info. Here are the Mongoose docs: http://mongoosejs.com/docs/validation.html
 
 <br>
 
@@ -99,23 +136,29 @@ From your Terminal prompt tab, run `$ node db/seeds.js` to seed your database. T
 
 <br>
 
+&#x1F535; YOU DO
+
+1. Seed your database
+
+<br>
+
 #### Users Index
 
-We can use the JavaScript equivalent of `.all`, `.find_by_`, and `.find` to get a hold of what we're looking for.
-
-Inside `users.js` let's add:
+For the most part, we're repeating what we did in our intro to mongoose app. However, now we're using the Express Router. Inside `usersController.js` let's add:
 
 ```javascript
 // USERS INDEX ROUTE
 router.get('/', function(req, res){
-  User.find({}, function(err, users){
+  User.find({})
+  .exec(function(err, users){
+    if (err) { console.log(err); }
     console.log(users);
     res.send(users);
   });
 });
 ```
 
-Test it out in your browser
+Test it out in your browser. **NOTE - this app runs on localhost port `:4000` instead of `:3000`**
 
 - Goto `http://localhost:4000/users/`
 
@@ -125,7 +168,6 @@ Test it out in your browser
 
 &#x1F535; YOU DO - Index Route
 
-1. Seed your database
 2. Add an index route for users
 3. Confirm that it's working in the browser
 
@@ -139,7 +181,9 @@ Test it out in your browser
 ```javascript
 // USER SHOW ROUTE
 router.get('/:id', function(req, res){
-  User.findById(req.params.id, function(err, user) {
+  User.findById(req.params.id)
+  .exec(function(err, user) {
+    if (err) console.log(err);
     console.log(user);
     res.send(user);
   });
@@ -163,13 +207,19 @@ Test it out in your browser. Grab the `id` of one of your users and add it to th
 
 ## Postman
 
-Today we're goning to test our routes using a tool called Postman. 
+It's a good practice to build your app one step at a time for testing and efficency. 
+
+- STEP 1 - This morning we created the Mongoose queries and confirmed that the code works. 
+- STEP 2 - This afternoon we're gonna take those working pieces of code and wrap them in Express routes. 
+- STEP 3 - Tomorrow we'll worry about the views once the routes are working, etc. 
+
+We have not created views and forms yet so we need a way to test our non-`.get` routes. We're gonna use a tool called Postman. 
 
 - Go download it from here: https://www.getpostman.com/. 
 - Click on "Mac App".
 - Open the app
 
-Postman allows us to make HTTP requests. We'll also use it to mimic using forms to send data to our server.
+Postman is a simple app that allows us to make HTTP requests. We'll also use it to mimic using forms to send data to our server.
 
 <br>
 
@@ -193,6 +243,7 @@ router.post('/', function(req, res){
     items: req.body.items
   });
   user.save(function(err, user){
+    if (err) console.log(err);
     console.log(user);
     res.send(user);
   });
@@ -229,7 +280,10 @@ router.patch('/:id', function(req, res){
   User.findByIdAndUpdate(req.params.id, {
     first_name: req.body.first_name,
     email: req.body.email
-  }, {new: true}, function(err, user) {
+  }, {new: true})
+  .exec(function(err, user) {
+    if (err) console.log(err);
+    console.log(user);
     res.send(user);
   });
 });
@@ -268,10 +322,11 @@ Mongoose gives you two easy methods to delete documents - `findByIdAndRemove()`a
 ```javascript
 // USER DESTROY
 router.delete('/:id', function(req, res){
-  User.findByIdAndRemove(req.params.id, function(err, user) {
+  User.findByIdAndRemove(req.params.id)
+  .exec(function(err, user) {
     if (err) console.log(err);
-      console.log('User deleted!');
-      res.send("User deleted");
+    console.log('User deleted!');
+    res.send("User deleted");
   });
 });
 ```
@@ -302,9 +357,11 @@ We'll test out sending form data using Postman
 ```javascript
 // ADD A NEW ITEM
 router.post('/:id/items', function(req, res){
-  User.findById(req.params.id, function(err, user){
-    user.items.push(new Item({name: req.body.name}))
+  User.findById(req.params.id)
+  .exec(function(err, user){
+    user.items.push(new Item({name: req.body.name}));
     user.save(function(err){
+      if (err) console.log(err);
       res.send(user);
     });
   });
@@ -341,10 +398,10 @@ router.delete('/:userId/items/:id', function(req, res){
     $pull:{
       items: {_id: req.params.id}
     }
-  }, function(err, item){
-    if(!err){
-      res.send(item + " Item deleted");
-    }
+  })
+  .exec(function(err, item){
+    if (err) console.log(err);
+    res.send(item + " Item deleted");
   });
 });
 ```
@@ -358,7 +415,7 @@ We'll test out sending form data using Postman
 - Hit Send
 - You should see a message that says "Item Deleted" next to the removed Item
 
-![](https://i.imgur.com/51C9YVy.png)
+![](https://i.imgur.com/GJ6R2pB.png)
 
 - Confirm that the item has been deleted by making a `GET` request to `http://localhost:4000/users/<THE USER ID YOU SELECTED>`
 
