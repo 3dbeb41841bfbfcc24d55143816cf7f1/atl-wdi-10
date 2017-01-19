@@ -1,15 +1,16 @@
 {
-  "name": "mongoose-intro-lesson",
+  "name": "express-mongoose-lesson-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^4.7.7"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.1"
   }
 }
