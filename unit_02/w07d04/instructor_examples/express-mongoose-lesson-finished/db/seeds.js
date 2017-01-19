@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/family-tree');
+mongoose.connect('mongodb://localhost/express-mongoose-lesson-starter');
 
 var User = require('../models/user');
 var Item = require('../models/item');
