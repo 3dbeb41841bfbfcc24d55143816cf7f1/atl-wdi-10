@@ -1,0 +1,26 @@
+
+	<main>
+
+		<h2>Welcome Back, {{user.username}}! </h2>
+
+		<a href="/">Go Back to Home Page</a> |
+    <a href="/new">Create Your Own Donut!</a>
+
+		<div class="donut-container-show">
+
+			<h3>Here is your shopping cart:</h3>
+			<ul>
+        {{#each user.shopping_cart}}
+
+
+			<li>{{this}}</li>
+
+      {{/each}}
+
+			</ul>
+		</div><br>
+
+
+	</main>
+</body>
+</html>
