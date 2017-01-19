@@ -1,5 +1,5 @@
 ---
-title: Mongo-backed Models with Mongoose
+title: Mongoose + Express
 type: lesson
 duration: "1:25"
 creator:
@@ -11,7 +11,7 @@ adapted:
 competencies: Server Applications
 ---
 
-# Mongo-backed Models with Mongoose
+# Mongoose + Express
 
 ### Objectives
 *After this lesson, students will be able to:*
