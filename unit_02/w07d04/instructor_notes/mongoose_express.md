@@ -132,7 +132,7 @@ Check out this morning's Mongoose Intro lesson (near the bottom) for more custom
 
 ####Seed your database
 
-From your Terminal prompt tab, run `$ node db/seeds.js` to seed your database. This will add 3 users to your `family-tree` database.
+From your Terminal prompt tab, run `$ node db/seeds.js` to seed your database. This will add 3 users to your `express-mongoose-lesson-starter` database.
 
 <br>
 
