@@ -62,14 +62,14 @@ You can use your own code from yesterday if it's more or less complete.
   1. create the views directory, and touch the layout file
 
   2. touch `views/users/index.hbs`
-    a. View should show all the students
-    c. Only display the first and last name
-    d. Your choice if you want to use flexbox or ul/li's
+    - View should show all the students
+    - Only display the first and last name
+    - Your choice if you want to use flexbox or ul/li's
 
   3. touch `views/users/show.hbs`
-    a. Each student on the `index` page should be clickable and direct the user to a show page for that specific student
+    - Each student on the `index` page should be clickable and direct the user to a show page for that specific student
 
-    b. The show page should render:
+    - The show page should render:
       - first_name
       - last_name
       - email
@@ -78,20 +78,20 @@ You can use your own code from yesterday if it's more or less complete.
 
   4. touch `views/users/edit.hbs`
 
-    a. Each student should have an edit button on the `show` page that renders a form which makes a put/patch request to the backend
+    - Each student should have an edit button on the `show` page that renders a form which makes a put/patch request to the backend
 
     Question: What's another way to render an edit form when the button is clicked apart from rendering and edit view?
 
   5. destroy
-    a. No view necessary, but a button would be nice, on each show page
+    - No view necessary, but a button would be nice, on each show page
 
 #### Build a views for items(projects)!
 *Building from the student show page*
 
   1. touch `views/items/index.hbs`
-    a. On the student show page, add a button to see students projects
+    - On the student show page, add a button to see students projects
 
-    b. The button should render all of the students projects in an `index` view
+    - The button should render all of the students projects in an `index` view
 
     <!-- b. Each project should be clickable and direct the user to a project show page. [HINT] The project \_id should be imbedded in the DOM in order to populate the url -->
 
@@ -106,16 +106,17 @@ On your own create a third resource, `project_idea`.
   - in_progress, boolean
   - created_at/updated_at
 2. Create a new controller in controllers called `project_ideas` the route will be `/users/:id/project-ideas`
-  When you load it in the `server.js` you'll match that pattern above
+
+When you load it in the `server.js` you'll match that pattern above
 
 3. Create a `project_ideas` directory in views
 
 4. triple check your configuration
-  a. do your routes work<br>
-  b. is the model/schema correctly synced in `db`, `models`, and in the controller file
+  - do your routes work<br>
+  - is the model/schema correctly synced in `db`, `models`, and in the controller file
 
 5. start building full CRUD w/ views!
-  a. create new project ideas<br>
-  c. show them all on an index page specific to user<br>
-  b. edit project ideas<br>
-  d. delete project ideas<br>
+  - create new project ideas<br>
+  - show them all on an index page specific to user<br>
+  - edit project ideas<br>
+  - delete project ideas<br>
