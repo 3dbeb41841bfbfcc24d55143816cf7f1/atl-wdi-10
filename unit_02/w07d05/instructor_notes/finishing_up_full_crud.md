@@ -19,7 +19,6 @@ creator:
 #### [mongoose promise docs](http://mongoosejs.com/docs/promises.html)
 #### [switching out cbs with promises in mongoose](http://eddywashere.com/blog/switching-out-callbacks-with-promises-in-mongoose/)
 
-
 Read the documentation link (5m) if you finish, start in on the other one.
 
 #### Moral of the story
@@ -27,32 +26,96 @@ Read the documentation link (5m) if you finish, start in on the other one.
 You won't need `.exec()` for things like create, update, save. But if you're querying for data in your db you're gonna want to call `exec()`.
 
 
+## Setup (5m)
+
+You can use your own code from yesterday if it's more or less complete.
+
+#### Using your own code
+
+  1. copy and paste the app from `w07d04/student_labs` to todays student_labs directory
+
+#### Using the Marc's solution from yesterday for todays starter
+
+  1. cd into `student_labs/full-crud-starter`
+
+#### Prep your code-base
+
+  1. $`npm install`
+  2. start nodemon and mongod. Make sure there are no errors
+  3. open the app in atom
+  4. open up localhost:4000
+
+
 ## Views!
+### Installation (5m)
+
+  1. install and configure `hbs`
+  2. install and configure `method-override`
+  3. install and configure `morgan`
+
+  Refer to https://github.com/ga-students/todo_crud_app or your notes for help.
+
+  Question: Why did we not need hbs yesterday? Why did we not need method-override?
 
 #### Build views for student routes!
 
-  1. index
-    a. Should show all the students
+  1. create the views directory, and touch the layout file
 
-  2. show
-    a. Each student should be clickable and direct the user to a show page for that specific student
+  2. touch `views/users/index.hbs`
+    a. View should show all the students
+    c. Only display the first and last name
+    d. Your choice if you want to use flexbox or ul/li's
 
-    b. The show page should render a list of the students projects
+  3. touch `views/users/show.hbs`
+    a. Each student on the `index` page should be clickable and direct the user to a show page for that specific student
 
-  3. update
+    b. The show page should render:
+      - first_name
+      - last_name
+      - email
+      - when they signed up
+      - the number of projects
 
-    a. Each student should have an edit button that renders a form which makes a put request to the backend
+  4. touch `views/users/edit.hbs`
 
-  4. destroy
-    a. No view necessary, but a button would be nice!
+    a. Each student should have an edit button on the `show` page that renders a form which makes a put/patch request to the backend
 
-#### Build a views for projects!
+    Question: What's another way to render an edit form when the button is clicked apart from rendering and edit view?
+
+  5. destroy
+    a. No view necessary, but a button would be nice, on each show page
+
+#### Build a views for items(projects)!
 *Building from the student show page*
 
-  1. On the student show page, add a button to see students projects
-    a. The button should render all of the students projects
+  1. touch `views/items/index.hbs`
+    a. On the student show page, add a button to see students projects
 
-    b. Each project should be clickable and direct the user to a project show page. [HINT] The project \_id should be imbedded in the DOM in order to populate the url
+    b. The button should render all of the students projects in an `index` view
 
-  2. Build a show page for student projects
-    Show page should have an edit button and a delete button
+    <!-- b. Each project should be clickable and direct the user to a project show page. [HINT] The project \_id should be imbedded in the DOM in order to populate the url -->
+
+  2. On the item `index` page add a button next to each item(project) that deletes that item.
+
+## _Whew!_ Done!
+
+On your own create a third resource, `project_idea`.
+
+1. Add the schema to the `db`
+  - description, string
+  - in_progress, boolean
+  - created_at/updated_at
+2. Create a new controller in controllers called `project_ideas` the route will be `/users/:id/project-ideas`
+  When you load it in the `server.js` you'll match that pattern above
+
+3. Create a `project_ideas` directory in views
+
+4. triple check your configuration
+  a. do your routes work<br>
+  b. is the model/schema correctly synced in `db`, `models`, and in the controller file
+
+5. start building full CRUD w/ views!
+  a. create new project ideas<br>
+  c. show them all on an index page specific to user<br>
+  b. edit project ideas<br>
+  d. delete project ideas<br>
