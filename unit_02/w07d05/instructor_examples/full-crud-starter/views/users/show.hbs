@@ -1,0 +1,12 @@
+<h1>Student individual Data</h1>
+<ul>
+  <li>Name {{user.first_name}} {{user.last_name}}</li>
+  <li>email: {{user.email}}</li>
+  <li>created_at: {{user.created_at}}</li>
+  <li><a href="/users/{{user.id}}/items">number of projects: {{user.items.length}}</a></li>
+  <a href="/users/{{user.id}}/edit">edit</a>
+</ul>
+
+<form class="" action="/users/{{user.id}}?_method=DELETE" method="post">
+  <input type="submit" name="" value="delete">
+</form>

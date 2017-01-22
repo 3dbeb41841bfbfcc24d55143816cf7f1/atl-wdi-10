@@ -1,0 +1,8 @@
+<ul>
+  {{#each user.items}}
+    <li>{{name}}</li>
+    <form class="" action="/users/{{../user.id}}/items/{{id}}?_method=delete" method="post">
+      <input type="submit" name="" value="delete">
+    </form>
+  {{/each}}
+</ul>
