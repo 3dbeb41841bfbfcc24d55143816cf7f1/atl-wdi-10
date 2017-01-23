@@ -5,7 +5,7 @@ A Higher Order Function is a fancy term for a function that operate on other fun
 
 Javascript iterators are the functional approach to loops. They step (or iterate) over each item in an **array**. Iterators perform operations according to conditions specified in a callback.
 
-[MDN Docs for forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+[MDN Docs for map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
 ### Why use map?
 
