@@ -1,5 +1,10 @@
+{{#if currentUser}}
+  <h4>welcome {{currentUser.email}}</h4>
+{{/if}}
+
 {{#each users}}
   <ul>
+    <li>{{id}}</li>
     <li>{{email}}</li>
     <li>{{password_digest}}</li>
   </ul>
