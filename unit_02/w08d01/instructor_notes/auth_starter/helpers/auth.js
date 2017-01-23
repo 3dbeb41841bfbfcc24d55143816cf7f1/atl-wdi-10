@@ -14,7 +14,7 @@ function loginUser(req, res, next) {
   User.findOne({ email: email })
   .then(function(foundUser){
     if (foundUser == null) {
-      res.json({status: 401, data: "unauthorized"})
+      res.json({status: 401, data: "unauthorizeorized"})
 
     } else if (bcrypt.compareSync(password, foundUser.password_digest)) {
       req.session.currentUser = foundUser;
@@ -33,5 +33,5 @@ function authorize(req, res, next) {
 module.exports = {
   createSecure: createSecure,
   loginUser: loginUser,
-  auth: auth
+  authorize: authorize
 }

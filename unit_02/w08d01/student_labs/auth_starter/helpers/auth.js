@@ -33,5 +33,5 @@ function authorize(req, res, next) {
 module.exports = {
   createSecure: createSecure,
   loginUser: loginUser,
-  auth: auth
+  authorize: authorize
 }
