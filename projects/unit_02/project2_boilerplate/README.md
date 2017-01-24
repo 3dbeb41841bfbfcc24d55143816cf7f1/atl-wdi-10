@@ -22,12 +22,12 @@ This is boilerplate for your Express project, so there are several things you'll
   ```
 3. Update the package.json
 
-  - update the name of your project it's currently called `"name": "boilerplate"`
-  - update the author of your project from `"author": "boilerplate"` to your name
+  - Update the name of your project. It's currently called `"name": "boilerplate"`.
+  - Update the author of your project from `"author": "boilerplate"` to your name.
 
 4. Update the server file
 
-  - `mongoose.connect` is currently commented out, uncomment it and complete the URL with the name of YOUR database
+  - `mongoose.connect` is currently commented out. Uncomment it and complete the URL with the name of *YOUR* database.
 
 # What does the boiler plate contain?
 
