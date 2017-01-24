@@ -78,6 +78,28 @@ Maybe users could loan books/clothes to friends and keep track of it in their da
 
 ---
 
+### Project 2 Samples
+
+- https://bokburgerlist.herokuapp.com/
+- https://customclosets.herokuapp.com/
+- https://goal-digger.herokuapp.com/
+- https://dog-ventures.herokuapp.com/login
+- https://afternoon-mountain-84892.herokuapp.com/users
+
+---
+
+### Project 2 Readme Samples
+
+- https://github.com/zarela/goal-tracker
+- https://github.com/sanazjamloo/project2
+
+Github `readme.md` files are written in a language called Markdown which is compiled into HTML. You'll be using this a lot so it's good to learn some simple syntax rules now.
+
+- https://guides.github.com/features/mastering-markdown/
+- http://www.markdowntutorial.com/
+
+---
+
 ### Useful Resources
 
 * **[Heroku](http://www.heroku.com)** _(for hosting your back-end)_
