@@ -138,10 +138,11 @@ Work on your [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) and an 
 Work on your project.
 
 **Thursday, January 26th**<br>
-15 minute check in to see progress decide whether to move forward with or abandon stretch goals.
+
+Lesson on Heroku deployment. 15 minute check in to see progress and decide whether to move forward with or abandon stretch goals.
 
 **Friday, January 27th**<br>
-Lesson on Heroku deployment. 15 minute check in to see progress and decide whether to move forward with or abandon stretch goals.
+15 minute check in to see progress decide whether to move forward with or abandon stretch goals.
 
 **Monday, January 30th**<br>
 Submit your issue by 10 am EDT and present your project.
