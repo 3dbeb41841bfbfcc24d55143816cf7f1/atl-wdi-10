@@ -1,10 +1,11 @@
 var User = require('../models/user.js');
+var bcrypt = require('bcrypt');
 
 function createSecure(req, res, next) {
-  var password = req.body.password
+  var password = req.body.password;
 
   res.hashedPassword = bcrypt.hashSync(password, bcrypt.genSaltSync(10));
-  next()
+  next();
 }
 
 function loginUser(req, res, next) {
@@ -14,7 +15,7 @@ function loginUser(req, res, next) {
   User.findOne({ email: email })
   .then(function(foundUser){
     if (foundUser == null) {
-      res.json({status: 401, data: "unauthorized"})
+      res.json({status: 401, data: "unauthorized"});
 
     } else if (bcrypt.compareSync(password, foundUser.password_digest)) {
       req.session.currentUser = foundUser;
