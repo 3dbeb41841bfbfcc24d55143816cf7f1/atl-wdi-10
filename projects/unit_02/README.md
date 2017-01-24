@@ -19,7 +19,7 @@ Identify what you need to build and accomplish to meet project expectations and 
 Your app must:
 
 * **Have at _least_ 2 models** (more if they make sense) – one representing someone using your application (a user), and one that represents the main functional idea for your app
-* **Include sign up/log in functionality**, with encrypted passwords & an authorization flow.
+* **Include sign up/log in functionality**, with encrypted passwords & an authorization flow. The boilerplate is here: https://github.com/ga-students/wdi-remote-matey/tree/master/projects/unit_02/project2_boilerplate
 * **Have complete RESTful routes** for at least one of your resources with GET, POST, PUT, and DELETE
 * **Write Mongo queries using the Mongoose module** and interact with your document database. Promises will likely make your life easier as you start to build complex queries!
 * **Include wireframes** that you designed during the planning process
@@ -75,6 +75,28 @@ But what if users could trade bookmarks for other bookmarks? Or sell bookmarks f
 An application that helps users keep track of items in their closet or bookshelf.
 
 Maybe users could loan books/clothes to friends and keep track of it in their database.
+
+---
+
+### Project 2 Samples
+
+- https://bokburgerlist.herokuapp.com/
+- https://customclosets.herokuapp.com/
+- https://goal-digger.herokuapp.com/
+- https://dog-ventures.herokuapp.com/login
+- https://afternoon-mountain-84892.herokuapp.com/users
+
+---
+
+### Project 2 Readme Samples
+
+- https://github.com/zarela/goal-tracker
+- https://github.com/sanazjamloo/project2
+
+Github `readme.md` files are written in a language called Markdown which is compiled into HTML. You'll be using this a lot so it's good to learn some simple syntax rules now.
+
+- https://guides.github.com/features/mastering-markdown/
+- http://www.markdowntutorial.com/
 
 ---
 

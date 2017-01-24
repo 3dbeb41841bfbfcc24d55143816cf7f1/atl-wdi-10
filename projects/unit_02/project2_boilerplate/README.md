@@ -1,10 +1,10 @@
 # Boilerplate Project 2
 
-This is boilerplate for your Express project, so there are several things you'll need to add, create and change before your project is ready
+This is boilerplate for your Express project, so there are several things you'll need to add, create and change before you're ready to start working on your project.
 
-1. You'll need to create your project two repo and clone or create it locally
+1. You'll need to create your project two repo and clone or create it locally.
 
-2. You'll copy the boilerplate code to your project two repo,
+2. You'll copy the boilerplate code to your project two repo.
 
   Your file structure should look like the following:
 
@@ -22,20 +22,20 @@ This is boilerplate for your Express project, so there are several things you'll
   ```
 3. Update the package.json
 
-  - update the name of your project it's currently called `"name": "boilerplate"`
-  - update the author of your project from `"author": "boilerplate"` to your name
+  - Update the name of your project. It's currently called `"name": "boilerplate"`.
+  - Update the author of your project from `"author": "boilerplate"` to your name.
 
 4. Update the server file
 
-  - `mongoose.connect` is currently commented out, uncomment it and complete the URL with the name of YOUR database
+  - `mongoose.connect` is currently commented out. Uncomment it and complete the URL with the name of *YOUR* database.
 
 # What does the boiler plate contain?
 
-The basic file and directory structure
+The basic file and directory structure.
 
 #### controllers
 
-Including the template for `sessions.js` and `users.js` controllers. The routes are not filled in but are set up with the correct middleware
+Including the template for `sessions.js` and `users.js` controllers. The routes are not filled in but are set up with the correct middleware.
 
 #### Models/Schema
 
@@ -43,7 +43,7 @@ There is a default user set up with email, password_digest, created_at and updat
 
 #### Public directory
 
-No content exists in the public directory
+No content exists in the public directory.
 
 #### Views, user views, and layout
 
@@ -66,7 +66,7 @@ You'll still need to update the package.json, but the basic modules you need are
 
 With all the configuration for method-override, body-parser, morgan, sessions, express, mongoose, and HBS.
 
-The configuration for loading/routing to the users and sessions controller
+The configuration for loading/routing to the users and sessions controller.
 
 The only thing *NOT* included is the configuration for serving the public directory statically. You'll need to set that up yourself.
 
