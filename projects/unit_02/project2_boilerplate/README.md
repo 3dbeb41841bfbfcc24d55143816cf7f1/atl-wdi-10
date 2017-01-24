@@ -1,10 +1,10 @@
 # Boilerplate Project 2
 
-This is boiler plate so there are a couple things you'll need to add, create and change before your project is ready
+This is boilerplate for your Express project, so there are several things you'll need to add, create and change before your project is ready
 
-1. You'll need to create your project 2 repo and clone or create it locally
+1. You'll need to create your project two repo and clone or create it locally
 
-2. You'll copy the boilerplate code to your project 2 repo,
+2. You'll copy the boilerplate code to your project two repo,
 
   Your file structure should look like the following:
 
@@ -27,7 +27,7 @@ This is boiler plate so there are a couple things you'll need to add, create and
 
 4. Update the server file
 
-  - `mongoose.connect` is currently commented out, uncomment it and complete the url with the name of YOUR database
+  - `mongoose.connect` is currently commented out, uncomment it and complete the URL with the name of YOUR database
 
 # What does the boiler plate contain?
 
@@ -35,7 +35,7 @@ The basic file and directory structure
 
 #### controllers
 
-Including the template for `sessions.js` and `users.js` controllers. The routes are not filled in, but are set up with the correct middleware
+Including the template for `sessions.js` and `users.js` controllers. The routes are not filled in but are set up with the correct middleware
 
 #### Models/Schema
 
@@ -70,7 +70,7 @@ The configuration for loading/routing to the users and sessions controller
 
 The only thing *NOT* included is the configuration for serving the public directory statically. You'll need to set that up yourself.
 
-# What is not included
+# What is NOT included
 
 - Content in the views
 - Code in the routes
