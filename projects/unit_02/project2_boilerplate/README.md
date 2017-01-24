@@ -1,6 +1,6 @@
 # Boilerplate Project 2
 
-This is boilerplate for your Express project, so there are several things you'll need to add, create and change before your project is ready
+This is boilerplate for your Express project, so there are several things you'll need to add, create and change before you're ready to start working on your project.
 
 1. You'll need to create your project two repo and clone or create it locally
 
