@@ -29,7 +29,7 @@ This is boilerplate for your Express project, so there are several things you'll
 
   - `mongoose.connect` is currently commented out. Uncomment it and complete the URL with the name of *YOUR* database.
 
-# What does the boiler plate contain?
+# What does the boilerplate contain?
 
 The basic file and directory structure.
 
