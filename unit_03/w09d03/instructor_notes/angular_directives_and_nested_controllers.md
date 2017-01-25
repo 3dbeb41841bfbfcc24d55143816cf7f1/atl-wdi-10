@@ -11,7 +11,7 @@ adapted by:
 competencies: Front-end frameworks
 ---
 
-# Angular Directives
+# Angular Directives and Nested Controllers
 
 ### Objectives
 
@@ -20,6 +20,7 @@ competencies: Front-end frameworks
 - Build forms
 - Research other Angular directives that are included in Angular's library
 - Understand and implement filters
+- Understand nested controllers
 
 ### Preparation
 
@@ -74,9 +75,7 @@ Create a example Node/Express app for this lesson.
 1. `touch public/js/app.js`
 
     ```js
-    (function(){
-        angular.module('todoApp', []);
-    })()
+    angular.module('todoApp', []);
 ```
 1. `touch public/js/todosController.js`
 
@@ -97,18 +96,22 @@ Create a example Node/Express app for this lesson.
       </body>
     </html>
     ```
+    > Note that we added the `ng-app` directive to the opening `<html>` tag.
     
 ##### &#x1F535; YOU DO
 
-Set-up your Angular app
+Set-up your Angular app. Run `nodemon server.js` to confirm that Angular is wired up correctly. You should see the number 2 in the browser.
+
+![](https://i.imgur.com/rui014A.png)
+
+
 
 
 ## ng-repeat - Codealong (20 minutes)
 
-Let's start filling in our `todosController` a little bit - add in some initial seed data:
+Let's start filling in our `todosController.js` a little bit - add in some initial seed data:
 
 ```js
-(function(){
   angular
     .module("todoApp")
     .controller("TodosController", TodosController);
@@ -122,9 +125,7 @@ Let's start filling in our `todosController` a little bit - add in some initial 
       {task: "tackle the bonus challenges for this lesson", done: false},
       {task: "take a nap", done: false}
     ];
-
   }
-})()
 ```
 
 This is great - we've got an array of simple objects. Granted, `.all` is whatever we want it to be, but calling it that makes it feel almost 'ActiveRecordy', doesn't it? Totally your choice, though.
@@ -146,7 +147,7 @@ Now, let's start filling out the view with this data; head over to `index.html`.
 </body>
 ```
 
-Now, how do we get the data our controller has access to?
+Now, how do we get the data our controller has access to? We'll use the `controller as` syntax.
 
 ```html
 <body ng-controller="TodosController as todos">
@@ -159,7 +160,7 @@ Now, how do we get the data our controller has access to?
 
 <img width="752" alt="screen shot 2015-07-31 at 3 45 04 am" src="https://cloud.githubusercontent.com/assets/25366/9005855/8e7bee44-3736-11e5-9276-d930778b197a.png">
 
-Beautiful! But we need more. How do we actually list out our todos? `ng-repeat`.
+Beautiful! But we need more. How do we actually list out our todos? We can use the `ng-repeat` directive.
 
 ```html
 <ul id='todos'>
@@ -184,13 +185,13 @@ Add the ng-repeat to your view
 
 <br>
 
-## Adding a Todo - Codealong (15 mins)
+## Adding a Todo with a Form - Codealong (15 mins)
 
 Now, let's see how _data binding_ works by adding to our list! We'll need a form.
 
 ```html
 <form id='add-todo'>
-    <input type="text" placeholder='I need to...'>
+  <input type="text" placeholder='I need to...'>
 </form>
 ```
 
@@ -202,13 +203,13 @@ Maybe something like:
 // this just adds a new object to our array, with defaults for now
 var addTodo = function(){
   this.all.push({task: "something", done: false});
-}
+};
 
 //this will add our new function as a property on our controller, so we can use it in the view
 this.add = addTodo;
 ```
 
-By including the `this.addTodo = addTodo;` line, we now can use that function in our view, when we want to. So check out this other useful form directive:
+By including the `this.addTodo = addTodo;` line, we now can use that function in our view, when we want to. So check out this other useful form directive, `ng-submit`:
 
 
 ```html
@@ -221,13 +222,13 @@ Now, it'll be adding fake todos, but I can't resist – try it! You'll see why A
 
 ##### &#x1F535; YOU DO
 
-Create your form to update the list
+Add the form to create a new todo
 
 <br>
 
 ## ng-model Codealong (15 mins)
 
-Obviously we don't want to only use dummy data. How do we keep an eye on what's in the input and send _that_ to our `addTodo` function? You guessed it, another directive!
+Obviously we don't want to only use dummy data and just create new "something" todos. How do we keep an eye on what's in the input and send _that_ to our `addTodo` function? You guessed it, another directive!
 
 But first, let's think of it like this: we're going to be adding a new to-do to our list of existing to-dos and that to-do will be an object just like our others. Something like:
 
@@ -341,7 +342,7 @@ Let's look at more examples of Angular directives. We'll add a new `MateyControl
 // add a new controller to our 'todoApp`
 angular.module('todoApp')
     .controller('TodosController', TodosController)
-    .controller('MateyController', MateyController)
+    .controller('MateyController', MateyController);
 
 // controller function
 function MateyController(){
@@ -352,17 +353,17 @@ function MateyController(){
 }
 ```
 
-```html
-<!-- index.html -->
+And add some CSS and HTML to our `index.html`
 
+```html
 <!-- add to the head -->
-<style media="screen">
+<style>
 .angularClass {
   background-color: red;
 }
 </style>
 
-<!-- add to the body -->
+<!-- add to the body below our todos code-->
 <br>
   <div ng-controller="MateyController as matey">
     <div ng-bind="matey.hello"></div>
@@ -404,6 +405,7 @@ function MateyController(){
 
 angular.module('todoApp')
     .controller('TodosController', TodosController)
+    .controller('MateyController', MateyController)
     .controller('ParentController', ParentController)
     .controller('ChildController', ChildController);
 
@@ -415,20 +417,24 @@ angular.module('todoApp')
     this.property1 = 'awesome';
   }
 ```
+Add some more code to your `index.html` file.
 
 ```html
-<!-- index.html -->
   <div ng-controller="ParentController as parent">
+    <span>{{child.property1}}:{{parent.property1}}</span>
     <div ng-controller="ChildController as child">
       <span>{{child.property1}}:{{parent.property1}}</span>
     </div>
   </div>
-
 ```
+
+- Note the way we've structured our controllers. The child controller can access parent properties and methods since it's nested, but a parent cannot access child properties. There _are_ ways to implement this, but it's outside of the scope of this lesson.
+- You can try this with our Todos/Matey controllers also.
+- We'll use this nesting technique to maintain our `currentUser` object. Controllers re-instantiate each time yuo refresh the page.
 	
 ##### &#x1F535; YOU DO
 
-Add a nested controller to your app
+Add nested controllers to your app
 
 <br>
 
