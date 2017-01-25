@@ -1,0 +1,7 @@
+<ul id="criminals">
+  <li ng-repeat="criminal in criminals.all" data-id="{{criminal._id}}">
+    <strong>{{criminal.name}}</strong>
+    <em>{{criminal.location}}</em> <span class='status {{criminal.status | lowercase }}'>{{criminal.status | uppercase}}</span>
+    <button class='delete' ng-click="criminals.deleteCriminal(criminal)">X</button>
+  </li>
+</ul>

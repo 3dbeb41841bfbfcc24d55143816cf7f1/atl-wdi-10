@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" n
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body ng-app="todo">
+  <div ng-controller="MainCtrl as main">
+    <!-- Shows all todos -->
+    <div class="todos">
+      <div class="todo" ng-repeat="todo in main.todos">
+        <div>
+          <p>Todo: {{todo.description}}</p>
+          <p>Done?: {{todo.done}}</p>
+          <p>Created at: {{todo.createdAt | date:'short' }}</p>
+          <div class="nav">
+            <button ng-click="main.setTodoToEdit(todo); main.startEditing()">Edit</button>
+            <button ng-click="main.deleteTodo(todo._id)">&#10006</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav" ng-hide="main.isCreating || main.isEditing">
+        <button ng-click="main.startCreating()">Add Todo!</button>
+
+    </div>
+
+    <div ng-show="main.isCreating" class="form">
+      <form ng-submit="main.addTodo(newTodo)">
+        <div>
+          <label for="description">Description</label>
+          <input type="text" ng-model="newTodo.description">
+        </div>
+        <div>
+          <label for="done">done?</label>
+          <input type="checkbox" ng-model="newTodo.done" value="true" checked>
+        </div>
+        <button type="submit">Add Todo!</button>
+      </form>
+      <button ng-click="main.reset(newTodo)">reset</button>
+    </div>
+
+    <div ng-show="main.isEditing" class="form">
+      <form ng-submit="main.editTodo(main.editedTodo)" action="#">
+        <div>
+          <label for="description">Description</label>
+          <input type="text" ng-model="main.editedTodo.description">
+        </div>
+        <div>
+          <label for="done">done?</label>
+          <input type="checkbox" ng-model="main.editedTodo.done" value="true" checked>
+        </div>
+        <button type="submit" >Edit Todo!</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

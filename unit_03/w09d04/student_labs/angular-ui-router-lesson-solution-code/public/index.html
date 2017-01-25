@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+	<head>
+		<meta charset="utf-8">
+		<title>To Do Or Not To Do</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<!-- new router script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+		<!-- end new router script -->
+		<script src="js/app.js"></script>
+		<script src="js/todosController.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body ng-controller="TodosController as todos">
+		<header>
+			<h1>YOU'VE GOT {{ todos.remainingTodos().length }} THINGS TO DO!</h1>
+			<h4>{{ todos.completedTodos().length }} things completed | {{ todos.remainingTodos().length }} things remaining</h4>
+		</header>
+		<nav class='tabs'>
+			<a ui-sref-active="active" ui-sref="home">List</a>
+  		<a ui-sref-active="active" ui-sref="archive">Archive</a>
+		</nav>
+		<main ui-view></main>
+	</body>
+</html>
