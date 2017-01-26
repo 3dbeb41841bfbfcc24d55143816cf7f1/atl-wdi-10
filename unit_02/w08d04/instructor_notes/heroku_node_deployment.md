@@ -147,7 +147,7 @@ Add engines with the version number  under dependencies:
 
 ```
 "engines": {
-  "node": "<version number>"
+  "node": "6.9.1"
 }
 ```
 
