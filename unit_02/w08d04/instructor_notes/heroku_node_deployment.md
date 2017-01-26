@@ -160,10 +160,6 @@ Now that we have a production database, we must find its connection URI that has
 
 `heroku config | grep MONGODB_URI`
 
-A production URI will be returned and we export it for use:
-
-`heroku config:set MONGODB_URI=<production URI returned>`
-
 #### Change the database URIs in the app so that they are dynamic
 
 If you take a look in `app.js`, you should see the code that creates the connection to mongoDB:
