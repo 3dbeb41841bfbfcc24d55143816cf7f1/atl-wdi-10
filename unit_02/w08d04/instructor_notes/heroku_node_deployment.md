@@ -116,6 +116,17 @@ Make sure you are in your Project repository!
 
 Heroku requires that we have initialized our app as a git repo, luckily you've all done this already and have been committing and pushing to GitHub.
 
+#### Create a .gitignore file
+
+Touch `.gitignore` in the root of your repo and add 
+
+```
+node_modules
+.DS_Store
+```
+
+to that file
+
 #### Procfile
 
 A `Procfile` is a text file you create in the root directory of your application to explicitly tell Heroku what commands should be run. For our the purpose of this lesson we only care about one command:
