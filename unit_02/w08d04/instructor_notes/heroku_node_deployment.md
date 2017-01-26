@@ -71,6 +71,9 @@ Then we need to go to [Heroku](https://www.heroku.com/).
 
 Email > Manage Account > SSH Keys.
 
+#### Add a credit card to Heroku
+
+https://devcenter.heroku.com/categories/billing
 
 #### Install Heroku Toolbelt
 
