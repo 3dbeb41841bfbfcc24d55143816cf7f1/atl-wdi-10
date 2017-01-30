@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Sweet Movies App</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- movie search bar -->
+    <h1>Search a Movie:</h1>
+    <form action="/scripts/app.js" method="get">
+      <input type="text" name="title" placeholder="movie title">
+      <button type="button" class="search">Search</button>
+    </form>
+
+    <!-- search results show up here -->
+    <div class="movie-container">
+    </div>
+
+  </div>
+
+
+  <!-- movie edit form -->
+  <form class="edit-form">
+    <input type="text" name="title" placeholder="title"><br>
+    <input type="text" name="image" placeholder="image"><br>
+    <input type="text" name="year" placeholder="year"><br>
+    <input type="text" name="description" placeholder="description"><br>
+    <input type="button" class="update" value="Update me!"><br>
+  </form>
+
+  <hr>
+
+  <h1>My Movies</h1>
+  <button class="show-movie">Show My Movies</button>
+
+  <!-- list of all of my movies -->
+  <div class="my-movies">
+  </div>
+
+
+
+  <!-- scripts -->
+  <script src="/scripts/ajax_helper.js"></script>
+  <script src="/scripts/app.js"></script>
+</body>
+</html>
