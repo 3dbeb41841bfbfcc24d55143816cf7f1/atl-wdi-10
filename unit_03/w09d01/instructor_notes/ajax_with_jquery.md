@@ -1,17 +1,19 @@
 ---
-title: AJAX with jQuery
+title: AJAX with jQuery: intro to client side rendering
 type: Lesson
-duration: "1:20"
+duration: "2:30"
 creator:
     name: Colin Hart
     city: WDIR-Matey
 competencies: Client side rendering
 ---
-
-# AJAX with jQuery
+# AJAX with jQuery: intro to client side rendering
 
 ### Objectives
 
+- Distinguish between Server Side rendering and Client side
+- Diagram server side rendering architecture
+- diagram client side rendering architecture
 - Implement a jQuery AJAX client for a simple REST service
 - Reiterate the benefits of separation of concerns – API vs. Client
 - Make requests to third party API's
@@ -19,9 +21,24 @@ competencies: Client side rendering
 
 ### Preparation
 
-- Understand basics of JS
+- Understand basics of JS and Server side rendering
 - Understand what jQuery is and how to use it for DOM manipulation
 - Understand HTTP verbs & the concept of RESTful JSON APIs
+
+## Exercise: Model server side rendering architecture (10 mins)
+
+With your partner, spend ten minutes diagraming the following two things:
+
+1. What does the directory structure of a server side rendered application look like?  (5m)
+  (Server side rendering is the pattern we used in Node/Express in Unit 2)
+
+2. Diagram the request response cycle of a server rendered application (5m)
+  (From making a GET request from the browser to the server and sending a view back to the browser.)
+
+
+## Difference between Server Side and Client Side rendering
+
+
 
 ## What is AJAX? Introduction (20 mins)
 
@@ -64,7 +81,7 @@ EXERCISE: Take another 5 minutes to read through the starter code.
 
 We've also already included jQuery, though we won't use that for the first few minutes.
 
-## GET Requests - Codealong (30 mins)
+## GET Requests - Code along (30 mins)
 
 #### jQuery GET Requests to local server
 
@@ -90,7 +107,7 @@ What did this do? Without refreshing the page, we hit an external API – a tota
 
 #### jQuery get requests to Giphy's API
 ```js
-  var ajax = $.get('http://api.giphy.com/v1/stickers/search?q=cat&api_key=dc6zaTOxFJmzC')
+  var ajax = $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rating=pg')
 ```
 
 ```js
@@ -107,7 +124,7 @@ While that's great, it's not exactly asynchronous. How do we build this so that 
       console.log(data);
     });
 
-  $.get('http://api.giphy.com/v1/stickers/search?q=cat&api_key=dc6zaTOxFJmzC')
+  $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rating=pg')
     .done(function(data){
       console.log(data);
     });
@@ -119,24 +136,26 @@ In jQuery's documentation you can find all the chain-able callback function poss
 
 EXERCISE: Read the jQuery Ajax Docs!
 
-1. write click event to request cats from giphy.
-```
-$.get('http://api.giphy.com/v1/stickers/search?q=cat&api_key=dc6zaTOxFJmzC')
-  .done(function(data){
-    console.log(data);
-  });
-```
-2. display that data in the DOM using jquery
-3. add a save button
-4. the save button will trigger an ajax post request to send the URL for the gif to our express backend and save it to our database.
-5. add an all gifs button to make an ajax request to the backend for all the gifs we've saved
-6. render each gif to the page
+1. Write click event to request cats from giphy.
+  - Write a clickEvent on `.get-gif` that calls a function that executes the following ajax request:
 
-## Conclusion (5 mins)
-- What's the main use case of AJAX? Why would anyone use it?
-- How do you do a simple GET request in vanilla JS?
-- How do you do a GET request with jQuery?
-- How do you do a PUT, POST, or DELETE request in jQuery?
+  ```
+  $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rating=pg')
+    .done(function(data){
+      console.log(data);
+    });
+  ```
+
+
+2. Display that data in the DOM using jQuery
+  - In the JSON response there is an image_url key. Add that url to the src attribute of the img tag with a class of `.image-jumbotron`
+
+3. Add click event to the `.save-gif` button
+  - The save button will trigger an ajax POST request to *our* backend sending the URL for the gif to save it to our database.
+
+4. Add a click event to the `.saved-gifs` button to make an ajax GET request to our backend for all the gifs we've saved
+
+  - render each gif to the page by looping over the response using a for loop or a forEach loop. Create a div with a nested image tag for each gif and append it to the `.all-gifs-container`
 
 #### Extra Reading
 - [`No 'Access-Control-Allow-Origin' header is present on the requested resource` – WTF?](https://jvaneyck.wordpress.com/2014/01/07/cross-domain-requests-in-javascript/)
