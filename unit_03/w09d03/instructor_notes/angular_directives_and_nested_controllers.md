@@ -37,15 +37,12 @@ There are a few you'll be using all the time that we're gonna walk through toget
 
 Our end goal for this lesson is to build ourselves a simple little todo app. Shocking, it's true, but it'll be a great way to demonstrate both directives and interacting with controllers.
 
-> Note: Here is the a deployed version of our completed app on BitBalloon here: http://secretary-jocelyn-77112.bitballoon.com/
+> Here is a deployed version of our completed app: http://secretary-jocelyn-77112.bitballoon.com/
 
 We have a lot to get through – we'll have to list an array of to-dos, demonstrate some simple hiding & showing mechanisms, and bind some changing data via a form.
 
-## Set up your app - Independent Practice (5 mins)
-
-Since you guys are killers at setting up Angular apps from yesterday, take five minutes to make empty JS and CSS folders, make an `app.js` and a `todosController.js` and get set up. Don't forget an index, with sourced JS files! Make those files, go go go!
-
-Create a example Node/Express app for this lesson.
+## Set up your app for the lesson
+We'll build a simple Node/Express app for this lesson.
 
 1. `mkdir todo-app` && `cd` into it
 
@@ -128,7 +125,7 @@ Let's start filling in our `todosController.js` a little bit - add in some initi
   }
 ```
 
-This is great - we've got an array of simple objects. Granted, `.all` is whatever we want it to be, but calling it that makes it feel almost 'ActiveRecordy', doesn't it? Totally your choice, though.
+This is great - we've got an array of simple objects. Granted, `.all` is whatever we want it to be, but calling it that makes it feel almost 'Mongoose-y', doesn't it? Totally your choice, though.
 
 ##### &#x1F535; YOU DO
 
@@ -136,7 +133,7 @@ Fill out your TodosController
 
 <br>
 
-Now, let's start filling out the view with this data; head over to `index.html`.
+Now, let's start filling out the view with this data. Head over to `index.html`:
 
 ```html
 <body>
@@ -147,7 +144,7 @@ Now, let's start filling out the view with this data; head over to `index.html`.
 </body>
 ```
 
-Now, how do we get the data our controller has access to? We'll use the `controller as` syntax.
+Now, how do we get the data our controller has access to? We'll use the `controller as` syntax. 
 
 ```html
 <body ng-controller="TodosController as todos">
@@ -173,7 +170,7 @@ Beautiful! But we need more. How do we actually list out our todos? We can use t
 <img width="752" alt="screen shot 2015-07-31 at 3 49 11 am" src="https://cloud.githubusercontent.com/assets/25366/9005933/1e6c49cc-3737-11e5-8f4d-3dd46a471c34.png">
 
 
-Let's walk through that. First, hello `ng-repeat`! This is used for instantiating a template once per item from a collection. Rather than our old-fashioned `for` loop, Angular uses `ng-repeat` on the element we want to iterate over. Sort of like Ruby (or JavaScript's forEach), we say:
+Let's walk through that. First, hello `ng-repeat`! This is used for instantiating a template once per item from a collection. Rather than our old-fashioned `for` loop, Angular uses `ng-repeat` on the element we want to iterate over. Sort of like JavaScript's forEach, we say:
 
 > "For each item in `todos.all`, call the one we're on `todo`."
 
@@ -267,7 +264,7 @@ You can see, it keeps the data synced, nearly in real time. As you are updating 
 
 > Inspect Element on the form and check out all the extra classes Angular is adding under the hood.
 
-The last step is update our `todos.add()` function to utilize this new knowledge. Just like in the view, how do you think we access that newTodo in our controller?
+The last step is to update our `todos.add()` function to utilize this new knowledge. Just like in the view, how do you think we access that newTodo in our controller?
 
 ```js
 var addTodo = function(){
@@ -338,8 +335,7 @@ Add a filter to your view
 Let's look at more examples of Angular directives. We'll add a new `MateyController` for this section.
 
 ```js
-// js/todosController.js
-// add a new controller to our 'todoApp`
+// js/todosController.js - add a new controller to our 'todoApp`
 angular.module('todoApp')
     .controller('TodosController', TodosController)
     .controller('MateyController', MateyController);
@@ -358,7 +354,7 @@ And add some CSS and HTML to our `index.html`
 ```html
 <!-- add to the head -->
 <style>
-.angularClass {
+.red {
   background-color: red;
 }
 </style>
@@ -368,7 +364,7 @@ And add some CSS and HTML to our `index.html`
   <div ng-controller="MateyController as matey">
     <div ng-bind="matey.hello"></div>
     <div ng-hide="matey.hideDiv">Hide Me</div>
-    <div ng-show="matey.showDiv" ng-class="{ angularClass:matey.showDiv }">Show Me</div>
+    <div ng-show="matey.showDiv" ng-class="{ red:matey.showDiv }">Show Me</div>
     <img ng-src="{{matey.imgSrc}}" />
   </div>
 <br>
@@ -381,16 +377,15 @@ And add some CSS and HTML to our `index.html`
 1. ng-class
 	- binds the class of an element to the result of an "expression"
 		- an expression is just some code that gets evaluated
-	- `(ctrl.isActive)?'active':''"`
-		- if ctrl.isActive evaluates to true, the class of the element will be 'active'
-	- `ng-class="{ active:ctrl.isActive }"`
-		- a different way to write the same thing
+	       - `matey.showDiv`
+		- if `matey.showDiv` evaluates to true, the class of the element will be 'red'
+	       - `ng-class="{ red:matey.showDiv }`
 1. ng-repeat
     - we saw this earlier
 1. ng-if
 	 - we saw this earlier
 1. ng-show/hide
-	- like ng-if, but it hides it, not removes it from the DOM
+	- like ng-if, but it hides it (`display: none`), not remove it from the DOM
 1. ng-src
 	- `<img ng-src="{{ctrl.imgsrc}}" />`
 	- sets the src of an img to the result of an expression
@@ -398,7 +393,7 @@ And add some CSS and HTML to our `index.html`
 
 <br>
 
-## Angular Nested Scope
+## Angular Nested Controllers
 
 ```js
 // js/todosController.js
@@ -432,6 +427,12 @@ Add some more code to your `index.html` file.
 - You can try this with our Todos/Matey controllers also.
 - We'll use this nesting technique to maintain our `currentUser` object. Controllers re-instantiate each time yuo refresh the page.
 	
+<br>
+
+## Angular Nested Controllers with `$on`, `$emit`, `$broadcast`
+
+<br>
+
 ##### &#x1F535; YOU DO
 
 Add nested controllers to your app

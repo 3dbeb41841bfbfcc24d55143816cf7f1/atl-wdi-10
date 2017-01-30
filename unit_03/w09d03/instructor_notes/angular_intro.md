@@ -30,7 +30,7 @@ competencies: Front-end frameworks
 ## Intro - What is AngularJS and Why Should You Learn it? (20 mins)
 
 
-Angular is an open source JS framework maintained by Google. It was created nearly 6 years ago, and its longevity is a testament to its capability and usefulness.  AngularJS is one of the most widely adopted MVC JS frameworks in use today and is a valuable job skill to put on your resume. Further, it was built upon jqLite, so it goes hand-in-hand with jQuery!
+Angular is an open source JS framework maintained by Google. It was created nearly 8 years ago, and its longevity is a testament to its capability and usefulness.  AngularJS is one of the most widely adopted MVC JS frameworks in use today and is a valuable job skill to put on your resume. Further, it was built upon jqLite, so it goes hand-in-hand with jQuery!
 
 AngularJS provides the following benefits when used to develop web apps:
 
@@ -63,7 +63,7 @@ A controller is a JS constructor function that is instantiated by the _ng-contro
 
 Services provide a way to organize related code and data that can be shared by controllers and even other services. Unlike controllers, which are instantiated and destroyed as the views they are attached to come into and out of view, services are created once (singletons) and persist for the life of the application.
 
-Services should be used to hold the bulk of your application's logic and data, thus keeping controllers focused on what they are responsible for. Often, you can consider a service or factory something like a model or Ruby class.
+Services should be used to hold the bulk of your application's logic and data, thus keeping controllers focused on what they are responsible for. Often, you can consider a service or factory something like a model or class.
 
 #### Directives
 
@@ -160,7 +160,7 @@ First, let's get Angular from [Google's CDN](https://developers.google.com/speed
  <head>
    <meta charset="utf-8">
    <title>Intro to Angular</title>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
  </head>
 ```
 
@@ -168,10 +168,8 @@ First, let's get Angular from [Google's CDN](https://developers.google.com/speed
 Now, we set up a module. Go to your `app.js` file, and all it takes is this little line:
 
 ```js
-(function(){
-    // Define a new module. The first argument is what we want to call our app, the second is an array of dependencies (which we don't need at the moment, so there are none)
-    angular.module('IntroToAngularApp', []);
-})();
+// Define a new module. The first argument is what we want to call our app, the second is an array of dependencies (which we don't need at the moment, so there are none)
+angular.module('IntroToAngularApp', []);
 ```
 
 This sets our app up. It's important to include that array when defining a module, even if there are no dependencies – that tells Angular we're initializing a module.
@@ -184,7 +182,7 @@ Now, back in our HTML, make sure your `app.js` is included in a script tag, and 
   <head>
     <meta charset="utf-8">
     <title>Intro to Angular</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="js/app.js"></script>
   </head>
 ```
@@ -222,18 +220,16 @@ touch public/js/homeController.js
 ```
 
 ```javascript
-(function(){
-    // When only the name of the module is passed in,
-    // the 'module' method returns the specified module.
-    angular.module('IntroToAngularApp')
-        .controller('HomeController', HomeController);
+// When only the name of the module is passed in,
+// the 'module' method returns the specified module.
+angular.module('IntroToAngularApp')
+    .controller('HomeController', HomeController);
 
-    // This is the function definition for our controller.
-    // Note that we capitalize it as it is used as a constructor function!
-    function HomeController() {
+// This is the function definition for our controller.
+// Note that we capitalize it as it is used as a constructor function!
+function HomeController() {
 
-    }
-})();
+}
 ```
 
 ##### &#x1F535; YOU DO
@@ -250,18 +246,16 @@ Now, there are two acceptable methods for defining controllers.  They are common
 Now, they're the same idea – essentially a way to craft a constructor function for each controller you decide to make. Angular started by using $scope (a context reference), which you can see an example of here:
 
 ```javascript
-(function(){
-    // When only the name of the module is passed in,
-    // the 'module' method returns the specified module.
-    angular.module('IntroToAngularApp')
-        .controller('HomeController', HomeController);
+// When only the name of the module is passed in,
+// the 'module' method returns the specified module.
+angular.module('IntroToAngularApp')
+    .controller('HomeController', HomeController);
 
-    // This is the function definition for our controller.
-    // Note that we capitalize it as it is used as a constructor function!
-    function HomeController($scope) {
-        $scope.awesome = true;
-    }
-})();
+// This is the function definition for our controller.
+// Note that we capitalize it as it is used as a constructor function!
+function HomeController($scope) {
+    $scope.awesome = true;
+}
 ```
 
 However, as the industry started using Angular, more and more in production, people started realizing that despite the name, $scope wasn't scoped very well. Primarily, as developers started to have nested controllers in their DOM, context wasn't properly being handled.
@@ -269,19 +263,17 @@ However, as the industry started using Angular, more and more in production, peo
 A lot of professionals have since moved on to doing it a little differently, and a little simpler.
 
 ```javascript
-(function(){
-    // When only the name of the module is passed in,
-    // the 'module' method returns the specified module.
-    angular.module('IntroToAngularApp')
-        .controller('HomeController', HomeController);
+// When only the name of the module is passed in,
+// the 'module' method returns the specified module.
+angular.module('IntroToAngularApp')
+    .controller('HomeController', HomeController);
 
-    // This is the function definition for our controller.
-    // Note that we capitalize it as it is used as a constructor function!
-    function HomeController() {
-        this.awesome = true;
+// This is the function definition for our controller.
+// Note that we capitalize it as it is used as a constructor function!
+function HomeController() {
+    this.awesome = true;
 
-    }
-})();
+}
 ```
 
 The nice thing is that they're not very different, but that the latter looks far more like a normal constructor function you're used to and most importantly, a controller always has the correct context.
@@ -292,7 +284,6 @@ Later, we'll see how you can let controllers just connect models and the views -
 
 Take five minutes and add some data into your `HomeController`. Any sort of data will do so just come up with a few different data types to play with.
 
-- - -
 ```js
 function HomeController() {
   this.awesome = true;
@@ -311,7 +302,7 @@ The last step here is to connect our controller to the view. We attach any contr
   <head>
     <meta charset="utf-8">
     <title>Intro to Angular</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="js/app.js"></script>
     <script src="js/homeController.js"></script>
   </head>

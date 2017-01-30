@@ -26,9 +26,8 @@ Create an example Node/Express app for this lesson.
     ```js
     var express = require('express');
     var app     = express();
-    var path    = require('path');
 
-    app.use(express.static(path.join(__dirname,'public')));
+    app.use(express.static('public'));
 
     app.get('/', function(req, res){
         res.render('index');
@@ -39,45 +38,34 @@ Create an example Node/Express app for this lesson.
     });
 ```
     
-1. `npm install --save express path`
+1. `npm install --save express`
 1. `mkdir public`
 1. `mkdir public/js`
 1. `touch public/js/app.js`
 
     ```js
-    (function(){
-        angular.module('TheMET', []);
-    })()
+      angular.module('TheMET', []);
 ```
 
 1. `touch public/js/donorController.js`
 
     ```js
-    (function(){
-        angular.module('TheMET')
-            .controller('DonorController', DonorController);
-    
-    })()
+    angular.module('TheMET')
+     .controller('DonorController', DonorController);
 ```
 
 2. `touch public/js/exhibitController.js`
 
     ```js
-    (function(){
-        angular.module('TheMET')
-         .controller('ExhibitController', ExhibitController);
-    
-    })()
+    angular.module('TheMET')
+     .controller('ExhibitController', ExhibitController);
 ```
 
 3. `touch public/js/generalInfoController.js`
 
     ```js
-    (function(){
-        angular.module('TheMET')
-        .controller('GeneralInfoController', GeneralInfoController);
-    
-    })()
+    angular.module('TheMET')
+     .controller('GeneralInfoController', GeneralInfoController);
 ```
 
 1. `touch public/index.html`
@@ -127,7 +115,7 @@ Create an example Node/Express app for this lesson.
 
     ```html
 <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src='js/app.js'></script>
     <script src='js/donorController.js'></script>
     <script src='js/exhibitController.js'></script>
