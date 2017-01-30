@@ -5,6 +5,9 @@ duration: "1:25"
 creator:
     name: Micah Rich
     city: LA
+adapted:
+    name: Marc Wright
+    city: WDIR
 competencies: Front-end frameworks
 ---
 
@@ -22,7 +25,7 @@ competencies: Front-end frameworks
 
 ## Intro (10 mins)
 
-We've only been working with hardcoded data so far. Today that changes; it's time to kick it up a notch.
+We've only been working with hardcoded data so far. Today that changes, it's time to kick it up a notch.
 
 We're going to learn a little about two different functionalities in Angular that will allow us to start communicating with real data, accessed through an API. You'll need to dust off your knowledge of RESTful routes & AJAX, but hopefully that's a good thing.
 
@@ -45,18 +48,10 @@ Once you have some, do a quick `GET` request to `http://localhost:3000/president
 
 ## Demo of Starter Code (5 mins)
 
-Grab the starter code from today's student labs folder. The starter code contains 2 folders:
+Grab the starter code from today's student labs folder. `npm install` and fire up your server with `nodemon app.js`
 
-- `api` - This is the Node/Express/Mongo back-end/server-side app
-    - This will run with the command `nodemon server.js` 
-    - We will `npm install` here
-- `presidentsApp` - this is the Angular JS front-end/client-side app
-    - run `npm install -g http-server` 
-    - This will run with the command `http-server`. This will automatically look for an `index.html` file.
 
-We'll need to open two Terminal tabs, cd into each folder individually and run two separate servers. 
-
-##### YOU DO - Set up your workspace
+##### &#x1F535; YOU DO - Set up your workspace
 
 <br>
 
@@ -69,13 +64,13 @@ We'll do this with two different methods, and this one is the first. The next wi
 <img width="752"  src="https://cloud.githubusercontent.com/assets/25366/9017871/7cf4a79e-378e-11e5-85d8-d018f0a7ab21.png">
 
 
-## Hitting an API with $http - Codealong (30 mins)
+## Hitting an API with `$http` - Codealong (30 mins)
 
 The simplest starting point will be to switch our hardcoded array of presidents with the one living in our new API.
 
 Step one – **let's delete our hard-coded data.** In `presidentsController.js`:
 
-```diff
+```js
 angular.module('ThePresidentsApp', [])
   .controller('PresidentsController', PresidentsController);
 
