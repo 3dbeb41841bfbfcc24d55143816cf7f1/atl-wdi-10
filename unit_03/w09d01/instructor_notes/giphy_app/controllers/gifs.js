@@ -11,14 +11,21 @@ router.get('/', function(req, res) {
   });
 })
 
+// router.get('/:id', function(req, res) {
+//   Gif.findById(req.params.id)
+//   .exec(function(err, gif) {
+//     if (err) console.log(err);
+//     console.log(user);
+//   });
+// })
+
 router.post('/', function(req, res){
+  console.log(req.body)
   var gif = new Gif(req.body);
 
   gif.save(function(err, gif){
     if (err) console.log(err);
-    res.json({status: 201, data: "succesful creation"})
   });
-
 });
 
 module.exports = router;

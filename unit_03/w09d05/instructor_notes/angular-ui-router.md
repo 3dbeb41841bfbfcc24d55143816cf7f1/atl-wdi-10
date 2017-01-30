@@ -25,15 +25,13 @@ competencies: Front-end MV*
 
 ## Intro (5 mins)
 
-Routing, as you've seen in multiple frameworks and languages, is adding in the ability to render different pages in a application – but in a single-page app, how can we have multiple pages? In Angular, it comes down to storing all our views on our main page and turning them on and off as we need.
+Routing, as you've seen in our last unit, is adding in the ability to render different pages in an application based on the url – but in a single-page app, how can we have multiple pages? In Angular, it comes down to storing all of our views on our main page and turning them on and off as we need.
 
 But what's the benefit? Why even make it single page? Why add that complexity? The main use case for front-end frameworks is added speed – by loading everything upfront, and just switching sections on and off, our page will seem wonderfully speedy because we'll be skipping quite a few steps that a more traditional framework has to run through.
 
-Now, Angular comes with a basic routing mechanism, ``ngRoute``, which you can read about here: https://docs.angularjs.org/api/ngRoute/service/$route
+Now, Angular comes with a basic routing mechanism, `ngRoute`, which you can read about [here](https://docs.angularjs.org/api/ngRoute/service/$route)
 
 But today we're looking at an even more beefed up router: a third-party plugin called `ui-router`: https://github.com/angular-ui/ui-router
-
-**Our ultimate goal is to build out two pages – a main Todo list and an Archive page for all the Todos we've completed.**
 
 Let's walk through it.
 
@@ -43,7 +41,7 @@ Let's walk through it.
 
 We'll need the UI-Router source. It's not an official, core library, and it's not hosted on Google's site. CDNJS [has the file](https://cdnjs.com/libraries/angular-ui-router), or you can download it from GitHub and include it yourself.
 
-Assuming the latter, let's make sure our script tag is _after_ including Angular, and before we try to use it. 
+Assuming the latter, let's make sure our script tag is _after_ including Angular, and before we try to use it.
 
 In public/index.html
 
@@ -68,7 +66,7 @@ angular
   .module('todoApp', ['ui.router']);
 ```
 
-``'ui.router'`` just happens to be what the library is called in it's source. Most libraries will tell you what to write here in their documentation, and if you need more than one, just list them like any array.
+`'ui.router'` just happens to be what the library is called in it's source. Most libraries will tell you what to write here in their documentation, and if you need more than one, just list them like any array.
 
 #### Philosophically, what is routing?
 
@@ -99,7 +97,7 @@ angular
   .config(MainRouter);
 ```
 
-Of course, now we need a ``MainRouter()`` function, so let's build one:
+Of course, now we need a `MainRouter()` function, so let's build one:
 
 ```javascript
 MainRouter.$inject = ['$stateProvider', '$urlRouterProvider'];
@@ -125,7 +123,7 @@ function MainRouter($stateProvider, $urlRouterProvider) {
 }
 ```
 
-That weird ``$stateProvider`` argument comes from our library, and it allows us to add a state to our application.
+That weird `$stateProvider` argument comes from our library, and it allows us to add a state to our application.
 
 We define a **name** for the state. This is important because it's how we can refer to it later.
 
@@ -143,8 +141,8 @@ Let's also add a catch-all to ensure that we route to the home if a state is not
 function MainRouter($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
-      url: "/",
-      templateUrl: "home.html",
+      url: '/',
+      templateUrl: 'home.html',
     });
 
     $urlRouterProvider.otherwise('/');
@@ -161,7 +159,7 @@ Go over to our `index.html`. What we want to do is to take everything inside our
 </main>
 ```
 
-Now, let's make a _new_ file. You can call it whatever you like but make it obvious. For this exercise, we'll call it ``home.html``
+Now, let's make a _new_ file. You can call it whatever you like but make it obvious. For this exercise, we'll call it `home.html`
 
 ```bash
 $ touch public/home.html
@@ -187,12 +185,12 @@ So let's make things interesting and add another state in here. Let's make a sta
 function MainRouter($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
-      url: "/",
-      templateUrl: "home.html",
+      url: '/',
+      templateUrl: 'home.html',
     })
     .state('archive', {
-      url: "/archive",
-      templateUrl: "archive.html",
+      url: '/archive',
+      templateUrl: 'archive.html',
     });
 
   $urlRouterProvider.otherwise('/');
@@ -223,7 +221,7 @@ In order to jump between one view and the other, we need _links_! But not normal
 
 ```html
 <header><!-- stuff --></header>
-<nav class='tabs'>
+<nav class="tabs">
   <a ui-sref="home">My List</a>
   <a ui-sref="archive">Archives</a>
 </nav>
@@ -252,10 +250,10 @@ Check it out. Click through and jump from page to page. Super awesome, yeah?
 
 #### Helpful Extra - Which state am I on?
 
-``ui.router`` actually gives us another really useful custom directive. Throw it on whichever links are using ``ui-sref``:
+`ui.router` actually gives us another really useful custom directive. Throw it on whichever links are using `ui-sref`:
 
 ```html
-<nav class='tabs'>
+<nav class="tabs">
   <a ui-sref-active="active" ui-sref="home">List</a>
   <a ui-sref-active="active" ui-sref="archive">Archive</a>
 </nav>
@@ -277,7 +275,7 @@ function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
 ...
 
     $urlRouterProvider.otherwise('/');
-      
+
     $locationProvider.html5Mode({
 	  enabled: true,
 	  requireBase: false
@@ -285,9 +283,7 @@ function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
 }
 ```
 
-Here we're setting html5mode to true and telling Angular we don't need to specify a base tag (`/`) in the head of our html. Read more about it here: https://docs.angularjs.org/error/$location/nobase
-
-
+Here we're setting html5mode to true and telling Angular we don't need to specify a base tag (`/`) in the head of our html. Read more about it [here](https://docs.angularjs.org/error/$location/nobase)
 
 
 ## Independent Practice (15 minutes)
