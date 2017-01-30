@@ -47,15 +47,14 @@ We'll build a simple Node/Express app for this lesson.
 1. `mkdir todo-app` && `cd` into it
 
 2. `npm init -y`
-3. `npm install --save express path`
+3. `npm install --save express`
 4. `touch server.js`
 
     ```js
     var express = require('express');
     var app     = express();
-    var path    = require('path');
 
-    app.use(express.static(path.join(__dirname,'public')));
+    app.use(express.static('public'));
 
     app.get('/', function(req, res){
         res.render('index');
@@ -346,6 +345,9 @@ function MateyController(){
   this.hideDiv = false;
   this.showDiv = true;
   this.imgSrc = 'http://images6.fanpop.com/image/photos/37900000/-sweet-Jack-Sparrow-captain-jack-sparrow-37974096-400-274.jpg';
+  this.makeAlert = function(){
+      alert("Hello World");
+    };
 }
 ```
 
@@ -366,6 +368,7 @@ And add some CSS and HTML to our `index.html`
     <div ng-hide="matey.hideDiv">Hide Me</div>
     <div ng-show="matey.showDiv" ng-class="{ red:matey.showDiv }">Show Me</div>
     <img ng-src="{{matey.imgSrc}}" />
+    <button type="button" ng-click="matey.makeAlert()">Click Me</button>
   </div>
 <br>
 ```
@@ -374,6 +377,8 @@ And add some CSS and HTML to our `index.html`
 	- binds the contents of the element to whatever is specified
 1. {{}}
 	- same as ng-bind, but not an attribute
+1. ng-click
+    - same as the onclick attribute 
 1. ng-class
 	- binds the class of an element to the result of an "expression"
 		- an expression is just some code that gets evaluated

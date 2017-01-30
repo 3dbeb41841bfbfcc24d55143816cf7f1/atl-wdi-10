@@ -11,6 +11,9 @@
     this.hideDiv = false;
     this.showDiv = true;
     this.imgSrc = 'http://images6.fanpop.com/image/photos/37900000/-sweet-Jack-Sparrow-captain-jack-sparrow-37974096-400-274.jpg';
+    this.makeAlert = function(){
+      alert("Hello World");
+    };
   }
 
   function ParentController(){
