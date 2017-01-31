@@ -106,9 +106,8 @@ Create a example Node/Express app for this lesson.
     // server.js
     var express = require('express');
     var app     = express();
-    var path    = require('path');
 
-    app.use(express.static(path.join(__dirname,'public')));
+    app.use(express.static('public'));
 
     app.get('/', function(req, res){
         res.render('index');
@@ -119,7 +118,7 @@ Create a example Node/Express app for this lesson.
     });
 ```
     
-1. `npm install --save express path`
+1. `npm install --save express`
 1. `mkdir public`
 1. `mkdir public/js`
 1. `touch public/js/app.js`
