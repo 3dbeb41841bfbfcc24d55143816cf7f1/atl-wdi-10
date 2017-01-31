@@ -57,9 +57,13 @@ Take a minute and make some POST requests in CURL or whatever you like to add so
 
 ## Demo of Starter Code (5 mins)
 
+<<<<<<< HEAD
 1. `git pull upstream master` to grab the starter code from today's student labs folder. 
 1. `cd` into the folder. `npm install` and fire up your server with `nodemon server.js`
 2. `node config/seeds.js`
+=======
+Grab the starter code from today's student labs folder. `npm install` and fire up your server with `nodemon server.js`
+>>>>>>> 326cb7ec4c8df6469c02dfe8101eb5e406e9d2b4
 
 
 ##### &#x1F535; YOU DO - Set up your workspace
@@ -131,7 +135,7 @@ function PresidentsController($http){
 
   function getPresidents(){
     $http
-      .get('http://localhost:3000/presidents')
+      .get('/presidents')
       .then(function(response){
         self.all = response.data.presidents;
     });
@@ -151,7 +155,7 @@ function PresidentsController($http){
 
   function getPresidents(){
     $http
-      .get('http://localhost:3000/presidents')
+      .get('/presidents')
       .then(function(response){
         self.all = response.data.presidents;
     });
@@ -196,7 +200,7 @@ function PresidentsController($http){
 
   function getPresidents(){
     $http
-      .get('http://localhost:3000/presidents')
+      .get('/presidents')
       .then(function(response){
         // Where is 'this' scoped to?
         this.all = response.data.presidents;
@@ -218,7 +222,7 @@ function PresidentsController($http){
 
   function getPresidents(){
     $http
-      .get('http://localhost:3000/presidents')
+      .get('/presidents')
       .then(function(response){
         self.all = response.data.presidents;
     });
