@@ -120,7 +120,7 @@ function PresidentsController($http){
 
   function getPresidents(){
     $http
-      .get('http://localhost:3000/presidents')
+      .get('/presidents')
       .then(function(response){
         self.all = response.data.presidents;
     });
@@ -140,7 +140,7 @@ function PresidentsController($http){
 
   function getPresidents(){
     $http
-      .get('http://localhost:3000/presidents')
+      .get('/presidents')
       .then(function(response){
         self.all = response.data.presidents;
     });
@@ -185,7 +185,7 @@ function PresidentsController($http){
 
   function getPresidents(){
     $http
-      .get('http://localhost:3000/presidents')
+      .get('/presidents')
       .then(function(response){
         // Where is 'this' scoped to?
         this.all = response.data.presidents;
@@ -207,7 +207,7 @@ function PresidentsController($http){
 
   function getPresidents(){
     $http
-      .get('http://localhost:3000/presidents')
+      .get('/presidents')
       .then(function(response){
         self.all = response.data.presidents;
     });
