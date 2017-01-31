@@ -1,0 +1,12 @@
+
+/*hide the edit form on load*/
+.edit-form{
+  display: none;
+}
+
+/*movie search and form color*/
+form,
+.container{
+  background: #97b7d2;
+  padding-bottom: 1em;
+}
