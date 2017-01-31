@@ -434,10 +434,6 @@ Add some more code to your `index.html` file.
 	
 <br>
 
-## Angular Nested Controllers with `$on`, `$emit`, `$broadcast`
-
-<br>
-
 ##### &#x1F535; YOU DO
 
 Add nested controllers to your app
