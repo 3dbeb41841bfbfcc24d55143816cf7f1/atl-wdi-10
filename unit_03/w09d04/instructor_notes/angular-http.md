@@ -33,7 +33,9 @@ Now, since we're going to be interacting with an API, in an ideal world we'd for
 
 We want to make it fast, so we've already made you a sweet little Node API.
 
-Now, real quick – we might want a little seed data. Take a minute and make some POST requests in CURL or whatever you like to add some presidents to our database. If you need some examples:
+Now, real quick – we might want a little seed data. 
+
+- `node config/seeds.js`
 
 ```json
 [
@@ -44,11 +46,24 @@ Now, real quick – we might want a little seed data. Take a minute and make som
 ]
 ```
 
+
+
 Once you have some, do a quick `GET` request to `http://localhost:3000/presidents` and make sure you've got some JSON.
+
+![](https://i.imgur.com/QYHlWfm.png)
+
+Take a minute and make some POST requests in CURL or whatever you like to add some presidents to our database.
+
 
 ## Demo of Starter Code (5 mins)
 
+<<<<<<< HEAD
+1. `git pull upstream master` to grab the starter code from today's student labs folder. 
+1. `cd` into the folder. `npm install` and fire up your server with `nodemon server.js`
+2. `node config/seeds.js`
+=======
 Grab the starter code from today's student labs folder. `npm install` and fire up your server with `nodemon server.js`
+>>>>>>> 326cb7ec4c8df6469c02dfe8101eb5e406e9d2b4
 
 
 ##### &#x1F535; YOU DO - Set up your workspace
