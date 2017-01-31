@@ -48,7 +48,7 @@ Once you have some, do a quick `GET` request to `http://localhost:3000/president
 
 ## Demo of Starter Code (5 mins)
 
-Grab the starter code from today's student labs folder. `npm install` and fire up your server with `nodemon app.js`
+Grab the starter code from today's student labs folder. `npm install` and fire up your server with `nodemon server.js`
 
 
 ##### &#x1F535; YOU DO - Set up your workspace
