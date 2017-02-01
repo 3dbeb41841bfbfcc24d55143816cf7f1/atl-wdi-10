@@ -1,4 +1,1 @@
-(function(){
-  angular.module('IntroToAngularApp', []);
-
-})()
+angular.module('IntroToAngularApp', []);

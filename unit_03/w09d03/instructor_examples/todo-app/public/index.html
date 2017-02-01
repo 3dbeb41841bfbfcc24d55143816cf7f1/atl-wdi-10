@@ -6,43 +6,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/todosController.js"></script>
-    <style media="screen">
-      .angularClass {
-        background-color: red;
-      }
-    </style>
   </head>
   <body ng-controller="TodosController as todos">
-    <h1>Angular todo App</h1>
-    <h3>You have {{ todos.all.length }} to dos</h3>
+    <header>
+      <h1>Angular Todo App</h1>
+      <h3>You have {{todos.all.length}} todos to do!</h3>
+    </header>
 
     <ul id='todos'>
-      <li ng-repeat="todo in todos.all | orderBy:'task'">
-        {{ todo.task }}
+      <li ng-repeat="todo in todos.all">
+        {{todo.task}}
       </li>
     </ul>
 
     <form id='add-todo' ng-submit="todos.add()">
-      <input type="text" placeholder="I need to add...." ng-model="todos.newTodo.task">
+      <input type="text" placeholder="I need to ..." ng-model="todos.newTodo.task">
     </form>
 
-    <p ng-if='todos.newTodo.task'>About to add todo: <strong>{{todos.newTodo.task}}</strong></p>
+    <p ng-if="todos.newTodo.task">About to add to-do: <strong>{{todos.newTodo.task}}</strong></p>
 
-    <br>
-    <div ng-controller="MateyController as matey">
-      <div ng-bind="matey.hello"></div>
-      <div ng-hide="matey.hideDiv">Hide Me</div>
-      <div ng-show="matey.showDiv" ng-class="{ angularClass:matey.showDiv }">Show Me</div>
-      <img ng-src="{{matey.imgSrc}}" />
-      <button type="button" ng-click="matey.makeAlert()">Click Me</button>
-    </div>
-    <br>
 
-    <div ng-controller="ParentController as parent">
-      <div ng-controller="ChildController as child">
-        <span>{{child.property1}}:{{parent.property1}}</span>
-      </div>
-    </div>
+
+
+
 
   </body>
 </html>

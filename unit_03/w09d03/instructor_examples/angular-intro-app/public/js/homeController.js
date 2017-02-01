@@ -1,12 +1,9 @@
-(function(){
-  angular.module('IntroToAngularApp')
-    .controller('HomeController', HomeController);
+angular.module('IntroToAngularApp')
+  .controller('HomeController', HomeController);
 
-  //declaration
-  function HomeController(){
-    this.awesome = "Schmitty";
-    this.favFoods = ["pizza", "beer", "chocolate"];
-
-  }
-
-})()
+function HomeController(){
+  this.awesome = true;
+  this.numbers = [2, 4, 6, 8];
+  this.favShow = "The Good Wife";
+  
+}
