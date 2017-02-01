@@ -1,0 +1,15 @@
+.marvel {
+  background-color: #5cb85c;
+}
+
+.dc {
+  background-color: #428bca;
+}
+
+.independent {
+  background-color: #5bc0de;
+}
+
+.picture img {
+  width: 300px;
+}
