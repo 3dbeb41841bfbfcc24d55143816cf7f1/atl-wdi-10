@@ -5,6 +5,9 @@ duration: "1:25"
 creator:
     name: Micah Rich
     city: LA
+creator:
+    name: Marc Wright
+    city: WDIR
 competencies: Front-end frameworks
 ---
 
