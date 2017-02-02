@@ -14,7 +14,7 @@
       <h1>The Presidents of the United States of America</h1>
 
       <ul id="presidents">
-        <li ng-repeat="president in presidents.all ">
+        <li ng-repeat="president in presidents.all">
           <strong>{{president.name}}</strong> <em>({{president.start}} - {{president.end}})</em> <button ng-click="presidents.deletePresident(president)">Delete</button>
         </li>
       </ul>
