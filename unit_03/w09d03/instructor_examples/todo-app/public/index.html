@@ -6,6 +6,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/todosController.js"></script>
+    <style>
+      .red {
+        background-color: red;
+      }
+    </style>
   </head>
   <body ng-controller="TodosController as todos">
     <header>
@@ -14,7 +19,7 @@
     </header>
 
     <ul id='todos'>
-      <li ng-repeat="todo in todos.all">
+      <li ng-repeat="todo in todos.all | orderBy: 'task' ">
         {{todo.task}}
       </li>
     </ul>
@@ -26,8 +31,24 @@
     <p ng-if="todos.newTodo.task">About to add to-do: <strong>{{todos.newTodo.task}}</strong></p>
 
 
+    <!-- add to the body below our todos code-->
+    <br>
+      <div ng-controller="MateyController as matey">
+        <div ng-bind="matey.hello"></div>
+        <div ng-hide="matey.hideDiv">Hide Me</div>
+        <div ng-show="matey.showDiv" ng-class="{ red:false }">Show Me</div>
+        <img ng-src="{{matey.imgSrc}}" />
+        <button type="button" ng-click="matey.makeAlert()">Click Me</button>
+      </div>
+    <br>
 
 
+    <div ng-controller="ParentController as parent">
+      <span>{{child.property1}}:{{parent.property1}}</span>
+      <div ng-controller="ChildController as child">
+        <span>{{child.property1}}:{{parent.property1}}</span>
+      </div>
+    </div>
 
 
   </body>
