@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>States</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!-- new router script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+    <script src="js/router.js"></script>
+    <script src="js/controller_one.js"></script>
+    <script src="js/controller_two.js"></script>
+    <script src="js/controller_three.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" media="screen" title="no title">
+  </head>
+  <body>
+
+    <h1>Welcome to a Mini Ui-Sref Tutorial!</h1>
+    <!-- nav bar -->
+    <nav>
+      <ul>
+        <li ui-sref="state1">First State!</li>
+        <li ui-sref="state2">Second State!</li>
+        <li ui-sref="state3">Estado Tercero!</li>
+        <li ui-sref="index">Index</li>
+      </ul>
+    </nav>
+
+    <!-- the other views show up here -->
+    <ui-view>
+    </ui-view>
+
+  </body>
+</html>
