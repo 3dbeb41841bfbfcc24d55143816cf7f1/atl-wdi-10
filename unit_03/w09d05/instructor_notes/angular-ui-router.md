@@ -3,29 +3,32 @@ title: Front-end Routing with UI-Router
 type: Lesson
 duration: "1:25"
 creator:
-    name: Micah Rich
-    city: LA
-adapted by:
-    name: Marc Wright
-    city: WDIR
-competencies: Front-end MV*
+    name: Colin Hart
+    city: WDIR-Matey
+competencies: Front-end Frameworks
 ---
 
 # Front-end Routing with UI-Router
 
 ### Objectives
-- Build a SPA with multiple pages
-- Describe when to consider server-side routing and when to consider front-end routing
+- Configure ui-router
+- Distinguish between backend routing and front end routing
+- Render "views", called partials or templates, using srefs to ui-view
 
 ### Preparation
 
 - Build a basic Angular app
 - Interact with an API
-- Download the stater code in your student_examples folder
 
 ## Intro (5 mins)
 
-Routing, as you've seen in our last unit, is adding in the ability to render different pages in an application based on the url – but in a single-page app, how can we have multiple pages? In Angular, it comes down to storing all of our views on our main page and turning them on and off as we need.
+Routing, as you saw in our last unit, is the process of constructing a system that renders different pages in an application based on the url.
+
+We can think about displaying views to the user in jQuery, and even in angular, by showing and hiding different parts of the DOM. The problem with this is that users can't really navigate through your application, share urls, bookmark parts of your website etc.
+
+So we need a solution. A way to maintain our Single Page architecture while giving the illusion that the user is navigating to different pages.
+
+This all comes down to storing our views on our main page and turning them on and off as we need.
 
 But what's the benefit? Why even make it single page? Why add that complexity? The main use case for front-end frameworks is added speed – by loading everything upfront, and just switching sections on and off, our page will seem wonderfully speedy because we'll be skipping quite a few steps that a more traditional framework has to run through.
 
@@ -39,9 +42,13 @@ Let's walk through it.
 
 #### Step One: UI-Router
 
-We'll need the UI-Router source. It's not an official, core library, and it's not hosted on Google's site. CDNJS [has the file](https://cdnjs.com/libraries/angular-ui-router), or you can download it from GitHub and include it yourself.
+We'll need the UI-Router source. It's not an official, core library, and it's not hosted on Google's site. CDNJS [has the file](https://cdnjs.com/libraries/angular-ui-router)
 
-Assuming the latter, let's make sure our script tag is _after_ including Angular, and before we try to use it.
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+```
+
+Make sure your script tag is _after_ including Angular, and before you try to use it.
 
 In public/index.html
 
@@ -53,17 +60,17 @@ In public/index.html
 <!-- end new router script -->
 
 <script src="js/app.js"></script>
-<script src="js/todosController.js"></script>
 ```
 
 #### Step Two: Adding a Dependency
 
-Because we're adding in a new library, it'll be a dependency – we'll need to make sure Angular knows about our library, so we can use it. If you haven't used any external libraries yet, rejoice in that we're finally going to put _something_ in those empty brackets in our `app.js`.
+Because we're adding in a new library, it'll be a dependency – we'll need to make sure Angular knows about our library, so we can use it.
 
+We're going to touch a new file called `router.js` inside of our public directory
 ```javascript
-// in app.js
+// in router.js
 angular
-  .module('todoApp', ['ui.router']);
+  .module('giphyAngularApp', ['ui.router']);
 ```
 
 `'ui.router'` just happens to be what the library is called in it's source. Most libraries will tell you what to write here in their documentation, and if you need more than one, just list them like any array.
@@ -80,29 +87,25 @@ Let's open up our `app.js` and add some routes.
 
 #### Step Three: Add Some Configuration
 
-In `app.js`, we had this:
+In `router.js`, we had this:
 
 ```javascript
-// in app.js
-angular
-  .module('todoApp', ['ui.router']);
+angular.module('giphyAngularApp', ['ui.router'])
 ```
 
 Let's add on to it:
 
 ```javascript
-// in app.js
-angular
-  .module('todoApp', ['ui.router'])
-  .config(MainRouter);
+angular.module('giphyAngularApp', ['ui.router'])
+  .config(GiphyRouter);
 ```
 
-Of course, now we need a `MainRouter()` function, so let's build one:
+Of course, now we need a `GiphyRouter()` function, so let's build one:
 
 ```javascript
-MainRouter.$inject = ['$stateProvider', '$urlRouterProvider'];
+GiphyRouter.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-function MainRouter($stateProvider, $urlRouterProvider) {
+function GiphyRouter($stateProvider, $urlRouterProvider) {
   // ROUTE
 }
 ```
@@ -114,11 +117,11 @@ The arguments in the function are necessary parts for our router to do its work,
 When using Angular, we're not really changing locations (single-page apps, here), lets, instead of calling them _routes_, call them **states**. Same idea as routes, but we're just trying to be more descriptive. We're changing the current _state_ of the app, as in a snapshot of the stuff we're looking at and working with, at a particular moment.
 
 ```javascript
-function MainRouter($stateProvider, $urlRouterProvider) {
+function GiphyRouter($stateProvider, $urlRouterProvider) {
   $stateProvider
-    .state('home', {
-      url: "/",
-      templateUrl: "home.html",
+    .state('routingTest', {
+      url: "/test",
+      templateUrl: "/partials/test.html",
     });
 }
 ```
@@ -131,122 +134,86 @@ We also define a **relative url** for each state to tell the browser how to simu
 
 And finally, we add a **templateURL**, which is sort of a partial HTML file. We'll fill a partial with _just_ the code we'd need to change on the page, here.  Remember, it's just a part of a larger HTML page with parts that we can hide.
 
-Now, before our route can work, we've got to extract some of our view into that partial. Let's do that.
-
 #### Otherwise
 
 Let's also add a catch-all to ensure that we route to the home if a state is not found:
 
 ```javascript
-function MainRouter($stateProvider, $urlRouterProvider) {
-  $stateProvider
-    .state('home', {
-      url: '/',
-      templateUrl: 'home.html',
-    });
+function GiphyRouter($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/');
+
+  $stateProvider
+    .state('routingTest', {
+      url: "/test",
+      templateUrl: "/partials/test.html",
+    });
 }
 ```
 
 #### Step Five: Building Partials
 
-Go over to our `index.html`. What we want to do is to take everything inside our `<main>` tag:
+Before our route can work we actually need to create the partial we're trying to render, just like in server side rendering.
+
+1. Create a directory called `partials` in your public directory
+2. Inside of that directory create a file called `test.html`
+3. Add an h1 with the content `HELLO WORLD`
+
+#### Where do we render the partial
+
+When you implemented server side rendering last unit you had a layout file and you called `{{{body}}}` to inject all of your views in that space.
+
+We'll implement a similar pattern!
+
+Add a `ui-view` tag in the body of our html
 
 ```html
-<main>
-	... ALL INSIDE HERE ...
-</main>
+<ui-view></ui-view>
 ```
 
-Now, let's make a _new_ file. You can call it whatever you like but make it obvious. For this exercise, we'll call it `home.html`
+#### How to trigger our partial?
 
-```bash
-$ touch public/home.html
-```
+1. Let's first initialize the html as an angular application.
+2. Let's add a button above `ui-view` called test.
+3. Finally we're going to implement a state reference directive that behaves sort of similar to a click event
 
-And paste all that view code inside. Now you've got a partial, and all we have left to do is tell our `index.html` where we want to put it.
+`ui-sref="routingTest"`
 
-In that `<main>`, on our `index.html`, we'll add a new directive: `ui-view`.
+sref stands for state reference. We pass it the name of the state we'd like to load.
 
-```html
-<main ui-view></main>
-```
+When the element is clicked, it's going to look at our router.js file find the state that matches the name routingTest, change the url to what we configured in the router, and then load the relevant partial *INSIDE* the ui-view tag
 
-And since our route is a default route at `/`, and our `templateUrl` is already `home.html`, it should actually work!
 
-#### Step Six: One More State!
+## High Level
 
-Of course, that's exactly what we were looking at before, but _now_, we have the ability to switch out that view with different partials, depending on our _state_.
+That very, very simply is how to route on the front end in Angular.
 
-So let's make things interesting and add another state in here. Let's make a state for when we're looking at an archived list. In `app.js`:
+*Take Aways:*
 
-```javascript
-function MainRouter($stateProvider, $urlRouterProvider) {
-  $stateProvider
-    .state('home', {
-      url: '/',
-      templateUrl: 'home.html',
-    })
-    .state('archive', {
-      url: '/archive',
-      templateUrl: 'archive.html',
-    });
+1. It is *NOT* backend routing.
 
-  $urlRouterProvider.otherwise('/');
-}
-```
+  They do not interact, they have no knowledge of each other, they do not communicate. They are completely isolated from the other.
 
-We'll need another partial for `archive.html` and for that one, instead of listing all our todos, let's just list the completed ones.
+  It's called routing because it looks kind of like routing, so what else are we going to call it?
 
-`touch public/archive.html`
+2. There is a TON you can do with routing.
 
-Our new partial will be almost exactly the same as our last so **duplicate the `home.html` file**. Inside, find our `ng-repeat`:
+  We'll get into redirecting to different views from your controller later. You can pass parameters via a thing called $stateParams.
 
-```html
-<li ng-repeat="todo in todos.remainingTodos()">
-```
+  This is the minimum you need to know, but don't let us stop you from reading the ui-router docs and learning more about it. It's a very powerful and useful tool.
 
-...and switch that sucker out:
+3. What the eff is that hashbang thing in our url?
 
-```html
-<li ng-repeat="todo in todos.completedTodos()">
-```
+  Don't worry about it for now. Remember that we're creating the illusion of routes for the user. We also need to trick the browser a little so it doesn't accidentally try to make requests to our backend for html that doesn't exist.
 
-We're 10 seconds away from seeing something awesome. We need one more thing.
+  In order to escape that front-end routing will preface all of our paths with that `#` so the browser doesn't get confused and just treats our nice looking routes as decoration rather than commands to make HTTP GET requests.
 
-#### Step Seven: A Navbar!
 
-In order to jump between one view and the other, we need _links_! But not normal links because we're not changing pages. Luckily, `ui.router` gives us a custom directive. Inside your `index.html`, underneath `header` - let's add a `nav` with a few `a`'s
 
-```html
-<header><!-- stuff --></header>
-<nav class="tabs">
-  <a ui-sref="home">My List</a>
-  <a ui-sref="archive">Archives</a>
-</nav>
-```
 
-That custom directive, `ui-sref` is like `href`, but referencing _states_ instead. That came with our library, and **the text we're putting in there is just the names of the states we defined**.
+  #### The Docs:
 
-You already have a little CSS in your `style.css` to make it look nice, something like:
-
-```css
-nav.tabs {
-  background: #4d5d70;
-  max-width: 55%;
-  margin: 0 auto;
-}
-nav.tabs a {
-  display: inline-block;
-  background: rgba(255,255,255,0.7);
-  color: black;
-  padding: 10px 20px;
-  margin-right: 1px;
-}
-```
-
-Check it out. Click through and jump from page to page. Super awesome, yeah?
+  https://github.com/angular-ui/ui-router/wiki/URL-Routing
 
 #### Helpful Extra - Which state am I on?
 
@@ -284,14 +251,3 @@ function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
 ```
 
 Here we're setting html5mode to true and telling Angular we don't need to specify a base tag (`/`) in the head of our html. Read more about it [here](https://docs.angularjs.org/error/$location/nobase)
-
-
-## Independent Practice (15 minutes)
-
-Having multiple states is really useful, obviously – we can start making a much more complex Angular application.
-
-**What other states would be good to add to your app?** Try adding an about page to start, or even crazier, maybe adding an extra state to be able to _edit_ a todo. Take the next 15 minutes to try.
-
-## Conclusion (5 mins)
-- What's a router? What's it for?
-- How do we add routes to our Angular application?
