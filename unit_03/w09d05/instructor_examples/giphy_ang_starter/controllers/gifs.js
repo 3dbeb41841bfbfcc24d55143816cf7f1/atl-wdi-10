@@ -15,19 +15,20 @@ router.post('/', function(req, res){
   .then(function(gif) {
     console.log('succces', gif)
 
-    return Gif.find({}).exec()
+    res.json({data: gif})
+    // return Gif.find({}).exec()
   })
-  .then(function(gifs) {
-    console.log(gifs)
-    res.json({
-      data: gifs
-    })
-  })
+  // .then(function(gifs) {
+  //   console.log(gifs)
+  //   res.json({
+  //     data: gifs
+  //   })
+  // })
 });
 
 router.put('/:id', function(req, res) {
   Gif.update({_id: req.params.id}, req.body)
-   .then(function() {
+   .then(function(gif) {
      return Gif.find({}).exec();
    })
    .then(function(gifs) {
