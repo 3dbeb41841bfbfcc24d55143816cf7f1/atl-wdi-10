@@ -306,10 +306,6 @@ We're going to repeat a variation of those above steps a lot today.
 
   $state.go('savedGifs')
   ```
-fancy pattern matching
-
-- `$filter('filter')(self.savedGifs, {_id: id})`
-
 
 ## implement getSavedGifs
 
