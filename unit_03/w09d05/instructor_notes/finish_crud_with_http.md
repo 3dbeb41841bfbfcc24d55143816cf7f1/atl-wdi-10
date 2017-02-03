@@ -381,6 +381,10 @@ to the show all gifs partial
 
 ## implement update gif
 
+1. Add a click event 
+
+`<button ng-click="giphy.populateFormData(gif)">Edit</button>`
+
 `<button ng-click="giphy.populateFormData(gif)">Edit</button>`
 
 ```html
