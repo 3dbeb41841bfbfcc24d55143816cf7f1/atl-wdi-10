@@ -70,6 +70,10 @@ In this weekend assignment, you'll have a chance to work with a Single Page App 
 
 - Add a 4th state with a 3rd party API of your choice!
 
+## :bug: Bug Report
+
+You will come across a ton of bugs and error messages. Don't forget to submit 1 bug report through Github Issues.
+
 ## Submitting Your Work
 
   When you're ready to submit your work,
