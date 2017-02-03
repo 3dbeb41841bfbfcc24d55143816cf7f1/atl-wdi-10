@@ -57,7 +57,7 @@ In this weekend assignment, you'll have a chance to work with a Single Page App 
 
 ### State 3: Netflix Movie Poster
 
-- Clicking on the `Netflix` tab will render the Quotes partial.
+- Clicking on the `Netflix` tab will render the Netflix partial.
 - Clicking on the `Gimme the Poster!` button will make an `$http` call to http://netflixroulette.net/. Check out [their API docs](http://netflixroulette.net/api/) to see how to query for a movie using a movie title.
 - When a response returns, show the movie title + poster image in the page underneath the search bar. Each time you query, a new response will render.
 - Once a poster is generated, a button `Save Me!` will also render on the page.
