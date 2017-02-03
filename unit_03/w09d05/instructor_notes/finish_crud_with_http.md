@@ -282,7 +282,7 @@ We're going to repeat a variation of those above steps a lot today.
 
   ```js
   function saveGif(url) {
-    $http.post('/gifs', { url: url, name: self.name} )
+    $http.post('/gifs', { url: self.gifUrl, name: self.gifName} )
       .then(function(giphyResponse) {
         console.log(giphyResponse)
       })
