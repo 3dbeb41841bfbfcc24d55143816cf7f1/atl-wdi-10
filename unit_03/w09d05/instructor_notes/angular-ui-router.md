@@ -13,7 +13,8 @@ competencies: Front-end Frameworks
 ### Objectives
 - Configure ui-router
 - Distinguish between backend routing and front end routing
-- Render "views", called partials or templates, using srefs to ui-view
+- Render "views", called partials or templates, using ui-srefs to ui-view
+- Describe the complications of state management
 
 ### Preparation
 
