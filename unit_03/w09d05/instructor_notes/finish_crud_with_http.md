@@ -275,11 +275,6 @@ We're going to repeat a variation of those above steps a lot today.
 
   test that it console.logs what we expect
 
-2. Pass `giphy.gifUrl` as an argument in that ng-click and change the console log in the controller to verify that it logs the gif url.
-
-  ```html
-  <button ng-click="giphy.saveGif(giphy.gif)">SAVE GIF</button>
-  ```
 
 3. Implement $http post method to send the url and name to the backend.
 
