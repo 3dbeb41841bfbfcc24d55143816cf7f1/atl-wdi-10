@@ -18,13 +18,14 @@ Your app must:
 
 * **Have at _least_ 2 models** (more if they make sense) – one representing someone using your application (a user), and one that represents the main functional idea for your app
 * **Use Angular as a front-end framework**
-* **Include sign up/log in functionality**, with encrypted passwords & an authorization flow. (Using Passport)
+* **Include sign up/log in functionality**, with encrypted passwords & an authorization flow.
 * **Have complete RESTful routes** for at least one of your resources with GET, POST, PUT, and DELETE
 * **Write Mongo queries using the Mongoose module** and interact with your document database. Promises will likely make your life easier as you start to build complex queries!
 * **Include wireframes** that you designed during the planning process
 * **Include User Stories**
 * **Include ERDs**
 * Have **semantically clean HTML and CSS**
+* Have at least 100 lines of CSS (not including whitespace)
 * **Be deployed online** and accessible to the public via Heroku
 
 ---
@@ -51,7 +52,7 @@ Most importantly a **technical demonstration** of your app which:
 
 ### To Submit
 
-* **Create a GitHub issue on the R2D2 repo** with a link your Project Repo, and a link to Heroku where your project's deployed.
+* **Create a GitHub issue on the Matey repo** with a link your Project Repo, and a link to Heroku where your project's deployed.
 
 ---
 
@@ -125,20 +126,20 @@ If you have ideas on how you can help a fellow-student with work that they are s
 ## Meetings with instructors
 _Your instructor will contact you to setup a meeting time_
 
-**Monday, October 17th**<br>
+**Wednesday, February 8th**<br>
 Work on your [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) and an initial wireframe in the morning. You will have a 15 minute meeting to get your project approved.
 
-**Tuesday, October 18th**<br>
+**Thursday, February 9th**<br>
 Work on your project.
 
-**Wednesday, October 19th**<br>
+**Friday, February 10th**<br>
 15 minute check in to see progress decide whether to move forward with or abandon stretch goals.
 
-**Thursday, October 20th**<br>
+**Monday, February 13th**<br>
 You should have successfully deployed your app to Heroku.
 
-**Friday, October 21st**<br>
-Submit your issue by 2:30pm EDT and present your project.
+**Tuesday, February 14th**<br>
+Submit your issue by 10am EDT and present your project.
 
 
 ## Where to go for help during project week
