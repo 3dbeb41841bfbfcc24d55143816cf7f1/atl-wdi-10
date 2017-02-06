@@ -143,6 +143,9 @@ Work on your project.
 You should have successfully deployed your app to Heroku.
 
 **Tuesday, February 14th**<br>
+Work on your project.
+
+**Wednesday, February 15th**<br>
 Submit your issue by 10am EDT and present your project.
 
 
