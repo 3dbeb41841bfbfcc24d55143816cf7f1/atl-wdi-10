@@ -25,7 +25,7 @@ Your app must:
 * **Include User Stories**
 * **Include ERDs**
 * Have **semantically clean HTML and CSS**
-* Have at least 100 lines of CSS (not including whitespace)
+* Have at least **100 lines of CSS** (not including whitespace)
 * **Be deployed online** and accessible to the public via Heroku
 
 ---
@@ -105,6 +105,10 @@ Read the MD file `Using Git to Collaborate` in this directory
  This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
 
 
+### Teammate Feedback + Evaluation
+
+You'll submit a group meet assessment form.
+
 ---
 
 # Project Week
@@ -145,7 +149,7 @@ Submit your issue by 10am EDT and present your project.
 ## Where to go for help during project week
 1. Seek out help online
 2. Seek out help with your classmates
-3. Seek out help with Derek (TA)
+3. Seek out help with Jesse (TA)
 4. Submit a Github issue **on the wdi-remote** class Github account to receive help from an instructor
 
 ## Formatting your GitHub Issue for wdi-remote to ask for help
