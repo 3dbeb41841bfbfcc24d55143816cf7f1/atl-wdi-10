@@ -62,6 +62,9 @@ var noScrubs = function(words){
   //your code here
 }
 
+//invoke the function
+noScrubs(words);
+
 // Example Output:
 ["I", "don't", "want", "no", "a", "is", "a", "guy", "that", "can't", "get", "no", "love", "from", "me"]
 ```
