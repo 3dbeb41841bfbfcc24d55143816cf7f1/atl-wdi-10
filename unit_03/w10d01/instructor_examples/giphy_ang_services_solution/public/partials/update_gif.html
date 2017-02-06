@@ -1,0 +1,14 @@
+<div>
+  <form ng-submit="giphy.updateGif(giphy.gifToUpdate)">
+    <div>
+      <label for="name">name</label>
+      <input ng-model="giphy.gifToUpdate.name" name="name" type="text">
+    </div>
+    <div>
+      <label for="url">url</label>
+      <input ng-model="giphy.gifToUpdate.url" name="url" type="text">
+    </div>
+
+    <button type="submit"> Update Gif</button>
+  </form>
+</div>

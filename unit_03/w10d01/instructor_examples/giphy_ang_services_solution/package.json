@@ -1,5 +1,5 @@
 {
-  "name": "giphy_ang_with_auth",
+  "name": "giphy_ang_app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -12,7 +12,6 @@
     "body-parser": "^1.16.0",
     "express": "^4.14.0",
     "mongoose": "^4.7.7",
-    "morgan": "^1.7.0",
-    "pryjs": "^1.0.3"
+    "morgan": "^1.7.0"
   }
 }

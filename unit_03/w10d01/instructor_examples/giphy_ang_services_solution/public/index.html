@@ -11,20 +11,19 @@
   <script src="/scripts/giphyService.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body ng-controller="HomeController as home" >
+  <!-- var home = new HomeController  -->
+<body ng-controller="HomeController as home">
     <div ng-controller="GiphyController as giphy">
       <div class="container">
-        <div >
-          <button ui-sref-active="active" ng-click="giphy.getGif()" class="get-gif">GET GIF</button>
-          <button ng-click="giphy.saveGif(giphy.gifUrl)">SAVE GIF</button>
+        <div>
+          <button ng-click="giphy.getGif()" class="get-gif">GET GIF</button>
+          <button ng-click="giphy.saveGif()">SAVE GIF</button>
           <button ng-click="giphy.getSavedGifs()" class="saved-gifs">See Saved Gifs</button>
         </div>
-
-        <ui-view>
-        </ui-view>
-
       </div>
+      <ui-view>
 
+      </ui-view>
     </div>
   </div>
 </body>
