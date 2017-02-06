@@ -13,7 +13,7 @@ competencies: Front-end frameworks
 ### Objectives
 *After this lesson, students will be able to:*
 
-- Refactor $resource as a service
+- Refactor $http API calls as a service
 - Describe the difference between a factory and a service
 
 ### Preparation
