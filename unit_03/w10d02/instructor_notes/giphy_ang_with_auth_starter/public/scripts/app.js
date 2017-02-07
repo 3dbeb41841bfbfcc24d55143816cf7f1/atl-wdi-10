@@ -5,10 +5,49 @@
 
     function HomeController($scope, $http) {
       var self = this;
+
+      $scope.$on('userLoggedIn', function(event, data) {
+        self.currentUser = data;
+      })
+
+      $scope.$on('userLoggedOut', function(event, data) {
+        self.currentUser = null;
+      })
     }
 
     function AuthController($http, $state, $scope, $rootScope) {
       var self = this;
+
+      function signup(userPass) {
+        $http.post('/users', userPass)
+          .then(function(response) {
+            $state.go('login')
+          })
+      }
+
+      function login(userPass) {
+        $http.post('/sessions/login', userPass)
+          .then(function(response) {
+
+            // LISTENER IS IN HOMECONTROLLER LINE 9
+            $scope.$emit('userLoggedIn', response.data.data)
+            $rootScope.$emit('fetchData', response.data.data)
+            $state.go('gif')
+          })
+      }
+
+      function logout() {
+        $http.delete('/sessions')
+          .then(function(response) {
+            $scope.$emit('userLoggedOut');
+
+            $state.go('index');
+          })
+      }
+
+      self.logout = logout;
+      self.signup = signup;
+      self.login = login;
     }
 
     function GiphyController($scope, $http, $state, $stateParams, $rootScope) {
@@ -19,15 +58,11 @@
         populateInitialState(data)
       });
 
-      function populateInitialState(data) {
+      function populateInitialState(currentUser) {
         $http.get(`users/${currentUser._id}/gifs`)
           .then(function(response) {
             self.savedGifs = response.data.gifs
           })
-      }
-
-      function getSavedGifs() {
-
       }
 
       function getGif() {
@@ -39,8 +74,26 @@
           })
       }
 
-      function saveGif(url) {
+      function getSavedGifs(currentUser) {
+        $http.get(`users/${currentUser._id}/gifs`)
+          .then(function(response) {
+            self.savedGifs = response.data.gifs
 
+            $state.go('savedGifs', {userId: currentUser._id})
+          })
+      }
+
+      function saveGif(url, currentUser) {
+        $http.post(`/users/${currentUser._id}/gifs`, {
+          url: url,
+          name: self.name
+        }).then(function(serverResponse) {
+          self.savedGifs.push(serverResponse.data.gif);
+          self.name = '';
+          self.gifUrl = '';
+
+          $state.go('savedGifs', { userId: currentUser._id })
+        })
       }
 
       function populateFormData(gif, currentUser) {

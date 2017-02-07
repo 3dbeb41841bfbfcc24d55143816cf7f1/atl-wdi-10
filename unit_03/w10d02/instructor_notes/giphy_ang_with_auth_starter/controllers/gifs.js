@@ -5,14 +5,13 @@ var User = require('../models/user.js')
 
 router.get('/', function(req, res) {
   User.findById(req.params.id).exec()
-  .then(function(user) {
-    res.json({gifs: user.gifs });
-  })
-  .catch(function(err) {
-    res.json(err)
-  })
+    .then(function(user) {
+      res.json({ gifs: user.gifs });
+    })
+    .catch(function(err) {
+      res.json(err)
+    })
 })
-
 
 router.post('/', function(req, res){
   User.findById(req.params.id).exec()
@@ -25,7 +24,7 @@ router.post('/', function(req, res){
     user.gifs.push(newGif);
     user.save();
 
-    var gif = users.gifs.id(newGif._id)
+    var gif = user.gifs.id(newGif._id)
 
     res.json({gif: gif });
   })
@@ -36,30 +35,30 @@ router.post('/', function(req, res){
 
 router.put('/:gifId', function(req, res) {
   User.findById(req.params.id).exec()
-  .then(function(user) {
-    var gif = user.gifs.id(req.params.gifId);
+    .then(function(user) {
+      var gif = user.gifs.id(req.params.gifId);
 
-    gif.url = req.body.url;
-    gif.name = req.body.name;
+      gif.url = req.body.url;
+      gif.name = req.body.name;
 
-    user.save();
-    res.json({ currentUser: user });
-  })
-  .catch(function(err) {
-    res.json(err)
-  })
+      user.save();
+      res.json({ currentUser: user });
+    })
+    .catch(function(err) {
+      res.json(err)
+    })
 })
 
 router.delete('/:gifId', function(req, res) {
   User.findById(req.params.id).exec()
-  .then(function(user){
-    user.gifs.id(req.params.gifId).remove();
-    user.save();
-    res.json({ currentUser: user });
-  })
-  .catch(function(err) {
-    res.json(err)
-  })
+    .then(function(user){
+      user.gifs.id(req.params.gifId).remove();
+      user.save();
+      res.json({ currentUser: user });
+    })
+    .catch(function(err) {
+      res.json(err)
+    })
 })
 
 module.exports = router;

@@ -52,9 +52,6 @@ In your breakout rooms read this [reddit post](https://www.reddit.com/r/learnjav
 
 Think about where you see this in Angular, and where you might see more of it in our lesson today.
 
-
-
-
 ## Our Solution is PubSub!
 
 We'll inject `$scope` `$rootScope` into our controllers to `broadcast`, `emit`, and `listen` for messages (those signal flares we were talking about earlier) in our controllers.
@@ -66,7 +63,6 @@ Set up the `pub_sub` node app in `student_labs` for a working example of `broadc
 Comment the code in student labs with your explanations of what the code is doing.
 
 Extra reading: https://toddmotto.com/all-about-angulars-emit-broadcast-on-publish-subscribing/
-
 
 # Authentication
 
@@ -179,7 +175,7 @@ Extra reading: https://toddmotto.com/all-about-angulars-emit-broadcast-on-publis
 
   2. How do we send things across controllers?
 
-8. Add emit pubsub sender/reciever function to login and HomeController
+8. Add emit pubsub sender/receiver function to login and HomeController
 
   ```js
     $scope.$emit('userLoggedIn', response.data.data);
@@ -209,7 +205,7 @@ Extra reading: https://toddmotto.com/all-about-angulars-emit-broadcast-on-publis
       .then(function(serverResponse) {
         self.savedGifs.push(serverResponse.data.gif);
         self.name = '';
-        giphy.gifUrl = '';
+        self.gifUrl = '';
 
         $state.go('savedGifs', { userId: currentUser._id })
       })
@@ -277,7 +273,7 @@ Extra reading: https://toddmotto.com/all-about-angulars-emit-broadcast-on-publis
     populateInitialState(data)
   });
 
-  function populateInitialState(data) {
+  function populateInitialState(currentUser) {
     $http.get(`users/${currentUser._id}/gifs`)
       .then(function(response) {
         self.savedGifs = response.data.gifs
@@ -295,7 +291,7 @@ Look at where the GifsController is required in server.js on line 29
   ```
 We've defined the controller restfully so our router can start with the nice and simple `/` the problem with this configuration is `req.params` in the router won't have access to `:id` since it's defined in the server.
 
-We can fix this easy peasy though by just adding `{mergeParams: true}` to our Router intialization at the top of the gifs.js controller file
+We can fix this easy peasy though by just adding `{mergeParams: true}` to our Router initialization at the top of the gifs.js controller file
 
 ```js
   var router = express.Router({mergeParams: true});
