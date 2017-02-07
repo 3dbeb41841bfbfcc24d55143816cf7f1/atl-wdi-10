@@ -53,6 +53,8 @@ In your breakout rooms read this [reddit post](https://www.reddit.com/r/learnjav
 Think about where you see this in Angular, and where you might see more of it in our lesson today.
 
 
+
+
 ## Our Solution is PubSub!
 
 We'll inject `$scope` `$rootScope` into our controllers to `broadcast`, `emit`, and `listen` for messages (those signal flares we were talking about earlier) in our controllers.
@@ -63,6 +65,7 @@ Set up the `pub_sub` node app in `student_labs` for a working example of `broadc
 
 Comment the code in student labs with your explanations of what the code is doing.
 
+Extra reading: https://toddmotto.com/all-about-angulars-emit-broadcast-on-publish-subscribing/
 
 
 # Authentication
