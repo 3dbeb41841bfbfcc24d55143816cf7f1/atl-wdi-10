@@ -1,0 +1,42 @@
+div {
+  margin: 0 auto;
+}
+
+.container {
+  width: 750px;
+  overflow: auto;
+}
+
+button {
+  margin: 0 auto;
+  width: 33.3333%;
+  height: 2em;
+  float: left;
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.all-gifs-container {
+  margin-top: 1em;
+}
+
+.all-gifs-container div {
+  float: left;
+  margin: 25px;
+  float: left;
+  width: 300px;
+}
+
+.all-gifs-container div img {
+  width: 300px;
+  height: 300px;
+}
+
+input {
+  width: 400px;
+  height: 2em;
+  margin: 1em;
+}

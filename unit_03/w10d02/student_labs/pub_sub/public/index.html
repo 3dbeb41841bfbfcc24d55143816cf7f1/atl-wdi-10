@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pubSubApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+  <script src="js/app.js"></script>
+  <style>
+    body {
+      width: 960px
+    }
+    .example-box {
+      text-align: center;
+      margin: 0 auto;
+      width: 300px;
+      padding: 5px;
+    }
+    .one {
+      border: 2px dotted red;
+    }
+    .two {
+      border: 2px dotted blue;
+    }
+    .three {
+      border: 2px dotted green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="example-box one" id="box1" ng-controller="ControllerOne as ctrl1">
+    <h3>Controller 1</h3>
+     <button ng-click="ctrl1.broadcastEvent()">Broadcast Event</button>
+    <p>{{ctrl1.message1}}</p>
+
+     <div class="example-box two" id="box2" ng-controller="ControllerTwo as ctrl2">
+        <h3>Controller 2</h3>
+        <p>{{ctrl2.message2}}</p>
+
+         <div class="example-box three" id="box3" ng-controller="ControllerThree as ctrl3">
+           <h3>Controller 3</h3>
+           <p>{{ctrl3.message3}}</p>
+           <button ng-click="ctrl3.emitEvent()">Emit Event</button>
+         </div>
+    </div>
+  </div>
+</body>
+</html>

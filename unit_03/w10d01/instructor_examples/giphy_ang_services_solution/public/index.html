@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="giphyAngularApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+  <script src="/scripts/router.js"></script>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/giphyService.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <!-- var home = new HomeController  -->
+<body ng-controller="HomeController as home">
+    <div ng-controller="GiphyController as giphy">
+      <div class="container">
+        <div>
+          <button ng-click="giphy.getGif()" class="get-gif">GET GIF</button>
+          <button ng-click="giphy.saveGif()">SAVE GIF</button>
+          <button ng-click="giphy.getSavedGifs()" class="saved-gifs">See Saved Gifs</button>
+        </div>
+      </div>
+      <ui-view>
+
+      </ui-view>
+    </div>
+  </div>
+</body>
+</html>
