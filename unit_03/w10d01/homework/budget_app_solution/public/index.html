@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="budgetApp">
+<head>
+  <title>BudgetApp</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="js/router.js"></script>
+  <script type="text/javascript" src="js/controllers.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <!-- nav bar -->
+  <nav>
+    <ul>
+      <li ui-sref="credits">Credits</li>
+      <li ui-sref="expenses">Expenses</li>
+      <li ui-sref="balance">Balance</li>
+    </ul>
+  </nav>
+
+  <!-- the other views show up here -->
+  <ui-view>
+  </ui-view>
+
+</body>
+</html>
