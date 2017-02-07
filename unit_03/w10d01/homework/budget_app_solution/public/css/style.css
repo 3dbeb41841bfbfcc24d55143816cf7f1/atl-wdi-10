@@ -1,0 +1,64 @@
+/* Structure */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,600,600italic,300italic);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+form {
+  padding: 2em 0;
+}
+
+input {
+  line-height: 18px;
+  font-size: 16px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    border: solid;
+    border-width: 1px 1px 0 1px;
+    margin: 0 5px 0 0;
+    padding: 6px 30px;
+}
+
+button{
+  height: 25px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
