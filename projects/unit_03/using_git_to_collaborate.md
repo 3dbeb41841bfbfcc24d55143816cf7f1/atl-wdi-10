@@ -1,8 +1,8 @@
 ### Using Git and branches to Collaborate
 
-One person on the team will create the project repo. as a team, you have the option of deciding whether you'll fork the main project repo and make pull requests from your forks and branches into the main repo, or if everyone will clone the main repo and makes pull requests just from branches. It's up to you, but your team should be in sync.
+One person on the team will create the project repo. As a team, you have the option of deciding whether you'll fork the main project repo and make pull requests from your forks and branches into the main repo, or if everyone will clone the main repo and makes pull requests just from branches. It's up to you, but your team should be in sync.
 
-You *_MUST_* use branches to collaborate. Period. If you need a refresher refer back to [W07D02](https://github.com/ga-students/wdi-remote-r2d2/blob/master/unit_02/w07d02/instructor_notes/git_branching.md)
+You *_MUST_* use branches to collaborate. Period. If you need a refresher refer to [W07D02](https://github.com/ga-students/wdi-remote-matey/blob/master/unit_02/w10d03/instructor_notes/)
 
 Working code lives on the `master` branch. No member of the team should _ever_ be writing code or making changes on master unless you're in your final deployment phase.
 
