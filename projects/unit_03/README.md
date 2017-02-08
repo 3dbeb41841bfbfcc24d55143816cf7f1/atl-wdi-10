@@ -42,7 +42,7 @@ Your app must:
 Most importantly a **technical demonstration** of your app which:
 
 * Is 5-10 minutes in length
-* **BOTH** partners should speak during the presentation
+* **ALL** group members should speak during the presentation
 * Shows off all features of the app
 * Explains the technical details
 * Explains the technical challenges
