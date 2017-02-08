@@ -1,0 +1,23 @@
+
+  <h1>{{home.currentUser.name}}'s Show Page</h1>
+
+  <form ng-submit="list.saveList(home.currentUser._id)">
+    <input type="text" ng-model="list.newList">
+    <button>Add To List</button>
+  </form>
+
+
+    <h2>My Summer Bucket List</h2>
+
+      <div ng-repeat="item in list.userList" ng-if="item.complete == false">
+        <span>{{item.name}}</span>
+        <button ng-click="list.showEditForm(item, home.currentUser)">Edit</button>
+        <button ng-click="list.completed(item, home.currentUser)">Did it</button>
+      </div>
+
+    <h2>Fulfilled Dreams</h2>
+
+      <div ng-repeat="item in list.userList" ng-if="item.complete">
+        <span>{{item.name}}</span>
+        <button ng-click="list.completed(item, home.currentUser)">Didn't do it</button>
+      </div>

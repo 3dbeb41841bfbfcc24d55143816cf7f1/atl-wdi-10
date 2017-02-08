@@ -1,0 +1,20 @@
+{
+  "name": "giphy_ang_with_auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Colin Hart adapted by Christine Yi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "express-session": "^1.15.0",
+    "mongoose": "^4.7.7",
+    "morgan": "^1.7.0",
+    "pryjs": "^1.0.3"
+  }
+}

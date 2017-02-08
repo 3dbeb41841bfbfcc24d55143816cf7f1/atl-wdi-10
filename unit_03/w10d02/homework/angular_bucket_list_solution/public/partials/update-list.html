@@ -1,0 +1,9 @@
+<div>
+  <form ng-submit="list.updateList(home.currentUser)">
+    <div>
+      <label for="name">name</label>
+      <input ng-model="list.name" name="name" type="text">
+    </div>
+    <button type="submit"> Update List</button><p ng-click="list.deleteList(home.currentUser)">Delete Item</p>
+  </form>
+</div>
