@@ -6,6 +6,10 @@ In your teams, you're going to test this process with forks.
 
 2. The other team members will fork that persons repo and clone the fork locally.
 
+3. Each team member who forked should run $`git remote -v` and verify that their origin remote points to their fork and that they have an upstream remote that points to the person maintaining the main repo.
+
+  If you're missing one you can add remotes by running $`git remote add <name of remote> <url of remote>`
+
 ### The Fun Stuff
 
 Moving files from one machine to another. Simulate the work-flow process.
