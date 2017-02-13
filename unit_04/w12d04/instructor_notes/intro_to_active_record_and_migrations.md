@@ -53,7 +53,7 @@ I'll ask each group to explain one in their own words to the class.
 RDBMS stand for __relational database management system (RDBMS)__. You can think of a relational database as a fancy Excel spreadsheet. Here's what our **Artist** Model will look like:
 
 
-![](screenshots/google-doc.png)
+![](https://i.imgur.com/hFKvfDB.png)
 
 - In this example, each **Model** in our app would have it's own tab in the spreadsheet called a **Table**.
 - Each **Row** in the spreadsheet is an **instance** of the Model and is assigned an `_id`.
