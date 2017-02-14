@@ -15,7 +15,7 @@ February 21, 2017 - May 12, 2017
 - John Dupper
 	- dupper.john@gmail.com
 - Lisa Holter
-    - 
+    - lkholter@gmail.com
 
 
 ### Class Hours
