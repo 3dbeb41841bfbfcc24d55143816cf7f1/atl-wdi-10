@@ -2,9 +2,6 @@
 # Welcome to WDI-9
 February 21, 2017 - May 12, 2017
 
-![matey](
-http://i127.photobucket.com/albums/p142/cy360/GA%20home%20page/matey.jpg  )
-
 
 ### Instructors
 ##### Instructional Leads
