@@ -1,6 +1,6 @@
 ![ga](http://mobbook.generalassemb.ly/ga_cog.png)
-# Welcome to WDIR-Matey
-December 5, 2016 - March 21, 2016
+# Welcome to WDI-9
+February 21, 2017 - May 12, 2017
 
 ![matey](
 http://i127.photobucket.com/albums/p142/cy360/GA%20home%20page/matey.jpg  )
@@ -8,22 +8,17 @@ http://i127.photobucket.com/albums/p142/cy360/GA%20home%20page/matey.jpg  )
 
 ### Instructors
 ##### Instructional Leads
-- Marc Wright
-	- marc@generalassemb.ly
-- Colin Hart
-  - colin.hart@generalassemb.ly
+- Danny Hurley
+    - danny.hurley@generalassemb.ly
+- Maren Woodruff
+    - maren.woodruff@generalassemb.ly
 
 
 ##### Instructional Associates
-- Matt Brendzel
-	- matt.brendzel@generalassemb.ly
-- Christine Yi
-  - christine.yi@generalassemb.ly
-
-
-##### Teaching Assistants
-- Jesse Mills- Afterhours + Weekend TA (Monday - Thursday 7:00pm-10:00pm EDT, Saturday 12pm-3pm EDT)
-- Samuel Weisse- Homework TA (Unit 1)
+- John Dupper
+	- dupper.john@gmail.com
+- Lisa Holter
+    - 
 
 
 ### Holidays - No Class:
