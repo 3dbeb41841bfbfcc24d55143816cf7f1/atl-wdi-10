@@ -18,14 +18,9 @@ February 21, 2017 - May 12, 2017
     - 
 
 
-### Holidays - No Class:
-- January 16, 2016
-- February 20, 2016
-
 ### Class Hours
-- Monday - Friday: 10:00am - 6:00pm EDT
-- After hours: 7:00pm - 10:00pm EDT
-- Saturday: 12:00pm - 3:00pm EDT
+- Monday - Friday: 9:00am - 5:00pm EDT
+- After hours: 5:00pm - 10:00pm EDT
 
 
 ### Tentative Weekly Schedule
