@@ -21,6 +21,9 @@ CREATE TABLE orders (
 INSERT INTO customers (name, address, city, state, zip) VALUES ('Walter Key', '79 Highland Ave.', 'Somerville', 'MA', '02143');
 INSERT INTO customers (name, address, city, state, zip) VALUES ('Grayce Mission', '40 College Avenue', 'Somerville', 'MA', '02143');
 INSERT INTO customers (name, address, city, state, zip) VALUES ('Rosalinda Motorway', '115 Broadway', 'Somerville', 'MA', '02143');
+INSERT INTO customers (name, address, city, state, zip) VALUES ('Holland St', '98', 'Louisville', 'KY', '01234');
+
+
 
 INSERT INTO orders (customer_id, amount, order_date) VALUES (1, 111.51, '01/5/2016');
 INSERT INTO orders (customer_id, amount, order_date) VALUES (2, 151.88, '12/22/2015');

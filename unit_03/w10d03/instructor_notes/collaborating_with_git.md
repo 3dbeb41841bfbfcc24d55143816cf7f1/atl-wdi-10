@@ -28,10 +28,10 @@ Using git as we have in the past few months is perfectly fine when working alone
 
 ## The problem
 
-<!-- - How do you save your code in a reliable and trackable way?
+- How do you save your code in a reliable and trackable way?
 - How do you share code with collaborators
 - How do you, in the process of sharing that code, make sure everyone is in sync even if people are working on different parts or in different versions of the code base or even a file?
-- How do you keep and maintain different versions of your code in isolation? -->
+- How do you keep and maintain different versions of your code in isolation?
 
 Up till now, git has only solved two big problems, how do we as teachers get the code from us to you, and from you to us, and how do you as students save your code in a reliable and trackable way.
 
