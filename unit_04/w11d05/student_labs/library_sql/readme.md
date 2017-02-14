@@ -33,4 +33,9 @@ $ psql -d library < seed.sql
 
 ## Exercises
 
+There are two exercises, the first you did yesterday.
+
+Today you'll start with the advanced queries. 
+
 * [Basic Queries](basic_queries.sql) - SELECT, INSERT, UPDATE, DELETE
+* [Advanced Queries](advanced_queries.sql) - JOINS

@@ -219,7 +219,6 @@ If, however, they do have a match in the right table – give me the “matching
 A left outer join combines the ideas behind a left join and an outer join. Basically – if you use a left outer join you will get the records in the left table that DO NOT have a match in the right table.
 
 
-
 ## GROUP BY
 Suppose for each employee, we want the number of employees they manage, or for each library, we want the number of distinct books they stock.  We need to use GROUP BY.
 
@@ -237,3 +236,17 @@ This builds the join table from employees to employees, then aggregates the rows
 Some nice visuals of SQL Joins:
 
 [http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins](http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)
+
+
+
+## You Do: Less Common Joins
+
+There are actually a number of ways to join multiple tables with `JOIN`, if
+you're really curious, check out this article:
+
+[A visual explanation of SQL Joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
+
+## You Do: Books and Authors
+
+See advanced_queries.sql in the [library_sql](https://github.com/ga-dc/library_sql)
+exercise.
