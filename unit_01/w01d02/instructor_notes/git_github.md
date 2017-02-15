@@ -220,7 +220,7 @@ SO, all that being said, we can totally learn a little about how Git works, but 
 
 Even though you don't need to know how they work, it is useful to know that your local repository consists of three "trees" maintained by Git.
 
-- **Repository** - a collection of related commits
+- **Repository** - a collection of related commits that form a directed acyclic graph (find out more above)
 - **Commit** - a snapshot of the working tree at a giving time (along with a message of what changed)
 - **Working Directory**: the directory and subdirectories containing the files we are currently working on/which holds the actual files.
 - **Index (stage)**: a staging area where we list changes we want to commit
@@ -229,16 +229,19 @@ Even though you don't need to know how they work, it is useful to know that your
 
 ![workflow](https://cloud.githubusercontent.com/assets/40461/8221736/f1f7e972-1559-11e5-9dcb-66b44139ee6f.png)
 
+---
 
 #### So many commands?!
 
-There are a ton of commands that you can use in git. You can look at the list of the available commands by running:
+There are a lot of commands available for git. You can look at the list of commands by running:
 
 ```bash
 $ git help -a
 ```
 
-Even though there are lots of commands, during the course we will really only need about 10.
+Even though there are lots of commands, during this course we will probably only utilize about 10 of them.
+
+---
 
 #### Git File Lifecycle
 
