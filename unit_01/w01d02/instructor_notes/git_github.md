@@ -83,7 +83,7 @@ $ brew tap caskroom/cask
 But what's a sym link? Well, ideally you should be able to open files from  your terminal/bash using the command subl/atom and the file/directory name.
 
 
-    ```bash
+```bash
 $ brew cask install sublime-text3
 $ brew cask install spectacle
 ```
