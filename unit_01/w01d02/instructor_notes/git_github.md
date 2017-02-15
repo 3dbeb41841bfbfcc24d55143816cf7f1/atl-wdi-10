@@ -226,9 +226,24 @@ Even though you don't need to know how they work, it is useful to know that your
 
 ![workflow](https://cloud.githubusercontent.com/assets/40461/8221736/f1f7e972-1559-11e5-9dcb-66b44139ee6f.png)
 
+---
+
+## GIT Terminology
+
+* **repository** - a collection of related commits that form a directed acyclic graph
+* **commit** - a snapshot of the working tree at a giving time (along with a message of what changed)
+* **the index (stage)** - a staging area where we list changes we want to commit
+* **branch** - a set of commits that form a linear progression of changes
+* **master** - the default name for the "main" development branch
+* **tag** - an optional label on a commit
+* **HEAD** - what is currently checked out
+* **working area** - the directory and subdirectories containing the files we are currently working on
+
+---
+
 #### So many commands?!
 
-There are also a lot of commands you can use in git. You can take a look at a list of the available commands by running:
+There are a ton of commands that you can use in git. You can look at the list of the available commands by running:
 
 ```bash
 $ git help -a
@@ -282,9 +297,9 @@ $ subl ~/.bash_profile
 source ~/.git-prompt.sh
 
     GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWUNTRACKEDFILES=true
-GIT_PS1_SHOWCOLORHINTS=true
-export PS1='\u:\W$(__git_ps1 " (%s)")\$ '
+    GIT_PS1_SHOWUNTRACKEDFILES=true
+    GIT_PS1_SHOWCOLORHINTS=true
+    export PS1='\u:\W$(__git_ps1 " (%s)")\$ '
 ```
 
 4. Set your default editor:
@@ -296,7 +311,7 @@ $ git config --list
     - `--global` means that you should use these settings for every project
     - You should see a list of the settings that you have configured
 
-5. Then restart your terminal!
+5. Then ***restart*** your terminal.
 
 <br>
 
@@ -340,7 +355,7 @@ If we look at the contents of this empty folder using:
 ls -A
 ```
 
-We should see that there is now a hidden folder called `.git` this is where all of the information about your repository is stored. There is no need for you to make any changes to this folder. You can control all the git flow using `git` commands.
+We should see that there is now a hidden folder called `.git` this is where all of the information about your repository is stored. There is no need for you to make any changes to this folder. This folder allows us to control the git flow using `git` commands.
 
 
 #### Add a file
