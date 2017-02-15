@@ -710,7 +710,7 @@
 <td><strong>Mod 3</strong></td>
 <td>User Stories, Wireframes, Project Managements + Github Issues</td>
 <td>Project One</td>
-<td>Sample Project Code Along</td>
+<td>Project One</td>
 <td>Project One</td>
 <td>Project One Presentations</td>
 </tr>
