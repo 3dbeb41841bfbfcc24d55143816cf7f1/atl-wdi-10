@@ -94,8 +94,9 @@ $ brew cask install spectacle
 ## Setting up Git with GitHub (10m)
 
 [generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
-    - I set mine up without a passphrase
+
 <br>
+- I set mine up without a passphrase
 
 ## Why Version Control? (15m)
 
