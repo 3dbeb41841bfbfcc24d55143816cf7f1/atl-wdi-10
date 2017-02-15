@@ -2,11 +2,11 @@
 
 ### What are we doing this week?
 
-| Monday                           | Tuesday                 | Wednesday                 | Thursday            | Friday      |
+| Tuesday                 | Wednesday                 | Thursday            | Friday      |
 |----------------------------------|-------------------------|---------------------------|---------------------|-------------|
-| Culture Setting and Ice Breakers | Intro to Git and GitHub | Data Structures and loops | Functions and Scope | Week Review |
-| WDI Tooling            | Intro to JS             | Diagnostic                |                     | Lab         |
-| Installation                     | Control FLow            | Outcomes                  |                     |             |
+| Culture Setting and Ice Breakers + Requirements | Intro to Git and GitHub | CSS Box Model + Specificity | Flexbox + Bootstrapp |
+| CLI            | HTML + DOM             | Responsive CSS                |  Intro to JS            |
+| Editor                     | Lab           | Lab              |
 
 ### Supplemental Reading
 - [Getting Started with HomeBrew](https://www.safaribooksonline.com/blog/2014/03/03/homebrew/)
