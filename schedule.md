@@ -801,13 +801,11 @@
 <th>Day 2</th>
 <th>Day 3</th>
 <th>Day 4</th>
-<th>Day 5</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><strong>WarmUp</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/big-goal-and-culture">Big Goal/Culture</a></td>
-<td>Morning Exercise</td>
 <td>Morning Exercise</td>
 <td>Morning Exercise</td>
 <td>Morning Exercise</td>
@@ -844,7 +842,6 @@
 <tr>
 <td><strong>Homework</strong></td>
 <td><a href="https://github.com/sf-wdi-27-28/command-line-mystery">Command Line</a></td>
-<td>Homework</td>
 <td>Homework</td>
 <td>Homework</td>
 <td>Homework</td>
