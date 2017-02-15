@@ -542,7 +542,7 @@ git clone <YOUR_TEST_REPO_URL>
  
 2. Go to the link below, this is going to be our class repo where you'll receive your morning exercises, classwork, and homework. It's also where you'll push to submit your homework.
 
-    https://github.com/ga-students/wdi-remote-matey
+    https://github.com/ATL-WDI-Curriculum/atl-wdi-9
 
 2. Click fork, and select your name then on your fork of the repo.
 3. Click on the Green Button on the right hand side you will see:
@@ -607,14 +607,16 @@ Use the internet and what you've learned today to answer the following questions
 
 <br>
 
-## Conclusion (5m)
+## Conclusion (2m)
 
-As a developer, you'll have to use Git pretty much everyday, the learning curve is steep and all the principles of version control can  be a bit blurry sometimes, hence why we ask students to push their homework everyday and to commit regularly during project time.
+As a developer, you will have to use Git everyday. The learning curve is steep and all the principles of version control can  be a bit confusing sometimes. This is why we ask students to push their homework everyday and to commit hourly during project time.
 
-Don't be frustrated by all the new commands because we will definitely have the time to practice during this course.
+Don't get frustrated by all of the new commands because we will have plenty of time to practice them during this course.
 
-- Explain the difference between forking and cloning.
-- Describe the steps to initialize a Git repository and link your local repository to a GitHub remote location.
+*** You do *** (2m)
+Working with your buddy write on the desk:
+- What is the difference between forking and cloning?
+- What are the steps to initialize a Git repository and link your local repository to a GitHub remote location.
 
 ## Labtime
 [Code School Git](https://try.github.io/levels/1/challenges/1)
