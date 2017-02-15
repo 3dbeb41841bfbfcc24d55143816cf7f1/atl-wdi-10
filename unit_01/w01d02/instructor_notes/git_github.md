@@ -4,7 +4,7 @@ type: lesson
 duration: "1:20"
 creator:
     name: Micah Rich, LA
-    adapted by: Colin Hart for WDI-remote
+    adapted by: Maren Woodruff for ATL-WDI-9
     competencies: Workflow
 ---
 
@@ -99,7 +99,7 @@ $ brew cask install spectacle
 - I set mine up without a passphrase
 <br>
 
-## Why Version Control? (15m)
+## Why Version Control? (5m)
 
 
 * Spend a few minutes thinking about the following questions:
@@ -117,7 +117,7 @@ $ brew cask install spectacle
 
 ---
 
-## What is Version Control?
+## What is Version Control? (10m)
 * _Version Control_ is the management of changes to documents, computer programs, web sites, and other collections of information.
 
 * _Version Control_ provides:
@@ -162,7 +162,7 @@ First things first - Git is not GitHub. This is a common mistake that people mak
 Programmers use Git so that they can keep the history of all the changes to their code. This means that they can rollback changes (or switch to older versions) as far back in time as they started using Git on their project.
 
 **EXERCISE:** Think about some version control tools or processes you've used. These could be
-formal processes imposed by a professor or manager, or a methods you've used personally. Direct message me if you'd like to share some of these verbally (I might just call on some of you) and/or write your answers in slack.
+formal processes imposed by a professor or manager, or a methods you've used personally. Can anyone think of a version control example?
 
 #### Some jargon
 
@@ -290,7 +290,7 @@ export PS1='\u:\W$(__git_ps1 " (%s)")\$ '
 4. Set your default editor:
 
     ```bash
-$ git config --global core.editor "atom -n -w"
+$ git config --global core.editor "subl -n -w"
 ```
 
 5. Then restart your terminal!
