@@ -712,7 +712,7 @@
 <td>Project One</td>
 <td>Sample Project Code Along</td>
 <td>Project One</td>
-<td>Project One</td>
+<td>Project One Presentations</td>
 </tr>
 <tr>
 <td><strong>Mod 4</strong></td>
@@ -720,7 +720,7 @@
 <td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
-<td>Project One</td>
+<td>Project One Presentations</td>
 </tr>
 <tr>
 <td><strong>Training</strong></td>
