@@ -28,15 +28,14 @@ February 21, 2017 - May 12, 2017
 
 |  | Monday                 | Tuesday | Wednesday                 |Thursday         |  Friday
 | :-----            |:-----                 |:-----   |:-----                     |:-----         |:-----
-| 9:45-10:00       | Welcome		| Welcome      | Welcome  | Welcome | Welcome |
-| 10:00-11:00     | Morning Exercise                | Morning Exercise     | Morning Exercise | Morning Exercise| Morning Exercise |
-| 11:00-11:15     | Standup        | Standup |      Standup |     Standup|     Standup
-| 11:15-1:30     | Lesson  | Lesson      | Lesson    | Lesson | Lesson |
-| 1:30-2:30      | Lunch                 | Lunch      | Lunch | Lunch | Lunch |
-| 2:30-3:00 | Review  |  Review        | Lesson |  Review | Review  |
-| 3:00-4:30       | Lesson     | Lecture       | Outcomes 4pm | Lesson | Lesson  |
-| 4:30-5:30| Lab | Lab | Outcomes| Lab | Lab  |
-| 5:30-6:00 | Standup + HW | Standup + HW | Outcomes | Standup + HW | Standup + HW |
+| 8:45-9:00       | Welcome		| Welcome      | Welcome  | Welcome | Welcome |
+| 9:00-9:50     | Morning Exercise                | Morning Exercise     | Morning Exercise | Morning Exercise| Morning Exercise |
+| 9:50-10:00     | Standup        | Standup |      Standup |     Standup|     Standup
+| 10:00-12:30     | Lesson  | Lesson      | Lesson    | Lesson | Lesson |
+| 12:30-2:00      | Lunch                 | Lunch      | Lunch | Lunch | Lunch |
+| 2:00-3:30       | Lesson     | Lesson | Lesson | Lesson | Lesson  |
+| 3:45-4:45| Lab | Lab | Lab | Lab | Lab  |
+| 4:45-5:00 | HW | HW | HW | HW | HW |
 
 
 ### Attendance
