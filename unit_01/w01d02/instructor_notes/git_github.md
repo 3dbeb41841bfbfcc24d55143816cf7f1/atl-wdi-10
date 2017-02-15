@@ -41,25 +41,26 @@ creator:
 ```
 2. Then run these commands in bash:
 
-```bash
+    ```bash
 $ brew update
 $ brew upgrade
-$ brew -v```
+$ brew -v
+```
     - will output your version of homebrew
-```bash
+    ```bash
 $ brew install git
 $ git --version
 ```
     - will output which version of git you have
-```bash
+    ```bash
 $ git config --get user.name
 ```
     - will output your name
-```bash
+    ```
 $ git config --get user.email
 ```
     - will output your email
-```bash
+    ```
 $ ls ~/.ssh/id_rsa
 ```
     - will output '/Users/[something]/.ssh/id_rsa'
