@@ -380,12 +380,17 @@ That % sign indicates that we have an untracked file that Git doesn't know about
     nothing added to commit but untracked files present (use "git add" to track)
 ```
 
+3. Run `git diff` to see the changes that you have made, that have yet to be committed. 
+
+
 4. This means that there is a new **untracked** file. Next, tell Git to take a snapshot of the contents of all files under the current directory (note the -A)
 
     ```bash
 $ git add -A
 ```
 
+    - `git add A` will add every file that has been changed.
+    - You can specify a single file by typing `git add a.txt`, instead of using -A.
     A small cross should show next to your prompt!
 
     This snapshot is now stored in a temporary staging area which Git calls the "index".
@@ -439,6 +444,7 @@ $ git commit -m "Second commit"
 * b4faebd Please remember this file at this time
 ```
     - press `q` to quit out of the log file
+    - `git log` will show you the commits that you have made so far
 
 > NOTE: if you get the message `git config --global --edit`, open it in Atom with `atom git config --global --edit`
 
@@ -495,12 +501,15 @@ This should fail due to new files on the remote repo.
     ```bash
 git pull origin master
 ```
+    - `git pull` will check for changes and pull those changes to our remote repository
 
 2. Once we have done this, you should see the README file on your computer. Now you can push your changes:
 
     ```bash
-git push origin master
+git push -u origin master
 ```
+
+    - The name of our remote is origin. The default local branch name is master. The -u stands for upstream, and tells Git to remember these parameters, so when we type `git push` and Git will know what to do
 
 Refresh your GitHub webpage, and the files should be there.
 
