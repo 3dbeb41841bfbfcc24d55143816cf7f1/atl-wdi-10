@@ -347,7 +347,7 @@ If we look at the contents of this empty folder using:
 ls -A
 ```
 
-We should see that there is now a hidden folder called `.git` this is where all of the information about your repository is stored. There is no need for you to make any changes to this folder. This folder allows us to control the git flow using `git` commands.
+We should see that there is now a hidden folder called `.git`. This is where all of the information about your repository is stored. You should not need to make any changes to this folder. This folder allows us to control the git flow using `git` commands.
 
 
 #### Add a file
@@ -438,6 +438,7 @@ $ git commit -m "Second commit"
 * 6e78569 (HEAD, master) Second commit
 * b4faebd Please remember this file at this time
 ```
+    - press `q` to quit the log file
 
 > NOTE: if you get the message `git config --global --edit`, open it in Atom with `atom git config --global --edit`
 
