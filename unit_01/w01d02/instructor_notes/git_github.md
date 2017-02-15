@@ -365,7 +365,7 @@ $ touch a.txt
 ```
 That % sign indicates that we have an untracked file that Git doesn't know about
 
-3. Run `git diff` to see the uncommitted changes that you have made.
+3. If we run `git diff` we should see the uncommitted changes that we have made.
 
 4. If we run `git status` we should get:
 
