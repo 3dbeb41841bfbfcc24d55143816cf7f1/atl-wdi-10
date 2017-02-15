@@ -671,7 +671,7 @@
 </tr>
 </tbody></table>
 
-#### Week 3 - DOM Manipulation/Project 1
+#### Week 3 - Project Management/Project 1
 <table><thead>
 <tr>
 <th>Time</th>
@@ -686,49 +686,49 @@
 <td><strong>WarmUp</strong></td>
 <td>Morning Exercise</td>
 <td>Morning Exercise</td>
-<td>Morning Exercise</td>
+<td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
 </tr>
 <tr>
 <td><strong>Mod 1</strong></td>
-<td>Review of JS Scope, Context, and Closures</td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/dom-manipulation-and-events">DOM Manipulation</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/jquery">jQuery</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/sdlc">SDLC / Agile</a></td>
+<td>Sample Project</td>
+<td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
 </tr>
 <tr>
 <td><strong>Mod 2</strong></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/js-codestyle">JavaScript Code Style</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/dom-manipulation-and-events">DOM Events</a></td>
-<td>LAB</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/sdlc">SDLC / Agile</a></td>
+<td>Sample Project</td>
+<td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
 </tr>
 <tr>
 <td><strong>Mod 3</strong></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/sdlc">SDLC / Agile</a></td>
-<td><a href="https://github.com/ga-wdi-lessons/js-debugging">Debugging / Dev Tools</a></td>
+<td>User Stories, Wireframes, Project Managements + Github Issues</td>
+<td>Project One</td>
 <td>Sample Project Code Along</td>
 <td>Project One</td>
 <td>Project One</td>
 </tr>
 <tr>
 <td><strong>Mod 4</strong></td>
-<td><a href="https://github.com/ATL-WDI-Exercises/fizz-buzz">Technical Interview Code Along</a></td>
-<td>LAB</td>
-<td>Sample Project Code Along</td>
+<td>User Stories, Wireframes, Project Managements + Github Issues</td>
+<td>Project One</td>
+<td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
 </tr>
 <tr>
 <td><strong>Training</strong></td>
 <td><a href="https://github.com/ATL-WDI-Exercises/progressive-tax-calc">Tax Calculator</a></td>
-<td>Homework</td>
-<td>Homework</td>
 <td>Project One</td>
 <td>Project One</td>
+<td>Project One</td>
+<td>Portfolio Site</td>
 </tr>
 </tbody></table>
 
