@@ -2,11 +2,11 @@
 
 ### What are we doing this week?
 
-| Tuesday                 | Wednesday                 | Thursday            | Friday      |
+| Tuesday | Wednesday | Thursday | Friday |
 |----------------------------------|-------------------------|---------------------------|---------------------|-------------|
-| Culture Setting and Ice Breakers + Requirements | Intro to Git and GitHub | CSS Box Model + Specificity | Flexbox + Bootstrapp |
-| CLI            | HTML + DOM             | Responsive CSS                |  Intro to JS            |
-| Editor                     | Lab           | Lab              |
+| Culture Setting and Ice Breakers + Requirements | Intro to Git + GitHub | CSS Box Model + Specificity | Flexbox + Bootstrapp |
+| CLI | HTML + DOM | Responsive CSS | Intro to JS |
+| Editor | Lab | Lab | Lab |
 
 ### Supplemental Reading
 - [Intro to Loops](https://www.teamten.com/lawrence/programming/intro/intro8.html)
