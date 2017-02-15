@@ -204,7 +204,7 @@ Git is tricky to understand because describing 'how' it works, like many things 
 
 We need to work with Git and many other complex technologies and approach them critically (i.e. as a critical thinker: the objective analysis and evaluation of an issue in order to form a judgment). But we need to also suspend our disbelief as it were and accept that at their core these technologies are complex, built by some of the best programming minds, and are the result of sometimes 50 years of iteration.
 
-I don't need to explain the internal combustion engine to operate a car.
+I don't need to explain music theory in order to play the guitar.  It helps in a bind, but is not mandatory.
 
 SO, all that being said, we can totally learn a little about how Git works, but for now it's enough to learn how to use it—for this class that means using it to keep track of homework and classwork and through this process better understand how we'll use it as professional developers.
 
@@ -220,26 +220,15 @@ SO, all that being said, we can totally learn a little about how Git works, but 
 
 Even though you don't need to know how they work, it is useful to know that your local repository consists of three "trees" maintained by Git.
 
-- **Working Directory**: which holds the actual files.
-- **Index**: which acts as a staging area
-- **HEAD**: which points to the last commit you've made.
+- **Repository** - a collection of related commits
+- **Commit** - a snapshot of the working tree at a giving time (along with a message of what changed)
+- **Working Directory**: the directory and subdirectories containing the files we are currently working on/which holds the actual files.
+- **Index (stage)**: a staging area where we list changes we want to commit
+- **HEAD**: which points to the last commit you've made/what is currently checked out.
+- **Master** - the default name for the "main" development branch
 
 ![workflow](https://cloud.githubusercontent.com/assets/40461/8221736/f1f7e972-1559-11e5-9dcb-66b44139ee6f.png)
 
----
-
-## GIT Terminology
-
-* **repository** - a collection of related commits that form a directed acyclic graph
-* **commit** - a snapshot of the working tree at a giving time (along with a message of what changed)
-* **the index (stage)** - a staging area where we list changes we want to commit
-* **branch** - a set of commits that form a linear progression of changes
-* **master** - the default name for the "main" development branch
-* **tag** - an optional label on a commit
-* **HEAD** - what is currently checked out
-* **working area** - the directory and subdirectories containing the files we are currently working on
-
----
 
 #### So many commands?!
 
