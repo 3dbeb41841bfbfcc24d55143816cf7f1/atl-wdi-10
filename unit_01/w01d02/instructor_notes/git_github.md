@@ -438,7 +438,7 @@ $ git commit -m "Second commit"
 * 6e78569 (HEAD, master) Second commit
 * b4faebd Please remember this file at this time
 ```
-    - press `q` to quit the log file
+    - press `q` to quit out of the log file
 
 > NOTE: if you get the message `git config --global --edit`, open it in Atom with `atom git config --global --edit`
 
