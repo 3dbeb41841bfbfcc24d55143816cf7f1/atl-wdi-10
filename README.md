@@ -8,7 +8,7 @@ February 21, 2017 - May 12, 2017
 - Danny Hurley
     - danny.hurley@generalassemb.ly
 - Maren Woodruff
-    - maren.woodruff@generalassemb.ly
+    - maren.woodruff@generalassemb.ly | [Github](https://github.com/marenwoodruff)
 - Josh Kushner
     - joshkushner1@gmail.com
 
@@ -18,6 +18,15 @@ February 21, 2017 - May 12, 2017
 - Lisa Holter
     - lkholter@gmail.com
 
+  
+#####Slack
+
+- Danny: @dp_hurley
+- Maren: @marenwoodruff
+- Josh: 
+- John: @johndupper
+- Lisa: @lkholter
+
 
 ### Class Hours
 - Monday - Friday: 9:00am - 5:00pm EDT
@@ -26,15 +35,15 @@ February 21, 2017 - May 12, 2017
 
 ### Tentative Weekly Schedule
 
-|  | Monday                 | Tuesday | Wednesday                 |Thursday         |  Friday
-| :-----            |:-----                 |:-----   |:-----                     |:-----         |:-----
-| 8:45-9:00       | Welcome		| Welcome      | Welcome  | Welcome | Welcome |
-| 9:00-9:50     | Morning Exercise                | Morning Exercise     | Morning Exercise | Morning Exercise| Morning Exercise |
-| 9:50-10:00     | Standup        | Standup |      Standup |     Standup|     Standup
-| 10:00-12:30     | Lesson  | Lesson      | Lesson    | Lesson | Lesson |
-| 12:30-2:00      | Lunch                 | Lunch      | Lunch | Lunch | Lunch |
-| 2:00-3:30       | Lesson     | Lesson | Lesson | Lesson | Lesson  |
-| 3:45-4:45| Lab | Lab | Lab | Lab | Lab  |
+|  | Monday | Tuesday | Wednesday |Thursday |  Friday
+| :----- |:----- |:-----   |:----- |:----- |:-----
+| 8:45-9:00 | Welcome | Welcome | Welcome | Welcome | Welcome |
+| 9:00-9:50 | Morning Exercise | Morning Exercise | Morning Exercise | Morning Exercise| Morning Exercise |
+| 9:50-10:00 | Standup | Standup | Standup | Standup | Standup
+| 10:00-12:30 | Lesson  | Lesson | Lesson | Lesson | Lesson |
+| 12:30-2:00 | Lunch | Lunch | Lunch | Lunch | Lunch |
+| 2:00-3:30 | Lesson | Lesson | Lesson | Lesson | Lesson |
+| 3:45-4:45| Lab | Lab | Lab | Lab | Lab |
 | 4:45-5:00 | HW | HW | HW | HW | HW |
 
 
