@@ -365,7 +365,9 @@ $ touch a.txt
 ```
 That % sign indicates that we have an untracked file that Git doesn't know about
 
-3. If we run `git status` we should get:
+3. Run `git diff` to see the uncommitted changes that you have made.
+
+4. If we run `git status` we should get:
 
     ```bash
     On branch master
@@ -380,10 +382,7 @@ That % sign indicates that we have an untracked file that Git doesn't know about
     nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-3. Run `git diff` to see the changes that you have made, that have yet to be committed. 
-
-
-4. This means that there is a new **untracked** file. Next, tell Git to take a snapshot of the contents of all files under the current directory (note the -A)
+5. This means that there is a new **untracked** file. Next, tell Git to take a snapshot of the contents of all files under the current directory (note the -A)
 
     ```bash
 $ git add -A
