@@ -115,6 +115,39 @@ $ brew cask install spectacle
 
 <br>
 
+---
+
+## What is Version Control?
+* _Version Control_ is the management of changes to documents, computer programs, web sites, and other collections of information.
+
+* _Version Control_ provides:
+    - a database containing a history of changes to a set of files
+    - a set of commands for managing that database
+
+## What is Version Control Good For?
+* Manage Changes Over Time
+    - Save various points in the development of your work.
+    - See the history of your work.
+    - Go "Back In Time" to see previous versions of your work.
+    - Manage multiple versions of a software project.
+* Sharing & Collaboration
+    - Share your work with others.
+    - Work effectively as a team on a single project.
+    - Allow others to modify your work in a _controlled_ way.
+    - Make multiple changes to a project in parallel.
+    - Merge parallel changes in a controlled way.
+* Experimentation
+    - Experiment with various ideas and either keep or discard your experiments.
+    - Keep multiple changes isolated until they are ready to be integrated.
+
+### What if you could live your life using a Version Control System?
+
+* Should I go back to school or move to Europe?
+* Should I date person X or person Y?
+* Should I try to make it big as a professional Rock star?
+
+---
+
 ## Git vs GitHub and version control - Intro (20m)
 
 First things first - Git is not GitHub. This is a common mistake that people make.
