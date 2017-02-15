@@ -309,6 +309,8 @@ $ git config --list
 $ cd ~/Desktop
 $ mkdir test_repo
 ```
+    - What does `~` mean?
+    - What does mkdir mean?
 
 2. You can place this directory under Git revision control using the command:
 
@@ -316,6 +318,7 @@ $ mkdir test_repo
 $ cd test_repo
 $ git init
 ```
+    - What does cd mean?
 
 3. Git will reply:
 
