@@ -43,7 +43,7 @@ February 21, 2017 - May 12, 2017
 - No more than 2 unexcused absences
 - 3 tardies (more than 30 minutes late) = 1 absence
 - Missing part of the day counts as 1/2 absence.
-- You MUST inform Christine if you are anticipating any absences or need to leave early.
+- You MUST inform Maren if you are anticipating any absences or need to leave early.
 
 
 ### HW & Projects
