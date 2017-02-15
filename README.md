@@ -9,7 +9,8 @@ February 21, 2017 - May 12, 2017
     - danny.hurley@generalassemb.ly
 - Maren Woodruff
     - maren.woodruff@generalassemb.ly
-
+- Josh Kushner
+    - joshkushner1@gmail.com
 
 ##### Instructional Associates
 - John Dupper
