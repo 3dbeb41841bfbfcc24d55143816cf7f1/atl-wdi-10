@@ -549,7 +549,7 @@
   </tr>
 </tbody></table>
 
-#### Week 4b - NodeJS, Express, Mongoose
+#### Week 4 - NodeJS, Express, Mongoose
 <table><thead>
   <tr>
     <th>Time</th>
@@ -610,66 +610,6 @@
   </tr>
 </tbody></table>
 
-#### Week 4a- Project 1/Thanksgiving Break
-<table><thead>
-<tr>
-<th>Time</th>
-<th>Day 1</th>
-<th>Day 2</th>
-<th>Day 3</th>
-<th>Day 4</th>
-<th>Day 5</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><strong>WarmUp</strong></td>
-<td>Project One</td>
-<td>Project One</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-</tr>
-<tr>
-<td><strong>Mod 1</strong></td>
-<td>Project One</td>
-<td>Project One</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-</tr>
-<tr>
-<td><strong>Mod 2</strong></td>
-<td>Project One</td>
-<td>Project One</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-</tr>
-<tr>
-<td><strong>Mod 3</strong></td>
-<td>Project One Presentations</td>
-<td>Project One Presentations</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-</tr>
-<tr>
-<td><strong>Mod 4</strong></td>
-<td>Project One Presentations</td>
-<td>Project One Presentations</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-</tr>
-<tr>
-<td><strong>Training</strong></td>
-<td>Project One</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-<td>Thanksgiving Break</td>
-</tr>
-</tbody></table>
 
 #### Week 3 - Project Management/Project 1
 <table><thead>
