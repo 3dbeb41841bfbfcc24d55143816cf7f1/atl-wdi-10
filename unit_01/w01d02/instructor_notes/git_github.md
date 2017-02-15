@@ -291,7 +291,10 @@ export PS1='\u:\W$(__git_ps1 " (%s)")\$ '
 
     ```bash
 $ git config --global core.editor "subl -n -w"
+$ git config --list
 ```
+    - `--global` means that you should use these settings for every project
+    - You should see a list of the settings that you have configured
 
 5. Then restart your terminal!
 
