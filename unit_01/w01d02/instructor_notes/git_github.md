@@ -229,7 +229,6 @@ Even though you don't need to know how they work, it is useful to know that your
 
 ![workflow](https://cloud.githubusercontent.com/assets/40461/8221736/f1f7e972-1559-11e5-9dcb-66b44139ee6f.png)
 
----
 
 #### So many commands?!
 
@@ -241,7 +240,6 @@ $ git help -a
 
 Even though there are lots of commands, during this course we will probably only utilize about 10 of them.
 
----
 
 #### Git File Lifecycle
 
