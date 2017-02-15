@@ -693,7 +693,7 @@
 <tr>
 <td><strong>Mod 1</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/sdlc">SDLC / Agile</a></td>
-<td>Sample Project</td>
+<td>Sample Project Code Along</td>
 <td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
@@ -701,7 +701,7 @@
 <tr>
 <td><strong>Mod 2</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/sdlc">SDLC / Agile</a></td>
-<td>Sample Project</td>
+<td>Sample Project Code Along</td>
 <td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
