@@ -204,12 +204,12 @@ Git is tricky to understand because describing 'how' it works, like many things 
 
 We need to work with Git and many other complex technologies and approach them critically (i.e. as a critical thinker: the objective analysis and evaluation of an issue in order to form a judgment). But we need to also suspend our disbelief as it were and accept that at their core these technologies are complex, built by some of the best programming minds, and are the result of sometimes 50 years of iteration.
 
-I don't need to explain music theory in order to play the guitar.  It helps in a bind, but is not mandatory.
+I don't need to explain music theory to you in order to play the guitar.  It may help in a bind, but it is not mandatory.
 
-SO, all that being said, we can totally learn a little about how Git works, but for now it's enough to learn how to use it—for this class that means using it to keep track of homework and classwork and through this process better understand how we'll use it as professional developers.
+We will learn a bit about how Git works, but for now it's enough to learn how to use it for this class - by keeping track of homework and classwork. Through this process we will better understand how we will use it as professional developers.
 
 
-> Things we don't need to know but might be curious and want to know!
+> Things we don't need to know but might be curious!
 
 - [Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 - [SHA-1](https://en.wikipedia.org/wiki/SHA-1)
@@ -263,7 +263,7 @@ Once you have committed a file and it becomes "unmodified" then it's contents ar
 - **Not saved in git memory**: Your file is not saved until you commit the file to Git's memory
 - **Saved in git memory**: Only once you have committed a file, it becomes saved in Git's memory
 
-<br>
+<br />
 
 ## Set up Git Prompt (15m)
 
@@ -303,9 +303,9 @@ $ git config --list
     - `--global` means that you should use these settings for every project
     - You should see a list of the settings that you have configured
 
-5. Then ***restart*** your terminal.
+5. Then **restart** your terminal.
 
-<br>
+<br />
 
 
 ## Let's use Git (25m)
