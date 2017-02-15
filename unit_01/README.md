@@ -18,11 +18,11 @@
 
 ### What are we doing this week?
 
-| Monday                | Tuesday                    | Wednesday            | Thursday        | Friday      |
+| Monday | Tuesday | Wednesday | Thursday | Friday |
 |-----------------------|----------------------------|----------------------|-----------------|-------------|
-| Data Structures      | JS Functions + Scope  | Debugging, Chrome Dev Tools + Dom Manipulation | jQuery         | Review |
-| Data Structures | JS Functions + Scope | DOM Events           | jQuery | Lab         |
-| Lab     | Lab                   | Lab             | Lab     |   Lab          |
+| Data Structures | JS Functions + Scope  | Debugging, Chrome Dev Tools + Dom Manipulation | jQuery | Review |
+| Data Structures | JS Functions + Scope | DOM Events | jQuery | Lab |
+| Lab | Lab | Lab | Lab | Lab |
 
 ### Supplemental Reading
 - [Intro to Loops](https://www.teamten.com/lawrence/programming/intro/intro8.html)
@@ -33,11 +33,11 @@
 
 # Week 3
 
-| Monday                            | Tuesday               | Wednesday                    | Thursday                                        | Friday               |
+| Monday | Tuesday | Wednesday | Thursday | Friday |
 |-----------------------------------|-----------------------|------------------------------|-------------------------------------------------|----------------------|
-| Holiday                           | Holiday Project Demos | Advanced Pseudo Selectors    |CSS and jQuery Transitions/Animation/Transform   |Fonts and Responsive Design  |
-|                                   |Advanced Inline Layout and Floats     | Diagnostic    |Flexbox                                          |Project Management, User stories, GitHub Issues|
-|                                   |                       | Outcomes                     |                                                 |Project Intro |
+| SDLC | Sample Project | Project 1    | Project 1 | Project 1  |
+| User Stories | Project 1 | Project 1 | Project 1 | Project 1 |
+| Lab | Project 1 | Project 1 | Project 1 | Project 1 |
 
 
 ### Supplemental Reading
