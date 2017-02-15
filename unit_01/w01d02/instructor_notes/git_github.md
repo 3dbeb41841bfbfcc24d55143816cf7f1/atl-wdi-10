@@ -44,7 +44,18 @@ creator:
     ```bash
 $ brew update
 $ brew upgrade
+$ brew -v
+    - will
 $ brew install git
+$ git --version
+    - will output which version of git you have
+$ git config --get user.name
+    - will output your name
+$ git config --get user.email
+    - will output your email
+$ ls ~/.ssh/id_rsa
+    - will output '/Users/[something]/.ssh/id_rsa'
+    - if you see 'No such file or directory', you have not created an ssh key
 ```
 
 3. We're also going to install brew cask and atom/sublime and [spectacle](https://www.spectacleapp.com/).
@@ -64,7 +75,7 @@ But what's a sym link? Well, ideally you should be able to open files from  your
 
 
 ```bash
-$ brew cask install atom
+$ brew cask install sublime-text3
 $ brew cask install spectacle
 ```
 
@@ -210,14 +221,14 @@ Once you have committed a file and it becomes "unmodified" then it's contents ar
     ```bash
 # To create the file
 $ touch ~/.git-prompt.sh
-$ atom ~/.git-prompt.sh
+$ subl ~/.git-prompt.sh
 ```
 
 2. Create a `.bash_profile` in your home directory
 
     ```bash
 $ touch ~/.bash_profile
-$ atom ~/.bash_profile
+$ subl ~/.bash_profile
 ```
 
 3. In that file paste the following:
@@ -345,7 +356,7 @@ Now let's open a.txt in Sublime or Atom:
 
 
 ```bash
-$ atom a.txt
+$ subl a.txt
 ```
 
 Inside the file, write something. Save the file.
