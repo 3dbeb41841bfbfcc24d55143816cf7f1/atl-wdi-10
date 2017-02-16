@@ -33,8 +33,8 @@ creator:
 ## Hook (5m)
 When you think back to your favorite trip, you probably took a lot of snapshots, maybe you created a photo album as a keepsake, when you returned.  You have these moments, that allow you to time travel back and remember what happened.
 
-Here are some snapshots from my trip to Nepal to meet with a group called women's empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
-### Women's empowerment leaders
+These are some snapshots from a trip that I took to Nepal to meet with a group called Women's Empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
+### Women's Empowerment leaders
 ![Women's empowerment leaders](https://i.imgur.com/Zwaa4Bw.jpg)
 ### View of the Himalayas
 ![View of the Himalayas](https://i.imgur.com/sNdfrIX.jpg)
@@ -42,10 +42,12 @@ Here are some snapshots from my trip to Nepal to meet with a group called women'
 ![Bagmati River + sacred holy temple, Pashupatinath](https://i.imgur.com/KhtJA5N.jpg)
 ### Holy man at Pashupatinath
 ![Holy man at the temple](https://i.imgur.com/gJORMM9.jpg)
-### Prayer bells at the Monkey temple
+### Prayer bells at the Monkey Temple
 ![Prayer bells at the Monkey temple](https://i.imgur.com/nVGfRYz.jpg)
 ### Traditional Women's Clothing
 ![Traditional dress](https://i.imgur.com/rMFihvS.jpg)
+
+Similarly, git is a system that allows us to keep track, or keep snapshots of our projects as we develop them.
 
 <br />
 
@@ -65,7 +67,7 @@ from this website: https://swcarpentry.github.io/git-novice/01-basics/
 
 ---
 
-## Installing Brew, Git and setting up our local machine (15m)
+## Installing Brew, Git and setting up our local machine (10m)
 
 1. First install brew:
 
@@ -136,10 +138,10 @@ $ brew cask install spectacle
 
 <br />
 
-## Why Version Control? **YOU DO** (5m)
+## Why Version Control? **YOU DO** (3m)
 
 
-* Spend a few minutes thinking about the following questions:
+* Spend the next few minutes with your buddy, discussing the following questions:
   Assuming that version control systems did not exist, how would you:
     - Share your source code with other developers?
     - Collaborate with other developers
