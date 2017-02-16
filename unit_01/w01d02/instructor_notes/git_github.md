@@ -53,13 +53,12 @@ Here are some snapshots from my trip to Nepal to meet with a group called women'
 
 **YOU DO** (15m)
 
-Spend the next 15 minutes reading the first 4 chapters
+Spend the next 15 minutes reading the first 4 chapters from this website: https://swcarpentry.github.io/git-novice/01-basics/ 
+
 - Automated version control
 - Setting up git
 - Creating a repository
 - Tracking change
-
-from this website: https://swcarpentry.github.io/git-novice/01-basics/ 
 
 <br />
 
