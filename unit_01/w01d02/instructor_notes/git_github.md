@@ -156,7 +156,7 @@ $ brew cask install spectacle
 
 ---
 
-## What is Version Control? (10m)
+## What is Version Control? (5m)
 * _Version Control_ is the management of changes to documents, computer programs, web sites, and other collections of information.
 
 * _Version Control_ provides:
@@ -183,7 +183,7 @@ $ brew cask install spectacle
 
 * Should I go back to school or move to Europe?
 * Should I date person X or person Y?
-* Should I try to make it big as a professional Rock star?
+* Should I try to make it as a professional musician?
 
 ---
 
