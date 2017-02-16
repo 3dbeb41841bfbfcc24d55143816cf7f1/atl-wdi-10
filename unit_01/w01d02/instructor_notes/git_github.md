@@ -40,7 +40,7 @@ Here are some snapshots from my trip to Nepal to meet with a group called women'
 ![View of the Himalayas](https://i.imgur.com/sNdfrIX.jpg)
 ### Bagmati River + sacred holy temple, Pashupatinath
 ![Bagmati River + sacred holy temple, Pashupatinath](https://i.imgur.com/KhtJA5N.jpg)
-### Holy man at the temple
+### Holy man at Pashupatinath
 ![Holy man at the temple](https://i.imgur.com/gJORMM9.jpg)
 ### Prayer bells at the Monkey temple
 ![Prayer bells at the Monkey temple](https://i.imgur.com/nVGfRYz.jpg)
@@ -50,10 +50,10 @@ Here are some snapshots from my trip to Nepal to meet with a group called women'
 ***YOU DO*** (15m)
 
 Spend the next 15 minutes reading the first 4 chapters
-    * Automated version control
-    * Setting up git
-    * Creating a repository
-    * Tracking change
+    - Automated version control
+    - Setting up git
+    - Creating a repository
+    - Tracking change
 from this website: https://swcarpentry.github.io/git-novice/01-basics/ 
 
 ## Installing Brew, Git and setting up our local machine (15m)
