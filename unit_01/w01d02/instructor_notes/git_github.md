@@ -243,27 +243,6 @@ Even though there are lots of commands, during this course we will probably only
 
 <br />
 
-#### Git File Lifecycle
-
-To understand how Git works, we need to talk about the lifecycle of a Git-tracked file.
-
-![lifecycle](https://cloud.githubusercontent.com/assets/40461/8226866/62730b4c-159a-11e5-89cd-20b72ed1de45.png)
-
-Schema From [git-scm.com](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
-
-There are 4 main stages of Git version controlled file:
-
-1. **Untracked**: The file will not be added in the next commit
-2. **Staged**: Staged files have not yet been committed to memory but they are "on deck" so to speak for your next commit
-3. **Unmodified**: The file has already been committed and has not changed since the last commit
-4. **Modified**: You have changes in the file since it was last committed, you will need to stage them again for the changes to be added in the next commit
-
-Once you have committed a file and it becomes "unmodified" then it's contents are saved in Git's memory.
-
-- **Not saved in git memory**: Your file is not saved until you commit the file to Git's memory
-- **Saved in git memory**: Only once you have committed a file, it becomes saved in Git's memory
-
-<br />
 
 ## Set up Git Prompt (15m)
 
@@ -348,7 +327,7 @@ If we look at the contents of this empty folder using:
 ls -A
 ```
 
-We should see that there is now a hidden folder called `.git`. This is where all of the information about your project is stored. If you delete it, you will lose the project's history. This folder allows us to control the git flow using `git` commands.
+We should see that there is now a hidden folder called `.git`. This is where all of the information about your project is stored. This folder allows us to control the git flow using `git` commands.  **If you delete it, you will lose your project's history.**
 
 
 #### Add a file
@@ -407,14 +386,14 @@ $ git add -A
 1. To permanently store the contents of the index in the repository, (commit these changes to the HEAD), you need to run:
 
     ```bash
-$ git commit -m "Start notes on mars as a base"
+$ git commit -m "Initial commit"
 ```
 - You are telling git to remember this file/these changes.
 
 2. You should now get:
 
     ```bash
-[master (root commit) b4faebd] Start notes on mars as a base
+[master (root commit) b4faebd] Initial commit
  1 file changed, 0 insertions(+), 0 deletions(-)
   create mode 100644 mars.txt
 ```
@@ -443,7 +422,7 @@ that looks like a beautiful sunset.
 ```
 Save the file.
 
-If you press `return` in the terminal, you will now see that you have untracked changes marked by a red `*`. (**Mine may look different, do not panic**) 
+If you press `return` in the terminal, you will now see that you have untracked changes marked by a red `*`. **(Mine may look different, do not panic)** 
 
 Running
  ```bash
@@ -460,19 +439,42 @@ Running `git status` again will show you that mars.txt has been **modified**.
 
     ```bash
 $ git add -A
-$ git commit -m "Second commit"
+$ git commit -m "Start notes on mars as a base"
 ```
 
 2. Checking `git log` will show you 2 commits with different ids:
 
     ```bash
-* 6e78569 (HEAD, master) Second commit
+* 6e78569 (HEAD, master) Start notes on mars as a base
 * b4faebd Please remember this file at this time
 ```
     - press `q` to quit out of the log file
     - `git log` will show you the commits that you have made so far, in reverse chronological order.
 
 > NOTE: if you get the message `git config --global --edit`, open it in Atom with `atom git config --global --edit`
+
+#### Git File Lifecycle
+
+To understand how Git works, we need to talk about the lifecycle of a Git-tracked file.
+
+![lifecycle](https://cloud.githubusercontent.com/assets/40461/8226866/62730b4c-159a-11e5-89cd-20b72ed1de45.png)
+
+Schema From [git-scm.com](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+
+There are 4 main stages of Git version controlled file:
+
+1. **Untracked**: The file will not be added in the next commit
+2. **Staged**: Staged files have not yet been committed to memory but they are "on deck" so to speak for your next commit
+3. **Unmodified**: The file has already been committed and has not changed since the last commit
+4. **Modified**: You have changes in the file since it was last committed, you will need to stage them again for the changes to be added in the next commit
+
+Once you have committed a file and it becomes "unmodified" then it's contents are saved in Git's memory.
+
+- **Not saved in git memory**: Your file is not saved until you commit the file to Git's memory
+- **Saved in git memory**: Only once you have committed a file, it becomes saved in Git's memory
+
+<br />
+
 
 #### Making repositories - Codealong (15m)
 
@@ -481,7 +483,7 @@ Let's do this together:
 1. Go to your GitHub account
 2. In the top left, hit the + button and select `New repository`
 ![](https://help.github.com/assets/images/help/repository/repo-create.png)
-3. Name your repository `test_repo`
+3. Name your repository `planets`
 ![](https://help.github.com/assets/images/help/repository/repo-create-name.png)
 4. **Initialize this repository with a README** (So that we can `git pull`)
 4. Click the big green Create Repository button
