@@ -58,6 +58,7 @@ Spend the next 15 minutes reading the first 4 chapters
 - Setting up git
 - Creating a repository
 - Tracking change
+
 from this website: https://swcarpentry.github.io/git-novice/01-basics/ 
 
 <br />
