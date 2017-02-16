@@ -476,7 +476,9 @@ git push -u origin master
 
 Refresh your GitHub webpage, and the files should be there.
 
-<br>
+<br />
+
+---
 
 # Forking and Cloning your first repository (20m)
 
@@ -568,6 +570,10 @@ You can create branches of your master branch to work on or experiment with new 
 
 **Demo:** GitUp - https://github.com/git-up/GitUp
 
+<br />
+
+---
+
 ## Assess - Independent Practice (8m)
 
 Use the internet and what you've learned today to answer the following questions with a partner:
@@ -583,6 +589,8 @@ Use the internet and what you've learned today to answer the following questions
 * What is the difference between forking and cloning?
 
 <br />
+
+--- 
 
 ## Conclusion (2m)
 
