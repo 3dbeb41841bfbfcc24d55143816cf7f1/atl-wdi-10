@@ -438,7 +438,8 @@ $ subl mars.txt
 
 Inside the file, write:
 ```bash
-Discovered by Galileo Galilei in 1610, Mars is a cold and dry planet, but the surface is a rich red that looks like a beautiful sunset. 
+Discovered by Galileo Galilei in 1610, Mars is a cold and dry planet, but the surface is a rich red 
+that looks like a beautiful sunset. 
 ```
 Save the file.
 
