@@ -198,6 +198,7 @@ Congratulations! You now have Git and GitHub set up and configured.
 ---
 
 
+## [Linux or Windows Instructions](http://docs.railsbridge.org/installfest/choose_your_operating_system)
 
 
 

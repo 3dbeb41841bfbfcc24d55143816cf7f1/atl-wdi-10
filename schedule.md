@@ -763,7 +763,8 @@
 <td><a href="https://github.com/ATL-WDI-Curriculum/student-laptop-requirements-and-setup">Laptop Requirements</td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/git_github.md">Intro to Git + Github</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/css-responsive">CSS Specificity</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/local-and-remote-git">Bootstrap</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/bootstrap-intro
+">Bootstrap</a></td>
 </tr>
 <tr>
 <td><strong>Mod 3</strong></td>
@@ -775,9 +776,9 @@
 <tr>
 <td><strong>Mod 4</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/text-editors">Sublime Editor</a></td>
-<td>LAB</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/html-practice-and-review.md">HTML Practice LAB</a><br /><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/ga_dom.md">DOM LAB</a></td>
 <td>LAB</td>
-<td>Intro to JS</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/ga_dom.md">LAB</a></td>
 </tr>
 <tr>
 <td><strong>Homework</strong></td>

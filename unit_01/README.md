@@ -10,8 +10,7 @@
 
 ### Supplemental Reading
 - [Intro to Loops](https://www.teamten.com/lawrence/programming/intro/intro8.html)
-- [Array methods](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 78 - 83
-- [Functions](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 26 - 28
+
 
 ---
 # Week 2
