@@ -314,7 +314,7 @@ $ git config --list
 
     ```bash
 $ cd ~/Desktop
-$ mkdir test_repo
+$ mkdir planets
 ```
     - What does `~` mean?
     - What does mkdir mean?
@@ -322,10 +322,11 @@ $ mkdir test_repo
 2. You can place this directory under Git revision control using the command:
 
     ```bash
-$ cd test_repo
+$ cd planets
 $ git init
 ```
     - What does cd mean?
+    - What does git init do?
 
 3. Git will reply:
 
@@ -347,7 +348,7 @@ If we look at the contents of this empty folder using:
 ls -A
 ```
 
-We should see that there is now a hidden folder called `.git`. This is where all of the information about your repository is stored. You should not need to make any changes to this folder. This folder allows us to control the git flow using `git` commands.
+We should see that there is now a hidden folder called `.git`. This is where all of the information about your project is stored. If you delete it, you will lose the project's history. This folder allows us to control the git flow using `git` commands.
 
 
 #### Add a file
@@ -355,7 +356,7 @@ We should see that there is now a hidden folder called `.git`. This is where all
 1. Let's create a new file:
 
     ```bash
-$ touch a.txt
+$ touch mars.txt
 ```
 
 2. A small `%` should show next to your prompt! (_I have a `?` because I set mine up differently, do not panic_) 
@@ -365,7 +366,13 @@ $ touch a.txt
 ```
 That % sign indicates that we have an untracked file that Git doesn't know about
 
-3. If we run `git diff` we should see the uncommitted changes that we have made.
+3. Run 
+```bash
+$ ls
+````
+ and you will see `mars.text` 
+
+3. If we run `git diff` we should see the uncommitted changes that we have made/the staged files.
 
 4. If we run `git status` we should get:
 
@@ -389,7 +396,7 @@ $ git add -A
 ```
 
     - `git add A` will add every file that has been changed.
-    - You can specify a single file by typing `git add a.txt`, instead of using -A.
+    - You can specify a single file by typing `git add mars.txt`, instead of using `-A`.
     A small cross should show next to your prompt!
 
     This snapshot is now stored in a temporary staging area which Git calls the "index".
@@ -400,32 +407,42 @@ $ git add -A
 1. To permanently store the contents of the index in the repository, (commit these changes to the HEAD), you need to run:
 
     ```bash
-$ git commit -m "Please remember this file at this time"
+$ git commit -m "Initial commit"
 ```
+- You are telling git to remember this file/these changes.
 
 2. You should now get:
 
     ```bash
-[master b4faebd] Please remember this file at this time
+[master b4faebd] Initial commit
  1 file changed, 0 insertions(+), 0 deletions(-)
   create mode 100644 a.txt
 ```
 
 #### Make changes to the file
 
-Now let's open a.txt in Sublime or Atom:
+Now let's open mars.txt in Sublime or Atom:
 
 
 ```bash
-$ subl a.txt
+$ subl mars.txt
 ```
 
-Inside the file, write something. Save the file.
+Inside the file, write:
+```bash
+Discovered by Galileo Galilei in 1610, Mars is a cold and dry planet, but the surface is a rich red that looks like a beautiful sunset. 
+```
+Save the file.
 
 If you press `return` in the terminal, you will now see that you have untracked changes marked by a red `*`. (_Mine may look different, do not panic_) 
 
+Running
+ ```bash
+ $ cat mars.text
+```
+will show you the contents of the document- `Discovered by Galileo Galilei in 1610, Mars is a cold and dry planet, but the surface is a rich red that looks like a beautiful sunset. `
 
-Running `git status` again will show you that a.txt has been **modified**.
+Running `git status` again will show you that mars.txt has been **modified**.
 
 #### Make a second commit and check the log
 
@@ -443,7 +460,7 @@ $ git commit -m "Second commit"
 * b4faebd Please remember this file at this time
 ```
     - press `q` to quit out of the log file
-    - `git log` will show you the commits that you have made so far
+    - `git log` will show you the commits that you have made so far, in reverse chronological order.
 
 > NOTE: if you get the message `git config --global --edit`, open it in Atom with `atom git config --global --edit`
 
@@ -621,10 +638,13 @@ As a developer, you will have to use Git everyday. The learning curve is steep a
 
 Don't get frustrated by all of the new commands because we will have plenty of time to practice them during this course.
 
-*** You do *** (2m)
+*** You do *** (5m)
 Working with your buddy write on the desk:
 - What is the difference between forking and cloning?
 - What are the steps to initialize a Git repository and link your local repository to a GitHub remote location.
+- How do I record changes in git?
+- How do I check the status of my repository?
+- How do I record notes about what I changed and why?
 
 ## Labtime
 [Code School Git](https://try.github.io/levels/1/challenges/1)
