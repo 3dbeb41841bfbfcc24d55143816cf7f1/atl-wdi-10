@@ -395,11 +395,11 @@ $ ls
 $ git add -A
 ```
 
-    - `git add A` will add every file that has been changed.
+    - `git add -A` will add every file that has been changed.
     - You can specify a single file by typing `git add mars.txt`, instead of using `-A`.
-    A small cross should show next to your prompt!
 
-    This snapshot is now stored in a temporary staging area which Git calls the "index".
+    - A small cross should show next to your prompt!
+    - This snapshot is now stored in a temporary staging area which Git calls the "index".
 
 
 #### Commit
@@ -407,17 +407,25 @@ $ git add -A
 1. To permanently store the contents of the index in the repository, (commit these changes to the HEAD), you need to run:
 
     ```bash
-$ git commit -m "Initial commit"
+$ git commit -m "Start notes on mars as a base"
 ```
 - You are telling git to remember this file/these changes.
 
 2. You should now get:
 
     ```bash
-[master b4faebd] Initial commit
+[master (root commit) b4faebd] Start notes on mars as a base
  1 file changed, 0 insertions(+), 0 deletions(-)
-  create mode 100644 a.txt
+  create mode 100644 mars.txt
 ```
+
+- When we run `git commit`, Git takes everything we have told it to save by using git add and stores a copy permanently inside the special .git directory. This permanent copy is called a commit (or revision) and its short identifier is b4faebd (Your commit may have another identifier.)
+
+- We use the `-m` flag (for “message”) to record a short, descriptive, and specific comment that will help us remember later on what we did and why. If we just run git commit without the -m option, Git will launch nano (or whatever other editor we configured as core.editor) so that we can write a longer message.
+
+- Good commit messages start with a brief (<50 characters) summary of changes made in the commit. If you want to go into more detail, add a blank line between the summary line and your additional notes.
+
+
 
 #### Make changes to the file
 
