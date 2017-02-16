@@ -53,7 +53,7 @@ Similarly, git is a system that allows us to keep track, or keep snapshots of ou
 
 ---
 
-**YOU DO** (15m)
+##**YOU DO** (15m)
 
 Spend the next 15 minutes reading the first 4 chapters
 - Automated version control
