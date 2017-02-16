@@ -30,6 +30,26 @@ creator:
 
 <br>
 
+## Hook (5m)
+When you think back to your favorite trip, you probably took a lot of snapshots, maybe you created a photo album as a keepsake, when you returned.  You have these moments, that allow you to time travel back and remember what happened.
+
+Here are some snapshots from my trip to Nepal to meet with a group called women's empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
+![Women's empowerment leaders](https://i.imgur.com/Zwaa4Bw.jpg)
+![View of the Himalayas](https://i.imgur.com/sNdfrIX.jpg)
+![Bagmati River + sacred holy temple, Pashupatinath](https://i.imgur.com/KhtJA5N.jpg)
+![Holy man at the temple](https://i.imgur.com/gJORMM9.jpg)
+![Prayer bells at the Monkey temple](https://i.imgur.com/nVGfRYz.jpg)
+![Traditional dress](https://i.imgur.com/rMFihvS.jpg)
+
+**YOU DO** (15m)
+
+Spend the next 15 minutes reading the first 4 chapters
+    * Automated version control
+    * Setting up git
+    * Creating a repository
+    * Tracking change
+from this website: https://swcarpentry.github.io/git-novice/01-basics/ 
+
 ## Installing Brew, Git and setting up our local machine (15m)
 
 1. First install brew:
@@ -148,7 +168,7 @@ $ brew cask install spectacle
 
 ---
 
-## Git vs GitHub and version control - Intro (20m)
+## Git vs GitHub and version control - Intro (10m)
 
 First things first - Git is not GitHub. This is a common mistake that people make.
 
@@ -198,18 +218,18 @@ You can certainly use Git without GitHub!
 
 <br>
 
-## Why is Git tricky to understand? Demo (20m)
+## Why is Git tricky to understand? Demo (10m)
 
-Git is tricky to understand because describing 'how' it works, like many things in programming, requires a breadth of technical knowledge. This is going to be a tricky mindset to work with at first.
+Git is tricky to understand because describing 'how' it works, like many things in programming, requires a breadth of technical knowledge. 
 
 We need to work with Git and many other complex technologies and approach them critically (i.e. as a critical thinker: the objective analysis and evaluation of an issue in order to form a judgment). But we need to also suspend our disbelief as it were and accept that at their core these technologies are complex, built by some of the best programming minds, and are the result of sometimes 50 years of iteration.
 
 I don't need to explain music theory to you in order to play the guitar.  It may help in a bind, but it is not mandatory.
 
-We will learn a bit about how Git works, but for now it's enough to learn how to use it for this class - by keeping track of homework and classwork. Through this process we will better understand how we will use it as professional developers.
+We will learn a bit about how Git works, but for now it's enough to learn how to use it for this class - by keeping track of homework and classwork. Through this process, we will better understand how we will use it as professional developers.
 
 
-> Things we don't need to know but might be curious!
+> Things we don't need to know but might be curious to know!
 
 - [Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 - [SHA-1](https://en.wikipedia.org/wiki/SHA-1)
@@ -449,13 +469,14 @@ $ git commit -m "Start notes on mars as a base"
 * b4faebd Please remember this file at this time
 ```
     - press `q` to quit out of the log file
+    - press the spacebar to **page** up and down
     - `git log` will show you the commits that you have made so far, in reverse chronological order.
 
 > NOTE: if you get the message `git config --global --edit`, open it in Atom with `atom git config --global --edit`
 
 #### Git File Lifecycle
 
-To understand how Git works, we need to talk about the lifecycle of a Git-tracked file.
+To understand how Git works, we need to talk about the lifecycle of a Git-tracked file.  You can think of git as taking snapshots over the life of the project.  `git add .` specifies what goes in the snapshot, and `git commit` actually takes the snapshot.
 
 ![lifecycle](https://cloud.githubusercontent.com/assets/40461/8226866/62730b4c-159a-11e5-89cd-20b72ed1de45.png)
 
@@ -463,10 +484,10 @@ Schema From [git-scm.com](https://git-scm.com/book/en/v2/Git-Basics-Recording-Ch
 
 There are 4 main stages of Git version controlled file:
 
-1. **Untracked**: The file will not be added in the next commit
-2. **Staged**: Staged files have not yet been committed to memory but they are "on deck" so to speak for your next commit
-3. **Unmodified**: The file has already been committed and has not changed since the last commit
-4. **Modified**: You have changes in the file since it was last committed, you will need to stage them again for the changes to be added in the next commit
+1. **Untracked**: The file will not be added in the next commit (pre git add)
+2. **Staged**: Staged files have not yet been committed to memory but they are "on deck" so to speak for your next commit (after git add)
+3. **Unmodified**: The file has already been committed and has not changed since the last commit (git status)
+4. **Modified**: You have changes in the file since it was last committed, you will need to stage them again for the changes to be added in the next commit (git status)
 
 Once you have committed a file and it becomes "unmodified" then it's contents are saved in Git's memory.
 
