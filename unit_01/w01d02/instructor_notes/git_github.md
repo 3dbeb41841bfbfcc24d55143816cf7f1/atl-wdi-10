@@ -47,7 +47,7 @@ These are some snapshots from a trip that I took to Nepal to meet with a group c
 ### Traditional Women's Clothing
 ![Traditional dress](https://i.imgur.com/rMFihvS.jpg)
 
-Similarly, git is a system that allows us to keep track, or keep snapshots of our projects as we develop them.
+Similarly, git is a software that allows us to keep track, or keep snapshots, of our projects as we develop them.
 
 <br />
 
@@ -66,77 +66,6 @@ from this website: https://swcarpentry.github.io/git-novice/01-basics/
 <br />
 
 ---
-
-## Installing Brew, Git and setting up our local machine (10m)
-
-1. First install brew:
-
-    [brew documentation](http://brew.sh/)
-
-    ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-2. Then run these commands in bash:
-
-    ```bash
-$ brew update
-$ brew upgrade
-$ brew -v
-```
-    - will output your version of homebrew
-    ```bash
-$ brew install git
-$ git --version
-```
-    - will output which version of git you have
-    ```bash
-$ git config --get user.name
-```
-    - will output your name
-    ```
-$ git config --get user.email
-```
-    - will output your email
-    ```
-$ ls ~/.ssh/id_rsa
-```
-    - will output '/Users/[something]/.ssh/id_rsa'
-    - if you see 'No such file or directory', you have not created an ssh key
-
-
-3. We're also going to install brew cask and atom/sublime and [spectacle](https://www.spectacleapp.com/).
-
-    - [Brew Caskroom](https://caskroom.github.io/)
-
-    ```
-$ brew tap caskroom/cask
-```
-
-4. Restart your terminal. Now you'll be able to install regular applications like Chrome. You will only want to follow these steps if you:
-
-- Haven't installed atom or Sublime
-- Have installed Atom or Sublime, but haven't set up the sym link.
-
-But what's a sym link? Well, ideally you should be able to open files from  your terminal/bash using the command subl/atom and the file/directory name.
-
-
-```bash
-$ brew cask install sublime-text3
-$ brew cask install spectacle
-```
-
-
-<br />
-
-## Setting up Git with GitHub (10m)
-
-[generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
-
-
-- I set mine up without a passphrase
-<br>
-
-<br />
 
 ## Why Version Control? **YOU DO** (3m)
 
@@ -187,7 +116,7 @@ $ brew cask install spectacle
 
 ---
 
-## Git vs GitHub and version control - Intro (10m)
+## Git vs GitHub and version control - Intro (5m)
 
 First things first - Git is not GitHub. This is a common mistake that people make.
 
@@ -230,15 +159,15 @@ Git was created by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds
 
 Think about this quote: “Git is software. GitHub is company that happens to use Git software.”  
 
-**Exercise:** React to with a thumbs up for yes or thumbs down for no. Write your reason in slack.
+**Exercise:** If you think this statement is true, react to with a thumbs up or a thumbs down if you think it is false. Why?
 
-The answer is yes! They just share a similar name, but GitHub is a platform in the browser we use to share things with each other. We use git on our own to keep track of our files, and so does GitHub.
+The answer is true! Git and Github just share a similar name, but GitHub is a platform in the browser where we can share repos/code with each other. And we use git, locally, to keep track of our files, and then we push those files/changes to GitHub.
 
 You can certainly use Git without GitHub!
 
 <br>
 
-## Why is Git tricky to understand? Demo (10m)
+## Why is Git tricky to understand? Demo (5m)
 
 Git is tricky to understand because describing 'how' it works, like many things in programming, requires a breadth of technical knowledge. 
 
@@ -246,7 +175,7 @@ We need to work with Git and many other complex technologies and approach them c
 
 I don't need to explain music theory to you in order to play the guitar.  It may help in a bind, but it is not mandatory.
 
-We will learn a bit about how Git works, but for now it's enough to learn how to use it for this class - by keeping track of homework and classwork. Through this process, we will better understand how we will use it as professional developers.
+Today, we will learn a bit about how Git works, but for now it's enough to learn how to use it for this class - by keeping track of homework and classwork. Through this process, we will better understand how we will use it as professional developers.
 
 
 > Things we don't need to know but might be curious to know!
@@ -256,15 +185,18 @@ We will learn a bit about how Git works, but for now it's enough to learn how to
 - blob
 - tree
 
-#### Trees?!
+#### Ask me if I am a tree.
 
 Even though you don't need to know how they work, it is useful to know that your local repository consists of three "trees" maintained by Git.
 
-- **Repository** - a collection of related commits that form a directed acyclic graph (find out more above)
-- **Commit** - a snapshot of the working tree at a giving time (along with a message of what changed)
-- **Working Directory**: the directory and subdirectories containing the files we are currently working on/which holds the actual files.
+- **Working Directory**: the directory and subdirectories containing the files we are currently working on and holds the actual files.
 - **Index (stage)**: a staging area where we list changes we want to commit
-- **HEAD**: which points to the last commit you've made/what is currently checked out.
+- **HEAD**: which points to the last commit you've made or what is currently checked out.
+
+#### More terminology
+
+- **Repository** - a collection of related commits that form a directed acyclic graph (find out more that if you click on the link above)
+- **Commit** - a snapshot of the working tree at a giving time (make sure to include a message explaining what has changed)
 - **Master** - the default name for the "main" development branch
 
 ![workflow](https://cloud.githubusercontent.com/assets/40461/8221736/f1f7e972-1559-11e5-9dcb-66b44139ee6f.png)
@@ -283,49 +215,7 @@ Even though there are lots of commands, during this course we will probably only
 
 <br />
 
-
-## Set up Git Prompt (15m)
-
-1. Copy and paste the contents of this [file](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh ) into `~/.git-prompt.sh`
-
-    ```bash
-# To create the file
-$ touch ~/.git-prompt.sh
-$ subl ~/.git-prompt.sh
-```
-
-2. Create a `.bash_profile` in your home directory
-
-    ```bash
-$ touch ~/.bash_profile
-$ subl ~/.bash_profile
-```
-
-3. In that file paste the following:
-
-    ```bash
-    # This will load the .git_prompt file each time you open Terminal window. This will also give us some highlighting.    
-source ~/.git-prompt.sh
-
-    GIT_PS1_SHOWDIRTYSTATE=true
-    GIT_PS1_SHOWUNTRACKEDFILES=true
-    GIT_PS1_SHOWCOLORHINTS=true
-    export PS1='\u:\W$(__git_ps1 " (%s)")\$ '
-```
-
-4. Set your default editor:
-
-    ```bash
-$ git config --global core.editor "subl -n -w"
-$ git config --list
-```
-    - `--global` means that you should use these settings for every project
-    - You should see a list of the settings that you have configured
-
-5. Then **restart** your terminal.
-
-<br />
-
+---
 
 ## Let's use Git (25m)
 
@@ -517,7 +407,7 @@ Once you have committed a file and it becomes "unmodified" then it's contents ar
 <br />
 
 
-#### Making repositories - Codealong (15m)
+#### Making repositories - Codealong (10m)
 
 Let's do this together:
 
@@ -541,7 +431,9 @@ Let's do this together:
 git remote add origin <git@github.com:github-name/test-repo.git>
 ```
 
-#### What are Remotes? (5m)
+#### Pushing to a Remote Repository - Codealong (10m)
+
+#### What are Remotes? 
 
 Remotes are pointers or aliases we set up to tell git where to go on github.
 
@@ -553,7 +445,7 @@ $ git remote
 $ git remote -v
 ```
 
-#### Pushing to GitHub (5m)
+#### Pushing to GitHub 
 
 In order to send files from our local machine to our remote repository on GitHub, we need to use the command `git push`. However, you also need to add the name of the remote, in this case we called it `origin` and the name of the branch, in this case `master`.
 
@@ -563,7 +455,7 @@ git push origin master
 
 This should fail due to new files on the remote repo.
 
-#### Pulling from GitHub (5m)
+#### Pulling from GitHub
 
 1. As we added the README.md in our repo, we need to first `pull` that file to our local repository to check that we haven't got a 'conflict'.
 
@@ -586,13 +478,13 @@ Refresh your GitHub webpage, and the files should be there.
 
 # Forking and Cloning your first repository
 
-## What is forking? Intro (5m)
+## What is forking? Intro 
 
 The `fork` & `pull` model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository.
 
 Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea. This is how most open source projects operate.
 
-## Now that everyone has their first repository on GitHub, let's fork and clone our first repository! (20m)
+## Now that everyone has their first repository on GitHub, let's fork and clone our first repository! (10m)
 
 #### Clone practice
 
@@ -672,16 +564,19 @@ You can create branches of your master branch to work on or experiment with new 
 
 **Demo:** GitUp - https://github.com/git-up/GitUp
 
-## Assess - Independent Practice (10m)
+## Assess - Independent Practice (5m)
 
 Use the internet and what you've learned today to answer the following questions with a partner:
 
 * How do I send changes to the staging area?
 * How do I check what is going to be committed?
 * How do I send the commits to GitHub?
+* Why do I write a commit message?
+* How do I check the status of my repository?
 * How does github know that I am allowed to push to a specific repo?
 * Which Remote points to what?
 * What is the whole process to push code from your local machine to github
+* What is the difference between forking and cloning?
 
 <br>
 
@@ -691,13 +586,6 @@ As a developer, you will have to use Git everyday. The learning curve is steep a
 
 Don't get frustrated by all of the new commands because we will have plenty of time to practice them during this course.
 
-*** You do *** (5m)
-Working with your buddy write on the desk:
-- What is the difference between forking and cloning?
-- What are the steps to initialize a Git repository and link your local repository to a GitHub remote location.
-- How do I record changes in git?
-- How do I check the status of my repository?
-- How do I record notes about what I changed and why?
 
 ## Labtime
 [Code School Git](https://try.github.io/levels/1/challenges/1)

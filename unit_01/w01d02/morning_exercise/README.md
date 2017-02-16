@@ -105,3 +105,125 @@ Hi yourUsername! You\'ve succesfully authenticated, but GitHub does not provide 
 ```
 
 Congratulations! You now have Git and GitHub set up and configured.
+
+
+---
+
+## Installing Brew, Git and setting up our local machine (15m)
+
+1. First install brew:
+
+    [brew documentation](http://brew.sh/)
+
+    ```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+2. Then run these commands in bash:
+
+    ```bash
+$ brew update
+$ brew upgrade
+$ brew -v
+```
+    - will output your version of homebrew
+    ```bash
+$ brew install git
+$ git --version
+```
+    - will output which version of git you have
+    ```bash
+$ git config --get user.name
+```
+    - will output your name
+    ```
+$ git config --get user.email
+```
+    - will output your email
+    ```
+$ ls ~/.ssh/id_rsa
+```
+    - will output '/Users/[something]/.ssh/id_rsa'
+    - if you see 'No such file or directory', you have not created an ssh key
+
+
+3. We're also going to install brew cask and atom/sublime and [spectacle](https://www.spectacleapp.com/).
+
+    - [Brew Caskroom](https://caskroom.github.io/)
+
+    ```
+$ brew tap caskroom/cask
+```
+
+4. Restart your terminal. Now you'll be able to install regular applications like Chrome. You will only want to follow these steps if you:
+
+- Haven't installed atom or Sublime
+- Have installed Atom or Sublime, but haven't set up the sym link.
+
+But what's a sym link? Well, ideally you should be able to open files from  your terminal/bash using the command subl/atom and the file/directory name.
+
+
+```bash
+$ brew cask install sublime-text3
+$ brew cask install spectacle
+```
+
+
+<br />
+
+## Setting up Git with GitHub
+
+Check to see if you have an ssh key set up:
+```bash
+$ ls ~/.ssh/id_rsa
+```
+
+If you don't, follow this link.
+[generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+
+
+- I set mine up without a passphrase
+
+<br />
+
+## Set up our Git Prompt (15m)
+
+1. Copy and paste the contents of this [file](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh ) into `~/.git-prompt.sh`
+
+    ```bash
+# To create the file
+$ touch ~/.git-prompt.sh
+$ subl ~/.git-prompt.sh
+```
+
+2. Create a `.bash_profile` in your home directory
+
+    ```bash
+$ touch ~/.bash_profile
+$ subl ~/.bash_profile
+```
+
+3. In that file paste the following:
+
+    ```bash
+    # This will load the .git_prompt file each time you open Terminal window. This will also give us some highlighting.    
+source ~/.git-prompt.sh
+
+    GIT_PS1_SHOWDIRTYSTATE=true
+    GIT_PS1_SHOWUNTRACKEDFILES=true
+    GIT_PS1_SHOWCOLORHINTS=true
+    export PS1='\u:\W$(__git_ps1 " (%s)")\$ '
+```
+
+4. Set your default editor:
+
+    ```bash
+$ git config --global core.editor "subl -n -w"
+$ git config --list
+```
+    - `--global` means that you should use these settings for every project
+    - You should see a list of the settings that you have configured
+
+5. Then **restart** your terminal.
+
+<br />
+
