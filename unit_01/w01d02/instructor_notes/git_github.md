@@ -203,7 +203,7 @@ Programmers use Git so that they can keep the history of all the changes to thei
 **EXERCISE:** Think about some version control tools or processes you've used. These could be
 formal processes imposed by a professor or manager, or a methods you've used personally. Can anyone think of a version control example?
 
-#### Some jargon
+#### Terminology/History
 
 A codebase in Git is referred to as a **repository**, or **repo**, for short.
 
