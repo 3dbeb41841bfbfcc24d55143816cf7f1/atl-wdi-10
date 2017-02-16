@@ -23,7 +23,7 @@ February 21, 2017 - May 12, 2017
 
 - Danny: @dp_hurley
 - Maren: @marenwoodruff
-- Josh: 
+- Josh: @jkushner on tech404
 - John: @johndupper
 - Lisa: @lkholter
 

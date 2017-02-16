@@ -26,8 +26,16 @@ competencies: Programming
 - Create Variables in javascript
 - Use a text editor
 
-## Logical operators and control flow (10 mins)
+---
 
+## Hook (15m)
+Life is made up of choices.  What should I wear today?  What should I eat for breakfast?  Should I go for a run this morning or go to that dance class later?
+
+Our computers do not have the ability to reason on their own.  We have to think about how we are going to fit the pieces together.  Much like a cookie recipe, we can add the ingredients together without beating the sugar and butter for 5 minutes, or without making the batter cold before we bake them, but they won't turn out as delicious.  There are steps/a process that we need to take in order to make them the best.
+
+We need to code specific instructions about what our program should do in certain sitations.  Control Flow- if/else statements, switch is what use in JavaScript to help our programs make choices and follow the correct process.  
+
+## Logical operators and control flow
 
 JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application.
 
@@ -39,17 +47,19 @@ http://eloquentjavascript.net/02_program_structure.html
 
 **Give me a thumbs up in Slack when you're done.**
 
+<br />
 
+---
 
-#### What is Control Flow?
+### What is Control Flow?
 
 ![Funny Flow Chart](https://www.laserfiche.com/content/uploads/2014/03/engineering-flow-chart.png)
 
-Control Flow is a fundamental concept in programming that allows you to dictate how your code runs under different conditions or until a certain condition is met. 
+**Control Flow** is a fundamental concept in programming that allows you to dictate how your code runs under different conditions or until a certain condition is met. 
 
-#### Block Statements
+### Block Statements
 
-Statements meant to be executed after a control flow operation will be grouped into what is called a **block statement**. These statements are wrapped into a pair of curly braces:
+Statements meant to be executed after a control flow operation will be grouped into what is called a **block statement**. These statements are wrapped between a pair of curly braces:
 
 ```javascript
 {
@@ -58,7 +68,7 @@ Statements meant to be executed after a control flow operation will be grouped i
 }
 ```
 
-#### Block scope
+### Block scope
 
 We've seen that the scope in JavaScript changes often. In the case of **block statements**, there is no scope created.
 
@@ -72,47 +82,55 @@ console.log(x); // outputs 2
 
 Only functions introduce scope in Javascript.
 
+---
+
 ## Conditional statements (10 mins)
 
-Conditional statements are a way of essentially skipping over a block of code if it does not pass a boolean expression. JavaScript supports two conditional statements: `if`...`else` and `switch`.
+**Conditional statements** are a way of essentially skipping over a block of code if it does not pass a boolean expression/if that expression is not true. JavaScript supports two conditional statements: `if`...`else` and `switch`.
 
-#### if...else statement
+### if...else statement
 
-`if(expr) { code }`
+`if(expression) { code }`
 
-... means run the `code` block if `expr` is `true`
+... means run the block of`code` if `expression` is `true`
 
 ```javascript
-if (1 > 0) { console.log("hi") }
+if (1 > 0) { console.log("hi"); }
 //=> hi
 ```
 
-When you need to test more than one case, you may use `else if`:
+When you need to test more than one expression/conditional, you use an `else if` statement:
 
 ```javascript
 var name = "kittens";
 
-if (name == "puppies") {
+if (name === "puppies") {
   name += "!";
-} else if (name == "kittens") {
+} else if (name === "kittens") {
   name += "!!";
 } else {
-  name = "!" + name;
+  name = name + " is not a kitten or a puppy.";
 }
 //=> 'kittens!!'
 
-name == "kittens!!";
+name === "kittens!!";
 //=> true
 ```
 
-**Note**: It is recommended **to not** assign variables in the conditional expression, because the assignment of a value to a variable, like this:
+**WARNING**: It is highly recommended that you **do not** assign variables in the conditional expression, because the assignment of a value to a variable, like this:
 
 ```javascript
 student = "Jamie";
 //=> "Jamie"
 ```
 
-The expression above will return the value (as shown on the second line), so if you assign a truthy value inside a conditional statement, then this condition will always be true, or if you assign something undefined, it will make the conditional statement false (because undefined is falsey). Another potential issue with this is that it can be confused with equality(`==`). The example below is the illustration of WHAT NOT TO DO, in general:
+will always be true.  
+
+The expression above will return the value (as shown on the second line). If you assign a truthy value inside a conditional statement, then the condition will always be true, and no other conditions will ever be tested.  If you assign a variable something undefined, it will make the conditional statement false (because undefined is falsey). 
+
+Can anyone explain why we used three equal signs?  What is the difference between 3 equal signs, and two?
+
+The example below is the illustration of WHAT NOT TO DO, in general:
 
 ```javascript
 if (x = 3) {
@@ -120,11 +138,14 @@ if (x = 3) {
 }
 ```
 
-#### Ternary Operator
+Why wouldn't we do this?
+
+### Ternary Operator
 
 JavaScript has a ternary operator for conditional expressions. You can think about the ternary operator as a concise "if-else in one line":
 
 ```javascript
+expression ? this will run if it is true: this will run if it is false;
 true ? console.log("it is true"): console.log("it is false");
 //=>  "it is true"
 false ? console.log("it is true"): console.log("it is false");
@@ -140,7 +161,9 @@ allowed
 //=> "no"
 ```
 
-###YOU DO - Exercises
+---
+
+###YOU DO - Exercises (10m)
 
 Goto [repl.it](https://www.repl.it/) to complete the following exercises.
 
@@ -174,7 +197,7 @@ Goto [repl.it](https://www.repl.it/) to complete the following exercises.
 	
 	```
 
-
+---
 
 ## Truthy & Falsey (10 mins)
 
