@@ -47,7 +47,7 @@ Here are some snapshots from my trip to Nepal to meet with a group called women'
 ### Traditional Women's Clothing
 ![Traditional dress](https://i.imgur.com/rMFihvS.jpg)
 
-***YOU DO*** (15m)
+**YOU DO** (15m)
 
 Spend the next 15 minutes reading the first 4 chapters
     - Automated version control
