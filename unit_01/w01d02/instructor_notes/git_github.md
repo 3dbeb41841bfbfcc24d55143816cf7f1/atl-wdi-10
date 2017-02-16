@@ -443,7 +443,7 @@ that looks like a beautiful sunset.
 ```
 Save the file.
 
-If you press `return` in the terminal, you will now see that you have untracked changes marked by a red `*`. (__Mine may look different, do not panic__) 
+If you press `return` in the terminal, you will now see that you have untracked changes marked by a red `*`. (**Mine may look different, do not panic**) 
 
 Running
  ```bash
