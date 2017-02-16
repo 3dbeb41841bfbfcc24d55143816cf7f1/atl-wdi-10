@@ -429,7 +429,7 @@ Let's do this together:
 
 
     ```bash
-git remote add origin <git@github.com:github-name/test-repo.git>
+git remote add origin <git@github.com:github-name/planets.git>
 ```
 
 #### Pushing to a Remote Repository - Codealong (10m)
@@ -496,7 +496,7 @@ Cloning allows you to get a local copy of a remote repository.
 
     ```bash
 cd ~/Desktop
-rm -Rf test_repo
+rm -Rf planets
 ```
 
 2. Go to your GitHub repo for `planets`
