@@ -448,7 +448,8 @@ Running
  ```bash
  $ cat mars.text
 ```
-will show you the contents of the document- `Discovered by Galileo Galilei in 1610, Mars is a cold and dry planet, but the surface is a rich red <br>that looks like a beautiful sunset. `
+will show you the contents of the document- `Discovered by Galileo Galilei in 1610, Mars is a cold and dry planet, but the surface is a rich red 
+that looks like a beautiful sunset. `
 
 Running `git status` again will show you that mars.txt has been **modified**.
 
