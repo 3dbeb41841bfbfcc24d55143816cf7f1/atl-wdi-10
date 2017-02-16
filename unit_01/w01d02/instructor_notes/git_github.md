@@ -207,7 +207,7 @@ formal processes imposed by a professor or manager, or a methods you've used per
 
 A codebase in Git is referred to as a **repository**, or **repo**, for short.
 
-Git is pretty confusing and complex at first, but I have full confidence that you will pick it up before you know it. When we talk about repos and codebases we're really just talking about a directory that has a file in it named .git. This .git is very importanta.  It tells git binary to treat the directory as a repo and listen for changes, track files, and do git-related things when asked.
+Git is pretty confusing and complex at first, but I have full confidence that you will pick it up before you know it. When we talk about repos and codebases we're really just talking about a directory that has a file in it named .git. This .git is very importanta.  It tells git binary to treat the directory as a repo and listen for changes, track files, and do git-related tasks when asked.
 
 Git was created by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), the principal developer of Linux.
 
