@@ -34,14 +34,20 @@ creator:
 When you think back to your favorite trip, you probably took a lot of snapshots, maybe you created a photo album as a keepsake, when you returned.  You have these moments, that allow you to time travel back and remember what happened.
 
 Here are some snapshots from my trip to Nepal to meet with a group called women's empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
+### Women's empowerment leaders
 ![Women's empowerment leaders](https://i.imgur.com/Zwaa4Bw.jpg)
+### View of the Himalayas
 ![View of the Himalayas](https://i.imgur.com/sNdfrIX.jpg)
+### Bagmati River + sacred holy temple, Pashupatinath
 ![Bagmati River + sacred holy temple, Pashupatinath](https://i.imgur.com/KhtJA5N.jpg)
+### Holy man at the temple
 ![Holy man at the temple](https://i.imgur.com/gJORMM9.jpg)
+### Prayer bells at the Monkey temple
 ![Prayer bells at the Monkey temple](https://i.imgur.com/nVGfRYz.jpg)
+### Traditional Women's Clothing
 ![Traditional dress](https://i.imgur.com/rMFihvS.jpg)
 
-**YOU DO** (15m)
+***YOU DO*** (15m)
 
 Spend the next 15 minutes reading the first 4 chapters
     * Automated version control
