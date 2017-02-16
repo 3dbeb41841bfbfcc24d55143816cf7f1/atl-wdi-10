@@ -49,6 +49,8 @@ Here are some snapshots from my trip to Nepal to meet with a group called women'
 
 <br />
 
+---
+
 **YOU DO** (15m)
 
 Spend the next 15 minutes reading the first 4 chapters
@@ -57,6 +59,10 @@ Spend the next 15 minutes reading the first 4 chapters
     - Creating a repository
     - Tracking change
 from this website: https://swcarpentry.github.io/git-novice/01-basics/ 
+
+<br />
+
+---
 
 ## Installing Brew, Git and setting up our local machine (15m)
 
@@ -117,7 +123,7 @@ $ brew cask install spectacle
 ```
 
 
-<br>
+<br />
 
 ## Setting up Git with GitHub (10m)
 
@@ -127,7 +133,9 @@ $ brew cask install spectacle
 - I set mine up without a passphrase
 <br>
 
-## Why Version Control? (5m)
+<br />
+
+## Why Version Control? **YOU DO** (5m)
 
 
 * Spend a few minutes thinking about the following questions:
@@ -141,7 +149,7 @@ $ brew cask install spectacle
 
 * Put your thoughts and/or answers into Slack.
 
-<br>
+<br />
 
 ---
 
