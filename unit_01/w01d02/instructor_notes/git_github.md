@@ -191,7 +191,7 @@ Even though you don't need to know how they work, it is useful to know that your
 
 - **Working Directory**: the directory and subdirectories containing the files we are currently working on and holds the actual files.
 - **Index (stage)**: a staging area where we list changes we want to commit
-- **HEAD**: which points to the last commit you've made or what is currently checked out.
+- **HEAD**: which points to the last commit you've made 
 
 #### More terminology
 
@@ -332,8 +332,9 @@ $ git commit -m "Initial commit"
 
 - We use the `-m` flag (for “message”) to record a short, descriptive, and specific comment that will help us remember later on what we did and why. If we just run git commit without the -m option, Git will launch nano (or whatever other editor we configured as core.editor) so that we can write a longer message.
 
-- Good commit messages start with a brief (<50 characters) summary of changes made in the commit. If you want to go into more detail, add a blank line between the summary line and your additional notes.
+- **Good commit messages** start with a brief (<50 characters) summary explaining the changes made in the commit.
 
+**REMEMBER:** it is always easier to rollback to a previous commit if it is an incremental change.  Therefore, don't write your whole project and commit at the end.  You should have tiny changes committed as you work through the project.
 
 
 #### Make changes to the file
@@ -407,7 +408,7 @@ Once you have committed a file and it becomes "unmodified" then it's contents ar
 <br />
 
 
-#### Making repositories - Codealong (10m)
+#### Creating repositories - Codealong (10m)
 
 Let's do this together:
 
@@ -444,6 +445,7 @@ $ git remote
 
 $ git remote -v
 ```
+-- The name `origin` is a local nickname for your remote repository. 
 
 #### Pushing to GitHub 
 
@@ -470,34 +472,34 @@ git pull origin master
 git push -u origin master
 ```
 
-    - The name of our remote is origin. The default local branch name is master. The -u stands for upstream, and tells Git to remember these parameters, so when we type `git push` and Git will know what to do
+    - The name of our remote is origin. The default local branch name is master. The -u stands for upstream, and tells Git to remember these parameters/set the upstream to this repo, so that when we type `git push` and Git will know what to do
 
 Refresh your GitHub webpage, and the files should be there.
 
 <br>
 
-# Forking and Cloning your first repository
+# Forking and Cloning your first repository (20m)
 
-## What is forking? Intro 
+## What is forking? Intro
 
 The `fork` & `pull` model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository.
 
 Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea. This is how most open source projects operate.
 
-## Now that everyone has their first repository on GitHub, let's fork and clone our first repository! (10m)
+## Now that everyone has their first repository on GitHub, let's fork and clone our first repository! 
 
 #### Clone practice
 
 Cloning allows you to get a local copy of a remote repository.
 
-1. Navigate back to your Desktop and **delete your `test_repo` repository**:
+1. Navigate back to your Desktop and **delete your `planets` repository**:
 
     ```bash
 cd ~/Desktop
 rm -Rf test_repo
 ```
 
-2. Go to your GitHub repo for `test_repo`
+2. Go to your GitHub repo for `planets`
 3. Click the green "Clone or Download" button and copy the URl. Make sure that you use **Clone with SSH** 
 
     ![clone](https://i.imgur.com/FjdRT66.png)
@@ -505,7 +507,7 @@ rm -Rf test_repo
 4. From the terminal prompt, clone the repo with the following command (you can clone the repo to your Desktop):
 
     ```bash
-git clone <YOUR_TEST_REPO_URL>
+git clone <YOUR_PLANET_REPO_URL>
 ```
 
 #### Fork the student repo
@@ -526,13 +528,13 @@ git clone <YOUR_TEST_REPO_URL>
 To retrieve the contents of your repo, all you need to do is:
 
 ```bash
-$ git clone git@github.com:<your-github-name>/wdi-remote-matey.git
+$ git clone git@github.com:<your-github-name>/atl-wdi-9.git
 ```
 
 Git should reply:
 
 ```bash
-Cloning into 'wdi-remote-r2d2'...
+Cloning into 'atl-wdi-9'...
 remote: Counting objects: 3, done.
 remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
 Receiving objects: 100% (3/3), done.
@@ -551,12 +553,14 @@ When you clone a repository, unless you have been added as a contributor, you wi
 #### Setting your upstream remote to get updates using Git
 
 ```bash
-$ git remote add upstream git@github.com:ga-students/wdi-remote-matey.git
+$ git remote add upstream git@github.com:ATL-WDI-Curriculum/atl-wdi-9.git
 ```
 
 Run `git remote -v` again! What's changed?
 
-<br>
+- We just created an `upstream` link so that you can fetch from changes from the atl-wdi-9 repository.
+
+<br />
 
 ## Git Branch
 
@@ -564,7 +568,7 @@ You can create branches of your master branch to work on or experiment with new 
 
 **Demo:** GitUp - https://github.com/git-up/GitUp
 
-## Assess - Independent Practice (5m)
+## Assess - Independent Practice (8m)
 
 Use the internet and what you've learned today to answer the following questions with a partner:
 
@@ -574,11 +578,11 @@ Use the internet and what you've learned today to answer the following questions
 * Why do I write a commit message?
 * How do I check the status of my repository?
 * How does github know that I am allowed to push to a specific repo?
-* Which Remote points to what?
-* What is the whole process to push code from your local machine to github
+* What does remote mean, and what does it point to?
+* What is the whole process to push code from your local machine to github?
 * What is the difference between forking and cloning?
 
-<br>
+<br />
 
 ## Conclusion (2m)
 
@@ -587,5 +591,10 @@ As a developer, you will have to use Git everyday. The learning curve is steep a
 Don't get frustrated by all of the new commands because we will have plenty of time to practice them during this course.
 
 
+##BREAK
+
+
 ## Labtime
 [Code School Git](https://try.github.io/levels/1/challenges/1)
+
+If you finish before lunch, finish reading the remaining chapters on git: https://swcarpentry.github.io/git-novice/05-history/
