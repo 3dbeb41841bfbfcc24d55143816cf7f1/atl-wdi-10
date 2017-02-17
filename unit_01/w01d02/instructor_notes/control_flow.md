@@ -555,7 +555,7 @@ These are some of the foundational tools you'll use in many of your applications
 
 ## Solutions to the **YOU DO** exercises
 
-1.
+#### 1.
 ```js
 var mood = prompt("What is your mood?");
 
@@ -568,9 +568,9 @@ if (mood == 'sad') {
 }
 ```
 
+#### 2. 
 The only difference is that I used prompts instead of hard coded values.
 
-2. 
 ```js
 var num = prompt("Please type in a number");
 
@@ -582,7 +582,7 @@ else {
 }
 ```
 
-3. 
+#### 3. 
 ```js
 var num = prompt("Please type in a number");
 
@@ -613,7 +613,7 @@ else {
 }
 ```
 
-4. 
+#### 4. 
 ```js
 var quantity = prompt("Please type in a number");
 
