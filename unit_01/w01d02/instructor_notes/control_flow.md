@@ -116,6 +116,7 @@ if (name === "puppies") {
 name === "kittens!!";
 //=> true
 ```
+**TIP**: Always finish your if statements with an else.  You never know when you will need it, and it could save you.  Even if you never expect to hit that else, it should be there.  In my last job, if we never expected to hit it, we would type- `console.log("Waldo, you shouldn't be here.");`.
 
 **WARNING**: It is highly recommended that you **do not** assign variables in the conditional expression, because the assignment of a value to a variable, like this:
 
@@ -170,7 +171,7 @@ allowed
 
 Goto [repl.it](https://www.repl.it/) to complete the following exercises.
 
-1. Write a script that prompts the user for their current mood. If the user inputs `happy`, print 'Yay me too!' to the console, `sad` print 'Aw cheer up', else just print 'So moody!'. (A solution is at the bottom of this lesson:)
+1. Write a script that prompts the user for their current mood. If the user inputs `happy`, print 'Yay me too!' to the console, `sad` print 'Aw cheer up', else print 'So moody!'. (A solution is at the bottom of this lesson:)
 
 
 1. Use conditionals to check if a hardcoded number is `odd` or `even`, and then `console.log` the number is `odd` or `even` with the numbers value.
@@ -351,7 +352,7 @@ The expression is basically saying "we already know the whole `||` expression is
 
 ---
 
-## Comparison Operators (10 mins)
+## Comparison Operators (10m)
 
 [Comparisons](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators) in JavaScript can be made using `<`, `>`, `<=` and `>=`. These work for both strings and numbers. This is both useful, and can be the source of frustration for some developers, since most languages do not implicitly convert strings to numbers the way that JavaScript does.
 
@@ -422,15 +423,17 @@ However, there are some incidents when it does not do what we expect, for exampl
 
 The examples in the second set fail equality tests because both **object literals** and **arrays** are objects, and not just "primitive" values like strings, numbers, and booleans. Objects and arrays are complex collections of values, and when we refer to them, we're actually referencing where they live in memory. That's why we call them "reference types," while things like strings and numbers are "value types."
 
-What this means is that when we go to compare two objects or arrays with `===`, JavaScript doesn't care if they look like similar collections. It only compares whether or not they are the exact same object in memory. In each of the cases above, when checking for equality, we're actually comparing two objects that are in two different places in memory. They're not exactly "the same."
+What this means is that when we go to compare two objects or arrays with `===`, JavaScript doesn't care if they look like similar collections. It only compares whether or not they are the exact same object in memory. In each of the cases above, when checking for equality, we're actually comparing two objects that are in two different places in memory. They're not exactly "the same", and will therefore return false when compared.
 
 #### != and !==
 
-There are also `!=` and `!==` operators, which are the negative versions of `==` and `===`.
+There are also `!=`(not equal) and `!==`(strict not equal) operators, which are the negative versions of `==`(equal) and `===`(strict equal).
 
-## Switch Statement (5 mins)
+---
 
-The switch statement can be used for multiple branches based on a number or string:
+## Switch Statement (5m)
+
+The switch statement should be used, instead of an if/else statement, if you are comparing multiple things:
 
 - The switch expression is evaluated once.
 - The value of the expression is compared with the values of each case.
@@ -452,12 +455,12 @@ switch(food) {
 //=> I like apples
 ```
 
-In this case the `switch` statement compares `food` to each of the cases (`pear` and `apple`), and evaluates the expressions beneath them if there is a match. It uses `===` to evaluate equality.
+In this case, the `switch` statement compares `food` to each of the "cases" (`pear` and `apple`), and evaluates the expressions beneath them if there is a match. It uses `===` to evaluate equality.
 
-The default clause is optional.
+The default clause is optional, but just like the else statement, it is highly recommended.
 
 ####Example
-The getDay() method returns the weekday as a number between 0 and 6. (Sunday=0, Monday=1, Tuesday=2 ..)
+The .getDay() method returns the weekday as a number between 0 and 6. (Sunday=0, Monday=1, Tuesday=2 ..)
 
 Use the weekday number to calculate weekday name:
 
@@ -484,25 +487,29 @@ switch (new Date().getDay()) {
     case 6:
         day = "Saturday";
         break;
+    default:
+        console.log("Waldo, you shouldn't be here.");
 }
 ```
 
 
-- When the JavaScript code interpreter reaches a break keyword, it breaks out of the switch block.
+- When the JavaScript code interpreter reaches a "break" keyword, it breaks out of the switch block.
 
-- This will stop the execution of more code and case testing inside the block.
+- This will stop the execution of case testing inside the block.
 
-- When a match is found, and the job is done, it's time for a break.
+- When a match is found, the job is done, and it's time for a break.
 There is no need for more testing.
 
-#####What is faster switch or if/else?
+#### What is faster a switch statement or an if/else statement?
 
-Note that for the if-else structure, the variable being checked is reloaded into a register for comparison every single time. The switch-case structure loads the variable one time, and proceeds to perform the series of comparisons. 
+Note that for an if-else statement, the variable being checked is reloaded for the comparison every single time. The switch-case structure loads the variable one time, and proceeds to perform the series of comparisons. 
 
 Use if instead of switch when:
 
 - You want to test for the truthiness of an expression.
 - You only have a single affirmative test.
+
+More reading: http://www.blackwasp.co.uk/SpeedTestIfElseSwitch.aspx
 
 ## While and Do-While (5 mins)
 
