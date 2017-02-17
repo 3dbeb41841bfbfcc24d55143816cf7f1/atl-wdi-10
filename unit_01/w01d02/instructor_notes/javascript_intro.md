@@ -45,7 +45,7 @@ creator:
 - Construct and verbalize the syntax of the datatypes covered today
 - Be comfortable with a text editor
 
-## YOU DO
+## YOU DO (10m)
 
 Take 10 minutes and read through this:
 
