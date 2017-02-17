@@ -55,9 +55,9 @@ http://eloquentjavascript.net/01_values.html
 
 <br>
 
-## <a name="data-type">What is a data type? Intro (5 mins)</a>
+## <a name="data-type">What is a data type? Intro (5m)</a>
 
-**QUESTION: In your own words, what is a data type? What are some examples. Type your answers into Slack.**
+**QUESTION: In your own words, what is a data type? What are some examples?**
 
 From the [Wikipedia](https://en.wikipedia.org/wiki/Data_type):
 
@@ -77,8 +77,9 @@ What this means is that being confident in working with these concepts criticall
 
 We'll elaborate on all of these - except Booleans, for now. We'll talk about how they behave in JavaScript, show you some helper methods to work with each type, and then practice these helper methods to manipulate data using JavaScript.
 
+---
 
-## <a name="running-javascript">Two ways to Javascript - Code along (20mins)</a>
+## <a name="running-javascript">Two ways to Javascript - Code along (20m)</a>
 
 
 We have two ways to run Javascript... by running a script or by entering the `node` environment in the Terminal. _We're going to introduce two more ways to do it in Chrome next week._
@@ -87,29 +88,31 @@ We have two ways to run Javascript... by running a script or by entering the `no
 
 In your terminal run `brew install node`
 
-For this lesson, we're going to use the Node REPL in the terminal.
+For this lesson, we're going to use the **Node REPL** in the terminal.
+    - Does everyone know what REPL means?
+    - It stands for, read-evaluate-print-loop.  It's a programming environment that takes user input, evaluates it and returns the result.
 
 1. $ `brew install node`
 2. Once you have node installed you can run $`node` and it will open up a JavaScript REPL
-3. ^C (control + C) twice to exit.
+3. ^C (control + C) **twice** to exit.
 
 
 #### Running a Javascript file
 
 1. `cd ~/Desktop`
 1. `touch test.js`
-2. `atom test.js`
-2. Add the line `console.log('hello world!')`
+2. `subl test.js`
+2. Add the line `console.log('Hello, friends!')`
 3. Save that file.
 4. Run `node test.js` in the Terminal.
 
-Node is running the file `test.js` and the function `console.log()` will log whatever value is passed in to the console (the terminal).
+With this command, node will run the file `test.js` and the function `console.log()` will log whatever value is passed into the console (the terminal).
 
 (Project non-specific binaries can be run from any directory!)
 
 #### <a name="typeof">typeof()</a>
 
-To get an idea of the type of data we're working with, we can use [`typeof()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof).  Let's try it out in the console with the following:
+To get an idea of the type of data we're working with, we can use [`typeof()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) method.  Let's try it out in the console with the following:
 
 ```js
 typeof 37
@@ -126,14 +129,14 @@ typeof 'hi there' === 'string';
 
 ```
 
-`typeof()` returns a string with the type of the operand, or expression of the object you're looking at.  
+The `typeof()` method returns a string with the type of the operand, or expression of the object you're looking at.  
 
 
 #### <a name="numbers">Numbers</a>
 
-In more low-level languages, numbers are divided into two datatypes objects:
+In more low-level languages, numbers are divided into two data type objects:
 
-* Integers
+* Integers (or whole numbers)
 
 ```js
    ..., -1,0, 2, 3, 4, 5, ...
@@ -142,7 +145,7 @@ In more low-level languages, numbers are divided into two datatypes objects:
 * Floats (or Decimal numbers)
 
 ```js
-2.718, 3.14, .5, .25, etc
+2.718, 3.14, .5, .25, etc.
 ```
 <br>
 
@@ -150,34 +153,53 @@ In more low-level languages, numbers are divided into two datatypes objects:
 
 #### <a name="operators">Arithmetic Operators</a>
 
-Operators are used to work with data in JavaScript. The standard [arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators) - that you've been learning since grade school - are supported, including addition, subtraction, modulus (or remainder) multiplication and so forth.  Check it out:
+Operators are used to work with data in JavaScript. The standard [arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators) - that you've been learning since grade school, are supported- including addition(+), subtraction(-), modulus (or the remainder)(%), multiplication(*), exponents(**) and division(/).  
+
+Try these statements in your console:
 
 ```js
+// Addition
 1 + 2
 => 3
 
+// Subtraction
 2 - 5
 => -3
 
+// Division
 5 / 2
 => 2.5
 
+// Multiplication
 6 * 2
 => 12
+
+// Modulus
+6 % 2
+=> 0
+
+5 % 2
+=> 1
 ```
-<br>
+<br />
+
 ![Imgur](http://i.imgur.com/ylb6WX9.gif)
+(That is a super fancy way of saying 'you do')
 
-**EXERCISE**: Take 5 minutes to play with your arithmetic operands in the Node repl ((https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators)). Try the operators we just covered but don't limit yourself to just single digits. See if you can break it or get unexpected behavior.
+**EXERCISE**: Take 5 minutes to play with your arithmetic operands in the Node REPL (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators). Try the operators we just covered but don't limit yourself to just single digits. See if you can break it or get unexpected behavior.
 
-#### <a name="special-operators">Special Number Operators</a>
+<br />
+
+---
+
+## <a name="special-operators">Special Number Operators</a>
 
 We've seen that JavaScript allows us to perform simple arithmetic functions but what about more complex functions like square roots or exponents?
 
 
 
 
-* Taking a number to some `power`? Then just use `Math.pow`
+* Like taking a number to some `power`? You can just use `Math.pow`
 
 ```js
 // 3^2 becomes
@@ -197,7 +219,7 @@ Math.sqrt(4)
 => 2
 ```
 
-* Need a `random` number? Then use `Math.random`.
+* Need a `random` number? You can use `Math.random`.
 
 ```js
 // The following only returns a random decimal
@@ -210,7 +232,7 @@ random number between 0 and 10
 Math.random()*10
 ```
 
-* Since Numbers can be **Floats** or **Integers** we often want to get rid of remaining decimal places, which can be done using `Math.floor`.
+* Since JavaScript Numbers can be **Floats** or **Integers** we often want to get rid of remaining decimal places, which can be done using `Math.floor`.
 
 ```js
 // Remove the decimal
@@ -225,13 +247,17 @@ Math.floor(3.9999)
 
 **EXERCISE**: Take 3 minutes to look at the [Math documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) and pick a function to quickly explain to the class. We'll popcorn around the room each person will get 30 seconds to explain what their function is/does. Don't worry if you chose the same one as someone else. Repetition leads to retention!
 
-1. Goto [Math documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+1. Go to the [Math documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 2. Pick out a Math method that we didn’t cover
 3. Paste your example into Slack. Come back and share!
 
-#### <a name="strings">Strings</a>
+<br />
 
-Strings are collections of letters and symbols known as *characters*, and we use them to deal with words and text in JavaScript. Strings are just another type of **value** in Javascript.
+---
+
+### <a name="strings">Strings</a>
+
+Strings are collections of letters and symbols known as *characters*, and we use them to handle words and text in JavaScript. Strings are just another type of **value** in Javascript.
 
 ```js
 'John'
@@ -241,16 +267,18 @@ Strings are collections of letters and symbols known as *characters*, and we use
 
 **SIDENOTE**: When do we want to use double quotes vs single quotes?
 
+- For the most part, it doesn't matter.  Most developers use single quotes because we type all day, and we are lazy.  The only time you might think about it is when you are using a contraction.  You can either use double quotes for the string and single quotes inside, or you have to escape the single quote in your contraction.
+
 #### <a name="string-helper-methods">String helper methods</a>
 
-To find the length of a string, access its [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) property:
+To find the length of a string, use the [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) property:
 
 ```js
 'hello'.length;
 => 5
 ```
 
-Strings have other [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods) as well that allow you to manipulate the string and access information about the string:
+Strings have other [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods) as well, that allow you to manipulate the string and access information about the string:
 
 ```js
 'hello'.charAt(0);
@@ -267,38 +295,62 @@ Strings have other [methods](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 
 What if we want to turn two or more strings into one string?
 
-It's the same as if we'd like to turn two or more numbers into one number i.e.:
+We user the same operator for turning two or more numbers into one number i.e. the addition sign:
 
 - 5 + 5 results in 10
-- 'hello' and 'world' resulting in 'hello world'
+- 'hello ' + 'world' results in 'hello world'
 
-JavaScript allows us to add our strings together so:
+JavaScript allows us to add two strings or variables together like so:
 
 ```javascript
 'hello' + 'world'
 => 'helloworld'
 ```
 
+```javascript
+var greeting = 'hello';
+var earth = 'world';
+greeting + earth;
+=> 'helloworld'
+```
+
 What's wrong with this result?
 
-Well, because strings store text we need to be able to account for spaces. This results in a sort of inelegant solution where we have to remember to add a space in one string.
+The strings store text, and we need to be able to account for spaces. This results in a sort of inelegant solution where we have to remember to add a space in one of our strings.
 
 ```javascript
-'hello' + ' world' // note the space!
+'hello,' + ' world'; // note the space!
+=> 'hello world'
+```
+OR
+```javascript
+var greeting = 'hello';
+var earth = 'world';
+greeting + ", " + earth; // note the space!
 => 'hello world'
 ```
 
-The newest version of ES6 gives us a more elegant pattern called string interpolation using a new datatype called `template strings`
+The newest version of **ES6** gives us a more elegant pattern called string interpolation using a new datatype called **template strings**
 
 Rather than single quotes we use back ticks **`**
 
 ```javascript
-var firstWord = 'hello'
-var secondWord = 'world'
+var greeting = 'hello'
+var earth = 'world'
 
-`${firstWord} ${secondWord}`
-=> 'hello world'
+`${greeting}, ${earth}`
+=> 'hello, world'
 ```
+
+```javascript
+var greeting = 'hello'
+var name = prompt("Please tell me your name."); // Maren
+
+`${greeting}, ${name}.`
+=> 'hello, Maren'
+```
+- With template strings, you can put your variables into this interpolated form ${variable}, and JavaScript will interpret it.  Template strings also allow you to mix strings and variables without having to use a plus sign.
+
 <br>
 ![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
@@ -315,9 +367,17 @@ var b = a + '';         // implicit coercion
 var c = String( a );    // explicit coercion
 ```
 
-#### <a name="string-to-int">Converting Strings to Integers with parseInt() and parseFloat()</a>
+- In JavaScript, when you add a string and a number together, JavaScript automatically converts the number into a string.  
 
-You can convert a string to an integer using the built-in [`parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) function. This takes the base for the conversion as an optional second argument, which you should always provide:
+<br />
+
+---
+
+### <a name="string-to-int">Converting Strings to Integers with parseInt() and parseFloat()</a>
+
+#### parseInt()
+
+You can convert a string to an integer using the built-in [`parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) method. This takes the base for the conversion as an optional second argument, which you should always provide:
 
 ```javascript
 parseInt('123');
@@ -329,25 +389,31 @@ parseInt('010', 10);
 
 This will be important later when we're taking user input from the web or from the command line and using it on our server or in our browser to do some type of numeric calculation.
 
-Similarly, you can parse floating point numbers using the built-in [`parseFloat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) function which uses base 10 always unlike its `parseInt()` cousin.
+#### parseFloat()
+
+Similarly, you can parse floating point numbers using the built-in [`parseFloat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) function which always uses base 10, unlike its `parseInt()` cousin.
 
 ```javascript
 parseFloat('11.2');
 => 11.2
 ```
 
-You can also use the unary `+` operator to convert values to numbers:
+You can also use the [unary](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators) `+` operator to convert values to numbers:
 
 ```javascript
 +'42';
 => 42
 ```
-<br>
+<br />
+
 ![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
 **EXERCISE**: Let's take five minutes to use `parseInt()` and `parseFloat()` in node
 
-#### <a name="nan">NaN</a>
+<br />
+---
+
+### <a name="nan">NaN</a>
 
 The `parseInt()` and `parseFloat()` functions parse a string until they reach a character that isn't valid for the specified number format, then return the number parsed up to that point. However the '+' operator simply converts the string to `NaN` if there is any invalid character in it.
 
@@ -371,18 +437,22 @@ isNaN(NaN);
 ```
 JavaScript's numeric operators are `+`, `-`, `*`, `/` and `%` and all work as you expect and should have practiced during your pre-work.
 
-#### Null and Undefined
+<br />
+
+### Null and Undefined
 
 JavaScript distinguishes between:
 
-- `null` a value that indicates a deliberate non-value
-- `undefined` that indicates an uninitialized value — that is, a value hasn't even been assigned yet
+- `null` a value that indicates a deliberate non-value.  In JavaScript null is nothing, but if you checked the type of null, it would be an object.  It's one of JavaScript's quirks.
+- `undefined` that indicates an uninitialized value — that is, a value/variable hasn't even been assigned yet.  If you wrote `var greeting;`, because you have not assigned it a value yet, it would equal `undefined`.
 
-## <a name="var-and-keywords">Variables (10 mins)</a>
+---
 
-Variables are used to store data types into the memory of the computer so that they can be referenced later.
+## <a name="var-and-keywords">Variables (10m)</a>
 
-#### Always use var!
+Variables are used to store data types in the memory of the computer so that they can be referenced later.
+
+### Always use var!
 
 New variables in JavaScript are declared using the [`var`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var '/en/JavaScript/Reference/Statements/var') keyword.
 
@@ -396,60 +466,110 @@ var a;
 So lets try assigning a value to variable:
 
 ```javascript
-var name = 'Thom';
+var name = 'Schmitty';
 => undefined
 
-name
-=> 'Thom'
+name;
+=> 'Schmitty'
 ```
 
-Having made some expressions it becomes evident we want to store these values.
+Having created a few expressions, it becomes evident we want to store these values.
 
 ```javascript
 var myNumber = 1;
 ```
 
-**SIDENOTES: camelCase... But why?**
+**SIDENOTES: Use camelCase... But why?**
 
-The main note to make here is that these variables should always have the `var` keyword and use `camelCase`
+The main takeaway here is that these variables should always have the `var` keyword and use `camelCase`
 
-#### <a name="ass-ops">Assignment Operators</a>
+<br />
 
-Values are assigned using `=`, and there are also compound assignment statements such as `+=` and `-=`:
+### <a name="ass-ops">Assignment Operators</a>
+
+Values are assigned using `=`. 
+Compound assignment statements are also available, such as `+=` and `-=`.  Compound operators make your code more concise/dry:
 
 ```javascript
 var x = 1;
 => 1
 
-x += 5
+x += 5;
 => 6
 ```
 
-You can use `++` and `--` to increment and decrement, respectively. These can be used as prefix or postfix operators.
+The long way of writing this/without the compound operator would be:
+```javascript
+var x = 1;
+=> 1
 
-In Javascript we just discussed two types of values we can use. We call these values objects, which for now just means that in addition to storing some data you also get to use some helpful methods when you are working with them.
+x = x + 5;
+=> 6
+```
 
-* If you want to turn a number into a string you can use a helpful method called `toString`.
+You can use `++` and `--` to increment and decrement, respectively. These can be used as prefix or postfix operators.  The difference is this:
+```javascript
+var x = 1;
+=> 1
+
+var y = x++;
+=> 1
+
+x;
+=> 2
+
+y;
+=> 1
+```
+If you add the increment/decrement after the assignment/postfix, it will only change the first variable.  If you add it before the assignment, it will change both.
+
+```javascript
+var x = 1;
+=> 1
+
+var y = --x;
+=> 1
+
+x;
+=> 0
+
+y;
+=> 0
+```
+
+In Javascript we just discussed two types of values we can use. We call these values objects, which for now just means that in addition to storing data you also have helpful methods to use when you are working with them.
+
+* If you want to turn a number into a string you can use a method called `toString()`.
 
 ```javascript
 (1).toString()
 => '1'
+
 /**
 be careful though,
 since numbers can be floats
 javascript might
 misunderstand you.
 */
+
 1.toString()
 => Float Error
+
 // but the following works
 1..toString()
 ```
 
+<br />
 
 ## <a name="conclusion">Conclusion (5 mins)</a>
 
-- Describe use cases of different 'data types'.
+- Describe use cases of the different primitive 'data types'.
+    - strings
+    - numbers
+    - booleans
+    - null
+    - undefined
+
 - Why is iterating important when working with stored data?
 
 Feel free to read more from [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) about JavaScript fundamentals.

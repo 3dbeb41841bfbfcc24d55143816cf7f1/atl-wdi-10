@@ -50,7 +50,7 @@ When we create programs, we need to code specific instructions that tell our pro
 
 ## Logical operators and control flow (10m)
 
-JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application.
+JavaScript supports a compact set of statements/control flow statements, that you can use to incorporate a great deal of interactivity and decision making into your application.
 
 **YOU DO:** 
 
@@ -66,13 +66,15 @@ http://eloquentjavascript.net/02_program_structure.html
 
 ### What is Control Flow?
 
+<br />
+
 ![Funny Flow Chart](https://www.laserfiche.com/content/uploads/2014/03/engineering-flow-chart.png)
 
 **Control Flow** is a fundamental concept in programming that allows you to dictate how your code runs under different conditions or until a certain condition is met. 
 
 ### Block Statements
 
-Statements meant to be executed after a control flow operation will be grouped into what is called a **block statement**. These statements are wrapped between a pair of curly braces:
+**Block statements** are statements that are meant to be executed after a control flow operation. These statements are wrapped between a pair of curly braces:
 
 ```javascript
 {
@@ -83,7 +85,7 @@ Statements meant to be executed after a control flow operation will be grouped i
 
 ### Block scope
 
-We've seen that the scope in JavaScript changes often. In the case of **block statements**, there is no scope created.
+We have seen that the scope in JavaScript changes often. In the case of **block statements**, there is no scope.  Therefore, if you use a variable with the same name in and outside of your block, the variable will be overwritten, as seen in the example below.
 
 ```javascript
 var x = 1;
@@ -93,7 +95,7 @@ var x = 1;
 console.log(x); // outputs 2
 ```
 
-Only functions introduce scope in Javascript.
+Only **functions** introduce scope in Javascript.  
 
 ---
 
