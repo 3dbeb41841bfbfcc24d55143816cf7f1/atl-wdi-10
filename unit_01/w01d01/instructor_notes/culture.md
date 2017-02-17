@@ -6,8 +6,9 @@
 - Josh Kushner - Instructional Lead
 - Lisa Holter - Teaching Assistant
 - John Dupper - Teaching Assistant
+- Larissa Boyce - Outcomes
 
-## Roles (Maren)
+## Roles (Danny)
 1. Instructor Lead
   - Lesson Blocks
   - Code-alongs
@@ -16,18 +17,13 @@
 2. Teaching Assistant
   - Morning Exercises
   - Diagnostics
-  - Creating Homework
+  - Helping with homework
   - In class support
 3. Outcomes
-  - Weekly Circuits Assignments
-  - Weekly Outcomes sessions
+  - Outcomes sessions
   - Prioritize!
 
-## Student Handbook (Christine)
-
-https://github.com/ga-students/wdi-remote-matey/wiki/Student-Handbook
-
-## Emotional Framing (Colin)
+## Emotional Framing (Maren)
 - Programming is not about learning a sequence of steps, it's about developing a mindset to solve problems and think programmatically.
 - Language not important
     - critical/analytical/programatic thinking.
@@ -49,11 +45,11 @@ https://github.com/ga-students/wdi-remote-matey/wiki/Student-Handbook
 - This experience is a rollercoaster.
 ![informed optimism?](informed-optimism.jpeg)
 
-## You Are Not Your Code!(Matt)
+## You Are Not Your Code!(Maren)
 
 https://vimeo.com/85040589
 
-## Classroom Culture (Christine)
+## Classroom Culture (Danny)
 - Open safe environment
 - Take ownership of your experience
 - Check your ego at the door
@@ -61,7 +57,7 @@ https://vimeo.com/85040589
 - Don't compare yourself to others, compare yourself to who you were yesterday
 - You get what you put in
 
-## Mentorship Culture (Colin)
+## Mentorship Culture (Danny)
 - Take care of each other
 - Benchmarking; some are good at one thing, others at another. Leverage each other's strengths.
 - Teaching is the best way of truly solidifying your understanding of a concept.
@@ -77,7 +73,7 @@ https://vimeo.com/85040589
   - Pay attention
   - Let us know if you are running late
   - Excused Absences
-  - Multiple lateness = absence
+  - Multiple lateness = absence 
   - Contractual limit of absences in order to complete the program
 1. Be Persistent
 1. Be Independent
@@ -85,7 +81,7 @@ https://vimeo.com/85040589
 1. Be Creative
   - this is not paint by numbers
 
-## Plagiarism (Marc)
+## Plagiarism (Danny)
 ### Statement
 
 General Assembly takes academic honesty very seriously, and as such will not tolerate any student who plagiarizes in order to satisfy class requirements.  Programs at General Assembly are intensive, require a lot of work on the part of the student, and students will occasionally not be able to complete work in a timely fashion.  
@@ -106,7 +102,7 @@ If an instructor is in doubt of a students work or has evidence of plagiarism, t
 
 Instances of plagiarism will be evaluated on a case by case basis, but will most likely result in removal from the program
 
-## Intro to Assessments and Exit Tickets (Marc)
+## Intro to Assessments and Exit Tickets (Gabby)
 
 ## Stand-Up (Danny)
 - Yesterday (What's been a win since your last Standup?)
@@ -114,10 +110,7 @@ Instances of plagiarism will be evaluated on a case by case basis, but will most
 - Today's wins (What would you like to accomplish today?)
 - `Stand-ups should focus on generating ACTIONABLE goals for each day.`
 
-## Team Building (Christine)
-- Try to pair with someone new everyday.
-
-## Common Student Worries (Colin)
+## Common Student Worries (Maren)
 1. I'm making a lot of mistakes
 2. Imposter syndrome
 3. I don't "do" math
@@ -144,19 +137,12 @@ Instances of plagiarism will be evaluated on a case by case basis, but will most
 		- receiving an answer stops the learning process
 		- only ask a question if you've been stuck for about a day
 
-## Advice ( Each instructional member )
-1. Constant feedback
-2. Stand up and walk around
-3. Get out of home for a little bit each day
-
 # Activities
 
 ## Briefly Tell Us About You
 - What's your name?
 - Where are you from?
 - What were you doing before WDI?
-- Why are you here?
-- What's your home town like?
-- What Have You Enjoyed About The Programming You Did In Fundamentals
+- What do you hope to do with your WDI skills?
 
 # Your First Exit Ticket!
