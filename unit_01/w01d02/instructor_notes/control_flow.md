@@ -511,11 +511,15 @@ Use if instead of switch when:
 
 For further discussion: http://www.blackwasp.co.uk/SpeedTestIfElseSwitch.aspx
 
-## While and Do-While (5 mins)
+---
+
+## While and Do-While (5m)
 
 `while` is a loop statement that will run **while** a condition is true.
 
 JavaScript has `while` loops and `do-while` loops. The first is good for basic looping, but there's a possibility it will never get run (if the expression evaluates to false). A `do-while` loop makes sure that the body of the loop/code block is executed at least once, because the `while()` expression isn't evaluated until **after** the block of code runs.
+
+#### While example
 
 ```javascript
 while (true) {
@@ -523,7 +527,7 @@ while (true) {
 }
 ```
 
-This should be enough to break a browser.
+#### Do-while example
 
 ```javascript
 var input = 0;
@@ -532,7 +536,9 @@ do {
 } while (input < 10);
 ```
 
-## Conclusion (5 mins)
+---
+
+## Conclusion (5m)
 These are some of the foundational tools you'll use in many of your applications. You'll probably need to refresh yourself on the exact syntax a few times before you memorize it, but it's important to be able to remember, these core "control flow" concepts, in general, because they'll come up in pretty much every programming language you'll ever encounter.
 
 - [Control Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
