@@ -44,6 +44,7 @@ Much like a cookie recipe, we can add all of the ingredients together without be
 
 When we create programs, we need to code specific instructions that tell our program what to do should a certain sitation arise.  Control Flow statements- like if/else statements, switch statements, while or do-while loops, are what we use in JavaScript to help our programs make choices and follow the correct path.  
 
+
 ## Logical operators and control flow (10m)
 
 JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application.
