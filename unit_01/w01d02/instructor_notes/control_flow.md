@@ -509,13 +509,13 @@ Use if instead of switch when:
 - You want to test for the truthiness of an expression.
 - You only have a single affirmative test.
 
-More reading: http://www.blackwasp.co.uk/SpeedTestIfElseSwitch.aspx
+For further discussion: http://www.blackwasp.co.uk/SpeedTestIfElseSwitch.aspx
 
 ## While and Do-While (5 mins)
 
 `while` is a loop statement that will run **while** a condition is true.
 
-JavaScript has `while` loops and `do-while` loops. The first is good for basic looping, but there's a possibility it will never get run. Using a `do-while` loop makes sure that the body of the loop is executed at least once, because `while()` isn't evaluated until after the block of code runs.
+JavaScript has `while` loops and `do-while` loops. The first is good for basic looping, but there's a possibility it will never get run (if the expression evaluates to false). A `do-while` loop makes sure that the body of the loop/code block is executed at least once, because the `while()` expression isn't evaluated until **after** the block of code runs.
 
 ```javascript
 while (true) {
