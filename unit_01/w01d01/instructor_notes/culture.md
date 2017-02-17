@@ -144,5 +144,3 @@ Instances of plagiarism will be evaluated on a case by case basis, but will most
 - Where are you from?
 - What were you doing before WDI?
 - What do you hope to do with your WDI skills?
-
-# Your First Exit Ticket!
