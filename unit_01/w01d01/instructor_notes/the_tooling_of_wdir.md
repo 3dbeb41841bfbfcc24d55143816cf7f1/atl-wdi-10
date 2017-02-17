@@ -1,14 +1,14 @@
 ---
-title: The Tooling of WDIR
+title: The Tooling of WDI
 type: Walkthrough
 duration: 2 hrs
 creator:
   name: Colin Hart
-  campus: WDIR
+  campus: WDI
 competencies: Computer Usage
 ---
 
-# The Tooling of WDIR
+# The Tooling of WDI
 
 ## Lesson Objectives
 
@@ -23,61 +23,29 @@ competencies: Computer Usage
   - Write down the commands for using Spectacle
   - Discuss typing speeds and apps for practicing
 
-
-# Intro
-
-WDIR is a **interactive virtual classroom experience**. Meaning, along with the coding skills you'll learn throughout the course, there are many patterns, tools, and processes that you'll need to learn to participate seamlessly in the classroom environment.
-
-The online campus is made up of three tools:
-
-- Slack: a chatroom with multiple channels
-- Zoom: for video conferencing
-- GitHub: to submit and receive code
-
-You'll quickly become comfortable interacting with these three applications by way of participating daily in the classroom.
-
-However, the classroom is not only these remote applications, but also your computer.
-
-**Close your eyes**
-
-Imagine we are in a physical classroom with desks, a whiteboard, chairs, plugs, etc., and upon entering the room on the first day, you notice that everything you'd want in a classroom is there, but it's all out of order. The chairs are stacked haphazardly, and the desks are placed randomly throughout the room with no attention to the white board or where the plugs are. And there's trash and random odds and ends left over from the previous class.
-
-That's a pretty horrible classroom experience and not at all conducive to learning.
-
-As the person in charge of the classroom, it's my responsibility to make sure the room is in order and ready for you. In an online environment you are the manager of the classroom and are in charge of making sure your computer is organized, that you don't have a thousand tabs open, that you understand where your notes go, and that your ability to navigate around your computer and the various applications and directories we'll use are up to par.
-
-**What does that mean?**
-
-It means I will provide you with the base structure of what your _virtual classroom_ should look like and how you should organize it and interact with it. It will be up to **you** to practice and maintain it.
-
-I can't emphasize this enough. This class moves... **FAST**. It might seem crazy now, but you don't want to fall behind in the steps in an exercise just because you can't find directories or applications easily.
-
-Let's start by talking about Slack.
-
 ## Slack
 
 Slack is your main means of communication during and after class.
 
-There are four channels we'll use:
+There are five channels we'll use:
 
-- `#wdir-matey`
-- `#wdir-matey-outcomes`
-- `#wdir-matey-partytime`
-- `#wdir-matey-debugging`
+- `#wdi-9-atl-classroom`
+- `#wdi-9-atl-debugging`
+- `#wdi-9-atl-outcomes`
+- `#wdi-9-atl-partytime`
+- `#wdi-9-atl-parkinglot`
 
-1. We'll run our lessons in the `#wdir-matey` channel. After class, the TA, `Jesse Mills`, will come online in this channel.
+1. We'll run our lessons in the `#wdi-9-atl-classroom` channel. After class, the TA will come online in this channel.
+2. The `#wdi-9-atl-debugging` channel is probably the most important channel of the four. Throughout this course, whether it's during class, during homework, late-late at night, on the weekends, whenever, you're going to run into errors in your code.
+3. `#wdi-9-atl-outcomes` will be where your outcomes lessons happen with Coach Seth and Coach Eric.
+4. The `#wdi-9-atl-partytime` channel is far all non-class related conversations to occur.
 
-2. `#wdir-matey-outcomes` will be where your outcomes lessons happen with Coach Seth and Coach Eric.
 
-3. The `#wdir-matey-partytime` channel is far all non-class related conversations to occur.
-
-4. The `#wdir-matey-debugging` channel is probably the most important channel of the four. Throughout this course, whether it's during class, during homework, late-late at night, on the weekends, whenever, you're going to run into errors in your code.
-
-#### `#wdir-matey-debugging` channel
+#### `#wdi-9-atl-debugging` channel
 
 Debugging and learning how to read and work toward solving errors is one of the most important skills you will learn during this course. It's a skill you'll need to practice and hone constantly.
 
-The `#wdir-matey-debugging` channel will help facilitate this.
+The `#wdi-9-atl-debugging` channel will help facilitate this.
 
 When you encounter an error that you can't solve or are stuck on you'll create a `Bug Report` and post it to the debugging channel. Once you've posted it an instructor and eventually, your classmates will be able to help you find a solution to your problem.
 
@@ -85,23 +53,21 @@ We'll talk about submitting bug reports later.
 
 ## The Wiki
 
-Our classroom exists on GitHub as part of our class [repository](https://github.com/ga-students/wdi-remote-matey/wiki).
-
-It will contain links to recordings of all of the lessons.
+Our classroom exists on GitHub as part of our class [repository](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/wiki).
 
 It also contains walkthroughs on how to submit homework, how to make a Bug Report, how to submit a new page to the Wiki, links to documentation, podcasts, newsletters, books and _many, many_ other things.
 
 ## Setting up your classroom!
 #### Managing your machines processing power
 
-Zoom, Slack, and the coding software you'll need running will take up quite a bit of your machines processing power. To participate lag free you need to:
+Slack and the coding software you'll need running will take up quite a bit of your machine's processing power. To participate lag free you need to:
 
 1. Not have your email or any social media open
-2. Make sure you're connected to the Internet via Ethernet
+2. Keep browser tabs to a minimum, especially while using Chrome
 
 #### Managing screen real-estate
 
-We highly encourage that you have Slack and Zoom on one monitor and your code and notes in another. This will seem a little overwhelming at first but you'll quickly find it to be second nature and we'll also cover some tools and patterns that will make your life exponentially easier.
+We strongly encourage that you install and get comfortable with [spectacle](https://www.spectacleapp.com/). We will cover this at the beginning of the cohort.
 
 #### Directory Structure
 
@@ -123,7 +89,7 @@ Tomorrow you'll clone the GitHub class repo into your `dev` directory.
 
 ## Interacting with your classroom
 
-Your classroom _is_ your computer. You will need to be able to quickly navigate between applications, folders, windows, etc., to keep up with class.
+You will spend much of your time in the classroom on your computer. You will need to be able to quickly navigate between applications, folders, windows, etc., to keep up with class.
 
 This isn't just for your benefit as students; web developers are obsessed with minimizing key strokes and navigating efficiently. Coding is hard enough as it is without losing time trying to find or open files.
 
@@ -154,7 +120,7 @@ This shortcut works in almost every application whether it's Chrome, Atom, Slack
 1. Toggle between tabs
 
 
-#### Replacing the mouse, Spectacles.
+#### Replacing the mouse, Spectacle.
 
 Spectacle is an app that allows you to move windows around and arrange them easily so they always fit on your screen in thirds, halves, or quarters.
 

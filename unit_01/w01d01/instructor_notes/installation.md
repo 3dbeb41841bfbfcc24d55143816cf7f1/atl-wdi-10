@@ -14,7 +14,7 @@ competencies: Course Prep
 
 - install `homebrew` and `brew cask`
 - install `Node` w/ brew
-- install `Spectacles` w/ brew cask
+- install `Spectacle` w/ brew cask
 - uninstall and install `Atom` w/ brew cask
 - Verify git is installed
 
@@ -70,7 +70,7 @@ We're going install Node using brew. We're going to learn a lot about Node over 
 ## Installing Brew Cask
 #### What is brew cask?
 
-Where Homebrew lets us install packages and tools for the Terminal and other low level processes, brew cask let's us install Apps. Things like Chrome, Atom or Sublime Text, Spectacles, Slack and so on!
+Where Homebrew lets us install packages and tools for the Terminal and other low level processes, brew cask let's us install Apps. Things like Chrome, Atom or Sublime Text, Spectacle, Slack and so on!
 
 
 #### to install brew cask
@@ -97,9 +97,9 @@ Why did we do that? Because we installed using brew cask, it created a command i
 
 Let's test it out.
 
-### Set up Spectacles
+### Set up Spectacle
 
-We're going to install one more application using brew cask. It's an App called Spectacles—[documentation](https://github.com/eczarny/spectacle)—which is going to make organizing your screen much simpler!
+We're going to install one more application using brew cask. It's an App called Spectacle—[documentation](https://github.com/eczarny/spectacle)—which is going to make organizing your screen much simpler!
 
 1. install spectacle using `brew cask`
   ```bash
