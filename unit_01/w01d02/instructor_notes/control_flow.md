@@ -38,12 +38,15 @@ Life is made up of choices.
 
 You made a choice to stop what you were doing for a career, and join this class.  And cheers to you for making that decision.  Change is difficult, but I am proud of you for making the choice to be here today.
 
-Our computers, however, do not have the ability to reason on their own.  We have to think about how we are going to fit the pieces together.  And tell our programs what to do.
+Our computers, however, do not have the ability to reason on their own.  We have to think about how we are going to fit the pieces together.  And tell our programs exactly what they need to do.
 
-Much like a cookie recipe, we can add all of the ingredients together without beating the sugar and butter for 5 minutes, without sifting the dry ingredients, or without chilling the batter before we bake the cookies, but they won't turn out as delicious.  Maybe they are too crunchy, or too hard.  There are certain steps/processes that we need to take in order to make these morsels heavenly. [Here are some tips for better cookie making](https://www.craftybaking.com/learn/baked-goods/cookies/problems-and-solutions), but for now, we will go back to programming.
+Much like a cookie recipe, we can add all of the ingredients together without beating the sugar and butter for 5 minutes, without sifting the dry ingredients, or without chilling the batter before we bake our cookies, but they won't turn out as delicious.  Maybe they are too crunchy, or too hard.  There are certain steps/processes that we need to take in order to make these morsels heavenly. [Here are some tips for better cookie making](https://www.craftybaking.com/learn/baked-goods/cookies/problems-and-solutions), but for now, we will get back to programming.
 
-When we create programs, we need to code specific instructions that tell our program what to do should a certain sitation arise.  Control Flow statements- like if/else statements, switch statements, while or do-while loops, are what we use in JavaScript to help our programs make choices and follow the correct path.  
+When we create programs, we need to code specific instructions that tell our program what to do should a certain sitation arise.  **Control Flow statements**- like if/else statements, switch statements, while or do-while loops, are what we use in JavaScript to help our programs make choices and follow the correct path.  
 
+<br />
+
+---
 
 ## Logical operators and control flow (10m)
 
