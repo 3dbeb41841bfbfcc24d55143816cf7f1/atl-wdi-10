@@ -615,12 +615,16 @@ else {
 
 #### 4. 
 ```js
-var quantity = prompt("Please type in a number");
+var quantity = parseInt(prompt("Please type in a number"));
 
 if (quantity === 1) {
-    console.log(quantity + " pet");
+    console.log("1 pet");
 }
 else {
     console.log(quantity + " pets");
 }
 ```
+
+**TIP**: You need to parseInt() the prompt because it will return a string. The parseInt() method turns a string into a number.  Otherwise, you would need to check that `quantity === "1"` or `quantity == 1`.  
+
+How would you turn a number into a string?
