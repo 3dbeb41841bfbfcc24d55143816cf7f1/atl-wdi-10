@@ -373,7 +373,7 @@ The expression is basically saying "we already know the whole `||` expression is
 
 Equality is a bit more complex. There are 2 ways in JavaScript to verify equality.
 
-When verifying equality using double equal `==`, JavaScript does a lot of the "type coercion" in the background. Like we mentioned above, if the operands have a different type (i.e.: the number `1` and the string `"1"`), JavaScript will try to change the type of both operands to check whether they are equal. This means that a lot of times, expressions will return equal more easily than if we were stricter about what things were equivalent. Some examples:
+When verifying equality using double equal `==`, JavaScript does a lot of the "type coercion" in the background. Like we mentioned above, if the operands have a different type (i.e.: the number `12` and the string `"12"`), JavaScript will try to change the type of both operands to check whether they are equal. This means that a lot of times, expressions will return equal more easily than if we were stricter about what things were equivalent. Some examples:
 
 ```javascript
 "dog" == "dog";
@@ -385,7 +385,7 @@ When verifying equality using double equal `==`, JavaScript does a lot of the "t
 
 #### Equality Operator `===`
 
-To avoid type coercion and measure equality more strictly, **use the triple-equals operator**. Because `===` more truly measures actual equality, we'll use this far more often when checking whether too things are, in fact, the same thing.
+To avoid type coercion and measure equality more strictly, **use the triple-equals operator**. Because `===` more truly measures actual equality, we'll use this far more often when checking whether too things are, in fact, the same thing.  It makes sure that the operands are the same, and also that the type is the same.
 
 > **Note:** "Sameness" and "equality" have various definitions and can be somewhat "fuzzy". They can also differ by programming language. Because you'll often be measuring whether two things are equal, you should investigate the way this works carefully.
 
@@ -393,6 +393,9 @@ Some examples:
 
 ```javascript
 1 === true;
+//=> false
+
+12 === "12";
 //=> false
 
 true === true;
