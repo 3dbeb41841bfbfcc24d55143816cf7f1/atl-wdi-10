@@ -1,29 +1,24 @@
 # Introduction to GA
 
 ## Instructor Introduction
-- Marc Wright: Instructional Lead
-- Colin Hart - Instructional Lead
-- Christine Yi - Instructional Associate
-- Matt Brendzel - Instructional Associate
-- Jesse Mills - Evening / Weekend TA
-- Sam Weisse -  Grader
+- Danny Hurley - Instructional Lead
+- Maren Woodruff - Instructional Lead
+- Josh Kushner - Instructional Lead
+- Lisa Holter - Teaching Assistant
+- John Dupper - Teaching Assistant
 
-## Roles (Marc)
+## Roles (Maren)
 1. Instructor Lead
   - Lesson Blocks
   - Code-alongs
   - Labs
   - Each instructor takes a different topic for each unit
-2. Instructor Associate
+2. Teaching Assistant
   - Morning Exercises
-  - Afternoon Code Reviews (At least once a week)
-  - Weekly Diagnostic
+  - Diagnostics
   - Creating Homework
   - In class support
-3. Evening / Weekend TA
-  - 7pm - 10pm EDT (M-TH) / 12pm - 3pm EDT (SAT)
-  - one-on-one help
-4. Outcomes
+3. Outcomes
   - Weekly Circuits Assignments
   - Weekly Outcomes sessions
   - Prioritize!
@@ -78,7 +73,7 @@ https://vimeo.com/85040589
 
 ## Student Expectations (Matt)
 1. Be Present
-  - Attendance at 10:15 EST
+  - Attendance at 9:00 AM
   - Pay attention
   - Let us know if you are running late
   - Excused Absences
@@ -113,10 +108,11 @@ Instances of plagiarism will be evaluated on a case by case basis, but will most
 
 ## Intro to Assessments and Exit Tickets (Marc)
 
-## Stand-Up (Christine)
-- Wins (What's been a win since your last Standup?)
-- Repass (What is something you'd like to see again since your last standup?)
-- Feeling (How are you feeling?)
+## Stand-Up (Danny)
+- Yesterday (What's been a win since your last Standup?)
+- Blockers (What is something you'd like to see again since your last standup? What is still challenging you?)
+- Today's wins (What would you like to accomplish today?)
+- `Stand-ups should focus on generating ACTIONABLE goals for each day.`
 
 ## Team Building (Christine)
 - Try to pair with someone new everyday.
@@ -158,7 +154,7 @@ Instances of plagiarism will be evaluated on a case by case basis, but will most
 ## Briefly Tell Us About You
 - What's your name?
 - Where are you from?
-- What were you doing before WDIR?
+- What were you doing before WDI?
 - Why are you here?
 - What's your home town like?
 - What Have You Enjoyed About The Programming You Did In Fundamentals
