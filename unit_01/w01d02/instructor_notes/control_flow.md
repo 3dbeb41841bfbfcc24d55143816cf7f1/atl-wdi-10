@@ -28,14 +28,14 @@ competencies: Programming
 
 ---
 
-## Hook (15m)
+## Hook (5m)
 Life is made up of choices.  What should I wear today?  What should I eat for breakfast?  Should I go for a run this morning or go to that dance class later?
 
 Our computers do not have the ability to reason on their own.  We have to think about how we are going to fit the pieces together.  Much like a cookie recipe, we can add the ingredients together without beating the sugar and butter for 5 minutes, or without making the batter cold before we bake them, but they won't turn out as delicious.  There are steps/a process that we need to take in order to make them the best.
 
 We need to code specific instructions about what our program should do in certain sitations.  Control Flow- if/else statements, switch is what use in JavaScript to help our programs make choices and follow the correct process.  
 
-## Logical operators and control flow
+## Logical operators and control flow (10m)
 
 JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application.
 
@@ -146,6 +146,7 @@ JavaScript has a ternary operator for conditional expressions. You can think abo
 
 ```javascript
 expression ? this will run if it is true: this will run if it is false;
+
 true ? console.log("it is true"): console.log("it is false");
 //=>  "it is true"
 false ? console.log("it is true"): console.log("it is false");
@@ -160,6 +161,8 @@ var allowed = (age > 18) ? "yes" : "no";
 allowed
 //=> "no"
 ```
+
+<br />
 
 ---
 
@@ -197,6 +200,8 @@ Goto [repl.it](https://www.repl.it/) to complete the following exercises.
 	
 	```
 
+<br />
+
 ---
 
 ## Truthy & Falsey (10 mins)
@@ -206,7 +211,7 @@ Goto [repl.it](https://www.repl.it/) to complete the following exercises.
 - `false`
 - `0`
 - `""` (empty string)
-- `NaN`
+- `NaN` (not a number)
 - `null`
 - `undefined`
 
@@ -217,21 +222,27 @@ Do not confuse the primitive boolean values `true` and `false` with the true and
 ```javascript
 var b = new Boolean(false);
 
-if (b) { console.log("true") }
+if (b) { console.log("true"); }
 //=> true
 ```
 
 There is a simple way of verifying the truthiness or falsiness of a value. When you add `!` in front of a value, the returned value will be the inverse of the value in a boolean. So if you add two `!` then you'll get the boolean value of the original one:
 
 ```javascript
+!!true
+//=> true
+
+!!false
+//=> false
+
 !!1
+//=> true
+
+!!-1
 //=> true
 
 !!0
 //=> false
-
-!!-1
-//=> true
 
 !![]
 //=> true
@@ -239,14 +250,23 @@ There is a simple way of verifying the truthiness or falsiness of a value. When 
 !!{}
 //=> true
 
+!!""
+//=> false
+
 !!null
 //=> false
 
-!!""
+!!undefined
+//=> false
+
+!!NaN
 //=> false
 ```
+A double bang(!!) may be used in development to change a variable into a boolean.  When I was working with a team in India, instead of writing boolean values, they would want us to return no/yes values instead of booleans for certain data points in the API.
 
-## Boolean/Logical Operators (5 mins)
+<br />
+
+## Boolean/Logical Operators (5m)
 
 [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
 
@@ -302,23 +322,34 @@ The `!` takes a value and returns the opposite boolean value, i.e.
 ```javascript
 !(true)
 //=> false
+
+!(false)
+//=> true
 ```
 
-The `&&` and `||` operators use short-circuit logic, which means whether they will execute their second operand is dependent on the first. This is useful for checking for null objects before accessing their attributes:
+The `&&` and `||` operators use short-circuit logic, which means that executing their second operand depends on whether the first is true of false. This is useful for checking for null objects before accessing their attributes:
 
 ```javascript
 var name = otherName && o.getName();
 ```
 
-In this case, if the first operand `otherName` is false, then the second operand `o.getName()` will not be evaluated. The expression is basically saying "we already know the whole `&&` expression is false, because `otherName` is falsey. Why bother dealing with the second operand?"
+As stated above, when using the `&&` operator, the expression will be true only if both operands are true.  If either operand is false, when using the `&&` operator, it will all be false.  
+
+So, if the first operand `otherName` is false, then the second operand `o.getName()` will not be evaluated. The expression is basically saying "we already know the whole `&&` expression is false, because `otherName` is falsey. Why bother dealing with the second operand?"
 
 Or for setting default values:
 
 ```javascript
-var name = otherName || "Marc";
+var name = otherName || "Schmitty";
 ```
 
-In this case, if the first operand `otherName` is false, then we'll see that `"Marc"` will be returned. If `otherName` is truthy (e.g. it contains a value), it will get returned, and the second expression won't even be evaluated. The expression is basically saying "we already know the whole `||` expression is true, because `otherName` is truthy. Why bother dealing with the second operand?"
+For the `||` operator, the expression will be false, only if both items are false.  If either operand is true, when using the `||` operator, the expression will be true.
+
+So, if the first operand `otherName` is false, then we'll see that `"Schmitty"` will be returned. If `otherName` is truthy (e.g. it contains a value), the expression will get returned/is true, and the second expression won't even be evaluated. 
+
+The expression is basically saying "we already know the whole `||` expression is true, because `otherName` is truthy. Why bother dealing with the second operand?"
+
+---
 
 ## Comparison Operators (10 mins)
 
