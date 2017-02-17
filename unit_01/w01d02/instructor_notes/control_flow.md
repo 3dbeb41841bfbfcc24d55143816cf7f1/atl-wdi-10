@@ -546,11 +546,16 @@ These are some of the foundational tools you'll use in many of your applications
 - [Control Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
 - [While](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
 
+---
+
 ## Independent Practice
-- Choose Your own Adventure in today's student labs folder.
+- [Choose Your own Adventure](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d02/student_labs/choose_your_own_adventure)
 
-##Solution to the `moody` you do exercise
+---
 
+## Solutions to the **YOU DO** exercises
+
+1.
 ```js
 var mood = prompt("What is your mood?");
 
@@ -560,5 +565,62 @@ if (mood == 'sad') {
     console.log('YOWZA!');
 } else {
     console.log('not impressed');
+}
+```
+
+The only difference is that I used prompts instead of hard coded values.
+
+2. 
+```js
+var num = prompt("Please type in a number");
+
+if (num % 2 === 0) {
+    console.log("The number " + num + ", is even.");
+} 
+else {
+    console.log("The number " + num + ", is odd.");
+}
+```
+
+3. 
+```js
+var num = prompt("Please type in a number");
+
+if (num % 2 === 0 || num % 3 === 0) {
+    console.log("The number " + num + ", is divisible by 2 or 3.");
+} 
+else {
+    console.log("The number " + num + ", is not divisible by 2 or 3.");
+}
+```
+
+OR
+
+```js
+var num = prompt("Please type in a number");
+
+if (num % 2 === 0 && num % 3 === 0) {
+    console.log("The number " + num + ", is divisible by 2 and 3.");
+} 
+else if (num % 2 === 0) {
+    console.log("The number " + num + ", is divisible by 2.");
+} 
+else if (num % 3 === 0) {
+    console.log("The number " + num + ", is divisible by 3.");
+} 
+else {
+    console.log("The number " + num + ", is not divisible by 2 or 3.");
+}
+```
+
+4. 
+```js
+var quantity = prompt("Please type in a number");
+
+if (quantity === 1) {
+    console.log(quantity + " pet");
+}
+else {
+    console.log(quantity + " pets");
 }
 ```
