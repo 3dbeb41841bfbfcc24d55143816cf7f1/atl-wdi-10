@@ -180,25 +180,29 @@ Here are some properties that you can set for an element
 	- turquoise, red, yellow, white, grey, black, green, orange, purple
 	- http://www.crockford.com/wrrrld/color.html
 - values
-	- hexidecimal number #RRGGBB, (0-F), six places
+	- **hexidecimal number** 
+		- #RRGGBB, (0-F), six places
 		- `#40e0d0;` // turquoise
 		- All values must be between 00 and FF.
 		- if you have 6 of the same, or repeating values, you can shorten the hex to 3 
 			- `#ffffff;` to `#fff;`
-	- rgb(red, green, blue)
-		- each parameter (red, green, and blue) defines the intensity of the color as an integer between 0 and 255.
+	- **rgb(red, green, blue)**
 		- `rgb(64, 224, 208);` // turquoise
-	- rgba(red, green, blue, alpha) also has an `a` that stands for **alpha**
+		- each parameter (red, green, and blue) defines the intensity of the color as an integer between 0 and 255.
+	- **rgba(red, green, blue, alpha)** 
+		- rgb also has an `a` that stands for **alpha**
 		- The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque)
-	- hsl(hue, saturation %, lightness %)
+	- **hsl(hue, saturation %, lightness %)**
+		- hsl(180, 59%, 80%); // turquoise
 		- **Hue** is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue.
 		- **Saturation** is a percentage value; 0% means a shade of gray and 100% is the full color.
 		- **Lightness** is also a percentage; 0% is black, 100% is white.
-	- hsla(hue, saturation %, lightness %, alpha)
+	- **hsla(hue, saturation %, lightness %, alpha)**
+		- hsl also has an `a` that stands for **alpha**
 		- The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
 
 - Use https://color.adobe.com to find color schemes
-- It is recommended that you use no more than 5 colors on your site.  Too many colors can confuse the user.  So, be careful.
+** It is recommended that you use no more than 5 colors on your site.  Too many colors can confuse the user.  So, be careful. **
 
 #### background
 - color
@@ -209,9 +213,10 @@ Here are some properties that you can set for an element
  
 #### font-family
 ##### System fonts
-	- Single word fonts
+	- **Single word fonts**
 		- Arial, Courier, Times, etc
-	- Multi word fonts must be placed in quotes
+	- **Multi word fonts** 
+		- must be placed in quotes
 		- "Times New Roman", "Arial Black", "Lucinda Console"
 
 - Use http://www.cssfontstack.com/ to see which fonts are available on different operating systems
@@ -244,7 +249,7 @@ Here are some properties that you can set for an element
 
 <br>
 
-## Describe ids and classes. Explain when should we use which
+## Describe ids and classes.
 
 Sometimes just targeting an element is not enough.  We can target other attributes of elements in our selectors.
 
