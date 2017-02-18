@@ -146,45 +146,46 @@ For more details see [MDN's Documentation on Property Accessors](https://develop
 
 ### Deleting properties
 
-If you want to delete a property of an object (and by extension, the value attached to the property), you need to use the [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) operator:
+If you want to delete a property in an object (and by extension, the value attached to the property), you need to use the [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) operator:
 
 The following code shows how to remove a property:
 
 ```javascript
-var classroom = {name: "WDIr", campus: "Everywhere!", start: "12/05/2016"};
+var classroom = {name: "WDI ATL 9", campus: "Atlanta!", start: "02/21/2017"};
 delete classroom.start;
+
 classroom
-=> {name: "WDIr", campus: "Everywhere!"}
+=> {name: "WDI ATL 9", campus: "Atlanta!"}
 ```
 
 ## Object methods
 
-As we've said before, the value of a property can be anything in JavaScript, means we can also attach functions to objects properties. When a function is attached to a property, this function becomes a `method`. Methods are defined the exact same way as a function, except that they have to be defined as the property of an object.
+As we have stated before, the value of a property can be anything in JavaScript, which means that we can also attach functions to objects properties. When a function is attached to a property, this function becomes a `method`. Methods are defined the exact same way as a function, except that they have to be defined as the property of an object.
 
-Think back to our morning lecture with functions: remember our last example?
+We will be discussing functions in more detail tomorrow.  
 
 ```javascript
 var classroom = {
-  name: "WDIr", // key: value,
-  campus: "Everywhere!", // key: value,
-  start: "12/05/2016",
-  students: ['Alejandra', 'Sophia', 'Alan', 'Audrey', 'David']
+  name: "WDI ATL 9", // key: value,
+  campus: "Atlanta!", // key: value,
+  start: "02/21/2017",
+  instructors: ['Danny', 'Maren', 'Josh', 'John', 'Lisa'],
   sayHello: function() {
     console.log("Hello");
   }
 };
 ```
 
-EXERCISE: How do we ask for values in an object? How do we call functions?
+**EXERCISE**: How do we ask for values in an object? How do we call functions?
 
-To call the method, we add a pair of parentheses to execute it:
+To call the method, we add a pair of parentheses at the end, in order to execute it:
 
 ```javascript
 classroom.sayHello();
 => Hello
 ```
 
-#### Assigning a previously-defined function
+### Assigning a previously-defined function
 
 We can attach regular functions to objects as methods, even after they are created.
 
@@ -201,25 +202,19 @@ classroom.sayHello()
 
 In JavaScript, `this` is a keyword that refers to the current object. When used in a method on an object, it will always refer to the current object.
 
-
 ```javascript
-
-
 var classroom = {
-  name: "WDIr",
-  campus: "Everywhere!",
-  start: "5/16/2016",
-  students: ['Alejandra', 'Sophia', 'Alan', 'Audrey', 'David']
-  sayHelloToEveryone: function() {
-    console.log("Hello " + this.students);
+  name: "WDI ATL 9", // key: value,
+  campus: "Atlanta!", // key: value,
+  start: "02/21/2017",
+  instructors: ['Danny', 'Maren', 'Josh', 'John', 'Lisa'],
+  sayHello: function() {
+    console.log("Hello");
   },
-  sayHelloToOne: function(studentIndex) {
-    console.log('Hi ' + this.students[studentIndex])
+  sayHelloToOne: function(instructorIndex) {
+    console.log('Hi, ' + this.instructors[instructorIndex]);
 
-    // console.log(`Hi ${this.students[studentIndex]}`)
-
-    // or we could get fancy!
-    // console.log(this.students[this.students.indexOf(student)])
+    console.log(`Hi, ${this.instructors[instructorIndex]}`);
   },
   classInfo: function(){
     console.log("This is " + this.name + " and the class starts on " + this.start);
@@ -227,7 +222,9 @@ var classroom = {
 };
 ```
 
-#### Enumerating properties of an object
+<br />
+
+### Enumerating properties of an object
 
 There are three native ways to list the properties of an object we're just going to explore the `for ... in loop`:
 
