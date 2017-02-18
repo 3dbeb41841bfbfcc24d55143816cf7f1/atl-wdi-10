@@ -31,6 +31,9 @@ CSS can do the same for your website.  It can get your end user to come back, or
 this: **Blinkee.com**
 
 A site that sells itmes that blink or glow in the dark
+
+<br />
+
 ![blinkee.com a site that sells items that blink or glow in the dark](https://i.imgur.com/scpHM8k.png)
 
 <br />
@@ -38,6 +41,9 @@ A site that sells itmes that blink or glow in the dark
 and this: **Spotify Rewind**
 
 They received a Webby Award for the best aesthetic design
+
+<br />
+
 ![Webby Award for best aesthetic design- spotify rewind](https://i.imgur.com/U4RkgTX.png)
 
 - [CSS3 is pretty powerful now-a-days and can do cool stuff](http://www.cssdesignawards.com/articles/10-cool-css-js-demos-tuts-to-apply-and-use/67/)
