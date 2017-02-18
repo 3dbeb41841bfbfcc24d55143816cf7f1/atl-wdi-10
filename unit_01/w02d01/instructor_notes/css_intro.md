@@ -30,16 +30,12 @@ CSS can do the same for your website.  It can get your end user to come back, or
 
 this: **Blinkee.com**
 
-<br />
-
 A site that sells itmes that blink or glow in the dark
 ![blinkee.com a site that sells items that blink or glow in the dark](https://i.imgur.com/scpHM8k.png)
 
 <br />
 
 and this: **Spotify Rewind**
-
-<br />
 
 They received a Webby Award for the best aesthetic design
 ![Webby Award for best aesthetic design- spotify rewind](https://i.imgur.com/U4RkgTX.png)
