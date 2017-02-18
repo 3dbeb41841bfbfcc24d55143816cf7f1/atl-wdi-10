@@ -254,42 +254,49 @@ Here are some properties that you can set for an element
 Sometimes just targeting an element is not enough.  We can target other attributes of elements in our selectors.
 
 #### ids
-- `<div id="left-column"></div>`
-- `#left-column {}`
-- each id on a page must be unique
-- great for locations on a page that occur only once
+##### In your html
+`<div id="left-column"></div>`
+##### In your stylesheet
+`#left-column {
+	text-align: center;
+}`
+- like a driver's license, each id on a page must be unique
+- this is great for styles on a page that occur only once
 	- e.g. left column, contact form, etc
 
 #### classes
-- `<div class="large-module"></div>`
-- `.large-module {}`
-- each class on a page does not have to be unique
-- great for repeatable ideas
+##### In your html
+`<div class="large-module"></div>`
+`.large-module {
+	text-align: center;
+}`
+- like our current class, each class on a page does not have to be unique
+- this is great for repeatable ideas
 	- module
 		- e.g. ad unit, comment block, etc
 	- function
 		- e.g. active, important,etc
 
-![Imgur](http://i.imgur.com/ylb6WX9.gif)
+<br />
 
+![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
 - Add two more `p` tags.
 2. Give one `p` tag an id
 3. Give the other two `p` tags the same class
 4. Use just the ids and classes to style the `p` tag with the id differently from the ones with a class
 
+<br />
 
-<br>
+## Describe What "Cascade" Means
 
-## Describe "The Cascade"
+**Cascading Style Sheets** are set up so that you can have many properties affect the same element. Some of those properties may conflict with each other.
 
-Some properties of elements are passed down to their children. In general:
+	- The more specific the selector, the more precendence it will get
+	- `div.co p` will get more precendence than `p`
+	- Also inline styles will take precendence before styles in the head tag, which will take precendence over styles in separate style sheets.
 
-- Properties dealing with text are inherited by their children
-- Properties dealing with spacing are not inherited by their children
-- https://www.w3.org/TR/CSS2/propidx.html
-
-<br>
+<br />
 
 ![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
@@ -300,13 +307,13 @@ Some properties of elements are passed down to their children. In general:
 4. Style just the `section` tag to give its text some color
 5. Note that the `p` tag has also been affected
 
-<br>
+<br />
 
-## Describe how to combine various selectors 
+## Combining various selectors 
 
 Selectors can be more complex than just an element, id, or class.
 
-- You can have a set of rules affect multiple sections by listing them
+- You can have one set of rules affect multiple sections by listing them
 	- `p, #left-column {}`
 		- will style all `<p>` tags and whichever tag has and id of "left-column"
 1. You can combine attributes (i.e. tag, class, id) to narrow down how many elements are effected
