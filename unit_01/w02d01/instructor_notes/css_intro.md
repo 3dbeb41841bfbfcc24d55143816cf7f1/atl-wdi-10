@@ -296,6 +296,7 @@ Sometimes just targeting an element is not enough.  We can target other attribut
 - `div.main p` will get more precendence than `p`
 - Inline styles will take precendence before styles in the head tag, which will take 
 precendence over styles in separate style sheets.
+- Styles are read from top to bottom.  If there are styles defined lower in the stylesheet, the lower styles will take precendence. 
 
 <br />
 
@@ -364,7 +365,7 @@ Selectors can be more complex than just an element, id, or class.
 - Create a `div` tag with the class of `active`
 
 
-<br>
+<br />
 
 ## Describe Specificity
 
@@ -375,7 +376,7 @@ When an element is being styled by two rules at the same time, the browser calcu
 - In theory there should only be one or zero ids in each selector
 	- `#left-column #comments`
 		- do not need to filter by ancestor
-		- can just write `#comments`
+		- you can just write `#comments`
 
 #### If the number of ids in each rule's selector is the same, count the number of classes
 - Apply whichever rule has more classes in its selector
@@ -433,7 +434,8 @@ What type of CSS rule would take precidence?
 ![Imgur](http://i.imgur.com/WzTTdIe.jpg)
 ## Labtime
 ####Exercise #1
-[Add CSS to the Blog Mockup](../student_labs/css-lab/README.mkd)
+[Add CSS to the Blog Mockup](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/html-practice-and-review.md)
+[Blog mockup](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/mockup.png)
 
 
 
