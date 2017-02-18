@@ -49,35 +49,36 @@ They received a Webby Award for the best aesthetic design
 - [CSS3 is pretty powerful now-a-days and can do cool stuff](http://www.cssdesignawards.com/articles/10-cool-css-js-demos-tuts-to-apply-and-use/67/)
 - [CSS3D + HTML5](http://codepen.io/ge1doot/pen/GgOYoy)
 
-<br>
+<br />
 
-## YOU DO - Questions
+## YOU DO - Look up these Questions with your buddy (5m)
 
-- Describe 3 ways to add CSS to an app. Which is preferred? **(David + Sophia)**
-- Describe the 3 components of a CSS rule. **(Kiran + Michael)**
-- Describe `id` and `class` and use cases for each. **(Kristina + Alan)**
-- Explain specificity. **(Alejandra + Daniel)**
-- Describe 3 ways to combine CSS selctors. **(Matt + Audrey + Deb)**
+- Describe 3 ways to add CSS to an app. Which is preferred?
+- Describe the 3 components of a CSS rule.
+- Describe `id` and `class` and use cases for each.
+- Describe 3 ways to combine CSS selctors.
 
-<br>
+<br />
 
-## Define CSS and describe its use 
+## Define CSS
 
 **QUESTION**: Can anyone define CSS for us?
 
-HTML gives our site structure, but it doesn't do much in terms of how the site looks.  This is where CSS comes in. CSS stands for:
+As I stated earlier, HTML gives our site structure, but it doesn't do much in terms of how the site looks.  This is where CSS comes in. 
 
-- **Cascading** - We'll Define shortly
-- **Style** - making things pretty!
-- **Sheets** - it's just a sheet of text, not a program we write
+#### CSS stands for:
 
-<br>
+- **Cascading** - we will define this shortly
+- **Style** - making things elegant
+- **Sheets** - it is a sheet of text, not a program that we write
+
+<br />
 
 ## How to add CSS to your app
 
 **QUESTION**: What are 3 ways to add CSS to an app?
 
-- **A separate CSS file** - This is the best practice. It allows multiple HTML pages to access a single file and share same set of CSS rules. You'll add a link to the CSS file in the `head` of your HTML page.
+- **A separate CSS file** - This is the best practice. It allows multiple HTML pages to access a single file and share the same set of CSS rules. You'll add a link to the CSS file in the `head` of your HTML page.
 
 ```html
 <html>
@@ -85,59 +86,66 @@ HTML gives our site structure, but it doesn't do much in terms of how the site l
 		<link rel="stylesheet" type="text/css" href="mystyle.css">
 	</head>
 	<body>
-		
+		<p>CSS is fun!</p>
 	</body>	
 </html>	
 ```
 
 
-- **`<style></style>` tags** - You can add CSS rules to your HTML by adding `style` tags to the `head` of your HTML page. The rules would only be accessible by that HTML page.
+- **In the head of your document** with `<style></style>` tags - You can add CSS rules to your HTML by adding `style` tags to the `head` of your HTML page. These rules would only be accessible by that HTML page.
 
 ```html
 <html>
   <head>
     <style>
-	  p {
-		  color: red
-		}
-	</style>
+		  p {
+				color: red; // will change the text color to red
+		  }
+		</style>
   </head>
   <body>
-		
+  	<p>CSS is fun!</p>
   </body>	
 </html>	
 ```  
 	
-- **Inline styling** - This is when you add CSS rules directly to the HTML element. It's the least preferred way to write CSS. 
+- **Inline styling** - This is when you add CSS rules directly to the HTML element. You should never write CSS this way.  It makes it extremely difficult to debug.  And makes it difficult to keep your code dry.  
+
+- The only use case is HTML emails. 
 
 ```html
-<p style="color: red">Hello World!</p>
+<p style="color: red">CSS is fun!</p>
 ```
 
-<br>
+<br />
 
 ![](http://i.imgur.com/2BtC2Zx.gif)
 
 What are 3 ways to add CSS rules to your page? Which is the best practice?
 
-<br>
+<br />
 
-## Diagram the structure of CSS
+## The structure of CSS
 
 A CSS file is composed of many rules.  Each rule governs the appearance of certain elements.  The generalized form looks like:
 
 ```css
 selector {
-	property:value;
-	property:value;
-	property:value;
+	property: value; // also known as the declaration
+	property: value;
+	property: value;
 }
 ```
 
 Everything inside the curly braces is called the "declaration block"
+
+- **The selector**- is the HTML element we would like to style
+- **The declaration block**- surrounded by curly braces, the declaration block is filled with CSS rules you would like to apply
+- **The declaraion**- includes the property name and a value, and ends with a semicolon 
  
-<br>
-## Demonstrate how to apply rules to a specific tag
+<br />
+
+## Apply rules to a specific tag
 
 <details>
     <summary>In Slack, can someone create the CSS rule to give all my `p` tags a red Georgia font and a yellow background?</summary>
@@ -153,51 +161,68 @@ p {
 ```
 </details>
 
-
-
-
-
-<br>
+<br />
 
 ![](http://i.imgur.com/2BtC2Zx.gif)
 
 What are the 3 components of a CSS rule?
 
-<br>
+<br />
 
 
-## List some common element properties that can be styled
+## List some common element properties
 
 Here are some properties that you can set for an element
 
-####color
+#### color
 	
 - names
-	- blue, red, yellow, white, grey, black, green, orange, purple
+	- turquoise, red, yellow, white, grey, black, green, orange, purple
 	- http://www.crockford.com/wrrrld/color.html
-- value
-	- hexidecimal number (0-F), six places
-		- `#0088FF`
-	- https://color.adobe.com
+- values
+	- hexidecimal number #RRGGBB, (0-F), six places
+		- `#40e0d0;` // turquoise
+		- All values must be between 00 and FF.
+		- if you have 6 of the same, or repeating values, you can shorten the hex to 3 
+			- `#ffffff;` to `#fff;`
+	- rgb(red, green, blue)
+		- each parameter (red, green, and blue) defines the intensity of the color as an integer between 0 and 255.
+		- `rgb(64, 224, 208);` // turquoise
+	- rgba(red, green, blue, alpha) also has an `a` that stands for **alpha**
+		- The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque)
+	- hsl(hue, saturation %, lightness %)
+		- **Hue** is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue.
+		- **Saturation** is a percentage value; 0% means a shade of gray and 100% is the full color.
+		- **Lightness** is also a percentage; 0% is black, 100% is white.
+	- hsla(hue, saturation %, lightness %, alpha)
+		- The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+- Use https://color.adobe.com to find color schemes
+- It is recommended that you use no more than 5 colors on your site.  Too many colors can confuse the user.  So, be careful.
 
 #### background
 - color
-- url()
+- image
 
 #### font-size
-- measured in px (for now)
+- measured in px, ems, percents, rems
  
 #### font-family
-- System fonts
+##### System fonts
 	- Single word fonts
 		- Arial, Courier, Times, etc
 	- Multi word fonts must be placed in quotes
 		- "Times New Roman", "Arial Black", "Lucinda Console"
-	- Use http://www.cssfontstack.com/ to see what fonts are available on what operating systems
-- Generic fonts
+
+- Use http://www.cssfontstack.com/ to see which fonts are available on different operating systems
+- [Google fonts](https://fonts.google.com/)
+
+##### Generic fonts
 		- serif, sans-serif, cursive, fantasy, monospace.
-	- can have several font families as a value
-		- starts with first and goes down the line until it finds one it has
+
+- You can add several font families as a value
+	- It starts with first and goes down the line until it finds one it has
+	- And you should always add in a default font
 
 #### font-weight
 - normal, bold
