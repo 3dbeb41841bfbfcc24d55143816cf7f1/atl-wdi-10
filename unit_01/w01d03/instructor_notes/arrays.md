@@ -17,17 +17,22 @@ competencies: Programming
   - Loop over arrays using a `for` loop
   - Declare object literals
 
-# Intro
+# Hook
+In 2009, the **BBC** and the **British Museum** collaborated on a hugely successful radio series and book called “A History of the World in 100 Objects.” In 2014, the **Smithsonian** followed up with its “History of the World in 1,000 Objects.”  You can listen to the podcasts later, here: http://www.bbc.co.uk/programmes/b00nrtd2/episodes/downloads
 
-On Friday, you reviewed basic datatypes in Javascript. Strings, Integers, variables, etc. These are the building blocks of most programming languages. But you're limited in how high you can build without a good way of storing those datatypes. This is where `data structures` like Arrays and Objects are invaluable.
+“It is only in the world of objects that we have time and space,” T. S. Eliot wrote. Think of the marks that things — the wheel, the crucifix, the credit card or the computer chip — have made on civilization.  What objects or collection of items tell the story of your life?  Think about 5 items that define you.
+
+On Friday, we reviewed basic datatypes in Javascript. Strings, Integers, variables, etc. These are the building blocks of most programming languages. But you are limited in how much you can build without a good way of storing those datatypes. This is where `data structures` or collections like Arrays and Objects are invaluable.
+
+---
 
 ## Arrays - Demo (5 mins)
 
 An array is syntactically defined with an opening and close square brace `[ ]`. Between those braces we'll have pieces of data separated by commas.
 
-Arrays are great for:
+Arrays are used for:
 
-* Storing data
+* Storing data in a particular order
 * Enumerating data, i.e. using an index to find them
 * Quickly reordering data
 
