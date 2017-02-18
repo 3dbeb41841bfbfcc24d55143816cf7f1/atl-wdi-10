@@ -295,7 +295,7 @@ Sometimes just targeting an element is not enough.  We can target other attribut
 	- The more specific the selector, the more precendence it will get
 
 	`div.co p` will get more precendence than `p`
-	
+
 	- Also inline styles will take precendence before styles in the head tag, which will take precendence over styles in separate style sheets.
 
 <br />
