@@ -29,13 +29,13 @@ competencies: Programming
 Objects in JavaScript
 
 
-## Opening
+## Intro
 
 ### What is an object?
 
-* Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they're called a dictionary, in Ruby they're called a hash)
-* Like arrays, objects can hold multiple pieces of data of varying types; but unlike arrays, objects use named keys rather than ordered indices to order and access those pieces of data
+* Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they are called a dictionary, in Ruby they're called a hash).
 * In JavaScript, an object is a type of key-value store, or a way to group many pairs of keys and values together
+* Like arrays, objects can hold multiple pieces of data of varying types; but unlike arrays, objects use named keys rather than ordered indices to order and access those pieces of data
 
 Example: A car has properties, a type of engine, a color, a certain number of seats etc. Following the same logic, a JavaScript object may have **properties** and **values** for these properties.
 
@@ -62,8 +62,9 @@ var show = new String('jekyl') + '& mr hyde'
 
 #### Object literal syntax
 
-Strings are 'quotes', arrays are ['square braces'], objects follow the same lexical pattern but use `{curlyBraces: 'and are structured as pairs'}`, the `key` is before the colon, the `value` is after the colon.
-Like arrays, these key-value pairs will be comma separated!
+Strings are in 'quotes', arrays are in ['square braces'], objects follow the same lexical pattern but use `{curlyBraces: 'and are structured as key/value pairs'}`, the `key` is before the colon and the `value` is after the colon.
+
+Like arrays, these key-value pairs are comma separated!
 
 ```javascript
 var myObject = {};
@@ -77,71 +78,73 @@ You can think of a property on a JavaScript object as a type of variable that co
 
 ```javascript
 var person = {
-  name: "Colin"
+  name: "Danny"
 }
 
-person.name
-=> "Colin"
+person.name;
+=> "Danny"
 ```
 
-You can define or re-assign a property by assigning it a value using `=` as you would a normal variable.
+You can define or change a property by assigning it a value using `=` as you would a normal variable.
 
 ```javascript
 var person = {
-  name: "Colin"
+  name: "Danny"
 }
 
-person.name
-=> "Colin"
+person.name;
+=> "Danny"
 
-person.name = "Brendzel"
-person.name
-=> "Brendzel"
+person.name = "John";
+person.name;
+=> "John"
 ```
 
-## Creating an object with properties
+## Create an object with properties
 
-We are going to create an object `classroom` that contains properties `name` and `campus`:
+We are going to create an object `classroom` that contains the properties `name` and `campus`:
 
 ```javascript
 var classroom = {};
 => undefined
 
-classroom.name = "WDIr";
-=> "WDIr"
+classroom.name = "WDI ATL 9";
+=> "WDI ATL 9"
 
-classroom.campus = "The World!";
-=> "The World!"
+classroom.campus = "Atlanta!";
+=> "Atlanta!"
 
 classroom
-=> Object {name: "WDIr", campus: "The World!"}
+=> Object {name: "WDI ATL 9", campus: "Atlanta!"}
 ```
 
-#### Bracket notation
+### Bracket notation
 
 There is another way to set properties on a JavaScript object.
 
 ```javascript
-classroom["name"]   = "WDIr";
-classroom["campus"] = "Your house";
+classroom["name"]   = "WDI ATL 9";
+classroom["campus"] = "Atlanta!";
 ```
 
 This syntax can also be used to read properties of an object:
 
 ```javascript
 console.log(classroom["name"]);
-=> "WDIr";
+=> "WDI ATL 9";
 
-var property = "Your house";
+classroom.property = "Ponce City Market";
 
-console.log(classroom[property]);
-=> "Your house";
+console.log(classroom["property"]);
+=> "Ponce City Market";
 ```
+
+- You can use dot notation or bracket notation to set or change your properties.
 
 For more details see [MDN's Documentation on Property Accessors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors).
 
 
-#### Deleting properties
+### Deleting properties
 
 If you want to delete a property of an object (and by extension, the value attached to the property), you need to use the [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) operator:
 
