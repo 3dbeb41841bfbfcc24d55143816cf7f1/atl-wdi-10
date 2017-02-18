@@ -28,7 +28,7 @@ On Friday, we reviewed basic datatypes in Javascript. Strings, Integers, variabl
 
 ## Arrays - Demo (5 mins)
 
-An **array** is syntactically defined with opening and closing square braces `[ ]`. Between those braces we will add pieces of data separated by commas.
+An **array** is syntactically defined with opening and closing square brackets `[ ]`. Between those braces we will add pieces of data separated by commas.
 
 Arrays are used for:
 
@@ -43,7 +43,7 @@ var friends = ['Moe', 'Larry', 'Curly'];
 => ['Moe', 'Larry', 'Curly']
 ```
 
-Items in an array are stored in sequential order, and indexed starting at `0`(zero-based indexed) and ending at `length - 1` (since length is not zero-based, it starts at 1, so it is always 1 more than the size of the array).
+Items in an array are stored in sequential order, and indexed starting at `0` (zero-based indexed) and ending at `length - 1` (since length is not zero-based, length starts counting at 1, so it is always 1 more than the largest index in the array).
 
 ```javascript
 // First friend
@@ -62,17 +62,21 @@ var lastFriend = friends[friends.length - 1];
 We can even use strings like arrays: (literally array-like)
 
 ```javascript
-var friend = 'bobby bottleservice';
+var newFriend = 'bobby bottleservice';
+//=> undefined
+
 // pick out first character
-friend[0]
+newFriend[0]
 //=> 'b'
-friend.length
+
+newFriend.length
+//=> 19
 ```
 <br />
 
-## Working with Arrays - Codealong (15 mins)
+## Working with Arrays - Codealong (15m)
 
-Using the JavaScript Keyword `new`, is one way of creating arrays:
+Using the JavaScript `new` keyword, is one way of creating arrays:
 
 ```javascript
 var a = new Array();
@@ -93,19 +97,23 @@ a
 a.length;
 => 3
 ```
+- You can add or change items in an array via their index.  Call the array followed by the desired index in square brackets.
 
 A more convenient notation is to use an array literal:
 
 ```javascript
 var a = ['dog', 'cat', 'hen'];
 
+a
+=> ['dog', 'cat', 'hen']
+
 a.length;
 => 3
 ```
 
-#### Length property
+### Length property
 
-The `length` method works in an interesting way in Javascript. It is always one more than the highest index in the array.
+The `length` method works in an interesting way in Javascript. It is always one larger than the highest index in the array.
 
 So `array.length` isn't necessarily the number of items in the array. Consider the following:
 
@@ -117,42 +125,45 @@ a.length; // 101
 **Remember**: the length of the array is one more than the highest index.
 
 
-EXERCISE: Make an array of your own with 6 items and save it to a variable `myArray`
+**EXERCISE**: Take the next 2 minutes to create an array of the five items that define you and save them to the variable `myLife`
 
 
-#### Getting data from an array
+### Getting data from an array
 
-If you query a non-existent array index, you get `undefined`:
+If you query a non-existent array index, it will return `undefined`:
 
 ```javascript
 var a = ['dog', 'cat', 'hen'];
 => undefined
 
+typeof a[1];
+=> 'string'
+
 typeof a[90];
 => undefined
 ```
 
-<br>
+<br />
 
-EXERCISE: 10 minutes As for the 90th value in your array. Ask for the first item in your array. Ask for the last item in your array. Bonus: Can you come up with a way of asking for a random index (whole number) between zero and the length of your array? HINT: Math.random and Math.floor
+**EXERCISE**: Take 10 minutes, to get these values in your array: the first item in your array, the last item in your array. Bonus: Can you print out all of the items in your array?  Can you come up with a way of getting a random item/index (whole number) between zero and the length of your array? HINT: Math.random() and Math.floor()
 
 
-#### Array helper methods
+### Array helper methods
 
-Arrays come with a number of methods. Here's a list of some popular helpers:
+Arrays come with a number of helper methods. Here's a list of some popular helpers:
 
 > Note: You might want to demonstrate a few of these.
 
 - `a.toString()` - Returns a string with the `toString()` of each element separated by commas.
 
-- `a.pop()` - Removes and returns the last item.
+- `a.pop()` - Removes and returns the last item in your array.
 
-- `a.push(item1, ..., itemN)` - `Push` adds one or more items to the end.
+- `a.push(item1, ..., itemN)` - `.push()` adds one or more items to the end of your array.
 
-- `a.reverse()` - Reverse the array.
+- `a.reverse()` - Reverses the array.
 
-- `a.shift()` - Removes and returns the first item.
+- `a.shift()` - Removes and returns the first item in your array.
 
-- `a.unshift([item])` - Prepends items to the start of the array.
+- `a.unshift('item')` - Prepends items to the beginning of your array.
 
 Remember, though, you'll never remember _every_ method.  Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for particular objects.
