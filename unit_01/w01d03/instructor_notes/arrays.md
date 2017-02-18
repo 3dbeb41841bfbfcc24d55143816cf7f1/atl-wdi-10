@@ -19,7 +19,7 @@ competencies: Programming
 
 # Intro
 
-Yesterday you reviewed basic datatypes in Javascript. Strings, Integers, variables, etc. These are the building blocks of most programming languages. But you're limited in how high you can build without a good way of storing those datatypes. This is where `data structures` like Arrays and Objects are invaluable.
+On Friday, you reviewed basic datatypes in Javascript. Strings, Integers, variables, etc. These are the building blocks of most programming languages. But you're limited in how high you can build without a good way of storing those datatypes. This is where `data structures` like Arrays and Objects are invaluable.
 
 ## Arrays - Demo (5 mins)
 

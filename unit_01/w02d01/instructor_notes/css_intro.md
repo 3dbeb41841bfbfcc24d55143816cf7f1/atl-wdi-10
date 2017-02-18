@@ -22,6 +22,22 @@
 - Fist to Five
     - 1 - Iffy on CSS
     - 5 - Rockstar 
+
+#### Why CSS?
+I have been living in my apartment for a little over a year.  I always thought that my stay in Atlanta was not long-term, and therefore, I never decorated, I never put anything on our walls.  However, when I found out about this GA gig, I decided that it was time to change that fact.  We painted our living room wall turqoise.  I bought/put up art and pictures.  I added a wall hanging above our bed.  And suddenly, I started wanting to spend more time in my place.  It felt more like home, and therefore, made Atlanta feel more like home.  
+
+CSS can do the same for your website.  It can get your end user to come back, or get you funding for your site.  It can make the difference between 
+
+this
+#### Blinkee.com
+A site that sells itmes that blink or glow in the dark
+![blinkee.com a site that sells items that blink or glow in the dark](https://i.imgur.com/scpHM8k.png)
+
+and this 
+#### Spotify Rewind
+They received a Webby Award for the best aesthetic design
+![Webby Award for best aesthetic design- spotify rewind](https://i.imgur.com/U4RkgTX.png)
+
 - [CSS3 is pretty powerful now-a-days and can do cool stuff](http://www.cssdesignawards.com/articles/10-cool-css-js-demos-tuts-to-apply-and-use/67/)
 - [CSS3D + HTML5](http://codepen.io/ge1doot/pen/GgOYoy)
 
