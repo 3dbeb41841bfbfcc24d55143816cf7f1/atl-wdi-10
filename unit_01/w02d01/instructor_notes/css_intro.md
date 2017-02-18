@@ -310,14 +310,14 @@ precendence over styles in separate style sheets.
 
 <br />
 
-## Combining various selectors 
+## Combining selectors 
 
 Selectors can be more complex than just an element, id, or class.
 
 - You can have one set of rules affect multiple sections by listing them
 	- `p, #left-column {}`
-		- will style all `<p>` tags and whichever tag has and id of "left-column"
-1. You can combine attributes (i.e. tag, class, id) to narrow down how many elements are effected
+		- will style all `<p>` tags and whichever tag has the id of "left-column"
+1. You can combine attributes (i.e. tags, classes, ids) to narrow down how many elements are effected
 	- `a.important {}`
 		- styles all anchor tags that also have an "important" class
 			- `<a class="important"></a>`
@@ -331,10 +331,12 @@ Selectors can be more complex than just an element, id, or class.
 	- `div#left-column {}`
 		- you could combine tags and ids, but there's only ever going to be one tag with an id of "left-column"
 		- it's not like you would have a group of tags with the same id, from which you want to select only those that are `div` tags
-		- might as well just write `#left-column {}` and leave out the div
+		- it is more simple to just write `#left-column {}` and leave out the div
 1. You can filter out tags based on their ancestors
 	- `main p {}`
 		- will style all `<p>` tags that are descendants of `<main>` tags
+
+		<br />
 		
 		```html
 		<main>
@@ -348,6 +350,8 @@ Selectors can be more complex than just an element, id, or class.
 		  </section>
 		</main>
 		```
+
+<br />
 		
 ![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
