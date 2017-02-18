@@ -22,35 +22,40 @@ In 2009, the **BBC** and the **British Museum** collaborated on a hugely success
 
 “It is only in the world of objects that we have time and space,” T. S. Eliot wrote. Think of the marks that things — the wheel, the crucifix, the credit card or the computer chip — have made on civilization.  What objects or collection of items tell the story of your life?  Think about 5 items that define you.
 
-On Friday, we reviewed basic datatypes in Javascript. Strings, Integers, variables, etc. These are the building blocks of most programming languages. But you are limited in how much you can build without a good way of storing those datatypes. This is where `data structures` or collections like Arrays and Objects are invaluable.
+On Friday, we reviewed basic datatypes in Javascript. Strings, Integers, variables, etc. These are the building blocks of most programming languages. But you are limited in how much you can build without a good way of storing those datatypes. This is where 'data structures' or collections like **Arrays** and **Objects** are invaluable.
 
 ---
 
 ## Arrays - Demo (5 mins)
 
-An array is syntactically defined with an opening and close square brace `[ ]`. Between those braces we'll have pieces of data separated by commas.
+An **array** is syntactically defined with opening and closing square braces `[ ]`. Between those braces we will add pieces of data separated by commas.
 
 Arrays are used for:
 
 * Storing data in a particular order
-* Enumerating data, i.e. using an index to find them
+* Enumerating over data, i.e. using a zero-based index to find them
 * Quickly reordering data
 
-Arrays, ultimately, are a data structure that is similar in concept to a comma separated list. Each item in an array is called an element, and the collection can contain data of the same or different types. In JavaScript, they can dynamically grow and shrink in size.
+An array is ultimately, a data structure, similar in concept to a comma separated list. Each item in an array is called an element, and the collection can contain data of the same or different types. In JavaScript, Arrays can dynamically grow and shrink in size.
 
 ```javascript
 var friends = ['Moe', 'Larry', 'Curly'];
 => ['Moe', 'Larry', 'Curly']
 ```
 
-Items in an array are stored in sequential order, and indexed starting at `0` and ending at `length - 1`.
+Items in an array are stored in sequential order, and indexed starting at `0`(zero-based indexed) and ending at `length - 1` (since length is not zero-based, it starts at 1, so it is always 1 more than the size of the array).
 
 ```javascript
 // First friend
 var firstFriend = friends[0];
 => 'Moe'
+
 // Get the last friend
-var lastFriend = friends[2]
+var lastFriend = friends[2];
+=> 'Curly'
+
+// An alternative way to get the last friend
+var lastFriend = friends[friends.length - 1];
 => 'Curly'
 ```
 
@@ -63,6 +68,7 @@ friend[0]
 //=> 'b'
 friend.length
 ```
+<br />
 
 ## Working with Arrays - Codealong (15 mins)
 
