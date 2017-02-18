@@ -226,19 +226,19 @@ var classroom = {
 
 ### Enumerating properties of an object
 
-There are three native ways to list the properties of an object we're just going to explore the `for ... in loop`:
+There are three native ways to list the properties of an object we're just going to explore the `for ... in` loop:
 
 * **for...in loops** This method traverses all enumerable properties of an object and its prototype chain
-* **Object.keys(o)**  This method returns an array with all the own (not in the prototype chain) enumerable properties' names ("keys") of an object o.
-* **Object.getOwnPropertyNames(o)** This method returns an array containing all own properties' names (enumerable or not) of an object o.
+* **Object.keys(o)**  This method returns an array with all of the enumerable property's names/the keys of the object o.
+* **Object.getOwnPropertyNames(o)** This method returns an array containing all of the enumberable property's names/the keys of the object o.
 
-**Loop over an objects properties**
+**Loop over an object's properties**
 
 You can use the bracket notation with for...in to iterate over all the enumerable properties of an object.
 
-If you're confused by the difference between `==` and `===` review MDN's notes on [equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality_()) and [strict equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Identity_strict_equality_())
+If you are still confused by the difference between `==` and `===` review MDN's notes on [equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality_()) and [strict equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Identity_strict_equality_())
 
-## Independent Monkey Exercise (20 minutes)
+## Independent Monkey Exercise (20m)
 
 - Create a `monkey` object, which has the following properties:
 
@@ -248,16 +248,16 @@ If you're confused by the difference between `==` and `===` review MDN's notes o
 
   And the following methods:
 
-  - `eatSomething(thingAsString)`
-  - `introduce`: producers a string introducing itself, including its name, species, and what it's eaten
+  - `eatSomething(monkeyFood)`
+  - `introduce`: produces a string introducing itself, including its name, species, and what it has eaten
 
 - Create 3 monkeys total. Make sure all 3 monkeys have all properties set and methods defined.
 
-- Exercise your monkeys by retrieving their properties and using their methods. Practice using both syntaxes for retrieving properties (dot notation and brackets).
+- Exercise your monkeys by retrieving their properties and using their methods. Practice using both syntaxes (dot notation and bracket notation) for retrieving properties.
 
-## Conclusion (5 mins)
+## Conclusion (5m)
 
-We will use objects in JavaScript every day, and you will have plenty of time to practice creating and using objects in Javascript. There are a lot of resources available on the web for you to dive deeper, but the most detailed and understandable one is probably MDN.
+We will continue to use JavaScript objects every day, and you will have plenty of time to practice creating and using objects in JavaScript. There are a lot of resources available on the web for you to dive deeper, but the most detailed and understandable one is probably on MDN- Mozilla Developer Network.
 
 - [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 - [Intro to Object-Orientated Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
