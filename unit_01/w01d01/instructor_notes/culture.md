@@ -9,7 +9,7 @@
 - Larissa Boyce - Outcomes
 
 ## Roles (Danny)
-1. Instructor Lead
+1. Instructional Lead
   - Lesson Blocks
   - Code-alongs
   - Labs
@@ -67,7 +67,7 @@ https://vimeo.com/85040589
   - After class hours
   - COLLABORATE!!
 
-## Student Expectations (Matt)
+## Student Expectations (Gabby)
 1. Be Present
   - Attendance at 9:00 AM
   - Pay attention
