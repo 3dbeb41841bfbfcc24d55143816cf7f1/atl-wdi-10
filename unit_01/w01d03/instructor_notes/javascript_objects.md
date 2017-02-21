@@ -4,7 +4,7 @@ type: lesson
 duration: 1hr
 creator:
   name: Alex Chin, Gerry Mathe, Sean Shannon
-  adapted for WDIr by: Colin Hart
+  adapted for WDI ATL 9 by: Maren Woodruff
   city: London, DC
 competencies: Programming
 ---
@@ -39,24 +39,7 @@ Objects in JavaScript
 
 Example: A car has properties, a type of engine, a color, a certain number of seats etc. Following the same logic, a JavaScript object may have **properties** and **values** for these properties.
 
-
-<!-- Primitives are values, they have no properties. In JavaScript there are 5 primitive types: undefined , null , boolean , string and number. **Everything in JavaScript is an object**.
-
-
-EXERCISE: Run the following commands. Is this what you expected? Respond in slack why or why not?
-
-```
-typeof new Number(5)
-typeof new String('jekyl')
-```
-
-
-SideNote: this is a little misleading because we have see that string and number both of helper methods `string.length` and `(number).toString()` for example. For now, just know that javascript is doing a bit of coercion here to allow us to run the following:
-
-```
-var ten = new Number(5) + 5
-var show = new String('jekyl') + '& mr hyde'
-``` -->
+<br />
 
 ### Collections of name-value pairs
 
@@ -236,9 +219,11 @@ There are three native ways to list the properties of an object we're just going
 
 You can use the bracket notation with for...in to iterate over all the enumerable properties of an object.
 
-If you are still confused by the difference between `==` and `===` review MDN's notes on [equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality_()) and [strict equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Identity_strict_equality_())
+** If you are still confused by the difference between `==` and `===` review MDN's notes on [equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality_()) and [strict equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Identity_strict_equality_())**
 
-## Independent Monkey Exercise (20m)
+<br />
+
+## Independent Monkey Exercise (15m)
 
 - Create a `monkey` object, which has the following properties:
 
@@ -251,9 +236,9 @@ If you are still confused by the difference between `==` and `===` review MDN's 
   - `eatSomething(monkeyFood)`
   - `introduce`: produces a string introducing itself, including its name, species, and what it has eaten
 
-- Create 3 monkeys total. Make sure all 3 monkeys have all properties set and methods defined.
+- Create 3 monkeys. Make sure all 3 monkeys have all of the properties set and the methods defined.
 
-- Exercise your monkeys by retrieving their properties and using their methods. Practice using both syntaxes (dot notation and bracket notation) for retrieving properties.
+- Exercise your monkeys by retrieving their properties and using their methods. Practice using dot notation and bracket notation for retrieving these properties.
 
 ## Conclusion (5m)
 
