@@ -5,7 +5,7 @@ duration: "1:30"
 creator:
   name: Colin Hart
 edited: 
-  name: Marc Wright
+  name: Maren Woodruff
 competencies: Programming
 ---
 
@@ -16,10 +16,9 @@ competencies: Programming
 * Manipulate existing elements in the DOM using Vanilla JS
 * Conceptualize load order in the Browser and how we account for it
 
+<br />
 
-<br>
-
-## Document Object Model (5 min)
+## Document Object Model (5m)
 
 The [**D**ocument **O**bject **M**odel](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 is a programming interface for HTML.
@@ -59,7 +58,7 @@ html
 
 Let's create a web page and begin to inspect its structure.
 
-<br>
+<br />
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
@@ -94,26 +93,7 @@ Here is the DOM tree for the above HTML document:
 
 ![DOM Tree](https://i.imgur.com/8goR1EO.png)
 
-<br>
-
-## Accessing the document (10 min)
-
-Each web page loaded in the browser has its own `document` object. The Document interface serves as an entry point to the web page's content.
-
-**WE DO:** In the console, type `document.` and check out the available methods.
-
-- `document.head`
-- `document.body`
-- `document.lastModified`
-- `document.title`
-
-##### What is the Window Object?
-
-- Each browser window or tab
-- Location property is the URL of the page.
-- In the console, type `window.` an check out the available methods.
-- Demo `window.location`. Also, point out local storage.
-
+<br />
 
 ### Everything is a Node
 In the HTML DOM (Document Object Model), everything is a node:
@@ -124,7 +104,7 @@ In the HTML DOM (Document Object Model), everything is a node:
 * Text inside HTML elements are text nodes
 * Comments are comment nodes
 
-<br>
+<br />
 
 ![YOU DO](http://i.imgur.com/ylb6WX9.gif)
 
@@ -135,30 +115,29 @@ Each group will work inside of breakout rooms. You'll research and test each met
 
 We'll then come back together as class. Each group will briefly demo and explain what each method does. 
 
-* **Search** (Aaron, Adam, Adam, Brad)
+* **Search** 
   * document.getElementById
   * document.getElementsByClassName
   * document.getElementsByName
   * document.querySelector
-* **Creation** (Dana, Eric, Farooq, Jason)
+* **Creation** 
   * document.createElement
   * node.style
-* **Traversal** (Jesse, Pedro, Rachel, Sean)
+* **Traversal** 
   * node.childNodes
   * node.children
   * node.firstChild
-* **DOM editing** (Tom, Zach, Zarela)
+* **DOM editing** 
   * node.appendChild
   * node.removeChild
   * node.innerText
   * node.setAttribute
-* **Node editing** (JJ, Kelly, Richard)
+* **Node editing** 
   * node.innerHTML
   * node.id
   * node.classList
 
-
-<br>
+<br />
 
 ## How can we run JS in the browser?
 
@@ -166,7 +145,7 @@ We'll then come back together as class. Each group will briefly demo and explain
 
 We can run JS inside of `<script> </script>` tags in the `<head>` tag of an html document.
 
-##### Exercise: 10 min I'll demonstrate in front of you first, and then you can try on your own.
+#### Exercise: 10 min I'll demonstrate in front of you first, and then you can try on your own.
 
 Open up the HTML file from earlier. Inside of the `<head>` tag write a script tag with the following JS inside of it.
 
@@ -181,7 +160,7 @@ Open up the HTML file from earlier. Inside of the `<head>` tag write a script ta
 
 To run this code open index.html in Chrome. You can click and drag. Or, in the same directory as index.html, you can run open index.html.
 
-<br>
+<br />
 
 #### Link an external JS file, similar to how we linked our css.
 
