@@ -17,6 +17,7 @@ competencies: Computer Usage
     - Class Channel
     - Party time Channel
     - Debugging Channel
+    - Parking Lot Channel
   - Walkthrough the Class Wiki
   - Set up classroom directory structure
   - Understand how to use the Spotlight app
@@ -38,7 +39,8 @@ There are five channels we'll use:
 1. We'll run our lessons in the `#wdi-9-atl-classroom` channel. After class, the TA will come online in this channel.
 2. The `#wdi-9-atl-debugging` channel is probably the most important channel of the four. Throughout this course, whether it's during class, during homework, late-late at night, on the weekends, whenever, you're going to run into errors in your code.
 3. `#wdi-9-atl-outcomes` will be where your outcomes lessons happen with Coach Seth and Coach Eric.
-4. The `#wdi-9-atl-partytime` channel is far all non-class related conversations to occur.
+4. The `#wdi-9-atl-partytime` channel is for all non-class related conversations to occur.
+5. The `#wdi-9-atl-parkinglot` channel is for class-related conversations that are more in-depth than class time allows for.
 
 
 #### `#wdi-9-atl-debugging` channel
