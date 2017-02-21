@@ -168,25 +168,26 @@ Instead of `<link>` we'll keep using our script tag. And we're also going to mov
 
 #####Exercise: 10 min
 
-1. touch a file called script.js
-2. let's move the JS code that you wrote inside of the script tag in index.html to your script.js file. However, we're change it up a bit and add the message to the DOM via a new Element like so:
+1. Touch a file called script.js
+2. Let's move the JS code that you wrote inside of the script tag in the index.html, to your script.js file. However, we will change it up a bit and add our message to the DOM via a new Element:
 
     ```javascript
     alert(`Hi! What's your favorite food?`);
     var response = prompt();
     alert(`I wish I liked ${response} too. It's sad being a computer :( `);
 
-    var newElement = document.createElement("P");
+    var newElement = document.createElement("p");
     newElement.textContent = `I wish I liked ${response} too. It's sad being a computer :( `;
   document.body.appendChild(newElement);    
 ```
     
-3. In the `head` of `index.html` change your script tag to look like this:
+3. In the `head` of the `index.html` change your script tag to look like this:
 	
 	```html
 	<script src='script.js'></script>
 	```
    This is going to load our js file into the browser.
+
 4. Move your script tag to the line just above the closing `</head>` tag
 
 What error are we getting? Why?
@@ -195,23 +196,23 @@ What error are we getting? Why?
 
 <br>
 
-#### load order
+#### Load Order
 
 Here's what happens when a browser loads a website:
 
 1. It makes a request for and fetches the HTML page (e.g. index.html)
-2. Starts parsing the HTML i.e. building the dom.
+2. It starts parsing the HTML, i.e. building the dom.
 3. The parser sees a `<script>` tag referencing an external script file.
-4. The browser makes a second request for the script file. Meanwhile, the parser stops and and waits. This called Blocking.
-5. Once the script is downloaded and executed the parser continues parsing the rest of the HTML document.
+4. The browser makes a second request for the script file. Meanwhile, the parser stops and and waits. This called **Blocking**.
+5. Once the script is downloaded and executed, the parser continues parsing the rest of the HTML document.
 
-There are several more advanced techniques for loading our JS but for now we can just make sure our script tag is at the end of the html so the DOM loads before our script runs.
+There are several more advanced techniques for loading our JS, but for now we can just make sure our script tag is at the end of our html so the DOM loads before our script runs.  You should therefore, put the script tags just before your closing body tag.
 
-<br>
+<br />
 
 #### window.onload
 
-There is a pattern we can follow to help our page load properly and execute in the right order.
+There is a pattern we can follow to help our page load properly, and execute in the right order.  Although we should still keep the script tags where they currently are.
 
 We can surround our Javascript in a function called `window.onload = function() {}`. This function will wait until the entire window/dom is loaded before allowing any of our Javascript to run.
 
@@ -226,8 +227,7 @@ window.onload = function() {
 
 Refresh your window and make sure your script is still running!
 
-<br>
-
+<br />
 
 ![Labtime](http://i.imgur.com/WzTTdIe.jpg)
 
@@ -235,11 +235,11 @@ Refresh your window and make sure your script is still running!
 
 ##### Exercise #1 - GA DOM Mod
 
-[GA Dom Instructions (using Vanilla Javascript)](../student_labs/ga_dom.md)
+[GA Dom Instructions (using Vanilla Javascript)](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/ga_dom.md)
 
 ##### Exercise #2 - Vanilla JS
 
-Now that you've seen all of these methods and have a since of what the Vanilla JS can do! Open up the directory `/student_labs/ex_vanilla_dom`. Follow the prompt.md to Write the vanilla JS methods necessary to complete each `alert` step in js/script.js
+Now that you have seen all of these methods and have a sense of what Vanilla JS can do! Open up the directory `/student_labs/ex_vanilla_dom`. Follow the prompt.md to Write the vanilla JS methods necessary to complete each `alert` step in the js/script.js
 
 ## References
 
