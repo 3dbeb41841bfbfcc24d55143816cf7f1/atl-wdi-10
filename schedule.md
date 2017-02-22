@@ -138,7 +138,7 @@
 <td><a href="https://github.com/ATL-WDI-Curriculum/big-goal-and-culture">Big Goal/Culture</a></td>
 <td>Morning Exercise</td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/css_intro_morning_exercise.md">Morning Exercise</a></td>
-<td>Morning Exercise</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/02-24-17-homework-review-and-typing-exercises.md">Morning Exercise</a></td>
 </tr>
 <tr>
 <td><strong>Mod 1</strong></td>
@@ -174,15 +174,11 @@
 <td><strong>Homework</strong></td>
 <td><a href="https://github.com/sf-wdi-27-28/command-line-mystery">Command Line</a></td>
 <td>Homework</td>
-<td>Homework</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/seven_stages_of_software_craftsmanship.md">Homework</a></td>
 <td>Homework</td>
 </tr>
 </tbody></table>
 
-
-
-
-    
 
 ## Links
 
