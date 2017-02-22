@@ -15,4 +15,4 @@ http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf
 
 ### Discover Dev Tools
 
-Work through this tutorial on Code School: https://www.codeschool.com/courses/discover-devtools
+Work through this tutorial on Code School: https://www.coxdeschool.com/courses/discover-devtools
