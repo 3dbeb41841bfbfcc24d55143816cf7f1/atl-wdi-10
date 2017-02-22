@@ -42,7 +42,7 @@ $ git --version
 4. Run each of the following commands in the terminal
 (substituting in your personal information as appropriate).
 
-```bash
+    ```bash
 git config --global user.name "arbitraryUsername"
 git config --global user.email "your_github_email@example.com"
 ```
@@ -52,7 +52,7 @@ $ git config --get user.name
 ```
     - will output your name
 
-    ```
+    ```bash
 $ git config --get user.email
 ```
     - will output your email
@@ -60,7 +60,7 @@ $ git config --get user.email
 
 5. To check to see if you have set up an ssh key, run this command
 
-    ```
+    ```bash
 $ ls ~/.ssh/id_rsa
 ```
     - if you have, it will output '/Users/[something]/.ssh/id_rsa'

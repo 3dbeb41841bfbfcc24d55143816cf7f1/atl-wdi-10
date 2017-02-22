@@ -37,11 +37,11 @@ HTML is the skeleton of a website. It is the *structured content* of the website
 
 ## YOU DO - Questions
 
-- What are self-closing tags? Give 3 examples. **(David + Sophia)**
-- Describe an HTML tag and it's components. **(Kiran + Michael)**
-- What are `link` and `script` tags used for? **(Kristina + Alan)**
-- What are the 4 tags that a basic html page must have. **(Alejandra + Daniel)**
-- What is Accessibility? Provide 2 examples of HTML tags that reflect this concept. **(Matt + Audrey + Deb)**
+- What are self-closing tags? Give 3 examples. 
+- Describe an HTML tag and it's components.
+- What are `link` and `script` tags used for?
+- What are the 4 tags that a basic html page must have.
+- What is Accessibility? Provide 2 examples of HTML tags that reflect this concept. 
 
 <br>
 
