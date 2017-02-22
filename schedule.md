@@ -173,7 +173,7 @@
 <tr>
 <td><strong>Homework</strong></td>
 <td><a href="https://github.com/sf-wdi-27-28/command-line-mystery">Command Line</a></td>
-<td>Homework</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/02-22-17-git-practice-and-accessibility-reading.md">Homework</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/seven_stages_of_software_craftsmanship.md">Homework</a></td>
 <td>Homework</td>
 </tr>
