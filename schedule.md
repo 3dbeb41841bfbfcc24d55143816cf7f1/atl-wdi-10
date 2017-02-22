@@ -137,14 +137,14 @@
 <td><strong>WarmUp</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/big-goal-and-culture">Big Goal/Culture</a></td>
 <td>Morning Exercise</td>
-<td>Morning Exercise</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/css_intro_morning_exercise.md">Morning Exercise</a></td>
 <td>Morning Exercise</td>
 </tr>
 <tr>
 <td><strong>Mod 1</strong></td>
 <td>Big Culture</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/git_github.md">Intro to Git + Github</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/css-flexbox">CSS Box Model</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/css-box-model">CSS Box Model</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/local-and-remote-git">Flexbox</a></td>
 
 </tr>
@@ -152,7 +152,7 @@
 <td><strong>Mod 2</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/student-laptop-requirements-and-setup">Laptop Requirements</td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/git_github.md">Intro to Git + Github</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/css-responsive">CSS Specificity</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/css-selectors">CSS Specificity & Selectors</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/bootstrap-intro
 ">Bootstrap</a></td>
 </tr>
@@ -160,7 +160,7 @@
 <td><strong>Mod 3</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/command-line">Intro to CLI</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/html-dom">HTML + DOM</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/bootstrap-intro">Responsive CSS</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/css-responsive">Responsive CSS</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/local-and-remote-git">Intro to JS</a></td>
 </tr>
 <tr>
