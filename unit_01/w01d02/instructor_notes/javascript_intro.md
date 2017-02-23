@@ -49,7 +49,9 @@ creator:
 
 ![Klimt's, The Kiss](https://i.imgur.com/1EOSuCm.jpg)
 
-I am a huge [Gustav Klimt](https://i.imgur.com/1EOSuCm.jpg) fan.  I actually created a reproduction of this piece, The Kiss, for our turquoise living room wall.  I also love puzzles.  It's part of why I love development, as I think of every problem as a puzzle and work from there, figuring out bite sized pieces as I go along.  My family gave me this puzzle for Christmas, which combines two of my loves.
+<br />
+
+I am a huge [Gustav Klimt](https://i.imgur.com/1EOSuCm.jpg) fan.  I actually created a reproduction of this piece, The Kiss, for our turquoise living room wall.  I also love puzzles.  This is part of why I love development, as I think of every problem as a puzzle and work on bite-sized pieces as I go along.  My family gave me this puzzle for Christmas, combining two of my loves.
 
 Today, we are going to look at primitive data types in JavaScript, of which there are 6- strings, booleans, numbers, null, undefined and symbols.  We will continue onto more complex data types on Monday.
 
@@ -61,7 +63,7 @@ Take 10 minutes and read through this:
 
 http://eloquentjavascript.net/01_values.html
 
-**Give me a thumbs up in Slack when you're done.**
+**Give me a thumbs up when you're done.**
 
 <br />
 
