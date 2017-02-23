@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf686211-1aa0-479b-a342-08fc8b4a4c0a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/a_smarter_way_to_learn_js_ch_1_through_30.md" afterPath="$PROJECT_DIR$/homework/a_smarter_way_to_learn_js_ch_1_through_30.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedule.md" afterPath="$PROJECT_DIR$/schedule.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,8 +26,21 @@
         <entry file="file://$PROJECT_DIR$/schedule.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="588">
-                <caret line="174" column="88" lean-forward="true" selection-start-line="174" selection-start-column="88" selection-end-line="174" selection-end-column="88" />
+              <first_editor relative-caret-position="660">
+                <caret line="177" column="140" lean-forward="false" selection-start-line="177" selection-start-column="140" selection-end-line="177" selection-end-column="140" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a_smarter_way_to_learn_js_ch_1_through_30.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework/a_smarter_way_to_learn_js_ch_1_through_30.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="255">
+                <caret line="17" column="58" lean-forward="false" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -38,7 +53,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="435">
-                <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+                <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -84,6 +99,7 @@
         <option value="$PROJECT_DIR$/homework/seven_stages_of_software_craftsmanship.md" />
         <option value="$PROJECT_DIR$/homework/02-24-17-homework-review-and-typing-exercises.md" />
         <option value="$PROJECT_DIR$/homework/02-22-17-git-practice-and-accessibility-reading.md" />
+        <option value="$PROJECT_DIR$/homework/a_smarter_way_to_learn_js_ch_1_through_30.md" />
         <option value="$PROJECT_DIR$/schedule.md" />
       </list>
     </option>
@@ -265,12 +281,12 @@
       <updated>1487187540471</updated>
       <workItem from="1487187542072" duration="162000" />
       <workItem from="1487187853829" duration="17300000" />
-      <workItem from="1487794588578" duration="3641000" />
+      <workItem from="1487794588578" duration="4831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23180000" />
+    <option name="totallyTimeSpent" value="24370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -537,7 +553,18 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="435">
-            <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/a_smarter_way_to_learn_js_ch_1_through_30.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="17" column="58" lean-forward="false" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
             <folding />
           </first_editor>
           <second_editor />
@@ -547,8 +574,8 @@
     <entry file="file://$PROJECT_DIR$/schedule.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="588">
-            <caret line="174" column="88" lean-forward="true" selection-start-line="174" selection-start-column="88" selection-end-line="174" selection-end-column="88" />
+          <first_editor relative-caret-position="660">
+            <caret line="177" column="140" lean-forward="false" selection-start-line="177" selection-start-column="140" selection-end-line="177" selection-end-column="140" />
             <folding />
           </first_editor>
           <second_editor />
