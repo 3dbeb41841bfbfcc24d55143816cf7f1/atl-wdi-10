@@ -189,11 +189,15 @@
 
 ### Supplemental Reading/Knowledge for week 1
 - [Khan Academy- HTML/CSS](https://www.khanacademy.org/computing/computer-programming/html-css)
-- [Khan Academy- HTML/JS](https://www.khanacademy.org/computing/computer-programming/html-css-js)
-- [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
-- [Atlassian Git Tutorial](https://www.atlassian.com/git)
+- [Code Academy- HTML/CSS](https://www.codecademy.com/learn/web)
+- [Code Academy- CSS Overview](https://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b)
+- [Code Academy- CSS Coding with Style](https://www.codecademy.com/courses/css-coding-with-style/0/1)
+- [Code Academy- CSS Positioning](https://www.codecademy.com/courses/web-beginner-en-6merh/4/1)
 - [CSS Specificity](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
 - [Level-up CSS Tutorial](https://leveluptutorials.com/tutorials/css-tutorials)
+- [Atlassian Git Tutorial](https://www.atlassian.com/git)
+- [Khan Academy- HTML/JS](https://www.khanacademy.org/computing/computer-programming/html-css-js)
+- [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
 
 ## Links
 
