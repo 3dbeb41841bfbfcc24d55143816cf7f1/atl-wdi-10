@@ -33,10 +33,10 @@ Objects in JavaScript
 
 ### What is an object? (5m)
 
-I was going to intro this lesson by discussing Ariel's Secret Grotto of human objects, but decided just to continue on the them that began in the last lesson...  In the last lesson, I had you think of 5 objects that define you.  You added these items to an array and were able to iterate over them/console.log them.  But there wasn't any detail given about the items, we just stated their names.  Objects can help us out with that.
+I was thinking about introing this lesson by discussing Ariel's Secret Grotto of human objects, but decided just to continue on the them that I began in the last lesson...  In the last lesson, I asked you think about 5 objects that define you.  You added these items to an array and were able to iterate over them/console.log them.  But there wasn't any detail given about the items, we just stated their names.  Objects can help us out with that.
 
-* Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they are called a dictionary, in Ruby they're called a hash).
-* In JavaScript, an object is a type of key-value store, or a way to group many pairs of keys and values together
+* Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they are called a dictionary, in Ruby they are called a hash).
+* In JavaScript, an object is a type of key-value store, or a way to group pairs of keys and values together
 * Like arrays, objects can hold multiple pieces of data of varying types; but unlike arrays, objects use named keys rather than ordered indices to access those pieces of data.
 
 For example, a puppy has properties, a breed/type, the color of his/her fur, a size, a demeanor etc. Following the same logic, a JavaScript object will have **keys/names** and **values** for each property.
@@ -47,7 +47,7 @@ For example, a puppy has properties, a breed/type, the color of his/her fur, a s
 
 #### Object literal syntax
 
-Strings are in 'quotes', arrays are in ['square braces'], objects follow the same lexical pattern but use `{curlyBraces: 'and are structured as key/value pairs'}`, the `key` is before the colon and the `value` is after the colon.
+Strings are defined in 'quotes', arrays are in ['square bracets'], objects follow the same lexical pattern but use `{curlyBraces: 'and are structured as key/value pairs'}`, the `key`/name comess before the colon and the `value`, after the colon.
 
 Like arrays, these key-value pairs are comma separated!
 
@@ -99,16 +99,16 @@ classroom.name = "WDI ATL 9";
 classroom.campus = "Atlanta!";
 => "Atlanta!"
 
-classroom
+classroom;
 => Object {name: "WDI ATL 9", campus: "Atlanta!"}
 ```
 
-### Bracket notation
+### Bracket Notation
 
 There is another way to set properties on a JavaScript object.
 
 ```javascript
-classroom["name"]   = "WDI ATL 9";
+classroom["name"] = "WDI ATL 9";
 classroom["campus"] = "Atlanta!";
 ```
 
@@ -129,7 +129,7 @@ console.log(classroom["property"]);
 For more details see [MDN's Documentation on Property Accessors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors).
 
 
-### Deleting properties
+### Deleting Properties
 
 If you want to delete a property in an object (and by extension, the value attached to the property), you need to use the [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) operator:
 
@@ -139,13 +139,15 @@ The following code shows how to remove a property:
 var classroom = {name: "WDI ATL 9", campus: "Atlanta!", start: "02/21/2017"};
 delete classroom.start;
 
-classroom
+classroom;
 => {name: "WDI ATL 9", campus: "Atlanta!"}
 ```
 
-## Object methods
+<br />
 
-As we have stated before, the value of a property can be anything in JavaScript, which means that we can also attach functions to objects properties. When a function is attached to a property, this function becomes a `method`. Methods are defined the exact same way as a function, except that they have to be defined as the property of an object.
+## Object Methods
+
+As we have stated before, the value of a property can be anything in JavaScript, which means that we can also attach functions to object properties. When a function is attached to a property, this function becomes a `method`. Methods are defined the exact same way as a function, except that they have to be defined as the property of an object.
 
 We will be discussing functions in more detail tomorrow.  
 
@@ -179,7 +181,7 @@ var sayHello = function() { console.log("Hello"); }
 
 classroom.sayHello = sayHello;  
 
-classroom.sayHello()
+classroom.sayHello();
 => Hello
 ```
 
@@ -219,32 +221,33 @@ There are three native ways to list the properties of an object we're just going
 
 **Loop over an object's properties**
 
-You can use the bracket notation with for...in to iterate over all the enumerable properties of an object.
+You can use the bracket notation with for...in to iterate over all of the enumerable properties of an object.
 
 ** If you are still confused by the difference between `==` and `===` review MDN's notes on [equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality_()) and [strict equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Identity_strict_equality_())**
 
 <br />
 
-## Independent Monkey Exercise (15m)
+## Independent Vacation Exercise (15m)
 
-- Create a `monkey` object, which has the following properties:
+- Create a `vacation` object, which has the following properties:
 
-  - `name`
-  - `species`
-  - `foodsEaten`
+  - `city`
+  - `country`
+  - `timeOfYear`
+  - `restaurants`
+  - `activities`
 
   And the following methods:
 
-  - `eatSomething(monkeyFood)`
-  - `introduce`: produces a string introducing itself, including its name, species, and what it has eaten
+  - `introduce`: produces a string introducing the vacation, including its city, country, timeOfYear, what restaurants you would like to go to while there, and the activities that you'd like to take part in.
 
-- Create 3 monkeys. Make sure all 3 monkeys have all of the properties set and the methods defined.
+- Create 3 vacations. Make sure all 3 vacations have all of the properties set and the methods defined.
 
-- Exercise your monkeys by retrieving their properties and using their methods. Practice using dot notation and bracket notation for retrieving these properties.
+- Exercise your vacations by retrieving their properties and using their methods. Practice using dot notation and bracket notation for retrieving these properties.
 
 ## Conclusion (5m)
 
-We will continue to use JavaScript objects every day, and you will have plenty of time to practice creating and using objects in JavaScript. There are a lot of resources available on the web for you to dive deeper, but the most detailed and understandable one is probably on MDN- Mozilla Developer Network.
+We will continue to use JavaScript objects every day, and you will have plenty of time to practice creating and using objects in JavaScript. There are a lot of resources available on the web for you to dive deeper, but the most detailed and easily understood one is probably on MDN- Mozilla Developer Network.
 
 - [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 - [Intro to Object-Orientated Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)

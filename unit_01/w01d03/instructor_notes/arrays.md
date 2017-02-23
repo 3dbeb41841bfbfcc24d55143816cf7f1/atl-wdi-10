@@ -21,15 +21,15 @@ competencies: Programming
 # Hook
 In 2009, the **BBC** and the **British Museum** collaborated on a hugely successful radio series and book called “A History of the World in 100 Objects.” In 2014, the **Smithsonian** followed up with its “History of the World in 1,000 Objects.”  You can listen to the podcasts later, here: http://www.bbc.co.uk/programmes/b00nrtd2/episodes/downloads
 
-“It is only in the world of objects that we have time and space,” T. S. Eliot wrote. Think of the marks that things — the wheel, the crucifix, the credit card or the computer chip — have made on civilization.  What objects or collection of items tell the story of your life?  Think about 5 items that define you.
+“It is only in the world of objects that we have time and space,” T. S. Eliot wrote. Think of the mark that things — the wheel, the crucifix, the credit card or the computer chip — have made on civilization.  What objects or collection of items tell the story of your life?  Think about 5 items that define you.
 
 On Friday, we reviewed basic datatypes in Javascript. Strings, Integers, variables, etc. These are the building blocks of most programming languages. But you are limited in how much you can build without a good way of storing those datatypes. This is where 'data structures' or collections like **Arrays** and **Objects** are invaluable.
 
 ---
 
-## Arrays - Demo (5 mins)
+## Arrays (5m)
 
-An **array** is syntactically defined with opening and closing square brackets `[ ]`. Between those braces we will add pieces of data separated by commas.
+An **array** is syntactically defined with opening and closing square brackets `[ ]`. Between those braces, we will add pieces of data separated by commas.
 
 Arrays are used for:
 
@@ -37,14 +37,14 @@ Arrays are used for:
 * Enumerating over data, i.e. using a zero-based index to find them
 * Quickly reordering data
 
-An array is ultimately, a data structure, similar in concept to a comma separated list. Each item in an array is called an element, and the collection can contain data of the same or different types. In JavaScript, Arrays can dynamically grow and shrink in size.
+An array is ultimately, a data structure, similar in concept to a comma separated list. Each item in an array is called an element, and the collection can contain data of the same or different types. In JavaScript, arrays can dynamically grow and shrink in size.
 
 ```javascript
 var friends = ['Moe', 'Larry', 'Curly'];
 => ['Moe', 'Larry', 'Curly']
 ```
 
-Items in an array are stored in sequential order, and indexed starting at `0` (zero-based indexed) and ending at `length - 1` (since length is not zero-based, length starts counting at 1, so it is always 1 more than the largest index in the array).
+Items in an array are stored in sequential order, and indexed starts at `0` (zero-based index) and ends at `length - 1` (since the length is not zero-based, length starts counting at 1, so it is always 1 more than the largest index in the array).
 
 ```javascript
 // First friend
@@ -67,10 +67,10 @@ var newFriend = 'bobby bottleservice';
 //=> undefined
 
 // pick out first character
-newFriend[0]
+newFriend[0];
 //=> 'b'
 
-newFriend.length
+newFriend.length;
 //=> 19
 ```
 <br />
@@ -83,17 +83,17 @@ Using the JavaScript `new` keyword, is one way of creating arrays:
 var a = new Array();
 => undefined
 
-a[0] = 'dog';
-=> 'dog'
+a[0] = 'Bali';
+=> 'Bali'
 
-a[1] = 'cat';
-=> 'cat'
+a[1] = 'Argentina';
+=> 'Argentina'
 
-a[2] = 'hen';
-=> 'hen'
+a[2] = 'Greece';
+=> 'Greece'
 
 a
-=> ['dog', 'cat', 'hen']
+=> ['Bali', 'Argentina', 'Greece']
 
 a.length;
 => 3
@@ -103,10 +103,10 @@ a.length;
 A more convenient notation is to use an array literal:
 
 ```javascript
-var a = ['dog', 'cat', 'hen'];
+var a = ['Bali', 'Argentina', 'Greece'];
 
 a
-=> ['dog', 'cat', 'hen']
+=> ['Bali', 'Argentina', 'Greece']
 
 a.length;
 => 3
@@ -119,12 +119,11 @@ The `length` method works in an interesting way in Javascript. It is always one 
 So `array.length` isn't necessarily the number of items in the array. Consider the following:
 
 ```javascript
-var a = ['dog', 'cat', 'hen'];
-a[100] = 'fox';
+var a = ['Bali', 'Argentina', 'Greece'];
+a[100] = 'Egypt';
 a.length; // 101
 ```
 **Remember**: the length of the array is one more than the highest index.
-
 
 **EXERCISE**: Take the next 2 minutes to create an array of the five items that define you and save them to the variable `myLife`
 
@@ -134,7 +133,7 @@ a.length; // 101
 If you query a non-existent array index, it will return `undefined`:
 
 ```javascript
-var a = ['dog', 'cat', 'hen'];
+var a = ['Bali', 'Argentina', 'Greece'];
 => undefined
 
 typeof a[1];
@@ -148,12 +147,9 @@ typeof a[90];
 
 **EXERCISE**: Take 10 minutes, to get these values in your array: the first item in your array, the last item in your array. Bonus: Can you print out all of the items in your array?  Can you come up with a way of getting a random item/index (whole number) between zero and the length of your array? HINT: Math.random() and Math.floor()
 
-
 ### Array helper methods
 
-Arrays come with a number of helper methods. Here's a list of some popular helpers:
-
-> Note: You might want to demonstrate a few of these.
+Arrays come with a number of helper methods. Here is a list of some popular helpers:
 
 - `a.toString()` - Returns a string with the `toString()` of each element separated by commas.
 
@@ -167,4 +163,4 @@ Arrays come with a number of helper methods. Here's a list of some popular helpe
 
 - `a.unshift('item')` - Prepends items to the beginning of your array.
 
-Remember, though, you'll never remember _every_ method.  Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for particular objects.
+Remember, though, you will never remember _every_ method.  Explore the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for particular objects.
