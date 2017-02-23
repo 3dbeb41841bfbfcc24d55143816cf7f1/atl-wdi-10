@@ -531,33 +531,8 @@ For further discussion: http://www.blackwasp.co.uk/SpeedTestIfElseSwitch.aspx
 
 ---
 
-## While and Do-While (5m)
-
-JavaScript has `while` loops and `do-while` loops. `while` is a loop statement that will run **while** a condition is true. It is good for basic looping, but there is a possibility that will never be run (if the expression evaluates to false). A `do-while` loop makes sure that the body of the loop/code block is executed at least once, because the `while() expression` isn't evaluated until **after** the block of code runs.
-
-#### While Example
-
-```javascript
-while (true) {
-  // an infinite loop!
-}
-```
-
-#### Do-while Example
-
-```javascript
-var input = 0;
-do {
-  console.log(input++);
-} while (input < 10);
-```
-
-<br />
-
----
-
 ## Conclusion (5m)
-These are some of the foundational tools you will use in the majority of your applications. You will probably need to go over the syntax a few times before you memorize it, but it is important to be able to remember, these core "control flow" concepts, in general, because they will come up in pretty much every programming language you will ever encounter.
+These are some of the foundational tools you will use in the majority of your applications. You will probably need to go over the syntax a few times before you memorize it, but it is important to be able to remember these core "control flow" concepts, in general, because they will come up in pretty much every programming language you will ever encounter.
 
 - [Control Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
 - [While](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
