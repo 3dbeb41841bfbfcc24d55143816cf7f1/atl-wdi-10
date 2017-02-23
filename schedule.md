@@ -87,7 +87,7 @@
 <td>JS Functions + Scope</td>
 <td>Debugging, Chrome Dev Tools + Dom Manipulation</td>
 <td>jQuery</a></td>
-<td>Review</td>
+<td>LAB</td>
 </tr>
 <tr>
 <td><strong>Mod 2</strong></td>
@@ -95,7 +95,7 @@
 <td>JS Functions + Scope</td>
 <td>Debugging, Chrome Dev Tools + Dom Manipulation</td>
 <td>jQuery</a></td>
-<td>Review</td>
+<td>LAB</td>
 </tr>
 <tr>
 <td><strong>Mod 3</strong></td>
@@ -103,7 +103,7 @@
 <td>JS Functions + Scope</td>
 <td>Dom Events</td>
 <td>jQuery</td>
-<td>LAB</td>
+<td>ES6</td>
 </tr>
 <tr>
 <td><strong>Mod 4</strong></td>
@@ -111,7 +111,7 @@
 <td><a href="https://github.com/ATL-WDI-Exercises/codestyle-and-linting">LAB - Code Style</a></td>
 <td>LAB</td>
 <td>LAB</td>
-<td>LAB</td>
+<td>Breakout Sessions: <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations- Maren</a> + CS Algorithms- Danny</td>
 </tr>
 <tr>
 <td><strong>Homework</strong></td>
@@ -122,6 +122,14 @@
 <td>Homework</td>
 </tr>
 </tbody></table>
+
+### Supplemental Reading for week 2
+- [Intro to Loops](https://www.teamten.com/lawrence/programming/intro/intro8.html)
+- [Array methods](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 78 - 83
+- [Functions](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 26 - 28
+- [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
+- [Khan Academy- HTML/jQuery](https://www.khanacademy.org/computing/computer-programming/html-js-jquery)
+- [Khan Academy- JS Drawing and Animation](https://www.khanacademy.org/computing/computer-programming/programming)
 
 #### Week 1 - Fundamentals
 <table><thead>
@@ -185,7 +193,7 @@
 - [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
 - [Atlassian Git Tutorial](https://www.atlassian.com/git)
 - [CSS Specificity](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
-- [Level-up Tutorials](https://leveluptutorials.com/tutorials/css-tutorials)
+- [Level-up CSS Tutorial](https://leveluptutorials.com/tutorials/css-tutorials)
 
 ## Links
 
