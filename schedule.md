@@ -23,7 +23,7 @@
 <tr>
 <td><strong>Mod 1</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/sdlc">SDLC / Agile</a></td>
-<td>Sample Project Code Along</td>
+<td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
@@ -31,7 +31,7 @@
 <tr>
 <td><strong>Mod 2</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/sdlc">SDLC / Agile</a></td>
-<td>Sample Project Code Along</td>
+<td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
@@ -179,9 +179,16 @@
 </tr>
 </tbody></table>
 
+### Supplemental Reading/Knowledge for week 1
+- [Khan Academy- HTML/CSS](https://www.khanacademy.org/computing/computer-programming/html-css)
+- [Khan Academy- HTML/JS](https://www.khanacademy.org/computing/computer-programming/html-css-js)
+- [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
+- [Atlassian Git Tutorial](https://www.atlassian.com/git)
+- [CSS Specificity](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+- [Level-up Tutorials](https://leveluptutorials.com/tutorials/css-tutorials)
 
 ## Links
 
-* [Google Calendar](https://calendar.google.com/calendar/embed?src=generalassemb.ly_003glv5s4t3ak7p01s6s62pcj4%40group.calendar.google.com&ctz=America/Los_Angeles)
+* [Google Calendar](https://calendar.google.com/calendar/embed?src=b4s54mkg0s2c1ddov57cffe4ls%40group.calendar.google.com&ctz=America/New_York)
 * [Scope and Sequence]()
 
