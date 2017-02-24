@@ -153,7 +153,7 @@
 <td>Big Culture</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/git_github.md">Intro to Git + Github</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/css-box-model">CSS Box Model</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/local-and-remote-git">Flexbox</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/6fa2bf507f6108cb70500c1adf9ff68a7de66e2d/unit_01/w05d04/instructor_notes/flexbox.md">Flexbox</a></td>
 
 </tr>
 <tr>
