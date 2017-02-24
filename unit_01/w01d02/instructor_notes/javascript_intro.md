@@ -70,11 +70,11 @@ http://eloquentjavascript.net/01_values.html
 ## <a name="history">JavaScript- A History (3m)</a>
 
 **The Browser Wars**
-In 1995, netscape and microsoft were warring for best browser.  In order to combat this, Brendan Eich, a Netscape employee, created JavaScript in 10 days.  The goal was to create a lightweight, interpreted language for non-programmers.  In order to keep up with the times, microsoft later adopted the language, but called it JScript.
+In 1995, netscape and microsoft were warring for best browser.  In order to combat this, Brendan Eich, a Netscape employee, created JavaScript in 10 days.  The goal was to create a lightweight, interpreted language for non-programmers.  In order to keep up with the times, Microsoft later adopted the language, but called it JScript.
 
-By 1997, JS was used in every browser, and by millions of people.  But there were no standards in place, or even an overriding language. Each browser rendered JavaScript/JScript differently, and therefore every website differently.  It was extremely time consuming and costly to try to make your site render the same on every browser. 
+By 1997, JS was used in every browser, and by millions of people.  But there were no standards in place, or even an overriding language. Each browser rendered JavaScript/JScript differently, and therefore every website differently.  This made it extremely time consuming and costly to try to make your site render the same on every browser. 
 
-JavaScript/ECMAScript 3 was standardized and released in 1999 by ECMA International(the European Computer Manufacturers Association), which is a foundation that creates standards in technology and on the web.  Netscape and Microsoft agreed to call JavaScript, ECMAScript, and you will hear the two used interchangeably.
+JavaScript/ECMAScript 3 was standardized and released in 1999 by ECMA International (the European Computer Manufacturers Association), which is a foundation that creates standards in technology and on the web.  Netscape and Microsoft agreed to call JavaScript, ECMAScript, and you will hear the two used interchangeably.
 
 <br />
 
