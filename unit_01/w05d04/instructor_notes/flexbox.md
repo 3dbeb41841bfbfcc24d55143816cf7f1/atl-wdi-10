@@ -1,38 +1,19 @@
 # Flexbox
 
 Screencasts
-
 - [Part 1](http://youtu.be/wBlBTO7mqoI)
 - [Part 2](http://youtu.be/_I58MXDnBEs)
 
 ## Learning Objectives
 
 - Give an example of a problem solved by Flexbox.
-- Given a desktop-first webpage, make it look presentable on mobile devices (and vice-versa) with as little CSS as possible.
 - Contrast flex containers and flex items.
+- Given a desktop-first webpage, make it look presentable on mobile devices (and vice-versa) with as little CSS as possible.
 - Explain what is meant by the "Holy Grail Layout".
-
-
-## Intro
-
-![](https://camo.githubusercontent.com/5d81007fece17219ff6ece0ed8da9920b6a2cc55/687474703a2f2f692e696d6775722e636f6d2f796c62365758392e676966)
-
-Read these: 
-
-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-- https://css-tricks.com/centering-in-the-unknown/
-
-<br>
 
 ## Framing
 
-Check out this GIF
-
-<br>
-![](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif)
-
-<br>
-Developers used to feel that way all the time defining page layout using CSS. Why is that?
+Check out [this GIF](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif). Developers used to feel that way all the time defining page layout using CSS. Why is that?
 
 HTML was created as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word.
 
@@ -40,7 +21,7 @@ So layout wasn't much of a concern in the beginning. But as the web has evolved,
 
 > It's difficult to establish new CSS standards. The [CSS Working Group](https://en.wikipedia.org/wiki/CSS_Working_Group) has a hard time agreeing on anything, especially cross-browser standards.
 
-Fortunately, Flexbox, a layout mode introduced with CSS3, has slowly but surely become a standard over the past few years. It's designed to ensure that elements on a page behave predictively on varying screen sizes and devices.  
+Fortunately, Flexbox, a layout mode introduced with CSS3, has slowly but surely become a standard over the past few years. It's designed to ensure that elements on a page behave predictively on varying screen sizes and devices.
 
 ## Problem 1: Vertical Alignment (15 minutes / 0:15)
 
@@ -48,40 +29,42 @@ Let's start out by talking about a problem that anybody who has written CSS has 
 
 **I have a `div`. I would like to center it vertically and horizontally on my page.** The end result should look something like this...
 
-![centered div](http://i.imgur.com/2jbrXMp.png)
+![centered div](img/centered_div.png)
+
+Example on [Codepen](https://codepen.io/dphurley/pen/KaGKLo)
 
 #### You Tell Me: What Should I Try?
 
-Open up a new Codepen.io and copy the starter code below. Try to center the div.
-
 ```html
-<body>
-  <div>This is my div!</div>
-</body>
+<html>
+  <body>
+    <div> Div 1 </div>
+  </body>``
+</html>
 ```
 
-```css
-html {
-  height: 100%;
-}
-
+```CSS
 body {
-  min-height: 100%;
-  background-color: #ccc;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
 div {
   width: 100px;
   height: 100px;
-  outline: 1px solid red;
+  background: #990012;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font: 14pt Comic Sans MS;
+  text-align: center;
+  line-height: 100px;
 }
 ```
 
 <details>
   <summary><strong>These might work...</strong></summary>
 
-  > **Padding**: The simplest approach would be to set equal padding on the top and bottom of the element. We would need to know the exact height of the element and container in order to get this exactly right. This can also get tedious when there is more than one element in a container.
+  > **Padding**: The simplest approach would be to set equal padding on the top and bottom of the container (body) element. We would need to know the exact height of the element and container in order to get this exactly right. This can also get tedious when there is more than one element in a container.
   >
   > **Margin**: Similarly, we could add some margin to the element we are trying to center. The same issues remain.
   >
@@ -102,27 +85,17 @@ div {
 
 ### Flexbox to the Rescue
 
-```css
-html {
-  height: 100%;
-}
-
+```CSS
 body {
-  min-height: 100%;
-  background-color: #ccc;
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
-div {
-  width: 100px;
-  height: 100px;
-  outline: 1px solid red;
-}
 ```
+
+View solution [here](http://codepen.io/dphurley/pen/PWywEE)
 
 ## How It Works (10 minutes / 0:10)
 
@@ -132,7 +105,7 @@ When you declare `display: flex` on a container, it becomes a **flex container**
 
 First, you use `flex-direction` to indicate whether you want the items in the container -- the **flex items** -- to "read" left-to-right (`row`), right-to-left (`row-reverse`), top-to-bottom (`column`), **or** bottom-to-top (`column-reverse`).
 
-When you specify a flex-direction, you can think of it as placing an axis in that direction across your flex container. So if you use `flex-direction: row` or `row-reverse`, this **main axis** will be the same as the X-axis (horizontal) on a graph. Otherwise, it'll be the Y-axis.
+When you specify a flex-direction, you can think of it as placing an axis in that direction across your flex container. So if you use `flex-direction: row` or `row-reverse`, this **main axis** will be the same as the X-axis (horizontal) on a graph. If you use `flex-direction: column` or `column-reverse`, the **main axis** will be the Y-axis.
 
 Then, you determine how you want to align or **justify** the items along this main axis using the `justify-content` property. It'll do nice things for you like let you put even spacing between all the items (`space-between` and `space-around`).
 
@@ -153,33 +126,58 @@ Lastly, you can also do nice things like control how you want things to line up 
 
 ## Problem 2: Make the Footer Stick (10 minutes / 0:35)
 
-I want my footer to lie along the bottom of my page.
+I want my footer to lie along the bottom of my page. Once I've accomplished that, I want to evenly distribute the content boxes horizontally inside of the `<main>` element.
+
+![flexbox layout](img/flex_box_layout.png)
+
+[Example on CodePen](http://codepen.io/dphurley/pen/wgYBXX)
 
 #### You Tell Me: What Should I Try?
 
 ```html
-<body>
-  <header>This is my header.</header>
-  <main><p>Blah blah blah blah blah...</p></main>
-  <footer>This is my footer!</footer>
-</body>
+<html>
+  <header>
+    FlexBox
+  </header>
+  <main>
+    <section>Content 1</section>
+    <section>Content 2</section>
+    <section>Content 3</section>
+  </main>
+  <footer>
+    CodePen by Andrew Whitley
+  </footer>
+</html>
 ```
 
-```css
-html {
-  height: 100%;
-}
-
+```CSS
 body {
-  min-height: 100%;
-  background-color: #ccc;
+  min-height: 100vh;
   margin: 0 auto;
+  font: 12pt Comic Sans MS;
 }
 
-footer {
+header, footer {
   width: 100%;
-  height: 50px;
-  background-color: #888;
+  height: 30px;
+  background: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 30px;
+}
+
+main {
+  background: #D3D3D3;
+}
+
+section {
+  width: 100px;
+  background: #990012;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
 }
 ```
 
@@ -187,48 +185,51 @@ Making the footer lie against the bottom of the screen is pretty easy: just use 
 
 ### Flexbox to the Rescue
 
-```css
-html {
-  height: 100%;
-}
-
+```CSS
 body {
-  min-height: 100%;
-  background-color: #ccc;
+  min-height: 100vh;
   margin: 0 auto;
+  font: 12pt Comic Sans MS;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-footer {
-  width: 100%;
-  height: 50px;
-  background-color: #888;
-}
 ```
 
 <details>
-  <summary><strong>What's the main axis on here? What about the cross axis?</strong></summary>
+  <summary><strong>What's the main axis of the `<body>`on here? What about the cross axis?</strong></summary>
 
   > Main: y-axis. Cross: x-axis.
 
 </details>
 
+<br />
+
+Now let's horizontally distribute the `<section>` elements containing the page's content inside of the `<main>`. What element should we style?
+
+```CSS
+main {
+  background: #D3D3D3;
+  display: flex;
+  justify-content: space-around;
+}
+```
+
+[Solution on CodePen](http://codepen.io/dphurley/pen/zNmxMv)
+
 ## You Do: More Flexbox Properties (25 minutes / 1:00)
 
 Time for you to research some more Flexbox properties. You will be split into groups and assigned one of the following flex properties...
 
-- `align-content` **(David + Alejandra)**
-- `flex-grow` **(Kiran + Alan)**
-- `flex-wrap` **(Matt + Sophia)**
-- `order` **(Audrey + Michael)**
-- `flex-basis` **(everyone check this one out)**
+- `flex-wrap`
+- `flex-grow`
+- `order`
+- `align-content`
 
 Your task is to...
-
 * Come up with [ELI5 ("Explain Like I'm 5")](https://www.reddit.com/r/explainlikeimfive) definition for the property.
 * List the different values this property can take.
+* List the default value for this property.
 * Create [a Codepen](http://codepen.io) demonstrating the property's usage.
 * If possible, practice using some of the flex properties we covered in the previous section.
 
@@ -300,33 +301,36 @@ Obviously, this layout won't work on tiny screens, unless you really like super-
 
 Before flexbox, this involved a lot of pushing and shoving with dimensions and positioning. You would essentially have to write two completely separate stylesheets: one for mobile, and one for desktop.
 
-With flexbox, just change the `flex-direction` for smaller screen sizes, and you're pretty much done!
+With flexbox, just change the `flex-direction` for smaller screen sizes, make any size / order adjustments on the sections of the page, and you're pretty much done!
 
 ```css
-body {
-  display: flex;
-  flex-direction: row;
-}
-
-@media screen and (max-width: 480px){
-  body {
+@media screen and (max-width: 600px){
+  main {
     flex-direction: column;
+  }
+
+  section {
+    order: 1;
   }
 }
 ```
 
 > A layout so holy, [it has its own Wikipedia article](https://en.wikipedia.org/wiki/Holy_Grail_(web_design)).
 
-[Example](http://codepen.io/takeradi/pen/MyYqKX)
+[Example](http://codepen.io/awhitley1233/pen/XpKzqV)
 
-## Lab #1: [Hyrule Potion Shop](../student_labs/hyrule_potion_shop)
-## Lab #2: http://flexboxfroggy.com/
-## Lab #3: [Airbnb](../student_labs/css-airbnb) 
+## You Do: [Hyrule Potion Shop](https://github.com/ga-dc/hyrule_potion_shop) (10 minutes / 1:25)
 
+## Break (10 minutes / 1:35)
 
+## You Do (Finish for HW): [Airbnb](https://github.com/ga-wdi-exercises/css-airbnb) (30 minutes / 2:05)
+
+## Closing / Questions (5 minutes / 2:10)
+---
 
 ## Resources
 
+* [Flexbox Defense (Game)](http://www.flexboxdefense.com/)
 * [The Ultimate Flexbox Cheatsheet](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
 * [CSS Tricks Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [A Visual Guide to CSS3 Flexbox Properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
