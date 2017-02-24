@@ -53,7 +53,7 @@ creator:
 
 I am a huge [Gustav Klimt](https://i.imgur.com/1EOSuCm.jpg) fan.  I actually created a reproduction of this piece, _The Kiss_, by Klimt for our turquoise living room wall.  I also love puzzles.  This is part of why I love development, as I think of every problem as a puzzle and work on bite-sized pieces as I go along.  My family gave me this puzzle for Christmas, combining two of my loves.
 
-Today, we are going to look at primitive data types in JavaScript, of which there are 6- strings, booleans, numbers, null, undefined and symbols.  We will continue onto more complex data types on Monday.
+Today, we are going to look at **primitive** data types in JavaScript, of which there are 6- strings, booleans, numbers, null, undefined and symbols.  We will continue onto **complex** data types on Monday.
 
 <br />
 
@@ -67,7 +67,7 @@ http://eloquentjavascript.net/01_values.html
 
 <br />
 
-## <a name="data-type">JavaScript- A History (3m)</a>
+## <a name="history">JavaScript- A History (3m)</a>
 
 **The Browser Wars**
 In 1995, netscape and microsoft were warring for best browser.  In order to combat this, Brendan Eich, a Netscape employee, created JavaScript in 10 days.  The goal was to create a lightweight, interpreted language for non-programmers.  In order to keep up with the times, microsoft later adopted the language, but called it JScript.
