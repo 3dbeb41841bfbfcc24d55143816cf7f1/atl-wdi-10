@@ -77,7 +77,7 @@
 <td><strong>WarmUp</strong></td>
 <td>Morning Exercise</td>
 <td>Morning Exercise</td>
-<td>Morning Exercise</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/javascript-good-and-bad-parts.md">Morning Exercise</a></td>
 <td>Morning Exercise</td>
 <td>Morning Exercise</td>
 </tr>
