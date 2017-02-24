@@ -169,14 +169,16 @@
 <td><a href="https://github.com/ATL-WDI-Curriculum/command-line">Intro to CLI</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/html-dom">HTML + DOM</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/css-responsive">Responsive CSS</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/local-and-remote-git">Intro to JS</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/javascript_intro.md">Intro to JS</a><br /><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/control_flow.md">Control Flow</a></td>
 </tr>
 <tr>
 <td><strong>Mod 4</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/text-editors">Sublime Editor</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/html-practice-and-review.md">HTML Practice LAB</a><br /><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/ga_dom.md">DOM LAB</a></td>
 <td>LAB</td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/ga_dom.md">LAB</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/student_labs/control_flow_practice.md
+">Control Flow LAB</a><br /><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d02/student_labs/choose_your_own_adventure
+">Choose your own adventure LAB</a></td>
 </tr>
 <tr>
 <td><strong>Homework</strong></td>
@@ -209,6 +211,11 @@
 - [Flexbox- Free Code Camp](https://medium.freecodecamp.com/an-animated-guide-to-flexbox-d280cf6afc35#.nuw1g63si)
 - [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Flexbox Froggy](http://flexboxfroggy.com/)
+##### Templates
+- [Website Tempaltes](http://freebiesbug.com/psd-freebies/website-template/)
+##### Bootstrap
+- [Bootstrap](http://getbootstrap.com/getting-started/)
+- [Built with Bootstrap](https://bootstrapbay.com/blog/built-with-bootstrap/)
 
 ## Links
 
