@@ -97,7 +97,7 @@ This means that being confident in working with these concepts critically, will 
 | Floats | Decimals. | `3.14`, `3.0` |
 | Booleans | Represents either true or false | `true`, `false` |
 
-We will elaborate on all of these - except Booleans, for now. We will talk about how they behave in JavaScript, show you helper methods to use with each type, and then practice these helper methods to manipulate data using JavaScript.  
+We will elaborate on all of these - except Booleans, for now. We will talk about how they behave in JavaScript, show you some helper methods to use with each type, and then practice these helper methods to manipulate data using JavaScript.  
 
 ---
 
