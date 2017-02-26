@@ -133,9 +133,9 @@
 </tr>
 <tr>
 <td><strong>Homework</strong></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d03/homework">Data Modeling + A Smarter Way(</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/2-27-17-progress-bar%2Ba-smarter-way">Homework</a></td>
 <td>Homework</td>
-<td>Homework</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-1-17-progress-bar%2Ba-smarter-way">Homework</a></td>
 <td>Homework</td>
 <td>Homework</td>
 </tr>
