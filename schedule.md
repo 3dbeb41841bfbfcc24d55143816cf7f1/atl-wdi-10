@@ -113,14 +113,13 @@
 </tr>
 <tr>
 <td><strong>Mod 4</strong></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/student_labs/99_problems.md">LAB / Homework</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/student_labs/99_problems.md">LAB</a></td>
 <td><a href="https://github.com/ATL-WDI-Exercises/codestyle-and-linting">LAB - Code Style</a></td>
 <td>LAB</td>
 <td>LAB</td>
 <td>Breakout Sessions: 
-  <br />
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations- Maren</a>
-  <br /> + CS Algorithms- Danny</td>
+  + CS Algorithms- Danny</td>
 </tr>
 <tr>
 <td><strong>Homework</strong></td>
