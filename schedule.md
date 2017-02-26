@@ -83,7 +83,10 @@
 </tr>
 <tr>
 <td><strong>Mod 1</strong></td>
-<td>Data Structures</td>
+<td>Data Structures:
+  <br />
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/arrays.md">Arrays</a>
+</td>
 <td>JS Functions + Scope</td>
 <td>Debugging, Chrome Dev Tools + Dom Manipulation</td>
 <td>jQuery</a></td>
@@ -91,7 +94,10 @@
 </tr>
 <tr>
 <td><strong>Mod 2</strong></td>
-<td>Data Structures</td>
+<td>Data Structures: 
+  <br />
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/javascript_objects.md">JS Objects</a>
+</td>
 <td>JS Functions + Scope</td>
 <td>Debugging, Chrome Dev Tools + Dom Manipulation</td>
 <td>jQuery</a></td>
@@ -99,7 +105,10 @@
 </tr>
 <tr>
 <td><strong>Mod 3</strong></td>
-<td>Data Structures</td>
+<td>Data Structures:
+  <br />
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/loops_iterators.md">Loops</a>
+</td>
 <td>JS Functions + Scope</td>
 <td>Dom Events</td>
 <td>jQuery</td>
@@ -107,15 +116,18 @@
 </tr>
 <tr>
 <td><strong>Mod 4</strong></td>
-<td><a href="https://github.com/ATL-WDI-Exercises/the-last-samurai">LAB / Homework</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/student_labs/99_problems.md">LAB / Homework</a></td>
 <td><a href="https://github.com/ATL-WDI-Exercises/codestyle-and-linting">LAB - Code Style</a></td>
 <td>LAB</td>
 <td>LAB</td>
-<td>Breakout Sessions: <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations- Maren</a> + CS Algorithms- Danny</td>
+<td>Breakout Sessions: 
+  <br />
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations- Maren</a>
+  <br /> + CS Algorithms- Danny</td>
 </tr>
 <tr>
 <td><strong>Homework</strong></td>
-<td><a href="https://github.com/ATL-WDI-Exercises/progressive-tax-calc">Tax Calculator</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d03/homework">Data Modeling + A Smarter Way</a></td>
 <td>Homework</td>
 <td>Homework</td>
 <td>Homework</td>
