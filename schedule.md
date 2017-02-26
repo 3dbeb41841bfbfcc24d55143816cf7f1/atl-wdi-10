@@ -87,7 +87,10 @@
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/arrays.md">Arrays</a>
 </td>
 <td>JS Functions + Scope</td>
-<td>Debugging, Chrome Dev Tools + Dom Manipulation</td>
+<td>
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-intro-and-dev-tools.md">Debugging, Chrome Dev Tools</a> 
+  + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
+</td>
 <td>jQuery</a></td>
 <td>LAB</td>
 </tr>
@@ -97,7 +100,10 @@
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/javascript_objects.md">JS Objects</a>
 </td>
 <td>JS Functions + Scope</td>
-<td>Debugging, Chrome Dev Tools + Dom Manipulation</td>
+<td>
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-intro-and-dev-tools.md">Debugging, Chrome Dev Tools</a> 
+  + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
+</td>
 <td>jQuery</a></td>
 <td>LAB</td>
 </tr>
@@ -107,7 +113,7 @@
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/loops_iterators.md">Loops</a>
 </td>
 <td>JS Functions + Scope</td>
-<td>Dom Events</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d02/instructor_notes/click_events.md">Dom Events</a></td>
 <td>jQuery</td>
 <td>ES6</td>
 </tr>
@@ -115,7 +121,11 @@
 <td><strong>Mod 4</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/student_labs/99_problems.md">LAB</a></td>
 <td><a href="https://github.com/ATL-WDI-Exercises/codestyle-and-linting">LAB - Code Style</a></td>
-<td>LAB</td>
+<td>
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d02/student_labs/independent_click_events">LAB</a>
+  <br />
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d02/student_labs/wendy_bite">Wendy Bite LAB</a>
+</td>
 <td>LAB</td>
 <td>Breakout Sessions: 
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations- Maren</a>
@@ -123,7 +133,7 @@
 </tr>
 <tr>
 <td><strong>Homework</strong></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d03/homework">Data Modeling + A Smarter Way</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d03/homework">Data Modeling + A Smarter Way(</a></td>
 <td>Homework</td>
 <td>Homework</td>
 <td>Homework</td>
