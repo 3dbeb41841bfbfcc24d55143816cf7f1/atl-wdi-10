@@ -84,7 +84,6 @@
 <tr>
 <td><strong>Mod 1</strong></td>
 <td>Data Structures:
-  <br />
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/arrays.md">Arrays</a>
 </td>
 <td>JS Functions + Scope</td>
@@ -95,7 +94,6 @@
 <tr>
 <td><strong>Mod 2</strong></td>
 <td>Data Structures: 
-  <br />
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/javascript_objects.md">JS Objects</a>
 </td>
 <td>JS Functions + Scope</td>
@@ -106,7 +104,6 @@
 <tr>
 <td><strong>Mod 3</strong></td>
 <td>Data Structures:
-  <br />
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/loops_iterators.md">Loops</a>
 </td>
 <td>JS Functions + Scope</td>
