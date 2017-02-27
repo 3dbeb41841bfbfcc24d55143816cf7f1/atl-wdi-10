@@ -74,51 +74,58 @@
 </thead><tbody>
   <tr>
     <td><strong>WarmUp</strong></td>
-    <td>Morning Exercise</td>
-    <td>Morning Exercise</td>
-    <td>Morning Exercise</td>
-    <td>Morning Exercise</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d01/morning_exercise">Morning Exercise</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d02/morning_exercise">Morning Exercise</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d03/morning_exercise">Morning Exercise</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d04/morning_exercise">Morning Exercise</a></td>
     <td>Morning Exercise</td>
   </tr>
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>Project 1 Retrospective</td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/node-module-system">Handlebar Views</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_views.md">Handlebar Views</a></td>
     <td>Database Design</td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/mongo-nosql-intro-lesson">DB Operations- Create/Read Lab</a></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/express-mongoose-modelling">DB Operations Update/Delete Lab</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/student_labs/to_dont_lab.md">DB Operations Update/Delete Lab</a></td>
   </tr>
   <tr>
     <td><strong>Mod 2</strong></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/es6">Intro to Node</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d01/instructor_notes/intro_to_the_internet.md">Intro to Node</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/node-express-intro-lesson">Review</a></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/express-generator">DB Operations- Create/Read</a></td>
-    <td><a href="https://github.com/ATL-WDI-Exercises/mongo-pokemon">DB Operations- Update/Delete</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/instructor_notes/express_create_read.md">DB Operations Create/Read</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/instructor_notes/update_delete.md">DB Operations- Update/Delete</a></td>
     <td>Diagnostic</td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/mean-stack-intro">Intro to Express/Express Routing</a></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_intro.md">Intro to Express</a>
+      <br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/instructor_notes/express_router.md">Express Routing</a>
+    </td>
     <td><a href="https://github.com/ga-wdi-exercises/compliment-express">Review</a></td>
-    <td>DB Operations Create/Read</td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/mongoose">DB Operations Update/Delete</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/instructor_notes/express_create_read.md">DB Operations Create/Read</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/instructor_notes/update_delete.md">DB Operations Update/Delete</a></td>
     <td><a href="https://github.com/ATL-WDI-Exercises/express-node-mongoose-lab">AJAX Breakout Session</a></td>
   </tr>
   <tr>
     <td><strong>Mod 4</strong></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/node-intro">LAB</a></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d01/student_labs/node_lab.md">Node Lab</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/student_labs/router_lab.md">Router LAB</a>
+    </td>
     <td><a href="https://github.com/ga-wdi-exercises/compliment-express">LAB</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">LAB</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/student_labs/to_dont_lab.md">DB Operations Update/Delete Lab</a></td>
     <td>LAB</td>
-    <td><a href="https://github.com/ATL-WDI-Exercises/express-node-mongoose-lab">LAB</a></td>
-    <td><a href="https://github.com/ATL-WDI-Exercises/express-node-mongoose-lab">LAB</a></td>
   </tr>
   <tr>
     <td><strong>Training</strong></td>
-    <td>Homework</td>
-    <td>Homework</td>
-    <td>Homework</td>
-    <td>Homework</td>
-    <td>Homework</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d01/homework">Homework</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d02/homework">Homework</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d03/homework">Homework</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d04/homework">Homework</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d05/homework">Homework</a></td>
   </tr>
 </tbody></table>
 
