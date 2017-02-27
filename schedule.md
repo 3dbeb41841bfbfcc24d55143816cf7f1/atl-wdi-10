@@ -207,7 +207,7 @@
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d02/homework">Morning Exercise</a></td>
 <td>WDI9 Outcomes: Intro to Outcomes Program + Post-Course Support</td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/javascript-good-and-bad-parts.md">Morning Exercise</a></td>
-<td><aa href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d04/morning_exercise">Morning Exercise</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d04/morning_exercise">Morning Exercise</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d05/morning_exercise">Morning Exercise</a></td>
 </tr>
 <tr>
