@@ -1,5 +1,66 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI 9!!!
 
+#### Week 4 - NodeJS, Express, Mongoose
+<table><thead>
+  <tr>
+    <th>Time</th>
+    <th>Day 1</th>
+    <th>Day 2</th>
+    <th>Day 3</th>
+    <th>Day 4</th>
+    <th>Day 5</th>
+  </tr>
+</thead><tbody>
+  <tr>
+    <td><strong>WarmUp</strong></td>
+    <td>Morning Exercise</td>
+    <td>Morning Exercise</td>
+    <td>Morning Exercise</td>
+    <td>Morning Exercise</td>
+    <td>Morning Exercise</td>
+  </tr>
+  <tr>
+    <td><strong>Mod 1</strong></td>
+    <td>Project 1 Retrospective</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/node-module-system">Handlebar Views</a></td>
+    <td>Database Design</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/mongo-nosql-intro-lesson">DB Operations- Create/Read Lab</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/express-mongoose-modelling">DB Operations Update/Delete Lab</a></td>
+  </tr>
+  <tr>
+    <td><strong>Mod 2</strong></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/es6">Intro to Node</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/node-express-intro-lesson">Review</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/express-generator">DB Operations- Create/Read</a></td>
+    <td><a href="https://github.com/ATL-WDI-Exercises/mongo-pokemon">DB Operations- Update/Delete</a></td>
+    <td>Diagnostic</td>
+  </tr>
+  <tr>
+    <td><strong>Mod 3</strong></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/mean-stack-intro">Intro to Express/Express Routing</a></td>
+    <td><a href="https://github.com/ga-wdi-exercises/compliment-express">Review</a></td>
+    <td>DB Operations Create/Read</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/mongoose">DB Operations Update/Delete</a></td>
+    <td><a href="https://github.com/ATL-WDI-Exercises/express-node-mongoose-lab">AJAX Breakout Session</a></td>
+  </tr>
+  <tr>
+    <td><strong>Mod 4</strong></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/node-intro">LAB</a></td>
+    <td><a href="https://github.com/ga-wdi-exercises/compliment-express">LAB</a></td>
+    <td>LAB</td>
+    <td><a href="https://github.com/ATL-WDI-Exercises/express-node-mongoose-lab">LAB</a></td>
+    <td><a href="https://github.com/ATL-WDI-Exercises/express-node-mongoose-lab">LAB</a></td>
+  </tr>
+  <tr>
+    <td><strong>Training</strong></td>
+    <td>Homework</td>
+    <td>Homework</td>
+    <td>Homework</td>
+    <td>Homework</td>
+    <td>Homework</td>
+  </tr>
+</tbody></table>
+
 
 #### Week 3 - Project Management/Project 1
 <table><thead>
@@ -57,7 +118,7 @@
 <td>Homework: Catch Up</td>
 <td>Project One</td>
 <td>Project One</td>
-<td>Project One</td>
+<td>Project One Presentations</td>
 <td>Portfolio Site</td>
 </tr>
 </tbody></table>
