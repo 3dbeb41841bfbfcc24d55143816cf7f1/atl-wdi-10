@@ -49,13 +49,13 @@ window.onload = function() {
 
 Refresh your window and make sure your script is still running!
 
-It is fired when the entire page loads, includ­ing its con­tent (images, css, scripts, etc.)
+It is fired after the entire page loads, includ­ing its con­tent (images, css, scripts, etc.)
 
 ## Review — functions
 
 #### The syntax
 
-A function is written using the `function` keyword, a function name (optional),  parenthesis `()` with optional arguments, and a code block `{}`.
+A function is written using the `function` keyword, a function name (optional: dependent on whether you are writing a named or anonymous function), followed by a pair of parenthesis `()` with optional arguments, and a code block `{}`.
 
 There are actually three ways we can write functions:
 
@@ -71,15 +71,15 @@ function newFunction() {
 }
 
 // saved to a variable or a function expression
-var newFunction = function() {
+var newFunction = function() { 
   console.log('hi');
 }
 
 ```
 
-These functions all behave the same way, and are merely written a little differently.
+These functions all behave the same way, and are merely written slightly differently.
 
-**Exercise**: (5m) Write a function using the three different patterns mentioned above. It should take two arguments, `num1` and `num2`, and logs the sum of the two numbers to the console.
+**Exercise**: (5m) Write a function using the three different patterns mentioned above. The function should take two arguments, `num1` and `num2`, and log the sum of the two numbers to the console.
 
 **[NOTE]**: Even though you can declare an anonymous function you can't actually call it. Only named functions and those saved to variables can be invoked with a parens `()`.
 
@@ -87,13 +87,15 @@ So, why would we even want to write a function without a name? We are building u
 
 #### Function References
 
-Function references are what is returned when we ask for the function without invoking it.
+Function references are what is returned when we ask for a function without invoking it.
 
 We have defined several functions already. Let's call them without invoking them and see what the response is.
 
 #### Passing a function as an argument (CALLBACKS!!!)
 
-Functions can be passed as an argument by way of a function reference to other functions. Let's define a function called `sayHello()`. It will to take one argument called name, and it will return a string that says `hello, <name>`
+Functions can be passed as an argument by way of a function reference to other functions. 
+
+Let's define a function called `sayHello()`. It will to take one argument called name, and it will return a string that says `hello, <name>`
 
 ```javascript
 var sayHello = function(name){
@@ -105,7 +107,7 @@ Let's now define a second function called shout().
 
 ```javascript
 var shout = function(a, callback) { // the argument 'callback' here is expected to be a function reference
-  alert(callback(a)); // the function reference stored in the argument callback is getting invoked with a parens
+  alert(callback(a)); // the function reference, stored in the argument 'callback', is getting invoked with a parens
 }
 
 shout('world!', sayHello);
@@ -118,7 +120,7 @@ var performMath = function(num1, num2, callback) {
 }
 
 var add = function(num1, num2) {
-    console.log(num1 + num2);
+    console.log(num1 + num2); 
 }
 
 var subtract = function(num1, num2) {
@@ -133,15 +135,15 @@ performMath(10, 5, subtract);
 
 ## Click Events
 
-You have used `<a href="">` tags to make links that users can click on. But this method is only a tiny portion of the functionality we experience online and the rest of it boils down to JS click events.
+You have used `<a href="">` tags to make links that users can click on. But this method is only a tiny portion of the functionality we experience online.  The rest of our experience boils down to JS click events.
 
 You can think about click events as follows:
 
-> A click event essentially ties a function (as a callback) to an HTML DOM element and specifies what action needs to happen to trigger/call/invoke that function (callback). In this case, a click!
+> A click event essentially ties a function (as a callback) to an HTML DOM element and specifies what action needs to happen in order to trigger/call/invoke that function (callback). In this case, it's a click!
 
 This pattern is called an **event listener**. Events can be clicks, hovers, scrolls etc. It requires that we have a DOM node saved to a variable. We can then call `node.addEventListener()` and pass it two arguments, a string with the type of event we are listening for, and a second argument that is a function with an event argument.
 
-This could be either an anonymous function or a function expression/declaration written somewhere else— like in an object *hint hint hint COUGH*
+This could be either an anonymous function or a function expression/declaration written elsewhere— like in an object *hint hint hint COUGH*
 
 ```javascript
 var button = document.querySelector("button");
@@ -164,7 +166,7 @@ An `event`, is another magical object! Let's `console.log(this);` and `console.l
 
 What is the difference between the two responses?
 
-Exercise: (20m) Look at the starter code in the `student_labs` directory. There are three buttons. Add event listeners to all of three buttons.
+Exercise: (20m) Look at the starter code <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d02/student_labs/in_class_click_events">here</a>. There are three buttons. Add event listeners to all of three buttons.
 
 1. Button one, when clicked, should trigger an alert saying `"you have clicked button one"`
 2. Button two, when clicked, should trigger a function that creates a `<p>` with the following string:
@@ -173,10 +175,3 @@ Exercise: (20m) Look at the starter code in the `student_labs` directory. There 
 
    and appends it to the DOM in the `<div class="information">`.
 3. Button three, when clicked, should remove the `p` tag from the DOM
-
-
-## Using Objects to store our game logic!
-
-The final concept we are going to talk about today is how we can construct a game! You all have a ton of new skills! Between all of your new layout and css skills, your knowledge of the DOM, and your burgeoning knowledge of Vanilla JS and logic, you have the ability to start making your own small games.
-
-I'm going to build a small trivia game in front of you that you will be able to reference as you move into tonight's homework!

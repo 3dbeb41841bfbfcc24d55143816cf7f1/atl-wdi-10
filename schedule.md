@@ -105,7 +105,7 @@
   + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
 </td>
 <td>jQuery</a></td>
-<td>LAB</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/es6">ES6</a></td>
 </tr>
 <tr>
 <td><strong>Mod 3</strong></td>
@@ -115,7 +115,7 @@
 <td>JS Functions + Scope</td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d02/instructor_notes/click_events.md">Dom Events</a></td>
 <td>jQuery</td>
-<td>ES6</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations</a></td>
 </tr>
 <tr>
 <td><strong>Mod 4</strong></td>
@@ -127,9 +127,7 @@
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d02/student_labs/wendy_bite">Wendy Bite LAB</a>
 </td>
 <td>LAB</td>
-<td>Breakout Sessions: 
-  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations- Maren</a>
-  + CS Algorithms- Danny</td>
+<td>CS Algorithms- Danny</td>
 </tr>
 <tr>
 <td><strong>Homework</strong></td>
