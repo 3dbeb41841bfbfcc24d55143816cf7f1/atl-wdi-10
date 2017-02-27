@@ -58,13 +58,22 @@
 | Data Structures | JS Functions + Scope | DOM Events | jQuery | ES6 + CSS Animations |
 | Lab | Lab | Lab | Lab | CS |
 
-### Supplemental Reading
+### Supplemental Reading for week 2
+#### JS
 - [Intro to Loops](https://www.teamten.com/lawrence/programming/intro/intro8.html)
 - [Array methods](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 78 - 83
 - [Functions](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 26 - 28
 - [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
 - [Khan Academy- HTML/jQuery](https://www.khanacademy.org/computing/computer-programming/html-js-jquery)
 - [Khan Academy- JS Drawing and Animation](https://www.khanacademy.org/computing/computer-programming/programming)
+<br />
+
+#### ES6
+- [Symbols](http://es6-features.org/#SymbolType)
+- [Iterator & for..of operator](http://es6-features.org/#IteratorForOfOperator)
+- [Generators](https://davidwalsh.name/es6-generators)
+- [Proxies](https://ponyfoo.com/articles/es6-proxies-in-depth)
+- [Reflection and meta-programming](http://www.2ality.com/2011/01/reflection-and-meta-programming-in.html)
 
 ---
 
