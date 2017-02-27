@@ -155,6 +155,8 @@
 - [Generators](https://davidwalsh.name/es6-generators)
 - [Proxies](https://ponyfoo.com/articles/es6-proxies-in-depth)
 - [Reflection and meta-programming](http://www.2ality.com/2011/01/reflection-and-meta-programming-in.html)
+- [ES5, ES6, Typescript](https://johnpapa.net/es5-es2015-typescript/)
+- [Intro to ES6](http://blog.teamtreehouse.com/get-started-ecmascript-6)
 
 
 #### Week 1 - Fundamentals
