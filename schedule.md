@@ -135,7 +135,7 @@
 <td>Homework</td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-1-17-progress-bar%2Ba-smarter-way">Homework</a></td>
 <td>Homework</td>
-<td>Homework</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-3-17-stopwatch%2Ba-smarter-way">Homework</a></td>
 </tr>
 </tbody></table>
 
