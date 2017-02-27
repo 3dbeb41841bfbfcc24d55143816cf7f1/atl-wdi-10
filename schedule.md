@@ -54,7 +54,7 @@
 </tr>
 <tr>
 <td><strong>Training</strong></td>
-<td>Homework: Create wireframes, user stories, trello board + github for project 1</td>
+<td>Homework: Catch Up</td>
 <td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
