@@ -412,9 +412,12 @@
 - [Built with Bootstrap](https://bootstrapbay.com/blog/built-with-bootstrap/)
 - [Bootstrap Tutorial](https://www.youtube.com/watch?v=gqOEoUR5RHg)
 <br />
+<br />
 
 ## Important Links
 
 * [Google Calendar](https://calendar.google.com/calendar/embed?src=b4s54mkg0s2c1ddov57cffe4ls%40group.calendar.google.com&ctz=America/New_York)
 * [Hypepotamus Calendar of Events](https://www.google.com/search?q=hypepotamus+calendar&oq=hypepotamus+calendar&aqs=chrome.0.69i59.4188j0j7&sourceid=chrome&ie=UTF-8)
+* [JS Cheatsheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
+* [WDI-9 Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
 
