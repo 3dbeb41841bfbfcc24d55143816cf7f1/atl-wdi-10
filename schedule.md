@@ -1,5 +1,66 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI 9!!!
 
+#### Week 5 - Mongo/Mongoose, Security, Project 2
+<table><thead>
+  <tr>
+    <th>Time</th>
+    <th>Day 1</th>
+    <th>Day 2</th>
+    <th>Day 3</th>
+    <th>Day 4</th>
+    <th>Day 5</th>
+  </tr>
+</thead><tbody>
+  <tr>
+    <td><strong>WarmUp</strong></td>
+    <td>Morning Exercise</td>
+    <td>Morning Exercise</td>
+    <td>Morning Exercise</td>
+    <td>Morning Exercise</td>
+    <td>Morning Exercise</td>
+  </tr>
+  <tr>
+    <td><strong>Mod 1</strong></td>
+    <td>Constructors</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/security-and-auth">Diagnostic</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/ajax-and-express">CRUD Mongo/Mongoose View</a></td>
+    <td>Sessions Lab</td>
+    <td>Intro to Project Two/Sample Project</td>
+  </tr>
+  <tr>
+    <td><strong>Mod 2</strong></td>
+    <td>Constructors LAB</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/express-security-with-passport">Mongo Set up/Mongoose</a></td>
+    <td><a href="https://github.com/GA-WDI/curriculum/tree/master/resources/02-front-end-intro/js-ajax-lab">CRUD Mongo/Mongoose View</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/heroku-deployment">Authentication Lab</a></td>
+    <td>Project Two</td>
+  </tr>
+  <tr>
+    <td><strong>Mod 3</strong></td>
+    <td><a href="https://github.com/ATL-WDI-Exercises/mean_todo_app">Promises</a></td>
+    <td>Mongoose Postman Lab</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/websockets">CRUD LAB</a></td>
+    <td>LAB</td>
+    <td>Project Two</td>
+  </tr>
+  <tr>
+    <td><strong>Mod 4</strong></td>
+    <td><a href="https://github.com/ATL-WDI-Exercises/mean_todo_app">Promises LAB</a></td>
+    <td><a href="https://github.com/ga-wdi-exercises/compliment-express">LAB</a></td>
+    <td>LAB</td>
+    <td>LAB</td>
+    <td>Project Two</td>
+  </tr>
+  <tr>
+    <td><strong>Training</strong></td>
+    <td>Homework</td>
+    <td>Homework</td>
+    <td>Homework</td>
+    <td>Project Two</td>
+    <td>Project Two</td>
+  </tr>
+</tbody></table>
+
 #### Week 4 - NodeJS, Express, Mongoose
 <table><thead>
   <tr>
