@@ -9,23 +9,18 @@
 // by assigning the appropriate variable a value of either `true` or `false`.
 
 // 1. true || false 
-//var resOne = true;
 var resOne;
 
 // 2. null || ''
-//var resTwo = falsey;
 var resTwo;
 
 // 3. 'false' && true
-//var resThree = true;
 var resThree;
 
 // 4. !!0
-//var resFour = false;
 var resFour;
 
 // 5. !null && !undefined
-//var resFive = true;
 var resFive;
 
 /// Flow Control ///
@@ -70,8 +65,7 @@ var resEight;
 var resNine;
 // Replace This Comment With Your Code
 
-// 10. Using whatever code you like, calculate n^n for each value from n from 1
-//     to 10 (both inclusive), and store the sum in the variable `resTen`.
+// 10. For numbers 1-10, calculate n^n and then store the sum of all of these values in the variable `resTen`.
 var resTen;
 // Replace This Comment With Your Code
 

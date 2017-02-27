@@ -64,8 +64,7 @@ for (var i = 0; i < 1000; i++) {
   }
 }
 
-// 10. Using whatever code you like, calculate n^n for each value from n from 1
-//     to 10 (both inclusive), and store the sum in the variable `resTen`.
+// 10. For numbers 1-10, calculate n^n and then store the sum of all of these // values in the variable `resTen`.
 var resTen;
 resTen = 0;
 for (var i = 1; i <= 10; i++) {
