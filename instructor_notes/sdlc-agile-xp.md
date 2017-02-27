@@ -38,7 +38,7 @@ This number can even reach into the hundreds on very large projects.
 
 This many layers of communication coupled with the complexity of writing software **ALWAYS** guarantees one thing: **`chaos`**.
 
-![chaos_gif](http://giphy.com/gifs/mciMfMijRXIfm/html5)
+![chaos_gif](http://i.giphy.com/mciMfMijRXIfm.gif)
 
 Understanding the SDLC and its resultant Software Development Methodologies allows us to manage this inevitable chaos.
 Even more importantly, it allows us to remove **`fear`** from the development process and **`go fast, forever`**.
