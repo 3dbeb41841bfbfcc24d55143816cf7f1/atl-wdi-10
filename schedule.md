@@ -54,7 +54,7 @@
 </tr>
 <tr>
 <td><strong>Training</strong></td>
-<td><a href="https://github.com/ATL-WDI-Exercises/progressive-tax-calc">Tax Calculator</a></td>
+<td>Homework: Create wireframes, user stories, trello board + github for project 1</td>
 <td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
