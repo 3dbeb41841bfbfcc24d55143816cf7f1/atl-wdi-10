@@ -33,7 +33,7 @@ Objects in JavaScript
 
 ### What is an object? (5m)
 
-I was thinking about intro-ing this lesson by discussing Ariel's Secret Grotto of human objects, but decided just to continue on the theme that I began in the last lesson...  In the last lesson, I asked you think about 5 objects that define you.  You added these items to an array and were able to iterate over them/console.log them.  But there wasn't any detail given about the items, we just stated their names.  Objects can help us out with that.
+I was thinking about intro-ing this lesson by discussing Ariel's Secret Grotto of human objects, but decided just to continue on the theme that I began in the last lesson...  In the last lesson, I asked you to think about 5 objects that define you.  You added these items to an array and were able to iterate over them/console.log them.  But there wasn't any detail given about the items, we just stated their names.  Objects can help us out with that.
 
 * Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they are called a dictionary, in Ruby they are called a hash).
 * In JavaScript, an object is a type of key-value store, or a way to group pairs of keys and values together
