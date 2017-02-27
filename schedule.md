@@ -24,31 +24,31 @@
     <td>Constructors</td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/security-and-auth">Diagnostic</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/ajax-and-express">CRUD Mongo/Mongoose View</a></td>
-    <td>Sessions Lab</td>
+    <td>Sessions</td>
     <td>Intro to Project Two/Sample Project</td>
   </tr>
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>Constructors LAB</td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/express-security-with-passport">Mongo Set up/Mongoose</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/express-security-with-passport">Diagnostic</a></td>
     <td><a href="https://github.com/GA-WDI/curriculum/tree/master/resources/02-front-end-intro/js-ajax-lab">CRUD Mongo/Mongoose View</a></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/heroku-deployment">Authentication Lab</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/heroku-deployment">Sessions Lab</a></td>
     <td>Intro to Project Two/Sample Project</td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
     <td><a href="https://github.com/ATL-WDI-Exercises/mean_todo_app">Promises</a></td>
-    <td>Mongoose Postman Lab</td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/websockets">CRUD LAB</a></td>
-    <td>LAB</td>
+    <td>Mongo Set up/Mongoose</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/websockets">CRUD Mongo/Mongoose View</a></td>
+    <td>Authentication</td>
     <td>Project Two</td>
   </tr>
   <tr>
     <td><strong>Mod 4</strong></td>
     <td><a href="https://github.com/ATL-WDI-Exercises/mean_todo_app">Promises LAB</a></td>
-    <td><a href="https://github.com/ga-wdi-exercises/compliment-express">LAB</a></td>
-    <td>LAB</td>
-    <td>LAB</td>
+    <td><a href="https://github.com/ga-wdi-exercises/compliment-express">Mongoose Postman Lab</a></td>
+    <td>CRUD LAB</td>
+    <td>Authentication LAB</td>
     <td>Project Two</td>
   </tr>
   <tr>
@@ -56,7 +56,7 @@
     <td>Homework</td>
     <td>Homework</td>
     <td>Homework</td>
-    <td>Project Two</td>
+    <td>Homework</td>
     <td>Project Two</td>
   </tr>
 </tbody></table>
