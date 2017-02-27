@@ -109,7 +109,7 @@ We only see the keys returned, right?  So, can you think of a way to access the 
 
 var ourObj = { one: 'Danny', two: 'Maren', three: 'Josh', four: 'John', five: 'Lisa' };
 
-for (eachKey in ourObj) {
+for (var eachKey in ourObj) {
   console.log(ourObj[eachKey]);
 }
 
@@ -125,7 +125,7 @@ Meaning that we can choose to run the expression before or after the block of co
 
 ```javascript
 while (true) {
-  // an infinite loop!
+  // an infinite loop! Be careful! Thanks for the demo today.
 }
 ```
 

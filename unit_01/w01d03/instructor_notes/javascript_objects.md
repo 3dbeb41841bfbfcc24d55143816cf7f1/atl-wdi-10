@@ -216,8 +216,27 @@ var classroom = {
 There are three native ways to list the properties of an object we're just going to explore the `for ... in` loop:
 
 * **for...in loops** This method traverses all enumerable properties of an object and its prototype chain
-* **Object.keys(o)**  This method returns an array with all of the enumerable property's names/the keys of the object o.
-* **Object.getOwnPropertyNames(o)** This method returns an array containing all of the enumberable property's names/the keys of the object o.
+
+```javascript
+for (var eachKey in classroom) {
+  console.log(eachKey);
+}
+
+```
+
+Which items in the object are returned? And which are missing?
+
+We only see the keys returned, right?  So, can you think of a way to access the values?
+
+```javascript
+for (var eachKey in classroom) {
+  console.log(classroom[eachKey]);
+}
+
+```
+* **Object.keys(classroom)**  This method returns an array with all of the enumerable property's names/the keys of the object classroom.
+* **Object.getOwnPropertyNames(classroom)** This method returns an array containing all of the enumberable property's names/the keys of the object classroom.
+* **Object.values(classroom);**
 
 **Loop over an object's properties**
 
