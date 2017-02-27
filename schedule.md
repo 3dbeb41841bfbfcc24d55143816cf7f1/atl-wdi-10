@@ -206,7 +206,7 @@
 </tbody></table>
 
 ### Supplemental Reading/Knowledge for week 1
-##### HTML/CSS
+#### HTML/CSS
 - [Khan Academy- HTML/CSS](https://www.khanacademy.org/computing/computer-programming/html-css)
 - [Code Academy- HTML/CSS](https://www.codecademy.com/learn/web)
 - [Code Academy- CSS Overview](https://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b)
@@ -218,29 +218,29 @@
 - [CSS Selector Reference PDF](https://slack-files.com/files-pri-safe/T0351JZQ0-F49084VUZ/css_selectors_reference.pdf?c=1487886750-291e83991f8190ef64b1563eba9f370f9df7794a)
 <br />
 
-##### JS
+#### JS
 - [Khan Academy- HTML/JS](https://www.khanacademy.org/computing/computer-programming/html-css-js)
 - [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
 <br />
 
-##### Git
+#### Git
 - [Atlassian Git Tutorial](https://www.atlassian.com/git)
 - [Code Academy Git Tutorial](https://www.codecademy.com/learn/learn-git)
 - [Git Branching Tutorial](http://learngitbranching.js.org/)
 <br />
 
-##### Flexbox
+#### Flexbox
 - [Flexbox- Free Code Camp](https://medium.freecodecamp.com/an-animated-guide-to-flexbox-d280cf6afc35#.nuw1g63si)
 - [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Flexbox Defense](https://www.google.com/webhp?sourceid=chrome-instant&rlz=1C5CHFA_enUS731US731&ion=1&espv=2&ie=UTF-8#q=flexbox+defense&*)
 - [Flexbox Froggy](http://flexboxfroggy.com/)
 <br />
 
-##### Templates
+#### Templates
 - [Website Tempaltes](http://freebiesbug.com/psd-freebies/website-template/)
 <br />
 
-##### Bootstrap
+#### Bootstrap
 - [Bootstrap](http://getbootstrap.com/getting-started/)
 - [Built with Bootstrap](https://bootstrapbay.com/blog/built-with-bootstrap/)
 
