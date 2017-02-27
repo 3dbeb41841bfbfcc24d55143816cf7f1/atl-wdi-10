@@ -105,7 +105,7 @@
   + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
 </td>
 <td>jQuery</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/es6">ES6</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/es6-1">ES6</a></td>
 </tr>
 <tr>
 <td><strong>Mod 3</strong></td>
