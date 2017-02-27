@@ -247,7 +247,7 @@
 <br />
 
 #### Templates
-- [Website Tempaltes](http://freebiesbug.com/psd-freebies/website-template/)
+- [Website Templates](http://freebiesbug.com/psd-freebies/website-template/)
 <br />
 
 #### Bootstrap
