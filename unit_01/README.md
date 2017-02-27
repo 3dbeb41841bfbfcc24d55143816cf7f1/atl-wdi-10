@@ -46,7 +46,7 @@
 - [WDI-9 Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
 - [Bootstrap](http://getbootstrap.com/getting-started/)
 - [Built with Bootstrap](https://bootstrapbay.com/blog/built-with-bootstrap/)
-
+- [Bootstrap Tutorial](https://www.youtube.com/watch?v=gqOEoUR5RHg)
 ---
 
 # Week 2
