@@ -39,7 +39,7 @@
     <td><strong>Mod 3</strong></td>
     <td><a href="https://github.com/ATL-WDI-Exercises/mean_todo_app">Promises</a></td>
     <td>Mongo Set up/Mongoose</td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/websockets">CRUD Mongo/Mongoose View</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/websockets">Review</a></td>
     <td>Authentication</td>
     <td>Project Two</td>
   </tr>
