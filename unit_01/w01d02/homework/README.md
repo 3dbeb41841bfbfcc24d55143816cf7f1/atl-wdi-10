@@ -4,7 +4,7 @@
 
 ## Setup
 
-Make sure that you are on the `master` branch of your `wdi-remote-matey` repo.
+Make sure that you are on the `master` branch of your `atl-wdi-9` repo.
 Then run `git pull upstream master` to pull the latest materials from the
 instructors' repository. You shouldn't hit a merge conflict here, but if you do,
 flag down an instructor right away.
@@ -14,7 +14,7 @@ you don't accidentally lose your work.
 
 ## Instructions
 
-Read through `hw.js` and follow all of the directions given there.
+Read through `classwork.js` and follow all of the directions given there.
 
 ## Submitting Your Work
 
@@ -24,7 +24,7 @@ When you're ready to submit your work,
 2.  Run the command `npm test` from the same directory, and take a screenshot of
     the output in your terminal.
 3.  Push your code to your fork of the class repo.
-4.  File an issue on the class repo titled "Your Name -- w01d02".
+4.  File an issue on the class repo titled "Your Name -- intro to js".
 
 The issue should include:
 

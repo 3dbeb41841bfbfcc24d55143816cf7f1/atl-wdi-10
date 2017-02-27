@@ -204,23 +204,24 @@
 </thead><tbody>
 <tr>
 <td><strong>WarmUp</strong></td>
-<td>Morning Exercise</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d02/homework">Morning Exercise</a></td>
 <td>WDI9 Outcomes: Intro to Outcomes Program + Post-Course Support</td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/javascript-good-and-bad-parts.md">Morning Exercise</a></td>
-<td>Morning Exercise</td>
-<td>Morning Exercise</td>
+<td><aa href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d04/morning_exercise">Morning Exercise</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d05/morning_exercise">Morning Exercise</a></td>
 </tr>
 <tr>
 <td><strong>Mod 1</strong></td>
 <td>Data Structures:
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/arrays.md">Arrays</a>
 </td>
-<td>JS Functions + Scope</td>
+<td><a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
 <td>
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-intro-and-dev-tools.md">Debugging, Chrome Dev Tools</a> 
   + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
 </td>
-<td>jQuery</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/instructor_notes/intro_to_jquery.md
+">Intro to jQuery</a></td>
 <td>LAB</td>
 </tr>
 <tr>
@@ -228,12 +229,13 @@
 <td>Data Structures: 
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/javascript_objects.md">JS Objects</a>
 </td>
-<td>JS Functions + Scope</td>
+<td><a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
 <td>
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-intro-and-dev-tools.md">Debugging, Chrome Dev Tools</a> 
   + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
 </td>
-<td>jQuery</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/instructor_notes/intro_to_jquery.md
+">Intro to jQuery</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/es6-1">ES2015</a></td>
 </tr>
 <tr>
@@ -241,21 +243,37 @@
 <td>Data Structures:
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/loops_iterators.md">Loops</a>
 </td>
-<td>JS Functions + Scope</td>
+<td><a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d02/instructor_notes/click_events.md">Dom Events</a></td>
-<td>jQuery</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/instructor_notes/intermediate_jquery.md">Intermediate jQuery</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations</a></td>
 </tr>
 <tr>
 <td><strong>Mod 4</strong></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/student_labs/99_problems.md">LAB</a></td>
-<td><a href="https://github.com/ATL-WDI-Exercises/codestyle-and-linting">LAB - Code Style</a></td>
+<td>
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d04/student_labs/js-functions-lab
+  ">LAB - JS Functions</a><br />
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d04/student_labs/js-dice-lab
+  ">LAB - JS Dice Lab</a><br />
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d04/student_labs/js-independent-practice/independent-practice-starter.js
+  ">LAB - Independent Practice</a>
+</td>
 <td>
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d02/student_labs/independent_click_events">Click Events LAB</a>
   <br />
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d02/student_labs/wendy_bite">Wendy Bite LAB</a>
 </td>
-<td>LAB</td>
+<td>
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d04/student_labs/in_class_exercises
+  ">In class LAB</a><br />
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d04/student_labs/homes
+  ">Homes LAB</a><br />
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/student_labs/jquery_lab/instructions.md
+  ">jQuery LAB</a><br />
+  <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d05/student_labs/jedi-jquery-starter
+  ">Javascript Jedi LAB</a><br />
+</td>
 <td>CS Algorithms- Danny</td>
 </tr>
 <tr>
