@@ -43,6 +43,7 @@
 <br />
 
 #### Bootstrap
+- [WDI-9 Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
 - [Bootstrap](http://getbootstrap.com/getting-started/)
 - [Built with Bootstrap](https://bootstrapbay.com/blog/built-with-bootstrap/)
 
