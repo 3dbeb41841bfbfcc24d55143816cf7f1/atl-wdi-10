@@ -70,7 +70,7 @@ person.name;
 => "Danny"
 ```
 
-You can define or change a property by assigning it a value using `=` as you would a normal variable.
+You can define or change a property by assigning it a value using the assignment operator `=` as you would a normal variable.
 
 ```javascript
 var person = {
