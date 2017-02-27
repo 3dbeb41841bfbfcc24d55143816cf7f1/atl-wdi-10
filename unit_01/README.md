@@ -55,8 +55,8 @@
 | Monday | Tuesday | Wednesday | Thursday | Friday |
 |-----------------------|----------------------------|----------------------|-----------------|-------------|
 | Data Structures | JS Functions + Scope  | Debugging, Chrome Dev Tools + Dom Manipulation | jQuery | Review |
-| Data Structures | JS Functions + Scope | DOM Events | jQuery | Lab |
-| Lab | Lab | Lab | Lab | Lab |
+| Data Structures | JS Functions + Scope | DOM Events | jQuery | ES6 + CSS Animations |
+| Lab | Lab | Lab | Lab | CS |
 
 ### Supplemental Reading
 - [Intro to Loops](https://www.teamten.com/lawrence/programming/intro/intro8.html)
