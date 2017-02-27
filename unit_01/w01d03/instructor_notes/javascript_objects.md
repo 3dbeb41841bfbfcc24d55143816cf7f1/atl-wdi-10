@@ -47,7 +47,7 @@ For example, a puppy has properties, a breed/type, the color of his/her fur, a s
 
 #### Object literal syntax
 
-Strings are defined in 'quotes', arrays are in ['square bracets'], objects follow the same lexical pattern but use `{curlyBraces: 'and are structured as key/value pairs'}`, the `key`/name comess before the colon and the `value`, after the colon.
+Strings are defined in 'quotes', arrays are in ['square bracets'], objects follow the same lexical pattern but use `{curlyBraces: 'and are structured as key/value pairs'}`, the `key`/name comes before the colon and the `value`, after the colon.
 
 Like arrays, these key-value pairs are comma separated!
 
