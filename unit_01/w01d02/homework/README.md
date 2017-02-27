@@ -15,22 +15,3 @@ you don't accidentally lose your work.
 ## Instructions
 
 Read through `classwork.js` and follow all of the directions given there.
-
-## Submitting Your Work
-
-When you're ready to submit your work,
-
-1.  Run the command `npm install` from the directory where `package.json` sits.
-2.  Run the command `npm test` from the same directory, and take a screenshot of
-    the output in your terminal.
-3.  Push your code to your fork of the class repo.
-4.  File an issue on the class repo titled "Your Name -- intro to js".
-
-The issue should include:
-
--   A link that points back to your fork.
-
--   The screenshot you took.
-
--   A 'comfort' score on how you feel about the material, from 1 (very
-    uncomfortable) to 5 (very comfortable)
