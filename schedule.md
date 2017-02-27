@@ -75,7 +75,7 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d01/morning_exercise">Morning Exercise</a></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d02/morning_exercise">Morning Exercise</a></td>
+    <td>WDI9 Outcomes: Linkedin for your Job Search</td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d03/morning_exercise">Morning Exercise</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d04/morning_exercise">Morning Exercise</a></td>
     <td>Morning Exercise</td>
@@ -144,7 +144,7 @@
 <tr>
 <td><strong>WarmUp</strong></td>
 <td>Morning Exercise</td>
-<td>Morning Exercise</td>
+<td>WDI9 Outcomes: Elevator Pitch + Networking in ATL</td>
 <td>Project One</td>
 <td>Project One</td>
 <td>Project One</td>
@@ -205,7 +205,7 @@
 <tr>
 <td><strong>WarmUp</strong></td>
 <td>Morning Exercise</td>
-<td>Morning Exercise</td>
+<td>WDI9 Outcomes: Intro to Outcomes Program + Post-Course Support</td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/javascript-good-and-bad-parts.md">Morning Exercise</a></td>
 <td>Morning Exercise</td>
 <td>Morning Exercise</td>
