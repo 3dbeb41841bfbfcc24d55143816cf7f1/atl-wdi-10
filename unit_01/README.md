@@ -56,7 +56,7 @@
 | Monday | Tuesday | Wednesday | Thursday | Friday |
 |-----------------------|----------------------------|----------------------|-----------------|-------------|
 | Data Structures | JS Functions + Scope  | Debugging, Chrome Dev Tools + Dom Manipulation | jQuery | Review |
-| Data Structures | JS Functions + Scope | DOM Events | jQuery | ES6 + CSS Animations |
+| Data Structures | JS Functions + Scope | DOM Events | jQuery | ES2015 + CSS Animations |
 | Lab | Lab | Lab | Lab | CS |
 
 ### Supplemental Reading for week 2
@@ -75,8 +75,9 @@
 - [Generators](https://davidwalsh.name/es6-generators)
 - [Proxies](https://ponyfoo.com/articles/es6-proxies-in-depth)
 - [Reflection and meta-programming](http://www.2ality.com/2011/01/reflection-and-meta-programming-in.html)
-- [ES5, ES6, Typescript](https://johnpapa.net/es5-es2015-typescript/)
-- [Intro to ES6](http://blog.teamtreehouse.com/get-started-ecmascript-6)
+- [ES5, ES2015, Typescript](https://johnpapa.net/es5-es2015-typescript/)
+- [Intro to ES2015](http://blog.teamtreehouse.com/get-started-ecmascript-6)
+- [ES2016 and beyond](http://javascriptplayground.com/blog/2016/02/es2016-and-beyond/)
 
 ---
 

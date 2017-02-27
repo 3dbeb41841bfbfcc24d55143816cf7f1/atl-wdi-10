@@ -105,7 +105,7 @@
   + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
 </td>
 <td>jQuery</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/es6-1">ES6</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/es6-1">ES2015</a></td>
 </tr>
 <tr>
 <td><strong>Mod 3</strong></td>
@@ -155,9 +155,9 @@
 - [Generators](https://davidwalsh.name/es6-generators)
 - [Proxies](https://ponyfoo.com/articles/es6-proxies-in-depth)
 - [Reflection and meta-programming](http://www.2ality.com/2011/01/reflection-and-meta-programming-in.html)
-- [ES5, ES6, Typescript](https://johnpapa.net/es5-es2015-typescript/)
-- [Intro to ES6](http://blog.teamtreehouse.com/get-started-ecmascript-6)
-
+- [ES5, ES2015, Typescript](https://johnpapa.net/es5-es2015-typescript/)
+- [Intro to ES2015](http://blog.teamtreehouse.com/get-started-ecmascript-6)
+- [ES2016 and beyond](http://javascriptplayground.com/blog/2016/02/es2016-and-beyond/)
 
 #### Week 1 - Fundamentals
 <table><thead>
