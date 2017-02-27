@@ -85,7 +85,7 @@ person.name;
 => "John"
 ```
 
-## Create an object with properties
+## We Do: Create an object with properties
 
 We are going to create an object `classroom` that contains the properties `name` and `campus`:
 
