@@ -163,7 +163,7 @@ var classroom = {
 };
 ```
 
-**EXERCISE**: How do we ask for values in an object? How do we call functions?
+***How do we ask for values in an object? How do we call functions?**
 
 To call the method, we add a pair of parentheses at the end, in order to execute it:
 
