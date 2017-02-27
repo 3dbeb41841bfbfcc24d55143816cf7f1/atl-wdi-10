@@ -33,7 +33,7 @@
     <td><a href="https://github.com/ATL-WDI-Curriculum/express-security-with-passport">Mongo Set up/Mongoose</a></td>
     <td><a href="https://github.com/GA-WDI/curriculum/tree/master/resources/02-front-end-intro/js-ajax-lab">CRUD Mongo/Mongoose View</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/heroku-deployment">Authentication Lab</a></td>
-    <td>Project Two</td>
+    <td>Intro to Project Two/Sample Project</td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
