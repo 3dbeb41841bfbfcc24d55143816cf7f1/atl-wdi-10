@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf686211-1aa0-479b-a342-08fc8b4a4c0a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instructor_notes/sdlc-agile-xp.md" afterPath="$PROJECT_DIR$/instructor_notes/sdlc-agile-xp.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedule.md" afterPath="$PROJECT_DIR$/schedule.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,12 +20,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sdlc-agile-xp.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/instructor_notes/sdlc-agile-xp.md">
+      <file leaf-file-name="schedule.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/schedule.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="435">
-                <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+              <first_editor relative-caret-position="318">
+                <caret line="276" column="29" lean-forward="false" selection-start-line="276" selection-start-column="29" selection-end-line="276" selection-end-column="29" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -41,6 +41,8 @@
       <find>Morning Exercise</find>
       <find>flexbox</find>
       <find>morning exercise</find>
+      <find>functions</find>
+      <find>cs algo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -61,8 +63,8 @@
         <option value="$PROJECT_DIR$/homework/a_smarter_way_to_learn_js_ch_1_through_30.md" />
         <option value="$PROJECT_DIR$/homework/thing.html" />
         <option value="$PROJECT_DIR$/unit_01/w05d04/instructor_notes/flexbox.md" />
-        <option value="$PROJECT_DIR$/schedule.md" />
         <option value="$PROJECT_DIR$/instructor_notes/sdlc-agile-xp.md" />
+        <option value="$PROJECT_DIR$/schedule.md" />
       </list>
     </option>
   </component>
@@ -256,12 +258,12 @@
       <workItem from="1487187542072" duration="162000" />
       <workItem from="1487187853829" duration="17300000" />
       <workItem from="1487794588578" duration="6006000" />
-      <workItem from="1487905555099" duration="11676000" />
+      <workItem from="1487905555099" duration="13179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37221000" />
+    <option name="totallyTimeSpent" value="38724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -618,22 +620,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schedule.md">
+    <entry file="file://$PROJECT_DIR$/instructor_notes/sdlc-agile-xp.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="213">
-            <caret line="73" column="15" lean-forward="true" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+          <first_editor relative-caret-position="525">
+            <caret line="197" column="61" lean-forward="true" selection-start-line="197" selection-start-column="61" selection-end-line="197" selection-end-column="61" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instructor_notes/sdlc-agile-xp.md">
+    <entry file="file://$PROJECT_DIR$/schedule.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="435">
-            <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <first_editor relative-caret-position="318">
+            <caret line="276" column="29" lean-forward="false" selection-start-line="276" selection-start-column="29" selection-end-line="276" selection-end-column="29" />
             <folding />
           </first_editor>
           <second_editor />
