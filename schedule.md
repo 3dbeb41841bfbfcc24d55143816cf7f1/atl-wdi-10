@@ -215,7 +215,7 @@
 <td>Data Structures:
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/arrays.md">Arrays</a>
 </td>
-<td><a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
 <td>
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-intro-and-dev-tools.md">Debugging, Chrome Dev Tools</a> 
   + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
@@ -229,7 +229,7 @@
 <td>Data Structures: 
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/javascript_objects.md">JS Objects</a>
 </td>
-<td><a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
 <td>
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-intro-and-dev-tools.md">Debugging, Chrome Dev Tools</a> 
   + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
@@ -243,7 +243,7 @@
 <td>Data Structures:
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/loops_iterators.md">Loops</a>
 </td>
-<td><a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d02/instructor_notes/click_events.md">Dom Events</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/instructor_notes/intermediate_jquery.md">Intermediate jQuery</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations</a></td>
