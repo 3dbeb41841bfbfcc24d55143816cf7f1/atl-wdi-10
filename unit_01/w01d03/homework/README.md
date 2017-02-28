@@ -14,12 +14,9 @@ Read through `hw.md` and follow all of the directions given there.
 
 When you're ready to submit your work,
 
-1.  Push your code to your fork of the class repo.
-2.  File an issue on the class repo titled "Your Name -- w01d03".
+To the atl-wdi9-hmwork channel, include:
 
-The issue should include:
-
--   A link that points back to your fork.
+-   A link that points back to your fork/github repo.
 
 -   A 'comfort' score on how you feel about the material, from 1 (very
     uncomfortable) to 5 (very comfortable)
