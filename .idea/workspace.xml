@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf686211-1aa0-479b-a342-08fc8b4a4c0a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedule.md" afterPath="$PROJECT_DIR$/schedule.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,10 +24,8 @@
         <entry file="file://$PROJECT_DIR$/schedule.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="870">
-                <caret line="217" column="127" lean-forward="false" selection-start-line="217" selection-start-column="127" selection-end-line="217" selection-end-column="127" />
-                <caret line="231" column="127" lean-forward="false" selection-start-line="231" selection-start-column="127" selection-end-line="231" selection-end-column="127" />
-                <caret line="245" column="127" lean-forward="false" selection-start-line="245" selection-start-column="127" selection-end-line="245" selection-end-column="127" />
+              <first_editor relative-caret-position="318">
+                <caret line="276" column="29" lean-forward="false" selection-start-line="276" selection-start-column="29" selection-end-line="276" selection-end-column="29" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -45,6 +42,7 @@
       <find>flexbox</find>
       <find>morning exercise</find>
       <find>functions</find>
+      <find>cs algo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -260,12 +258,12 @@
       <workItem from="1487187542072" duration="162000" />
       <workItem from="1487187853829" duration="17300000" />
       <workItem from="1487794588578" duration="6006000" />
-      <workItem from="1487905555099" duration="12986000" />
+      <workItem from="1487905555099" duration="13179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38531000" />
+    <option name="totallyTimeSpent" value="38724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -636,10 +634,8 @@
     <entry file="file://$PROJECT_DIR$/schedule.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="870">
-            <caret line="217" column="127" lean-forward="false" selection-start-line="217" selection-start-column="127" selection-end-line="217" selection-end-column="127" />
-            <caret line="231" column="127" lean-forward="false" selection-start-line="231" selection-start-column="127" selection-end-line="231" selection-end-column="127" />
-            <caret line="245" column="127" lean-forward="false" selection-start-line="245" selection-start-column="127" selection-end-line="245" selection-end-column="127" />
+          <first_editor relative-caret-position="318">
+            <caret line="276" column="29" lean-forward="false" selection-start-line="276" selection-start-column="29" selection-end-line="276" selection-end-column="29" />
             <folding />
           </first_editor>
           <second_editor />

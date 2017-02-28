@@ -274,7 +274,7 @@
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d05/student_labs/jedi-jquery-starter
   ">Javascript Jedi LAB</a><br />
 </td>
-<td>CS Algorithms- Danny</td>
+<td>Intro to Design Patterns - Danny</td>
 </tr>
 <tr>
 <td><strong>Homework</strong></td>
