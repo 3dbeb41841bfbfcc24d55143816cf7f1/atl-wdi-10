@@ -193,12 +193,33 @@ teams to build and ship code incredibly fast. These values and practices include
 - Pair-programming
 - Continuous Integration and Continuous Deployment
 
-## Velocity
+## Velocity and Estimation
 
-Velocity is one of the most powerful planning tools available, and the concept is very simple.
+**Question: I want you to add a new button to one of the web pages you've already built during this course.
+How long will this take you?**
 
-Agile teams develop a baseline
+The only correct answer is _"I don't know."_ You can make an _**educated guess**_ but that's the
+best you can do. Estimation is not an `exact science`. Mathematically speaking, it is a
+`distribution`.
 
+![](http://i63.tinypic.com/jfkyz4.jpg)
+
+There are many processes that exist in the software development world for dealing with
+this uncertainty, but the most common in the Agile world is `velocity`.
+
+Velocity, as we mentioned before is the average number of `story points` a team accomplishes over
+a set period of time (usually one or two weeks). Assuming this number is **stable**, the team
+can use their `velocity` as a baseline to determine how much time is left, based on the `stories`
+left in the `backlog`.
+
+Let's break this down with an example:
+- According to our backlog, we have **40 POINTS** of story work left on our project.
+- Our **VELOCITY** is pretty stable, at about **8 POINTS** per week.
+- Therefore, we can safely guess that we have **~5 WEEKS** of time left on our project.
+
+This will not be 100% accurate! Velocity will not stay the same for the entire life of a project.
+BUT can we all agree that this is likely to be a much more accurate estimate than if we had
+just made an arbitrary guess?
 
 ## You Do (45 minutes)
 
