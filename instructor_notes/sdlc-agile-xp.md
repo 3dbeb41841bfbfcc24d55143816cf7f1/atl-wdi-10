@@ -221,6 +221,8 @@ This will not be 100% accurate! Velocity will not stay the same for the entire l
 BUT can we all agree that this is likely to be a much more accurate estimate than if we had
 just made an arbitrary guess?
 
+> The stability of a team's **velocity** over time is also known as **volatility**.
+
 ## You Do (45 minutes)
 
 Build this (only the portfolio page): http://unvab.com/snow-free-html/portfolio.html
