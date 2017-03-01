@@ -437,6 +437,6 @@
 ## Books
 
 * [A Smarter Way to Learn JS](http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf)
-* [JavaScript + JQuery](https://www.amazon.com/Web-Design-HTML-JavaScript-jQuery/dp/1118907442/ref=sr_1_1?ie=UTF8&qid=1488318981&sr=8-1&keywords=html+and+javascript+book)
+* [JavaScript + JQuery](https://www.dropbox.com/s/05je29f3oxj7oa0/JavaScript%20and%20JQuery%20Interactive%20Front-End%20Web%20Development%202014.pdf?dl=0)
 * [JavaScript the Good Parts](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf)
 * [Eloquent JS](http://eloquentjavascript.net/)
