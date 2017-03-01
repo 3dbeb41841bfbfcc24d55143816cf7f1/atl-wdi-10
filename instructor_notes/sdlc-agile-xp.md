@@ -191,9 +191,14 @@ teams to build and ship code incredibly fast. These values and practices include
 - Co-location
 - Test-driven development
 - Pair-programming
-- Continuous Integration and Continuous Deployment
+- Continuous Integration and Continuous Deployment (CI/CD)
 
 ## Velocity and Estimation
+
+> "Business likes to view estimates as commitments. Developers like to view estimates as guesses.
+The difference is profound."
+
+> &mdash; Robert C. Martin (Uncle Bob), _The Clean Coder_
 
 **Question: I want you to add a new button to one of the web pages you've already built during this course.
 How long will this take you?**

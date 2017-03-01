@@ -24,8 +24,8 @@
         <entry file="file://$PROJECT_DIR$/instructor_notes/sdlc-agile-xp.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="713">
-                <caret line="237" column="22" lean-forward="true" selection-start-line="237" selection-start-column="22" selection-end-line="237" selection-end-column="22" />
+              <first_editor relative-caret-position="240">
+                <caret line="200" column="2" lean-forward="true" selection-start-line="200" selection-start-column="2" selection-end-line="200" selection-end-column="2" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -286,7 +286,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49463000" />
+    <option name="totallyTimeSpent" value="49918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -463,7 +463,7 @@
         <state relative-caret-position="680">
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -796,7 +796,7 @@
         <state relative-caret-position="680">
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -824,8 +824,8 @@
     <entry file="file://$PROJECT_DIR$/instructor_notes/sdlc-agile-xp.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="713">
-            <caret line="237" column="22" lean-forward="true" selection-start-line="237" selection-start-column="22" selection-end-line="237" selection-end-column="22" />
+          <first_editor relative-caret-position="240">
+            <caret line="200" column="2" lean-forward="true" selection-start-line="200" selection-start-column="2" selection-end-line="200" selection-end-column="2" />
             <folding />
           </first_editor>
           <second_editor />
