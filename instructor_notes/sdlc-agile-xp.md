@@ -232,7 +232,7 @@ just made an arbitrary guess?
 
 Split into three teams of ~10 people each! (3 mins)
 
-**We're going to build a new website for our company, _**Vandelay Industries**_.**
+**We're going to build a new website for our company, _Vandelay Industries_.**
 
 #### Requirements:
 - I think it should have a red `header bar` with our company's **name** and **logo**.
