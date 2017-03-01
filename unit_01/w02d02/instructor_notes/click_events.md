@@ -182,6 +182,10 @@ Exercise: (20m) Look at the starter code <a href="https://github.com/ATL-WDI-Cur
 
 ## Independent Practice
 
-##### Exercise #1 - GA DOM Mod
+##### Exercise #1 - Independent Click Events
 
 [Independent Click Events](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/dev/unit_01/w02d02/student_labs/independent_click_events)
+
+##### Exercise #2 - Wendy Bite
+
+[Wendy Bite](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d02/student_labs/wendy_bite)
