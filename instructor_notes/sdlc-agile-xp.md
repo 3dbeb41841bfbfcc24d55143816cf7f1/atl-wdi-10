@@ -230,13 +230,48 @@ just made an arbitrary guess?
 
 ## You Do (45 minutes)
 
-Build this (only the portfolio page): http://unvab.com/snow-free-html/portfolio.html
+Split into three teams of ~10 people each! (3 mins)
 
-1 Waterfall team
+**We're going to build a new website for our company, _**Vandelay Industries**_.**
 
-1 Agile team
+#### Requirements:
+- I think it should have a red `header bar` with our company's **name** and **logo**.
+- I also think it should have four buttons, each in a different color:
+    - blue
+    - red
+    - green
+    - orange
+- When I click on any one of the buttons, the other four buttons should turn that color.
+- I want our application to be deployed to a [Codepen](http://codepen.io/).
 
-1 XP team
+
+#### Waterfall team
+- Before you write ANY code, you must draw up your entire plan for the application and I must approve it.
+- If you uncover any problems with your plan as you code, I must approve any changes to that plan before
+you continue.
+- I am a very important Business Person &trade; with lots of very important certifications. I manage many
+projects. This means my time is very valuable and my schedule might not be open every time you want to
+get my approval.
+
+#### Scrum team
+- Spend 10 minutes determining your `backlog` of stories. Try your best to account for each step you will need.
+- Work in three ten-minute sprints. Plan your first sprint and assign point-values to the stories you think
+you can complete in the first sprint.
+- If you do not complete all of your stories in the first sprint, they will move to the next sprint, but try
+to learn from the mistakes you made in the first sprint and improve on them in the second. The goal is to
+complete all of the stories you have accounted for in a sprint.
+- If you don't think you can complete all of the required in your third sprint, try to prioritize the most
+important work remaining in the backlog.
+- I will check in with you at the end of each sprint to give feedback on your progress.
+
+#### XP team
+- Spend 10 minutes determining your `backlog` of stories. Try your best to account for each step you will need.
+- Decide when a full unit of work has been complete (e.g. the header is successfully created), and show
+it to me for approval.
+- Once I have approved a unit of work, move on to the next unit and repeat that process. You should be
+checking in with me at least every few minutes.
+
+#### When we are done, we will get back together and compare our websites and experiences!
 
 ---
 
