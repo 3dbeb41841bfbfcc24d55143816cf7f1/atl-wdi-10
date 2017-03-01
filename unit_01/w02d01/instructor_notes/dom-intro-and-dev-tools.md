@@ -186,7 +186,7 @@ Let's try this:
   }
 ```
 
-<br>
+<br />
 
 ## Conclusion
 
