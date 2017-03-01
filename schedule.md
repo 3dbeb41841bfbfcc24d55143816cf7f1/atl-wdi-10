@@ -302,6 +302,8 @@
 - [Switch statements MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 - [Switch statements tutorial- tutorialspoint](http://www.tutorialspoint.com/javascript/javascript_switch_case.htm)
 - [Switch Statements tutorial-after hours programming](http://www.afterhoursprogramming.com/tutorial/JavaScript/Switch-Statement/)
+- [DOM Cheatsheet](http://christianheilmann.com/stuff/JavaScript-DOM-Cheatsheet.pdf)
+- [Dom Reference](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 <br />
 
 #### ES6
@@ -313,6 +315,9 @@
 - [ES5, ES2015, Typescript](https://johnpapa.net/es5-es2015-typescript/)
 - [Intro to ES2015](http://blog.teamtreehouse.com/get-started-ecmascript-6)
 - [ES2016 and beyond](http://javascriptplayground.com/blog/2016/02/es2016-and-beyond/)
+
+#### Other
+- [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
 
 #### Week 1 - Fundamentals
 <table><thead>
