@@ -291,6 +291,7 @@
 - [Intro to Loops](https://www.teamten.com/lawrence/programming/intro/intro8.html)
 - [Array methods](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 78 - 83
 - [Functions](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 26 - 28
+- [Functions](https://www.codecademy.com/courses/functions-in-javascript-2-0/0/1)
 - [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
 - [Khan Academy- HTML/jQuery](https://www.khanacademy.org/computing/computer-programming/html-js-jquery)
 - [Khan Academy- JS Drawing and Animation](https://www.khanacademy.org/computing/computer-programming/programming)
@@ -301,6 +302,8 @@
 - [Switch statements MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 - [Switch statements tutorial- tutorialspoint](http://www.tutorialspoint.com/javascript/javascript_switch_case.htm)
 - [Switch Statements tutorial-after hours programming](http://www.afterhoursprogramming.com/tutorial/JavaScript/Switch-Statement/)
+- [DOM Cheatsheet](http://christianheilmann.com/stuff/JavaScript-DOM-Cheatsheet.pdf)
+- [Dom Reference](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 <br />
 
 #### ES6
@@ -312,6 +315,9 @@
 - [ES5, ES2015, Typescript](https://johnpapa.net/es5-es2015-typescript/)
 - [Intro to ES2015](http://blog.teamtreehouse.com/get-started-ecmascript-6)
 - [ES2016 and beyond](http://javascriptplayground.com/blog/2016/02/es2016-and-beyond/)
+
+#### Other
+- [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
 
 #### Week 1 - Fundamentals
 <table><thead>
@@ -417,7 +423,22 @@
 ## Important Links
 
 * [Google Calendar](https://calendar.google.com/calendar/embed?src=b4s54mkg0s2c1ddov57cffe4ls%40group.calendar.google.com&ctz=America/New_York)
-* [Hypepotamus Calendar of Events](https://www.google.com/search?q=hypepotamus+calendar&oq=hypepotamus+calendar&aqs=chrome.0.69i59.4188j0j7&sourceid=chrome&ie=UTF-8)
-* [JS Cheatsheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
-* [WDI-9 Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
+* [Hypepotamus Calendar of Events](https://hypepotamus.com/events/)
+* [WDI-9 JS Cheatsheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
+* [WDI-9 Bootstrap Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
+* [Daily Design/UI Challenge](http://www.dailyui.co/)- become a better designer in 100 days!
+
+## Tutorial Sites
+
+* [Code Wars](codewars.com)
+* [Nodingbat](nodingbat.com)
+* [Free Code Camp](https://www.freecodecamp.com/)
+
+## Books
+
+* [A Smarter Way to Learn JS](http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf)
+* [JavaScript + JQuery](https://www.dropbox.com/s/05je29f3oxj7oa0/JavaScript%20and%20JQuery%20Interactive%20Front-End%20Web%20Development%202014.pdf?dl=0)
+* [JavaScript the Good Parts](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf)
+* [Eloquent JS](http://eloquentjavascript.net/)
+* [DOM Enlightenment](http://domenlightenment.com/#1.1)
 

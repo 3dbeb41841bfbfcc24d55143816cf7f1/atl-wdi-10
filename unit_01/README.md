@@ -64,9 +64,19 @@
 - [Intro to Loops](https://www.teamten.com/lawrence/programming/intro/intro8.html)
 - [Array methods](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 78 - 83
 - [Functions](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 26 - 28
+- [Functions](https://www.codecademy.com/courses/functions-in-javascript-2-0/0/1)
 - [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
 - [Khan Academy- HTML/jQuery](https://www.khanacademy.org/computing/computer-programming/html-js-jquery)
 - [Khan Academy- JS Drawing and Animation](https://www.khanacademy.org/computing/computer-programming/programming)
+- [If/else w3 schools](https://www.w3schools.com/js/js_if_else.asp)
+- [If/else MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+- [If/else tutorial-after hours programming](http://www.afterhoursprogramming.com/tutorial/JavaScript/If-Statements/)
+- [Switch statements w3 schools](https://www.w3schools.com/js/js_switch.asp)
+- [Switch statements MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+- [Switch statements tutorial- tutorialspoint](http://www.tutorialspoint.com/javascript/javascript_switch_case.htm)
+- [Switch Statements tutorial-after hours programming](http://www.afterhoursprogramming.com/tutorial/JavaScript/Switch-Statement/)
+- [DOM Cheatsheet](http://christianheilmann.com/stuff/JavaScript-DOM-Cheatsheet.pdf)
+- [Dom Reference](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 <br />
 
 #### ES6
@@ -78,6 +88,9 @@
 - [ES5, ES2015, Typescript](https://johnpapa.net/es5-es2015-typescript/)
 - [Intro to ES2015](http://blog.teamtreehouse.com/get-started-ecmascript-6)
 - [ES2016 and beyond](http://javascriptplayground.com/blog/2016/02/es2016-and-beyond/)
+
+#### Other
+- [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
 
 ---
 

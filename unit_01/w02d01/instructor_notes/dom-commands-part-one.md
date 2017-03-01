@@ -21,11 +21,11 @@ competencies: Programming
 ## Document Object Model (5m)
 
 The [**D**ocument **O**bject **M**odel](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
-is a programming interface for HTML.
+is the in browser representation for your HTML document.
 
 > The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. 
 
-An HTML *document* is available for us to manipulate as an object, and this object is structured like a tree:
+The DOM makes the HTML *document* available for us to manipulate as an object, and this object is structured like a tree:
 
 Like this:
 
@@ -63,7 +63,7 @@ Let's create a web page and begin to inspect its structure.
 ![](http://i.imgur.com/ylb6WX9.gif)
 
 - Open Terminal
-- `cd` into your `dev` folder
+- `cd` into your `ga` folder
 - Create a new `mkdir dom_intro_lesson`
 - `cd` and create a new file `touch index.html` 
 - Open the file in Sublime
@@ -139,13 +139,13 @@ We'll then come back together as class. Each group will briefly demo and explain
 
 <br />
 
-## How can we run JS in the browser?
+## What are the ways that we can run JS in the browser?
 
-#### Inside the `<head>`
+#### Inside the `<head>` tag
 
 We can run JS inside of `<script> </script>` tags before the closing `</body>` tag of an html document.
 
-#### Exercise: (10 m) I'll demonstrate this in front of you first, and then you can try on your own.
+#### Exercise: (10m) I'll demonstrate this in front of you first, and then you can try on your own.
 
 Open up the HTML file from earlier. At the end of the `<body>` tag write a script tag with the following JS inside of it.
 	
@@ -156,11 +156,11 @@ Open up the HTML file from earlier. At the end of the `<body>` tag write a scrip
 </script>	
 ```
 
-To run this code open the index.html in Chrome. You can click and drag. it Or, in the same directory as index.html, you can right click to open the index.html.
+To run this code open the index.html in Chrome. You can click and drag it. Or, in the same directory as index.html, you can right click to open the index.html.
 
 <br />
 
-#### Link an external JS file, similar to how we linked our css.
+#### Link to an external JS file, similar to how we linked our css.
 
 Instead of `<link>` we'll keep using our script tag. 
 
@@ -183,13 +183,13 @@ Instead of `<link>` we'll keep using our script tag.
 	```html
 	<script src='main.js'></script>
 	```
-   This is going to load our js file into the browser.
+   This is going to load our .js file into the browser.
 
 4. Move your script tag to the line just above the closing `</body>` tag
 
 <br />
 
-#### Load Order
+### Load Order
 
 Here's what happens when a browser loads a website:
 
@@ -203,11 +203,11 @@ There are several advanced techniques that load our JS, but for now we can just 
 
 <br />
 
-#### window.onload
+### window.onload
 
-There is a pattern we can follow to help our page load properly, and execute it in the right order.  Although we should still keep the script tags where they currently are.
+There is a pattern we can follow to help our page load properly, and execute it in the right order.  Although we should still keep the script tags just before the closing body tag.
 
-We can surround our Javascript into a function called `window.onload = function() {}`. This function will wait until the entire window/dom is loaded before allowing any of our Javascript to run.
+We can surround our JavaScript in a function called `window.onload = function() {}`. This function will wait until the entire window/dom is loaded before allowing any of our JavaScript to run.
 
 In your `main.js` file, wrap your JavaScript code in the following function:
 
@@ -221,13 +221,13 @@ Refresh your window and make sure your script is still running!
 
 <br />
 
-![Labtime](http://i.imgur.com/WzTTdIe.jpg)
+<!-- ![Labtime](http://i.imgur.com/WzTTdIe.jpg)
 
 ## Independent Practice
 
 ##### Exercise #1 - GA DOM Mod
 
-[GA Dom Instructions (using Vanilla Javascript)](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/ga_dom.md)
+[GA Dom Instructions (using Vanilla Javascript)](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/ga_dom.md) -->
 
 ## References
 

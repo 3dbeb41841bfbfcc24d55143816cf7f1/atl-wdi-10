@@ -4,14 +4,11 @@
 
 ## Setup
 
-Make sure that you are on the `master` branch of your `wdi-remote-...` repo.
+Make sure that you are on the `master` branch of your `atl-wdi-9` repo.
 Then run `git pull upstream master` to pull the latest materials from the
-instructors' repository. You shouldn't hit a merge conflict here, but if you do,
-flag down an instructor right away.
+instructors' repository. You shouldn't hit a merge conflict here, but if you do, flag down an instructor right away.
 
-Next, navigate to the directory for today, go into the `homework` directory, and
-run `npm install` -- this will download any assignment-specific JavaScript
-dependencies into to a directory called `node_modules`.
+Next, navigate to the homework directory for today(unit1/w02d02/`homework` directory, and run `npm install` -- this will download any assignment-specific JavaScript dependencies into to a directory called `node_modules`.
 
 As you work through this assignment, you should make commits regularly.
 In particular, since there are automated tests built into this assignment, we
@@ -109,7 +106,7 @@ carefully -- it may give you a clue about what to do next.
   1.  Run the command `npm test` and take a screenshot of the output in your
       terminal.
   2.  Push your code to your fork of the class repo.
-  3.  File an issue on the class repo titled "Your Name -- wXXdXX".
+  3.  Add a link to the theme for today in the hmwork slack channel.
 
   The issue should include:
 

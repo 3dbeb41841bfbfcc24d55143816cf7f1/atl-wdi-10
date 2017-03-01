@@ -11,7 +11,7 @@ competencies: Programming
 
 ## Learning Objectives
 
-* Window onload
+<!-- * Window onload -->
 * Describe the syntax and use of functions
 * Conceptualize function references
 * Pass function references to other functions as arguments (callbacks)
@@ -19,7 +19,7 @@ competencies: Programming
 * Think about JS as a system
 * Solidify the process of application design
 
-## DOM Load Order
+<!-- ## DOM Load Order
 
 Here's what happens when a browser loads a website:
 
@@ -49,11 +49,11 @@ window.onload = function() {
 
 Refresh your window and make sure your script is still running!
 
-It is fired after the entire page loads, includ­ing its con­tent (images, css, scripts, etc.)
+It is fired after the entire page loads, includ­ing its con­tent (images, css, scripts, etc.) -->
 
 ## Review — functions
 
-#### The syntax
+### The syntax
 
 A function is written using the `function` keyword, a function name (optional: dependent on whether you are writing a named or anonymous function), followed by a pair of parenthesis `()` with optional arguments, and a code block `{}`.
 
@@ -85,13 +85,13 @@ These functions all behave the same way, and are merely written slightly differe
 
 So, why would we even want to write a function without a name? We are building up to this. Keep it in the back of your head for a moment.
 
-#### Function References
+### Function References
 
 Function references are what is returned when we ask for a function without invoking it.
 
 We have defined several functions already. Let's call them without invoking them and see what the response is.
 
-#### Passing a function as an argument (CALLBACKS!!!)
+### Passing a function as an argument (CALLBACKS!!!)
 
 Functions can be passed as an argument by way of a function reference to other functions. 
 
@@ -156,15 +156,15 @@ button.addEventListener("click", function(event){
 ## Let's break this down for a second
 
 - `.addEventListener` is a function we can call on nodes.
-- The event listener function takes two arguments, a string and an anonymous function.
+- The **event listener** function takes two arguments, a string and an anonymous function.
 - the anonymous function takes an argument `event`... whatt?
 
-An `event`, is another magical object! Let's `console.log(this);` and `console.log(event);`.
+An `event`, is another magical object!
 
 - `this` in the context of event listeners is the node that triggered the event- in this case the node that was clicked.
 - `event` is the event object that has all kinds of information, we can also ask for the node by using `event.target`.
 
-What is the difference between the two responses?
+What is the difference?
 
 Exercise: (20m) Look at the starter code <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d02/student_labs/in_class_click_events">here</a>. There are three buttons. Add event listeners to all of three buttons.
 
@@ -173,5 +173,19 @@ Exercise: (20m) Look at the starter code <a href="https://github.com/ATL-WDI-Cur
 
    >A click event is essentially tying a function (as a callback) to an element and specifying what action needs to happen to trigger or call/invoke that function (callback).
 
-   and appends it to the DOM in the `<div class="information">`.
+   and appends it to the DOM in the `<div id="information">`.
 3. Button three, when clicked, should remove the `p` tag from the DOM
+
+<br />
+
+![Labtime](http://i.imgur.com/WzTTdIe.jpg)
+
+## Independent Practice
+
+##### Exercise #1 - Independent Click Events
+
+[Independent Click Events](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/dev/unit_01/w02d02/student_labs/independent_click_events)
+
+##### Exercise #2 - Wendy Bite
+
+[Wendy Bite](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d02/student_labs/wendy_bite)

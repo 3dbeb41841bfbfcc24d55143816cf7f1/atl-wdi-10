@@ -32,11 +32,11 @@ edited:
 
 ## What are Dev Tools? – Intro
 
-One of the most important traits a developer can have is an inner detective, an inner Sherlock Homes. A developer needs to be a world class detective. Always having an eye for looking deeper under the surface. 
+One of the most important traits a developer can have is an inner Sherlock Homes. A developer needs to be a world class detective. Always having an eye/interest in looking deeper, under the surface. 
 
 ![](http://cdn2.hubspot.net/hub/485203/file-2549982505-jpg/blog-files/sherlock_holmes_questionmark_white_bg-289x300.jpg) 
 
-Every great detective needs a great set of tools. Most modern browsers include a set of tools that allow developers to monitor and explore what is going on on a web page. The Chrome Developer Tools, often shortened to "Dev Tools", are a set of debugging tools built into Google Chrome.
+Every great detective needs a great set of tools. Most modern browsers include a set of tools that allow developers to monitor and explore what is going on on a web page. The Chrome Developer Tools, often shortened to "Dev Tools", are a set of debugging tools built into Google Chrome.  
 
 We can do a lot of useful things with these tools, but here are some of the things that are the most useful:
 
@@ -58,15 +58,15 @@ First, let's navigate to [http://generalassemb.ly](http://generalassemb.ly).
 
 Now to access the DevTools, we can press:
 
-- `⌘ + option + i` to open the DevTools (will open on the last tab you had open)
-- `⌘ + option + j` to open the DevTools on the console tab
-- `⌘ + option + u` to view the source
+- `command(⌘) + option + i` to open the DevTools (will open on the last tab you had open)
+- `command(⌘) + option + j` to open the DevTools on the console tab
+- `command(⌘) + option + u` to view the source
 
-If you forget these commands, you can always go to *View > Developer > Developer Tools*, but it is to your benefit to try to memorize the keyboard shortcuts.
+If you forget these commands, you can always go to *View > Developer > Developer Tools*, but it is to your benefit to try to **memorize the keyboard shortcuts**.
 
 ### DevTools Tabs
 
-Overall, there are eight main tools available in the Developer Tools. You may see people's dev tools with a few more, as you can add custom ones using extensions.
+Overall, there are eight main tools available in the Developer Tools. You may see other people's dev tools with a few more, as you can add custom ones using extensions.
 
 We won't use all of these tabs during this course, the key tabs that we will become familiar with are:
 
@@ -94,9 +94,9 @@ Let's go ahead and play around with some of these tools.
 
 The chrome dev tools have made it very easy to quickly test and edit the CSS before incorporating it back into your application. On [http://generalassemb.ly](http://generalassemb.ly) do the following:
 
-- Press `⌘ + option + i` to open the inspector view
+- Press `command(⌘) + option + i` to open the inspector view
   - You can open the dev tools with any shortcut that you like, then press the square with the arrow on the top left corner of the tools section.
-  - Alternatively, try right-clicking on the page and selecting "Inspect Element" at the bottom
+  - Alternatively, try right-clicking on the page and selecting "Inspect Element" at the bottom; or right-clicking on a particular element and selecting "Inspect"
 - Look at the DOM nodes on the left-hand side and select the `body`
 - Look at the CSS responsible for a rendered element in the browser
 
@@ -109,7 +109,7 @@ body {
 }
 ```
 
-What happened? We have this CSS file locally (in the DOM), we are able to do whatever we want to change it!  But remember that if you refresh the page, everything is gone!  Your browser sent a new request and received a new response back - aka the default CSS files and folders associated with the `generalassemb.ly` endpoint.
+What happened? When we have this CSS file locally (in the DOM), we are able to do whatever we want to change it!  But remember that if you refresh the page, everything is gone!  Your browser sent a new request and received a new response back - aka the default CSS files and folders associated with the `generalassemb.ly` endpoint.
 
 A few other things to try:
 
@@ -172,21 +172,21 @@ The console shell also allows us to execute JavaScript and interact with the cur
 Let's try this:
 
 ```javascript
-> 1 + 1
+> 1 + 1;
 < 2
 
-> var a = 1;
+> var a = 10;
 < undefined
 
-> a
-< 1
+> a;
+< 10
 
-> for (var i = 0; i < 10; i++) {
+> for (var i = 0; i < a; i++) {
     console.log(i);
   }
 ```
 
-<br>
+<br />
 
 ## Conclusion
 
