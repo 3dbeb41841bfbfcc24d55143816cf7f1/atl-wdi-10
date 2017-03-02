@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI 9!!!
 
-<!-- #### Week 5 - Mongo/Mongoose, Security, Project 2
+#### Week 5 - Mongo/Mongoose, Security, Project 2
 <table><thead>
   <tr>
     <th>Time</th>
@@ -59,7 +59,7 @@
     <td>Homework</td>
     <td>Project Two</td>
   </tr>
-</tbody></table> -->
+</tbody></table>
 
 #### Week 4 - NodeJS, Express, Mongoose
 <table><thead>
@@ -100,6 +100,8 @@
     <td><strong>Mod 3</strong></td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_intro.md">Intro to Express</a>
+      <br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_intro.md">Express View</a>
       <br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/instructor_notes/express_router.md">Express Routing</a>
     </td>
@@ -441,4 +443,9 @@
 * [JavaScript the Good Parts](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf)
 * [Eloquent JS](http://eloquentjavascript.net/)
 * [DOM Enlightenment](http://domenlightenment.com/#1.1)
+
+## Articles
+* [My first month of coding](https://www.thinkful.com/blog/my-first-month-coding-an-emotional-roller-coaster/)
+
+
 
