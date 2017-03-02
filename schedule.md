@@ -224,7 +224,7 @@
 </td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/instructor_notes/intro_to_jquery.md
 ">Intro to jQuery</a></td>
-<td>LAB</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/labs/3-3-17-khan-academy.md">LAB</a></td>
 </tr>
 <tr>
 <td><strong>Mod 2</strong></td>
