@@ -310,7 +310,6 @@
 - [Functions in JS](https://www.w3schools.com/js/js_object_definition.asp)
 - [Event.target in JS](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
 - [Event.target in JS](https://www.w3schools.com/jsref/event_target.asp)
-- 
 <br />
 
 #### ES6
