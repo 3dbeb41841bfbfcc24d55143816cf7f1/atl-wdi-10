@@ -306,6 +306,11 @@
 - [Switch Statements tutorial-after hours programming](http://www.afterhoursprogramming.com/tutorial/JavaScript/Switch-Statement/)
 - [DOM Cheatsheet](http://christianheilmann.com/stuff/JavaScript-DOM-Cheatsheet.pdf)
 - [Dom Reference](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+- [this in JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+- [Functions in JS](https://www.w3schools.com/js/js_object_definition.asp)
+- [Event.target in JS](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
+- [Event.target in JS](https://www.w3schools.com/jsref/event_target.asp)
+- 
 <br />
 
 #### ES6
@@ -426,6 +431,7 @@
 
 * [Google Calendar](https://calendar.google.com/calendar/embed?src=b4s54mkg0s2c1ddov57cffe4ls%40group.calendar.google.com&ctz=America/New_York)
 * [Hypepotamus Calendar of Events](https://hypepotamus.com/events/)
+* [Meetups](http://www.meetup.com/)
 * [WDI-9 JS Cheatsheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
 * [WDI-9 Bootstrap Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
 * [Daily Design/UI Challenge](http://www.dailyui.co/)- become a better designer in 100 days!
@@ -435,6 +441,10 @@
 * [Code Wars](codewars.com)
 * [Nodingbat](nodingbat.com)
 * [Free Code Camp](https://www.freecodecamp.com/)
+* [r/learn programming](https://www.reddit.com/r/learnprogramming/)
+* [Khan Academy](https://www.khanacademy.org/computing/computer-programming)
+* [Code Academy- JS](https://www.codecademy.com/learn/javascript)
+* [Code Academy- HTML](https://www.codecademy.com/learn/web)
 
 ## Books
 
@@ -447,5 +457,6 @@
 ## Articles
 * [My first month of coding](https://www.thinkful.com/blog/my-first-month-coding-an-emotional-roller-coaster/)
 
-
+## Twitter Feeds to Follow
+* [Code newbie](https://twitter.com/codenewbies)
 
