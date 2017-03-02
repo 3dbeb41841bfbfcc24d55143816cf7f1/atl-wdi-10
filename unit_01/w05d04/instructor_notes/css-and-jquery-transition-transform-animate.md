@@ -218,7 +218,7 @@ Next, add a transition property:
 
 You can check out the `transform` options in the Dev Tools using autocomplete. The `transform` property has the following values...
 
-### Use the CSS3 transform property to visually manipulate DOM elements in a 2D space
+### In 2D
 
 1. transform: rotate(10deg);
 1. transform: scale(1.1);
@@ -231,7 +231,7 @@ You can perform multiple transforms in one statement
 
 <br />
 
-### Use the CSS3 transform property to visually manipulate DOM elements in a 3D space
+### In 3D
 
 The Z axis extends out of the screen
 
@@ -251,6 +251,21 @@ If you know the math, you can write your own transformation matrix
 1. matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
 1. http://periodic.famo.us/
 
+#### Example of `translateX()`
+
+    ```css
+    div {
+      ...
+      transition-property: background, transform; /* make sure to add transform here */
+      transform: translateX(0); /* start state */    
+    }
+    
+    div:hover {
+        ...
+        transform: translateX(100px); /* end state */
+    }    
+    ```
+
 <br />
 
 ![](http://i.imgur.com/ylb6WX9.gif)
@@ -269,7 +284,7 @@ If you know the math, you can write your own transformation matrix
 
 <br />
 
-## Explain why using transform for animation is better than using position
+## Transform is Better than Position
 
 Why don't we just use something like `position: relative` and `left: 200px`?
 
@@ -286,32 +301,11 @@ Transforms are better for animation for two reasons:
 
 <br />
 
-<br />
+## Complex Animations with Multiple States
 
-![](http://i.imgur.com/ylb6WX9.gif)
-
-2. Let's also add a `translateX()`
-
-    ```css
-    div {
-      ...
-      transition-property: background, transform; /* make sure to add transform here */
-      transform: translateX(0); /* start state */    
-    }
-    
-    div:hover {
-        ...
-        transform: translateX(100px); /* end state */
-    }    
-    ```
+Transitions are great for going from one state to another, but sometimes you need more than an initial and a final state.
 
 <br />
-
-## Write complex animations with multiple states
-
-Transitions are great for going from one state to another, but sometimes you need more than a start and end state.
-
-<br>
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
@@ -425,7 +419,7 @@ jQuery has some simple animation methods like `fadeIn()` for example. Let's try 
     }
 ```
 
-1. javascript:
+1. jQuery:
 
     ```js
     $('#box1').fadeIn(3000).fadeOut(4000);
@@ -452,7 +446,7 @@ Here are some [common jQuery effects](http://www.w3schools.com/jquery/jquery_ref
     }
 ```
 
-1. javascript:
+1. jQuery:
 
     ```js
     $("button").click(function(){
@@ -474,13 +468,15 @@ Look at these links and complete as many of these exercises as you can:
 
 <br />
 
-## Bonuses
+## Bonus
 
 Look at the following examples, try to re-create them from scratch using as little starter code as possible.
 
 * [Animated Buttons](http://tympanus.net/Tutorials/AnimatedButtons/index.html) (Transitions and Animations)
 * [Image Hover Effects](http://tympanus.net/Tutorials/OriginalHoverEffects/) (Transitions and Animations)
 * [Solar System in CSS](http://neography.com/journal/our-solar-system-in-css3/) (Transitions and Animations)
+
+<br />
 
 ## Resources
 - [The Perfect Human](https://www.youtube.com/watch?v=W9kls6bMkRo)
