@@ -325,6 +325,7 @@
 
 #### Other
 - [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
+- [Debugging JS](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)
 
 #### Week 1 - Fundamentals
 <table><thead>
@@ -424,6 +425,15 @@
 - [Bootstrap](http://getbootstrap.com/getting-started/)
 - [Built with Bootstrap](https://bootstrapbay.com/blog/built-with-bootstrap/)
 - [Bootstrap Tutorial](https://www.youtube.com/watch?v=gqOEoUR5RHg)
+
+#### Debugging
+- [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
+- [Debugging JS](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)
+- [Debugging on different browsers- Tutorialspoint](https://www.tutorialspoint.com/javascript/javascript_debugging.htm)
+- [Debugging- W3 Schools](https://www.w3schools.com/js/js_debugging.asp)
+- [Debugging- Creative Bloq Article](http://www.creativebloq.com/javascript/javascript-debugging-beginners-3122820)
+- [Debugging on Wired](https://www.wired.com/2010/02/javascript_debugging_for_beginners/)
+- [Debugging on Chrome- Tutorial](https://developer.chrome.com/extensions/tut_debugging)
 <br />
 <br />
 
@@ -453,6 +463,7 @@
 * [JavaScript the Good Parts](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf)
 * [Eloquent JS](http://eloquentjavascript.net/)
 * [DOM Enlightenment](http://domenlightenment.com/#1.1)
+* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 
 ## Articles
 * [My first month of coding](https://www.thinkful.com/blog/my-first-month-coding-an-emotional-roller-coaster/)
