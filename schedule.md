@@ -137,7 +137,7 @@
   </tr>
 </tbody></table>
 
-### Supplemental Reading for week 2
+### Supplemental Reading for week 4
 #### Node.JS
 - [Node JS- Tutorialspoint](https://www.tutorialspoint.com/nodejs/)
 - [1. module.exports](http://openmymind.net/2012/2/3/Node-Require-and-Exports/)
