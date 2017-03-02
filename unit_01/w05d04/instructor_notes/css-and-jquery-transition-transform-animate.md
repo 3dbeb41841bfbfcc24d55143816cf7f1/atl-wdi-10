@@ -212,6 +212,7 @@ Next, add a transition property:
 
 <br />
 ---
+<br />
 
 ## CSS Transform
 
