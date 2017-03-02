@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI 9!!!
 
-#### Week 5 - Mongo/Mongoose, Security, Project 2
+### Week 5 - Mongo/Mongoose, Security, Project 2
 <table><thead>
   <tr>
     <th>Time</th>
@@ -61,7 +61,7 @@
   </tr>
 </tbody></table>
 
-#### Week 4 - NodeJS, Express, Mongoose
+### Week 4 - NodeJS, Express, Mongoose
 <table><thead>
   <tr>
     <th>Time</th>
@@ -139,11 +139,22 @@
 
 ### Supplemental Reading for week 2
 #### Node.JS
-[Node JS- Tutorialspoint](https://www.tutorialspoint.com/nodejs/)
+- [Node JS- Tutorialspoint](https://www.tutorialspoint.com/nodejs/)
+- [1. module.exports](http://openmymind.net/2012/2/3/Node-Require-and-Exports/)
+- [2. module.exports](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
+<br />
 
 #### Express
+- [Express routing docs](https://expressjs.com/en/guide/routing.html)
+- [Express Router](https://scotch.io/tutorials/keeping-api-routing-clean-using-express-routers)
+<br />
 
-#### Week 3 - Project Management/Project 1
+#### Other
+- [client side vs. server side ](https://spin.atomicobject.com/2015/04/06/web-app-client-side-server-side/)
+
+<br />
+
+### Week 3 - Project Management/Project 1
 <table><thead>
 <tr>
 <th>Time</th>
@@ -204,7 +215,7 @@
 </tr>
 </tbody></table>
 
-#### Week 2 - Javascript/DOM
+### Week 2 - Javascript/DOM
 <table><thead>
 <tr>
 <th>Time</th>
@@ -345,7 +356,7 @@
 - [Searching in dev tools](http://developer.telerik.com/featured/16-ways-to-search-find-and-edit-with-chrome-devtools/)
 - [Bullet Journal](http://bulletjournal.com/get-started/)
 
-#### Week 1 - Fundamentals
+### Week 1 - Fundamentals
 <table><thead>
 <tr>
 <th>Time</th>
