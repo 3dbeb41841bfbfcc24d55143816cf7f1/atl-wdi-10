@@ -152,7 +152,6 @@
 
 #### Other
 - [client side vs. server side ](https://spin.atomicobject.com/2015/04/06/web-app-client-side-server-side/)
-
 <br />
 
 ### Week 3 - Project Management/Project 1
@@ -329,6 +328,7 @@
 - [Switch Statements tutorial-after hours programming](http://www.afterhoursprogramming.com/tutorial/JavaScript/Switch-Statement/)
 - [DOM Cheatsheet](http://christianheilmann.com/stuff/JavaScript-DOM-Cheatsheet.pdf)
 - [Dom Reference](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+- [DOM- Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 - [this in JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 - [Functions in JS](https://www.w3schools.com/js/js_object_definition.asp)
 - [Event.target in JS](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
@@ -339,6 +339,7 @@
 - [A Smarter Way to Learn jQuery](https://github.com/JideLambo/javascript-books/blob/master/A%20Smarter%20Way%20to%20Learn%20jQuery%20-%20Mark%20Myers.pdf) - this was the only link that I found.  Otherwise, you might be able to download it somewhere.
 - [jQuery, and intro](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery) 
 - [jQuery Cheat Sheet](https://oscarotero.com/jquery/)
+- [jQuery- W3 Schools](https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_html_set)
 <br />
 
 #### ES6
@@ -360,6 +361,7 @@
 
 #### CSS
 - [Specificity](https://css-tricks.com/specifics-on-css-specificity/)
+<br />
 
 #### Other
 - [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
@@ -367,6 +369,7 @@
 - [Searching in dev tools](http://developer.telerik.com/featured/16-ways-to-search-find-and-edit-with-chrome-devtools/)
 - [Bullet Journal](http://bulletjournal.com/get-started/)
 - [Can I Use](http://caniuse.com/)
+<br />
 
 ### Week 1 - Fundamentals
 <table><thead>
@@ -462,10 +465,11 @@
 <br />
 
 #### Bootstrap
-- [WDI-9 Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
-- [Bootstrap](http://getbootstrap.com/getting-started/)
+- [WDI-9 Bootstrap Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
+- [Bootstrap Site](http://getbootstrap.com/getting-started/)
 - [Built with Bootstrap](https://bootstrapbay.com/blog/built-with-bootstrap/)
 - [Bootstrap Tutorial](https://www.youtube.com/watch?v=gqOEoUR5RHg)
+<br />
 
 #### Debugging
 - [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
@@ -485,10 +489,11 @@
 * [Meetups](http://www.meetup.com/)
 * [WDI-9 JS Cheatsheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
 * [WDI-9 Bootstrap Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
-* [Daily Design/UI Challenge](http://www.dailyui.co/)- become a better designer in 100 days!
+* [Pomodoro Timer](http://www.marinaratimer.com/)
 
 ## Tutorial Sites
 
+* [Daily Design/UI Challenge](http://www.dailyui.co/)- become a better designer in 100 days!
 * [Code Wars](codewars.com)
 * [Nodingbat](nodingbat.com)
 * [Free Code Camp](https://www.freecodecamp.com/)

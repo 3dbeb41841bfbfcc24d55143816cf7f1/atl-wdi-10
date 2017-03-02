@@ -13,6 +13,13 @@
 
 <br />
 
+## Hook
+The Five Obstructions is one of my favorite films.  Jorgan Leth created a short entitled, _The Perfect Human_.  Lars Von Trier (a director from Denmark, most known for _Dancer in the Dark_ and _Dogville_) saw this short and thought that it was so perfect that he wondered whether Leth could re-create it.  Von Trier was part of a wave of directors that thought that in order to create new pieces of art, they should place restrictions on each other.  Von Trier 'dares' Jordan Leth to re-create his famous short, with the restrictions decided by Von Trier.  He does this 5 times, and one of them is to create an animated film.
+
+This is what Jordan Leth created- [The Five Obstructions Animation](https://www.youtube.com/watch?v=9-Y1PhOt6sM).
+
+<br />
+
 ## Intro
 
 Today we'll be covering 3 major topics:
@@ -30,7 +37,13 @@ Today we'll be covering 3 major topics:
 
 For example, we have more control over how the animation repeats, we can change between multiple values at once, etc.
 
-**Prefixing** - If you're using chrome, you won't need to add a prefix to any of the properties used this lesson, but in general, it's a good idea to check **Can I Use** (http://www.caniuse.com) to see if you need to use prefixes to support most users. For CSS Animations, you should use prefixes to ensure support for Safari, IE, and other browsers.
+**Vendor Prefixes** - A prefix provides browser support for features that are not fully supported.  If you are using chrome, you won't need to add a prefix to any of the properties used this lesson, but in general, it's a good idea to check **Can I Use** (http://www.caniuse.com) to see if you need to use prefixes to support most users/browsers. For CSS Animations, you should use prefixes to ensure support for Safari, IE, and other browsers.
+
+**Vendor Prefixes**
+-webkit- // Chrome/Safari
+-moz- // Firefox
+-o- // Opera
+-ms // IE
 
 The easiest way to do this is with **prefix free** (http://leaverou.github.io/prefixfree/).
 
@@ -173,6 +186,7 @@ Next, add a transition property (there are more):
 
 - `transition-property: background, left, top, height;`
     - the name or names of the CSS properties that you would like to animate
+    - separate multiple properties by a comma
 - `transition-duration: 0.5s;`
     - specifies the duration of an animation
     - can be specified in seconds or milliseconds(1000ms to 1s)
@@ -184,6 +198,7 @@ Next, add a transition property (there are more):
 	- ease-out
 	- ease-in-out
 	- cubic-bezier(n,n,n,n)
+        - [Cubic Bezier](http://cubic-bezier.com/#.17,.67,.83,.67)
 - `transition-delay: 1s;`
     - allows you to delay the start of the animation
 
@@ -191,9 +206,10 @@ Next, add a transition property (there are more):
 .square {
     width: 200px;
     height: 200px;
-    background: red;
+    background: red; /* initial state */
     transition-property: background-color;
-    transition-duration: 1s;
+    transition-duration: 5s; // 1s is the default
+    transition-delay: 3s;
 }
 
 .square:hover {
@@ -203,10 +219,25 @@ Next, add a transition property (there are more):
 }
 ```
 
-Shorthand
+Shorthand- allows your code to be shorter and more maintainable, especially if you are using vendor prefixes.
 
-- `transition: <property> <duration> <timing-function> <delay>`
+- `transition: <transition-property> <transition-duration> <timing-function> <transition-delay>`
     - Example: `transition: transform 1s ease-in-out;` 
+
+```css
+.square {
+    width: 200px;
+    height: 200px;
+    background: red; /* initial state */
+    transition: background-color 5s 3s; 
+}
+
+.square:hover {
+    width: 200px;
+    height: 200px;
+    background: blue; /* final state */
+}
+```
 
 <br />
 
@@ -434,3 +465,7 @@ Look at the following examples, try to re-create them from scratch using as litt
 * [Animated Buttons](http://tympanus.net/Tutorials/AnimatedButtons/index.html) (Transitions and Animations)
 * [Image Hover Effects](http://tympanus.net/Tutorials/OriginalHoverEffects/) (Transitions and Animations)
 * [Solar System in CSS](http://neography.com/journal/our-solar-system-in-css3/) (Transitions and Animations)
+
+## Resources
+- [The Perfect Human](https://www.youtube.com/watch?v=W9kls6bMkRo)
+- [Can I Use](http://www.caniuse.com)
