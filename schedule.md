@@ -84,7 +84,8 @@
     <td><strong>Mod 1</strong></td>
     <td>Project 1 Retrospective</td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_views.md">Handlebar Views</a></td>
-    <td>Database Design</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d03/instructor_notes/data_modeling.md
+">Database Design</a></td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a>
       <br />
@@ -337,6 +338,7 @@
 #### jQuery
 - [A Smarter Way to Learn jQuery](https://github.com/JideLambo/javascript-books/blob/master/A%20Smarter%20Way%20to%20Learn%20jQuery%20-%20Mark%20Myers.pdf) - this was the only link that I found.  Otherwise, you might be able to download it somewhere.
 - [jQuery, and intro](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery) 
+- [jQuery Cheat Sheet](https://oscarotero.com/jquery/)
 <br />
 
 #### ES6
