@@ -54,6 +54,7 @@ For example, we have more control over how the animation repeats, we can change 
 
 The easiest way to do this is with **prefix free** (http://leaverou.github.io/prefixfree/).
 
+---
 <br />
 
 <!-- ## Group Breakouts
@@ -76,8 +77,8 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 	- Keyframe artist
 		- Draws the main frames for the animation
 	- Inbetweener  (tweener)
-		- Fills in the frames between each keyframe so it looks fluid
-1. In computer animation, we act as the keyframe artist, and the computer is the 'tweener'.
+		- Fills in the frames between each keyframe, so it looks fluid
+1. In computer animation, the developer acts as the keyframe artist, and the computer is the 'tweener'.
 
 <br />
 
@@ -85,9 +86,9 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 
 <br />
 
-## Create basic transitions between a initial state and a final state in CSS
+## Create Basic Transitions in CSS
 
-Transitions are a way to introduce timing to a given effect. In order to use these effects, you first need to define an initial state and a final state for the element you would like to change.
+Transitions are a way to introduce **timing** to a given effect. In order to use any effect, you first need to define an initial state and a final state for the element that you would like to change.
 
 <!-- ```css
 a {
@@ -106,17 +107,17 @@ a:hover {
 .box {
     width: 100px;
     height: 100px;
-    background: red; /* initial state */
+    background: crimson; /* initial state */
 }
 
 .box:hover {
     width: 100px;
     height: 100px;
-    background: blue; /* final state */
+    background: darkBlue; /* final state */
 }
 ```
 
-Next, add a transition property (there are more):
+Next, add a transition property:
 
 - `transition-property: background, left, top, height;`
     - the name or names of the CSS properties that you would like to animate
@@ -126,13 +127,13 @@ Next, add a transition property (there are more):
     - can be specified in seconds or milliseconds(1000ms to 1s)
 - `transition-timing-function: ease;`
     - different options to explore the speed of the curve
-	- ease
-	- linear
-	- ease-in
-	- ease-out
-	- ease-in-out
-	- cubic-bezier(n,n,n,n)
-        - [Cubic Bezier](http://cubic-bezier.com/#.17,.67,.83,.67)
+    	- ease
+    	- linear
+    	- ease-in
+    	- ease-out
+    	- ease-in-out
+    	- cubic-bezier(n,n,n,n)
+            - [Cubic Bezier Playground](http://cubic-bezier.com/#.17,.67,.83,.67)
 - `transition-delay: 1s;`
     - allows you to delay the start of the animation
 
@@ -140,7 +141,7 @@ Next, add a transition property (there are more):
 .square {
     width: 200px;
     height: 200px;
-    background: red; /* initial state */
+    background: crimson; /* initial state */
     transition-property: background-color;
     transition-duration: 5s; // 1s is the default
     transition-delay: 3s;
@@ -149,11 +150,11 @@ Next, add a transition property (there are more):
 .square:hover {
     width: 200px;
     height: 200px;
-    background: blue; /* final state */
+    background: darkBlue; /* final state */
 }
 ```
 
-**Transition Shorthand**- allows your code to be shorter and more maintainable, especially if you are using vendor prefixes.g
+**Transition Shorthand**- allows your code to be shorter and more maintainable, especially if you are using vendor prefixes.
 
 - `transition: <transition-property> <transition-duration> <timing-function> <transition-delay>`
     - Example: `transition: transform 1s ease-in-out;` 
@@ -162,14 +163,14 @@ Next, add a transition property (there are more):
 .square {
     width: 200px;
     height: 200px;
-    background: red; /* initial state */
+    background: crimson; /* initial state */
     transition: background-color 5s 3s; 
 }
 
 .square:hover {
     width: 200px;
     height: 200px;
-    background: blue; /* final state */
+    background: darkBlue; /* final state */
 }
 ```
 
@@ -177,22 +178,22 @@ Next, add a transition property (there are more):
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
-1. Create a 100px by 100px square box that has a background color of red
+1. Create a 100px by 100px square box that has a background color of tomato
 1. Write a CSS rule that will transition your div from this initial state:
 
     ```css
     div {
-        background: red;
+        background: tomato;
         width: 100px;
         height: 100px;
 }
 ```
 
-1. Add to this final state... Write a CSS rule that changes the background color to blue when you hover over the element with your mouse
+1. Add to this final state... Write a CSS rule that changes the background color to turquoise when you hover over the element with your mouse
 
     ```css
     div:hover {
-        background: blue;
+        background: turquoise;
     }
 ```
 
@@ -207,9 +208,10 @@ Next, add a transition property (there are more):
     }
     ```
 
-    > There are many timing functions. Check out http://easings.net
+- There are many timing functions. Check out http://easings.net
 
 <br />
+---
 
 ## CSS Transform
 
