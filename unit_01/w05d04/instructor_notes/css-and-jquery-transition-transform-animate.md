@@ -1,5 +1,7 @@
 # CSS Transitions + Animations & jQuery Animations
 
+## Learning Objectives
+
 - Describe the importance of prefixing CSS properties
 - Describe what a CSS transform is, and give some examples
 - Describe what it means to transition or animate in CSS
@@ -14,9 +16,14 @@
 <br />
 
 ## Hook
-The Five Obstructions is one of my favorite films.  Jorgan Leth created a short entitled, _The Perfect Human_.  Lars Von Trier (a director from Denmark, most known for _Dancer in the Dark_ and _Dogville_) saw this short and thought that it was so perfect that he wondered whether Leth could re-create it.  Von Trier was part of a wave of directors that thought that in order to create new pieces of art, they should place restrictions on each other.  Von Trier 'dares' Jordan Leth to re-create his famous short, with the restrictions decided by Von Trier.  He does this 5 times, and one of them is to create an animated film.
 
-This is what Jordan Leth created- [The Five Obstructions Animation](https://www.youtube.com/watch?v=9-Y1PhOt6sM).
+[The Five Obstructions](http://www.imdb.com/title/tt0354575/) is one of my favorite films.  Jorgan Leth created a short in 1967, entitled _The Perfect Human_.  
+
+Lars Von Trier (a Danish director most known for _Dancer in the Dark_ and _Dogville_) saw this short and thought that it was so perfect that he wondered whether Leth could re-create it.  
+
+Von Trier is part of a wave of directors that thought that in order to create new pieces of art, they should place restrictions on each other.  Von Trier 'dares' Jordan Leth to re-create his famous short, with restrictions that are decided upon by Von Trier.  One of the restrictions is to create an animated short.
+
+This is it: [The Five Obstructions Animation](https://www.youtube.com/watch?v=9-Y1PhOt6sM).
 
 <br />
 
@@ -24,12 +31,12 @@ This is what Jordan Leth created- [The Five Obstructions Animation](https://www.
 
 Today we'll be covering 3 major topics:
 
-* CSS Transforms (2D)
 * CSS Transitions
+* CSS Transforms (2D)
 * CSS Animations
 * Prefixing
 
-**Transforms** allow property changes in CSS.  They are a set of CSS properties that take an element and transform it's shape, e.g. rotating it, scaling it, skewing it, etc.
+**Transforms** are a set of CSS properties that take an element and transform it's shape, e.g. rotating it, scaling it, skewing it, etc.
 
 **Transitions** let us tell the browser how to smoothly change a property over time. For example, if the height of an element changes (due to a :hover selector), we can tell the browser to change the height gradually over 1 second.
 
@@ -62,79 +69,6 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 | 5     | CSS Animations (iterations / repeats / direction ) |
 
 <br /> -->
-
-## CSS Transform
-
-You can check out the `transform` options in the Dev Tools using autocomplete. The `transform` property has the following values...
-
-### Use the CSS3 transform property to visually manipulate DOM elements in a 2D space
-
-1. transform: rotate(10deg);
-1. transform: scale(1.1);
-1. transform: translateX(10px);
-1. transform: skewX(45deg);
-
-You can perform multiple transforms in one statement
-
-1. transform: scale(2) skewY(0.3) rotate(4deg);
-
-<br />
-
-### Use the CSS3 transform property to visually manipulate DOM elements in a 3D space
-
-The Z axis extends out of the screen
-
-1. rotateX();
-1. rotateY();
-1. rotateZ();
-1. translateX();
-1. translateY();
-1. translateZ();
-1. scaleX();
-1. scaleY();
-1. scaleZ();
-
-If you know the math, you can write your own transformation matrix
-
-1. matrix(n,n,n,n,n,n)
-1. matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
-1. http://periodic.famo.us/
-
-<br />
-
-![](http://i.imgur.com/ylb6WX9.gif)
-
-1. Create a 100px by 100px square box that has a background color of red
-1. Rotate it 45 degrees
-1. Translate it along the X axis by 200px
-1. Translate it along the Y axis by 200px
-2. Try `transform: translate(200px, 200px)`
-1. Scale the div so it is twice as big
-2. Skew the div by 10 degrees
-3. You can also combine multiple values: `transform: translateX(200px) skew(30deg) scale(3)`
-4. `transform: perspective(35px) translate3d(20px, 30px, 15px)`
-    - x, y, z axis
-    - perspective is distance from the user 
-    - when perspective === z-axis you're behind the element
-
-<br />
-
-## Explain why using transform for animation is better than using position
-
-Why don't we just use something like `position: relative` and `left: 200px`?
-
-
-Transforms are better for animation for two reasons:
-
-1. When elements are changed in the DOM, the browser checks to see if other elements are being pushed around.  When using transforms, the browser doesn't do this which makes it faster.
-    * Add `display: inline-block` to your CSS rule
-    * Add some lorem ipsum 
-   
-1. If you're doing a 3D transform, the computer's GPU is engaged, which is really fast
-    - http://codepen.io/paulirish/pen/nkwKs (uses top/left position)
-    - http://codepen.io/paulirish/pen/LsxyF (uses translate)
-
-<br />
 
 ## Explain the roles in traditional animation and how they apply to computer animation
 
@@ -219,7 +153,7 @@ Next, add a transition property (there are more):
 }
 ```
 
-Shorthand- allows your code to be shorter and more maintainable, especially if you are using vendor prefixes.
+**Transition Shorthand**- allows your code to be shorter and more maintainable, especially if you are using vendor prefixes.g
 
 - `transition: <transition-property> <transition-duration> <timing-function> <transition-delay>`
     - Example: `transition: transform 1s ease-in-out;` 
@@ -243,7 +177,8 @@ Shorthand- allows your code to be shorter and more maintainable, especially if y
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
-1. Write a CSS rule that will transition your div from this start state:
+1. Create a 100px by 100px square box that has a background color of red
+1. Write a CSS rule that will transition your div from this initial state:
 
     ```css
     div {
@@ -253,7 +188,7 @@ Shorthand- allows your code to be shorter and more maintainable, especially if y
 }
 ```
 
-1. Add to this end state... Write a CSS rule that changes the background color to blue when you hover over the element with your mouse
+1. Add to this final state... Write a CSS rule that changes the background color to blue when you hover over the element with your mouse
 
     ```css
     div:hover {
@@ -264,16 +199,94 @@ Shorthand- allows your code to be shorter and more maintainable, especially if y
 1. Let's make that transition a little smoother:
 
     ```css
-  div {
+    div {
         ...  
         transition-duration: 3s;
         transition-property: background; /* specify which property you want to transition */
         transition-timing-function: linear;
-  }
+    }
     ```
 
     > There are many timing functions. Check out http://easings.net
-    
+
+<br />
+
+## CSS Transform
+
+You can check out the `transform` options in the Dev Tools using autocomplete. The `transform` property has the following values...
+
+### Use the CSS3 transform property to visually manipulate DOM elements in a 2D space
+
+1. transform: rotate(10deg);
+1. transform: scale(1.1);
+1. transform: translateX(10px);
+1. transform: skewX(45deg);
+
+You can perform multiple transforms in one statement
+
+1. transform: scale(2) skewY(0.3) rotate(4deg);
+
+<br />
+
+### Use the CSS3 transform property to visually manipulate DOM elements in a 3D space
+
+The Z axis extends out of the screen
+
+1. rotateX();
+1. rotateY();
+1. rotateZ();
+1. translateX();
+1. translateY();
+1. translateZ();
+1. scaleX();
+1. scaleY();
+1. scaleZ();
+
+If you know the math, you can write your own transformation matrix
+
+1. matrix(n,n,n,n,n,n)
+1. matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
+1. http://periodic.famo.us/
+
+<br />
+
+![](http://i.imgur.com/ylb6WX9.gif)
+
+1. Rotate your box 45 degrees
+1. Translate it along the X axis by 200px
+1. Translate it along the Y axis by 200px
+2. Try `transform: translate(200px, 200px)`
+1. Scale the div so it is twice as big
+2. Skew the div by 10 degrees
+3. You can also combine multiple values: `transform: translateX(200px) skew(30deg) scale(3)`
+4. `transform: perspective(35px) translate3d(20px, 30px, 15px)`
+    - x, y, z axis
+    - perspective is distance from the user 
+    - when perspective === z-axis you're behind the element
+
+<br />
+
+## Explain why using transform for animation is better than using position
+
+Why don't we just use something like `position: relative` and `left: 200px`?
+
+
+Transforms are better for animation for two reasons:
+
+1. When elements are changed in the DOM, the browser checks to see if other elements are being pushed around.  When using transforms, the browser doesn't do this which makes it faster.
+    * Add `display: inline-block` to your CSS rule
+    * Add some lorem ipsum 
+   
+1. If you're doing a 3D transform, the computer's GPU is engaged, which is really fast
+    - http://codepen.io/paulirish/pen/nkwKs (uses top/left position)
+    - http://codepen.io/paulirish/pen/LsxyF (uses translate)
+
+<br />
+
+<br />
+
+![](http://i.imgur.com/ylb6WX9.gif)
+
 2. Let's also add a `translateX()`
 
     ```css
