@@ -11,23 +11,20 @@
 - Create complex animations using CSS animation properties
 - Compare & contrast using CSS and JS for animations
 
-<br>
+<br />
 
 ## Intro
 
-Today we'll be covering 3 major topics, each somewhat related:
+Today we'll be covering 3 major topics:
 
 * CSS Transforms (2D)
 * CSS Transitions
 * CSS Animations
 * Prefixing
 
-**Transforms** are a set of CSS properties that take an element and transform
-it's shape, e.g. rotating it, scaling it, skewing it, etc.
+**Transforms** allow property changes in CSS.  They are a set of CSS properties that take an element and transform it's shape, e.g. rotating it, scaling it, skewing it, etc.
 
-**Transitions** let us tell the browser how to change a property over time. For
-example, if the height of an element changes (due to a :hover selector, for
-example), we can tell the browser to change the height gradually over 1 second.
+**Transitions** let us tell the browser how to smoothly change a property over time. For example, if the height of an element changes (due to a :hover selector), we can tell the browser to change the height gradually over 1 second.
 
 **Animations** are similar to transitions, in that they let us change properties over time, but they give us more control over how those changes happen.
 
@@ -39,7 +36,7 @@ The easiest way to do this is with **prefix free** (http://leaverou.github.io/pr
 
 <br />
 
-## Group Breakouts (50m)
+<!-- ## Group Breakouts
 
 Each group will have 20 minutes to prepare a short explanation / demo of their assigned topic. Your demos should take **no longer than 5 minutes**. Explore the next topic if you finish yours.
 
@@ -51,7 +48,7 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 | 4     | CSS Animations (timing functions)                  |
 | 5     | CSS Animations (iterations / repeats / direction ) |
 
-<br />
+<br /> -->
 
 ## CSS Transform
 
@@ -133,7 +130,7 @@ Transforms are better for animation for two reasons:
 		- Draws the main frames for the animation
 	- Inbetweener  (tweener)
 		- Fills in the frames between each keyframe so it looks fluid
-1. In computer animation, we act as the keyframe artist, and the computer is the tweener.
+1. In computer animation, we act as the keyframe artist, and the computer is the 'tweener'.
 
 <br />
 
@@ -141,29 +138,46 @@ Transforms are better for animation for two reasons:
 
 <br />
 
-## Create basic transitions between a start and end state in CSS
+## Create basic transitions between a initial state and a final state in CSS
 
-Transitions are a way to introduce timing to a given effect. To start, define a start state and an end state
+Transitions are a way to introduce timing to a given effect. In order to use these effects, you first need to define an initial state and a final state for the element you would like to change.
 
-```css
+<!-- ```css
 a {
-  	padding:2em; /* start state */
-  	display:inline-block;
-  	border:1px solid black;
-  	position:relative;
-  	left:0;
-  	background:yellow;
+  	padding: 2em; /* initial state */
+  	display: inline-block;
+  	border: 1px solid black;
+  	position: relative;
+  	left: 0;
+  	background: yellow;
 }
 a:hover {
-	background:green; /* end state */
+	background: green; /* final state */
+}
+``` -->
+```css
+.box {
+    width: 100px;
+    height: 100px;
+    background: red; /* initial state */
+}
+
+.box:hover {
+    width: 100px;
+    height: 100px;
+    background: blue; /* final state */
 }
 ```
 
 Next, add a transition property (there are more):
 
 - `transition-property: background, left, top, height;`
+    - the name or names of the CSS properties that you would like to animate
 - `transition-duration: 0.5s;`
+    - specifies the duration of an animation
+    - can be specified in seconds or milliseconds(1000ms to 1s)
 - `transition-timing-function: ease;`
+    - different options to explore the speed of the curve
 	- ease
 	- linear
 	- ease-in
@@ -171,6 +185,23 @@ Next, add a transition property (there are more):
 	- ease-in-out
 	- cubic-bezier(n,n,n,n)
 - `transition-delay: 1s;`
+    - allows you to delay the start of the animation
+
+```css
+.square {
+    width: 200px;
+    height: 200px;
+    background: red;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.square:hover {
+    width: 200px;
+    height: 200px;
+    background: blue; /* final state */
+}
+```
 
 Shorthand
 
@@ -195,7 +226,7 @@ Shorthand
 
     ```css
     div:hover {
-      background: blue;
+        background: blue;
     }
 ```
 
@@ -398,33 +429,8 @@ Look at these links and complete as many of these exercises as you can:
 
 ## Bonuses
 
-Look at the following examples, try to re-create them from scratch using as little
-starter code as possible.
+Look at the following examples, try to re-create them from scratch using as little starter code as possible.
 
 * [Animated Buttons](http://tympanus.net/Tutorials/AnimatedButtons/index.html) (Transitions and Animations)
 * [Image Hover Effects](http://tympanus.net/Tutorials/OriginalHoverEffects/) (Transitions and Animations)
 * [Solar System in CSS](http://neography.com/journal/our-solar-system-in-css3/) (Transitions and Animations)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

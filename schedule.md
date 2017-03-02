@@ -350,13 +350,23 @@
 - [ES5, ES2015, Typescript](https://johnpapa.net/es5-es2015-typescript/)
 - [Intro to ES2015](http://blog.teamtreehouse.com/get-started-ecmascript-6)
 - [ES2016 and beyond](http://javascriptplayground.com/blog/2016/02/es2016-and-beyond/)
+- [You Don't Know ES6](https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond)
+- [Block Scope](https://www.sitepoint.com/joys-block-scoping-es6/)
+- [Destructuring](http://www.2ality.com/2015/01/es6-destructuring.html)
+- [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_template_literals)
+- [More History](https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/)
+- [ES6 Compatibility](https://kangax.github.io/compat-table/es6/)
 <br />
+
+#### CSS
+- [Specificity](https://css-tricks.com/specifics-on-css-specificity/)
 
 #### Other
 - [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
 - [Debugging JS](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)
 - [Searching in dev tools](http://developer.telerik.com/featured/16-ways-to-search-find-and-edit-with-chrome-devtools/)
 - [Bullet Journal](http://bulletjournal.com/get-started/)
+- [Can I Use](http://caniuse.com/)
 
 ### Week 1 - Fundamentals
 <table><thead>
