@@ -77,6 +77,10 @@
 - [Switch Statements tutorial-after hours programming](http://www.afterhoursprogramming.com/tutorial/JavaScript/Switch-Statement/)
 - [DOM Cheatsheet](http://christianheilmann.com/stuff/JavaScript-DOM-Cheatsheet.pdf)
 - [Dom Reference](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+- [this in JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+- [Functions in JS](https://www.w3schools.com/js/js_object_definition.asp)
+- [Event.target in JS](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
+- [Event.target in JS](https://www.w3schools.com/jsref/event_target.asp)
 <br />
 
 #### ES6
@@ -91,7 +95,7 @@
 
 #### Other
 - [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
-
+- [Debugging JS](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)
 ---
 
 # Week 3

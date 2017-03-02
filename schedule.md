@@ -78,14 +78,18 @@
     <td>WDI9 Outcomes: Linkedin for your Job Search</td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d03/morning_exercise">Morning Exercise</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d04/morning_exercise">Morning Exercise</a></td>
-    <td>Morning Exercise</td>
+    <td><a href="">Morning Exercise</a></td>
   </tr>
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>Project 1 Retrospective</td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_views.md">Handlebar Views</a></td>
     <td>Database Design</td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a>
+      <br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">LAB</a>
+    </td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/student_labs/to_dont_lab.md">DB Operations Update/Delete Lab</a></td>
   </tr>
   <tr>
@@ -94,21 +98,19 @@
     <td><a href="https://github.com/ATL-WDI-Curriculum/node-express-intro-lesson">Review</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/instructor_notes/express_create_read.md">DB Operations Create/Read</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/instructor_notes/update_delete.md">DB Operations- Update/Delete</a></td>
-    <td>Diagnostic</td>
+    <td><a href="">Diagnostic</a></td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_intro.md">Intro to Express</a>
       <br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_intro.md">Express View</a>
-      <br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/instructor_notes/express_router.md">Express Routing</a>
     </td>
     <td><a href="https://github.com/ga-wdi-exercises/compliment-express">Review</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/instructor_notes/express_create_read.md">DB Operations Create/Read</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/instructor_notes/update_delete.md">DB Operations Update/Delete</a></td>
-    <td><a href="https://github.com/ATL-WDI-Exercises/express-node-mongoose-lab">AJAX Breakout Session</a></td>
+    <td><a href="">AJAX Breakout Session</a></td>
   </tr>
   <tr>
     <td><strong>Mod 4</strong></td>
@@ -117,9 +119,13 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/student_labs/router_lab.md">Router LAB</a>
     </td>
     <td><a href="https://github.com/ga-wdi-exercises/compliment-express">LAB</a></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">LAB</a></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/student_labs/to_dont_lab.md">DB Operations Update/Delete Lab</a></td>
-    <td>LAB</td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a>
+      <br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">LAB</a>
+    </td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d05/student_labs/in-class-code-hbs">In-class-code-hbs</a></td>
+    <td><a href="">LAB</a></td>
   </tr>
   <tr>
     <td><strong>Training</strong></td>
@@ -131,6 +137,11 @@
   </tr>
 </tbody></table>
 
+### Supplemental Reading for week 2
+#### Node.JS
+[Node JS- Tutorialspoint](https://www.tutorialspoint.com/nodejs/)
+
+#### Express
 
 #### Week 3 - Project Management/Project 1
 <table><thead>
@@ -312,6 +323,11 @@
 - [Event.target in JS](https://www.w3schools.com/jsref/event_target.asp)
 <br />
 
+#### jQuery
+- [A Smarter Way to Learn jQuery](https://github.com/JideLambo/javascript-books/blob/master/A%20Smarter%20Way%20to%20Learn%20jQuery%20-%20Mark%20Myers.pdf) - this was the only link that I found.  Otherwise, you might be able to download it somewhere.
+- [jQuery, and intro](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery) 
+<br />
+
 #### ES6
 - [Symbols](http://es6-features.org/#SymbolType)
 - [Iterator & for..of operator](http://es6-features.org/#IteratorForOfOperator)
@@ -321,10 +337,13 @@
 - [ES5, ES2015, Typescript](https://johnpapa.net/es5-es2015-typescript/)
 - [Intro to ES2015](http://blog.teamtreehouse.com/get-started-ecmascript-6)
 - [ES2016 and beyond](http://javascriptplayground.com/blog/2016/02/es2016-and-beyond/)
+<br />
 
 #### Other
 - [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
 - [Debugging JS](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)
+- [Searching in dev tools](http://developer.telerik.com/featured/16-ways-to-search-find-and-edit-with-chrome-devtools/)
+- [Bullet Journal](http://bulletjournal.com/get-started/)
 
 #### Week 1 - Fundamentals
 <table><thead>
@@ -454,6 +473,7 @@
 * [Khan Academy](https://www.khanacademy.org/computing/computer-programming)
 * [Code Academy- JS](https://www.codecademy.com/learn/javascript)
 * [Code Academy- HTML](https://www.codecademy.com/learn/web)
+* [Daily UI](http://www.dailyui.co/)
 
 ## Books
 
@@ -466,6 +486,7 @@
 
 ## Articles
 * [My first month of coding](https://www.thinkful.com/blog/my-first-month-coding-an-emotional-roller-coaster/)
+* [Things we wish we knew when learning to code](https://medium.com/code-school/things-we-wish-we-knew-when-we-were-learning-to-code-bd83067ac509#.v1rtk8544)
 
 ## Twitter Feeds to Follow
 * [Code newbie](https://twitter.com/codenewbies)
