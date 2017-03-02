@@ -70,7 +70,7 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 
 <br /> -->
 
-## Explain the roles in traditional animation and how they apply to computer animation
+## Traditional Animation vs Computer Animation
 
 1. In traditional (hand-drawn) animations, there were two kinds of animators
 	- Keyframe artist
