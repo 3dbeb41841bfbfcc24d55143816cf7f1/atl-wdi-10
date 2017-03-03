@@ -45,6 +45,7 @@
       Sessions
     </td>
     <td>
+      <!-- Previous Projects: https://github.com/ATL-WDI-Curriculum/projects/blob/master/project2-sample-projects.md -->
       Intro to Project Two/Sample Project
     </td>
   </tr>

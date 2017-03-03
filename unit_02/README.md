@@ -4,9 +4,9 @@
 
 | Monday | Tuesday | Wednesday | Thursday | Friday |
 |-----------------------|---------------------|------------------|---------------------|-------------|
-| Intro to the Internet | Intro to Express | Express Router | Create (Post) | Update (Put)|
-| WDI Tooling | Routing | Diagnostic | New (Get) | Edit (Get) |
-| Installation | Views (Handlebars) | Outcomes | Read (Get)          |             |
+| Intro to the Internet/Node | Express Router | Database Design | Create/Read LAB | DB Ops- Update/ Delete Lab |
+| Intro to Express | Routing | DB Ops- Create/ Read | DB Ops- Update/ Delete | Diagnostic |
+| Express Views(Handlebars) | Review | DB Ops- Create/ Read | DB Ops- Update/ Delete Lab | AJAX Breakout Session |
 
 ### Supplemental Reading for week 4
 #### Node.JS
@@ -30,10 +30,10 @@
 ### What are we doing this week?
 
 | Monday | Tuesday | Wednesday | Thursday | Friday |
-|----------|-----------------------|-----------------|------------------------|------------------------------|
-|  | Constructor Functions | Database Design | Mongo Setup / Mongoose | CRUD Mongo/Mongoose w/ Views |
-|  | Promises | Diagnostic | Mongoose w/ Postman |  |
-|  |  | Outcomes |  |  |
+|-------------|--------------|---------------|--------------|--------------|
+| Constructor Functions/Advanced Array Functions | Diagnostic | Database Design | Mongo Setup / Mongoose | CRUD Mongo/Mongoose w/ Views |
+| Promises |  | Diagnostic | Mongoose w/ Postman |  |
+| Promises LAB |  | Outcomes |  |  |
 
 ### Supplemental Reading
 
