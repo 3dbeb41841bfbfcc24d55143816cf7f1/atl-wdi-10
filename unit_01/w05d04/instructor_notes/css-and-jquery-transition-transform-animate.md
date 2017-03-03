@@ -245,19 +245,19 @@ The [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp) property
 
 ### 2D Transform Methods 
 
-1. `transform: rotate(10deg);`
-    - [rotate(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotate)
+1. [rotate(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotate)
+    - `transform: rotate(10deg);`
     - rotate an element clockwise or counter-clockwise via degrees(deg)
     - will rotate clockwise by default
     - if you use a negative value, it will rotate counter-clockwise
-1. `transform: scale(1.1);`
-    - [scale(x, y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scale)
+1. [scale(x, y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scale)
+    - `transform: scale(1.1);`
     - allows you to increase/decrease the size of an element
     - takes 2 parameters
         - 1st parameter(width)
         - 2nd parameter(height)
-1. `transform: translateX(10px);`
-    - [translate(x, y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translate)
+1. [translate(x, y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translate)
+    - `transform: translateX(10px);`
     - move an element from its **current position** on the x and y-axis
     - takes 2 parameters
         - 1st parameter- x-axis
@@ -266,8 +266,8 @@ The [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp) property
         - 2nd parameter- y-axis
             - will move vertically
         - optional: use `translateX()` or `translateY()`
-1. `transform: skewX(45deg);`
-    - [skew(x-angle, y-angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_skew)
+1. [skew(x-angle, y-angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_skew)
+    - `transform: skewX(45deg);`
     - skew elements on the x and y-axis via degrees(deg)
     - takes 2 parameters
         - 1st parameter- x-axis
