@@ -15,8 +15,8 @@
     <td><strong>WarmUp</strong></td>
     <td>Morning Exercise</td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d03/morning_exercise">Morning Exercise</a></td>
-    <td>Morning Exercise</td>
-    <td>Morning Exercise</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d04/morning_exercise">Morning Exercise</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d05/morning_exercise">Morning Exercise</a></td>
     <td>Morning Exercise</td>
   </tr>
   <tr>
@@ -26,7 +26,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/js-modern-array-methods">Advanced Array Functions</a>
     </td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/security-and-auth">Diagnostic</a></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/ajax-and-express">CRUD Mongo/Mongoose View</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/mongo_terminal_env.md">CRUD Mongo/Mongoose View</a></td>
     <td>Sessions</td>
     <td>Intro to Project Two/Sample Project</td>
   </tr>
@@ -34,22 +34,22 @@
     <td><strong>Mod 2</strong></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d02/student_labs/constructor-lab-prompt.md">Constructors LAB</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/express-security-with-passport">Diagnostic</a></td>
-    <td><a href="https://github.com/GA-WDI/curriculum/tree/master/resources/02-front-end-intro/js-ajax-lab">CRUD Mongo/Mongoose View</a></td>
+    <td><a href="https://github.com/GA-WDI/curriculum/tree/master/resources/02-front-end-intro/js-ajax-lab">CRUD Mongo</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/heroku-deployment">Sessions Lab</a></td>
     <td>Intro to Project Two/Sample Project</td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
     <td><a href="https://github.com/ATL-WDI-Exercises/mean_todo_app">Promises</a></td>
-    <td>Mongo Set up/Mongoose</td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/websockets">Review</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d03/instructor_notes/mongo_install.md">Mongo Set up</a>/<a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d04/instructor_notes/mongoose_intro.md">Mongoose Intro</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/finishing_up_full_crud.md">Mongoose</a></td>
     <td>Authentication</td>
     <td>Project Two</td>
   </tr>
   <tr>
     <td><strong>Mod 4</strong></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d02/student_labs/promises-lab-starter">Promises LAB</a></td>
-    <td><a href="https://github.com/ga-wdi-exercises/compliment-express">Mongoose Postman Lab</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d04/instructor_notes/mongoose_express.md">Mongoose Postman Lab</a></td>
     <td>CRUD LAB</td>
     <td>Authentication LAB</td>
     <td>Project Two</td>
@@ -57,8 +57,8 @@
   <tr>
     <td><strong>Training</strong></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d02/homework">Homework</a></td>
-    <td>Homework</td>
-    <td>Homework</td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d03/homework">Homework</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d04/homework">Homework</a></td>
     <td>Homework</td>
     <td>Project Two</td>
   </tr>
