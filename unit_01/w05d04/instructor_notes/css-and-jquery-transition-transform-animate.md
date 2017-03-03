@@ -278,23 +278,24 @@ The [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp) property
         - [skewX(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_skewx)
         - [skewY(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_skewy)
 
-Syntax: 
-    - `transform: method(parameter);`
+Syntax:
+ 
+- `transform: method(parameter);`
 
-    ```css
-    .square {
-        width: 200px;
-        height: 200px;
-        background: crimson; /* initial state */
-        transition: background-color 5s, transition 3s; 
-    }
+```css
+.square {
+    width: 200px;
+    height: 200px;
+    background: crimson; /* initial state */
+    transition: background-color 5s, transition 3s; 
+}
 
-    .square:hover {
-        width: 200px;
-        height: 200px;
-        background: darkBlue; /* final state */
-        transform: skewX(20deg); /* final state */
-    }
+.square:hover {
+    width: 200px;
+    height: 200px;
+    background: darkBlue; /* final state */
+    transform: skewX(20deg); /* final state */
+}
 ```
 
 - You can check out the `transform` options in the Dev Tools using autocomplete. 
@@ -363,17 +364,17 @@ If you know the math, you can write your own transformation matrix
 
 #### Example of `translateX()`
 
-    ```css
-    div {
-      ...
-      transition-property: background, transform; /* make sure to add transform here */
-      transform: translateX(0); /* start state */    
-    }
+```css
+div {
+  ...
+  transition-property: background, transform; /* make sure to add transform here */
+  transform: translateX(0); /* start state */    
+}
 
-    div:hover {
-        ...
-        transform: translateX(100px); /* end state */
-    }    
+div:hover {
+    ...
+    transform: translateX(100px); /* end state */
+}    
 ```
 
 ![](http://i.imgur.com/ylb6WX9.gif)
@@ -477,8 +478,8 @@ Transitions are great for going from one state to another, but sometimes you nee
 
 **Animation Shorthand**
 
-    animation: <animation-name> <animation-duration> <animation-timing-function> <animation-delay>
-        <animation-iteration-count> <animation-direction>;
+`animation: <animation-name> <animation-duration> <animation-timing-function> <animation-delay>
+        <animation-iteration-count> <animation-direction>;`
 
 1. Try adding the following properties
 
