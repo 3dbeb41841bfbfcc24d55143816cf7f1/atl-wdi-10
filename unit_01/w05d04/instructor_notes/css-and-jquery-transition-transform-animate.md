@@ -406,9 +406,7 @@ Transforms are better for animation for two reasons:
 
 ## Complex Animations with Multiple States
 
-Transitions are great for going from one state to another, but sometimes you need more than an initial and a final state.
-
-<br />
+Transitions are great for going from one state to another, but sometimes you need more than an initial and a final state.  [Keyframes](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp) can be used to add color changes based on the percentage of visibility. A keyframe is similar to a function declaration, in that it starts with **@keyframes**, followed by the animation name, followed by curly braces.  Inside of the curly braces, you add the keyframes-selector/percentage followed by a normal css rule.
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
@@ -416,11 +414,11 @@ Transitions are great for going from one state to another, but sometimes you nee
 	
 	```css
 	@keyframes example {
-	    0%   {background-color:red; left:0px; top:0px;}
-	    25%  {background-color:yellow; left:200px; top:0px;}
-	    50%  {background-color:blue; left:200px; top:200px;}
-	    75%  {background-color:green; left:0px; top:200px;}
-	    100% {background-color:red; left:0px; top:0px;}
+	    0%   {background-color: red; left: 0px; top: 0px;}
+	    25%  {background-color: yellow; left: 200px; top: 0px;}
+	    50%  {background-color: blue; left: 200px; top: 200px;}
+	    75%  {background-color: green; left: 0px; top: 200px;}
+	    100% {background-color: red; left:0px; top: 0px;}
 	}
 	```
     > Note, remember that for production, `translate` will be faster than `left`, `top`, etc.
