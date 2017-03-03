@@ -333,6 +333,7 @@
 - [Functions in JS](https://www.w3schools.com/js/js_object_definition.asp)
 - [Event.target in JS](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
 - [Event.target in JS](https://www.w3schools.com/jsref/event_target.asp)
+- [Event bubbling](http://blog.johnryding.com/post/43984524295/javascript-event-bubbling-and-why-you-need-to-use)
 <br />
 
 #### jQuery
@@ -465,7 +466,8 @@
 <br />
 
 #### Bootstrap
-- [WDI-9 Bootstrap Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
+- [WDI-9 Bootstrap Cheat Sheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
+- [Bootstrap Classes Cheat Sheet](Bootstrap 3 Classes List With Description - Bootstrap Cheat Sheet)
 - [Bootstrap Site](http://getbootstrap.com/getting-started/)
 - [Built with Bootstrap](https://bootstrapbay.com/blog/built-with-bootstrap/)
 - [Bootstrap Tutorial](https://www.youtube.com/watch?v=gqOEoUR5RHg)
@@ -515,6 +517,7 @@
 ## Articles
 * [My first month of coding](https://www.thinkful.com/blog/my-first-month-coding-an-emotional-roller-coaster/)
 * [Things we wish we knew when learning to code](https://medium.com/code-school/things-we-wish-we-knew-when-we-were-learning-to-code-bd83067ac509#.v1rtk8544)
+* [How a typo took down S3, the backbone of the internet](http://www.theverge.com/2017/3/2/14792442/amazon-s3-outage-cause-typo-internet-server)
 
 ## Twitter Feeds to Follow
 * [Code newbie](https://twitter.com/codenewbies)
