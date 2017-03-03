@@ -47,10 +47,11 @@ For example, we have more control over how the animation repeats, we can change 
 **Vendor Prefixes** - A prefix provides browser support for features that are not fully supported.  If you are using chrome, you won't need to add a prefix to any of the properties used this lesson, but in general, it's a good idea to check **Can I Use** (http://www.caniuse.com) to see if you need to use prefixes to support most users/browsers. For CSS Animations, you should use prefixes to ensure support for Safari, IE, and other browsers.
 
 **Vendor Prefixes**
--webkit- // Chrome/Safari
--moz- // Firefox
--o- // Opera
--ms // IE
+    <br />
+    -webkit- // Chrome/Safari
+    -moz- // Firefox
+    -o- // Opera
+    -ms // IE
 
 The easiest way to do this is with **prefix free** (http://leaverou.github.io/prefixfree/).
 
