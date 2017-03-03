@@ -358,7 +358,6 @@
 - [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_template_literals)
 - [More History](https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/)
 - [ES6 Compatibility](https://kangax.github.io/compat-table/es6/)
-
 <br />
 
 #### ES6 we didn't cover
@@ -366,7 +365,6 @@
 - [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 - [Classes](http://es6-features.org/#ClassDefinition)
 - [Inheritance](http://es6-features.org/#ClassInheritance)
-
 <br />
 
 #### Resources From ES6 Class
@@ -386,7 +384,6 @@
 - [Property Shorthand](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
 - [Property Shorthand](http://es6-features.org/#PropertyShorthand)
 - [Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
-
 <br />
 
 #### More Resources from ES6 Class
@@ -394,7 +391,6 @@
 - [More History](https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/)
 - [ES6 Compatibility](https://kangax.github.io/compat-table/es6/)
 - [Can I Use](http://caniuse.com/)
-
 <br />
 
 #### Articles
