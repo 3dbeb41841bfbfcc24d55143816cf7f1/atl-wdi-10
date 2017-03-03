@@ -305,7 +305,7 @@ Syntax:
 
 #### New CSS Properties
 
-1. perspective
+1. [perspective](https://www.w3schools.com/cssref/css3_pr_perspective.asp)
     - distance between the viewer and the object
     - if you ever took an art class, you probably discussed perspective
         - vanishing point- when all points converge on a single point
@@ -316,16 +316,16 @@ Syntax:
     - a lower value (400px) will make you feel closer to the object
     - **must be applied to the parent element**
     ![Vanishing point](http://imgs.abduzeedo.com/files/articles/vanishing/vanishing-12.jpg)
-1. perspective-origin
+1. [perspective-origin](https://www.w3schools.com/cssref/css3_pr_perspective-origin.asp)
     - defines where the element exists on the x and y-axis
     - default 50% 50%, which represents the x and y-axis
-1. transform-origin
+1. [transform-origin](https://www.w3schools.com/cssref/css3_pr_transform-origin.asp)
     - allows you to change the original x and y-positions
-1. transform-style
+1. [transform-style](https://www.w3schools.com/cssref/css3_pr_transform-style.asp)
     - allows child elements to preserve 3D transformations
     - flat (default)
     - `transform-style: preserve-3d;` // will keep that style for the child elements
-1. backface-visibility
+1. [backface-visibility](https://www.w3schools.com/cssref/css3_pr_backface-visibility.asp)
     - defines whether an element should be visible when it is facing the screen
 
 #### 3D Transform Methods
