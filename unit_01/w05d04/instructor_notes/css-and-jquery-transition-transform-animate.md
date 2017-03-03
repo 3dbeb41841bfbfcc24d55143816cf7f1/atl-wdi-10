@@ -281,7 +281,7 @@ The [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp) property
 Syntax: 
     - `transform: method(parameter);`
 
-```css
+    ```css
 .square {
     width: 200px;
     height: 200px;
@@ -374,7 +374,7 @@ If you know the math, you can write your own transformation matrix
         ...
         transform: translateX(100px); /* end state */
     }    
-    ```
+```
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
