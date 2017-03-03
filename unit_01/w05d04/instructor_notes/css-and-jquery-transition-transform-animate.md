@@ -119,13 +119,16 @@ a:hover {
 
 Next, add a transition property:
 
-- `transition-property: background, left, top, height;`
+- [transition-property](https://www.w3schools.com/cssref/css3_pr_transition-property.asp)
+    - `transition-property: background, left, top, height;`
     - the name or names of the CSS properties that you would like to animate
     - separate multiple properties by a comma
-- `transition-duration: 0.5s;`
+- [transition-duration](https://www.w3schools.com/cssref/css3_pr_transition-duration.asp)
+    - `transition-duration: 0.5s;`
     - specifies the duration of an animation
     - can be specified in seconds or milliseconds(1000ms to 1s)
-- `transition-timing-function: ease;`
+- [transition-timing-function](https://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp)
+    - `transition-timing-function: ease;`
     - different options to explore the speed of the animation
     	- **ease**
             - start slow
@@ -149,7 +152,8 @@ Next, add a transition property:
                 - values range from 0 to 1
             - [Cubic Bezier Playground](http://cubic-bezier.com/#.17,.67,.83,.67)
                 - use to check your custom function against other timing functions
-- `transition-delay: 1s;`
+- [transition-delay](https://www.w3schools.com/cssref/css3_pr_transition-delay.asp)
+    - `transition-delay: 1s;`
     - allows you to delay the start of the animation
 
 ```css
