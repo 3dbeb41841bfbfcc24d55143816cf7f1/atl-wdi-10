@@ -361,7 +361,7 @@
 
 <br />
 
-## ES6 we didn't cover
+#### ES6 we didn't cover
 - [Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 - [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 - [Classes](http://es6-features.org/#ClassDefinition)
@@ -369,7 +369,7 @@
 
 <br />
 
-## Resources From ES6 Class
+#### Resources From ES6 Class
 - [Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 - [Const](http://es6-features.org/#Constants)
 - [Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
@@ -389,7 +389,7 @@
 
 <br />
 
-## More Resources from ES6 Class
+#### More Resources from ES6 Class
 - [You Don't Know ES6](https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond)
 - [More History](https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/)
 - [ES6 Compatibility](https://kangax.github.io/compat-table/es6/)
@@ -397,7 +397,7 @@
 
 <br />
 
-## Articles
+#### Articles
 - [JavaScript Tips](http://javascriptissexy.com/12-simple-yet-powerful-javascript-tips/)
 - [Getting Started with ECMAScript 6](http://blog.teamtreehouse.com/get-started-ecmascript-6)
 - [Understanding ES5, ES2015 and TypeScript](https://johnpapa.net/es5-es2015-typescript/)
