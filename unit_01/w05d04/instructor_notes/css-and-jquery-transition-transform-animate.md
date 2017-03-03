@@ -364,16 +364,16 @@ If you know the math, you can write your own transformation matrix
 #### Example of `translateX()`
 
     ```css
-div {
-  ...
-  transition-property: background, transform; /* make sure to add transform here */
-  transform: translateX(0); /* start state */    
-}
+    div {
+      ...
+      transition-property: background, transform; /* make sure to add transform here */
+      transform: translateX(0); /* start state */    
+    }
 
-div:hover {
-    ...
-    transform: translateX(100px); /* end state */
-}    
+    div:hover {
+        ...
+        transform: translateX(100px); /* end state */
+    }    
 ```
 
 ![](http://i.imgur.com/ylb6WX9.gif)
