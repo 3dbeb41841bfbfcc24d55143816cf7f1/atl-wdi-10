@@ -309,7 +309,9 @@ Syntax:
     - a lower value (400px) will make you feel closer to the object
     - **must be applied to the parent element**
     <br />
+    <br />
     ![Vanishing point](http://imgs.abduzeedo.com/files/articles/vanishing/vanishing-12.jpg)
+    <br />
 1. perspective-origin
     - defines where the element exists on the x and y-axis
     - default 50% 50%, which represents the x and y-axis
