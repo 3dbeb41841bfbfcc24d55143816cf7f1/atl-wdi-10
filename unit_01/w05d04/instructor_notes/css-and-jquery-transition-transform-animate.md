@@ -489,7 +489,7 @@ Transitions are great for going from one state to another, but sometimes you nee
     15% {
         background-color: orange;
         left: 400px; 
-        top:400px;
+        top: 400px;
     }
 ```
 
@@ -499,10 +499,10 @@ Transitions are great for going from one state to another, but sometimes you nee
 
 There are a lot of pre-built CSS libraries out there that are easy to include in your app. Here's an example: https://www.sitepoint.com/top-9-animation-libraries-use-2016/
 
-- animate.css
-- greensock.com (js - Koty Recommends!)
-- jQueryUI (js)
-- Angular Animate (js)
+- [animate.css](https://daneden.github.io/animate.css/)
+- [greensock.com](https://greensock.com/) (js - Koty Recommends!)
+- [jQueryUI](https://jqueryui.com/) (js)
+- [Angular Animate](https://docs.angularjs.org/api/ngAnimate/service/$animateCss) (js)
 
 <br />
 
@@ -510,8 +510,7 @@ There are a lot of pre-built CSS libraries out there that are easy to include in
 
 CSS Animations are easy and mostly compatible.  They are often a good choice
 for basic animation needs. For anything more complex, such as animation that
-depends on user input, you will need to use Javascript. There are good libraries
-for animation (see above). 
+depends on user input, you will need to use Javascript. There are good libraries for animation (see above). 
 
 <br />
 
