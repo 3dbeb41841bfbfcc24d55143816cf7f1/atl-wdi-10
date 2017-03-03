@@ -48,10 +48,10 @@ For example, we have more control over how the animation repeats, we can change 
 
 **Vendor Prefixes**
     <br />
-    * -webkit- // Chrome/Safari
-    * -moz- // Firefox
-    * -o- // Opera
-    * -ms // IE
+    - -webkit- // Chrome/Safari
+    - -moz- // Firefox
+    - -o- // Opera
+    - -ms // IE
 
 The easiest way to do this is with **prefix free** (http://leaverou.github.io/prefixfree/).
 
