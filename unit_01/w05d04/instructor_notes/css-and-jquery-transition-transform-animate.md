@@ -532,14 +532,14 @@ jQuery has some simple animation methods like [fadeIn()](https://www.w3schools.c
 <br />
 `$(selector).fadeIn(speed,easing,callback);`
 <br />
-    - speed- specifies the speed of the fading effect
-        - milliseconds
-        - slow
-        - fast
-    - easing- specifies the speed of the element in different points of the animation. Default value is "swing"
-        - swing - moves slower at the beginning/end, but faster in the middle
-        - linear - moves in a constant speed
-    - callback- a function to be executed after the fadeIn() method is completed
+- speed- specifies the speed of the fading effect
+    - milliseconds
+    - slow
+    - fast
+- easing- specifies the speed of the element in different points of the animation. Default value is "swing"
+    - swing - moves slower at the beginning/end, but faster in the middle
+    - linear - moves in a constant speed
+- callback- a function to be executed after the fadeIn() method is completed
 
 Let's try this in Codepen.io (make sure to include the jQuery library under Settings -> Quick Add).
 1. html:
