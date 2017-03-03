@@ -541,6 +541,7 @@ jQuery has some simple animation methods like [fadeIn()](https://www.w3schools.c
 - **callback**- a function to be executed after the fadeIn() method is completed
 
 Let's try this in Codepen.io (make sure to include the jQuery library under Settings -> Quick Add).
+
 1. html:
 
     ```html
