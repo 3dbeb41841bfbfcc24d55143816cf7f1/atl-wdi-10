@@ -126,14 +126,29 @@ Next, add a transition property:
     - specifies the duration of an animation
     - can be specified in seconds or milliseconds(1000ms to 1s)
 - `transition-timing-function: ease;`
-    - different options to explore the speed of the curve
+    - different options to explore the speed of the animation
     	- ease
+            - start slow
+            - finish slow
+            - smoother than ease-in-out
     	- linear
+            - applies the same speed from start to finish
     	- ease-in
+            - start slow
+            - finish fast
     	- ease-out
+            - start fast
+            - finish slow
     	- ease-in-out
+            - start slow
+            - speed up in the middle
+            - finish slow
     	- cubic-bezier(n,n,n,n)
+            - allows you to add variations to control the animation
+            - it takes 4 parameters to indicate the curve on the x and y-axis, and 2 to indicate the handles
+                - values range from 0 to 1
             - [Cubic Bezier Playground](http://cubic-bezier.com/#.17,.67,.83,.67)
+                - use to check your custom function against other timing functions
 - `transition-delay: 1s;`
     - allows you to delay the start of the animation
 
@@ -208,48 +223,122 @@ Next, add a transition property:
     }
     ```
 
-- There are many timing functions. Check out http://easings.net
+- There are many timing functions. Check them out at http://easings.net
 
 <br />
+
 ---
+
 <br />
 
 ## CSS Transform
 
-You can check out the `transform` options in the Dev Tools using autocomplete. The `transform` property has the following values...
+Transform allows elements styled in CSS to be transformed in a two-dimensional space. 
 
-### In 2D
+The `transform` property allows you to change the shape, size and position.  It has the following options...
 
-1. transform: rotate(10deg);
-1. transform: scale(1.1);
-1. transform: translateX(10px);
-1. transform: skewX(45deg);
+### 2D Transform Methods 
 
-You can perform multiple transforms in one statement
+1. `transform: rotate(10deg);`
+    - rotate an element clockwise or counter-clockwise via degrees(deg)
+    - will rotate clockwise by default
+    - if you use a negative value, it will rotate counter-clockwise
+1. `transform: scale(1.1);`
+    - allows you to increase/decrease the size of an element
+    - takes 2 parameters
+        - 1st parameter(width)
+        - 2nd parameter(height)
+1. `transform: translateX(10px);`
+    - move an element from its **current position** on the x and y-axis
+    - takes 2 parameters
+        - 1st parameter- x-axis
+            - will move horizontally
+            - if you use a negative value, it will move to the right
+        - 2nd parameter- y-axis
+            - will move vertically
+        - optional: use `translateX()` or `translateY()`
+1. `transform: skewX(45deg);`
+    - skew elements on the x and y-axis via degrees(deg)
+    - takes 2 parameters
+        - 1st parameter- x-axis
+            - will skew to the left by default
+            - if you use a negative value, it will skew to the right
+        - 2nd parameter- y-axis
+    - optional: use `skewX()` or `skewY()`
 
-1. transform: scale(2) skewY(0.3) rotate(4deg);
+Syntax: 
+    - `transform: method(parameter);`
+
+```css
+.square {
+    width: 200px;
+    height: 200px;
+    background: crimson; /* initial state */
+    transition: background-color 5s, transition 3s; 
+}
+
+.square:hover {
+    width: 200px;
+    height: 200px;
+    background: darkBlue; /* final state */
+    transform: skewX(20deg); /* final state */
+}
+```
+
+- You can check out the `transform` options in the Dev Tools using autocomplete. 
+
+**Transform Shorthand**:
+
+1. `transform: scale(2) skewY(0.3) rotate(4deg);`
 
 <br />
 
-### In 3D
+### 3D Space
 
-The Z axis extends out of the screen
+3D transformations extends CSS transform to allow elements in CSS to be transformed in three-dimensional space.  You use the same values for the x and y-axis (horizontally and vertically).  The z-axis allows us to transform front and back/extend out of the screen or 2D pane.
 
-1. rotateX();
-1. rotateY();
-1. rotateZ();
-1. translateX();
-1. translateY();
-1. translateZ();
-1. scaleX();
-1. scaleY();
-1. scaleZ();
+#### New CSS Properties
+
+1. perspective
+    - distance between the viewer and the object
+    - if you ever took an art class, you probably discussed perspective
+        - vanishing point- when all points converge on a single point
+            - creates depth/ a 3D effect
+    - use in order to transform in 3D space
+    - a higher value will feel far away (1500px)
+    - a lower value (400px) will make you feel closer to the object
+    ** must be applied to the parent element**
+    ![Vanishing point](http://imgs.abduzeedo.com/files/articles/vanishing/vanishing-12.jpg)
+1. perspective-origin
+    - defines where the element exists on the x and y-axis
+    - default 50% 50%, which represents the x and y-axis
+1. transform-origin
+    - allows you to change the original x and y-positions
+1. transform-style
+    - allows child elements to preserve 3D transformations
+1. backface-visibility
+    - defines whether an element should be visible when it is facing the screen
+
+#### 3D Transform Methods
+
+1. `rotateX();` // transform clockwise
+1. `rotateY();` // transform counterclockwise
+1. `rotateZ();` // transform front and back
+1. rotate 3D shorthand: `rotate3d(x-axis, y-axis, z-axis, angle deg);`
+1. `translateX();` // transform horizontally
+1. `translateY();` // transform vertically
+1. `translateZ();` // transform front and back
+1. translate 3D shorthand: `translate3d(x-axis, y-axis, z-axis);`
+1. `scaleX();` // transform  width
+1. `scaleY();` // transform height
+1. `scaleZ();` // transform front and back
 
 If you know the math, you can write your own transformation matrix
 
 1. matrix(n,n,n,n,n,n)
 1. matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
 1. http://periodic.famo.us/
+
 
 #### Example of `translateX()`
 
