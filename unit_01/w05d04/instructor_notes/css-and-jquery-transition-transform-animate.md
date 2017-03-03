@@ -524,6 +524,8 @@ Take 5 minutes and read through these two links:
 
 jQuery can be useful for animation because you can pass in a callback function and potentially chain methods together.
 
+<br />
+
 ### `fadeIn()`
 
 jQuery has some simple animation methods like [fadeIn()](https://www.w3schools.com/jquery/eff_fadein.asp) for example. The fadeIn() method gradually changes the opacity, for selected elements, from hidden to visible (fading effect).
