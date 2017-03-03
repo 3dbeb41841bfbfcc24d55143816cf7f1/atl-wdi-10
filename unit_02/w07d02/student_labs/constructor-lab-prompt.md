@@ -44,12 +44,3 @@ The video for this work can be found [here](https://www.youtube.com/watch?v=qnoS
 3. Create an instance of the `Cat` object and pass in the corresponding values. 
 4. Check the value of if the cat is hungry or not.
 5. Call the `feedCat` method and check on the whether the cat is now hungry again. Check again in 10 seconds.
-
- 
-
-
-
-
-
-
-
