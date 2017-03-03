@@ -665,6 +665,14 @@ Look at the following examples, try to re-create them from scratch using as litt
 - [Paul Irish video- 2D transform's translate() vs absolute positioning: Performance evaluation with Chrome DevTools](https://youtu.be/NZelrwd_iRs)
 - [Chris Coyier- Animation Performance](https://css-tricks.com/tale-of-animation-performance/)
 
+<br />
+
+### Codepens
+- [In class example](https://codepen.io/marenwoodruff/pen/qrZgxL)
+- [You do example- tomato box](http://codepen.io/marenwoodruff/pen/oZxGeV?editors=1100)
+- [Keyframe example](http://codepen.io/marenwoodruff/pen/EWKMKJ?editors=1100)
+- [jQuery example](http://codepen.io/marenwoodruff/pen/mWPowR)
+
 <!--/* @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
     25%  {background-color:yellow; left:200px; top:0px;}
