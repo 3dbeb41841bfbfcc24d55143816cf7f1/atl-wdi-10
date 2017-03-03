@@ -461,11 +461,11 @@ Transitions are great for going from one state to another, but sometimes you nee
 		- alternate
 	- [animation-delay](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_delay)
         - specifies a delay for the start of an animation
-	- animation-play-state
+	- [animation-play-state](https://www.w3schools.com/cssref/css3_pr_animation-play-state.asp)
         - specifies whether the animation is running or paused
 		- paused
 		- running
-    - animation-fill-mode
+    - [animation-fill-mode](https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp)
         - specifies a style for the element when the animation is not playing (when it is finished, or when it has a delay)
 
 **Animation Shorthand**
