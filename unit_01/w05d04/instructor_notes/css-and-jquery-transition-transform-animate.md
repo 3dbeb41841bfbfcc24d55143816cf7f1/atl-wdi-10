@@ -531,15 +531,14 @@ jQuery has some simple animation methods like [fadeIn()](https://www.w3schools.c
 **Syntax**
 <br />
 `$(selector).fadeIn(speed,easing,callback);`
-<br />
-- speed- specifies the speed of the fading effect
+- **speed**- specifies the speed of the fading effect
     - milliseconds
     - slow
     - fast
-- easing- specifies the speed of the element in different points of the animation. Default value is "swing"
+- **easing**- specifies the speed of the element in different points of the animation. Default value is "swing"
     - swing - moves slower at the beginning/end, but faster in the middle
     - linear - moves in a constant speed
-- callback- a function to be executed after the fadeIn() method is completed
+- **callback**- a function to be executed after the fadeIn() method is completed
 
 Let's try this in Codepen.io (make sure to include the jQuery library under Settings -> Quick Add).
 1. html:
@@ -571,13 +570,14 @@ Here are some [common jQuery effects](http://www.w3schools.com/jquery/jquery_ref
 [animate()](https://www.w3schools.com/jquery/jquery_animate.asp). The jQuery animate() method is used to create custom animations.
 
 **Syntax**
+<rb />
 `$(selector).animate({params},speed,callback);`
-    - params- required params parameter defines the CSS properties to be animated
-    - speed- speed parameter specifies the duration of the effect. 
-        - slow
-        - fast
-        - milliseconds
-    - callback parameter is a function to be executed after the animation completes
+- **params**- required params parameter defines the CSS properties to be animated
+- **speed**- speed parameter specifies the duration of the effect. 
+    - slow
+    - fast
+    - milliseconds
+- **callback parameter**- a function to be executed after the animation completes
 
 Here is an example:
  
