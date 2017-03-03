@@ -315,6 +315,7 @@ Syntax:
     - a higher value will feel far away (1500px)
     - a lower value (400px) will make you feel closer to the object
     - **must be applied to the parent element**
+    <br />
     ![Vanishing point](http://imgs.abduzeedo.com/files/articles/vanishing/vanishing-12.jpg)
 1. [perspective-origin](https://www.w3schools.com/cssref/css3_pr_perspective-origin.asp)
     - defines where the element exists on the x and y-axis
@@ -511,8 +512,6 @@ There are a lot of pre-built CSS libraries out there that are easy to include in
 CSS Animations are easy and mostly compatible.  They are often a good choice
 for basic animation needs. For anything more complex, such as animation that
 depends on user input, you will need to use Javascript. There are good libraries for animation (see above). 
-
-<br />
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
