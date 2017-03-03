@@ -471,7 +471,6 @@ Transitions are great for going from one state to another, but sometimes you nee
 **Animation Shorthand**
 
     animation: <animation-name> <animation-duration> <animation-timing-function> <animation-delay>
-
         <animation-iteration-count> <animation-direction>;
 
 1. Try adding the following properties
