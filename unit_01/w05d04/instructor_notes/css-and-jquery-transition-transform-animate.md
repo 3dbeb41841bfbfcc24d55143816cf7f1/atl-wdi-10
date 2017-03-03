@@ -108,15 +108,13 @@ a:hover {
 }
 ``` -->
 ```css
-.box {
-    width: 100px;
-    height: 100px;
+.square {
+    width: 200px;
+    height: 200px;
     background: crimson; /* initial state */
 }
 
-.box:hover {
-    width: 100px;
-    height: 100px;
+.square:hover {
     background: darkBlue; /* final state */
 }
 ```
@@ -165,14 +163,12 @@ Next, add a transition property:
     width: 200px;
     height: 200px;
     background: crimson; /* initial state */
-    transition-property: background-color;
-    transition-duration: 5s; // 1s is the default
-    transition-delay: 3s;
+    transition-property: background;
+    transition-duration: 5s; /* 1s is the default */
+    transition-delay: 1s;
 }
 
 .square:hover {
-    width: 200px;
-    height: 200px;
     background: darkBlue; /* final state */
 }
 ```
@@ -187,19 +183,17 @@ Next, add a transition property:
     width: 200px;
     height: 200px;
     background: crimson; /* initial state */
-    transition: background-color 5s 3s; 
+    transition: background-color 5s 1s; 
 }
 
 .square:hover {
-    width: 200px;
-    height: 200px;
     background: darkBlue; /* final state */
 }
 ```
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
-1. Create a 100px by 100px square box that has a background color of tomato
+1. Create a 100px by 100px square box that has a background color of tomato.
 1. Write a CSS rule that will transition your div from this initial state:
 
     ```css
@@ -286,15 +280,15 @@ Syntax:
 .square {
     width: 200px;
     height: 200px;
-    background: crimson; /* initial state */
-    transition: background-color 5s, transition 3s; 
+    background-color: crimson; /* initial state */
+    transition: background-color 5s, transform 3s; 
 }
 
 .square:hover {
     width: 200px;
     height: 200px;
-    background: darkBlue; /* final state */
-    transform: skewX(20deg); /* final state */
+    background-color: darkBlue; /* final state */
+    transform: skewX(20deg);
 }
 ```
 
@@ -302,7 +296,7 @@ Syntax:
 
 **Transform Shorthand**:
 
-1. `transform: scale(2) skewY(0.3) rotate(4deg);`
+1. `transform: scale(2) skewX(20deg) rotate(4deg);`
 
 <br />
 
@@ -365,13 +359,13 @@ If you know the math, you can write your own transformation matrix
 #### Example of `translateX()`
 
 ```css
-div {
+.square {
   ...
-  transition-property: background, transform; /* make sure to add transform here */
-  transform: translateX(0); /* start state */    
+  transform: translateX(0); /* start state */
+  transition-property: background-color, transform; /* make sure to add transform here */    
 }
 
-div:hover {
+.square:hover {
     ...
     transform: translateX(100px); /* end state */
 }    
@@ -382,11 +376,11 @@ div:hover {
 1. Rotate your box 45 degrees
 1. Translate it along the X axis by 200px
 1. Translate it along the Y axis by 200px
-2. Try `transform: translate(200px, 200px)`
+2. Try `transform: translate(200px, 200px);`
 1. Scale the div so it is twice as big
 2. Skew the div by 10 degrees
-3. You can also combine multiple values: `transform: translateX(200px) skew(30deg) scale(3)`
-4. `transform: perspective(35px) translate3d(20px, 30px, 15px)`
+3. You can also combine multiple values: `transform: translateX(200px) skew(30deg) scale(3);`
+4. `transform: perspective(35px) translate3d(20px, 30px, 15px);`
     - x, y, z axis
     - perspective is distance from the user 
     - when perspective === z-axis you're behind the element
@@ -406,7 +400,7 @@ Transforms are better for animation for two reasons:
     * Add `display: inline-block` to your CSS rule
     * Add some lorem ipsum 
  
-1. If you're doing a 3D transform, the computer's GPU is engaged, which is really fast
+1. If you're doing a 3D transform, the computer's Graphics Processing Unit (GPU) is engaged, which is really fast
     - http://codepen.io/paulirish/pen/nkwKs (uses top/left position)
 	    - Ultimately, the element has to re-calculate every time the computer 
 	    moves based on what is around it.
@@ -419,26 +413,25 @@ Transforms are better for animation for two reasons:
 
 Transitions are great for going from one state to another, but sometimes you need more than an initial and a final state.  [Keyframes](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp) can be used to add color changes based on the percentage of visibility. A keyframe is similar to a function declaration, in that it starts with **@keyframes**, followed by the animation name, followed by curly braces.  Inside of the curly braces, you add the keyframes-selector/percentage followed by a normal css rule.
 
-[Animation Example](http://codepen.io/marcwright/pen/xgbpRL)
-
 ![](http://i.imgur.com/ylb6WX9.gif)
 
 1. Define a named animation with a set of keyframes. These are similar to the traditional animation "tweeners" that were mentioned earlier.
 	
     ```css
     @keyframes example {
-        from {background-color: red;}
-        to   {background-color: yellow;}
+        from { background-color: red; }
+        to   { background-color: yellow; }
     }
     ```
+<br />
 
 	```css
 	@keyframes example {
-	    0%   {background-color: red; left: 0px; top: 0px;}
-	    25%  {background-color: yellow; left: 200px; top: 0px;}
-	    50%  {background-color: blue; left: 200px; top: 200px;}
-	    75%  {background-color: green; left: 0px; top: 200px;}
-	    100% {background-color: red; left:0px; top: 0px;}
+	    0%   { background-color: red; left: 0px; top: 0px; }
+	    25%  { background-color: yellow; left: 200px; top: 0px; }
+	    50%  { background-color: blue; left: 200px; top: 200px; }
+	    75%  { background-color: green; left: 0px; top: 200px; }
+	    100% { background-color: red; left:0px; top: 0px; }
 	}
 	```
     > Note, remember that for production, `translate` will be faster than `left`, `top`, etc.
@@ -486,6 +479,10 @@ Transitions are great for going from one state to another, but sometimes you nee
 `animation: <animation-name> <animation-duration> <animation-timing-function> <animation-delay>
         <animation-iteration-count> <animation-direction>;`
 
+[Animation Example](http://codepen.io/marenwoodruff/pen/EWKMKJ?editors=1100)
+
+![](http://i.imgur.com/ylb6WX9.gif)
+
 1. Try adding the following properties
 
     ```css
@@ -527,7 +524,7 @@ depends on user input, you will need to use Javascript. There are good libraries
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
-Take 5 minutes and read through these two links:
+Take 5 minutes to read through these two links:
  
 - http://www.w3schools.com/jquery/eff_animate.asp
 - https://www.sitepoint.com/guide-jquery-animate-method
@@ -566,14 +563,17 @@ Let's try this in Codepen.io (make sure to include the jQuery library under Sett
 
     ```css
     #box1 {
-        background-color: blue;
-        display: none;
+		height: 100px;
+		width: 100px;
+		padding: 10px;
+		position: relative;
+		background-color: aqua;
     }
 ```
 1. jQuery:
 
     ```js
-    $('#box1').fadeIn(3000).fadeOut(4000);
+    $('#box1').fadeIn(3000).fadeOut(10000);
 ```
 Here are some [common jQuery effects](http://www.w3schools.com/jquery/jquery_ref_effects.asp) you can use.
 
@@ -598,19 +598,25 @@ Here is an example:
 1. html:
 
     ```html
-    <div id="box2">BOX 2</div>
-    <button type="button">Toggle</button>
+    <div class="container">
+		<div id="box1">BOX 1</div>
+		<div id="box2">BOX 2</div>
+	</div>
+	<div class="controlButtons">
+		<button type="button">Toggle</button>
+	</div>
 ```
 2. css:
 
     ```css
     #box2 {
-        position: relative;
-        background: green;
+		height: 100px;
+		width: 100px;
+		padding: 10px;
+		position: relative;
+		background-color: mediumVioletRed;
     }
 ```
-
-[Animate() Example](http://codepen.io/marcwright/pen/bgNMLb)
 
 1. jQuery:
 
@@ -621,6 +627,10 @@ Here is an example:
         }, 4000);
 });
 ```
+<br />
+
+[animate() Example](http://codepen.io/marenwoodruff/pen/mWPowR)
+
 <br />
 
 ## Lab
@@ -653,3 +663,24 @@ Look at the following examples, try to re-create them from scratch using as litt
 - [Paul Irish article- Why Moving Elements With Translate() Is Better Than Pos:abs Top/left](https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
 - [Paul Irish video- 2D transform's translate() vs absolute positioning: Performance evaluation with Chrome DevTools](https://youtu.be/NZelrwd_iRs)
 - [Chris Coyier- Animation Performance](https://css-tricks.com/tale-of-animation-performance/)
+
+<!--/* @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+} */
+/* div {
+    width: 100px;
+    height: 100px;
+    color: white;
+} */
+/* #box1 {
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+} */-->
