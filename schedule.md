@@ -358,10 +358,60 @@
 - [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_template_literals)
 - [More History](https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/)
 - [ES6 Compatibility](https://kangax.github.io/compat-table/es6/)
+
+<br />
+
+## ES6 we didn't cover
+- [Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+- [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [Classes](http://es6-features.org/#ClassDefinition)
+- [Inheritance](http://es6-features.org/#ClassInheritance)
+
+<br />
+
+## Resources From ES6 Class
+- [Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+- [Const](http://es6-features.org/#Constants)
+- [Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+- [Let](http://es6-features.org/#BlockScopedVariables)
+- [Block Scope](https://www.sitepoint.com/joys-block-scoping-es6/)
+- [Default Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+- [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+- [Arrow Functions](http://es6-features.org/#ExpressionBodies)
+- [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_template_literals)
+- [Template Literals](http://es6-features.org/#StringInterpolation)
+- [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+- [Destructuring](http://es6-features.org/#ArrayMatching)
+- [Destructuring](http://www.2ality.com/2015/01/es6-destructuring.html)
+- [Property Shorthand](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+- [Property Shorthand](http://es6-features.org/#PropertyShorthand)
+- [Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+
+<br />
+
+## More Resources from ES6 Class
+- [You Don't Know ES6](https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond)
+- [More History](https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/)
+- [ES6 Compatibility](https://kangax.github.io/compat-table/es6/)
+- [Can I Use](http://caniuse.com/)
+
+<br />
+
+## Articles
+- [JavaScript Tips](http://javascriptissexy.com/12-simple-yet-powerful-javascript-tips/)
+- [Getting Started with ECMAScript 6](http://blog.teamtreehouse.com/get-started-ecmascript-6)
+- [Understanding ES5, ES2015 and TypeScript](https://johnpapa.net/es5-es2015-typescript/)
+- [Paul Irish article- Why Moving Elements With Translate() Is Better Than Pos:abs Top/left](https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
+- [Paul Irish video- 2D transform's translate() vs absolute positioning: Performance evaluation with Chrome DevTools](https://youtu.be/NZelrwd_iRs)
+- [Chris Coyier- Animation Performance](https://css-tricks.com/tale-of-animation-performance/)
 <br />
 
 #### CSS
 - [Specificity](https://css-tricks.com/specifics-on-css-specificity/)
+- [CSS Transform- W3 Schools](https://www.w3schools.com/cssref/css3_pr_transform.asp)
+- [CSS Tricks- Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Keyframe Animation](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
+- [Prefix Free](http://leaverou.github.io/prefixfree/)
 <br />
 
 #### Other
@@ -518,6 +568,7 @@
 * [My first month of coding](https://www.thinkful.com/blog/my-first-month-coding-an-emotional-roller-coaster/)
 * [Things we wish we knew when learning to code](https://medium.com/code-school/things-we-wish-we-knew-when-we-were-learning-to-code-bd83067ac509#.v1rtk8544)
 * [How a typo took down S3, the backbone of the internet](http://www.theverge.com/2017/3/2/14792442/amazon-s3-outage-cause-typo-internet-server)
+* [Programmers are confessing their coding sins to protest a broken job interview process](https://theoutline.com/post/1166/programmers-are-confessing-their-coding-sins-to-protest-a-broken-job-interview-process)
 
 ## Twitter Feeds to Follow
 * [Code newbie](https://twitter.com/codenewbies)
