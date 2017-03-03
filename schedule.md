@@ -366,7 +366,6 @@
 - [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_template_literals)
 - [More History](https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/)
 - [ES6 Compatibility](https://kangax.github.io/compat-table/es6/)
-- [You Don't Know ES6](https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond)
 <br />
 
 #### ES6 we didn't cover
@@ -542,6 +541,7 @@
 * [Eloquent JS](http://eloquentjavascript.net/)
 * [DOM Enlightenment](http://domenlightenment.com/#1.1)
 * [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+* [You Don't Know ES6](https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond)
 
 ## Articles
 * [My first month of coding](https://www.thinkful.com/blog/my-first-month-coding-an-emotional-roller-coaster/)
