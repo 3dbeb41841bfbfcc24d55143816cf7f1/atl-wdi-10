@@ -396,8 +396,6 @@
 - [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
 - [Debugging JS](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)
 - [Searching in dev tools](http://developer.telerik.com/featured/16-ways-to-search-find-and-edit-with-chrome-devtools/)
-- [Bullet Journal](http://bulletjournal.com/get-started/)
-- [Can I Use](http://caniuse.com/)
 <br />
 
 ### Week 1 - Fundamentals
@@ -520,6 +518,8 @@
 * [WDI-9 JS Cheatsheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
 * [WDI-9 Bootstrap Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
 * [Pomodoro Timer](http://www.marinaratimer.com/)
+* [Bullet Journal](http://bulletjournal.com/get-started/)
+* [Can I Use](http://caniuse.com/)
 
 ## Tutorial Sites
 
