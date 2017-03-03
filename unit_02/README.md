@@ -1,12 +1,12 @@
-# Week 6
+# Week 4
 
 ### What are we doing this week?
 
-| Monday                | Tuesday             | Wednesday         | Thursday            | Friday      |
-|-----------------------|---------------------|------------------ |---------------------|-------------|
-| Intro to the Internet | Intro to Express    | Express Router    | Create (Post)       | Update (Put)|
-| WDI Tooling           | Routing             | Diagnostic        | New (Get)           | Edit (Get)  |
-| Installation          | Views (Handlebars)  | Outcomes          | Read (Get)          |             |
+| Monday | Tuesday | Wednesday | Thursday | Friday |
+|-----------------------|---------------------|------------------|---------------------|-------------|
+| Intro to the Internet | Intro to Express | Express Router | Create (Post) | Update (Put)|
+| WDI Tooling | Routing | Diagnostic | New (Get) | Edit (Get) |
+| Installation | Views (Handlebars) | Outcomes | Read (Get)          |             |
 
 ### Supplemental Reading
 
@@ -17,26 +17,26 @@
 - [2. module.exports](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
 
 ---
-# Week 7
+# Week 5
 
 ### What are we doing this week?
 
-| Monday   | Tuesday               | Wednesday       | Thursday               | Friday                       |
+| Monday | Tuesday | Wednesday | Thursday | Friday |
 |----------|-----------------------|-----------------|------------------------|------------------------------|
-| NO CLASS | Constructor Functions | Database Design | Mongo Setup / Mongoose | CRUD Mongo/Mongoose w/ Views |
-|          | Promises              | Diagnostic      | Mongoose w/ Postman    |                              |
-|          |                       | Outcomes        |                        |                              |
+|  | Constructor Functions | Database Design | Mongo Setup / Mongoose | CRUD Mongo/Mongoose w/ Views |
+|  | Promises | Diagnostic | Mongoose w/ Postman |  |
+|  |  | Outcomes |  |  |
 
 ### Supplemental Reading
 
 ---
 
-# Week 8
+# Week 6
 
-| Monday         | Tuesday   | Wednesday | Thursday  | Friday |
+| Monday | Tuesday | Wednesday | Thursday  | Friday |
 |----------------|-----------|-----------|-----------|--------|
-| Sessions       | Project 2 | Project 2 | Project 2 |        |
-| Authentication |           |           |           |        |
-|                |           | Outcomes  |           |        |
+| Sessions | Project 2 | Project 2 | Project 2 |  |
+| Authentication |  |  |  |  |
+|  |  | Outcomes |  |  |
 
 ### Supplemental Reading
