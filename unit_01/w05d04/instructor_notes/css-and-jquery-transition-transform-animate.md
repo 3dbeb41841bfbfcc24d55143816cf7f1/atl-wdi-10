@@ -314,7 +314,7 @@ Syntax:
 1. [perspective](https://www.w3schools.com/cssref/css3_pr_perspective.asp)
     - distance between the viewer and the object
     - if you ever took an art class, you probably discussed perspective
-        - vanishing point- when all points converge on a single point
+        - **vanishing point**- when all points converge on a single point
             - creates depth/ a 3D effect
     - use in order to transform in 3D space
     - default is (1000px)
@@ -412,6 +412,8 @@ Transforms are better for animation for two reasons:
 ## Complex Animations with Multiple States
 
 Transitions are great for going from one state to another, but sometimes you need more than an initial and a final state.  [Keyframes](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp) can be used to add color changes based on the percentage of visibility. A keyframe is similar to a function declaration, in that it starts with **@keyframes**, followed by the animation name, followed by curly braces.  Inside of the curly braces, you add the keyframes-selector/percentage followed by a normal css rule.
+
+[Animation Example](http://codepen.io/marcwright/pen/xgbpRL)
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
@@ -601,6 +603,8 @@ Here is an example:
         background: green;
     }
 ```
+
+[Animate() Example](http://codepen.io/marcwright/pen/bgNMLb)
 
 1. jQuery:
 
