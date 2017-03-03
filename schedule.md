@@ -137,7 +137,7 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d01/morning_exercise">Morning Exercise</a>
+      Project 1 Retrospective
     </td>
     <td>
       WDI9 Outcomes: Linkedin for your Job Search
@@ -154,7 +154,9 @@
   </tr>
   <tr>
     <td><strong>Mod 1</strong></td>
-    <td>Project 1 Retrospective</td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d01/instructor_notes/intro_to_the_internet.md">Intro to Node</a>
+    </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/instructor_notes/express_router.md">Express Routing</a><br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/instructor_notes/lib_app.js">Lib App</a>
@@ -165,7 +167,7 @@
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a>
       <br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">Musical Chairs LAB</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/student_labs/to_dont_lab.md">DB Operations Update/Delete Lab</a>
@@ -174,7 +176,7 @@
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d01/instructor_notes/intro_to_the_internet.md">Intro to Node</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_intro.md">Intro to Express</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/node-express-intro-lesson">Review</a>
@@ -186,14 +188,13 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/instructor_notes/update_delete.md">DB Operations- Update/Delete</a>
     </td>
     <td>
+      <!-- https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/diagnostic_solution/diagnostic_solution_express.md -->
       Diagnostic
     </td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_intro.md">Intro to Express</a>
-      <br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_views.md">Handlebar Views</a>
     </td>
     <td>
@@ -221,7 +222,7 @@
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a>
       <br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">Musical Chairs LAB</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d05/student_labs/in-class-code-hbs">In-class-code-hbs</a>
