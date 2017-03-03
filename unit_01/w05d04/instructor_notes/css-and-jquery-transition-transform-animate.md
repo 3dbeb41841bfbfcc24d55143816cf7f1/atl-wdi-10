@@ -282,19 +282,19 @@ Syntax:
     - `transform: method(parameter);`
 
     ```css
-.square {
-    width: 200px;
-    height: 200px;
-    background: crimson; /* initial state */
-    transition: background-color 5s, transition 3s; 
-}
+    .square {
+        width: 200px;
+        height: 200px;
+        background: crimson; /* initial state */
+        transition: background-color 5s, transition 3s; 
+    }
 
-.square:hover {
-    width: 200px;
-    height: 200px;
-    background: darkBlue; /* final state */
-    transform: skewX(20deg); /* final state */
-}
+    .square:hover {
+        width: 200px;
+        height: 200px;
+        background: darkBlue; /* final state */
+        transform: skewX(20deg); /* final state */
+    }
 ```
 
 - You can check out the `transform` options in the Dev Tools using autocomplete. 
