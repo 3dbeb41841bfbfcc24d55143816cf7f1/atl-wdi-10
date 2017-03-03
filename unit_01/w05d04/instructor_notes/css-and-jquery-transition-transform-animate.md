@@ -526,8 +526,21 @@ jQuery can be useful for animation because you can pass in a callback function a
 
 ### `fadeIn()`
 
-jQuery has some simple animation methods like `fadeIn()` for example. Let's try this in Codepen.io (make sure to include the jQuery library under Settings -> Quick Add).
+jQuery has some simple animation methods like [fadeIn()](https://www.w3schools.com/jquery/eff_fadein.asp) for example. The fadeIn() method gradually changes the opacity, for selected elements, from hidden to visible (fading effect).
 
+**Syntax**
+
+`$(selector).fadeIn(speed,easing,callback);`
+    - speed- specifies the speed of the fading effect
+        - milliseconds
+        - slow
+        - fast
+    - easing- specifies the speed of the element in different points of the animation. Default value is "swing"
+        - swing - moves slower at the beginning/end, but faster in the middle
+        - linear - moves in a constant speed
+    - callback- a function to be executed after the fadeIn() method is completed
+
+Let's try this in Codepen.io (make sure to include the jQuery library under Settings -> Quick Add).
 1. html:
 
     ```html
@@ -553,7 +566,19 @@ Here are some [common jQuery effects](http://www.w3schools.com/jquery/jquery_ref
 <br />
 
 ### `animate()`
- You can accomplish a lot of the CSS animation code from above using `animate()`. Here is an example:
+ You can accomplish a lot of the CSS animation code from above using 
+[animate()](https://www.w3schools.com/jquery/jquery_animate.asp). The jQuery animate() method is used to create custom animations.
+
+**Syntax**
+`$(selector).animate({params},speed,callback);`
+    - params- required params parameter defines the CSS properties to be animated
+    - speed- speed parameter specifies the duration of the effect. 
+        - slow
+        - fast
+        - milliseconds
+    - callback parameter is a function to be executed after the animation completes
+
+Here is an example:
  
 1. html:
 
