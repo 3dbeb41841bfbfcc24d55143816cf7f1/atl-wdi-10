@@ -395,6 +395,8 @@ div:hover {
 
 ## Transform is Better than Position
 
+<!--Take 5 minutes to read this article by Paul Irish on [Why Moving Elements With Translate() Is Better Than Pos:abs Top/left](https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/).
+-->
 Why don't we just use something like `position: relative` and `left: 200px`?
 
 
@@ -403,10 +405,13 @@ Transforms are better for animation for two reasons:
 1. When elements are changed in the DOM, the browser checks to see if other elements are being pushed around.  When using transforms, the browser doesn't do this which makes it faster.
     * Add `display: inline-block` to your CSS rule
     * Add some lorem ipsum 
-   
+ 
 1. If you're doing a 3D transform, the computer's GPU is engaged, which is really fast
     - http://codepen.io/paulirish/pen/nkwKs (uses top/left position)
+	    - Ultimately, the element has to re-calculate every time the computer 
+	    moves based on what is around it.
     - http://codepen.io/paulirish/pen/LsxyF (uses translate)
+		- Doesn't worry about what is around it.
 
 <br />
 
@@ -645,3 +650,6 @@ Look at the following examples, try to re-create them from scratch using as litt
 - [CSS Transform- W3 Schools](https://www.w3schools.com/cssref/css3_pr_transform.asp)
 - [Keyframe Animation](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
 - [Prefix Free](http://leaverou.github.io/prefixfree/)
+- [Paul Irish article- Why Moving Elements With Translate() Is Better Than Pos:abs Top/left](https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
+- [Paul Irish video- 2D transform's translate() vs absolute positioning: Performance evaluation with Chrome DevTools](https://youtu.be/NZelrwd_iRs)
+- [Chris Coyier- Animation Performance](https://css-tricks.com/tale-of-animation-performance/)
