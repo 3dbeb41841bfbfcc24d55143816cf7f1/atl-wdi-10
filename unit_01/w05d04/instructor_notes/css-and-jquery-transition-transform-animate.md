@@ -193,8 +193,6 @@ Next, add a transition property:
 }
 ```
 
-<br />
-
 ![](http://i.imgur.com/ylb6WX9.gif)
 
 1. Create a 100px by 100px square box that has a background color of tomato
@@ -239,7 +237,7 @@ Next, add a transition property:
 
 Transform allows elements styled in CSS to be transformed in a two-dimensional space. 
 
-The `transform` property allows you to change the shape, size and position.  It has the following options...
+The [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp) property allows you to change the shape, size and position.  It has the following options...
 
 ### 2D Transform Methods 
 
@@ -373,8 +371,6 @@ If you know the math, you can write your own transformation matrix
         transform: translateX(100px); /* end state */
     }    
     ```
-
-<br />
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
