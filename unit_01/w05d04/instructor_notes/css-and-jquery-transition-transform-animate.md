@@ -307,7 +307,8 @@ Syntax:
     - use in order to transform in 3D space
     - a higher value will feel far away (1500px)
     - a lower value (400px) will make you feel closer to the object
-    ** must be applied to the parent element**
+    - ** must be applied to the parent element**
+    <br />
     ![Vanishing point](http://imgs.abduzeedo.com/files/articles/vanishing/vanishing-12.jpg)
 1. perspective-origin
     - defines where the element exists on the x and y-axis
