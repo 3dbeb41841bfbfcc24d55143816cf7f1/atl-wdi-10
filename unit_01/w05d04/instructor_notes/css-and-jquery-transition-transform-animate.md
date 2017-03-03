@@ -447,20 +447,20 @@ Transitions are great for going from one state to another, but sometimes you nee
 	```
 
 1. Additional properties:
-    - [animation-duration](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2)
+    - [animation-duration](https://www.w3schools.com/cssref/css3_pr_animation-duration.asp)
         - specifies how many seconds or milliseconds an animation takes to complete one cycle
         - mandatory in order for the animation to happen
         - the default is 0
-	- [animation-timing-function](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed)
+	- [animation-timing-function](https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp)
         - defines the speed curve of the animation
         - linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(n, n, n, n)
-	- [animation-iteration-count](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_count) (can be set to infinite)
+	- [animation-iteration-count](https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp) (can be set to infinite)
         - specifies the number of times an animation should run
-	- [animation-direction](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_direction)
+	- [animation-direction](https://www.w3schools.com/cssref/css3_pr_animation-direction.asp)
         - specifies whether an animation should play in reverse direction or alternate cycles
 		- reverse
 		- alternate
-	- [animation-delay](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_delay)
+	- [animation-delay](https://www.w3schools.com/cssref/css3_pr_animation-delay.asp)
         - specifies a delay for the start of an animation
 	- [animation-play-state](https://www.w3schools.com/cssref/css3_pr_animation-play-state.asp)
         - specifies whether the animation is running or paused
@@ -507,7 +507,7 @@ There are a lot of pre-built CSS libraries out there that are easy to include in
 
 <br />
 
-## Using jQuery for animations
+## Using jQuery for Animations
 
 CSS Animations are easy and mostly compatible.  They are often a good choice
 for basic animation needs. For anything more complex, such as animation that
