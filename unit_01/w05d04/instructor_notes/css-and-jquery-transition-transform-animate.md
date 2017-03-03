@@ -421,6 +421,13 @@ Transitions are great for going from one state to another, but sometimes you nee
 	    100% {background-color: red; left:0px; top: 0px;}
 	}
 	```
+    
+    ```css
+    @keyframes example {
+        from   {background-color: red;}
+        to  {background-color: yellow;}
+    }
+    ```
     > Note, remember that for production, `translate` will be faster than `left`, `top`, etc.
 
 
@@ -437,16 +444,35 @@ Transitions are great for going from one state to another, but sometimes you nee
 	    animation-timing-function: linear;
 	}
 	```
-1. Additional properties
-	- animation-timing-function
-	- animation-iteration-count (can be set to infinite)
-	- animation-direction
+
+1. Additional properties:
+    - [animation-duration](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2)
+        - specifies how many seconds or milliseconds an animation takes to complete one cycle
+        - mandatory in order for the animation to happen
+        - the default is 0
+	- [animation-timing-function](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed)
+        - defines the speed curve of the animation
+        - linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(n, n, n, n)
+	- [animation-iteration-count](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_count) (can be set to infinite)
+        - specifies the number of times an animation should run
+	- [animation-direction](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_direction)
+        - specifies whether an animation should play in reverse direction or alternate cycles
 		- reverse
 		- alternate
-	- animation-delay
+	- [animation-delay](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_delay)
+        - specifies a delay for the start of an animation
 	- animation-play-state
+        - specifies whether the animation is running or paused
 		- paused
 		- running
+    - animation-fill-mode
+        - specifies a style for the element when the animation is not playing (when it is finished, or when it has a delay)
+
+**Animation Shorthand**
+
+div {
+    animation: <animation-name> <animation-duration> <animation-timing-function> <animation-delay> <animation-iteration-count> <animation-direction>;
+}
 
 1. Try adding the following properties
 
