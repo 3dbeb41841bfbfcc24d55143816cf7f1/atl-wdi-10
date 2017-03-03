@@ -417,6 +417,13 @@ Transitions are great for going from one state to another, but sometimes you nee
 
 1. Define a named animation with a set of keyframes. These are similar to the traditional animation "tweeners" that were mentioned earlier.
 	
+    ```css
+    @keyframes example {
+        from {background-color: red;}
+        to   {background-color: yellow;}
+    }
+    ```
+
 	```css
 	@keyframes example {
 	    0%   {background-color: red; left: 0px; top: 0px;}
@@ -426,13 +433,6 @@ Transitions are great for going from one state to another, but sometimes you nee
 	    100% {background-color: red; left:0px; top: 0px;}
 	}
 	```
-
-    ```css
-    @keyframes example {
-        from   {background-color: red;}
-        to  {background-color: yellow;}
-    }
-    ```
     > Note, remember that for production, `translate` will be faster than `left`, `top`, etc.
 
 
