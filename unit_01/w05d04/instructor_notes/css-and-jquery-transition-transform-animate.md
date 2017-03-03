@@ -240,15 +240,18 @@ The `transform` property allows you to change the shape, size and position.  It 
 ### 2D Transform Methods 
 
 1. `transform: rotate(10deg);`
+    - [rotate(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotate)
     - rotate an element clockwise or counter-clockwise via degrees(deg)
     - will rotate clockwise by default
     - if you use a negative value, it will rotate counter-clockwise
 1. `transform: scale(1.1);`
+    - [scale(x, y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scale)
     - allows you to increase/decrease the size of an element
     - takes 2 parameters
         - 1st parameter(width)
         - 2nd parameter(height)
 1. `transform: translateX(10px);`
+    - [translate(x, y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translate)
     - move an element from its **current position** on the x and y-axis
     - takes 2 parameters
         - 1st parameter- x-axis
@@ -258,13 +261,16 @@ The `transform` property allows you to change the shape, size and position.  It 
             - will move vertically
         - optional: use `translateX()` or `translateY()`
 1. `transform: skewX(45deg);`
+    - [skew(x-angle, y-angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_skew)
     - skew elements on the x and y-axis via degrees(deg)
     - takes 2 parameters
         - 1st parameter- x-axis
             - will skew to the left by default
             - if you use a negative value, it will skew to the right
         - 2nd parameter- y-axis
-    - optional: use `skewX()` or `skewY()`
+    - optional: 
+        - [skewX(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_skewx)
+        - [skewY(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_skewy)
 
 Syntax: 
     - `transform: method(parameter);`
@@ -305,13 +311,11 @@ Syntax:
         - vanishing point- when all points converge on a single point
             - creates depth/ a 3D effect
     - use in order to transform in 3D space
+    - default is (1000px)
     - a higher value will feel far away (1500px)
     - a lower value (400px) will make you feel closer to the object
     - **must be applied to the parent element**
-    <br />
-    <br />
     ![Vanishing point](http://imgs.abduzeedo.com/files/articles/vanishing/vanishing-12.jpg)
-    <br />
 1. perspective-origin
     - defines where the element exists on the x and y-axis
     - default 50% 50%, which represents the x and y-axis
@@ -319,26 +323,33 @@ Syntax:
     - allows you to change the original x and y-positions
 1. transform-style
     - allows child elements to preserve 3D transformations
+    - flat (default)
+    - `transform-style: preserve-3d;` // will keep that style for the child elements
 1. backface-visibility
     - defines whether an element should be visible when it is facing the screen
 
 #### 3D Transform Methods
 
-1. `rotateX();` // transform clockwise
-1. `rotateY();` // transform counterclockwise
-1. `rotateZ();` // transform front and back
+1. [rotateX(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotatex) // transform clockwise
+1. [rotateY(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotatey) // transform counterclockwise
+1. [rotateZ(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotatez) // transform front and back
 1. rotate 3D shorthand: `rotate3d(x-axis, y-axis, z-axis, angle deg);`
-1. `translateX();` // transform horizontally
-1. `translateY();` // transform vertically
-1. `translateZ();` // transform front and back
+    `rotate3d(1, 1, 1, 360deg);`
+1. [translateX(x)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translatex) // transform horizontally
+1. [translateY(y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translatey) // transform vertically
+1. `translateZ(z);` // transform front and back
 1. translate 3D shorthand: `translate3d(x-axis, y-axis, z-axis);`
-1. `scaleX();` // transform  width
-1. `scaleY();` // transform height
-1. `scaleZ();` // transform front and back
+    `translate3d(50px, 50px, 75px);`
+1. [scaleX(x)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scalex) // transform  width
+1. [scaleY(y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scaley) // transform height
+1. `scaleZ(z);` // transform front and back
+1. scale 3D shorthand: `scalee3d(width, height, z-axis);`
+    `translate3d(2, 2, 2);`
+    3D- allows you to transform on the size and not on the movement
 
 If you know the math, you can write your own transformation matrix
 
-1. matrix(n,n,n,n,n,n)
+1. [matrix(n,n,n,n,n,n)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_matrix)
 1. matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
 1. http://periodic.famo.us/
 
@@ -573,3 +584,4 @@ Look at the following examples, try to re-create them from scratch using as litt
 ## Resources
 - [The Perfect Human](https://www.youtube.com/watch?v=W9kls6bMkRo)
 - [Can I Use](http://www.caniuse.com)
+- [CSS Transform- W3 Schools](https://www.w3schools.com/cssref/css3_pr_transform.asp)
