@@ -34,11 +34,11 @@ Today we'll be covering 3 major topics:
 * CSS Transitions
 * CSS Transforms (2D)
 * CSS Animations
-* Prefixing
-
-**Transforms** are a set of CSS properties that take an element and transform it's shape, e.g. rotating it, scaling it, skewing it, etc.
+* Vendor Prefixes
 
 **Transitions** let us tell the browser how to smoothly change a property over time. For example, if the height of an element changes (due to a :hover selector), we can tell the browser to change the height gradually over 1 second.
+
+**Transforms** are a set of CSS properties that take an element and transform it's shape, e.g. rotating it, scaling it, skewing it, etc.
 
 **Animations** are similar to transitions, in that they let us change properties over time, but they give us more control over how those changes happen.
 
