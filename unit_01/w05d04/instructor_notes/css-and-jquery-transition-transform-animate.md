@@ -658,6 +658,7 @@ Look at the following examples, try to re-create them from scratch using as litt
 - [The Perfect Human](https://www.youtube.com/watch?v=W9kls6bMkRo)
 - [Can I Use](http://www.caniuse.com)
 - [CSS Transform- W3 Schools](https://www.w3schools.com/cssref/css3_pr_transform.asp)
+- [CSS Tricks- Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Keyframe Animation](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
 - [Prefix Free](http://leaverou.github.io/prefixfree/)
 - [Paul Irish article- Why Moving Elements With Translate() Is Better Than Pos:abs Top/left](https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
