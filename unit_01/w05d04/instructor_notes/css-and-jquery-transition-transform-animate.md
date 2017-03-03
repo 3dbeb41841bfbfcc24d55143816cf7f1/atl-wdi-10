@@ -421,7 +421,7 @@ Transitions are great for going from one state to another, but sometimes you nee
 	    100% {background-color: red; left:0px; top: 0px;}
 	}
 	```
-    
+
     ```css
     @keyframes example {
         from   {background-color: red;}
@@ -470,9 +470,7 @@ Transitions are great for going from one state to another, but sometimes you nee
 
 **Animation Shorthand**
 
-div {
     animation: <animation-name> <animation-duration> <animation-timing-function> <animation-delay> <animation-iteration-count> <animation-direction>;
-}
 
 1. Try adding the following properties
 
