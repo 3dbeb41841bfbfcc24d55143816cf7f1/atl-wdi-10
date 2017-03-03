@@ -127,23 +127,23 @@ Next, add a transition property:
     - can be specified in seconds or milliseconds(1000ms to 1s)
 - `transition-timing-function: ease;`
     - different options to explore the speed of the animation
-    	- ease
+    	- **ease**
             - start slow
             - finish slow
             - smoother than ease-in-out
-    	- linear
+    	- **linear**
             - applies the same speed from start to finish
-    	- ease-in
+    	- **ease-in**
             - start slow
             - finish fast
-    	- ease-out
+    	- **ease-out**
             - start fast
             - finish slow
-    	- ease-in-out
+    	- **ease-in-out**
             - start slow
             - speed up in the middle
             - finish slow
-    	- cubic-bezier(n,n,n,n)
+    	- **cubic-bezier(n,n,n,n)**
             - allows you to add variations to control the animation
             - it takes 4 parameters to indicate the curve on the x and y-axis, and 2 to indicate the handles
                 - values range from 0 to 1
