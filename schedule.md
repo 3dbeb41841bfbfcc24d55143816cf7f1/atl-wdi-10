@@ -338,7 +338,7 @@
 
 #### jQuery
 - [A Smarter Way to Learn jQuery](https://github.com/JideLambo/javascript-books/blob/master/A%20Smarter%20Way%20to%20Learn%20jQuery%20-%20Mark%20Myers.pdf) - this was the only link that I found.  Otherwise, you might be able to download it somewhere.
-- [jQuery, and intro](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery) 
+- [jQuery, an intro](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery) 
 - [jQuery Cheat Sheet](https://oscarotero.com/jquery/)
 - [jQuery- W3 Schools](https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_html_set)
 <br />
