@@ -352,7 +352,7 @@ If you know the math, you can write your own transformation matrix
 
 1. [matrix(n,n,n,n,n,n)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_matrix)
 1. matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
-1. http://periodic.famo.us/
+1. Example of a matrix: http://periodic.famo.us/
 
 
 #### Example of `translateX()`
