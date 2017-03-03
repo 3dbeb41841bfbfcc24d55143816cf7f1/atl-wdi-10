@@ -10,7 +10,7 @@
     <th>Day 4</th>
     <th>Day 5</th>
   </tr>
-</thead><tbody>
+  </thead><tbody>
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
