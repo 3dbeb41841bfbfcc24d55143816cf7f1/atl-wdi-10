@@ -542,12 +542,12 @@ jQuery has some simple animation methods like [fadeIn()](https://www.w3schools.c
 
 Let's try this in Codepen.io (make sure to include the jQuery library under Settings -> Quick Add).
 <br />
+
 1. html:
 
     ```html
     <div id="box1">BOX 1</div>
 ```
-
 2. css:
 
     ```css
@@ -556,7 +556,6 @@ Let's try this in Codepen.io (make sure to include the jQuery library under Sett
         display: none;
     }
 ```
-
 1. jQuery:
 
     ```js
