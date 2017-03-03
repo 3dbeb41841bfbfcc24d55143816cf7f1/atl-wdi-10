@@ -344,30 +344,6 @@
 <br />
 
 #### ES6
-- [Symbols](http://es6-features.org/#SymbolType)
-- [Iterator & for..of operator](http://es6-features.org/#IteratorForOfOperator)
-- [Generators](https://davidwalsh.name/es6-generators)
-- [Proxies](https://ponyfoo.com/articles/es6-proxies-in-depth)
-- [Reflection and meta-programming](http://www.2ality.com/2011/01/reflection-and-meta-programming-in.html)
-- [ES5, ES2015, Typescript](https://johnpapa.net/es5-es2015-typescript/)
-- [Intro to ES2015](http://blog.teamtreehouse.com/get-started-ecmascript-6)
-- [ES2016 and beyond](http://javascriptplayground.com/blog/2016/02/es2016-and-beyond/)
-- [You Don't Know ES6](https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond)
-- [Block Scope](https://www.sitepoint.com/joys-block-scoping-es6/)
-- [Destructuring](http://www.2ality.com/2015/01/es6-destructuring.html)
-- [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_template_literals)
-- [More History](https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/)
-- [ES6 Compatibility](https://kangax.github.io/compat-table/es6/)
-<br />
-
-#### ES6 we didn't cover
-- [Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
-- [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-- [Classes](http://es6-features.org/#ClassDefinition)
-- [Inheritance](http://es6-features.org/#ClassInheritance)
-<br />
-
-#### Resources From ES6 Class
 - [Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 - [Const](http://es6-features.org/#Constants)
 - [Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
@@ -384,6 +360,28 @@
 - [Property Shorthand](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
 - [Property Shorthand](http://es6-features.org/#PropertyShorthand)
 - [Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+- [ES2016 and beyond](http://javascriptplayground.com/blog/2016/02/es2016-and-beyond/)
+- [Block Scope](https://www.sitepoint.com/joys-block-scoping-es6/)
+- [Destructuring](http://www.2ality.com/2015/01/es6-destructuring.html)
+- [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_template_literals)
+- [More History](https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/)
+- [ES6 Compatibility](https://kangax.github.io/compat-table/es6/)
+- [You Don't Know ES6](https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond)
+<br />
+
+#### ES6 we didn't cover
+- [Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+- [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [Classes](http://es6-features.org/#ClassDefinition)
+- [Inheritance](http://es6-features.org/#ClassInheritance)
+<br />
+
+#### CSS
+- [Specificity](https://css-tricks.com/specifics-on-css-specificity/)
+- [CSS Transform- W3 Schools](https://www.w3schools.com/cssref/css3_pr_transform.asp)
+- [CSS Tricks- Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Keyframe Animation](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
+- [Prefix Free](http://leaverou.github.io/prefixfree/)
 <br />
 
 #### Articles
@@ -393,14 +391,6 @@
 - [Paul Irish article- Why Moving Elements With Translate() Is Better Than Pos:abs Top/left](https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
 - [Paul Irish video- 2D transform's translate() vs absolute positioning: Performance evaluation with Chrome DevTools](https://youtu.be/NZelrwd_iRs)
 - [Chris Coyier- Animation Performance](https://css-tricks.com/tale-of-animation-performance/)
-<br />
-
-#### CSS
-- [Specificity](https://css-tricks.com/specifics-on-css-specificity/)
-- [CSS Transform- W3 Schools](https://www.w3schools.com/cssref/css3_pr_transform.asp)
-- [CSS Tricks- Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [Keyframe Animation](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
-- [Prefix Free](http://leaverou.github.io/prefixfree/)
 <br />
 
 #### Other
