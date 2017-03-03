@@ -87,8 +87,8 @@ Now that you've had some practice really thinking about the data design of an ap
   1. Add, commit, and push your code.
   2. Add a link to the slack channel theme along with your name and you comfort level with the homework.
 
-  <!-- 1.  Add, commit, and push your code to your fork of the class repo.
-  2.  File an issue on the class repo titled "Your Name -- wXXdXX".
+  <--  Add, commit, and push your code to your fork of the class repo.
+    File an issue on the class repo titled "Your Name -- wXXdXX".
 
   The issue should include:
 
