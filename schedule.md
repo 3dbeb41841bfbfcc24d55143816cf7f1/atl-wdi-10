@@ -1,5 +1,5 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI 9!!!
-<!-- 
+
 ### Week 6 - Project 2
 <table><thead>
   <tr>
@@ -41,7 +41,7 @@
       Project Two
     </td>
     <td>
-      <a href="">Client Side Rendering Lab</a>
+      Client Side Rendering Lab
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_intro.md">Intro to Angular</a>
@@ -59,7 +59,7 @@
       Project Two
     </td>
     <td>
-      <a href="">Client Side Rendering Lab</a>
+      Client Side Rendering Lab
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_directives_and_nested_controllers.md">Intro to Angular with Nested Controllers</a>
@@ -77,7 +77,7 @@
       Project Two Presentations
     </td>
     <td>
-      <a href="">Client Side Rendering Lab</a>
+      Client Side Rendering Lab
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-intro-museum-app-lab-instructions.md">Intro to Angular Lab</a>
@@ -95,7 +95,7 @@
       Project Two Presentations
     </td>
     <td>
-      <a href="">Client Side Rendering Lab</a>
+      Client Side Rendering Lab
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-directives-happy-app-instructions.md">Angular Directives</a>
@@ -254,7 +254,7 @@
       Project Two
     </td>
   </tr>
-</tbody></table> -->
+</tbody></table>
 
 ### Week 4 - NodeJS, Express, Mongoose
 <table><thead>
