@@ -1,5 +1,5 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI 9!!!
-
+<!-- 
 ### Week 6 - Project 2
 <table><thead>
   <tr>
@@ -254,7 +254,7 @@
       Project Two
     </td>
   </tr>
-</tbody></table>
+</tbody></table> -->
 
 ### Week 4 - NodeJS, Express, Mongoose
 <table><thead>
