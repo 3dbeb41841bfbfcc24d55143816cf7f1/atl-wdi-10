@@ -76,6 +76,7 @@
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d03/instructor_notes/mongo_install.md">Mongo Set up</a><br />
+      <a href="https://github.com/ga-wdi-lessons/mongo-intro">Intro to Mongo</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/mongo_terminal_env.md">CRUD Mongo</a>
@@ -159,6 +160,7 @@
     <td><strong>Mod 1</strong></td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d01/instructor_notes/intro_to_the_internet.md">Intro to Node</a>
+      <!-- Build Tools- https://github.com/ga-wdi-lessons/build-tools -->
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/instructor_notes/express_router.md">Express Routing</a><br />
