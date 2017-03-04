@@ -237,7 +237,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d05/student_labs/in-class-code-hbs">In-class-code-hbs</a>
     </td>
     <td>
-      LAB
+      <a href="https://github.com/ga-wdi-exercises/bootflix">LAB</a>
     </td>
   </tr>
   <tr>
