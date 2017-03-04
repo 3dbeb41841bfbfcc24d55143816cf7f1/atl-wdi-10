@@ -216,6 +216,7 @@
     </td>
     <td>
       <a href="https://github.com/ga-wdi-lessons/js-ajax">AJAX Session</a>
+      <!-- https://github.com/ga-wdi-lessons/api-intro-with-ajax -->
     </td>
   </tr>
   <tr>
