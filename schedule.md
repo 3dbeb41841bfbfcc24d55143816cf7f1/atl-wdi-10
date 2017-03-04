@@ -57,7 +57,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d02/student_labs/constructor-lab-prompt.md">Constructors LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ga-wdi-lessons/mongo-relationships">Mongo Relationships</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d03/instructor_notes/mongo_install.md">Mongo Set up</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/mongo_terminal_env.md">CRUD Mongo</a>
@@ -75,7 +75,6 @@
       <a href="https://github.com/ATL-WDI-Exercises/mean_todo_app">Promises</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d03/instructor_notes/mongo_install.md">Mongo Set up</a><br />
       <a href="https://github.com/ga-wdi-lessons/mongo-intro">Intro to Mongo</a>
     </td>
     <td>
@@ -94,6 +93,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d02/student_labs/promises-lab-starter">Promises LAB</a>
     </td>
     <td>
+      <a href="https://github.com/ga-wdi-lessons/mongo-relationships">Mongo Relationships</a>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d04/instructor_notes/mongoose_intro.md">Mongoose Intro</a>
     </td>
     <td>
