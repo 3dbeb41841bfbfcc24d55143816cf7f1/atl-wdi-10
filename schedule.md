@@ -32,17 +32,19 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d02/instructor_notes/constructors-and-prototypes.md">Constructors</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d02/instructor_notes/constructors-and-prototypes.md">Constructors +</a><br />
       <a href="https://github.com/ATL-WDI-Curriculum/js-modern-array-methods">Advanced Array Functions</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/security-and-auth">Diagnostic</a>
+      Diagnostic
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/mongo_terminal_env.md">CRUD Mongo</a>
+      <a href="https://github.com/ga-wdi-lessons/mongo-relationships">Mongo Relationships</a>
     </td>
     <td>
-      Sessions
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w08d01/instructor_notes/auth_lesson.md">Authentication</a>
+      <!-- https://github.com/ATL-WDI-Curriculum/express-security-with-passport -->
+      <!-- https://github.com/ATL-WDI-Curriculum/security-and-auth -->
     </td>
     <td>
       <!-- Previous Projects: https://github.com/ATL-WDI-Curriculum/projects/blob/master/project2-sample-projects.md -->
@@ -55,13 +57,13 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d02/student_labs/constructor-lab-prompt.md">Constructors LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/express-security-with-passport">Diagnostic</a>
+      Diagnostic
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/mongo_terminal_env.md">CRUD Mongo</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/heroku-deployment">Sessions Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w08d01/student_labs/auth_starter">Authentication LAB</a>
     </td>
     <td>
       Intro to Project Two/Sample Project
@@ -77,10 +79,10 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d04/instructor_notes/mongoose_intro.md">Mongoose Intro</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/finishing_up_full_crud.md">Mongoose</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/mongo_terminal_env.md">CRUD Mongo</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w08d01/instructor_notes/auth_lesson.md">Authentication</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/heroku-deployment">Heroku Deployment</a>
     </td>
     <td>
       Project Two
@@ -95,10 +97,10 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d04/instructor_notes/mongoose_express.md">Mongoose Postman Lab</a>
     </td>
     <td>
-      CRUD LAB
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/finishing_up_full_crud.md">Mongoose</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w08d01/student_labs/auth_starter">Authentication LAB</a>
+      Catch up/Sessions?
     </td>
     <td>
       Project Two
