@@ -1,5 +1,126 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI 9!!!
 
+### Week 6 - Project 2
+<table><thead>
+  <tr>
+    <th>Time</th>
+    <th>Day 1</th>
+    <th>Day 2</th>
+    <th>Day 3</th>
+    <th>Day 4</th>
+    <th>Day 5</th>
+  </tr>
+  </thead><tbody>
+  <tr>
+    <td><strong>WarmUp</strong></td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/morning_exercise">Morning Exercise</a>
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 1</strong></td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      <a href="">Client Side Rendering Lab</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_intro.md">Intro to Angular</a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 2</strong></td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      <a href="">Client Side Rendering Lab</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_directives_and_nested_controllers.md">Intro to Angular with Nested Controllers</a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 3</strong></td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      Project Two Presentations
+    </td>
+    <td>
+      <a href="">Client Side Rendering Lab</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-intro-museum-app-lab-instructions.md">Intro to Angular Lab</a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 4</strong></td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      Project Two Presentations
+    </td>
+    <td>
+      <a href="">Client Side Rendering Lab</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-directives-happy-app-instructions.md">Angular Directives</a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Training</strong></td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      Project Two
+    </td>
+    <td>
+      No Homework
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/homework">Homework</a>
+    </td>
+    <td>
+      Homework
+    </td>
+  </tr>
+</tbody></table>
+
 ### Week 5 - Mongo/Mongoose, Security, Project 2
 <table><thead>
   <tr>
@@ -51,6 +172,11 @@
     </td>
     <td>
       <!-- Previous Projects: https://github.com/ATL-WDI-Curriculum/projects/blob/master/project2-sample-projects.md -->
+      <!-- https://github.com/ga-wdi-exercises/tunr_mongo_oojs -->
+      <!-- https://github.com/ga-wdi-exercises/mongo-cli -->
+      <!-- to do app part 2: https://github.com/ga-wdi-exercises/reminders_mongo -->
+      <!-- https://github.com/ga-wdi-exercises/yum -->
+      <!-- https://github.com/ga-wdi-exercises/node-mongo-heroku-deployment-lab -->
       Intro to Project Two/Sample Project
     </td>
   </tr>
@@ -156,7 +282,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d04/morning_exercise">Morning Exercise</a>
     </td>
     <td>
-      <a href="">Morning Exercise</a>
+      Morning Exercise
     </td>
   </tr>
   <tr>
@@ -215,8 +341,9 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/instructor_notes/update_delete.md">DB Operations Update/Delete</a>
     </td>
     <td>
-      <a href="https://github.com/ga-wdi-lessons/js-ajax">AJAX Session</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d01/instructor_notes/ajax_with_jquery.md">AJAX Session</a>
       <!-- https://github.com/ga-wdi-lessons/api-intro-with-ajax -->
+      <!-- https://github.com/ga-wdi-lessons/js-ajax -->
     </td>
   </tr>
   <tr>
@@ -237,6 +364,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d05/student_labs/in-class-code-hbs">In-class-code-hbs</a>
     </td>
     <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d01/instructor_notes/giphy_app_starter">Giphy LAB</a><br />
       <a href="https://github.com/ga-wdi-exercises/bootflix">LAB</a>
     </td>
   </tr>
