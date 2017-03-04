@@ -45,6 +45,9 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w08d01/instructor_notes/auth_lesson.md">Authentication</a>
       <!-- https://github.com/ATL-WDI-Curriculum/express-security-with-passport -->
       <!-- https://github.com/ATL-WDI-Curriculum/security-and-auth -->
+      <!-- https://github.com/ga-wdi-lessons/express-passport -->
+      <!-- https://github.com/ga-wdi-lessons/express-passport-sequelize -->
+      <!-- https://github.com/ga-wdi-lessons/express-sequelize -->
     </td>
     <td>
       <!-- Previous Projects: https://github.com/ATL-WDI-Curriculum/projects/blob/master/project2-sample-projects.md -->
@@ -82,6 +85,7 @@
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/heroku-deployment">Heroku Deployment</a>
+      <!-- digital ocean- https://github.com/ga-wdi-lessons/express-deploy-mongo -->
     </td>
     <td>
       Project Two
@@ -211,7 +215,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/instructor_notes/update_delete.md">DB Operations Update/Delete</a>
     </td>
     <td>
-      AJAX Breakout Session
+      <a href="https://github.com/ga-wdi-lessons/js-ajax">AJAX Session</a>
     </td>
   </tr>
   <tr>
