@@ -121,6 +121,7 @@
   </tr>
 </tbody></table>
 
+### Supplemental Reading for week 12
 
 ### Week 11 
 <table><thead>
@@ -244,6 +245,7 @@
   </tr>
 </tbody></table>
 
+### Supplemental Reading for week 11
 
 ### Week 10 
 <table><thead>
@@ -366,6 +368,8 @@
   </tr>
 </tbody></table>
 
+### Supplemental Reading for week 10
+
 ### Week 9 - Intro to Ruby
 <table><thead>
   <tr>
@@ -486,6 +490,8 @@
     </td>
   </tr>
 </tbody></table>
+
+### Supplemental Reading for week 9
 
 ### Week 8 - Project Three, SQL, SQL Joins, Install Ruby
 <table><thead>
@@ -610,6 +616,8 @@
     </td>
   </tr>
 </tbody></table>
+
+### Supplemental Reading for week 8
 
 ### Week 7 - $HTTP, UI-Router, Project Three
 <table><thead>
@@ -736,6 +744,8 @@
   </tr>
 </tbody></table>
 
+### Supplemental Reading for week 7
+
 ### Week 6 - Project 2
 <table><thead>
   <tr>
@@ -859,6 +869,8 @@
     </td>
   </tr>
 </tbody></table>
+
+### Supplemental Reading for week 6
 
 ### Week 5 - Mongo/Mongoose, Security, Project 2
 <table><thead>
@@ -989,6 +1001,8 @@
     </td>
   </tr>
 </tbody></table>
+
+### Supplemental Reading for week 5
 
 ### Week 4 - NodeJS, Express, Mongoose
 <table><thead>
@@ -1258,6 +1272,8 @@
     </td>
   </tr>
 </tbody></table>
+
+### Supplemental Reading for week 3
 
 ### Week 2 - Javascript/DOM
 <table><thead>
