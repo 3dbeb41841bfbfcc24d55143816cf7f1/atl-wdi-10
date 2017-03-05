@@ -1,6 +1,617 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI 9!!!
 
-### Week 7 - 
+### Week 12
+<table><thead>
+  <tr>
+    <th>Time</th>
+    <th>Day 1</th>
+    <th>Day 2</th>
+    <th>Day 3</th>
+    <th>Day 4</th>
+    <th>Day 5</th>
+  </tr>
+  </thead><tbody>
+  <tr>
+    <td><strong>WarmUp</strong></td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 1</strong></td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 2</strong></td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 3</strong></td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four Presentations
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 4</strong></td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four Presentations
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Training</strong></td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Project Four
+    </td>
+    <td>
+      Graduation!!!!
+    </td>
+  </tr>
+</tbody></table>
+
+
+### Week 11 
+<table><thead>
+  <tr>
+    <th>Time</th>
+    <th>Day 1</th>
+    <th>Day 2</th>
+    <th>Day 3</th>
+    <th>Day 4</th>
+    <th>Day 5</th>
+  </tr>
+  </thead><tbody>
+  <tr>
+    <td><strong>WarmUp</strong></td>
+    <td>
+      Vagabond Project
+    </td>
+    <td>
+      Lightning Talks
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 1</strong></td>
+    <td>
+      Vagabond Project
+    </td>
+    <td>
+      Lightning Talks
+    </td>
+    <td>
+      Intro to TDD
+    </td>
+    <td>
+      TDD
+    </td>
+    <td>
+      TDD
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 2</strong></td>
+    <td>
+      Vagabond Project Presentations
+    </td>
+    <td>
+      Lightning Talk Presentations
+    </td>
+    <td>
+      Intro to TDD
+    </td>
+    <td>
+      TDD
+    </td>
+    <td>
+      TDD
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 3</strong></td>
+    <td>
+      Technical Interviews
+    </td>
+    <td>
+      Technical Interviews
+    </td>
+    <td>
+      Technical Interviews
+    </td>
+    <td>
+      TDD
+    </td>
+    <td>
+      Walk through Sample Project
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 4</strong></td>
+    <td>
+      Technical Interviews
+    </td>
+    <td>
+      Technical Interviews
+    </td>
+    <td>
+      Technical Interviews
+    </td>
+    <td>
+      TDD
+    </td>
+    <td>
+      Walk through Sample Project<br />
+      Intro to Project Four
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Training</strong></td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Project Four
+    </td>
+  </tr>
+</tbody></table>
+
+
+### Week 10 
+<table><thead>
+  <tr>
+    <th>Time</th>
+    <th>Day 1</th>
+    <th>Day 2</th>
+    <th>Day 3</th>
+    <th>Day 4</th>
+    <th>Day 5</th>
+  </tr>
+  </thead><tbody>
+  <tr>
+    <td><strong>WarmUp</strong></td>
+    <td>
+      Morning Exercise
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+    <td>
+      Vagabond Project
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 1</strong></td>
+    <td>
+      Rake
+    </td>
+    <td>
+      Rails Asset Pipeline, Forms, Helpers
+    </td>
+    <td>
+      Devise + Cancancan
+    </td>
+    <td>
+      Sample Project
+    </td>
+    <td>
+      Vagabond Project
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 2</strong></td>
+    <td>
+      Rake
+    </td>
+    <td>
+      Rails Asset Pipeline, Forms, Helpers
+    </td>
+    <td>
+      Devise + Cancancan
+    </td>
+    <td>
+      Sample Project
+    </td>
+    <td>
+      Vagabond Project
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 3</strong></td>
+    <td>
+      Gulp
+    </td>
+    <td>
+      SASS
+    </td>
+    <td>
+      Angular on Rails API
+    </td>
+    <td>
+      Vagabond Project
+    </td>
+    <td>
+      Vagabond Project
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 4</strong></td>
+    <td>
+      Gulp
+    </td>
+    <td>
+      SASS
+    </td>
+    <td>
+      Angular on Rails API
+    </td>
+    <td>
+      Vagabond Project
+    </td>
+    <td>
+      Vagabond Project
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Training</strong></td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Vagabond Project
+    </td>
+    <td>
+      Vagabond Project
+    </td>
+  </tr>
+</tbody></table>
+
+### Week 9 - Intro to Ruby
+<table><thead>
+  <tr>
+    <th>Time</th>
+    <th>Day 1</th>
+    <th>Day 2</th>
+    <th>Day 3</th>
+    <th>Day 4</th>
+    <th>Day 5</th>
+  </tr>
+  </thead><tbody>
+  <tr>
+    <td><strong>WarmUp</strong></td>
+    <td>
+      Morning Exercise
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 1</strong></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d02/instructor_notes/intro_to_ruby.md">Intro to Ruby</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d03/instructor_notes/inheritance_in_ruby.md">Inheritance in Ruby</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/intro_to_active_record_and_migrations.md">Intro to Active Record</a>
+    </td>
+    <td>
+      Intro to Rails
+    </td>
+    <td>
+      Rails Views + Controllers
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 2</strong></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d02/instructor_notes/intro_to_ruby.md">Intro to Ruby</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d03/instructor_notes/inheritance_in_ruby.md">Inheritance in Ruby</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/active_record_one_to_many.md">Active Record One to Many</a>
+    </td>
+    <td>
+      Intro to Rails
+    </td>
+    <td>
+      Rails Views + Controllers
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 3</strong></td>
+    <td>
+      Advanced Ruby
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d03/instructor_notes/oop_ruby.md">OOP in Ruby</a>
+    </td>
+    <td>
+      Active Record
+    </td>
+    <td>
+      Rails Migrations, Associations and Validations
+    </td>
+    <td>
+      Rails Resources and Routing
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 4</strong></td>
+    <td>
+      Advanced Ruby
+    </td>
+    <td>
+      Classes + Inheritance
+    </td>
+    <td>
+      Active Record
+    </td>
+    <td>
+      Rails Migrations, Associations and Validations
+    </td>
+    <td>
+      Rails Resources and Routing
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Training</strong></td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Homework
+    </td>
+  </tr>
+</tbody></table>
+
+### Week 8 - Project Three, SQL, SQL Joins, Install Ruby
+<table><thead>
+  <tr>
+    <th>Time</th>
+    <th>Day 1</th>
+    <th>Day 2</th>
+    <th>Day 3</th>
+    <th>Day 4</th>
+    <th>Day 5</th>
+  </tr>
+  </thead><tbody>
+  <tr>
+    <td><strong>WarmUp</strong></td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three Retrospective
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/morning_exercise">Morning Exercise</a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 1</strong></td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/getting_postgres.md">Downloading Postgres</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_basics.md">SQL Intro</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_joins.md">SQL Joins</a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 2</strong></td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_relationships.md">SQL Joins</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_joins.md">SQL Joins</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/schema.sql">Schema SQL</a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 3</strong></td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three Presentations
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/erd_domains.md">Domain Modeling & ERDs</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/install_ruby.md">Install Ruby</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/how_to_run_ruby.md">How to Run Ruby</a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 4</strong></td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three Presentations
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d04/student_labs/library_sql">Library SQL</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d05/student_labs/library_sql">Library SQL</a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Training</strong></td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      Project Three
+    </td>
+    <td>
+      No Homework
+    </td>
+    <td>
+      Homework
+    </td>
+    <td>
+      Homework
+    </td>
+  </tr>
+</tbody></table>
+
+### Week 7 - $HTTP, UI-Router, Project Three
 <table><thead>
   <tr>
     <th>Time</th>
@@ -67,7 +678,6 @@
       Project Three
     </td>
   </tr>
-
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
@@ -149,10 +759,10 @@
       Project Two
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/morning_exercise">Morning Exercise</a>
+      Project Two Retrospective
     </td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/morning_exercise">Morning Exercise</a>
     </td>
   </tr>
   <tr>
