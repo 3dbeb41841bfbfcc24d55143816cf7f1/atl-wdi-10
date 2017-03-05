@@ -31,9 +31,9 @@
 
 | Monday | Tuesday | Wednesday | Thursday | Friday |
 |-------------|--------------|---------------|--------------|--------------|
-| Constructor Functions/Advanced Array Functions | Diagnostic | Database Design | Mongo Setup / Mongoose | CRUD Mongo/Mongoose w/ Views |
-| Promises |  | Diagnostic | Mongoose w/ Postman |  |
-| Promises LAB |  | Outcomes |  |  |
+| Constructor Functions/Advanced Array Functions | Mongo Set Up/Intro to Mongo | Mongoose Postman Lab | Authentication/Authentication Lab | Sample Project |
+| Promises | Mongo Relationships | CRUD Mongo | Heroku Deployment | Intro to Project Two/Project Two |
+| Promises LAB | Intro to Mongoose | CRUD Mongo | Catch Up/Sessions?/start hw | Project Two |
 
 ### Supplemental Reading
 
@@ -43,8 +43,8 @@
 
 | Monday | Tuesday | Wednesday | Thursday  | Friday |
 |----------------|-----------|-----------|-----------|--------|
-| Sessions | Project 2 | Project 2 | Project 2 |  |
-| Authentication |  |  |  |  |
-|  |  | Outcomes |  |  |
+| Project 2 | Project 2 | Project 2 | Angular Code School | Intro to Angular with Nested Controllers |
+| Project 2 | Project 2 | Project 2 | Intro to Angular | Angular Directives |
+| Project 2 | Project 2 | Project 2 Presentations | Angular Lab | Angular Labs |
 
 ### Supplemental Reading
