@@ -100,7 +100,7 @@
     </td>
     <td>
       <a href="https://docs.angularjs.org/tutorial">Angular Phonecat</a><br />
-      <a href="https://angular.io/docs/ts/latest/tutorial/">Tour of heroes</a>
+      <a href="https://angular.io/docs/ts/latest/tutorial/">Tour of heroes</a><br />
       + get started on homework
     </td>
   </tr>
@@ -212,7 +212,7 @@
       <!-- digital ocean- https://github.com/ga-wdi-lessons/express-deploy-mongo -->
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/projects/blob/master/project2-sample-projects.md">Previous Projects</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/projects/blob/master/project2-sample-projects.md">Previous Projects</a><br />
       Intro to Project Two/Project Two
     </td>
   </tr>
