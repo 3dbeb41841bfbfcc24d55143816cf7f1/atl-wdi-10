@@ -230,7 +230,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/finishing_up_full_crud.md">Finishing up CRUD</a>
     </td>
     <td>
-      Catch up/Sessions?
+      Catch up/Sessions?/start hw
     </td>
     <td>
       Project Two
