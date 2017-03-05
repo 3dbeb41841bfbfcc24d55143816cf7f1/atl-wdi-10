@@ -62,7 +62,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/homework">Code School Angular</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_directives_and_nested_controllers.md">Intro to Angular with Nested Controllers</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-directives-happy-app-instructions.md">Angular Directives</a>
     </td>
   </tr>
   <tr>
@@ -80,7 +80,8 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_intro.md">Intro to Angular</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-intro-museum-app-lab-instructions.md">Intro to Angular Lab</a>
+      <a href="https://docs.angularjs.org/tutorial">Angular Phonecat</a><br />
+      <a href="https://angular.io/docs/ts/latest/tutorial/">Tour of heroes</a>
     </td>
   </tr>
   <tr>
@@ -95,10 +96,12 @@
       Project Two Presentations
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_intro.md">Intro to Angular</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-intro-museum-app-lab-instructions.md">Angular Lab</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-directives-happy-app-instructions.md">Angular Directives</a>
+      <a href="https://docs.angularjs.org/tutorial">Angular Phonecat</a><br />
+      <a href="https://angular.io/docs/ts/latest/tutorial/">Tour of heroes</a>
+      + get started on homework
     </td>
   </tr>
   <tr>
@@ -138,17 +141,17 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d03/morning_exercise">Morning Exercise</a>
     </td>
     <td>
-      Diagnostic
-      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d04/morning_exercise">Morning Exercise</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d04/morning_exercise">Morning Exercise</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d05/morning_exercise">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w08d01/morning_exercise">Morning Exercise</a>
+      Diagnostic
     </td>
     <td>
-      Morning Exercise
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w08d01/morning_exercise">Morning Exercise</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d01/homework">Sample Project</a>
     </td>
   </tr>
   <tr>
@@ -172,13 +175,7 @@
       <!-- https://github.com/ga-wdi-lessons/express-sequelize -->
     </td>
     <td>
-      <!-- Previous Projects: https://github.com/ATL-WDI-Curriculum/projects/blob/master/project2-sample-projects.md -->
-      <!-- https://github.com/ga-wdi-exercises/tunr_mongo_oojs -->
-      <!-- https://github.com/ga-wdi-exercises/mongo-cli -->
-      <!-- to do app part 2: https://github.com/ga-wdi-exercises/reminders_mongo -->
-      <!-- https://github.com/ga-wdi-exercises/yum -->
-      <!-- https://github.com/ga-wdi-exercises/node-mongo-heroku-deployment-lab -->
-      Intro to Project Two/Sample Project
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d01/homework">Sample Project</a>
     </td>
   </tr>
   <tr>
@@ -196,7 +193,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w08d01/student_labs/auth_starter">Authentication LAB</a>
     </td>
     <td>
-      Intro to Project Two/Sample Project
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d01/homework">Sample Project</a>
     </td>
   </tr>
   <tr>
@@ -215,7 +212,8 @@
       <!-- digital ocean- https://github.com/ga-wdi-lessons/express-deploy-mongo -->
     </td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/projects/blob/master/project2-sample-projects.md">Previous Projects</a>
+      Intro to Project Two/Project Two
     </td>
   </tr>
   <tr>
@@ -230,7 +228,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/finishing_up_full_crud.md">Finishing up CRUD</a>
     </td>
     <td>
-      Catch up/Sessions?/start hw
+      <!-- Catch up/Sessions?/start hw -->
     </td>
     <td>
       Project Two
