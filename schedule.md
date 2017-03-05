@@ -1373,7 +1373,7 @@
       ">Javascript Jedi LAB</a><br />
     </td>
     <td>
-      Intro to Design Patterns - Danny
+      Guest Speaker
     </td>
   </tr>
   <tr>
