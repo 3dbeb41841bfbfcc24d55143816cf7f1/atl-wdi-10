@@ -1,5 +1,131 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI 9!!!
 
+### Week 7 - 
+<table><thead>
+  <tr>
+    <th>Time</th>
+    <th>Day 1</th>
+    <th>Day 2</th>
+    <th>Day 3</th>
+    <th>Day 4</th>
+    <th>Day 5</th>
+  </tr>
+  </thead><tbody>
+  <tr>
+    <td><strong>WarmUp</strong></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/morning_exercise">Morning Exercise</a>
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d01/morning_exercise">Morning Exercise</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d02/morning_exercise">Morning Exercise</a>
+    </td>
+    <td>
+      Morning Exercise
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 1</strong></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d04/instructor_notes/angular-http.md">Ajax and $HTTP</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d05/instructor_notes/angular-ui-router.md">UI Router</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d01/instructor_notes/angular_services.md">Angular Services</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d02/instructor_notes/auth_broadcast_emit_on.md">Authentication Angular</a>
+    </td>
+    <td>
+      Project Three Intro<br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d03/instructor_notes/git_cheatsheet.md">Git Cheat Sheet</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d03/instructor_notes/collaborating_with_git.md">Collaborating with git</a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 2</strong></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d04/instructor_notes/angular-http.md">Ajax and $HTTP</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d05/instructor_notes/angular-ui-router.md">UI Router</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d01/instructor_notes/angular_services.md">Angular Services</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d02/instructor_notes/auth_broadcast_emit_on.md">Authentication Angular</a>
+    </td>
+    <td>
+      Project Three
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Mod 3</strong></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d04/instructor_notes/w09d04%20-%20%24http%20lesson%20presidents%20app.png">Presidents png</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/student_labs/presidents-app-starter-code-single-app-version">Presidents Starter Code</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d05/instructor_notes/finish_crud_with_http.md">Giphy with UI Router</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d01/instructor_examples/giphy_ang_services_solution">Lab</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d02/instructor_notes/auth_broadcast_emit_on.md">Authentication Angular</a>
+    </td>
+    <td>
+      Project Three
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Mod 4</strong></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/student_labs/criminals-starter-code-single-app">Criminals Starter Code</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d02/instructor_notes/pub_sub">Pub Sub</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d05/student_labs/giphy_ang_starter">Giphy Lab</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d03/student_labs/git_lab.md">Git Lab</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d02/student_labs">Giphy with Angular + Auth</a>
+    </td>
+    <td>
+      Project Three
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Training</strong></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/homework">Homework</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d05/homework">Homework</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d01/homework">Homework</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d02/homework">Homework</a>
+    </td>
+    <td>
+      Project Three
+    </td>
+  </tr>
+</tbody></table>
+
 ### Week 6 - Project 2
 <table><thead>
   <tr>
@@ -81,7 +207,7 @@
     </td>
     <td>
       <a href="https://docs.angularjs.org/tutorial">Angular Phonecat</a><br />
-      <a href="https://angular.io/docs/ts/latest/tutorial/">Tour of heroes</a>
+      <a href="https://angular.io/docs/ts/latest/tutorial/">Tour of Heroes</a>
     </td>
   </tr>
   <tr>
@@ -100,7 +226,7 @@
     </td>
     <td>
       <a href="https://docs.angularjs.org/tutorial">Angular Phonecat</a><br />
-      <a href="https://angular.io/docs/ts/latest/tutorial/">Tour of heroes</a><br />
+      <a href="https://angular.io/docs/ts/latest/tutorial/">Tour of Heroes</a><br />
       + get started on homework
     </td>
   </tr>
@@ -228,7 +354,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/finishing_up_full_crud.md">Finishing up CRUD</a>
     </td>
     <td>
-      <!-- Catch up/Sessions?/start hw -->
+      Catch up/Sessions?/start hw
     </td>
     <td>
       Project Two
