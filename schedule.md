@@ -41,10 +41,10 @@
       Project Two
     </td>
     <td>
-      Client Side Rendering Lab
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/homework">Code School Angular</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_intro.md">Intro to Angular</a>
+      
     </td>
   </tr>
   <tr>
@@ -59,7 +59,7 @@
       Project Two
     </td>
     <td>
-      Client Side Rendering Lab
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/homework">Code School Angular</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_directives_and_nested_controllers.md">Intro to Angular with Nested Controllers</a>
@@ -77,7 +77,7 @@
       Project Two Presentations
     </td>
     <td>
-      Client Side Rendering Lab
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_intro.md">Intro to Angular</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-intro-museum-app-lab-instructions.md">Intro to Angular Lab</a>
@@ -95,7 +95,7 @@
       Project Two Presentations
     </td>
     <td>
-      Client Side Rendering Lab
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_intro.md">Intro to Angular</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-directives-happy-app-instructions.md">Angular Directives</a>
@@ -113,7 +113,7 @@
       No Homework
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/homework">Homework</a>
+      Homework
     </td>
     <td>
       Homework
