@@ -137,10 +137,10 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
     <td>
-      Lightning Talks
+      <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a>
     </td>
     <td>
       Morning Exercise
@@ -155,10 +155,10 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
     <td>
-      Lightning Talks
+      <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a>
     </td>
     <td>
       Intro to TDD
@@ -228,7 +228,7 @@
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a>
     </td>
     <td>
       Homework
@@ -273,7 +273,7 @@
       Morning Exercise
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
   </tr>
   <tr>
@@ -291,7 +291,7 @@
       Sample Project
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
   </tr>
   <tr>
@@ -309,7 +309,7 @@
       Sample Project
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
   </tr>
   <tr>
@@ -324,10 +324,10 @@
       Angular on Rails API
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
   </tr>
   <tr>
@@ -342,10 +342,10 @@
       Angular on Rails API
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
   </tr>
   <tr>
