@@ -1220,7 +1220,7 @@
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      User Stories, Wireframes, Project Managements + Github Issues
+      User Stories
     </td>
     <td>
       Project One
@@ -1238,7 +1238,7 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      User Stories, Wireframes, Project Managements + Github Issues
+        Wireframes
     </td>
     <td>
       Project One
