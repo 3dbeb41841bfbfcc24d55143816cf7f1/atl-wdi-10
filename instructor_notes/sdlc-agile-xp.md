@@ -247,6 +247,7 @@ Split into three teams of ~10 people each! (3 mins)
 
 #### Waterfall team
 - Before you write ANY code, you must draw up your entire plan for the application and I must approve it.
+- Make sure to ask me about everything I might want as we draw up the plan!
 - If you uncover any problems with your plan as you code, I must approve any changes to that plan before
 you continue.
 - I am a very important Business Person &trade; with lots of very important certifications. I manage many
@@ -266,8 +267,7 @@ important work remaining in the backlog.
 
 #### XP team
 - Spend 10 minutes determining your `backlog` of stories. Try your best to account for each step you will need.
-- Decide when a full unit of work has been complete (e.g. the header is successfully created), and show
-it to me for approval.
+- Decide when a full unit of work has been complete (e.g. the header is successfully created, or one of the buttons is on the page), and show it to me for approval.
 - Once I have approved a unit of work, move on to the next unit and repeat that process. You should be
 checking in with me at least every few minutes.
 
