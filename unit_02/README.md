@@ -35,7 +35,7 @@
 | Promises | Mongo Relationships | CRUD Mongo | Heroku Deployment | Intro to Project Two/Project Two |
 | Promises LAB | Intro to Mongoose | CRUD Mongo | Catch Up/Sessions?/start hw | Project Two |
 
-### Supplemental Reading
+### Supplemental Reading for week 5
 
 ---
 
@@ -43,8 +43,8 @@
 
 | Monday | Tuesday | Wednesday | Thursday  | Friday |
 |----------------|-----------|-----------|-----------|--------|
-| Project 2 | Project 2 | Project 2 | Angular Code School | Intro to Angular with Nested Controllers |
-| Project 2 | Project 2 | Project 2 | Intro to Angular | Angular Directives |
-| Project 2 | Project 2 | Project 2 Presentations | Angular Lab | Angular Labs |
+| Project Two | Project Two | Project Two | Angular Code School | Intro to Angular with Nested Controllers |
+| Project Two | Project Two | Project Two | Intro to Angular | Angular Directives |
+| Project Two | Project Two | Project Two Presentations | Angular Lab | Angular Phonecat Lab<br />Tour of Heroes |
 
-### Supplemental Reading
+### Supplemental Reading for week 6

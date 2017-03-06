@@ -534,7 +534,7 @@
       Project Three
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/getting_postgres.md">Downloading Postgres</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/getting_postgres.md">Downloading Postgres</a><br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_basics.md">SQL Intro</a>
     </td>
     <td>
@@ -1018,7 +1018,7 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      Project 1 Retrospective
+      Project One Retrospective
     </td>
     <td>
       WDI9 Outcomes: Linkedin for your Job Search
@@ -1152,7 +1152,7 @@
 - [Client Side vs. Server Side ](https://spin.atomicobject.com/2015/04/06/web-app-client-side-server-side/)
 <br />
 
-### Week 3 - Project Management/Project 1
+### Week 3 - Project Management/Project One
 <table><thead>
   <tr>
     <th>Time</th>

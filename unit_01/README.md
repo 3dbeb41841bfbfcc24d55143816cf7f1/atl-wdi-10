@@ -152,9 +152,9 @@
 
 | Monday | Tuesday | Wednesday | Thursday | Friday |
 |-----------------------------------|-----------------------|------------------------------|-------------------------------------------------|----------------------|
-| SDLC | Project 1 | Project 1    | Project 1 | Project 1  |
-| User Stories, Wireframes, Project Managements + Github Issues | Project 1 | Project 1 | Project 1 | Project 1 |
-| User Stories, Wireframes, Project Managements + Github Issues | Project 1 | Project 1 | Project 1 | Project 1 |
+| SDLC | Project One | Project One    | Project One | Project One  |
+| User Stories, Wireframes, Project Managements + Github Issues | Project One | Project One | Project One | Project One |
+| User Stories, Wireframes, Project Managements + Github Issues | Project One | Project One | Project One | Project One |
 
 
 ### Supplemental Reading
