@@ -173,10 +173,10 @@
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      Vagabond Project Presentations
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project Presentations</a>
     </td>
     <td>
-      Lightning Talk Presentations
+      <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks Presentations</a>
     </td>
     <td>
       Intro to TDD
@@ -191,13 +191,15 @@
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      Technical Interviews
+      Technical Interviews/Lightning Talk Prep
     </td>
     <td>
-      Technical Interviews
+      Technical Interviews/<br />
+      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
     </td>
     <td>
-      Technical Interviews
+      Technical Interviews/<br />
+      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
     </td>
     <td>
       TDD
@@ -212,10 +214,12 @@
       Technical Interviews
     </td>
     <td>
-      Technical Interviews
+      Technical Interviews/<br />
+      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
     </td>
     <td>
-      Technical Interviews
+      Technical Interviews/<br />
+      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
     </td>
     <td>
       TDD
@@ -231,7 +235,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a>
     </td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
     </td>
     <td>
       Homework
@@ -402,7 +406,7 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d02/instructor_notes/intro_to_ruby.md">Intro to Ruby</a>
+      
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d03/instructor_notes/inheritance_in_ruby.md">Inheritance in Ruby</a>
@@ -420,7 +424,7 @@
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d02/instructor_notes/intro_to_ruby.md">Intro to Ruby</a>
+      
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d03/instructor_notes/inheritance_in_ruby.md">Inheritance in Ruby</a>
@@ -538,7 +542,9 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_basics.md">SQL Intro</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_joins.md">SQL Joins</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/install_ruby.md">Install Ruby</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/how_to_run_ruby.md">How to Run Ruby</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d02/instructor_notes/intro_to_ruby.md">Intro to Ruby</a>
     </td>
   </tr>
   <tr>
@@ -553,11 +559,12 @@
       Project Three
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_relationships.md">SQL Joins</a>
-    </td>
-    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_relationships.md">SQL Joins</a><br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_joins.md">SQL Joins</a><br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/schema.sql">Schema SQL</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d02/instructor_notes/intro_to_ruby.md">Intro to Ruby</a>
     </td>
   </tr>
   <tr>
@@ -575,8 +582,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/erd_domains.md">Domain Modeling & ERDs</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/install_ruby.md">Install Ruby</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/how_to_run_ruby.md">How to Run Ruby</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/ruby-pry-and-control-flow">Pry + Control Flow</a>
     </td>
   </tr>
   <tr>
@@ -594,7 +600,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d04/student_labs/library_sql">Library SQL</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d05/student_labs/library_sql">Library SQL</a>
+      Lab
     </td>
   </tr>
   <tr>
