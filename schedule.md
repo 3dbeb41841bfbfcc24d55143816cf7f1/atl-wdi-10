@@ -1482,6 +1482,7 @@
 - [CSS Tricks- Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Keyframe Animation](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
 - [Prefix Free](http://leaverou.github.io/prefixfree/)
+- [How Flexbox works — explained with big, colorful, animated gifs](https://medium.freecodecamp.com/an-animated-guide-to-flexbox-d280cf6afc35#.ufp5lkory)
 <br />
 
 #### Articles
@@ -1697,6 +1698,8 @@
 * [Things we wish we knew when learning to code](https://medium.com/code-school/things-we-wish-we-knew-when-we-were-learning-to-code-bd83067ac509#.v1rtk8544)
 * [How a typo took down S3, the backbone of the internet](http://www.theverge.com/2017/3/2/14792442/amazon-s3-outage-cause-typo-internet-server)
 * [Programmers are confessing their coding sins to protest a broken job interview process](https://theoutline.com/post/1166/programmers-are-confessing-their-coding-sins-to-protest-a-broken-job-interview-process)
+* [How to Fail as a Web Developer](https://theindex.generalassemb.ly/how-to-fail-as-a-web-developer-d218494df1f5#.84g40k5sq)
+* [How creating CSS images made me a better developer – Coding Artist](https://medium.com/coding-artist/how-creating-css-images-made-me-a-better-developer-25b7a79f1af6#.fw2lf1xpe)
 
 ## Twitter Feeds to Follow
 * [Code newbie](https://twitter.com/codenewbies)
