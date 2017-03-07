@@ -563,7 +563,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_relationships.md">Relationships in SQL</a><br />
     </td>
     <td>
-      <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w11d05/instructor_notes/sql_advanced_sol.sql">Advanced SQL</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_advanced_sol.sql">Advanced SQL</a>
     </td>
   </tr>
   <tr>
