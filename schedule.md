@@ -1707,6 +1707,7 @@
 * [How creating CSS images made me a better developer – Coding Artist](https://medium.com/coding-artist/how-creating-css-images-made-me-a-better-developer-25b7a79f1af6#.fw2lf1xpe)
 * [How NOT to design Netflix in your 45-minute System Design Interview?](https://hackernoon.com/how-not-to-design-netflix-in-your-45-minute-system-design-interview-64953391a054#.lmb6yuuz4)
 * [Imposter syndrome on high — my amateur Web developer start](https://medium.com/@DavidBrandtWho/imposter-syndrome-on-high-my-amateur-web-developer-start-f0be0ca6bf25#.xtcewv2k4)
+* [Make your First Game- MVP](https://www.youtube.com/watch?v=UvCri1tqIxQ)
 
 ## Twitter Feeds to Follow
 * [Code newbie](https://twitter.com/codenewbies)
