@@ -158,8 +158,6 @@ Your app must:
   - DRY (Don't Repeat Yourself) code
 * Deploy your game online, where the rest of the world can access it. 
  * Suggested default options for deployment include [Github Pages](https://pages.github.com/) or [BitBalloon](https://www.bitballoon.com/)
- * For deployment with Firebase see [Firebase Deployment](firebase-deployment.md). 
-* Use semantic markup for HTML and CSS (adhere to best practices)
 
 ## Suggested Ways to Get Started
 
