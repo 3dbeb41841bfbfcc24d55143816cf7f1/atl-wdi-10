@@ -10,7 +10,7 @@ February 21, 2017 - May 12, 2017
 - Maren Woodruff
     - maren.woodruff@generalassemb.ly | [Github](https://github.com/marenwoodruff)
 - Josh Kushner
-    - joshkushner1@gmail.com
+    - joshua.kushner@generalassemb.ly
 
 ##### Instructional Associates
 - John Dupper
@@ -23,7 +23,7 @@ February 21, 2017 - May 12, 2017
 
 - Danny: @dp_hurley
 - Maren: @marenwoodruff
-- Josh: @jkushner on tech404
+- Josh: @jkushner
 - John: @johndupper
 - Lisa: @lkholter
 
