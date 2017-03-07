@@ -397,7 +397,7 @@
       Morning Exercise
     </td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w12d04/morning_exercise">Morning Exercise</a>
     </td>
     <td>
       Morning Exercise
