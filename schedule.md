@@ -1667,12 +1667,13 @@
 * [Google Calendar](https://calendar.google.com/calendar/embed?src=b4s54mkg0s2c1ddov57cffe4ls%40group.calendar.google.com&ctz=America/New_York)
 * [Hypepotamus Calendar of Events](https://hypepotamus.com/events/)
 * [Meetups](http://www.meetup.com/)
-* [WDI-9 JS Cheatsheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
-* [WDI-9 Bootstrap Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
+* [WDI-9 JS Cheat Sheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
+* [WDI-9 Bootstrap Cheat Sheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
 * [Pomodoro Timer](http://www.marinaratimer.com/)
 * [Bullet Journal](http://bulletjournal.com/get-started/)
 * [Can I Use](http://caniuse.com/)
 * [Silicon Valley Scene](https://www.youtube.com/watch?v=oyVksFviJVE)
+* [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Tutorial Sites
 
