@@ -268,7 +268,7 @@
       Morning Exercise
     </td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w12d01/morning_exercise">Morning Exercise- CSS Frameworks- Update me to right repo</a>
     </td>
     <td>
       Morning Exercise
@@ -525,7 +525,7 @@
       Project Three Retrospective
     </td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w11d04/morning_exercise">Morning Exercise</a>
     </td>
   </tr>
   <tr>
@@ -600,7 +600,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d04/student_labs/library_sql">Library SQL</a>
     </td>
     <td>
-      Lab
+      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w11d04/homework">Lab</a>
     </td>
   </tr>
   <tr>
@@ -618,7 +618,7 @@
       Homework
     </td>
     <td>
-      Homework
+      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w11d05/homework">Homework Update Me</a>
     </td>
   </tr>
 </tbody></table>
