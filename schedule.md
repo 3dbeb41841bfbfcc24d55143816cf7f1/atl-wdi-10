@@ -462,7 +462,7 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      Advanced Ruby
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d02/student_labs/reps.md">Ruby Lab</a>
     </td>
     <td>
       Lab
@@ -480,7 +480,7 @@
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d02/homework">Homework</a>
     </td>
     <td>
       Homework
@@ -492,7 +492,7 @@
       Homework
     </td>
     <td>
-      Homework
+      Homework- Hartl
     </td>
   </tr>
 </tbody></table>
@@ -563,8 +563,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_relationships.md">Relationships in SQL</a><br />
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/install_ruby.md">Install Ruby</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/how_to_run_ruby.md">How to Run Ruby</a><br />
+      <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w11d05/instructor_notes/sql_advanced_sol.sql">Advanced SQL</a>
     </td>
   </tr>
   <tr>
@@ -582,7 +581,8 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/erd_domains.md">Domain Modeling & ERDs</a>
     </td>
     <td>
-      Lab
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/install_ruby.md">Install Ruby</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/how_to_run_ruby.md">How to Run Ruby</a><br />
     </td>
   </tr>
   <tr>
