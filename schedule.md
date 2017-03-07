@@ -137,10 +137,10 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
     <td>
-      Lightning Talks
+      <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a>
     </td>
     <td>
       Morning Exercise
@@ -155,10 +155,10 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
     <td>
-      Lightning Talks
+      <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a>
     </td>
     <td>
       Intro to TDD
@@ -173,10 +173,10 @@
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      Vagabond Project Presentations
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project Presentations</a>
     </td>
     <td>
-      Lightning Talk Presentations
+      <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks Presentations</a>
     </td>
     <td>
       Intro to TDD
@@ -191,13 +191,15 @@
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      Technical Interviews
+      Technical Interviews/Lightning Talk Prep
     </td>
     <td>
-      Technical Interviews
+      Technical Interviews/<br />
+      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
     </td>
     <td>
-      Technical Interviews
+      Technical Interviews/<br />
+      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
     </td>
     <td>
       TDD
@@ -212,10 +214,12 @@
       Technical Interviews
     </td>
     <td>
-      Technical Interviews
+      Technical Interviews/<br />
+      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
     </td>
     <td>
-      Technical Interviews
+      Technical Interviews/<br />
+      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
     </td>
     <td>
       TDD
@@ -228,10 +232,10 @@
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a>
     </td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
     </td>
     <td>
       Homework
@@ -273,7 +277,7 @@
       Morning Exercise
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
   </tr>
   <tr>
@@ -291,7 +295,7 @@
       Sample Project
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
   </tr>
   <tr>
@@ -309,7 +313,7 @@
       Sample Project
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
   </tr>
   <tr>
@@ -324,10 +328,10 @@
       Angular on Rails API
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
   </tr>
   <tr>
@@ -342,10 +346,10 @@
       Angular on Rails API
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
   </tr>
   <tr>
@@ -360,10 +364,10 @@
       Homework
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
     <td>
-      Vagabond Project
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
   </tr>
 </tbody></table>
@@ -459,7 +463,7 @@
       Advanced Ruby
     </td>
     <td>
-      Classes + Inheritance
+      Lab
     </td>
     <td>
       Active Record
@@ -519,7 +523,7 @@
       Project Three Retrospective
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/morning_exercise">Morning Exercise</a>
+      Morning Exercise
     </td>
   </tr>
   <tr>
@@ -535,10 +539,11 @@
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/getting_postgres.md">Downloading Postgres</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_basics.md">SQL Intro</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_basics.md">Intro to SQL</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_joins.md">SQL Joins</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_joins.md">SQL Joins</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/schema.sql">Schema SQL</a>
     </td>
   </tr>
   <tr>
@@ -553,11 +558,11 @@
       Project Three
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_relationships.md">SQL Joins</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_relationships.md">Relationships in SQL</a><br />
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_joins.md">SQL Joins</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/schema.sql">Schema SQL</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/install_ruby.md">Install Ruby</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/how_to_run_ruby.md">How to Run Ruby</a><br />
     </td>
   </tr>
   <tr>
@@ -575,8 +580,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/erd_domains.md">Domain Modeling & ERDs</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/install_ruby.md">Install Ruby</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/how_to_run_ruby.md">How to Run Ruby</a>
+      Lab
     </td>
   </tr>
   <tr>
@@ -594,7 +598,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d04/student_labs/library_sql">Library SQL</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d05/student_labs/library_sql">Library SQL</a>
+      Lab
     </td>
   </tr>
   <tr>
@@ -696,7 +700,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d05/instructor_notes/finish_crud_with_http.md">Giphy with UI Router</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d01/instructor_examples/giphy_ang_services_solution">Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/angular-forms">Angular Forms + Validations</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d02/instructor_notes/auth_broadcast_emit_on.md">Authentication Angular</a>
@@ -1482,6 +1486,7 @@
 - [CSS Tricks- Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Keyframe Animation](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
 - [Prefix Free](http://leaverou.github.io/prefixfree/)
+- [How Flexbox works — explained with big, colorful, animated gifs](https://medium.freecodecamp.com/an-animated-guide-to-flexbox-d280cf6afc35#.ufp5lkory)
 <br />
 
 #### Articles
@@ -1697,6 +1702,8 @@
 * [Things we wish we knew when learning to code](https://medium.com/code-school/things-we-wish-we-knew-when-we-were-learning-to-code-bd83067ac509#.v1rtk8544)
 * [How a typo took down S3, the backbone of the internet](http://www.theverge.com/2017/3/2/14792442/amazon-s3-outage-cause-typo-internet-server)
 * [Programmers are confessing their coding sins to protest a broken job interview process](https://theoutline.com/post/1166/programmers-are-confessing-their-coding-sins-to-protest-a-broken-job-interview-process)
+* [How to Fail as a Web Developer](https://theindex.generalassemb.ly/how-to-fail-as-a-web-developer-d218494df1f5#.84g40k5sq)
+* [How creating CSS images made me a better developer – Coding Artist](https://medium.com/coding-artist/how-creating-css-images-made-me-a-better-developer-25b7a79f1af6#.fw2lf1xpe)
 
 ## Twitter Feeds to Follow
 * [Code newbie](https://twitter.com/codenewbies)
