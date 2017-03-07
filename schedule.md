@@ -286,10 +286,10 @@
       Rake
     </td>
     <td>
-      Rails Asset Pipeline, Forms, Helpers
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-asset-pipeline">Rails Asset Pipeline, Forms, Helpers</a>
     </td>
     <td>
-      Devise + Cancancan
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-authorization_devise">Devise + Cancancan</a>
     </td>
     <td>
       Sample Project
@@ -304,10 +304,10 @@
       Rake
     </td>
     <td>
-      Rails Asset Pipeline, Forms, Helpers
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-asset-pipeline">Rails Asset Pipeline, Forms, Helpers</a>
     </td>
     <td>
-      Devise + Cancancan
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-authorization_devise">Devise + Cancancan</a>
     </td>
     <td>
       Sample Project
@@ -322,10 +322,10 @@
       Gulp
     </td>
     <td>
-      SASS
+      <a href="https://github.com/ATL-WDI-Curriculum/css-sass">SASS</a>
     </td>
     <td>
-      Angular on Rails API
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-api-code-along">Angular on Rails API</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
@@ -340,10 +340,10 @@
       Gulp
     </td>
     <td>
-      SASS
+      <a href="https://github.com/ATL-WDI-Curriculum/css-sass">SASS</a>
     </td>
     <td>
-      Angular on Rails API
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-api-code-along">Angular on Rails API</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
@@ -415,10 +415,11 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/intro_to_active_record_and_migrations.md">Intro to Active Record</a>
     </td>
     <td>
-      Intro to Rails
+      <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-intro/blob/master/README.md">Intro to Rails</a>
     </td>
     <td>
-      Rails Views + Controllers
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-views-and-controller">Rails Views + Controllers</a>
     </td>
   </tr>
   <tr>
@@ -433,10 +434,11 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/active_record_one_to_many.md">Active Record One to Many</a>
     </td>
     <td>
-      Intro to Rails
+      <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-intro/blob/master/README.md">Intro to Rails</a>
     </td>
     <td>
-      Rails Views + Controllers
+      <a href="https://github.com/ATL-WDI-Curriculum/pet-lab">Rails Views + Controllers Lab</a>
     </td>
   </tr>
   <tr>
@@ -448,13 +450,13 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d03/instructor_notes/oop_ruby.md">OOP in Ruby</a>
     </td>
     <td>
-      Active Record
+      <a href="https://github.com/ATL-WDI-Exercises/fridge_tracker"Active Record Lab</a>
     </td>
     <td>
-      Rails Migrations, Associations and Validations
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-active-record-migrations">Rails Migrations, Associations and Validations</a>
     </td>
     <td>
-      Rails Resources and Routing
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-routing">Rails Resources and Routing</a>
     </td>
   </tr>
   <tr>
@@ -466,13 +468,13 @@
       Lab
     </td>
     <td>
-      Active Record
+      <a href="https://github.com/ATL-WDI-Exercises/fridge_tracker">Active Record Lab</a>
     </td>
     <td>
-      Rails Migrations, Associations and Validations
+      <a href="https://github.com/ATL-WDI-Exercises/rails-active-record-migrations">Rails Migrations, Associations and Validations Lab</a>
     </td>
     <td>
-      Rails Resources and Routing
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-routing">Rails Resources and Routing Lab</a>
     </td>
   </tr>
   <tr>
