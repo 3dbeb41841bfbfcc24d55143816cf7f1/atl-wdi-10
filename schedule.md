@@ -388,7 +388,7 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      Morning Exercise
+      <a href="">Morning Exercise
     </td>
     <td>
       Morning Exercise
@@ -492,7 +492,7 @@
       Homework
     </td>
     <td>
-      Homework- Hartl
+      Homework- Hartl Tutorial
     </td>
   </tr>
 </tbody></table>
@@ -618,7 +618,7 @@
       Homework
     </td>
     <td>
-      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w11d05/homework">Homework Update Me</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d05/homework">Homework</a>
     </td>
   </tr>
 </tbody></table>
