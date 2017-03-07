@@ -154,7 +154,7 @@ Your app must:
   - Well-structured and readable code
   - Semantic naming of variables, functions, CSS classes, etc.
   - Short and clear functions that _do one thing_
-  - Efficient code (cache references to DOM nodes, etc.)
+  - Efficient code- if you have your MVP, refactor
   - DRY (Don't Repeat Yourself) code
 * Deploy your game online, where the rest of the world can access it. 
  * Suggested default options for deployment include [Github Pages](https://pages.github.com/) or [BitBalloon](https://www.bitballoon.com/)
