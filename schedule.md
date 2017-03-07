@@ -1704,6 +1704,8 @@
 * [Programmers are confessing their coding sins to protest a broken job interview process](https://theoutline.com/post/1166/programmers-are-confessing-their-coding-sins-to-protest-a-broken-job-interview-process)
 * [How to Fail as a Web Developer](https://theindex.generalassemb.ly/how-to-fail-as-a-web-developer-d218494df1f5#.84g40k5sq)
 * [How creating CSS images made me a better developer – Coding Artist](https://medium.com/coding-artist/how-creating-css-images-made-me-a-better-developer-25b7a79f1af6#.fw2lf1xpe)
+* [How NOT to design Netflix in your 45-minute System Design Interview?](https://hackernoon.com/how-not-to-design-netflix-in-your-45-minute-system-design-interview-64953391a054#.lmb6yuuz4)
+* [Imposter syndrome on high — my amateur Web developer start](https://medium.com/@DavidBrandtWho/imposter-syndrome-on-high-my-amateur-web-developer-start-f0be0ca6bf25#.xtcewv2k4)
 
 ## Twitter Feeds to Follow
 * [Code newbie](https://twitter.com/codenewbies)
