@@ -39,16 +39,17 @@ You will likely encounter many a developer who puts down Mongo. When we start le
 
 ## Let's Draw on The Board - We Do (20 mins)
 
-Our example is going to be a library:
+Our example is going to be Survey Monkey:
 
-- What pieces of data do we need to think about when constructing our library app?
-- What are the types of this data
-- What are the relations between these pieces of data
+- What pieces of data do we need to think about when constructing our survey monkey app?
+- What are the types of this data?
+- What are the relations between these pieces of data?
 
-You do: 20m
+## Pair Up & Draw on The Board - Y'all Do (20 mins)
 
-Perform the same exercise on your own with an Instagram-type app as your example.
+How do you feel about your understanding of data modeling after doing the Survey Monkey example? Raise 2 fingers for "really well!" or 1 finger for "still a little lost".  Pair up 1's and 2's.
 
+Choose any app (Netflix, Instagram, etc.) and model the database with your partner on the board around the classroom.
 
 
 ## ACID
