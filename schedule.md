@@ -388,7 +388,7 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <a href="">Morning Exercise
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d02/morning_exercise">Morning Exercise</a>
     </td>
     <td>
       Morning Exercise
