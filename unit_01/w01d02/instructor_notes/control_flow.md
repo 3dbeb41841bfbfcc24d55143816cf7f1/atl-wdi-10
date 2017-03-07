@@ -99,7 +99,7 @@ Only **functions** introduce scope in Javascript.
 
 ---
 
-## Conditional statements (10 mins)
+## Conditional Statements (10m)
 
 **Conditional statements** are a way of essentially skipping over a block of code if it does not pass a boolean expression/if that expression is not true. JavaScript supports two conditional statements: `if`...`else` and `switch`.
 
@@ -107,14 +107,14 @@ Only **functions** introduce scope in Javascript.
 
 `if(expression) { code }`
 
-... means run the block of`code` if `expression` is `true`
+... means run the block of`code` if the `expression` is `true`
 
 ```javascript
 if (1 > 0) { console.log("hi"); }
 //=> hi
 ```
 
-When you need to test more than one expression/conditional, you use an `else if` statement:
+When you need to test more than one expression/conditional, you can use an `else if` statement:
 
 ```javascript
 var name = "kittens";
@@ -131,7 +131,7 @@ if (name === "puppies") {
 name === "kittens!!";
 //=> true
 ```
-**TIP**: Always finish your if statements with an else.  You never know when you will need it, and it could save you.  Even if you never expect to hit that else, it should be there.  In my last job, if we never expected to hit it, we would type- `console.log("Waldo, you shouldn't be here.");`.
+**TIP**: Always finish your if statements with an else.  You never know when you will need it, and it could save you.  Even if you never expect to hit that else, it should be there.  In my last job, if we never expected to hit the else, we would write- `console.log("Waldo, you shouldn't be here.");` in the code block.
 
 **WARNING**: It is highly recommended that you **do not** assign variables in the conditional expression, because the assignment of a value to a variable, like this:
 
@@ -140,11 +140,11 @@ student = "Jamie";
 //=> "Jamie"
 ```
 
-will always be true.  
+will **always** be true.  
 
-The expression above will return the value (as shown on the second line). If you assign a truthy value inside a conditional statement, then the condition will always be true, and no other conditions will ever be tested.  If you assign a variable something undefined, it will make the conditional statement false (because undefined is falsey). 
+The expression above will return the value (as shown on the second line). If you assign a truthy value inside of a conditional statement, then the condition will always be true, and no other conditions will ever be tested.  If you assign a variable something undefined, it will make the conditional statement false (because undefined is falsey). 
 
-Can anyone explain why we used three equal signs?  What is the difference between 3 equal signs, and two?
+Can anyone explain why we used three equal signs?  What is the difference between three equal signs, and two?
 
 The example below is the illustration of WHAT NOT TO DO, in general:
 
@@ -158,7 +158,7 @@ Why wouldn't we do this?
 
 ### Ternary Operator
 
-JavaScript has a ternary operator for conditional expressions. You can think about the ternary operator as a concise "if-else in one line":
+JavaScript also has a **ternary operator** for conditional expressions. You can think about the ternary operator as a concise "if-else in one line":
 
 ```javascript
 expression ? this will run if it is true: this will run if it is false;
@@ -220,7 +220,7 @@ Goto [repl.it](https://www.repl.it/) to complete the following exercises.
 
 ---
 
-## Truthy & Falsey (10 mins)
+## Truthy & Falsey (10m)
 
 #### All of the following become false when converted to a Boolean
 
@@ -369,19 +369,19 @@ The expression is basically saying "we already know the whole `||` expression is
 
 ## Comparison Operators (10m)
 
-[Comparisons](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators) in JavaScript can be made using `<`, `>`, `<=` and `>=`. These work for both strings and numbers. This is both useful, and can be the source of frustration for some developers, since most languages do not implicitly convert strings to numbers the way that JavaScript does.
+[Comparisons](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators) in JavaScript can be made using `<`, `>`, `<=` and `>=`. These work for both strings and numbers. This is both useful, and can be the source of frustration for some developers as most languages do not implicitly convert strings to numbers the way that JavaScript does.
 
 ```javascript
-"A" > "a"
+"A" > "a";
 //=> false
 
-"b" > "a"
+"b" > "a";
 //=> true
 
-12 > "12"
+12 > "12";
 //=> false
 
-12 >= "12"
+12 >= "12";
 //=> true
 ```
 
@@ -389,7 +389,7 @@ The expression is basically saying "we already know the whole `||` expression is
 
 Equality is a bit more complex. There are 2 ways in JavaScript to verify equality.
 
-When verifying equality using double equal `==`, JavaScript does a lot of the "type coercion" in the background. Like we mentioned above, if the operands have a different type (i.e.: the number `12` and the string `"12"`), JavaScript will try to change the type of both operands to check whether they are equal. This means that a lot of times, expressions will return equal more easily than if we were stricter about what things were equivalent. Some examples:
+When verifying equality using the double equal sign(`==`), JavaScript does a lot of the "type coercion" in the background. Like we mentioned above, if the operands have a different type (i.e.: the number `12` and the string `"12"`), JavaScript will try to change the type of both operands to check whether they are equal. This means that a lot of times, expressions will return equal more easily than if we were stricter about what things were equivalent. Some examples:
 
 ```javascript
 "dog" == "dog";
@@ -397,13 +397,16 @@ When verifying equality using double equal `==`, JavaScript does a lot of the "t
 
 1 == true;
 //=> true
+
+12 == "12";
+//=> true
 ```
 
 #### Equality Operator `===`
 
-To avoid type coercion and measure equality more strictly, **use the triple-equals operator**. Because `===` more truly measures actual equality, we'll use this far more often when checking whether too things are, in fact, the same thing.  It makes sure that the operands are the same, and also that the type is the same.
+To avoid type coercion and measure equality more strictly, **use the triple-equals operator**. Because `===` measures strict equality, we will use this far more often when checking whether two things are, in fact, the same thing.  It makes sure that the operands are the same, and also that the type is the same.
 
-> **Note:** "Sameness" and "equality" have various definitions and can be somewhat "fuzzy". They can also differ by programming language. Because you'll often be measuring whether two things are equal, you should investigate the way this works carefully.
+> **Note:** "Sameness" and "equality" have various definitions and can be somewhat "fuzzy". They can also differ in programming languages. Because you'll often be measuring whether two things are equal, you should investigate the way this works carefully.
 
 Some examples:
 
@@ -417,11 +420,11 @@ Some examples:
 true === true;
 //=> true
 
-"hello" === "hello"
+"hello" === "hello";
 //=> true
 ```
 
-However, there are some incidents when it does not do what we expect, for example when working with empty objects or arrays:
+However, there are some times when this will not do what we expect, for example when working with empty objects or arrays:
 
 ```javascript
 {} === {}
@@ -436,9 +439,9 @@ However, there are some incidents when it does not do what we expect, for exampl
 
 **Explanation**
 
-The examples in the second set fail equality tests because both **object literals** and **arrays** are objects, and not just "primitive" values like strings, numbers, and booleans. Objects and arrays are complex collections of values, and when we refer to them, we're actually referencing where they live in memory. That's why we call them "reference types," while things like strings and numbers are "value types."
+The examples above fail equality tests because both **object literals** and **arrays** are objects, and not just "primitive" values like strings, numbers, and booleans. Objects and arrays are complex collections of values, and when we refer to them, we are actually referencing where they live in memory. That is why we call them "reference types," while things like strings and numbers are "value types."
 
-What this means is that when we go to compare two objects or arrays with `===`, JavaScript doesn't care if they look like similar collections. It only compares whether or not they are the exact same object in memory. In each of the cases above, when checking for equality, we're actually comparing two objects that are in two different places in memory. They're not exactly "the same", and will therefore return false when compared.
+What this means is that when we compare two objects or arrays with `===`, JavaScript doesn't care if they look like similar collections. It only compares whether or not they are the exact same object in memory. In each of the cases above, when checking for equality, we're actually comparing two objects that are in two different places in memory. They are not exactly "the same", and will therefore return false when compared.
 
 #### != and !==
 
@@ -448,7 +451,7 @@ There are also `!=`(not equal) and `!==`(strict not equal) operators, which are 
 
 ## Switch Statement (5m)
 
-The switch statement should be used, instead of an if/else statement, if you are comparing multiple things:
+The **switch statement** should be used, instead of an if/else statement, if you are comparing multiple things (more than three? or four?):
 
 - The switch expression is evaluated once.
 - The value of the expression is compared with the values of each case.
@@ -459,25 +462,26 @@ var food = "apple";
 
 switch(food) {
   case 'pear':
-    console.log("I like pears");
+    console.log("I like pears.");
     break;
   case 'apple':
-    console.log("I like apples");
+    console.log("I like apples.");
     break;
   default:
-    console.log("No favourite");
+    console.log("I'm more of a strawberry fan myself.");
 }
 //=> I like apples
 ```
 
 In this case, the `switch` statement compares `food` to each of the "cases" (`pear` and `apple`), and evaluates the expressions beneath them if there is a match. It uses `===` to evaluate equality.
 
-The default clause is optional, but just like the else statement, it is highly recommended.
+The default clause is optional, but just like an else statement, it is highly recommended.
 
 ####Example
+
 The .getDay() method returns the weekday as a number between 0 and 6. (Sunday=0, Monday=1, Tuesday=2 ..)
 
-Use the weekday number to calculate weekday name:
+Use the weekday number to calculate the weekday name:
 
 ```js
 switch (new Date().getDay()) {
@@ -507,19 +511,18 @@ switch (new Date().getDay()) {
 }
 ```
 
-
 - When the JavaScript code interpreter reaches a "break" keyword, it breaks out of the switch block.
 
-- This will stop the execution of case testing inside the block.
+- This will stop the execution of case testing inside of the block.
 
 - When a match is found, the job is done, and it's time for a break.
-There is no need for more testing.
+There is no need to do more testing.
 
 #### What is faster a switch statement or an if/else statement?
 
 Note that for an if-else statement, the variable being checked is reloaded for the comparison every single time. The switch-case structure loads the variable one time, and proceeds to perform the series of comparisons. 
 
-Use if instead of switch when:
+Use 'if' instead of 'switch' when:
 
 - You want to test for the truthiness of an expression.
 - You only have a single affirmative test.
@@ -528,35 +531,8 @@ For further discussion: http://www.blackwasp.co.uk/SpeedTestIfElseSwitch.aspx
 
 ---
 
-## While and Do-While (5m)
-
-`while` is a loop statement that will run **while** a condition is true.
-
-JavaScript has `while` loops and `do-while` loops. The first is good for basic looping, but there's a possibility it will never get run (if the expression evaluates to false). A `do-while` loop makes sure that the body of the loop/code block is executed at least once, because the `while()` expression isn't evaluated until **after** the block of code runs.
-
-#### While example
-
-```javascript
-while (true) {
-  // an infinite loop!
-}
-```
-
-#### Do-while example
-
-```javascript
-var input = 0;
-do {
-  console.log(input++);
-} while (input < 10);
-```
-
-<br />
-
----
-
 ## Conclusion (5m)
-These are some of the foundational tools you'll use in many of your applications. You'll probably need to refresh yourself on the exact syntax a few times before you memorize it, but it's important to be able to remember, these core "control flow" concepts, in general, because they'll come up in pretty much every programming language you'll ever encounter.
+These are some of the foundational tools you will use in the majority of your applications. You will probably need to go over the syntax a few times before you memorize it, but it is important to be able to remember these core "control flow" concepts, in general, because they will come up in pretty much every programming language you will ever encounter.
 
 - [Control Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
 - [While](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)

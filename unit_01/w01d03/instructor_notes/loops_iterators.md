@@ -50,43 +50,43 @@ for (var i = 0; i < newArray.length; i++) {
 The for loop starts with the `for` keyword. `for` takes three arguments:
 
 1. **initialization**:
-  `var i = 0;` the loop starts at zero. `i` is the **counter**, a way to keep track of how many times we've looped, as well as a way to keep track of where we are in the array.
+  `var i = 0;` the loop starts at zero. `i` is the **counter**, a way to keep track of how many times we have looped, as well as a way to keep track of where we are in the array.
 2. **condition**:
-  `i < newArray.length;` this is the condition that indicates whether the loop is completed or if it should keep going. In this case, we could say that if the variable **i** is less than the length of the array, keep looping.
+  `i < newArray.length;` this is the condition that indicates whether the loop is completed or if it should keep going. In this case, we could say that if the variable `i` is less than the length of the array, keep looping.
 3. **increment**:
-  `i++` this syntax is going to add `1` to the variable. Each time the loop runs it is going to _increment_ `i` by one.
+  `i++` this syntax is going to add `1` to the variable. Each time the loop runs, it is going to _increment_ `i` by one.
 
 For each iteration, it will run the code in the code block. A **code block** refers to the `{ }`
 
-**Exercise:** Take three minutes and write everything you could do with the variable `i` in a for loop.
-
+**Exercise:** Take two minutes and write everything you could do with the variable `i` in a for loop.
 
 ```js
-var teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
-for (var i = 0; i < teams.length; i++) {
-  console.log(teams[i]);
+var movies = ['The Five Obstructions', 'The Triplets of Belleville', 'About Time', 'Two Weeks Notice'];
+for (var i = 0; i < movies.length; i++) {
+  console.log(movies[i]);
 }
 ```
 
 Code is creative.
 
-JavaScript arrays have several advanced **iterator methods**- like forEach, map, reduce, and filter. These methods require that a function be supplied as an argument to the iterator method, and that the code that you write in the function will be called on _each_ item in the array, individually. We will get to these in the coming weeks. For now you can either stick to the `for loop` or explore these methods on your own!
+JavaScript arrays have several advanced **iterator methods**- like forEach, map, reduce, and filter. These methods require that a function be supplied as an argument to the iterator method, and that the code that you write in the function will be called on _each_ item in the array, individually. We will touch on these in the coming weeks. For now, you can either stick to the `for loop` or explore these methods on your own!
 
-Independent practice: (3m)
+**Independent practice:** (3m)
 
 1. loop over an array of numbers and console.log `i`.
 2. loop over an array of names and console.log each name.
 
+<br />
 
 ## Iterating over an object
 
-We have explored how and why we would need to iterate through an array earlier but what about objects?
+We have explored how and why we would need to iterate through an array earlier, but how would we do the same for objects?
 
-Let's think back for a second. What are the differences between arrays and objects?  Arrays are ordered lists.  Objects are not ordered.  You can access items within them via their keys.
+Let's think back for a second. What are the differences between arrays and objects?  Arrays are ordered lists.  Objects are unordered.  You can access items within objects, via their keys.
 
-EXERCISE: Knowing this, what is our pitfall here in terms of iterating over an object?
+EXERCISE: Knowing this, what is the pitfall here in terms of iterating over an object?
 
-Because objects are unordered it makes them tricky to loop through. Arrays are an ordered list, and we can therefore, keep track of the counter and use it as a placeholder for the index.
+Because objects are unordered, it makes them more tricky to loop through. Arrays are ordered, and we can therefore keep track of the counter and use it as a placeholder for the index.
 
 We have two different ways of looping through an object.
 
@@ -101,7 +101,7 @@ for (eachKey in ourObj) {
 
 ```
 
-Which items in the object are returned? And which items are missing?
+Which items in the object are returned? And which are missing?
 
 We only see the keys returned, right?  So, can you think of a way to access the values?
 
@@ -109,7 +109,7 @@ We only see the keys returned, right?  So, can you think of a way to access the 
 
 var ourObj = { one: 'Danny', two: 'Maren', three: 'Josh', four: 'John', five: 'Lisa' };
 
-for (eachKey in ourObj) {
+for (var eachKey in ourObj) {
   console.log(ourObj[eachKey]);
 }
 
@@ -119,15 +119,13 @@ for (eachKey in ourObj) {
 
 ## While and Do-While Loops (5m)
 
-`while` is a loop statement that will run **while** a condition is true.
-
-JavaScript has `while` loops and `do-while` loops. A while loop is good for basic looping, but there is a possibility that the loop will never run. Using a `do-while` loop makes sure that the code block is executed at least once, because the `while()` is not evaluated until after the block of code runs.
+JavaScript has `while` loops and `do-while` loops. A `while` is a loop statement that will run **while** a condition is true. It is good for basic looping, but there is a possibility that the loop will never run. Using a `do-while` loop makes sure that the code block is executed at least once, because the `while() expression` is not evaluated until after the block of code runs.
 
 Meaning that we can choose to run the expression before or after the block of code in the loop, executes.
 
 ```javascript
 while (true) {
-  // an infinite loop!
+  // an infinite loop! Be careful! Thanks for the demo today.
 }
 ```
 

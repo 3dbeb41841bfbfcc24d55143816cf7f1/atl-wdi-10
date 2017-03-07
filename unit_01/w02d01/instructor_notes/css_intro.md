@@ -443,7 +443,7 @@ What type of CSS rule would take precidence?
 
 [Instagram Lab](https://github.com/ga-wdi-exercises/instagram_ad)
 
-<br>
+<br />
 
 ## <a name="conclusion">![Imgur](http://i.imgur.com/wPefQjh.png)</a>
 

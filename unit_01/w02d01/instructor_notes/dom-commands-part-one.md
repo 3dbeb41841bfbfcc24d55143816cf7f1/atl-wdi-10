@@ -21,11 +21,11 @@ competencies: Programming
 ## Document Object Model (5m)
 
 The [**D**ocument **O**bject **M**odel](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
-is a programming interface for HTML.
+is the in browser representation for your HTML document.
 
 > The DOM provides a representation of the document as a structured group of nodes and objects that have properties and methods. 
 
-An HTML *document* is available for us to manipulate as an object, and this object is structured like a tree:
+The DOM makes the HTML *document* available for us to manipulate as an object, and this object is structured like a tree:
 
 Like this:
 
@@ -63,11 +63,11 @@ Let's create a web page and begin to inspect its structure.
 ![](http://i.imgur.com/ylb6WX9.gif)
 
 - Open Terminal
-- `cd` to your `dev` folder
+- `cd` into your `ga` folder
 - Create a new `mkdir dom_intro_lesson`
 - `cd` and create a new file `touch index.html` 
-- Open the file in Atom
-- Copy this code into the file then open in Chrome:
+- Open the file in Sublime
+- Copy this code into the file then open it in Chrome:
 
 ```html
 <!DOCTYPE html>
@@ -139,89 +139,81 @@ We'll then come back together as class. Each group will briefly demo and explain
 
 <br />
 
-## How can we run JS in the browser?
+## What are the ways that we can run JS in the browser?
 
-#### Inside the `<head>`
+#### Inside the `<head>` tag
 
-We can run JS inside of `<script> </script>` tags in the `<head>` tag of an html document.
+We can run JS inside of `<script> </script>` tags before the closing `</body>` tag of an html document.
 
-#### Exercise: 10 min I'll demonstrate in front of you first, and then you can try on your own.
+#### Exercise: (10m) I'll demonstrate this in front of you first, and then you can try on your own.
 
-Open up the HTML file from earlier. Inside of the `<head>` tag write a script tag with the following JS inside of it.
-
+Open up the HTML file from earlier. At the end of the `<body>` tag write a script tag with the following JS inside of it.
 	
 ```html
 <script>
-  alert(`Hi! What's your favorite food?`);
-  var response = prompt();
-  alert(`I wish I liked ${response} too. It's sad being a computer :( `);	
+  var response = prompt("Hi! What's your favorite food?");
+  alert(`I wish I liked ${response} too. Sometimes, it is sad to be a computer. :( `);	
 </script>	
 ```
 
-To run this code open index.html in Chrome. You can click and drag. Or, in the same directory as index.html, you can run open index.html.
+To run this code open the index.html in Chrome. You can click and drag it. Or, in the same directory as index.html, you can right click to open the index.html.
 
 <br />
 
-#### Link an external JS file, similar to how we linked our css.
+#### Link to an external JS file, similar to how we linked our css.
 
-Instead of `<link>` we'll keep using our script tag. And we're also going to move our script tag out of the `<head>` and put it just before our last `</body>` tag.
+Instead of `<link>` we'll keep using our script tag. 
 
-#####Exercise: 10 min
+##### Exercise: (10m)
 
-1. Touch a file called script.js
-2. Let's move the JS code that you wrote inside of the script tag in the index.html, to your script.js file. However, we will change it up a bit and add our message to the DOM via a new Element:
+1. Touch a file called main.js
+2. Let's move the JS code that you wrote inside of the script tag in the index.html, to your main.js file. However, we will change it up a bit and add our message to the DOM via a new Element:
 
     ```javascript
-    alert(`Hi! What's your favorite food?`);
-    var response = prompt();
-    alert(`I wish I liked ${response} too. It's sad being a computer :( `);
+    var response = prompt("Hi! What's your favorite food?");
+    alert(`I wish I liked ${response} too. Sometimes, it is sad to be a computer. :( `);
 
     var newElement = document.createElement("p");
-    newElement.textContent = `I wish I liked ${response} too. It's sad being a computer :( `;
-  document.body.appendChild(newElement);    
+    newElement.textContent = `I wish I liked ${response} too. Sometimes, it is sad to be a computer. :( `;
+    document.body.appendChild(newElement);    
 ```
     
-3. In the `head` of the `index.html` change your script tag to look like this:
+3. Before the closing `body` tag in the `index.html`, change your script tag to look like this:
 	
 	```html
-	<script src='script.js'></script>
+	<script src='main.js'></script>
 	```
-   This is going to load our js file into the browser.
+   This is going to load our .js file into the browser.
 
-4. Move your script tag to the line just above the closing `</head>` tag
+4. Move your script tag to the line just above the closing `</body>` tag
 
-What error are we getting? Why?
+<br />
 
-`Uncaught TypeError: Cannot read property 'appendChild' of null`
-
-<br>
-
-#### Load Order
+### Load Order
 
 Here's what happens when a browser loads a website:
 
 1. It makes a request for and fetches the HTML page (e.g. index.html)
 2. It starts parsing the HTML, i.e. building the dom.
-3. The parser sees a `<script>` tag referencing an external script file.
-4. The browser makes a second request for the script file. Meanwhile, the parser stops and and waits. This called **Blocking**.
+3. If the script tag is in the head of your html document, the parser sees a `<script>` tag referencing an external script file.
+4. The browser makes a second request for the script file. Meanwhile, the parser stops and and waits. This is called **Blocking**.
 5. Once the script is downloaded and executed, the parser continues parsing the rest of the HTML document.
 
-There are several more advanced techniques for loading our JS, but for now we can just make sure our script tag is at the end of our html so the DOM loads before our script runs.  You should therefore, put the script tags just before your closing body tag.
+There are several advanced techniques that load our JS, but for now we can just make sure that our script tag is at the end of our html so that the DOM loads before our script runs.  You should therefore put the script tags just before your closing body tag.
 
 <br />
 
-#### window.onload
+### window.onload
 
-There is a pattern we can follow to help our page load properly, and execute in the right order.  Although we should still keep the script tags where they currently are.
+There is a pattern we can follow to help our page load properly, and execute it in the right order.  Although we should still keep the script tags just before the closing body tag.
 
-We can surround our Javascript in a function called `window.onload = function() {}`. This function will wait until the entire window/dom is loaded before allowing any of our Javascript to run.
+We can surround our JavaScript in a function called `window.onload = function() {}`. This function will wait until the entire window/dom is loaded before allowing any of our JavaScript to run.
 
-In your `script.js` file, wrap your Javascript code in the following function:
+In your `main.js` file, wrap your JavaScript code in the following function:
 
 ```js
 window.onload = function() {
-  // alerts and prompts
-  // go in here!
+  // code
 }
 ```
 
@@ -229,17 +221,13 @@ Refresh your window and make sure your script is still running!
 
 <br />
 
-![Labtime](http://i.imgur.com/WzTTdIe.jpg)
+<!-- ![Labtime](http://i.imgur.com/WzTTdIe.jpg)
 
 ## Independent Practice
 
 ##### Exercise #1 - GA DOM Mod
 
-[GA Dom Instructions (using Vanilla Javascript)](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/ga_dom.md)
-
-##### Exercise #2 - Vanilla JS
-
-Now that you have seen all of these methods and have a sense of what Vanilla JS can do! Open up the directory `/student_labs/ex_vanilla_dom`. Follow the prompt.md to Write the vanilla JS methods necessary to complete each `alert` step in the js/script.js
+[GA Dom Instructions (using Vanilla Javascript)](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/ga_dom.md) -->
 
 ## References
 

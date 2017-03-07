@@ -1,3 +1,2 @@
 window.onload = function() {
-  
 }

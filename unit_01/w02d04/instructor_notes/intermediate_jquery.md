@@ -8,7 +8,7 @@ creator:
 competencies: Front-end intro
 ---
 
-# Intermedite jQuery
+# Intermediate jQuery
 
 ### Objectives
 *After this lesson, students will be able to:*

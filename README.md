@@ -68,13 +68,13 @@ February 21, 2017 - May 12, 2017
 - Unit 5: Final Projects
 
 
-#### [Class Wiki!](https://github.com/ga-students/wdi-remote-matey/wiki)
+#### [Class Wiki!](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/wiki)
 
-#### [Bug Journal](https://github.com/ga-students/wdi-remote-matey/labels/bug)
+#### [Bug Journal](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/wiki/Bug-Journal)
 
 #### Course Content
 
-- [Unit 1 Content Outline](https://github.com/ga-students/wdi-remote-matey/blob/master/unit_01/README.md)
-- [Unit 2 Content Outline](https://github.com/ga-students/wdi-remote-matey/blob/master/unit_02/README.md)
-- [Unit 3 Content Outline](https://github.com/ga-students/wdi-remote-matey/blob/master/unit_03/README.md)
-- [Unit 4 Content Outline](https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/README.md)
+- [Unit 1 Content Outline](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01)
+- [Unit 2 Content Outline](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02)
+- [Unit 3 Content Outline](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03)
+- [Unit 4 Content Outline](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04)

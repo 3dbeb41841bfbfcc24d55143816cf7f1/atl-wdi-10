@@ -31,7 +31,7 @@
 
 http://eloquentjavascript.net/03_functions.html
 
-Make a note of anything that "clicks" for you. **Give me a thumbs up in Slack when you're done.**
+Make a note of anything that "clicks" for you. 
 
 <br>
 

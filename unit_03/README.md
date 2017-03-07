@@ -1,21 +1,21 @@
-# Week 9
+# Week 7
 
-| Monday         | Tuesday                                         | Wednesday                                  | Thursday        | Friday    |
-|----------------|-------------------------------------------------|--------------------------------------------|-----------------|-----------|
-| Code School    | Intro to Angular                                | State Management with multiple controllers | Ajax with $HTTP | ui-router |
-| Authentication | Angular directives, forms, ng-model and filters | Diagnostic                                 |                 |           |
-|                |                                                 | Outcomes                                   |                 |           |
+| Monday | Tuesday | Wednesday | Thursday | Friday |
+|----------------|-----------------|---------------|---------------|-----------|
+| Ajax with $HTTP | UI-Router | Angular Services | Authentication Angular | Project Three Intro |
+| Ajax with $HTTP | UI-Router | Angular Services | Authentication Angular | Project Three |
+| Lab | Lab | Lab | Lab | Project Three |
 
-### Supplmental Reading
+### Supplmental Reading for week 7
 
 ---
 
-# Week 10
+# Week 8
 
-| Monday                              | Tuesday           | Wednesday | Thursday  | Friday    |
-|-------------------------------------|-------------------|-----------|-----------|-----------|
-| Using Services for state management | Custom Directives | Project 3 | Project 3 | Project 3 |
-|                                     |                   |           |           |           |
-|                                     |                   | Outcomes  |           |           |
+| Monday | Tuesday | Wednesday | Thursday  | Friday    |
+|---------------|--------------|-------------|-------------|-------------|
+| Project Three | Project Three | Project Three | Intro to SQL | SQL Joins |
+| Project Three | Project Three | Project Three | SQL Joins | SQL Schema |
+| Project Three | Project Three | Project Three Presentations | Lab | Install Ruby<br />How to Run Ruby |
 
-### Supplmental Reading
+### Supplmental Reading for week 8
