@@ -41,7 +41,7 @@ So in your `/unit_02/w06d04/student_labs` folder, you should see a starter appli
 
 &#x1F535; **YOU DO: PART 1 - Starter Code Set-up**
 
-1. `cd` into `starter-code-hbs` and run the command `npm install` which will read the `package.json` file and install all of the dependencies specified in a `node_modules` folder. 
+1. `cd` into `starter-code-hbs` and run the command `npm install` which will read the `package.json` file and install all of the dependencies specified in a `node_modules` folder.
 
 2. Then, run `nodemon server.js` to start our server.
 
@@ -61,12 +61,12 @@ app.get('/todos', function(req,res) {
             urgent: false
           }
       ];
-        
+
       res.render('/todos/index', {
         todos: seededTodos
       });
 })
-``` 
+```
 
 
 3. Walk back thorough yesterday's Express Router lesson and refactor this app with the following:
@@ -74,17 +74,98 @@ app.get('/todos', function(req,res) {
     - A `controllers/todos.js` file
     - Move your `/todos` route to the file.
 
+<details>
+
+<summary>**Set-up Solution**</summary>
+
+
+# Set-up Solution
+
+
+These routes are all related to todos.  Let's put them in a separate "controller" file and directory.  Create a a "controllers" directory and create a file called `todos.js`.  This will be our todos controller file.
+
+Now move the routes pertaining to todos into that todos.js file.
+
+```javascript
+/* INDEX TODOS */
+app.get('/todos', function(req,res) {
+  var seededTodos = [
+    {
+      description: "get beer",
+      urgent: true
+    }, {
+      description: "dry cleaning",
+      urgent: false
+    }
+  ];
+
+  res.render('todos/index', {
+    todos: seededTodos
+  });
+});
+```
+
+Require express at the top of that `todos.js` file
+
+```javascript
+var express = require('express');
+```
+
+invoke the router
+
+```javascript
+var router = express.Router();
+```
+
+Change app to router
+
+```javascript
+/* INDEX TODOS */
+router.get('/todos', function(req,res) {
+  ...
+});
+```
+
+At the bottom of the file, export the router
+
+```javascript
+module.exports = router;
+```
+
+Now in your `server.js`, require the controller file we created.  **Be sure to include ./ at the beginning of the path to the controller, so node knows that this is not an NPM package.**
+
+```javascript
+var todosController = require('./controllers/todos.js');
+```
+
+Use the controller for all routes that start with `/todos`
+
+```javascript
+app.use('/todos', todosController);
+```
+
+Since we are specifying that the controller will be used for all routes starting with `/todos`, we don't need to show `/todos` in our actual routes within our controller file.
+
+```javascript
+/* INDEX TODOS */
+router.get('/', function(req,res) {
+  ...
+});
+```
+</details>
+
+
 
 <br>
 
 
 &#x1F535; **YOU DO - PART 2**
 
-1. Check out the `views/todos/index.hbs` file. Using Handlebars, add some code that shows us how many todos we have. Like so: 
+1. Check out the `views/todos/index.hbs` file. Using Handlebars, add some code that shows us how many todos we have. Like so:
 
     ![](https://i.imgur.com/4VhZNh3.png)
 
-1. Add a 3 (or more) todos to the `seededTodos` object.
+1. Add a 3rd (or more!) todo to the `seededTodos` object.
 
 <br>
 
@@ -123,7 +204,7 @@ var data = require('../data.js');
 ```
 
 1. Now, our variable `data` is our `module.exports` object. We can access our `seededTodos` via our `controllers/todos.js` file like so:
-    
+
     ```js
     res.render('todos/index.hbs', {
        todos: data.seededTodos
@@ -132,7 +213,18 @@ var data = require('../data.js');
     > This is essentially like calling `module.exports.data`
 
 
-    > Refresh the page and you can see that nothing changed in our browser, really we just moved the functionality into a different file. What advantages does that bring to us with regard to separation of concerns in MVC?
+    > Refresh the page and you can see that nothing changed in our browser, really we just moved the functionality into a different file.
+
+<details>
+
+<summary>What advantages does that bring to us with regard to separation of concerns in MVC?</summary>
+
+1) The code is more organized and easier to understand by having separate controllers for our routes.
+
+2) By putting the data in a separate file, we can now utilize that data in different files without replicating code.  This can be really useful down the road when we create large files with functions associated with a specific task.
+
+
+</details>
 
 You'll start to see the necessity of `module.exports` once we add
 models and more routes to our application.  Keeping everything in `server.js` will quickly become a headache.
@@ -234,7 +326,7 @@ Don't worry about this idea of nested resources for now, but know this is where 
 <br>
 
 
-## Todo `SHOW` Route 
+## Todo `SHOW` Route
 
 Convention dictates that the `show` route returns one instance of of a given resource.
 
@@ -272,7 +364,7 @@ Sample `views/todos/show.hbs` template
 <br>
 
 
-## Todo `NEW` Route 
+## Todo `NEW` Route
 
 Forms take user input and save it to a database, so let's start with a form to make a new todo item, as we need todos in our database.
 
@@ -292,7 +384,7 @@ Based on our table earlier. What view name do we want to use to create a page th
     Now, forms need to know where to _send_ information and the HTTP verb they'll be using to submit a request. Which verb do we use to **create** a new resource?
 
     `POST`
-    
+
     What's the route we need to `POST` to?
 
     `http://localhost:3000/todos`
@@ -311,7 +403,7 @@ Based on our table earlier. What view name do we want to use to create a page th
     Now we've got a form that's going to `POST` to `/todos` – it'll hit our server, find an action with that combination of URL & verb, and run that code.
 
     There are no input fields or a submit button, but we'll add that next.
-    
+
 <br>
 
 &#x1F535; **YOU DO**
@@ -326,14 +418,14 @@ Luckily, form fields aren't that different from something we've seen before in J
 
 ```html
 <form method="POST" action="/todos">
-  
+
   <label for="description">description:</label>
   <input name="description">
-  
+
   <label for="urgent">urgent: </label>
-  <span>yes</span><input type='radio' name='urgent' value="true" checked> 
-  <span>no</span><input type='radio' name='urgent' value="false"/> 
-  
+  <span>yes</span><input type='radio' name='urgent' value="true" checked>
+  <span>no</span><input type='radio' name='urgent' value="false"/>
+
 </form>
 ```
 
@@ -367,8 +459,8 @@ To submit a form we need a submit button. But you know the designer's rule – 
    </div>
    <div>
       <label for="urgent">urgent: </label>
-      <span>yes</span><input type='radio' name='urgent' value="true" checked> 
-      <span>no</span><input type='radio' name='urgent' value="false"/> 
+      <span>yes</span><input type='radio' name='urgent' value="true" checked>
+      <span>no</span><input type='radio' name='urgent' value="false"/>
    </div>
    <div>
       <input type="submit" value="Add To-Do">
@@ -393,7 +485,7 @@ Some of the the `controllers/todos.js` (specifically an INDEX route to show all 
 ```javascript
 // controllers/todos.js
 
-// This pulls in the module.exports object from 
+// This pulls in the module.exports object from
 // data.js and assigns it to var data
 // specifically it contains our seeded todos
 var data = require('../data.js');
@@ -427,7 +519,7 @@ We have our `views/todos/new.hbs` file that includes the form. Now write a NEW r
 
 <details>
     <summary>New Todo Route Solution</summary>
-    
+
 ```js
 /* NEW TODO */
 router.get('/new', function(req, res){
@@ -475,7 +567,7 @@ Build a todo CREATE route using `router.post`. Don't worry about accessing the p
 
 <details>
     <summary>Create Todo Route Solution</summary>
-    
+
 ```js
 /* CREATE TODO */
 router.post('/', function(req, res){
@@ -488,7 +580,7 @@ router.post('/', function(req, res){
 
 ## Receiving parameters from forms
 
-So what happens when we hit submit? The request is made and we can see that the correct route is getting hit. 
+So what happens when we hit submit? The request is made and we can see that the correct route is getting hit.
 
 Up until now, how have we passed data/information from the client to server?
 
@@ -529,7 +621,7 @@ $ npm install --save body-parser
     }));
 ```
     The params passed with a request will be "decoded" automatically, allowing you to use dot notation when working with JavaScript objects! The `extended: true` makes the objects more JSON-like.
-    
+
 1. In our `.post` route, change `res.send("Create working");` to `res.send(req.body);`
 
 Now what happens when we submit a form?
@@ -589,12 +681,12 @@ Now the form data is accessible via `req.body`. Our next step is to add our todo
 
 &#x1F535; **YOU DO**
 
-1. Complete the `.post` route so that it saves the value of `req.body` to our array. 
+1. Complete the `.post` route so that it saves the value of `req.body` to our array.
 2. Use `res.redirect('/todos')` to redirect the route to the INDEX route rather than using `res.render(file)`
 
 <details>
     <summary>Todo create route Solution</summary>
-    
+
 ```js
 /* CREATE TODO */
 router.post('/', function(req, res){
@@ -619,7 +711,7 @@ Why do we need to redirect after a `.post` action?
 ## LABTIME
 
 1. Build a SHOW route (`/todos/:id`) that will render individual todos in a  `show.hbs` view. **Break it down...**
-    - First, get the route working. Test it out by using `res.send("Show route is working")` 
+    - First, get the route working. Test it out by using `res.send("Show route is working")`
     - Then, build a view and get it to `render` with `<h1>Show Route</h1>`
     - Finally, add the code to display the todo. For example:
 
@@ -640,7 +732,7 @@ Why do we need to redirect after a `.post` action?
 
 7. Create separate sections on your INDEX page for urgent and non-urgent todos.
 
-6. Create a view for your Home/Root route. 
+6. Create a view for your Home/Root route.
 
 1. Build INDEX, SHOW, NEW, and CREATE routes for a movie resource. Give each movie title and viewed fields
 
@@ -718,7 +810,7 @@ the basic route syntax looks as follows:
 ```javascript
 
 app.method('/route', function(req, res) {
-  // the code that needs to run when this route is called  
+  // the code that needs to run when this route is called
 })
 
 ```
@@ -762,84 +854,3 @@ app.use(bodyParser.urlencoded({ extended: false }));
 </details>
 
 </details>
-
-<details>
-
-<summary>**Set-up Solution**</summary>
-
-
-# Set-up Solution
-
-
-These routes are all related to todos.  Let's put them in a separate "controller" file and directory.  Create a a "controllers" directory and create a file called `todos.js`.  This will be our todos controller file.
-
-Now move the routes pertaining to todos into that todos.js file.
-
-```javascript
-/* INDEX TODOS */
-app.get('/todos', function(req,res) {
-  var seededTodos = [
-    {
-      description: "get beer",
-      urgent: true
-    }, {
-      description: "dry cleaning",
-      urgent: false
-    }
-  ];
-
-  res.render('todos/index', {
-    todos: seededTodos
-  });
-});
-```
-
-Require express at the top of that `todos.js` file
-
-```javascript
-var express = require('express');
-```
-
-invoke the router
-
-```javascript
-var router = express.Router();
-```
-
-Change app to router
-
-```javascript
-/* INDEX TODOS */
-router.get('/todos', function(req,res) {
-  ...
-});
-```
-
-At the bottom of the file, export the router
-
-```javascript
-module.exports = router;
-```
-
-Now in your `server.js`, require the controller file we created.  **Be sure to include ./ at the beginning of the path to the controller, so node knows that this is not an NPM package.**
-
-```javascript
-var todosController = require('./controllers/todos.js');
-```
-
-Use the controller for all routes that start with `/todos`
-
-```javascript
-app.use('/todos', todosController);
-```
-
-Since we are specifying that the controller will be used for all routes starting with `/todos`, we don't need to show `/todos` in our actual routes within our controller file.
-
-```javascript
-/* INDEX TODOS */
-router.get('/', function(req,res) {
-  ...
-});
-```
-</details>
-
