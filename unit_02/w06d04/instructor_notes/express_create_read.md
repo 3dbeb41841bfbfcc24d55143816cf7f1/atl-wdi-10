@@ -452,19 +452,19 @@ How would you access the todo's description?
 To submit a form we need a submit button. But you know the designer's rule – never submit, always something specific. Plus, let's encapsulate our label/input combos with some `divs` to get some grouping going on.
 
 ```html
-<form method="POST" action="/todos">
-   <div>
-      <label for="description">description:</label>
-      <input name="description">
-   </div>
-   <div>
-      <label for="urgent">urgent: </label>
-      <span>yes</span><input type='radio' name='urgent' value="true" checked>
-      <span>no</span><input type='radio' name='urgent' value="false"/>
-   </div>
-   <div>
-      <input type="submit" value="Add To-Do">
-   </div>
+<form action="/todos" method="POST">
+  <div>
+    <label for="description">description:</label>
+    <input type="text" name="description">
+  </div>
+  <div>
+    <label for="urgent">urgent:</label>
+    <span>yes</span><input type="radio" name="urgent" value="true" checked>
+    <span>no</span><input type="radio" name="urgent" value="false">
+  </div>
+  <div>
+    <input type="submit" value="Add a New Todo">
+  </div>
 </form>
 ```
 
@@ -654,7 +654,7 @@ Middleware is simply code that can be executed anywhere between a request and a 
 
 In our app we are logging out the server port once it has started - that is it. We get no other information about requests or errors. This is where Middleware comes in.
 
-For an example, Let's write some middleware code that logs the type of request for any route that matches `/user`. We're gonna use a third-party library that's already required in the starter-app (`morgan`).
+<!-- For an example, Let's write some middleware code that logs the type of request for any route that matches `/user`. We're gonna use a third-party library that's already required in the starter-app (`morgan`).
 
 ```javascript
 app.use('/user/*', function (req, res, next) {
@@ -663,7 +663,7 @@ app.use('/user/*', function (req, res, next) {
 });
 ```
 
-The `next()` is a function built into express, which will, when evoked, move on to the next function in the chain. In this case it explicitly means to continue with the request/response cycle and call the appropriate route based on the request.
+The `next()` is a function built into express, which will, when evoked, move on to the next function in the chain. In this case it explicitly means to continue with the request/response cycle and call the appropriate route based on the request. -->
 
 <br>
 
