@@ -213,13 +213,14 @@ var data = require('../data.js');
     > This is essentially like calling `module.exports.data`
 
 
-    > Refresh the page and you can see that nothing changed in our browser, really we just moved the functionality into a different file. What advantages does that bring to us with regard to separation of concerns in MVC?
+    > Refresh the page and you can see that nothing changed in our browser, really we just moved the functionality into a different file.
 
 <details>
 
 <summary>What advantages does that bring to us with regard to separation of concerns in MVC?</summary>
 
 1) The code is more organized and easier to understand by having separate controllers for our routes.
+
 2) By putting the data in a separate file, we can now utilize that data in different files without replicating code.  This can be really useful down the road when we create large files with functions associated with a specific task.
 
 
