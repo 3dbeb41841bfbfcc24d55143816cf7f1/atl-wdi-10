@@ -1172,13 +1172,13 @@
       WDI9 Outcomes: Elevator Pitch + Networking in ATL
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
   </tr>
   <tr>
@@ -1187,16 +1187,16 @@
       <a href="https://github.com/ATL-WDI-Curriculum/sdlc">SDLC / Agile</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
   </tr>
   <tr>
@@ -1205,16 +1205,16 @@
       <a href="https://github.com/ATL-WDI-Curriculum/sdlc">SDLC / Agile</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
   </tr>
   <tr>
@@ -1223,16 +1223,16 @@
       User Stories
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One Presentations
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One </a>Presentations
     </td>
   </tr>
   <tr>
@@ -1241,16 +1241,16 @@
         Wireframes
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One Presentations
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One </a>Presentations
     </td>
   </tr>
   <tr>
@@ -1259,13 +1259,13 @@
       Homework: Catch Up
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Project One
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
       Portfolio Site

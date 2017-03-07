@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf686211-1aa0-479b-a342-08fc8b4a4c0a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedule.md" afterPath="$PROJECT_DIR$/schedule.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,8 +24,29 @@
         <entry file="file://$PROJECT_DIR$/schedule.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="291">
-                <caret line="1240" column="18" lean-forward="false" selection-start-line="1240" selection-start-column="18" selection-end-line="1240" selection-end-column="18" />
+              <first_editor relative-caret-position="866">
+                <caret line="1174" column="118" lean-forward="false" selection-start-line="1174" selection-start-column="118" selection-end-line="1174" selection-end-column="118" />
+                <caret line="1177" column="118" lean-forward="false" selection-start-line="1177" selection-start-column="118" selection-end-line="1177" selection-end-column="118" />
+                <caret line="1180" column="118" lean-forward="false" selection-start-line="1180" selection-start-column="118" selection-end-line="1180" selection-end-column="118" />
+                <caret line="1189" column="118" lean-forward="false" selection-start-line="1189" selection-start-column="118" selection-end-line="1189" selection-end-column="118" />
+                <caret line="1192" column="118" lean-forward="false" selection-start-line="1192" selection-start-column="118" selection-end-line="1192" selection-end-column="118" />
+                <caret line="1195" column="118" lean-forward="false" selection-start-line="1195" selection-start-column="118" selection-end-line="1195" selection-end-column="118" />
+                <caret line="1198" column="118" lean-forward="false" selection-start-line="1198" selection-start-column="118" selection-end-line="1198" selection-end-column="118" />
+                <caret line="1207" column="118" lean-forward="false" selection-start-line="1207" selection-start-column="118" selection-end-line="1207" selection-end-column="118" />
+                <caret line="1210" column="118" lean-forward="false" selection-start-line="1210" selection-start-column="118" selection-end-line="1210" selection-end-column="118" />
+                <caret line="1213" column="118" lean-forward="false" selection-start-line="1213" selection-start-column="118" selection-end-line="1213" selection-end-column="118" />
+                <caret line="1216" column="118" lean-forward="false" selection-start-line="1216" selection-start-column="118" selection-end-line="1216" selection-end-column="118" />
+                <caret line="1225" column="118" lean-forward="false" selection-start-line="1225" selection-start-column="118" selection-end-line="1225" selection-end-column="118" />
+                <caret line="1228" column="118" lean-forward="false" selection-start-line="1228" selection-start-column="118" selection-end-line="1228" selection-end-column="118" />
+                <caret line="1231" column="118" lean-forward="false" selection-start-line="1231" selection-start-column="118" selection-end-line="1231" selection-end-column="118" />
+                <caret line="1234" column="119" lean-forward="false" selection-start-line="1234" selection-start-column="119" selection-end-line="1234" selection-end-column="119" />
+                <caret line="1243" column="118" lean-forward="false" selection-start-line="1243" selection-start-column="118" selection-end-line="1243" selection-end-column="118" />
+                <caret line="1246" column="118" lean-forward="false" selection-start-line="1246" selection-start-column="118" selection-end-line="1246" selection-end-column="118" />
+                <caret line="1249" column="118" lean-forward="false" selection-start-line="1249" selection-start-column="118" selection-end-line="1249" selection-end-column="118" />
+                <caret line="1252" column="119" lean-forward="false" selection-start-line="1252" selection-start-column="119" selection-end-line="1252" selection-end-column="119" />
+                <caret line="1261" column="118" lean-forward="false" selection-start-line="1261" selection-start-column="118" selection-end-line="1261" selection-end-column="118" />
+                <caret line="1264" column="118" lean-forward="false" selection-start-line="1264" selection-start-column="118" selection-end-line="1264" selection-end-column="118" />
+                <caret line="1267" column="118" lean-forward="false" selection-start-line="1267" selection-start-column="118" selection-end-line="1267" selection-end-column="118" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -45,6 +65,7 @@
       <find>functions</find>
       <find>cs algo</find>
       <find>user stor</find>
+      <find>prototypes</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -284,12 +305,12 @@
       <workItem from="1487187853829" duration="17300000" />
       <workItem from="1487794588578" duration="6006000" />
       <workItem from="1487905555099" duration="23411000" />
-      <workItem from="1488772627109" duration="123000" />
+      <workItem from="1488772627109" duration="326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52574000" />
+    <option name="totallyTimeSpent" value="52777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -812,8 +833,29 @@
     <entry file="file://$PROJECT_DIR$/schedule.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="291">
-            <caret line="1240" column="18" lean-forward="false" selection-start-line="1240" selection-start-column="18" selection-end-line="1240" selection-end-column="18" />
+          <first_editor relative-caret-position="866">
+            <caret line="1174" column="118" lean-forward="false" selection-start-line="1174" selection-start-column="118" selection-end-line="1174" selection-end-column="118" />
+            <caret line="1177" column="118" lean-forward="false" selection-start-line="1177" selection-start-column="118" selection-end-line="1177" selection-end-column="118" />
+            <caret line="1180" column="118" lean-forward="false" selection-start-line="1180" selection-start-column="118" selection-end-line="1180" selection-end-column="118" />
+            <caret line="1189" column="118" lean-forward="false" selection-start-line="1189" selection-start-column="118" selection-end-line="1189" selection-end-column="118" />
+            <caret line="1192" column="118" lean-forward="false" selection-start-line="1192" selection-start-column="118" selection-end-line="1192" selection-end-column="118" />
+            <caret line="1195" column="118" lean-forward="false" selection-start-line="1195" selection-start-column="118" selection-end-line="1195" selection-end-column="118" />
+            <caret line="1198" column="118" lean-forward="false" selection-start-line="1198" selection-start-column="118" selection-end-line="1198" selection-end-column="118" />
+            <caret line="1207" column="118" lean-forward="false" selection-start-line="1207" selection-start-column="118" selection-end-line="1207" selection-end-column="118" />
+            <caret line="1210" column="118" lean-forward="false" selection-start-line="1210" selection-start-column="118" selection-end-line="1210" selection-end-column="118" />
+            <caret line="1213" column="118" lean-forward="false" selection-start-line="1213" selection-start-column="118" selection-end-line="1213" selection-end-column="118" />
+            <caret line="1216" column="118" lean-forward="false" selection-start-line="1216" selection-start-column="118" selection-end-line="1216" selection-end-column="118" />
+            <caret line="1225" column="118" lean-forward="false" selection-start-line="1225" selection-start-column="118" selection-end-line="1225" selection-end-column="118" />
+            <caret line="1228" column="118" lean-forward="false" selection-start-line="1228" selection-start-column="118" selection-end-line="1228" selection-end-column="118" />
+            <caret line="1231" column="118" lean-forward="false" selection-start-line="1231" selection-start-column="118" selection-end-line="1231" selection-end-column="118" />
+            <caret line="1234" column="119" lean-forward="false" selection-start-line="1234" selection-start-column="119" selection-end-line="1234" selection-end-column="119" />
+            <caret line="1243" column="118" lean-forward="false" selection-start-line="1243" selection-start-column="118" selection-end-line="1243" selection-end-column="118" />
+            <caret line="1246" column="118" lean-forward="false" selection-start-line="1246" selection-start-column="118" selection-end-line="1246" selection-end-column="118" />
+            <caret line="1249" column="118" lean-forward="false" selection-start-line="1249" selection-start-column="118" selection-end-line="1249" selection-end-column="118" />
+            <caret line="1252" column="119" lean-forward="false" selection-start-line="1252" selection-start-column="119" selection-end-line="1252" selection-end-column="119" />
+            <caret line="1261" column="118" lean-forward="false" selection-start-line="1261" selection-start-column="118" selection-end-line="1261" selection-end-column="118" />
+            <caret line="1264" column="118" lean-forward="false" selection-start-line="1264" selection-start-column="118" selection-end-line="1264" selection-end-column="118" />
+            <caret line="1267" column="118" lean-forward="false" selection-start-line="1267" selection-start-column="118" selection-end-line="1267" selection-end-column="118" />
             <folding />
           </first_editor>
           <second_editor />
