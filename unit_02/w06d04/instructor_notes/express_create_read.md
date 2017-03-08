@@ -29,6 +29,18 @@ creator:
 
 ## Intro
 
+SEPARATION OF CONCERNS
+
+- Without Separation of Concerns (SoC), it becomes incredibly hard to maintain or change an application.
+- Large applications like Facebook and Google utilize SoC since they are always adding new features, changing existing features, and working in large teams.
+- SoC decomposes apps into parts with minimal overlap of code.
+- SoC allows To allow people to work on individual pieces of the system in isolation,
+ facilitate reusability, and enable everyone to better understand the system.
+
+FORMS
+
+Forms gives users the ability to pass information from the client to the server.  For example, a sign up form.
+
 So far we've created routes in Express and passed parameters from the browser to our server. We've constructed our views and dynamically built our html using Handlebars.
 
 But now we're going to see the glue that ties this all together – forms.
@@ -154,6 +166,9 @@ router.get('/', function(req,res) {
 ```
 </details>
 
+- Why are we requiring the todos controller in the server.js?
+- We put module.exports = router at the bottom of the todos.js file.  What is this line doing here?
+- Why can we use ‘/‘ instead of ‘/todos’ in the todos controller?
 
 
 <br>
@@ -228,6 +243,8 @@ var data = require('../data.js');
 
 You'll start to see the necessity of `module.exports` once we add
 models and more routes to our application.  Keeping everything in `server.js` will quickly become a headache.
+
+** 1 || 2 **
 
 <br>
 
@@ -332,7 +349,17 @@ Convention dictates that the `show` route returns one instance of of a given res
 
 &#x1F535; **YOU DO**
 
-Using what we learned about "wildcard" params (e.g. - `http://localhost:3000/:id`), see if you can create a route and a view to render a single todo from our `data.seededTodos` array. For example:
+In previous lessons we learned about 'wildcard params'. (e.g. - `http://localhost:3000/:id`)
+
+Can someone remind me what a wildcard is and how we use it?
+
+EXCERCISE
+
+1) Create a SHOW route for a single Todo
+2) Create a show.hbs view
+3) Render a single todo from our `data.seededTodos` array.
+
+For example:
 
 ![](https://i.imgur.com/xOpoMui.png)
 
@@ -399,6 +426,8 @@ Based on our table earlier. What view name do we want to use to create a page th
 <form method="POST" action="/todos">
 </form>
 ```
+
+- Why can we use the /todos route for the form when the /todos route is already used to lead us to the index page?
 
     Now we've got a form that's going to `POST` to `/todos` – it'll hit our server, find an action with that combination of URL & verb, and run that code.
 
@@ -539,7 +568,13 @@ router.get('/new', function(req, res){
 
 ## Review
 
-I'm gonna assign you a question and a breakout room. Answer your question first, then work on the others. We'll come back and each group will explain the answer to your assigned question.
+How are feeling about your understanding of the lesson so far?
+
+- 1: Things are a bit shaky at the moment.
+- 2: Not sure about a few things, but I'm understanding the overall concepts.
+- 3: I'm feeling pretty good.
+
+Get in groups of 3. Answer your question first, then work on the others. We'll come back and each group will explain the answer to your assigned question.
 
 1. What does `CRUD` stand for? What are the 4 HTTP verbs that we're using to accomplish this?
 3. What does REST stand for? What does it mean for our app to be stateless? How many REST-ful routes are in a conventional CRUD application?
