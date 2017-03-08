@@ -39,7 +39,7 @@ SEPARATION OF CONCERNS
 
 FORMS
 
-Forms gives users the ability to pass information from the client to the server.  For example, a sign up form.
+- Forms gives users the ability to pass information from the client to the server.  For example, a sign up form.
 
 So far we've created routes in Express and passed parameters from the browser to our server. We've constructed our views and dynamically built our html using Handlebars.
 
