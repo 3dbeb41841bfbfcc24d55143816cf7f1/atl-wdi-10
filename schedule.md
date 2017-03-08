@@ -489,7 +489,7 @@
       Homework
     </td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d04/homework">Homework</a>
     </td>
     <td>
       Homework- Hartl Tutorial
