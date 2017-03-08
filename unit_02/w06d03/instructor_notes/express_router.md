@@ -16,39 +16,46 @@ creator:
 4. Use the express Router to:
   - Bring the C of MVC
   - Dry up our routes
-  - Apply Single Responsibility to our application and specifically our main server file (server.js)
-5. Describe and apply principles of Refactoring
+  - Apply Single Responsibility to our application, specifically to our main server file (server.js)
+5. Describe and apply the principles of Refactoring
 
 **Optional reading for later:**
 
 - [3 Key Software Principles](https://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161)
 - [Express routing docs](https://expressjs.com/en/guide/routing.html)
 - [Express Router](https://scotch.io/tutorials/keeping-api-routing-clean-using-express-routers)
-- [1. module.exports](http://openmymind.net/2012/2/3/Node-Require-and-Exports/)
-- [2. module.exports](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
+- [Module.exports- open my mind](http://openmymind.net/2012/2/3/Node-Require-and-Exports/)
+- [Module.exports- sitepoint](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
 
+<br />
 
-## DRY and Code smells
+## DRY and Code Smells
 
 **Don't Repeat Yourself**
 
-The DRY principle is aimed at reducing repetition within your code.
+The **DRY** principle is aimed at reducing repetition within your code.
 
-> "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system"
+> "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."
+
+<br />
 
 ## Single Responsibility
 
-> "every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class" - https://en.wikipedia.org/wiki/Single_responsibility_principle
+> "Every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class." - https://en.wikipedia.org/wiki/Single_responsibility_principle
+
+<br />
 
 ## MVC
 
-**Model, View and Controller***
+**Model, View Controller***
 
-MVC is an application architectural pattern. So far we've been writing everything in the server file, the views directory, and our data file.
+**MVC** is an application architectural pattern. So far we have been writing everything in the server file, the views directory, and our data file.
 
 You can imagine that each of these pieces will get larger and larger.    
 
-## Use the express Router to simplify server.js
+<br />
+
+## Use the Express Router to Simplify server.js
 
 You may find that your server.js file is growing into a giant file with tons of routes.  Related routes can be grouped together in separate files
 
@@ -66,7 +73,7 @@ app.get('/todos/:id/edit', function(req, res){
 });
 ```
 
-These routes are all related to todos.  Let's put them in a separate "controller" file and directory.  To do this, let's create a "controllers" directory and create a file called todos.js.  This will be our todos controller file.
+These routes are all related to todos.  Let's put them in a separate "controller" file and directory.  To do this, let's create a "controllers" directory and create a file called todos.controller.js.  This will be our todos controller file.
 
 Now move the routes pertaining to todos into that todos.js file.
 
