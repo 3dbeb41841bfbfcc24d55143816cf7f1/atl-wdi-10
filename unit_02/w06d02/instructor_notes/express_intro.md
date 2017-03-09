@@ -4,8 +4,8 @@ type: lesson
 duration: '2:00'
 creator:
     name: Colin Hart, adapted by Marc Wright
-    class: WDIr-R2D2
----
+    class: ATL-WDI-9
+modified by: Maren Woodruff
 
 
 
@@ -22,56 +22,53 @@ creator:
 
 
 
-<br>
+<br />
 
-## What are we learning today?
+## What are we Learning Today?
 
-Today we're going to learn how we set up and configure a server that will listen for HTTP requests from the browser.
+Today, we are going to learn about how to set up and configure a server that will listen for HTTP requests from the browser.
 
-<br>
+<br />
 
-## Opening Framing
-Today we'll be talking about ExpressJS (https://expressjs.com/)
-the "e" in the MEAN stack. Which incidentally is super buzz wordy right now. Express is a "Fast, unopinionated, minimalist web framework for Node.js"
+## Intro
+How many of you, prior to this course, had heard of the MEAN stack?  Today, we are jumping in.  We will be talking about [ExpressJS](https://expressjs.com/) the "e" in the MEAN stack. Which incidentally is super buzz wordy right now. Express is a "Fast, unopinionated, minimalist web framework for Node.js".
 
-> Node.js is not a framework. It is an application runtime environment that
-allows you to write server-side applications in javascript. Javascript that
-does not depend on a browser.
+> Node.js is not a framework. It is an application runtime environment that allows you to write server-side applications in javascript. Javascript that does not depend on a browser.
 
-Some frameworks, like Rails, are very opinionated frameworks. 
+Some frameworks, like Rails, are very opinionated frameworks- meaning that it follows convention over configuration.  A Rails developer can go into any other Rails app, and understand the layout, because all Rails applications are built in the same way, with the same structure.  
 
-Today, we'll be learning about Express, which is much less opinionated. We have a lot of freedom in how we structure our application (folders/files, how to load different files, managing dependencies, etc)
+Express, as we stated before, is much less opinionated. We have a lot of freedom in how we structure our application (folders and files, how to load different files, how to manage dependencies, etc)
 
-<br>
+<br />
 
 
 ## Recap
 
-&#x1F535; **YOU DO: 5m breakout rooms**
+&#x1F535; **YOU DO: 5 minutes**
 
-Discuss the following questions:
+With you buddy, discuss the following questions:
 
-- What are the HTTP verbs and how are they used?
+- What are the **HTTP verbs** and how are they used?
 - What are the parts of a url and what is the purpose of each?
 - Explain request/response
 
-<br>
+<br />
 
 ## What is npm?
 
-&#x1F535; **YOU DO:** Take 5 minutes to read and watch the video here (https://docs.npmjs.com/getting-started/what-is-npm)
+&#x1F535; **YOU DO:** Take 5 minutes to read and watch this [video] (https://docs.npmjs.com/getting-started/what-is-npm)
 
-> Summary: npm, short for node package manager. Allows us to install dependencies for our nodeJS application.
+> Summary: **npm**, short for node package manager. Allows us to install dependencies for our Node.js application.
 
-<br>
+<br />
 
 ## Hello World - Express
 
-I'm going to move through three steps over the next ten minutes. I'll share my screen first and then I'll give you some time to do it on your own. Don't overthink it, it's just configuration and setup. You're going to need to become very familiar with this process.
+I am going to move through three steps over the next ten minutes. I will share my screen first and then I will give you some time to do the steps on your own. Don't overthink it, it is just configuration and setup. You are going to need to become very familiar with this process.
 
-I **HIGHLY** recommend you take notes on this process, and write the commands down, as well as remember that these steps are listed in the instructor folder:
+I **HIGHLY** recommend that you take notes on this process, and write the commands down, as well as try to remember that these steps are also listed in the instructor folder:
 
-<br>
+<br />
 
 
 
@@ -83,13 +80,17 @@ In the terminal:
 $ mkdir hello-express
 $ cd hello-express
 $ npm init
-$ atom .
+// make sure that when you get to 'entry point' that you change 
+that to 'server.js'.
+// if you make a mistake, you can always type 'no' when it asks
+you whether this is 'ok' at the end of the questions/set up
+$ subl .
 ```
 
-- `$ npm init` will initialize a new NodeJS application. Upon initialization it will prompt you for some user input to update the `package.json`.
+- `$ npm init` will initialize a new Node.JS application. Upon initialization, it will prompt you for some user input to update the `package.json`.
 
 
-- If we hit enter and use all of the default values and we take a look at the contents of the `package.json` file, we'll see something like this:
+- If we hit enter and use all of the default values (except for the server.js) and we take a look at the contents of the `package.json` file, we'll see something like this:
 
 
 ![](https://i.imgur.com/mP6KyeW.png)
@@ -100,13 +101,13 @@ $ atom .
 
 > Pro Tip... `npm init -y` is a shortcut that will select all the defaults
 
-<br>
+<br />
 
-&#x1F535; **YOU DO:**
+&#x1F535; **YOU DO: 2 minutes**
 
 1. Walk through STEP 1 above to instantiate your `hello-express` app.
 
-<br>
+<br />
 
 ### STEP 2 - Install Express
 
@@ -116,7 +117,7 @@ $ atom .
 $ npm install --save express
 ```
 
-    > the `--save` flag allows us to update the package.json to include the dependency you just installed. In the terminal, run `$ cat package.json` again to observe. We could've also entered manually. 
+    > The `--save` flag allows us to update the package.json to include the dependency you just installed. In the terminal, run `$ cat package.json` again to observe. We could have also entered express manually. 
     
  As we saw during `npm init`, the default file for a node app is `server.js`.  We can certainly change this, but we'll use the default for now.
 
