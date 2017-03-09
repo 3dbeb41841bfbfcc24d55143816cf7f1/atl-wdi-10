@@ -43,9 +43,11 @@ FORMS
 
 So far we've created routes in Express and passed parameters from the browser to our server. We've constructed our views and dynamically built our html using Handlebars.
 
-But now we're going to see the glue that ties this all together – forms.
+<!-- But now we're going to see the glue that ties this all together – forms. -->
 
 <!-- For brevity, we're going to start with some starter code. While it would absolutely be good for you to build this all from scratch, it's important to make sure we focus right now on the one _new_ piece of our application structure: passing information from the client to our server and persisting that data in a data structure, and sending it back. -->
+
+The ultimate goal of this lesson is to make our own form that will give the user the ability to create new todos.
 
 First, in following with the principles of SoC, we are going to take our 'todos' route and logic and put it in it's own separate controller.  We are creating our first modular application.
 
