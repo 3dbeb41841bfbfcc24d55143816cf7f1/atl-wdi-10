@@ -268,7 +268,7 @@
       Morning Exercise
     </td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w12d01/morning_exercise">Morning Exercise- CSS Frameworks- Update me to right repo</a>
     </td>
     <td>
       Morning Exercise
@@ -286,10 +286,10 @@
       Rake
     </td>
     <td>
-      Rails Asset Pipeline, Forms, Helpers
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-asset-pipeline">Rails Asset Pipeline, Forms, Helpers</a>
     </td>
     <td>
-      Devise + Cancancan
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-authorization_devise">Devise + Cancancan</a>
     </td>
     <td>
       Sample Project
@@ -304,10 +304,10 @@
       Rake
     </td>
     <td>
-      Rails Asset Pipeline, Forms, Helpers
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-asset-pipeline">Rails Asset Pipeline, Forms, Helpers</a>
     </td>
     <td>
-      Devise + Cancancan
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-authorization_devise">Devise + Cancancan</a>
     </td>
     <td>
       Sample Project
@@ -322,10 +322,10 @@
       Gulp
     </td>
     <td>
-      SASS
+      <a href="https://github.com/ATL-WDI-Curriculum/css-sass">SASS</a>
     </td>
     <td>
-      Angular on Rails API
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-api-code-along">Angular on Rails API</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
@@ -340,10 +340,10 @@
       Gulp
     </td>
     <td>
-      SASS
+      <a href="https://github.com/ATL-WDI-Curriculum/css-sass">SASS</a>
     </td>
     <td>
-      Angular on Rails API
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-api-code-along">Angular on Rails API</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
@@ -388,7 +388,7 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d02/morning_exercise">Morning Exercise</a>
     </td>
     <td>
       Morning Exercise
@@ -397,7 +397,7 @@
       Morning Exercise
     </td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d04/morning_exercise">Morning Exercise</a>
     </td>
     <td>
       Morning Exercise
@@ -415,10 +415,11 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/intro_to_active_record_and_migrations.md">Intro to Active Record</a>
     </td>
     <td>
-      Intro to Rails
+      <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-intro/blob/master/README.md">Intro to Rails</a>
     </td>
     <td>
-      Rails Views + Controllers
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-views-and-controller">Rails Views + Controllers</a>
     </td>
   </tr>
   <tr>
@@ -433,10 +434,11 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/active_record_one_to_many.md">Active Record One to Many</a>
     </td>
     <td>
-      Intro to Rails
+      <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-intro/blob/master/README.md">Intro to Rails</a>
     </td>
     <td>
-      Rails Views + Controllers
+      <a href="https://github.com/ATL-WDI-Curriculum/pet-lab">Rails Views + Controllers Lab</a>
     </td>
   </tr>
   <tr>
@@ -448,37 +450,37 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d03/instructor_notes/oop_ruby.md">OOP in Ruby</a>
     </td>
     <td>
-      Active Record
+      <a href="https://github.com/ATL-WDI-Exercises/fridge_tracker"Active Record Lab</a>
     </td>
     <td>
-      Rails Migrations, Associations and Validations
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-active-record-migrations">Rails Migrations, Associations and Validations</a>
     </td>
     <td>
-      Rails Resources and Routing
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-routing">Rails Resources and Routing</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      Advanced Ruby
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d02/student_labs/reps.md">Ruby Lab</a>
     </td>
     <td>
       Lab
     </td>
     <td>
-      Active Record
+      <a href="https://github.com/ATL-WDI-Exercises/fridge_tracker">Active Record Lab</a>
     </td>
     <td>
-      Rails Migrations, Associations and Validations
+      <a href="https://github.com/ATL-WDI-Exercises/rails-active-record-migrations">Rails Migrations, Associations and Validations Lab</a>
     </td>
     <td>
-      Rails Resources and Routing
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-routing">Rails Resources and Routing Lab</a>
     </td>
   </tr>
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d02/homework">Homework</a>
     </td>
     <td>
       Homework
@@ -487,10 +489,10 @@
       Homework
     </td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d04/homework">Homework</a>
     </td>
     <td>
-      Homework
+      Homework- Hartl Tutorial
     </td>
   </tr>
 </tbody></table>
@@ -523,7 +525,7 @@
       Project Three Retrospective
     </td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w11d04/morning_exercise">Morning Exercise</a>
     </td>
   </tr>
   <tr>
@@ -561,8 +563,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_relationships.md">Relationships in SQL</a><br />
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/install_ruby.md">Install Ruby</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/how_to_run_ruby.md">How to Run Ruby</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_advanced_sol.sql">Advanced SQL</a>
     </td>
   </tr>
   <tr>
@@ -580,7 +581,8 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/erd_domains.md">Domain Modeling & ERDs</a>
     </td>
     <td>
-      Lab
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/install_ruby.md">Install Ruby</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/how_to_run_ruby.md">How to Run Ruby</a><br />
     </td>
   </tr>
   <tr>
@@ -598,7 +600,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d04/student_labs/library_sql">Library SQL</a>
     </td>
     <td>
-      Lab
+      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w11d04/homework">Lab</a>
     </td>
   </tr>
   <tr>
@@ -616,7 +618,7 @@
       Homework
     </td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d05/homework">Homework</a>
     </td>
   </tr>
 </tbody></table>
@@ -1667,12 +1669,13 @@
 * [Google Calendar](https://calendar.google.com/calendar/embed?src=b4s54mkg0s2c1ddov57cffe4ls%40group.calendar.google.com&ctz=America/New_York)
 * [Hypepotamus Calendar of Events](https://hypepotamus.com/events/)
 * [Meetups](http://www.meetup.com/)
-* [WDI-9 JS Cheatsheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
-* [WDI-9 Bootstrap Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
+* [WDI-9 JS Cheat Sheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
+* [WDI-9 Bootstrap Cheat Sheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
 * [Pomodoro Timer](http://www.marinaratimer.com/)
 * [Bullet Journal](http://bulletjournal.com/get-started/)
 * [Can I Use](http://caniuse.com/)
 * [Silicon Valley Scene](https://www.youtube.com/watch?v=oyVksFviJVE)
+* [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Tutorial Sites
 
@@ -1704,6 +1707,9 @@
 * [Programmers are confessing their coding sins to protest a broken job interview process](https://theoutline.com/post/1166/programmers-are-confessing-their-coding-sins-to-protest-a-broken-job-interview-process)
 * [How to Fail as a Web Developer](https://theindex.generalassemb.ly/how-to-fail-as-a-web-developer-d218494df1f5#.84g40k5sq)
 * [How creating CSS images made me a better developer – Coding Artist](https://medium.com/coding-artist/how-creating-css-images-made-me-a-better-developer-25b7a79f1af6#.fw2lf1xpe)
+* [How NOT to design Netflix in your 45-minute System Design Interview?](https://hackernoon.com/how-not-to-design-netflix-in-your-45-minute-system-design-interview-64953391a054#.lmb6yuuz4)
+* [Imposter syndrome on high — my amateur Web developer start](https://medium.com/@DavidBrandtWho/imposter-syndrome-on-high-my-amateur-web-developer-start-f0be0ca6bf25#.xtcewv2k4)
+* [Make your First Game- MVP](https://www.youtube.com/watch?v=UvCri1tqIxQ)
 
 ## Twitter Feeds to Follow
 * [Code newbie](https://twitter.com/codenewbies)

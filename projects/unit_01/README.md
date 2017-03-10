@@ -12,7 +12,7 @@ The objectives of this project are to:
 * Demonstrate your competancy in _DOM manipulation_ using JavaScript
 * Publish your source code to _GitHub_ with a solid `README.md` describing the project
 * Deploy your application to a production environment such as [GitHub Pages](https://pages.github.com/) or [BitBalloon](https://www.bitballoon.com/)
-* Present your project in an _science fair_ / _meet-and-greet_ style format
+* Present your project in a presentation style format
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: The Game
 ​
@@ -154,12 +154,10 @@ Your app must:
   - Well-structured and readable code
   - Semantic naming of variables, functions, CSS classes, etc.
   - Short and clear functions that _do one thing_
-  - Efficient code (cache references to DOM nodes, etc.)
+  - Efficient code- if you have your MVP, refactor
   - DRY (Don't Repeat Yourself) code
 * Deploy your game online, where the rest of the world can access it. 
  * Suggested default options for deployment include [Github Pages](https://pages.github.com/) or [BitBalloon](https://www.bitballoon.com/)
- * For deployment with Firebase see [Firebase Deployment](firebase-deployment.md). 
-* Use semantic markup for HTML and CSS (adhere to best practices)
 
 ## Suggested Ways to Get Started
 
