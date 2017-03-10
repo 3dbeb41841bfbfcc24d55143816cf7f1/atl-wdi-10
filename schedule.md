@@ -1274,7 +1274,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Portfolio Site
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/first-project-portfolio-site.md">Portfolio Site</a>
     </td>
   </tr>
 </tbody></table>

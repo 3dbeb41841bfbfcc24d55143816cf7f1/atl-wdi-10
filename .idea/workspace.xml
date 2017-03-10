@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf686211-1aa0-479b-a342-08fc8b4a4c0a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedule.md" afterPath="$PROJECT_DIR$/schedule.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,12 +20,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="schedule.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="schedule.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/schedule.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="108">
-                <caret line="1263" column="9" lean-forward="true" selection-start-line="1263" selection-start-column="9" selection-end-line="1263" selection-end-column="9" />
+              <first_editor relative-caret-position="654">
+                <caret line="1276" column="135" lean-forward="false" selection-start-line="1276" selection-start-column="135" selection-end-line="1276" selection-end-column="135" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -33,12 +33,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="first-project-portfolio-site.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="first-project-portfolio-site.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework/first-project-portfolio-site.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="24">
-                <caret line="1" column="90" lean-forward="false" selection-start-line="1" selection-start-column="90" selection-end-line="1" selection-end-column="90" />
+              <first_editor relative-caret-position="48">
+                <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -58,6 +58,7 @@
       <find>cs algo</find>
       <find>user stor</find>
       <find>prototypes</find>
+      <find>week 3</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,8 +81,8 @@
         <option value="$PROJECT_DIR$/unit_01/w05d04/instructor_notes/flexbox.md" />
         <option value="$PROJECT_DIR$/unit_01/w01d04/student_labs/js-independent-practice/independent-practice-starter.js" />
         <option value="$PROJECT_DIR$/instructor_notes/sdlc-agile-xp.md" />
-        <option value="$PROJECT_DIR$/schedule.md" />
         <option value="$PROJECT_DIR$/homework/first-project-portfolio-site.md" />
+        <option value="$PROJECT_DIR$/schedule.md" />
       </list>
     </option>
   </component>
@@ -314,12 +315,12 @@
       <workItem from="1487794588578" duration="6006000" />
       <workItem from="1487905555099" duration="23411000" />
       <workItem from="1488772627109" duration="1011000" />
-      <workItem from="1489182900503" duration="120000" />
+      <workItem from="1489182900503" duration="251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53582000" />
+    <option name="totallyTimeSpent" value="53713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -820,22 +821,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schedule.md">
+    <entry file="file://$PROJECT_DIR$/homework/first-project-portfolio-site.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="108">
-            <caret line="1263" column="9" lean-forward="true" selection-start-line="1263" selection-start-column="9" selection-end-line="1263" selection-end-column="9" />
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework/first-project-portfolio-site.md">
+    <entry file="file://$PROJECT_DIR$/schedule.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="24">
-            <caret line="1" column="90" lean-forward="false" selection-start-line="1" selection-start-column="90" selection-end-line="1" selection-end-column="90" />
+          <first_editor relative-caret-position="654">
+            <caret line="1276" column="135" lean-forward="false" selection-start-line="1276" selection-start-column="135" selection-end-line="1276" selection-end-column="135" />
             <folding />
           </first_editor>
           <second_editor />
