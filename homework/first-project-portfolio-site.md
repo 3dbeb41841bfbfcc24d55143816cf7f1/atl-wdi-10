@@ -1,0 +1,2 @@
+- Start building your portfolio site!
+- Post a link to a GitHub Pages or Bitballoon link to the Slack thread in #atl-wdi9-hmwork
