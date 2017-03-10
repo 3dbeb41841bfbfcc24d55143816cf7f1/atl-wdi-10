@@ -335,6 +335,8 @@ app.delete('/posts/:id', function(req, res) {
 ```
 <br>
 
+&#x1F535; **CFU**
+
 ** 0 || 1 || 2 **
 
 <details>
@@ -744,6 +746,8 @@ Body-parser is third-party middleware. It will:
 - add the data as the value of `req.body`
 
 Now the form data is accessible via `req.body`. Our next step is to add our todo to the array.
+
+&#x1F535; **CFU**
 
 ** 0 || 1 || 2 **
 
