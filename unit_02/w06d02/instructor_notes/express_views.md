@@ -1,10 +1,11 @@
 ---
-title: Server Side Rendering in Express
-type: lesson
-duration: '2:00'
-creator:
-    name: Colin Hart, adapted by Marc Wright
-    class: WDIr-R2D2
+title: Server Side Rendering in Express <br />
+type: lesson <br />
+duration: '2:00' <br />
+creator: <br />
+    name: Colin Hart, <br />
+    adapted by Maren Woodruff
+    class: WDI-ATL-9
 ---
 
 # Views in Express
@@ -17,30 +18,34 @@ creator:
 - Link to static assets in an Express application
 - Understand layouts and templating
 
-<br>
+<br />
 
-## Views in Express - Intro
+## Hook
+As we have already seen, `res.send()`, can do a lot for us.  It allows us to easily check whether or not the routes that we have created work.  However, we normally want to give our users more than a document.write view of our pages.  To do that, we need to create views.
+
+
+## Intro to Views in Express
 
 
 #### What is server side rendering?
 
 - **Server Side** rendering is like a traditional restaurant (Chilis!!). 
-    - You place an order (request) and the waiter delivers it to the kitchen for assembly
-    - Ingredients (data) are combined and placed into an oven (Node/Express/Handlebars) 
-    - The fully baked dish (HTML) is then delivered to your table via the waiter (response)
+    - You place an order (request) and the waiter delivers it to the kitchen for assembly.
+    - Ingredients (data) are combined and placed into an oven (Node/Express/Handlebars).
+    - The fully baked onion blossom (HTML) is then delivered to your table via the waiter (response).
 - **Client Side** rendering is like a Hibachi restaurant. 
-    - All of the ingredients (data) are delivered to your table initially (browser) and ready to go
-    - Each dish (web page view) is assembled by the chef (AngularJS) in real time as requested
+    - All of the ingredients (data) are delivered to your table (browser) already prepped and ready to go.
+    - Each dish (web page view) is assembled by the chef (AngularJS) in fonrt of you/in real time as you request it.
 
-<br>
+<br />
 
-#### What are handlebars?
+#### What are Handlebars?
 
 ![](https://i.imgur.com/gMD515j.png)
 
 http://handlebarsjs.com/
 
-Handlebars allows us to embed JS variables inside of our HTML and render it as text. Our server injects the variables into the HTML document before sending it to the client.
+Handlebars allow us to embed JS variables inside of our HTML and render it as text. Our server injects the variables into the HTML document before sending it to the client.
 
 The client/brower will never see the variables or the handlebars syntax, only the values. The HTML document is "fully baked" when the browser receives it.
 
