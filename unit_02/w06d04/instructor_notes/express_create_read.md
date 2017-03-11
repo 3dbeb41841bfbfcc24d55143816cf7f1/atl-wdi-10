@@ -43,9 +43,13 @@ FORMS
 
 So far we've created routes in Express and passed parameters from the browser to our server. We've constructed our views and dynamically built our html using Handlebars.
 
-But now we're going to see the glue that ties this all together – forms.
+<!-- But now we're going to see the glue that ties this all together – forms. -->
 
-For brevity, we're going to start with some starter code. While it would absolutely be good for you to build this all from scratch, it's important to make sure we focus right now on the one _new_ piece of our application structure: passing information from the client to our server and persisting that data in a data structure, and sending it back.
+<!-- For brevity, we're going to start with some starter code. While it would absolutely be good for you to build this all from scratch, it's important to make sure we focus right now on the one _new_ piece of our application structure: passing information from the client to our server and persisting that data in a data structure, and sending it back. -->
+
+The ultimate goal of this lesson is to make our own form that will give the user the ability to create new todos.
+
+First, in following with the principles of SoC, we are going to take our 'todos' route and logic and put it in it's own separate controller.  We are creating our first modular application.
 
 So in your `/unit_02/w06d04/student_labs` folder, you should see a starter application named `starter-code-hbs` with a bunch of work done already to get us going.
 
@@ -166,6 +170,8 @@ router.get('/', function(req,res) {
 ```
 </details>
 
+&#x1F535; **CFU**
+
 - Why are we requiring the todos controller in the server.js?
 - We put module.exports = router at the bottom of the todos.js file.  What is this line doing here?
 - Why can we use ‘/‘ instead of ‘/todos’ in the todos controller?
@@ -244,7 +250,9 @@ var data = require('../data.js');
 You'll start to see the necessity of `module.exports` once we add
 models and more routes to our application.  Keeping everything in `server.js` will quickly become a headache.
 
-** 1 || 2 **
+&#x1F535; **CFU**
+
+** 0 || 1 || 2 **
 
 <br>
 
@@ -327,6 +335,10 @@ app.delete('/posts/:id', function(req, res) {
 ```
 <br>
 
+&#x1F535; **CFU**
+
+** 0 || 1 || 2 **
+
 <details>
     <summary>**Nested Resources**</summary>
 
@@ -356,7 +368,9 @@ Can someone remind me what a wildcard is and how we use it?
 EXCERCISE
 
 1) Create a SHOW route for a single Todo
+
 2) Create a show.hbs view
+
 3) Render a single todo from our `data.seededTodos` array.
 
 For example:
@@ -364,6 +378,11 @@ For example:
 ![](https://i.imgur.com/xOpoMui.png)
 
 <br>
+
+&#x1F535; **CFU**
+
+- How is the line ```js var todo = data.seededTodos[req.params.id];``` grabbing a single todo?
+- What does this line allow us to do in our show.hbs view? ```js todo: todo ```
 
 <details>
     <summary>**SOLUTION**</summary>
@@ -499,6 +518,10 @@ To submit a form we need a submit button. But you know the designer's rule – 
 
 Boom! Form, done.
 
+&#x1F535; **CFU**
+
+** 0 || 1 || 2 **
+
 <br>
 
 &#x1F535; **YOU DO**
@@ -590,7 +613,12 @@ Get in groups of 3. Answer your question first, then work on the others. We'll c
 
 ## Todo `CREATE` Route
 
-Awesome so now we have a form that renders on the page. So let's engage in some Error driven development. What happens when we add data and click the submit button?
+Awesome so now we have a form that renders on the page. So let's engage in some Error driven development.
+
+&#x1F535; **CFU**
+
+- What happens when we add data and click the submit button?
+- What's the difference between the 'new' route and 'create' route in terms of functionality?
 
 ![](https://i.imgur.com/QyawZUf.png)
 
@@ -663,6 +691,11 @@ Now what happens when we submit a form?
 
 <br>
 
+&#x1F535; **CFU**
+
+- Why are we using bodyParser?
+
+
 &#x1F535; **YOU DO**
 
 Install `body-parser` in your app.
@@ -680,7 +713,9 @@ You might have noticed that we just used a slightly different method than we hav
 
 Take ten minutes to read about middleware http://expressjs.com/en/guide/using-middleware.html
 
-**What kind of middleware is body-parser?**
+&#x1F535; **CFU**
+
+- What kind of middleware is body-parser?
 
 ---
 
@@ -711,6 +746,10 @@ Body-parser is third-party middleware. It will:
 - add the data as the value of `req.body`
 
 Now the form data is accessible via `req.body`. Our next step is to add our todo to the array.
+
+&#x1F535; **CFU**
+
+** 0 || 1 || 2 **
 
 <br>
 
