@@ -131,7 +131,7 @@ Write the necessary if or switch statement to listen for these three routes.
 
 ## Part 3 — BONUS: Build an interface for a pseudo-database
 
-Add the following three lines to your `server.js` file and the `cruise_data.json` file to the same directory that has your `server.js` file to create an app that displays all the Tom Cruise movies!
+Add the following three lines to your `server.js` file and the [cruise_data.json](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d01/student_labs/cruise_data.json) file to the same directory that has your `server.js` file to create an app that displays all the Tom Cruise movies!
 
 ```js
 var fs           = require('fs');
