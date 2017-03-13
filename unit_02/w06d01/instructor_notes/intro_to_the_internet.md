@@ -38,17 +38,17 @@ I'm going to call on a couple of you, but would also like you all to type your o
 
 ### The Conceptual
 
-The internet as a concept, ignoring all the layers and layers of technical knowledge, is actually pretty straight forward and we can approach it from three different angles to demystify it.
+The internet as a concept, ignoring all of the layers and layers of technical knowledge, is actually pretty straight forward, and we can approach it from three different angles to demystify it.
 
 **ONE:** We can think of it as clients and servers, i.e. the web:
 
 ![](https://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg)
 
-A **client**, your browser, makes a *request* through the internet to a **server** for a webpage, a song, an image, some sort of _Resource_
+A **client**, your browser, makes a *request* through the internet to a **server** for a webpage, a song, an image, or some sort of _Resource_.
 
-What makes up a web page?
+**What makes up a web page?**
 
-**TWO:** We can think of it as a network of nodes. When your client makes a request, it knows the address but not exactly how to get there. The request literally propagates across the network, asking each server if it holds the webpage in question or if it knows where it is. A request will always try to find the fastest route of access and thus, will not take the exact same path.
+**TWO:** We can think of it as a network of nodes. When your client makes a request, it knows the address but not exactly how to get there. The request literally propagates across the network, asking each server if it holds the webpage in question or if it knows where it is. A request will always try to find the fastest route of access and therefore, will not take the exact same path twice.
 
 > In the early days of the internet, a server had a bug that caused it to think it could relay http requests in negative time. What this meant was that eventually this information propagated across the network where more and more traffic was getting sent through this one node, slowing it down more and more.
 
@@ -56,14 +56,14 @@ What makes up a web page?
 
 > Before we move forward, let's discuss one other example of network propagation.
 
-> Back in 2008, the Pakistani government, in response to a video posted on YouTube, asked their ISP's (Internet Service Provider) to block YouTube. They accomplished this by changing the IP (Internet Protocol) address in their local DNS (Domain Name Server) so that any traffic initiating in Pakistan would see the wrong IP address, and instead, serve a page with the message that YouTube was not available and redirecting traffic from that IP address to a Pakistani website.
+> Back in 2008, the Pakistani government, in response to a video posted on YouTube, asked their ISP's (Internet Service Provider) to block YouTube. They accomplished this by changing the IP (Internet Protocol) address in their local DNS (Domain Name Server) so that any traffic initiating in Pakistan would see the wrong IP address, and instead, serve a page with the message that YouTube was not available and redirect traffic from that IP address to a Pakistani website.
 
-> YouTube, like many large websites, has a number of IP addresses and spread the traffic between them. Requests get directed to whichever one is least burdened — in essence, it tells people to go to Madison Square Garden. Once your packets get there, they are then told which entrance to the Garden is the least crowded extrance.
+> YouTube, like many large websites, has a number of IP addresses and spread the traffic between them. Requests get directed to whichever one is the least burdened — in essence, it tells people to go to Madison Square Garden. Once your nodes get there, they are then told which entrance to the Garden is the least crowded extrance.
 
 > But the Pakistani announcement said that YouTube was located at 123 Censorship Row, Suite 305, Lahore, Pakistan — which looks to be far more specific and therefore looks like more useful information than “Madison Square Garden.”  Since the internet’s architecture still relies on trust, most networks — especially big ones — trust each other’s info without testing it. - From Wired
 
 
-**THREE:** Finally, when thinking about requests and responses the really mind-bending thing is recognizing and accepting that it is all simply text. Nothing more mystical or magical than plain ol' characters.
+**THREE:** Finally, when thinking about requests and responses, the really mind-bending thing is recognizing and accepting that it is all simply text. Nothing more mystical or magical than plain ol' characters.
 
 <br />
 
@@ -73,7 +73,7 @@ What makes up a web page?
 <br />
 **SET DESIGN**: DAVE BRYANT
 
-Think back to what programming felt like on day one, or when you were deciding to take WDI. That was not that long ago.  The concepts of string manipulation, looping, variables and so on likely seemed very magical. I know they were to me, but ultimately, you are just making rules about the input that is received and the appropriate output.
+Think back to what programming felt like on day one, or when you were deciding to take WDI. That was not that long ago.  The concepts of string manipulation, looping, variables and so on likely seemed pretty magical. I know they were to me, but ultimately, you are just making rules about the input that is received, and the appropriate output.
 
 <br />
 
@@ -82,19 +82,19 @@ Think back to what programming felt like on day one, or when you were deciding t
 *The image below comes from the Chrome developer tools. Swedish! This is what an actual request looks like:*
 ![](headers.png)
 
-Open Chrome dev tools, go to the network tab, refresh the page, and you can see all of the requests made for the content. You can see that there are a _lot_ more than just html and css. And if you click on one of those requests you can then see the headers for it.
+Open Chrome dev tools, go to the network tab, refresh the page, and you can see all of the requests made for the content. You can see that there is a _lot_ more than just html and css. And if you click on one of those requests, you can then see the headers for it.
 
 <br />
 
 ## The Technical
 
-But we are not in this class to _just_ demystify the internet.  We are here to learn how to send, receive, and interpret requests and responses to deliver something of value to our end users!
+We are not in this class to _just_ demystify the internet.  We are here to learn how to send, receive, and interpret requests and responses to deliver something of value to our end users!
 
-#### HTTP verbs (10m)
+### HTTP verbs (10m)
 
-To do this, we will be learning to speak the language that the internet speaks, **HTTP** or **Hypertext Transfer Protocol**. Requests and responses as we have been discussing them, are a part of HTTP and are actually very straight forward.
+To do this, we will be learning to speak the language that the internet speaks, **HTTP** or **Hypertext Transfer Protocol**. Requests and responses, as we have been discussing them, are a part of HTTP and are actually very straight forward.
 
-> **EXERCISE**: Take three minutes to think about interactions (hint: think of *verbs*) that you use to engage with the internet and that result in a [persisted change](https://en.wikipedia.org/wiki/Persistence_(computer_science)). Meaning that when you do something on a website, and then turn your computer off, and then come back to that website the following day, you expect to see that your changes will still exist on the site.
+> **EXERCISE**: Take three minutes to think about interactions (hint: think of *verbs*) that you use to engage with the internet and that result in a [persisted change](https://en.wikipedia.org/wiki/Persistence_(computer_science)). Meaning that when you do something on a website, turn your computer off, and then come back to that website the following day, you expect to see that your changes will still exist on the site.
 
 > Write your responses into Slack.
 
@@ -104,17 +104,17 @@ HTTP is made up of seven **HTTP verbs**, though we will just focus on four and t
 	- Can anyone tell me what CRUD means? 
 - Create(POST), Read(GET), Update(PUT), Delete(DELETE) — (CRUD)
 
-If we think about this in terms of a blog we can ask to see a blog post(Read/GET), we can create blog post and save it(Create/POST), we can then go and edit that blog post(Update/PUT), and finally if we are embarrassed by it, we can delete it(Delete/DELETE).
+If we think about this in terms of a blog: we can ask to see a blog post (Read/GET), we can create blog post and save it (Create/POST), we can then go and edit that blog post (Update/PUT), and finally if we are embarrassed by it, we can delete it (Delete/DELETE).
 
-During Unit 1 you likely inadvertently used the GET verb. Can you guess in what context you used it?
+During Unit One, you likely inadvertently used the GET verb. Can you guess in what context you used it?
 
 <br />
 
 ### Request-Response Cycle
 
-So, let's get our hands dirty: what is the easiest way you can come up with to make a GET request?
+So, let's get our hands dirty: what is the easiest way you can come up with to make a **GET** request?
 
-EXERCISE: For the nexxt 15 minutes, look in the student_labs directory and read through the explanation of cURL and work through the exercises.
+EXERCISE: For the next 15 minutes, look at this [link](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d01/instructor_notes/curl_lab.md), read through the explanation of cURL and work through the exercises.
 
 EXERCISE: 5 minute breakout session! With your partner, work together to come up with an explanation, in your own words, of how the internet works, HTTP verbs, and the request-response cycle.
 
@@ -172,21 +172,21 @@ While it is possible to build web applications and APIs only using Node, we will
 
 ## Why do people love Node!?
 
-It is new and hot in the industry. And as you will discover, programmers love new to the point of insanity...
+Node is new and hot in the industry. And as you will discover, programmers love new to the point of insanity...
 
 Developers and companies are excited about Node, because it allows fast, scalable APIs and websites written purely in JavaScript. Okay... so what?
 
-There are really two big takeaways here: We are _familiar_ with JS and being able to use JS on the back end gives us the option to use a single programming language throughout an entire full-stack application. How cool is that?  So, when we get to Rails, you will use ruby on the back end and html, css and js on the front end.  And when you actually work on a full code base, Rails back ends are frequently optimized with [Lua](https://www.lua.org/) which is a db scripting language, or [Rust](https://www.rust-lang.org/en-US/). So now you have two to three back end languages. Not including your front end languages, and maybe you would like to run a framework too.  Now, your front end is not only JS, in actuality, it is a flavor of JS.
+There are really **two big takeaways** here: We are _familiar_ with JS and being able to use JS on the back end gives us the option to use a single programming language throughout an entire full-stack application. How cool is that?  So, when we get to Rails, you will use ruby on the back end and html, css and js on the front end.  And when you actually work on a full code base, Rails back ends are frequently optimized with [Lua](https://www.lua.org/) which is a db scripting language, or [Rust](https://www.rust-lang.org/en-US/). So now you have two to three back end languages. Not including your front end languages, and maybe you would like to run a framework too.  Now, your front end is not only JS, in actuality, it is a flavor of JS.
 
 ### Async
 
-We won't dive too far into this and will talk about this in much more detail later. However, the other big difference is that Node.js is designed to be _event-driven_ and _asynchronous_. The opposite of this are servers that can only run one thing at a time. Node purposefully sends nearly everything to the background and in the meantime, allows the broser keeps going until those processes are completed.
+We won't dive too far into this and will talk about this in much more detail later. However, the other big difference is that Node.js is designed to be _event-driven_ and _asynchronous_. The opposite of this are servers that can only run one thing at a time. Node purposefully sends nearly everything to the background and in the meantime, allows the browser to keep going until all of thes processes are completed.
 
 In layman's terms:
 
 Imagine a paper delivery boy riding on his bike, delivering papers every morning. Imagine that he stops at each house, throws the paper onto your doorstep, and waits to make sure you come out and pick it up before moving on to the next house. That is what we would call _blocking_ – each line of code must finish before moving on to the next line of code.
 
-Now, imagine the paperboy throwing the newspaper on your porch, but never stopping his bicycle.  He never stops.  He just keeps throwing papers on porches, so that by the time you pick it up he will be at least 3 to 4 houses down. That would be considered _non-blocking input/output (I/O)_, otherwise known as _asynchronous_. This is an extremely awesome feature of node since I/O tends to be very "expensive" as it takes many step/time to retrieve data from memory.  And each step adds its own amount of delay time.
+Now, imagine the paperboy throwing the newspaper on your porch, but never stopping his bicycle.  He never stops.  He just keeps throwing papers on porches, so that by the time you pick it up he will be at least 3 to 4 houses down. That would be considered _non-blocking input/output (I/O)_, otherwise known as _asynchronous_. This is an extremely awesome feature of node since I/O tends to be very "expensive" as it takes many steps/time to retrieve data from memory.  And each step adds its own amount of delay time.
 
 <br />
 
@@ -198,7 +198,7 @@ Node is made up of packages that exist inside and outside of the Node standard l
 
 Does anyone know what standard library refers to? You have interacted with standard library content and non-standard library content already.
 
-Today, we are just going to stick with the standard library, but the rest of this unit we will be installing many different packages to build our front end and back end in Node.
+This morning, we are just going to stick with the standard library, but during the rest of this unit we will be installing many different packages to build our front end and back end in Node.
 
 <br />
 

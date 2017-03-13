@@ -1,6 +1,6 @@
 # Part One — Headfirst into Node and HTTP
 
-Create a directory called `node_lab`. cd into that directory.  Touch a file called `server.js` and paste the following code into that file
+Create a directory called `node_lab`. cd into that directory.  Touch a file called `server.js` and paste the following code into that file:
 
 ```js
 var http = require('http');
@@ -23,7 +23,7 @@ server.on('request', function(request, response) {
 
 1.  Run the file using `$ node server.js`
 
-2. After running the file, make a GET request to your server using cURL `$ curl localhost:3001`, and examine the response.  Compare the response to the code in server.js. Take notes on what you think is happening.
+2. After running the file, make a GET request to your server using cURL `$ curl localhost:3001`, and examine the response.  Compare the response to the code in server.js. Take 1 minutes to take notes on what you think is happening.
 
 3. Then, open your browser and make a GET request using the browser. Go to http://localhost:3001, open your chrome dev tools and compare the response you see in the browser to the response you saw in the terminal after curling, as well as to the code in server.js.
 
@@ -33,17 +33,17 @@ server.on('request', function(request, response) {
 
 I am going to go line-by-line, and walk you through what is happening here.
 
-Node is comprised of many different tools called packages. We will be using many of these over the next two units. They are just libraries of code, similar to when you required jQuery using a CDN, these packages are just Node flavored.
+Node.js is comprised of many different tools, called packages. We will be using many of these packages over the next two units. They are just libraries of code, similar to when you required jQuery using a CDN, these packages are just 'Node flavored'.
 
-In the `server.js` file, we are requiring one package called `http`, which is built into Node, given what you have already learned about http, you might be able to guess what it does. It allows us to create a server that lives on our local machine.  It can listen for requests and also send responses. Our server is not deployed to the internet, so it can only be accessed locally.
+In the `server.js` file, the first code we wrote, requires a package called `http`, which is built into Node.  Given what you have already learned about http, you might be able to guess what this package does. It allows us to create a server that lives on our local machine.  It can listen for requests and also send responses. Our server is not deployed to the internet, so it can only be accessed locally.
 
-Using the `require` method, we save the library to the variable `http`, which gives us access to all the methods and behaviors built into the package. You can read more about it in the [documentation](https://nodejs.org/api/http.html).
+Using the `require` method, we save the library to the variable `http`, which gives us access to all of the methods and behaviors built into the package. You can read more about this in the [documentation](https://nodejs.org/api/http.html).
 
-The next line, `var server = http.createServer().listen(3001);` calls the `createServer` method built into `http` and then calls `.listen` passing it the number `3001` as an argument. It reads a little bit like English, doesn't it?
+The next line, `var server = http.createServer().listen(3001);` calls the `createServer` method built into `http`, and then calls `.listen()` passing it the number `3001` as an argument. It reads a little bit like English, doesn't it?
 
-> Create an HTTP server that listens for requests at port 3001 and save the resulting created server to the variable `server`
+> Create an HTTP server that listens for requests at port 3001 and save the resulting created server to the variable `server`.
 
-We are going to skip the console.log and go straight to `server.on`. We are now calling the `.on` method on our create server and passing it two arguments, a string `'request'` and a callback that has two arguments, `request` and `response`.
+We are going to skip the console.log and go straight to `server.on`. We are now calling the `.on` method on our create server variable, and passing it two arguments, a string `'request'` and a callback function that has two arguments, `request` and `response`.
 
 > When the server receives a request, invoke the callback.
 
