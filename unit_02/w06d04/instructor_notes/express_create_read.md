@@ -55,7 +55,7 @@ So in your `/unit_02/w06d04/student_labs` folder, you should see a starter appli
 
 <br>
 
-&#x1F535; **YOU DO: PART 1 - Starter Code Set-up**
+&#x1F535; ** I DO, THEN YOU DO: PART 1 - Starter Code Set-up**
 
 1. `cd` into `starter-code-hbs` and run the command `npm install` which will read the `package.json` file and install all of the dependencies specified in a `node_modules` folder.
 
@@ -191,6 +191,8 @@ router.get('/', function(req,res) {
 <br>
 
 ## module.exports
+
+&#x1F535; ** I DO, THEN YOU DO**
 
 In `server.js`, we have a `var seededTodos` which is an array of 2 seeded todos.
 
@@ -359,7 +361,7 @@ Don't worry about this idea of nested resources for now, but know this is where 
 
 Convention dictates that the `show` route returns one instance of of a given resource.
 
-&#x1F535; **YOU DO**
+&#x1F535; ** I DO, THEN YOU DO**
 
 In previous lessons we learned about 'wildcard params'. (e.g. - `http://localhost:3000/:id`)
 
@@ -617,14 +619,13 @@ Awesome so now we have a form that renders on the page. So let's engage in some 
 
 &#x1F535; **CFU**
 
+![](https://i.imgur.com/QyawZUf.png)
+<br>
+
 - What happens when we add data and click the submit button?
 - What's the difference between the 'new' route and 'create' route in terms of functionality?
 
-![](https://i.imgur.com/QyawZUf.png)
-
-<br>
-
-&#x1F535; **YOU DO**
+&#x1F535; ** I DO, THEN YOU DO**
 
 Build a todo CREATE route using `router.post`. Don't worry about accessing the params from the form yet. Just send a response back ("Create a new todo is working!") to the client so you can verify the route works.
 
@@ -928,3 +929,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 </details>
 
 </details>
+
+## Resources
+
+[Bit further ahead: module.exports vs exports](http://www.hacksparrow.com/node-js-exports-vs-module-exports.html)
+
