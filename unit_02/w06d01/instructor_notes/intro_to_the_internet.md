@@ -1,10 +1,11 @@
 ---
+
 title: Intro to the Internet and Node <br />
 type: lesson <br />
 duration: '2:00' <br />
 creator: <br />
     name: Colin Hart <br />
-    adapted by: Maren Woodruff
+    adapted by: Maren Woodruff <br />
     class: ATL-WDI-9
 ---
 
