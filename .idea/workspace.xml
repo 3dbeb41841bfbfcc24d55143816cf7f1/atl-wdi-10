@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf686211-1aa0-479b-a342-08fc8b4a4c0a" name="Default" comment="" />
+    <list default="true" id="bf686211-1aa0-479b-a342-08fc8b4a4c0a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/first-project-portfolio-site.md" afterPath="$PROJECT_DIR$/homework/first-project-portfolio-site.md" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,33 +20,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="schedule.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="schedule.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schedule.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="934">
-                <caret line="1178" column="118" lean-forward="false" selection-start-line="1178" selection-start-column="118" selection-end-line="1178" selection-end-column="118" />
-                <caret line="1181" column="118" lean-forward="false" selection-start-line="1181" selection-start-column="118" selection-end-line="1181" selection-end-column="118" />
-                <caret line="1184" column="118" lean-forward="false" selection-start-line="1184" selection-start-column="118" selection-end-line="1184" selection-end-column="118" />
-                <caret line="1193" column="118" lean-forward="false" selection-start-line="1193" selection-start-column="118" selection-end-line="1193" selection-end-column="118" />
-                <caret line="1196" column="118" lean-forward="false" selection-start-line="1196" selection-start-column="118" selection-end-line="1196" selection-end-column="118" />
-                <caret line="1199" column="118" lean-forward="false" selection-start-line="1199" selection-start-column="118" selection-end-line="1199" selection-end-column="118" />
-                <caret line="1202" column="118" lean-forward="false" selection-start-line="1202" selection-start-column="118" selection-end-line="1202" selection-end-column="118" />
-                <caret line="1211" column="118" lean-forward="false" selection-start-line="1211" selection-start-column="118" selection-end-line="1211" selection-end-column="118" />
-                <caret line="1214" column="118" lean-forward="false" selection-start-line="1214" selection-start-column="118" selection-end-line="1214" selection-end-column="118" />
-                <caret line="1217" column="118" lean-forward="false" selection-start-line="1217" selection-start-column="118" selection-end-line="1217" selection-end-column="118" />
-                <caret line="1220" column="118" lean-forward="false" selection-start-line="1220" selection-start-column="118" selection-end-line="1220" selection-end-column="118" />
-                <caret line="1229" column="118" lean-forward="false" selection-start-line="1229" selection-start-column="118" selection-end-line="1229" selection-end-column="118" />
-                <caret line="1232" column="118" lean-forward="false" selection-start-line="1232" selection-start-column="118" selection-end-line="1232" selection-end-column="118" />
-                <caret line="1235" column="118" lean-forward="false" selection-start-line="1235" selection-start-column="118" selection-end-line="1235" selection-end-column="118" />
-                <caret line="1238" column="119" lean-forward="false" selection-start-line="1238" selection-start-column="119" selection-end-line="1238" selection-end-column="119" />
-                <caret line="1247" column="118" lean-forward="false" selection-start-line="1247" selection-start-column="118" selection-end-line="1247" selection-end-column="118" />
-                <caret line="1250" column="118" lean-forward="false" selection-start-line="1250" selection-start-column="118" selection-end-line="1250" selection-end-column="118" />
-                <caret line="1253" column="118" lean-forward="false" selection-start-line="1253" selection-start-column="118" selection-end-line="1253" selection-end-column="118" />
-                <caret line="1256" column="119" lean-forward="false" selection-start-line="1256" selection-start-column="119" selection-end-line="1256" selection-end-column="119" />
-                <caret line="1265" column="118" lean-forward="false" selection-start-line="1265" selection-start-column="118" selection-end-line="1265" selection-end-column="118" />
-                <caret line="1268" column="118" lean-forward="false" selection-start-line="1268" selection-start-column="118" selection-end-line="1268" selection-end-column="118" />
-                <caret line="1271" column="118" lean-forward="false" selection-start-line="1271" selection-start-column="118" selection-end-line="1271" selection-end-column="118" />
+              <first_editor relative-caret-position="414">
+                <caret line="1266" column="8" lean-forward="true" selection-start-line="1266" selection-start-column="8" selection-end-line="1266" selection-end-column="8" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="first-project-portfolio-site.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/homework/first-project-portfolio-site.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="216">
+                <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -64,6 +58,7 @@
       <find>cs algo</find>
       <find>user stor</find>
       <find>prototypes</find>
+      <find>week 3</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -87,6 +82,7 @@
         <option value="$PROJECT_DIR$/unit_01/w01d04/student_labs/js-independent-practice/independent-practice-starter.js" />
         <option value="$PROJECT_DIR$/instructor_notes/sdlc-agile-xp.md" />
         <option value="$PROJECT_DIR$/schedule.md" />
+        <option value="$PROJECT_DIR$/homework/first-project-portfolio-site.md" />
       </list>
     </option>
   </component>
@@ -130,7 +126,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,8 +202,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atl-wdi-9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atl-wdi-9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,6 +229,7 @@
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v7.5.0/bin/node" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="javascript.nodejs.core.library.configured.version" value="7.5.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -303,18 +314,19 @@
       <workItem from="1487187853829" duration="17300000" />
       <workItem from="1487794588578" duration="6006000" />
       <workItem from="1487905555099" duration="23411000" />
-      <workItem from="1488772627109" duration="366000" />
+      <workItem from="1488772627109" duration="1011000" />
+      <workItem from="1489182900503" duration="540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52817000" />
+    <option name="totallyTimeSpent" value="54002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -357,16 +369,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/unit_01/w01d01/instructor_notes/culture.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="525">
-            <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unit_01/w01d01/instructor_notes/installation.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -469,9 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -501,7 +500,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="526">
             <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -633,7 +631,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="585">
             <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -801,9 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,7 +816,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1201">
             <caret line="234" column="74" lean-forward="false" selection-start-line="234" selection-start-column="74" selection-end-line="234" selection-end-column="74" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -831,29 +824,19 @@
     <entry file="file://$PROJECT_DIR$/schedule.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="934">
-            <caret line="1178" column="118" lean-forward="false" selection-start-line="1178" selection-start-column="118" selection-end-line="1178" selection-end-column="118" />
-            <caret line="1181" column="118" lean-forward="false" selection-start-line="1181" selection-start-column="118" selection-end-line="1181" selection-end-column="118" />
-            <caret line="1184" column="118" lean-forward="false" selection-start-line="1184" selection-start-column="118" selection-end-line="1184" selection-end-column="118" />
-            <caret line="1193" column="118" lean-forward="false" selection-start-line="1193" selection-start-column="118" selection-end-line="1193" selection-end-column="118" />
-            <caret line="1196" column="118" lean-forward="false" selection-start-line="1196" selection-start-column="118" selection-end-line="1196" selection-end-column="118" />
-            <caret line="1199" column="118" lean-forward="false" selection-start-line="1199" selection-start-column="118" selection-end-line="1199" selection-end-column="118" />
-            <caret line="1202" column="118" lean-forward="false" selection-start-line="1202" selection-start-column="118" selection-end-line="1202" selection-end-column="118" />
-            <caret line="1211" column="118" lean-forward="false" selection-start-line="1211" selection-start-column="118" selection-end-line="1211" selection-end-column="118" />
-            <caret line="1214" column="118" lean-forward="false" selection-start-line="1214" selection-start-column="118" selection-end-line="1214" selection-end-column="118" />
-            <caret line="1217" column="118" lean-forward="false" selection-start-line="1217" selection-start-column="118" selection-end-line="1217" selection-end-column="118" />
-            <caret line="1220" column="118" lean-forward="false" selection-start-line="1220" selection-start-column="118" selection-end-line="1220" selection-end-column="118" />
-            <caret line="1229" column="118" lean-forward="false" selection-start-line="1229" selection-start-column="118" selection-end-line="1229" selection-end-column="118" />
-            <caret line="1232" column="118" lean-forward="false" selection-start-line="1232" selection-start-column="118" selection-end-line="1232" selection-end-column="118" />
-            <caret line="1235" column="118" lean-forward="false" selection-start-line="1235" selection-start-column="118" selection-end-line="1235" selection-end-column="118" />
-            <caret line="1238" column="119" lean-forward="false" selection-start-line="1238" selection-start-column="119" selection-end-line="1238" selection-end-column="119" />
-            <caret line="1247" column="118" lean-forward="false" selection-start-line="1247" selection-start-column="118" selection-end-line="1247" selection-end-column="118" />
-            <caret line="1250" column="118" lean-forward="false" selection-start-line="1250" selection-start-column="118" selection-end-line="1250" selection-end-column="118" />
-            <caret line="1253" column="118" lean-forward="false" selection-start-line="1253" selection-start-column="118" selection-end-line="1253" selection-end-column="118" />
-            <caret line="1256" column="119" lean-forward="false" selection-start-line="1256" selection-start-column="119" selection-end-line="1256" selection-end-column="119" />
-            <caret line="1265" column="118" lean-forward="false" selection-start-line="1265" selection-start-column="118" selection-end-line="1265" selection-end-column="118" />
-            <caret line="1268" column="118" lean-forward="false" selection-start-line="1268" selection-start-column="118" selection-end-line="1268" selection-end-column="118" />
-            <caret line="1271" column="118" lean-forward="false" selection-start-line="1271" selection-start-column="118" selection-end-line="1271" selection-end-column="118" />
+          <first_editor relative-caret-position="414">
+            <caret line="1266" column="8" lean-forward="true" selection-start-line="1266" selection-start-column="8" selection-end-line="1266" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/first-project-portfolio-site.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="216">
+            <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
             <folding />
           </first_editor>
           <second_editor />

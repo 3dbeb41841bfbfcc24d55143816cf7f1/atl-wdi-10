@@ -1,10 +1,11 @@
 ---
-title: Server Side Rendering in Express
-type: lesson
-duration: '2:00'
-creator:
-    name: Colin Hart, adapted by Marc Wright
-    class: WDIr-R2D2
+title: Server Side Rendering in Express <br />
+type: lesson <br />
+duration: '2:00' <br />
+creator: <br />
+    name: Colin Hart, <br />
+    adapted by Maren Woodruff
+    class: WDI-ATL-9
 ---
 
 # Views in Express
@@ -17,34 +18,38 @@ creator:
 - Link to static assets in an Express application
 - Understand layouts and templating
 
-<br>
+<br />
 
-## Views in Express - Intro
+## Hook
+As we have already seen, `res.send()`, can do a lot for us.  It allows us to easily check whether or not the routes that we have created work.  However, we normally want to give our users more than a document.write view of our pages.  To do that, we need to create views.
+
+
+## Intro to Views in Express
 
 
 #### What is server side rendering?
 
 - **Server Side** rendering is like a traditional restaurant (Chilis!!). 
-    - You place an order (request) and the waiter delivers it to the kitchen for assembly
-    - Ingredients (data) are combined and placed into an oven (Node/Express/Handlebars) 
-    - The fully baked dish (HTML) is then delivered to your table via the waiter (response)
+    - You place an order (request) and the waiter delivers it to the kitchen for assembly.
+    - Ingredients (data) are combined and placed into an oven (Node/Express/Handlebars).
+    - The fully baked onion blossom (HTML) is then delivered to your table via the waiter (response).
 - **Client Side** rendering is like a Hibachi restaurant. 
-    - All of the ingredients (data) are delivered to your table initially (browser) and ready to go
-    - Each dish (web page view) is assembled by the chef (AngularJS) in real time as requested
+    - All of the ingredients (data) are delivered to your table (browser) already prepped and ready to go.
+    - Each dish (web page view) is assembled by the chef (AngularJS) in fonrt of you/in real time as you request it.
 
-<br>
+<br />
 
-#### What are handlebars?
+#### What are Handlebars?
 
 ![](https://i.imgur.com/gMD515j.png)
 
 http://handlebarsjs.com/
 
-Handlebars allows us to embed JS variables inside of our HTML and render it as text. Our server injects the variables into the HTML document before sending it to the client.
+Handlebars allow us to embed JS variables inside of our HTML and render it as text. Our server injects the variables into the HTML document **before** sending it to the client.
 
 The client/brower will never see the variables or the handlebars syntax, only the values. The HTML document is "fully baked" when the browser receives it.
 
-A similar concept: remember string templates? If we use the `${}` syntax inside of our string template it lets us run JS, e.g. call a function, input a variable, add some numbers whatever. For example:
+A similar concept: remember ES6 template strings? If we use the `${}` syntax inside of our template string, it lets us run JS, e.g. call a function, input a variable, or add some numbers. For example:
 
 ```js
 var name = "Marc";
@@ -53,17 +58,17 @@ console.log(`Hi, my name is ${name}`);
 // Hi, my name is Marc
 ```
 
-Handlebars gives us a similar functionality but instead of injecting JS into a string, it allows us to inject js into our html page.
+Handlebars gives us similar functionality, but instead of injecting JS into a string, it allows us to inject js into our HTML page.
 
-There are certainly other template engine options out there such as Pug (https://pugjs.org/api/getting-started.html) and Embedded Javascript (http://www.embeddedjs.com/). 
+There are certainly other template engine options out there such as Pug (https://pugjs.org/api/getting-started.html) or Embedded Javascript (http://www.embeddedjs.com/). 
 
-Handlebars is fun and one of the easiest to use. It also closely resembles the syntax we'll use for AngularJS which is another reason we're using it.
+Handlebars is fun and is one of the easiest to use. It also closely resembles the syntax we will use for AngularJS which is another reason we are using it.
 
-<br>
+<br />
 
 ## Setting up our app to use Handlebars
 
-For this lesson we're gonna build on to the `hello-express` app from this morning. Watch me walk through the following steps below. Then you'll have time to practice them yourself. I suggest you keep your `nodemon` server running in one tab and open a 2nd tab for commands.
+For this lesson, we are gonna build on to the `hello-express` app from this afternoon. Watch me walk through the following steps below. Then you will have time to practice them yourself. I suggest you keep your `nodemon` server running in one tab, and open a 2nd tab for commands.
 
 1. To install handlebars into our node application enter the following in the terminal:
 
@@ -73,12 +78,12 @@ $ npm install --save hbs
 
     > What does `--save` do for us again?
 
-1. We need to require the hbs module in `server.js`. (should be around line #3, below `var express` and `var app`):
+1. We need to require the hbs module in the `server.js` file. (around line #3, below `var express` and `var app`):
 
     ```js
 var express = require('express'); // Loading express on our server
 var app = express(); // install express on our server
-var hbs = require('hbs');
+var hbs = require('hbs'); // loads handlebars
 ```
 
     > What does `require()` do?
@@ -92,7 +97,7 @@ app.set("view engine", "hbs"); //tells Express what to use for rendering templat
     
     > NOTE: Express will look for view templates in a folder named `views`
     
-    > https://expressjs.com/en/guide/using-template-engines.html
+    > Read more at: https://expressjs.com/en/guide/using-template-engines.html
 
 1. Create a directory called `views` and let's make a view for our first `/greeting` route. We're also gonna create a layout file (more on that soon!). We'll do this in the root directory of our application. In the terminal:
 
@@ -102,23 +107,23 @@ $ touch views/greeting.hbs
 $ touch views/layout.hbs
 ```
 
-    The Handlebars extension is `.hbs`. This tells our server that this file contains Handlebars code and that it should be converted to HTML.
+    The Handlebars extension is `.hbs`. This tells our server that this file contains Handlebars code, and that it should be converted to HTML.
 
-<br>
+<br />
 
-&#x1F535; **YOU DO**
+&#x1F535; **YOU DO: 2 minutes**
 
 Follow the 4 steps above and add Handlebars to your app.
 
-<br>
+<br />
 
 
 
 ## How do we use Handlebars?
 
-Everything we've done so far has been in order to configure handlebars with our application. You'll need to go through these steps every time you need to make a new express application.
+Everything that we have done sofar has prepared us to configure handlebars within our application. You will need to go through these steps every time you make a new Express application.
 
-1. Remember how we used query parameters earlier? We can use those just as before but rather than sending them we can pass them to our view and render it as html.
+1. Remember how we used query parameters earlier? We can use those in the same way, but rather than sending them to s `res.send()` method, we can pass them to our view and render the params as HTML.
 
     ```javascript
     app.get('/greeting', function(req, res) {
@@ -130,10 +135,10 @@ Everything we've done so far has been in order to configure handlebars with our 
 });
 ```
 
-    So instead of sending a string directly to the response of that get request, we instead want to render a view. The `.render` function takes two arguments here. 
+    Instead of sending a string directly to the response ofa get request, we would like to render a view. The `.render` function takes two arguments. 
 
-    - The first is the view we want to render. 
-    - The second argument is an object. We can use the keys in this object inside the view to access the values in these
+    - The first argument is the view that we would like to render. 
+    - The second argument is an object. We can use the keys in this object inside of the view, to access the values in these
 key-value pairs.
 
 1. When we go to `http://localhost:3000/greeting?saying=hii!` our view is empty! Let's go ahead and change that now. In
@@ -173,13 +178,13 @@ key-value pairs.
 
 > Inspect the body in the dev tools. There is no trace of `{{}}`. Why?
 
-<br>
+<br />
 
-&#x1F535; **YOU DO**
+&#x1F535; **YOU DO: 2 minutes**
 
 Walk through the steps above in the "How do we use Handlebars?" section to add on to your app.
 
-<br>
+<br />
 
 ## One step further...
 
@@ -191,14 +196,14 @@ What if we had an array for our favorite foods in `server.js` and we wanted to r
 touch views/favorite-foods.hbs
 ```
 
-2. Let's create a new route for favorite foods and add an array of faves.
+2. Let's create a new route for favorite foods and add your array of favorites.
 
     ```javascript
     app.get('/favorite-foods', function(req, res) {
-        var favoriteFoods = ["Reese's Peanutbutter Cups", 'Taco Soup', 'Grape Nuts', 'Beer', 'Whatever Blue Apron brings me'];
+        var favoriteFoods = ["Jeni's almond butter brittle ice cream", 'Tacos from Superica', 'a breakfast sandwich from Gjelina to go in Venice', 'Croissants from Bottega Louie in downtown Los Angeles', 'Pizza from Little Star in San Francisco'];
 
         res.render('favorite-foods', {
-		      data: ____
+		    data: ____
         });
     });
 ```
@@ -207,15 +212,15 @@ touch views/favorite-foods.hbs
 
     ```javascript
     app.get('/favorite-foods', function(req, res) {
-        var favoriteFoods = ["Reese's Peanutbutter Cups", 'Taco Soup', 'Grape Nuts', 'Beer', 'Whatever Blue Apron brings me'];
+        var favoriteFoods = ["Jeni's almond butter brittle ice cream", 'Tacos from Superica', 'a breakfast sandwich from Gjelina to go in Venice', 'Croissants from Bottega Louie in downtown Los Angeles', 'Pizza from Little Star in San Francisco'];
         
         res.render('favorite-foods', {
-		      data: favoriteFoods
+		    data: favoriteFoods
         });
     });
 ```
 
-3. Our `foods.hbs` file is going to need the same code as in our `greeting.hbs` file:
+3. Our `favorite-foods.hbs` file is going to need the same code as in our `greeting.hbs` file:
 
     ```html
     <h1>My Favorite Foods</h1>
@@ -224,37 +229,37 @@ touch views/favorite-foods.hbs
 
     Refresh the page in your browser. What is the output? Handlebars converted our array into text with commas, actually very similar to when we call `toString()` on an array.
 
-<br>
+<br />
 
-&#x1F535; **YOU DO**
+&#x1F535; **YOU DO: 2 minutes**
 
 Walk through the steps above in the "One step further..." section to add on to your app.
 
-<br>
+<br />
 
 ## Handlebars Loops 
 
-But what if we wanted to to display this Array data in a `<ul>` with `<li>` tags? How have we accomplished this in the past... Vanilla JS or jQuery.
+But what if we wanted to to display this Array data in a `<ul>` with `<li>` tags? How have we accomplished this in the past... Vanilla JS or jQuery?
 
-<br>
+<br />
 
-&#x1F535; **YOU DO**
+&#x1F535; **YOU DO: 5 minutes**
 
-Read through the Handlebars built in helpers documentation (http://handlebarsjs.com/builtin_helpers.html). Try to render the Array of foods as a `<ul>` with `<li>` tags like so:
+Read through the Handlebars built in [helpers documentation](http://handlebarsjs.com/builtin_helpers.html). Try to render the Array of foods as a `<ul>` with `<li>` tags like so:
 
-<br>
+<br />
 
 ![](https://i.imgur.com/uVzMiGU.png)
 
-<br>
+<br />
 
 <details>
 
 <summary>Solution for Handlebars Loops</summary>
 
-We can iterate over a list using the Handlebars built-in `each` helper. Inside the block, you can use `this` to reference the element being iterated over.
+We can iterate over a list using the Handlebars built-in `each` helper. Inside of the block, you can use `this` to reference the element being iterated over.
 
-In `foods.hbs`, replace your `<p>` tags with the following:
+In `favorite-foods.hbs`, replace your `<p>` tags with the following:
 
 ```javascript
 <ul>
@@ -264,16 +269,15 @@ In `foods.hbs`, replace your `<p>` tags with the following:
 </ul>
 ```
 
-1. We start our loop with `#each` and pass in the object (`data`)  that we want to loop over
+1. We start our loop with `#each` and pass in the object (`data`)  that we would like to loop over
 1. `{{this}}` is the iterator for each item in the array so we surround it with `<li>` tags
 1. We close our loop with `{{/each}}`
 
-You can check out more [Handlebars Built In Helpers here](http://handlebarsjs.com/builtin_helpers.html)
+You can check out more at this link for [Handlebars Built In Helpers](http://handlebarsjs.com/builtin_helpers.html)
 
 </details>
 
-
-<br>
+<br />
 
 ## Add Static Assets
 
@@ -287,11 +291,12 @@ Let's add an external stylesheet:
 app.use(express.static(__dirname + '/public')); // VERY IMPORTANT!! Make sure to add a '/'
 ```
 
-    > `.use()` is another method that Express make available to us. It's called "Middleware". Middleware gives us the ability to do stuff between the request and response like authentication, log info to our server logs, etc.
+    > `.use()` is another method that Express makes available to us. It is called "Middleware". Middleware gives us the ability to take action between the request and response, like authentication, or to log info to our server logs, etc.
 
 1. Create a public directory: `mkdir public` 
-1. Create a css directory inside: `mkdir public/css`
-1. Create a `styles.css` file: `touch public/css/styles.css`
+2. cd into your `public` directory
+3. `mkdir css`
+1. Create a `styles.css` file: `touch css/styles.css`
 1. Add a CSS rule to test it out:
     
     ```css
@@ -301,17 +306,17 @@ app.use(express.static(__dirname + '/public')); // VERY IMPORTANT!! Make sure to
     }
 ``` 
 
-<br>
+<br />
 
-&#x1F535; **YOU DO**
+&#x1F535; **YOU DO: 3 minutes**
 
 Walk through the previous steps and add static assets to your app.
 
-<br>
+<br />
 
-## LABTIME
+## LAB Time
 
-For labtime you're gonna create a new Express app from scratch that will render your favorite tv shows. Essentially, you're gonna walk back through the two lesson readme files from today and practice what you've learned.
+For labtime you are going to create a new Express app from scratch that will render your favorite TV shows. Essentially, you are going to walk back through the two lesson readme files from today and practice what you have learned.
 
 1. Create a new Express App. Here are a few steps to get you started.
     
@@ -324,31 +329,31 @@ $ npm install --save hbs
 $ touch server.js
 ```
 
-1. Create the necessary variables and require the appropriate modules in `server.js`
+1. Create the necessary variables and require the appropriate modules in the `server.js` file.
 
 1. Set up your server and port using `app.listen()`
 
-1. In `server.js`, create an `app.get()` route for `/shows`.  
-1. Create an array called `var favShows` and add your faves.
-2. Test out your route using `res.send` before dealing with views.
+1. In the `server.js` file, create an `app.get()` route for `/shows`.  
+1. Create an array called `var faveShows` and add your favorite TV shows.
+2. Test out your route using `res.send()` before creating your views.
 
-1. Update your route to render a view for `views/shows.hbs`. (Remember to create a `views` folder and include a `views/layout.hbs` file)
+1. Update your route to render a view for `views/shows.hbs`. (Remember to create a `views` folder and include a `views/layout.hbs` file.)
 
-1. Add `{{}}` to your `shows.hbs` file that will render the shows inside an `<ol></ol>` using `<li></li>` tags
+1. Add `{{}}` to your `shows.hbs` file that will render the shows inside of an `<ol></ol>` using `<li></li>` tags
 
 1. Add the code to `.use()` static assets.
 2. Add a css file to your app for styling
 
 **BONUS**
 
-1. Add a javascript click event to your app in a separate JS file..
+1. Add a javascript click event to your app in a separate JS file.
 2. Add a proper nav bar
 3. Add a proper footer
 4. Add images to your `/public` directory
-3. If you finish, walk back through the appropriate steps above and add another favorites resource to your app (e.g.- movies, songs, artists, comics).
+3. If you finish, walk back through the appropriate steps above and add another favorites resource to your app (e.g.- movies, songs, artists, novels.)
     
 
-<br>
+<br />
 
 ## Extra Exercises
 

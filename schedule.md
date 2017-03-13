@@ -1104,7 +1104,7 @@
     <td><strong>Mod 4</strong></td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d01/student_labs/node_lab.md">Node Lab</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/student_labs/router_lab.md">Router LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/student_labs/router_lab.md">Handlebar Router LAB</a>
     </td>
     <td>
       <a href="https://github.com/ga-wdi-exercises/compliment-express">LAB</a>
@@ -1274,7 +1274,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
     </td>
     <td>
-      Portfolio Site
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/first-project-portfolio-site.md">Portfolio Site</a>
     </td>
   </tr>
 </tbody></table>
