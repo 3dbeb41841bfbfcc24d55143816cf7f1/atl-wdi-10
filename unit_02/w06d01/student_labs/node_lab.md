@@ -111,6 +111,7 @@ else if the variable `pathname` is `/movies` build y response <br />
 else if the variable `pathname` is `/portfolio` build z response <br />
 else build a `404` response
 
+**YOU DO: 5 minutes** <br />
 Write the necessary if or switch statement to listen for these three routes.
 
 1. /fun-times will send a response with:
