@@ -85,7 +85,7 @@ app.get('/todos', function(req,res) {
 ```
 
 
-3. Walk back thorough yesterday's Express Router lesson and refactor this app with the following:
+3. Walk back through yesterday's Express Router lesson and refactor this app with the following:
 
     - A `controllers/todos.js` file
     - Move your `/todos` route to the file.
