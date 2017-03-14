@@ -65,7 +65,7 @@ So in your `/unit_02/w06d04/student_labs` folder, you should see a starter appli
 
     In `server.js`, notice that we have a `/todos` route. It contains `var seededTodos` which is an array of 2 seeded todos:
 
-    ```js
+```javascript
 /* INDEX */
 app.get('/todos', function(req,res) {
       var seededTodos = [
