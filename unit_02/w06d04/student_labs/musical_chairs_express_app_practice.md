@@ -38,7 +38,7 @@ $ touch server.js
 
 1. Create a `recipes.js` file in your root directory for some seed data. Add `module.exports` and hard code a few recipes. Here are some seeded recipes to get you started.
 
- ```js
+    ```js
     module.exports = {
      seededRecipes: [
         {
@@ -51,7 +51,8 @@ $ touch server.js
          imageUrl: "http://consumerrecipe.conagrafoods.com/uploadedImages/img_4740_1599.jpg"
         }
       ]
-    };```
+    };
+```
 
 1. Add the appropriate code in the `server.js` to `require()` the `module.exports` from the `recipes.js` file.
 
