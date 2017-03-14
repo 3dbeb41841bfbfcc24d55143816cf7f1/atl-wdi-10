@@ -3,10 +3,9 @@ title: Intro to Express
 type: lesson
 duration: '2:00'
 creator:
-    name: Colin Hart, adapted by Marc Wright
+    name: Colin Hart, adapted by Maren Woodruff
     class: ATL-WDI-9
-modified by: Maren Woodruff
-
+---
 
 
 # Intro to Express

@@ -1,9 +1,9 @@
 ---
-title: Server Side Rendering in Express <br />
-type: lesson <br />
-duration: '2:00' <br />
-creator: <br />
-    name: Colin Hart, <br />
+title: Server Side Rendering in Express
+type: lesson
+duration: '2:00' 
+creator: 
+    name: Colin Hart,
     adapted by Maren Woodruff
     class: WDI-ATL-9
 ---
@@ -52,10 +52,10 @@ The client/brower will never see the variables or the handlebars syntax, only th
 A similar concept: remember ES6 template strings? If we use the `${}` syntax inside of our template string, it lets us run JS, e.g. call a function, input a variable, or add some numbers. For example:
 
 ```js
-var name = "Marc";
+var name = "Maren";
 
 console.log(`Hi, my name is ${name}`);
-// Hi, my name is Marc
+// Hi, my name is Maren
 ```
 
 Handlebars gives us similar functionality, but instead of injecting JS into a string, it allows us to inject js into our HTML page.
@@ -88,7 +88,7 @@ var hbs = require('hbs'); // loads handlebars
 
     > What does `require()` do?
 
-2. Then we need to set Express's view engine to be handlebars inside of `server.js`. We'll also tell our app where to find our views. We're using the Express method `.set`:
+2. Then we need to set Express's view engine to be handlebars inside of the `server.js`. We'll also tell our app where to find our views. We're using the Express method `.set`:
 
     ```javascript
 app.set("view engine", "hbs"); //tells Express what to use for rendering templates
@@ -123,7 +123,7 @@ Follow the 4 steps above and add Handlebars to your app.
 
 Everything that we have done sofar has prepared us to configure handlebars within our application. You will need to go through these steps every time you make a new Express application.
 
-1. Remember how we used query parameters earlier? We can use those in the same way, but rather than sending them to s `res.send()` method, we can pass them to our view and render the params as HTML.
+1. Remember how we used query parameters earlier? We can use those in the same way, but rather than sending them to a `res.send()` method, we can pass them to our view and render the params as HTML.
 
     ```javascript
     app.get('/greeting', function(req, res) {
@@ -135,14 +135,12 @@ Everything that we have done sofar has prepared us to configure handlebars withi
 });
 ```
 
-    Instead of sending a string directly to the response ofa get request, we would like to render a view. The `.render` function takes two arguments. 
+    Instead of sending a string directly to the response of a get request, we would like to render a view. The `.render` function takes two arguments. 
 
     - The first argument is the view that we would like to render. 
-    - The second argument is an object. We can use the keys in this object inside of the view, to access the values in these
-key-value pairs.
+    - The second argument is an object. We can use the keys in this object inside of the view, to access the values in these key-value pairs.
 
-1. When we go to `http://localhost:3000/greeting?saying=hii!` our view is empty! Let's go ahead and change that now. In
-`views/layout.hbs`:
+1. When we go to `http://localhost:3000/greeting?saying=hii!` our view is empty! Let's go ahead and change that now. In the `views/layout.hbs`:
 
     ```html
     <!DOCTYPE html>
@@ -160,7 +158,6 @@ key-value pairs.
         </body>
     </html>
 ```
-
 
     The layout acts as a picture frame for all of our views. It's a way to DRY up our code. For example, if we want a nav bar or a footer on every page we would include it here.
     
@@ -316,7 +313,7 @@ Walk through the previous steps and add static assets to your app.
 
 ## LAB Time
 
-For labtime you are going to create a new Express app from scratch that will render your favorite TV shows. Essentially, you are going to walk back through the two lesson readme files from today and practice what you have learned.
+For lab time you are going to create a new Express app from scratch that will render your favorite TV shows. Essentially, you are going to walk back through the two lesson readme files from today and practice what you have learned.
 
 1. Create a new Express App. Here are a few steps to get you started.
     
@@ -352,7 +349,6 @@ $ touch server.js
 4. Add images to your `/public` directory
 3. If you finish, walk back through the appropriate steps above and add another favorites resource to your app (e.g.- movies, songs, artists, novels.)
     
-
 <br />
 
 ## Extra Exercises
