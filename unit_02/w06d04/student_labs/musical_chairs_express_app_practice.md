@@ -38,8 +38,7 @@ $ touch server.js
 
 1. Create a `recipes.js` file in your root directory for some seed data. Add `module.exports` and hard code a few recipes. Here are some seeded recipes to get you started.
 
- ```js
-    module.exports = {
+ ```js module.exports = {
      seededRecipes: [
         {
           title: "Seafood Gumbo",
