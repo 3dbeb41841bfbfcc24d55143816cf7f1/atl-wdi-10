@@ -52,7 +52,8 @@ Let's look at a ```book``` entity:
 
 MongoDB
 
-```{
+```
+{
   ISBN: 9780992461225,
   title: "JavaScript: Novice to Ninja",
   author: "Darren Jones",
@@ -65,13 +66,16 @@ MongoDB
     { name: "A Reader", text: "The best JavaScript book I've ever read." },
     { name: "JS Expert", text: "Recommended to novice and expert developers alike." }
   ]
-}```
+}
+```
 
 PostgreSQL
 
+````
 | ISBN          | title                       | author       | format | price |
 |---------------|-----------------------------|--------------|--------|-------|
 | 9780992461225 | JavaScript: Novice to Ninja | Darren Jones | ebook  | 29.00 |
+```
 
 In PostgreSQL, reviews would be a seperate entity with a ```book_id``` column. A review belongs to a book, a book has many reviews.
 
