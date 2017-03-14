@@ -668,22 +668,22 @@ We access it via the `body` property.
 
 1. Install body-parser using npm
 
-    ```bash
+```bash
 $ npm install --save body-parser
 ```
 
-    Remember this npm command will fetch the module in question, install it on our server, and load it into our `package.json`
+Remember this npm command will fetch the module in question, install it on our server, and load it into our `package.json`
 
 1. Then inside our `server.js` we need to `require()` the module and configure it.
 
-    ```javascript
-    var bodyParser = require('body-parser');
+```javascript
+var bodyParser = require('body-parser');
 
-    app.use(bodyParser.urlencoded({
-        extended: true
-    }));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 ```
-    The params passed with a request will be "decoded" automatically, allowing you to use dot notation when working with JavaScript objects! The `extended: true` makes the objects more JSON-like.
+The params passed with a request will be "decoded" automatically, allowing you to use dot notation when working with JavaScript objects! The `extended: true` makes the objects more JSON-like.
 
 1. In our `.post` route, change `res.send("Create working");` to `res.send(req.body);`
 
