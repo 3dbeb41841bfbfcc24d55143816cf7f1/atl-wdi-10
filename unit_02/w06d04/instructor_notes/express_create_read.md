@@ -34,7 +34,7 @@ SEPARATION OF CONCERNS
 - Without Separation of Concerns (SoC), it becomes incredibly hard to maintain or change an application.
 - Large applications like Facebook and Google utilize SoC since they are always adding new features, changing existing features, and working in large teams.
 - SoC decomposes apps into parts with minimal overlap of code.
-- SoC allows To allow people to work on individual pieces of the system in isolation,
+- SoC allows people to work on individual pieces of the system in isolation,
  facilitate reusability, and enable everyone to better understand the system.
 
 FORMS
