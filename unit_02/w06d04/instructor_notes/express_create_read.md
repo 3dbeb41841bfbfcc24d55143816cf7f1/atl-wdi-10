@@ -424,26 +424,25 @@ Based on our table earlier. What view name do we want to use to create a page th
 
 2. Inside of `/todos/new.hbs` add the html form tags:
 
-    ```html
+```html
 <form>
 </form>
 ```
 
-    Now, forms need to know where to _send_ information and the HTTP verb they'll be using to submit a request. Which verb do we use to **create** a new resource?
+Now, forms need to know where to _send_ information and the HTTP verb they'll be using to submit a request. Which verb do we use to **create** a new resource?
 
-    `POST`
+`POST`
 
-    What's the route we need to `POST` to?
+What's the route we need to `POST` to?
 
-    `http://localhost:3000/todos`
+`http://localhost:3000/todos`
 
 
-    All forms must have a `method` and an `action`.
-
+All forms must have a `method` and an `action`.
 
 1. Add method and action attributes to our form. The value of method will be `POST` and the value of action will `/todos`
 
-    ```html
+```html
 <form method="POST" action="/todos">
 </form>
 ```
