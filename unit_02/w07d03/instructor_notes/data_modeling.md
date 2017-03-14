@@ -75,6 +75,7 @@ PostgreSQL
 | ISBN          | title                       | author       | format | price |
 |---------------|-----------------------------|--------------|--------|-------|
 | 9780992461225 | JavaScript: Novice to Ninja | Darren Jones | ebook  | 29.00 |
+
 ```
 
 In PostgreSQL, reviews would be a seperate entity with a ```book_id``` column. A review belongs to a book, a book has many reviews.
