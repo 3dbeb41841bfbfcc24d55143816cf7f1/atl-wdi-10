@@ -218,7 +218,7 @@ file.
     };
 ```
 
-    Now our `module.exports` will have a property of `seededTodos` which is an Array of todo objects.
+Now our `module.exports` will have a property of `seededTodos` which is an Array of todo objects.
 
 1. In `controllers/todos.js`, instantiate a variable to grant access to module we've created:
 
