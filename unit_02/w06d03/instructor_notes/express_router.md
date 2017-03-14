@@ -73,9 +73,9 @@ app.get('/todos/:id/edit', function(req, res){
 });
 ```
 
-These routes are all related to todos.  Let's put them in a separate "controller" file and directory.  To do this, let's create a "controllers" directory and create a file called todos.controller.js.  This will be our todos controller file.
+These routes are all related to todos.  Let's put them in a separate "controller" file and directory.  To do this, let's create a "controllers" directory and create a file called todos_controller.js.  This will be our todos controller file.
 
-Now move the routes pertaining to todos into that todos.js file.
+Now move the routes pertaining to todos into that todos_controller.js file.
 
 ```javascript
 app.get('/todos', function(req, res){
@@ -91,7 +91,7 @@ app.get('/todos/:id/edit', function(req, res){
 });
 ```
 
-Require express at the top of that todos.js file
+Require express at the top of that todos_controller.js file
 
 ```javascript
 var express = require('express');
@@ -128,7 +128,7 @@ module.exports = router;
 Now in your `server.js`, require the controller file we created.  **Be sure to include ./ at the beginning of the path to the controller, so node knows that this is not an NPM package.**
 
 ```javascript
-var todosController = require('./controllers/todos.js');
+var todosController = require('./controllers/todos_controller.js');
 ```
 
 Use the controller for all routes that start with `/todos`
