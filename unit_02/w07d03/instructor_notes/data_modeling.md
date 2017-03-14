@@ -7,13 +7,18 @@ creator:
     class: WDIr-matey
 ---
 
-### Lesson Objectives
+<!-- ### Lesson Objectives
 
 - Describe what a database is
 - Model one-to-few embedded documents
 - Describe the ACID Properties
 - Construct collections/documents based on application behavior
-- Diagnose the pitfalls of embedded documents
+- Diagnose the pitfalls of embedded documents -->
+
+## Lesson Objectives
+- Describe what a database is
+- Describe the ACID Properties
+- Draw our first ERD (Entity Relationship Diagram)
 
 
 ## What are Databases? - Intro (20 mins)
@@ -51,7 +56,6 @@ How do you feel about your understanding of data modeling after doing the Survey
 
 Choose any app (Netflix, Instagram, etc.) and model the database with your partner on the board around the classroom.
 
-
 ## ACID
 
 ACID defines a set of rules for database transactions. These rules are built-in to our database technologies, so we don't need to worry too much about actively employing them ourselves. But knowing what they are helps provide a solid grounding for a what a database does.
@@ -62,13 +66,13 @@ A - Atomicity
 * All or nothing, if one part fails, the entire transaction fails
 
 C - Consistency
-* Any valid transaction can only result in creating an equally valid state as defined by the various rules built by the programmer, constraints, cascades etc.
+* Any valid transaction can only result in creating an equally valid state as defined by the various rules built by the programmer, constraints, cascades, etc. Transactions need to follow the rules inherent in the database and the programmer that built it.
 
 I - Isolation
 * Concurrent transactions will not result invalid data. Transaction results look as though Concurrent transactions were run serially (one after another).
 
 D - Durability
-* Once a change has been made, nothing but another transaction will change it.
+* The durability property ensures that once a transaction has been committed, it will remain so, even in the event of power loss, crashes, or errors. Once a change has been made, nothing but another transaction will change it.
 
 Mongo bends these standards a little for the sake of speed, availability and scaling.
 
