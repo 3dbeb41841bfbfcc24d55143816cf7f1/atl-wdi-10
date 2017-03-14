@@ -905,7 +905,7 @@ The `req` argument is an object that contains information about the incoming HTT
 
 the `res` argument is another object that contains information about the response we want to send to the server.
 
-We initially started with using res.send to just send text to the browser, when using ejs however, we can use res.render to render an html/ejs file.
+We initially started with using res.send to just send text to the browser, when using hbs however, we can use res.render to render an html/hbs file.
 
 We can also use res.redirect to trigger another route before sending a response back to the browser
 
