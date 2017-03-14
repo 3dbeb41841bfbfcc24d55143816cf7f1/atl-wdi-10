@@ -27,18 +27,27 @@ You will create a new router for each route defined in _Step 2_
 #### Step 2
 
 *A math router*
-6. A route `/math/:operator` that expects `num1` and `num2` as query parameters. The route will add, subtract, multiply or divide the two numbers. The result is rendered to `math.hbs` (you've done this already!)
+8. A route `/math/:operator` that expects `num1` and `num2` as query parameters. The
+route will add, subtract, multiply or divide the two numbers. The result is rendered
+to `math.hbs` (you've done this already!)
 
 *A greeting router*
-7. A route `/greeting/:name` that expects `greeting` as a query parameter. The route will construct a custom greeting based on the parameters and render the resulting string to `greeting.hbs`
+9. A route `/greeting/:name` that expects `greeting` as a query parameter. The
+route will construct a custom greeting based on the parameters and render the
+resulting string to `greeting.hbs`
 
 *A reverse router*
-8. A route `/reverse` that expects `word` as a query parameter. The route will reverse the worse and render the resulting string to `reversed.hbs`
+10. A route `/reverse` that expects `word` as a query parameter. The route will
+reverse the worse and render the resulting string to `reversed.hbs`
 
 *This route will go in the math router made in #6*
-9. A route that shows all the numbers in a given range
+11. A route that shows all the numbers in a given range
 
-*10 and 11 will be in the same router, you can use whatever naming convention you think makes sense*=
-10. A route that renders todays date (not hardcoded)
+*10 and 11 will be in the same router, you can use whatever naming convention
+you think makes sense.*
 
-11. A route that renders the date a specific number of days before or after todays date. (What's the date 5 days from now, 4 days ago) *hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date*
+12. A route that renders todays date (not hardcoded)
+
+13. A route that renders the date a specific number of days before or after
+todays date. (What's the date 5 days from now, 4 days ago)
+*hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date*
