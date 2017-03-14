@@ -20,7 +20,8 @@ Use the lessons and examples from this week for guidance. Here are some suggeste
 
 1. Create a new Express App
 
-```bash $ mkdir recipes_app
+```bash
+$ mkdir recipes_app
 $ cd recipes_app
 $ npm init
 $ npm install --save express
