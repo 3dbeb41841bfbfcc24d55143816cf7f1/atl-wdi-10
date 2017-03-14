@@ -233,10 +233,10 @@ var data = require('../data.js');
        todos: data.seededTodos
     });
 ```
-    > This is essentially like calling `module.exports.data`
+> This is essentially like calling `module.exports.data`
 
 
-    > Refresh the page and you can see that nothing changed in our browser, really we just moved the functionality into a different file.
+> Refresh the page and you can see that nothing changed in our browser, really we just moved the functionality into a different file.
 
 <details>
 
