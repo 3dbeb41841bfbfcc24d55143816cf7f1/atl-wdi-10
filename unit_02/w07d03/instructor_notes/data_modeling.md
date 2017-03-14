@@ -40,6 +40,41 @@ Flexibility
 
 Flexibility, however, is a double-edged sword; more flexibility means more choices to face when deciding how to model data.
 
+Speed
+
+Data is in a document when you need it instead of "joining" other tables.
+
+## The SQL vs NoSQL Holy War
+
+NoSQL is more flexible, while SQL is more structured in it's approach to creating a database.  SQL databases are focused on relationships between different entity tables, while a NoSQL database gives you speed and availability by allowing you to store data in any document on the fly.
+
+Let's look at a ```book``` entity:
+
+MongoDB
+
+```{
+  ISBN: 9780992461225,
+  title: "JavaScript: Novice to Ninja",
+  author: "Darren Jones",
+  year: 2014,
+  format: "ebook",
+  price: 29.00,
+  description: "Learn JavaScript from scratch!",
+  rating: "5/5",
+  review: [
+    { name: "A Reader", text: "The best JavaScript book I've ever read." },
+    { name: "JS Expert", text: "Recommended to novice and expert developers alike." }
+  ]
+}```
+
+PostgreSQL
+
+| ISBN          | title                       | author       | format | price |
+|---------------|-----------------------------|--------------|--------|-------|
+| 9780992461225 | JavaScript: Novice to Ninja | Darren Jones | ebook  | 29.00 |
+
+In PostgreSQL, reviews would be a seperate entity with a ```book_id``` column. A review belongs to a book, a book has many reviews.
+
 You will likely encounter many a developer who puts down Mongo. When we start learning SQL and relational databases toward the end of the program we can talk more about why and more about the pitfalls of flexibility.
 
 ## Let's Draw on The Board - We Do (20 mins)
