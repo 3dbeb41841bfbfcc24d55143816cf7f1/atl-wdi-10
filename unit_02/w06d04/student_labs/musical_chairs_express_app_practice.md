@@ -53,7 +53,7 @@ $ touch server.js
         }
       ]
     };
-```
+    ```
 
 1. Add the appropriate code in the `server.js` to `require()` the `module.exports` from the `recipes.js` file.
 
