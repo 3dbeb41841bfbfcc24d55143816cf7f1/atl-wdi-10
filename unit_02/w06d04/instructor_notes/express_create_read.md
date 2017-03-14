@@ -204,7 +204,7 @@ file.
 
 1. For example, let's remove the `seededTodos` data from `controllers/todos.js` to our `data.js` file by adding it as a property to `module.exports` like so:
 
-    ```js
+```javascript
     module.exports = {
      seededTodos: [
         {
@@ -222,13 +222,13 @@ file.
 
 1. In `controllers/todos.js`, instantiate a variable to grant access to module we've created:
 
-    ```js
+```javascript
 var data = require('../data.js');
 ```
 
 1. Now, our variable `data` is our `module.exports` object. We can access our `seededTodos` via our `controllers/todos.js` file like so:
 
-    ```js
+```javascript
     res.render('todos/index.hbs', {
        todos: data.seededTodos
     });
