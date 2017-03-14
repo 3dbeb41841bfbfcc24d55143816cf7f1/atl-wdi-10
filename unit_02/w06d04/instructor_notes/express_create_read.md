@@ -220,13 +220,13 @@ file.
 
 Now our `module.exports` will have a property of `seededTodos` which is an Array of todo objects.
 
-1. In `controllers/todos.js`, instantiate a variable to grant access to module we've created:
+2. In `controllers/todos.js`, instantiate a variable to grant access to module we've created:
 
 ```javascript
 var data = require('../data.js');
 ```
 
-1. Now, our variable `data` is our `module.exports` object. We can access our `seededTodos` via our `controllers/todos.js` file like so:
+3. Now, our variable `data` is our `module.exports` object. We can access our `seededTodos` via our `controllers/todos.js` file like so:
 
 ```javascript
     res.render('todos/index.hbs', {
