@@ -42,10 +42,11 @@ clock(500, 34)  //returns "out of range"
 clock(-6, 00)   //returns "out of range"
 ```
 
-### Testing Your Work
+<!-- ### Testing Your Work
 
 A set of automated tests, written in the [Mocha.js](https://mochajs.org/)
 testing framework, has been provided for you with this assignment.
 To run these tests, type `npm test` into the console from the root directory
 of this repo. Test your work regularly, and read the feedback from the tests
 carefully -- it may give you a clue about what to do next.
+ -->
