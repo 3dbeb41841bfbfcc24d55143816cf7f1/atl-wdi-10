@@ -793,8 +793,7 @@ Why do we need to redirect after a `.post` action?
 
 2. Add a nav bar to your layout view with links to your INDEX (`/todos`) and NEW(`/todos/new`) routes. For example:
 
-
-       ![](https://i.imgur.com/32xDLQF.png)
+![](https://i.imgur.com/32xDLQF.png)
 
 3. Make each todo on the INDEX page clickable (hint: use anchor tags) so that each individual todo, when clicked, will link to it's correct show page (like the image above).
 
