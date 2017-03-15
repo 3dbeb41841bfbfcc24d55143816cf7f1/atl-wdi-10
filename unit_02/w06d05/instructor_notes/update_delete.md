@@ -17,9 +17,7 @@ creator:
 5. Create an update route
 6. Make the edit page send a PUT request
 
-## Delete
-
-### Recap
+## Recap
 
 CRUD
 
@@ -43,7 +41,7 @@ Acronyms galore. But let's quickly revisit what these are, and how we have appli
 
 ### Create a Delete Route
 
-Inside of our `controllers/todos.js` file, add a DELETE route:
+Inside of our `controllers/todos_controller.js` file, add a DELETE route:
 
 ```javascript
 router.delete('/:id', function(req, res) {
@@ -55,7 +53,7 @@ router.delete('/:id', function(req, res) {
 
 ### Make the index page send a DELETE request
 
-In of our `controllers/todos.js` file, make sure that your index route looks something like this:
+In our `controllers/todos_controller.js` file, make sure that your index route looks something like this:
 
 ```javascript
 router.get('/', function(req,res) {
@@ -117,7 +115,7 @@ Several reasons:
 
 1. When HTML and HTTP were first specked out there wasn't a real user story around Updating and Deleting, or even Posting content. Updates and deletions were made by the authors of the content, not by external users. Initially, HTTP was simply a GET method.
 
-2. As the internet developed into something closer to what we understand it to be now now, HTTP added PUT and DELETE methods in 1997 (HTTP/1.1). HTML wasn't updated to handle them, so developers created work arounds to allow web users to still make PUT and DELETE requests using POST as the thoroughfare.
+2. As the internet developed into something closer to what we understand it to be now now, HTTP added PUT and DELETE methods in 1997 (HTTP/1.1). HTML was not updated to handle them, so developers created work arounds to allow web users to still make PUT and DELETE requests using POST as the thoroughfare.
 
 3. These workarounds are now so ubiquitous (often included by default in frameworks) that providing a solution in HTML has become redundant.
 
@@ -144,22 +142,18 @@ router.get('/:id/edit', function(req, res){
       id: req.params.id
     }
   });
-
 });
 ```
 
 Now create a very basic form for editing in the `views/edit.hbs`.
 
 ```html
-
 <h1>Edit</h1>
- <form>
+<form>
   <input type="text" name="description" value="{{todo.description}}" />
   <input type="text" name="urgent" value="{{todo.urgent}}" />
   <input type="submit" value="Submit Changes"/>
 </form>
-
-
 ```
 
 ### Create a Link to the Edit Route
@@ -173,10 +167,10 @@ Inside our `index.hbs` file, add a link to our edit route that passes in the ind
     <li>Description: {{description}}</li>
     <li>Urgent: {{urgent}}</li>
     <br>
+    <div><a href="/todos/{{@index}}/edit">Edit</a></div>
     <form action="/todos/{{@index}}">
       <input type="submit" value="DELETE"/>
     </form>
-    <div><a href="/todos/{{@index}}/edit">Edit</a></div>
     <hr>
   {{/each}}
 </ul>
@@ -226,8 +220,10 @@ The problem is that forms can't make PUT requests.  Only POST and GET requests. 
 Now go back and set up our edit form to send a PUT request.
 
 ```html
-<form action="/todos/{{@index}}?_method=PUT" method="POST">
+<form action="/todos/{{todo.id}}?_method=PUT" method="POST">
 ```
+
+<br />
 
 ## Independent/Group Exercise (1hr)
 
