@@ -533,7 +533,7 @@ Finish fleshing out your form with the code above.
 
 #### Server Side
 
-Some of the the `controllers/todos.js` (specifically an INDEX route to show all of our todos, which we're storing in an array and our server/express configuration) is already written for you in the `starter-code`, we should walk through it to reiterate how it works.
+Some of the `controllers/todos.js` (specifically an INDEX route to show all of our todos, which we're storing in an array and our server/express configuration) is already written for you in the `starter-code`, we should walk through it to reiterate how it works.
 
 ```javascript
 // controllers/todos.js
