@@ -21,7 +21,7 @@ creator:
 
 CRUD
 
-REST
+HTTP
 
 MVC
 
