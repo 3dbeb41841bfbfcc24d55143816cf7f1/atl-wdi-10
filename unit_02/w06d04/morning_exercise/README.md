@@ -35,9 +35,9 @@ Expected output examples:
 ```
 clock(6, 00)    //returns [180, 180]
 clock(12, 00)   //returns [360, 0]
-clock(12, 15)   //returns [ 7.5, 90 ]
-clock(9, 45)    //returns [ 292.5, 270 ]
-clock(1, 59)    //returns [ 59.5, 354 ]
+clock(12, 15)   //returns [82.5, 277.5]
+clock(9, 45)    //returns [22.5, 337.5]
+clock(1, 59)    //returns [294.5, 65.5]
 clock(500, 34)  //returns "out of range"
 clock(-6, 00)   //returns "out of range"
 ```
