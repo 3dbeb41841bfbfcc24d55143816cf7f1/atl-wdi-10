@@ -135,7 +135,7 @@ In our `controllers/todos.js`, create a GET route that will display an edit form
 
 ```javascript
 router.get('/:id/edit', function(req, res){
-  res.render('/todos/edit', {
+  res.render('todos/edit', {
     todo: {
       description: data.seededTodos[req.params.id].description,
       urgent: data.seededTodos[req.params.id].urgent,
@@ -181,7 +181,7 @@ Inside our `index.hbs` file, add a link to our edit route that passes in the ind
 
 In order to UPDATE an item, we use the HTTP verb **PUT**.
 
-Inside the `server.js` add the following:
+Inside the `todos_controller.js` add the following:
 
 ```javascript
 router.put('/:id', function(req, res) {
