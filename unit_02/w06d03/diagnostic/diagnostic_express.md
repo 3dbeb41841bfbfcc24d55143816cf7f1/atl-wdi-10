@@ -1,4 +1,4 @@
-#Diagnostic Unit 2.1
+# Diagnostic Unit 2.1
 
 ### Question 1: What is the Request/Response Cycle?  How does it work?
 
