@@ -18,5 +18,11 @@
 
 ### Question 9: In the following express route, write how you would grab the values of `:id` and `:song_id` in javascript.
 
+```
+app.get("/artist/:id/song/:song_id"), function(req, res){
+  //hmm...
+}
+```
+
 ### Question 10: What is MVC? How have we been using it so far?
 
