@@ -12,6 +12,13 @@
 
 ### Question 6: If the following form was submitted, what would `action="myScript.js"` do?
 
+```
+<form method="POST" action="myScript.js?_method=PUT">
+  <input type="text" value="name"/>
+  <button type="submit">Submit</button>
+</form>
+```
+
 ### Question 7: Write an express route that handles a POST request to the url `/menus` and redirects to `/homepage`
 
 ### Question 8: Write an express route that handles a GET request to the url `/products` and sends back the JSON object {error: "Bad Request"}
