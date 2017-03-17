@@ -33,4 +33,3 @@ app.get("/artist/:id/song/:song_id"), function(req, res){
 
 ### Question 10: What is MVC? How have we been using it so far?
 
-![image](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/200px-MVC-Process.svg.png)
