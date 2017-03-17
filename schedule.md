@@ -1077,7 +1077,7 @@
     </td>
     <td>
       <!-- https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/diagnostic_solution/diagnostic_solution_express.md -->
-      Diagnostic
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/diagnostic/diagnostic_express.md">Diagnostic</a>
     </td>
   </tr>
   <tr>
