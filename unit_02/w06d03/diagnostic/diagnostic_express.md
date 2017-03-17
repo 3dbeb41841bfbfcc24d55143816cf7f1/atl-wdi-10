@@ -6,7 +6,7 @@
 
 ### Question 3: What does `npm init` do?
 
-### Question 4: What does CRUD stand for?  What are the HTTP verbs that are associated with each functions?
+### Question 4: What does CRUD stand for?  What are the HTTP verbs that are associated with each function?
 
 ### Question 5: If we have a form where we want to create new data, what type of `method` do we use in our form?  
 
