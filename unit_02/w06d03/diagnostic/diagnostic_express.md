@@ -21,9 +21,7 @@
 
 ### Question 7: Write an express route that handles a POST request to the url `/menus` and redirects to the `/homepage`
 
-### Question 8: Write an express route that handles a GET request to the url `/products` and sends back the JSON object {error: "Bad Request"}
-
-### Question 9: In the following express route, write how you would grab the values of `:id` and `:song_id` in javascript.
+### Question 8: In the following express route, write how you would grab the values of `:id` and `:song_id` in javascript.
 
 ```
 app.get("/artist/:id/song/:song_id"), function(req, res){
@@ -31,5 +29,9 @@ app.get("/artist/:id/song/:song_id"), function(req, res){
 }
 ```
 
-### Question 10: What is MVC? How have we been using it so far?
+### Question 9: What is MVC? How have we been using it so far?
+
+## Bonus Question
+
+### Question 10: Write an express route that handles a GET request to the url `/products` and sends back the JSON object {error: "Bad Request"}
 
