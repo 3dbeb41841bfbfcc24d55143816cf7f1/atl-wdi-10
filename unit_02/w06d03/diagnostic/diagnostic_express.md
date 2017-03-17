@@ -1,6 +1,6 @@
 #Diagnostic Unit 2.1
 
-### Question 1: Request Response Cycle
+### Question 1: What is the Request/Response Cycle?  How does it work?
 
 ### Question 2: What are the differences between a GET request and a POST request?
 
