@@ -19,7 +19,7 @@
 </form>
 ```
 
-### Question 7: Write an express route that handles a POST request to the url `/menus` and redirects to `/homepage`
+### Question 7: Write an express route that handles a POST request to the url `/menus` and redirects to the `/homepage`
 
 ### Question 8: Write an express route that handles a GET request to the url `/products` and sends back the JSON object {error: "Bad Request"}
 
@@ -33,3 +33,4 @@ app.get("/artist/:id/song/:song_id"), function(req, res){
 
 ### Question 10: What is MVC? How have we been using it so far?
 
+![image](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/200px-MVC-Process.svg.png)
