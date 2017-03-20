@@ -42,8 +42,9 @@ You can use your own code from yesterday if it's more or less complete.
 
   1. $`npm install`
   2. start nodemon and mongod. Make sure there are no errors
-  3. open the app in atom
-  4. open up localhost:4000
+  3. node db/seeds.js
+  4. open the app in atom
+  5. open up localhost:4000
 
 
 ## Views!
@@ -54,8 +55,6 @@ You can use your own code from yesterday if it's more or less complete.
   3. install and configure `morgan`
 
   Refer to https://github.com/ga-students/todo_crud_app or your notes for help.
-
-  Question: Why did we not need hbs yesterday? Why did we not need method-override?
 
 #### Build views for student routes!
 
@@ -72,30 +71,27 @@ You can use your own code from yesterday if it's more or less complete.
     - The show page should render:
       - first_name
       - last_name
-      - email
       - when they signed up
-      - the number of projects
+      - the number of items
 
   4. touch `views/users/edit.hbs`
 
     - Each student should have an edit button on the `show` page that renders a form which makes a put/patch request to the backend
 
-    Question: What's another way to render an edit form when the button is clicked apart from rendering and edit view?
-
   5. destroy
     - No view necessary, but a button would be nice, on each show page
 
-#### Build a views for items(projects)!
+#### Build a views for items!
 *Building from the student show page*
 
   1. touch `views/items/index.hbs`
-    - On the student show page, add a button to see students projects
+    - On the student show page, add a button to see students items
 
-    - The button should render all of the students projects in an `index` view
+    - The button should render all of the students items in an `index` view
 
     <!-- b. Each project should be clickable and direct the user to a project show page. [HINT] The project \_id should be imbedded in the DOM in order to populate the url -->
 
-  2. On the item `index` page add a button next to each item(project) that deletes that item.
+  2. On the item `index` page add a button next to each item that deletes that item.
 
 ## _Whew!_ Done!
 
