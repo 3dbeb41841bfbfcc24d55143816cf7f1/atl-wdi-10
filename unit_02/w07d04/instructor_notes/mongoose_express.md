@@ -466,11 +466,9 @@ Try them out in the `node` terminal, if you have time.
 
 <br />
 
-## What are embedded documents? Codealong (20 mins)
+## What are Embedded Documents? Codealong (20 mins)
 
-> Note: Go slowly through this section as we anticipate students having trouble
-
-Embedded documents are just what they sound like: documents with their own schemas nested in other documents. They take the form of objects within an array.  You can think of this as a sort of `has_many` relationship - the context to use embedded documents is data entities that need to be used/viewed in the context of another.
+**Embedded documents** are just what they sound like: documents with their own schemas nested in other documents. They take the form of objects within an array.  You can think of this as a sort of `has_many` relationship - the context to use embedded documents is data entities that need to be used/viewed in the context of another.
 
 The nested schemas are equipped with all the same features as your models: defaults, validators, middleware, and even error handling, as they are tied to the save() error callback. Mongoose can work with embedded documents by default.
 
@@ -489,6 +487,7 @@ var parent = new Parent({ children: [{ name: 'Matt' }, { name: 'Sarah' }] })
 parent.children[0].name = 'Matthew';
 parent.save(function(err) {
   if (err) console.log(err);
+  
   console.log('New Parent!');
 });
 ```
@@ -543,7 +542,9 @@ The address documents make two references to the Joe Bookreader object, so inste
 
 Note that sub-documents do not save individually, only with the highest-level document.  In this case, the addresses are saved with the Joe Bookreader Patron document.
 
-### Finding a sub-document
+<br />
+
+### Finding a Sub-Document
 
 All documents in Mongoose have an  `_id`.  Look above at our Patron example.  Joe Bookreader has an `_id` of 'joe'. DocumentArrays have a special `id` method for looking up a document by its _id.
 
@@ -555,9 +556,11 @@ var doc = parent.children.id(id_you_are_looking_for);
 var doc = patron.addresses.id(id_you_are_looking_for)
 ```
 
-### Adding and Removing sub-docs
+<br />
 
-Remember JavaScript's array methods like `pop` or `push`?  We'll, Mongoose comes with MongooseArray methods like as `push`, `unshift`, `addToSet`, and others.  And just like we can add them, we can also remove them with `remove()`.
+### Adding and Removing Sub-Docs
+
+Remember JavaScript's array methods like `pop` or `push`?  We'll, Mongoose comes with MongooseArray methods like as `push`, `unshift`, `addToSet`, and others.  And because we can add them, we can also remove them with `remove()`.
 
 Using code from the official docs, we can see how these are used:
 
@@ -591,7 +594,7 @@ parent.save(function (err) {
 Sub-docs may also be created without adding them to an array by using the **create** method from MongooseArrays.
 
 ```javascript
-var newdoc = parent.children.create({ name: 'Aaron' });
+var newdoc = parent.children.create({ name: 'Gus' });
 ```
 
 </details>
