@@ -97,21 +97,25 @@ You can use your own code from yesterday if it's more or less complete.
 
 On your own create a third resource, `project_idea`.
 
-1. Add the schema to the `db`
+1. Add the `ProjectIdeaSchema` schema to the `db`
   - description, string
   - in_progress, boolean
   - created_at/updated_at
-2. Create a new controller in controllers called `project_ideas` the route will be `/users/:id/project-ideas`
+  - Make sure you are exporting the `ProjectIdeaSchema` from the schema.js
+2. Create a new model called `project_idea.js`
+3. Add `project_ideas` to each User object in your seed file.  Make sure to reseed your database.
+
+3. Create a new controller in controllers called `project_ideas` the route will be `/users/:userId/project-ideas`
 
 When you load it in the `server.js` you'll match that pattern above
 
-3. Create a `project_ideas` directory in views
+4. Create a `project_ideas` directory in views
 
-4. triple check your configuration
+5. triple check your configuration
   - do your routes work<br>
   - is the model/schema correctly synced in `db`, `models`, and in the controller file
 
-5. start building full CRUD w/ views!
+6. start building full CRUD w/ views!
   - create new project ideas<br>
   - show them all on an index page specific to user<br>
   - edit project ideas<br>
