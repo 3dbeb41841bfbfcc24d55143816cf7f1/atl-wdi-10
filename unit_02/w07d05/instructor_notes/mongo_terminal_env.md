@@ -159,15 +159,11 @@ Update is similar to insert, find, and remove, but it takes two parameters.  The
 Insert a new teacher, name: "Mystery teacher" and gender: "??"
 
 ```
-db.teachers.update(
-	{name:'Mystery teacher'},
-	{
-		$set: {
-			gender:'female',
-			age: 25
-		}
-	}
-)
+db.teachers.insert({name:'Mystery Teacher', gender:'?'} )
+```
+
+```
+db.teachers.update( {name:'Mystery Teacher'}, { $set: { gender:'female', age: 25 } } )
 ```
 
 `$set` is **critical**.  If you forget it, you will overwrite the data in your objects.
@@ -186,18 +182,7 @@ Update will update only one document by default.  To update many, pass in a thir
 Insert a new teacher object with a name of `Mystery teacher`
 
 ```
-db.teachers.update(
-	{name:'Mystery teacher'},
-	{
-		$set: {
-			gender:'female',
-			age: 35
-		}
-	},
-	{
-		multi: true
-	}
-)
+db.teachers.update({name:'Mystery teacher'}, { $set: {gender:'female', age: 35} }, { multi: true })
 ```
 
 &#x1F535; **CFU**
