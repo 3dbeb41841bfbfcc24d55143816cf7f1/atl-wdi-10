@@ -45,7 +45,9 @@ Lets take a look of what a MongoDB _document_ may look like:
     views: 1250000
 }
 ```
+&#x1F535; **CFU**
 
+- Give me an example of why it would be helpful for a company to have separate databases?
 
 ## List your sub databases
 
@@ -87,6 +89,10 @@ To show a collection, use:
 ```
 show collections
 ```
+
+&#x1F535; **CFU**
+
+- When we compared SQL and NoSQL databases the other day, we talked about SQL tables and how they relate to each other, and drew ERD’s.  How are collections similar to tables?
 
 ## Insert a document into a collection
 
@@ -144,6 +150,11 @@ To find all the documents in our collection that have a gender property set to '
 db.teachers.find({gender:'m'}).pretty()
 ```
 
+&#x1F535; **CFU**
+
+- If we have a view and we want to show a list of only women teachers, how would we use ‘.find()’ to grab those records from the database?
+
+
 ## Remove a set of documents from a collection
 
 Remove a document, just like you would find it
@@ -199,6 +210,11 @@ db.teachers.update(
 	}
 )
 ```
+
+&#x1F535; **CFU**
+
+0 || 1 || 2
+
 
 ## Drop a Collection or an entire sub database
 
