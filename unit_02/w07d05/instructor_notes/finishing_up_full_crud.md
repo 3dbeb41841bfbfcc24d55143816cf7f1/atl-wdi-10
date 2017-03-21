@@ -16,8 +16,6 @@ creator:
 
 
 ## Mongoose Calls with promises
-#### [mongoose promise docs](http://mongoosejs.com/docs/promises.html)
-#### [switching out cbs with promises in mongoose](http://eddywashere.com/blog/switching-out-callbacks-with-promises-in-mongoose/)
 
 Read the documentation link (5m) if you finish, start in on the other one.
     
