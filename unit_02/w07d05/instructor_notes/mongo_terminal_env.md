@@ -108,18 +108,7 @@ db.teachers.insert({
 We can also insert an array of objects (Bulk insert)
 
 ```
-db.teachers.insert(
-	[
-		{
-			name:'Danny',
-			gender:'m'		
-		},
-		{
-			name:'Maren',
-			gender:'f'		
-		}
-	]
-)
+db.teachers.insert([{name:'Danny', gender:'m'}, {name:'Maren', gender:'f'}])		
 ```
 
 If things get tough to read, we can break our command out onto multiple lines
