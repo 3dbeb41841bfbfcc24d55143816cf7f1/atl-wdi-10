@@ -17,7 +17,7 @@ creator:
 
 ## Mongoose Calls with promises
 
-Read the documentation link (5m) if you finish, start in on the other one.
+
     
     // INDEX
     router.get('/', function(req, res){
