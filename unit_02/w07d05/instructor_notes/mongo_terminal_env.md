@@ -100,7 +100,7 @@ Now we're ready to start inserting JS objects into our collection.
 
 ```
 db.teachers.insert({
-	name:'Colin',
+	name:'Josh',
 	gender:'m'
 })
 ```
@@ -111,11 +111,11 @@ We can also insert an array of objects (Bulk insert)
 db.teachers.insert(
 	[
 		{
-			name:'Thom',
+			name:'Danny',
 			gender:'m'		
 		},
 		{
-			name:'Christine',
+			name:'Maren',
 			gender:'f'		
 		}
 	]
