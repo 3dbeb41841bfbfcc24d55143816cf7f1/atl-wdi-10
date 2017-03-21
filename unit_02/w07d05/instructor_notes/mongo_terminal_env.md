@@ -23,6 +23,11 @@ creator:
 
 MongoDB is a database that holds javascript objects.  The database itself is just an application that runs quietly in the background and waits for connections (just like a web server).  You can connect to it in the same way that you would connect to a website, but instead of viewing a page, you can save, retrieve, update, and delete javascript objects to/from/in the database.
 
+## Diagram the structure of Mongo
+
+The Mongo database application itself contains several imaginary "sub-databases" (not sure if that's an industry term or not).  Each sub-database can be assigned to a specific application.  Imagine you're Google, and you have lots of different applications.  You don't want the data for your mail application data mixed in with your maps application data.  These sub-databases allow you to keep information structured in a way that is logical.
+
+
 ![](https://i.imgur.com/ZAQOhhY.png)
 
 - A MongoDB database consists of _collections_ of _documents_.
@@ -41,11 +46,6 @@ Lets take a look of what a MongoDB _document_ may look like:
 }
 ```
 
-
-
-## Diagram the structure of Mongo
-
-The Mongo database application itself contains several imaginary "sub-databases" (not sure if that's an industry term or not).  Each sub-database can be assigned to a specific application.  Imagine you're Google, and you have lots of different applications.  You don't want the data for your mail application data mixed in with your maps application data.  These sub-databases allow you to keep information structured in a way that is logical.
 
 ## List your sub databases
 
