@@ -10,7 +10,6 @@ creator:
 ## Lesson Objectives
 
   - Review structure of mongoose calls
-  - Walk through mongoose docs
   - connect views to our controllers
   - build a third resource into the application w/ views
 
