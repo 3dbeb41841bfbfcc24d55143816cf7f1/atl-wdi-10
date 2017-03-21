@@ -174,8 +174,9 @@ Let's test this:
 
 Look at the document holding Mystery teacher's info that we just updated. It should have gender and age now. Let's run the same update without `$set` find that document again and compare the data in the two versions, but also compare the `_id`'s. Notice that they're the same.
 
-
-We can also $unset
+```
+db.teachers.update( {name:'Mystery Teacher'}, {  gender:'female', age: 25  } )
+```
 
 Update will update only one document by default.  To update many, pass in a third `{ multi:true }` param
 
