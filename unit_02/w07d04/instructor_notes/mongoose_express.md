@@ -77,7 +77,7 @@ In this example, we are connecting to a local database named `express-mongoose-l
 ## Working with Models - Codealong (20 mins)
 
 
-#### Defining a Model
+### Defining a Model
 
 You can define methods to help automatically populate the key(s) of your model. For example, if we wanted to automatically add `updated_at` and `created_at` fields to our users:
 
@@ -95,7 +95,7 @@ UserSchema.pre('save', function(next) {
 ```
 <br />
 
-#### Adding Mongoose Validations
+### Adding Mongoose Validations
 
 <details>
 <summary>When might we want to use validations on our data?</summary>
@@ -108,6 +108,8 @@ UserSchema.pre('save', function(next) {
 - Confirm that a password has a minimum number of digits or includes certain characters.
 
 </details>
+
+<br />
 
 ```js
 // in the db/schema.js
@@ -128,7 +130,7 @@ Check out this morning's Mongoose Intro lesson (near the bottom) for more custom
 
 ## Interacting with MongoDB's CRUD - Demo (15 mins)
 
-#### Seed your database
+### Seed your database
 
 From your Terminal prompt tab, run `$ node db/seeds.js` to seed your database. This will add 3 users to your `express-mongoose-lesson-starter` database.
 
@@ -140,7 +142,7 @@ From your Terminal prompt tab, run `$ node db/seeds.js` to seed your database. T
 
 <br />
 
-#### Users Index
+### Users Index
 
 For the most part, we are repeating what we did in our intro to mongoose app. However, now we are using the Express Router. Inside `usersController.js` let's add:
 
@@ -172,7 +174,7 @@ Test it out in your browser. **NOTE - this app runs on localhost port `:4000` in
 
 <br />
 
-#### Users Show
+### Users Show
 
 ```javascript
 // USER SHOW ROUTE
@@ -225,7 +227,7 @@ Postman is a simple app that allows us to make HTTP requests. We will also use i
 
 ## Back to CRUD
 
-#### Create
+### Create
 ```javascript
 // USER CREATE ROUTE
 router.post('/', function(req, res) {
@@ -263,7 +265,7 @@ We will test out sending form data using Postman.
 
 <br />
 
-#### Update
+### Update
 
 To update, you can write it in one of two ways (both are super easy!) - use the helper methods: `.findByIdAndUpdate()` or `.findOneAndUpdate()`:
 
@@ -309,7 +311,7 @@ We will test out sending form data using Postman.
 
 <br />
 
-#### Destroy
+### Destroy
 
 Mongoose gives you two easy helper methods to delete documents - `findByIdAndRemove()`and `.findOneAndRemove()`.
 
@@ -347,7 +349,7 @@ We will test out sending form data using Postman.
 
 <br />
 
-#### Embed an Item to a User Document
+### Embed an Item to a User Document
 
 ```javascript
 // ADD A NEW ITEM
@@ -385,7 +387,7 @@ We will test out sending form data using Postman.
 
 <br />
 
-#### Remove an Item from a User
+### Remove an Item from a User
 
 ```javascript
 // REMOVE AN ITEM
@@ -402,6 +404,8 @@ router.delete('/:userId/items/:id', function(req, res) {
   });
 });
 ```
+
+More info on [$pull](https://docs.mongodb.com/manual/reference/operator/update/pull/)
 
 We will test out sending form data using Postman.
 
@@ -539,7 +543,7 @@ The address documents make two references to the Joe Bookreader object, so inste
 
 Note that sub-documents do not save individually, only with the highest-level document.  In this case, the addresses are saved with the Joe Bookreader Patron document.
 
-#### Finding a sub-document
+### Finding a sub-document
 
 All documents in Mongoose have an  `_id`.  Look above at our Patron example.  Joe Bookreader has an `_id` of 'joe'. DocumentArrays have a special `id` method for looking up a document by its _id.
 
@@ -551,7 +555,7 @@ var doc = parent.children.id(id_you_are_looking_for);
 var doc = patron.addresses.id(id_you_are_looking_for)
 ```
 
-#### Adding and Removing sub-docs
+### Adding and Removing sub-docs
 
 Remember JavaScript's array methods like `pop` or `push`?  We'll, Mongoose comes with MongooseArray methods like as `push`, `unshift`, `addToSet`, and others.  And just like we can add them, we can also remove them with `remove()`.
 

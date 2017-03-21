@@ -299,7 +299,7 @@ Add the code above to your `db/schema.js` file
 ### Mongoose - Schema - Model Summary
 _Mongoose_ is an _ODM_ - an **O**bject **D**ocument **M**apper - i.e. it maps objects to documents. Therefore, Mongoose gives us the ability to perform the _CRUD_ operations on a _MongoDB_ database using JavaScript objects as our model objects.
 
-> A _model_ object is an object whose primary concern is to hold data, and represent an instance of a Domain Model. For example, if we were developing an application for Delta, we might have Domain Models for Airports, Flights, Passengers, Luggage, etc.  Instances of an Airport Domain Model might be ATL, LAX, JFK, ABQ, etc.
+> A _model_ object is an object whose primary concern is to hold data, and represent an instance of a [Domain Model](https://en.wikipedia.org/wiki/Domain_model). For example, if we were developing an application for Delta, we might have Domain Models for Airports, Flights, Passengers, Luggage, etc.  Instances of an Airport Domain Model might be ATL, LAX, JFK, ABQ, etc.
 
 ![Object Document Mapping](https://i.imgur.com/YhAXdCB.png)
 
