@@ -28,19 +28,19 @@ The video for this work can be found [here](https://www.youtube.com/watch?v=mfXW
 2. Create a new method called `meow` that returns a message of the cat meowing. Be sure to incude the cat's name in the message. Be sure the method is added to the `Cat` prototype. 
 3. Call these methods and make sure they work properly!
 
-# Javascript - Closures
-
-The video for this work can be found [here](https://www.youtube.com/watch?v=qnoS8ZxURtY&list=PLw1xVKFboueks5UMLogE01mdThRU577oa&index=33)
-
-## Conceptual Questions
-
-1. What is a closure?
-2. How might this be an alternative to .bind()? 
-
-## Exercises 
+## More Exercises 
 
 1. Lets re-work our `feedCat` method a bit.  
 2. Inside the `feedCat` function, after setting the hungry value to `false`, trigger a new anonymous function that sets the value of whether the cat is hungry to `true` after 10 seconds. *(hint: be mindful of `this`!, and utilize something we learned in one of our previous homeworks)*
 3. Create an instance of the `Cat` object and pass in the corresponding values. 
 4. Check the value of if the cat is hungry or not.
 5. Call the `feedCat` method and check on the whether the cat is now hungry again. Check again in 10 seconds.
+
+# BONUS! Javascript - Closures
+
+Watch this video(https://www.youtube.com/watch?v=qnoS8ZxURtY&list=PLw1xVKFboueks5UMLogE01mdThRU577oa&index=33)
+
+## Conceptual Questions
+
+1. What is a closure?
+2. How might this be an alternative to .bind()? 
