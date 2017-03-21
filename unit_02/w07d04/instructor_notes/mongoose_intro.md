@@ -264,7 +264,7 @@ var StudentSchema = new Schema({
 
 #### What are Mongoose Models?
 
-**Mongoose Models** will represent documents in our database.
+**[Mongoose Models](http://mongoosejs.com/docs/models.html)** will represent documents in our database.
 
 * They are essentially constructor functions, which will allow us to preform CRUD actions within our MongoDB Database.
 * Models are defined by passing a Schema instance to `mongoose.model`.

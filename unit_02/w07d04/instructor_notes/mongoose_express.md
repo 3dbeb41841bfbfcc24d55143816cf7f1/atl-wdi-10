@@ -468,7 +468,7 @@ Try them out in the `node` terminal, if you have time.
 
 ## What are Embedded Documents? Codealong (20 mins)
 
-**Embedded documents** are just what they sound like: documents with their own schemas nested in other documents. They take the form of objects within an array.  You can think of this as a sort of `has_many` relationship - the context to use embedded documents is data entities that need to be used/viewed in the context of another.
+**[Embedded documents](http://mongoosejs.com/docs/subdocs.html)** are just what they sound like: documents with their own schemas nested in other documents. They take the form of objects within an array.  You can think of this as a sort of `has_many` relationship - the context to use embedded documents is data entities that need to be used/viewed in the context of another.
 
 The nested schemas are equipped with all the same features as your models: defaults, validators, middleware, and even error handling, as they are tied to the save() error callback. Mongoose can work with embedded documents by default.
 
