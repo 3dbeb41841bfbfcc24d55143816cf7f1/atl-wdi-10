@@ -36,17 +36,20 @@ var diesel = new User({
 });
 
 // save the users
-gerry.save(function(err) {
+danny.save(function(err) {
   if (err) console.log(err);
+
   console.log('User created!');
 });
 
-marc.save(function(err) {
+maren.save(function(err) {
   if (err) console.log(err);
+
   console.log('User created!');
 });
 
 diesel.save(function(err) {
   if (err) console.log(err);
+  
   console.log('User created!');
 });
