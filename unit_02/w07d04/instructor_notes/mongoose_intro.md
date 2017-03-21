@@ -161,7 +161,7 @@ kitty.save(function (err) {
 4. Create the following files: `$ touch server.js db/schema.js db/seeds.js`
 
 5. Open the app in sublime: `$ subl .`
-	- make sure that your main is `server.js`, and not `index.js`.
+	- make sure that your entry point is `server.js`, and not `index.js`.
 
 Your folder structure should look like this:
 
@@ -634,7 +634,8 @@ var studentsController = {
       
       console.log(docs);
     });
-  }};
+  }
+};
 
 studentsController.show({name: "becky"});
 ```
