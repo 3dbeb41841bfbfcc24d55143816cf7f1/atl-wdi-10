@@ -23,6 +23,25 @@ creator:
 
 MongoDB is a database that holds javascript objects.  The database itself is just an application that runs quietly in the background and waits for connections (just like a web server).  You can connect to it in the same way that you would connect to a website, but instead of viewing a page, you can save, retrieve, update, and delete javascript objects to/from/in the database.
 
+![](https://i.imgur.com/ZAQOhhY.png)
+
+- A MongoDB database consists of _collections_ of _documents_.
+- A _document_ in MongoDB is composed of _field_ (key) and _value_ pairs.
+
+Lets take a look of what a MongoDB _document_ may look like:
+
+```js
+{
+    _id: ObjectId("5099803df3f4948bd2f98391"),
+    name: { first: "Alan", last: "Turing" },
+    birth: new Date('Jun 23, 1912'),
+    death: new Date('Jun 07, 1954'),
+    contribs: [ "Turing machine", "Turing test", "Turingery" ],
+    views: 1250000
+}
+```
+
+
 
 ## Diagram the structure of Mongo
 
