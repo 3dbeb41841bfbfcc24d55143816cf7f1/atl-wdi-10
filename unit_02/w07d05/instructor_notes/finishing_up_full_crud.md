@@ -20,10 +20,37 @@ creator:
 #### [switching out cbs with promises in mongoose](http://eddywashere.com/blog/switching-out-callbacks-with-promises-in-mongoose/)
 
 Read the documentation link (5m) if you finish, start in on the other one.
+    
+    // INDEX
+    router.get('/', function(req, res){
+      User.find({})
+        .exec(function(err, users){
+          if (err) { console.log(err); }
+          console.log(users);
+          res.render('users/index.hbs', {
+            users: users
+          });
+        });
+    });
+    
+    // USER UPDATE ROUTE
+    router.put('/:id', function(req, res){
+      User.findByIdAndUpdate(req.params.id, {
+        first_name: req.body.first_name,
+        email: req.body.email
+      }, { new: true })
+      .exec(function(err, user){
+        if (err) { console.log(err); }
+        console.log(user);
+        res.render('users/show.hbs', {
+          user: user
+        });
+      });
+    });
 
 #### Moral of the story
 
-You won't need `.exec()` for things like create, update, save. But if you're querying for data in your db you're gonna want to call `exec()`.
+If you're querying for data in your db you're gonna want to call `exec()`.
 
 
 ## Setup (5m)
