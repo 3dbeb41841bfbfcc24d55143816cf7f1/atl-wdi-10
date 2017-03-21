@@ -180,10 +180,10 @@ db.teachers.update( {name:'Mystery Teacher'}, {  gender:'female', age: 25  } )
 
 Update will update only one document by default.  To update many, pass in a third `{ multi:true }` param
 
-Insert a new teacher object with a name of `Mystery teacher`
+Insert a new teacher object with a name of `MysteryTteacher`
 
 ```
-db.teachers.update({name:'Mystery teacher'}, { $set: {gender:'female', age: 35} }, { multi: true })
+db.teachers.update({name:'Mystery Teacher'}, { $set: {gender:'female', age: 35} }, { multi: true })
 ```
 
 &#x1F535; **CFU**
