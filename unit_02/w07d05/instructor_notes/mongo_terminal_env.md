@@ -10,14 +10,14 @@ creator:
   - Describe what Mongo is
   - Get Mongo running
   - Diagram the structure of Mongo
-  - List your sub databases
-  - Choose a sub database as a target for your actions
+  - List your databases
+  - Choose a database as a target for your actions
   - Create a collection
   - Insert a document into a collection
   - Find a set of documents in a collection
   - Remove a set of documents from a collection
   - Update a set of documents in a collection
-  - Drop a Collection or an entire sub database
+  - Drop a Collection or an entire database
 
 ## Describe what Mongo is
 
@@ -25,7 +25,7 @@ MongoDB is a database that holds javascript objects.  The database itself is jus
 
 ## Diagram the structure of Mongo
 
-The Mongo database application itself contains several imaginary "sub-databases" (not sure if that's an industry term or not).  Each sub-database can be assigned to a specific application.  Imagine you're Google, and you have lots of different applications.  You don't want the data for your mail application data mixed in with your maps application data.  These sub-databases allow you to keep information structured in a way that is logical.
+Mongo itself can contain several databases.  Each database can be assigned to a specific application.  Imagine you're Google, and you have lots of different applications.  You don't want the data for your mail application data mixed in with your maps application data.  These separations databases allow you to keep information structured in a way that is logical.
 
 
 ![](https://i.imgur.com/ZAQOhhY.png)
@@ -49,25 +49,25 @@ Lets take a look of what a MongoDB _document_ may look like:
 
 - Give me an example of why it would be helpful for a company to have separate databases?
 
-## List your sub databases
+## List your databases
 
-To list the sub-databases in your Mongo application, use the following command:
+To list the databases in your Mongo application, use the following command:
 
 ```
 show dbs
 ```
 
-## Choose a sub database as a target for your actions
+## Choose a database as a target for your actions
 
-In general, you won't be switching back and forth between different sub-databases, since, presumably, you'll just be working on one application at a time.  Because of this, we "select" a sub-database.  Once selected, all the actions we call will affect that sub database until we "select" another.
+In general, you won't be switching back and forth between different databases, since, presumably, you'll just be working on one application at a time.  Because of this, we "select" a database.  Once selected, all the actions we call will affect that database until we "select" another.
 
-To choose (or create and choose) a sub-database, use the following command:
+To choose (or create and choose) a database, use the following command:
 
 ```
 use first_db
 ```
 
-If we later want to remind ourselves what sub database we're using, use the following command:
+If we later want to remind ourselves what database we're using, use the following command:
 
 ```
 db
@@ -76,7 +76,7 @@ db
 
 ## Create a collection
 
-Inside our each sub-database, we can have various collections.  Each collection is a set of related JavaScript objects.  Imagine we're creating a mail application.  We could have a collection of users and a different collection for messages.  The purpose of the collection is similar to sub databases, in that it's purely for organizational purposes.
+Inside our each database, we can have various collections.  Each collection is a set of related JavaScript objects.  Imagine we're creating a mail application.  We could have a collection of users and a different collection for messages.  The purpose of the collection is similar to databases, in that it's purely for organizational purposes.
 
 The syntax for creating a collection is:
 
@@ -191,7 +191,7 @@ db.teachers.update({name:'Mystery Teacher'}, { $set: {gender:'female', age: 35} 
 0 || 1 || 2
 
 
-## Drop a Collection or an entire sub database
+## Drop a Collection or an entire database
 
 If you really screw up, you can drop a collection:
 
@@ -199,7 +199,7 @@ If you really screw up, you can drop a collection:
 db.teachers.drop()
 ```
 
-If you really REALLY screw up, you can drop an entire sub database:
+If you really REALLY screw up, you can drop an entire database:
 
 ```
 db.dropDatabase()
@@ -211,19 +211,19 @@ db.dropDatabase()
 
 1. Get mongod and mongo running
 
-## Sub databases
+## Databases
 
-1. show your sub databases
-1. show the sub database you are currently using
-1. create/use a sub database called first_db
-1. show your sub databases
-1. show the sub database you are currently using
+1. show your databases
+1. show the database you are currently using
+1. create/use a database called first_db
+1. show your databases
+1. show the database you are currently using
 
 ## Create a collection
 
-1. show the current sub databases collections
+1. show the current databases collections
 1. create a collections called teachers
-1. show the current sub databases collections
+1. show the current databases collections
 
 ## Insert a document into a collection
 
@@ -244,7 +244,7 @@ db.dropDatabase()
 
 1. Update jenny to have the name `jennifer` and the age of `25`
 
-## Drop a Collection or an entire sub database
+## Drop a Collection or an entire database
 
 1. Drop the teachers collection
 1. Drop the current database
