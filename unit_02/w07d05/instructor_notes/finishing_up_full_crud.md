@@ -202,7 +202,9 @@ You can use your own code from yesterday if it's more or less complete.
 
 ## _Whew!_ Done!
 
-On your own create a third resource, `project_idea`.
+On your own create a third resource, `project_id`.
+
+1. I'm slacking out the seed file to use, make sure to run `node db/seeds.js`
 
 1. Add the `ProjectIdeaSchema` schema to the `db`
   - description, string
@@ -227,3 +229,4 @@ When you load it in the `server.js` you'll match that pattern above
   - show them all on an index page specific to user<br>
   - edit project ideas<br>
   - delete project ideas<br>
+
