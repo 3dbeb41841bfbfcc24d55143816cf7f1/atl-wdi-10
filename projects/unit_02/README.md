@@ -2,13 +2,13 @@
 
 ### Overview
 
-This second project is your first foray into **building a full-stack server application.** You'll be **building a Node/Express App with Mongo/Mongoose,** which means you'll learn about what it takes to build a functional application from the ground up yourself.
+This second project is your first foray into **building a full-stack server application.** You will be **building a Node/Express App with Mongo/Mongoose,** which means that you will learn about what it takes to build a functional application from the ground up yourself.
 
-**This is exciting!** It's a lot, but we've given you the tools over the last few weeks to build what you need; you get to be creative in choosing what sort of application you want to build!
+**This is exciting!** It is a lot, but we have given you the tools over the last few weeks to build what you need; you get to be creative in choosing what sort of application you want to build!
 
-**You will be working individually for this project**, and you'll be designing the app yourself. We hope you'll exercise creativity on this project, sketch some wireframes before you start, and write user stories to define what your users will want to do with the app.
+**You will be working individually for this project**, and you will be designing the app yourself. We hope you will exercise creativity on this project, sketch some wireframes before you start, and write user stories to define what your users will want to do with the app.
 
-You'll need to run your user stories, wireframes, and database design by your instructors to get their feedback and approval before you begin coding! Remember to keep things small and focus on mastering the fundamentals – scope creep/feature creep is the biggest pitfall for any project!
+You will need to run your user stories, wireframes, and database design by your instructors to get their feedback and approval before you begin coding! Remember to keep things small and focus on mastering the fundamentals – scope creep/feature creep is the biggest pitfall for any project!
 
 Identify what you need to build and accomplish to meet project expectations and identify everything else as stretch goals. If you meet your MVP (Minimum Viable Product) ahead of schedule, you can decide which reach goals to focus on for the remainder of your time.
 
@@ -19,7 +19,7 @@ Identify what you need to build and accomplish to meet project expectations and 
 Your app must:
 
 * **Have at _least_ 2 models** (more if they make sense) – one representing someone using your application (a user), and one that represents the main functional idea for your app
-* **Include sign up/log in functionality**, with encrypted passwords & an authorization flow. The boilerplate is here: https://github.com/ga-students/wdi-remote-matey/tree/master/projects/unit_02/project2_boilerplate
+* **Include sign up/log in functionality**, with encrypted passwords & an authorization flow. The boilerplate is here: https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/projects/unit_02/project2_boilerplate
 * **Have complete RESTful routes** for at least one of your resources with GET, POST, PUT, and DELETE
 * **Write Mongo queries using the Mongoose module** and interact with your document database. Promises will likely make your life easier as you start to build complex queries!
 * **Include wireframes** that you designed during the planning process
@@ -34,10 +34,11 @@ Your app must:
 
 * A **working full-stack application, built by you**, hosted on Heroku
 * A **link to your hosted working app** in the URL section of your Github repo
-* A **git repository hosted on Github**, with a link to your hosted project,  and frequent commits dating back to the **very beginning** of the project. Commit early, commit often.
+* A **git repository hosted on Github**, with a link to your hosted project,  and frequent commits dating back to the **very beginning** of the project. Commit early, commit often.  Make your commit messages descriptive.
 * **A ``readme.md`` file** with explanations of the technologies used, the approach was taken, unsolved problems, and notes to yourself so you can come back to your project later in the course and be able to pick up your train of thought, etc.
 * **Wireframes of your app**, hosted somewhere & linked in your readme
-* A link in your ``readme.md`` to the publicly-accessible **user stories you created**
+* A link in your ``readme.md`` to the **PUBLICLY-accessible** **user stories you created/your trello board- with given, when, then statements for each story.**
+* A link on your portfolio site to your project 2.
 
 ---
 

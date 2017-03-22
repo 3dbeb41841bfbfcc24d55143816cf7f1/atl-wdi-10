@@ -34,7 +34,7 @@ SEPARATION OF CONCERNS
 - Without Separation of Concerns (SoC), it becomes incredibly hard to maintain or change an application.
 - Large applications like Facebook and Google utilize SoC since they are always adding new features, changing existing features, and working in large teams.
 - SoC decomposes apps into parts with minimal overlap of code.
-- SoC allows To allow people to work on individual pieces of the system in isolation,
+- SoC allows people to work on individual pieces of the system in isolation,
  facilitate reusability, and enable everyone to better understand the system.
 
 FORMS
@@ -85,7 +85,7 @@ app.get('/todos', function(req,res) {
 ```
 
 
-3. Walk back thorough yesterday's Express Router lesson and refactor this app with the following:
+3. Walk back through yesterday's Express Router lesson and refactor this app with the following:
 
     - A `controllers/todos.js` file
     - Move your `/todos` route to the file.
@@ -287,7 +287,7 @@ We're going to follow a very specific pattern at first.
 
 |           View 	| Purpose                                                                    	| Blog example                                            	| RESTful route example                             	|
 |---------------:	|----------------------------------------------------------------------------	|---------------------------------------------------------	|---------------------------------------------------	|
-| show.hbs  	| Shows a individual resource                                                	| A page that shows a single blog post                    	| localhost:3000/posts/1 | GET /posts/:id           	|
+| show.hbs  	| Shows an individual resource                                                	| A page that shows a single blog post                    	| localhost:3000/posts/1 | GET /posts/:id           	|
 | index.hbs 	| Shows all instances of a resource                                          	| A page that shows all blog posts                        	| localhost:3000/posts | GET /posts                 	|
 | new.hbs   	| Displays a form to create a new resource (form makes a post request)       	| A page that lets you create a new blog post            	| localhost:3000/posts/new | GET /posts/new             	|
 | edit.hbs  	| Displays a form that lets you edit a resource (form makes a post request) 	| A page that lets you edit an already created blog post 	| localhost:3000/posts/1/edit | GET /posts/:id/edit 	|
@@ -359,7 +359,7 @@ Don't worry about this idea of nested resources for now, but know this is where 
 
 ## Todo `SHOW` Route
 
-Convention dictates that the `show` route returns one instance of of a given resource.
+Convention dictates that the `show` route returns one instance of a given resource.
 
 &#x1F535; **I DO, THEN YOU DO**
 
@@ -533,7 +533,7 @@ Finish fleshing out your form with the code above.
 
 #### Server Side
 
-Some of the the `controllers/todos.js` (specifically an INDEX route to show all of our todos, which we're storing in an array and our server/express configuration) is already written for you in the `starter-code`, we should walk through it to reiterate how it works.
+Some of the `controllers/todos.js` (specifically an INDEX route to show all of our todos, which we're storing in an array and our server/express configuration) is already written for you in the `starter-code`, we should walk through it to reiterate how it works.
 
 ```javascript
 // controllers/todos.js
@@ -793,8 +793,7 @@ Why do we need to redirect after a `.post` action?
 
 2. Add a nav bar to your layout view with links to your INDEX (`/todos`) and NEW(`/todos/new`) routes. For example:
 
-
-       ![](https://i.imgur.com/32xDLQF.png)
+    ![](https://i.imgur.com/32xDLQF.png)
 
 3. Make each todo on the INDEX page clickable (hint: use anchor tags) so that each individual todo, when clicked, will link to it's correct show page (like the image above).
 

@@ -33,85 +33,86 @@ competencies: Server Applications
 
 ## Using MongoDB with Node - Intro (5 mins)
 
-This morning we created an app that used Mongoose methods and queries to add/retreive data from a database. This afternoon we're gonna build an Express app using those same REST-ful methods and queries. Now, we will wrap that Mongoose code in the appropriate route. We'll use Express to send and receive the JSON data. Tomorrow we'll add Handlebars to render that data into views.
+This morning we created an app that used Mongoose methods and queries to add/retreive data from a database. This afternoon we are going to build an Express app using those same REST-ful methods and queries. Now, we will wrap that Mongoose code in the appropriate route. We will use Express to send and receive the JSON data. Tomorrow we will add Handlebars to render that data into views, and create a fully working app!
 
-NodeJS and MongoDB work really well together. To handle HTTP requests and read from or send data to MongoDB, Mongoose is the most common Node.js ORM to manipulate data using MongoDB: CRUD functionality is something that is necessary in almost most every application, as we still have to create, read, update, and delete data.
+NodeJS and MongoDB work really well together. To handle HTTP requests and read from or send data to MongoDB, Mongoose is the most common Node.js ORM to manipulate data using MongoDB. CRUD functionality is something that is necessary in almost most every application, as we still have to create, read, update, and delete data.
 
-Since we'll be able to use JSON across our application - with Mongo and Node - using JavaScript in our application is much easier. The MEAN stack - Mongo, Express, Angular, and Node - is becoming increasingly popular because of this.
+Since we will be able to use JSON across our application - with Mongo and Node - using JavaScript in our application is much easier. The MEAN stack - Mongo, Express, Angular, and Node - is becoming increasingly popular because of this.
 
 For today, we will build a simple Node app in a folder and a file app.js.
 
 #### What Is Mongoose?
 
-Mongoose is an object modeling package - think ORM for Node; this gives us the MongoDB CRUD commands.
+Mongoose is an object modeling package - think of it as an ORM (Object Relational Mapper) for Node.  It gives us the MongoDB CRUD commands.
 
-<br>
+<br />
 
 ## Setting up your app - Codealong (5 mins)
 
-I've included starter code in your **w07d04/student_labs** folder called `express-mongoose-lesson-starter`
+I have included starter code in your **w07d04/student_labs** folder called `express-mongoose-lesson-starter`
 
 1. `cd` into the folder
 2. run `npm install`
-3. open the app in atom: `atom .`
+3. open the app in sublime: `subl .`
 4. You need to have 4 terminal tabs open:
-    - In one tab you'll run `mongod`
-    - In one tab you'll run `nodemon server.js`
-    - You'll use one tab to access your `mongo` shell
-    - Keep another tab open to  the Terminal prompt `$` to run commands
+    - In one tab you will run `mongod`
+    - In one tab you will run `nodemon server.js`
+    - You will use one tab to access your `mongo` shell
+    - Keep another tab open to the Terminal prompt `$`, in order to run commands
 
 
 In this example, we are connecting to a local database named `express-mongoose-lesson-starter`. You can now execute all the mongoDB commands in the database `express-mongoose-lesson-starter`.
 
 ![](https://i.imgur.com/ebX8wCK.png)
 
-<br>
+<br />
 
-&#x1F535; YOU DO
+### &#x1F535; YOU DO (5 minutes)
 
 1. Set up your app
 2. Take 5 minutes and familiarize yourself with the code
 
-<br>
+<br />
 
 ## Working with Models - Codealong (20 mins)
 
 
-#### Defining a Model
+### Defining a Model
 
-You can define methods to help automatically populate key(s) of your model. For example, if we wanted to automatically add `updated_at` and `created_at` fields to our users:
+You can define methods to help automatically populate the key(s) of your model. For example, if we wanted to automatically add `updated_at` and `created_at` fields to our users:
 
 ```javascript
-// db/schema.js
+// in the db/schema.js
 
-UserSchema.pre('save', function(next){
+UserSchema.pre('save', function(next) {
   now = new Date();
   this.updated_at = now;
-  if ( !this.created_at ) {
+  if (!this.created_at) {
     this.created_at = now;
   }
   next();
 });
 ```
-<br>
+<br />
 
-#### Adding Mongoose validations
+### Adding Mongoose Validations
 
 <details>
 <summary>When might we want to use validations on our data?</summary>
 
 - Unique email or user name
-- Confirm that an email field has a `@` symbol
-- Confirm that an phone field has the correct number of digits and formatting
-- Confirm that form fields aren't left empty
+- Confirm that an email field has an `@` symbol
+- Confirm that a phone field has the correct number of digits and formatting
+- Confirm that form fields are not left empty
 - Confirm that a password matches it's confirmation field
 - Confirm that a password has a minimum number of digits or includes certain characters.
 
 </details>
 
+<br />
 
 ```js
-// db/schema.js
+// in the db/schema.js
 
 var UserSchema = new Schema({
   first_name: String,
@@ -125,33 +126,33 @@ var UserSchema = new Schema({
 
 Check out this morning's Mongoose Intro lesson (near the bottom) for more custom validation info. Here are the Mongoose docs: http://mongoosejs.com/docs/validation.html
 
-<br>
+<br />
 
 ## Interacting with MongoDB's CRUD - Demo (15 mins)
 
-
-####Seed your database
+### Seed your database
 
 From your Terminal prompt tab, run `$ node db/seeds.js` to seed your database. This will add 3 users to your `express-mongoose-lesson-starter` database.
 
-<br>
+<br />
 
-&#x1F535; YOU DO
+&#x1F535; YOU DO 
 
 1. Seed your database
 
-<br>
+<br />
 
-#### Users Index
+### Users Index
 
-For the most part, we're repeating what we did in our intro to mongoose app. However, now we're using the Express Router. Inside `usersController.js` let's add:
+For the most part, we are repeating what we did in our intro to mongoose app. However, now we are using the Express Router. Inside `usersController.js` let's add:
 
 ```javascript
 // USERS INDEX ROUTE
 router.get('/', function(req, res){
   User.find({})
-  .exec(function(err, users){
-    if (err) { console.log(err); }
+  .exec(function(err, users) {
+    if(err) { console.log(err); }
+    
     console.log(users);
     res.send(users);
   });
@@ -160,23 +161,20 @@ router.get('/', function(req, res){
 
 Test it out in your browser. **NOTE - this app runs on localhost port `:4000` instead of `:3000`**
 
-- Goto `http://localhost:4000/users/`
+- Go to `http://localhost:4000/users/`
 
 ![](https://i.imgur.com/rUXH4Fy.png)
 
-<br>
+<br />
 
-&#x1F535; YOU DO - Index Route
+### &#x1F535; YOU DO - Index Route (2 minutes)
 
 2. Add an index route for users
 3. Confirm that it's working in the browser
 
-<br>
+<br />
 
-
-
-
-#### Users Show
+### Users Show
 
 ```javascript
 // USER SHOW ROUTE
@@ -192,249 +190,252 @@ router.get('/:id', function(req, res){
 
 Test it out in your browser. Grab the `id` of one of your users and add it to the URL
 
-- For example, goto `localhost:4000/users/57eba9b84126ce61760606d3`
+- For example, go to `localhost:4000/users/57eba9b84126ce61760606d3`
 
 ![](https://i.imgur.com/vnTVrMp.png)
 
-<br>
+<br />
 
-&#x1F535; YOU DO - Show Route
+### &#x1F535; YOU DO - Show Route (2 minutes)
 
 2. Add a show route for users
 3. Confirm that it's working in the browser
 
-<br>
+<br />
 
 ## Postman
 
-It's a good practice to build your app one step at a time for testing and efficency. 
+It is a good practice to build your app one step at a time for testing and efficency. 
 
 - STEP 1 - This morning we created the Mongoose queries and confirmed that the code works. 
-- STEP 2 - This afternoon we're gonna take those working pieces of code and wrap them in Express routes. 
-- STEP 3 - Tomorrow we'll worry about the views once the routes are working, etc. 
+- STEP 2 - This afternoon we are going to take those working pieces of code and wrap them in Express routes. 
+- STEP 3 - Tomorrow we will worry about the views, once the routes are working, etc. 
 
-We have not created views and forms yet so we need a way to test our non-`.get` routes. We're gonna use a tool called Postman. 
+For our current app, we have not created views and forms yet, so we need a way to test our non-`.get` routes. We are going to use a tool called Postman. 
 
-- Go download it from here: https://www.getpostman.com/. 
-- Click on "Mac App".
-- Open the app
+- You can download it from here: https://www.getpostman.com/. 
+- Click on the "Mac App" icon.
+- Open the app.
 
-Postman is a simple app that allows us to make HTTP requests. We'll also use it to mimic using forms to send data to our server.
+Postman is a simple app that allows us to make HTTP requests. We will also use it to mimic using forms to send data to our server.
 
-<br>
+<br />
 
-&#x1F535; YOU DO - Download Postman
+### &#x1F535; YOU DO - Download/Open Postman (2 minutes)
 
-1. Go download it from here: https://www.getpostman.com/. 
-1. Click on "Mac App".
-1. Open the app
+<br />
 
-<br>
+## Back to CRUD
 
-##Back to CRUD
-
-#### Create
+### Create
 ```javascript
 // USER CREATE ROUTE
-router.post('/', function(req, res){
+router.post('/', function(req, res) {
   var user = new User({
     first_name: req.body.first_name,
     email: req.body.email,
     items: req.body.items
   });
-  user.save(function(err, user){
-    if (err) console.log(err);
+  user.save(function(err, user) {
+    if(err) console.log(err);
+    
     console.log(user);
     res.send(user);
   });
 });
 ```
 
-We'll test out sending form data using Postman
+We will test out sending form data using Postman.
 
-- Make sure you're making a `POST` request
-- Make sure you're sending the request to `localhost:4000/users/`
-- Make sure you're on the `Body` tab and you have `x-www-form-urlencoded` selected
-- Make sure you have key/value pairs for `first_name` and `email`
-    - Remember that we added validations for `email` to be unique and that it's required
+- Make sure that you are making a `POST` request.
+- Make sure that you are sending the request to `localhost:4000/users/`.
+- Make sure that you are on the `Body` tab and that you have `x-www-form-urlencoded` selected.
+- Make sure that you have key/value pairs for `first_name` and `email`.
+    - Remember that we added validations for `email` to be unique and that it is required
 - Hit Send
 
 ![](https://i.imgur.com/kCL2ZA2.png)
 
-<br>
+<br />
 
-&#x1F535; YOU DO - Create users
+### &#x1F535; YOU DO - Create a User (5 minutes)
 
 1. Add the Create route
-2. Confirm the route is working by creating a new user via Postman
+2. Confirm that the route is working by creating a new user via Postman
 
-<br>
+<br />
 
-#### Update
+### Update
 
-For update, you can do it in one of two ways (that are super easy!) - using `.findByIdAndUpdate()` or `.findOneAndUpdate()`:
+To update, you can write it in one of two ways (both are super easy!) - use the helper methods: `.findByIdAndUpdate()` or `.findOneAndUpdate()`:
 
 ```javascript
 // USER UPDATE ROUTE
-router.patch('/:id', function(req, res){
+router.patch('/:id', function(req, res) {
   User.findByIdAndUpdate(req.params.id, {
     first_name: req.body.first_name,
     email: req.body.email
   }, {new: true})
   .exec(function(err, user) {
     if (err) console.log(err);
+    
     console.log(user);
     res.send(user);
   });
 });
 ```
 
-We'll test out sending form data using Postman
+We will test out sending form data using Postman.
 
-- First, use a GET request to grab the data for a single user that you want to update. For example, `http://localhost:4000/users/57eba9b84126ce61760606d3`
+- First, use a GET request to grab the data for a single user that you would like to update. For example, `http://localhost:4000/users/57eba9b84126ce61760606d3`
     
     ![](https://i.imgur.com/skhh8QX.png)
 
-- Make sure you're making a `PATCH` request
-- Make sure you're sending the request to `localhost:4000/users/<THE USER ID YOU SELECTED>`
-- Make sure you're on the `Body` tab and you have `x-www-form-urlencoded` selected
-- Make sure you have key/value pairs for `first_name` and `email`
-    - Remember that we added validations for `email` to be unique and that it's required
+- Make sure that you are making a `PATCH` request.
+- Make sure that you are sending the request to `localhost:4000/users/<THE USER ID YOU SELECTED>`.
+- Make sure that you are on the `Body` tab and you have `x-www-form-urlencoded` selected.
+- Make sure that you have key/value pairs for `first_name` and `email`.
+    - Remember that we added validations for `email` to be unique and that it is required
 
     ![](https://i.imgur.com/xBG4pvy.png)
     
 - Hit Send
 - Confirm that your user has been updated by making a `GET` request to `http://localhost:4000/users/<THE USER ID YOU SELECTED>`
 
-<br>
+<br />
 
-&#x1F535; YOU DO - Update users
+### &#x1F535; YOU DO - Update Your Users (5 minutes)
 
-1. Add the Update route
-2. Confirm the route is working by updating a user via Postman
+1. Add the Update route.
+2. Confirm that the route is working by updating a user via Postman.
 
-<br>
+<br />
 
-#### Destroy
+### Destroy
 
-Mongoose gives you two easy methods to delete documents - `findByIdAndRemove()`and `.findOneAndRemove()`.
+Mongoose gives you two easy helper methods to delete documents - `findByIdAndRemove()`and `.findOneAndRemove()`.
 
 ```javascript
 // USER DESTROY
-router.delete('/:id', function(req, res){
+router.delete('/:id', function(req, res) {
   User.findByIdAndRemove(req.params.id)
   .exec(function(err, user) {
-    if (err) console.log(err);
+    if(err) console.log(err);
+    
     console.log('User deleted!');
     res.send("User deleted");
   });
 });
 ```
 
-We'll test out sending form data using Postman
+We will test out sending form data using Postman.
 
-- First, use a GET request to grab the data for a single user that you want to update. For example, `http://localhost:4000/users/57eba9b84126ce61760606d3`
-- Make sure you're making a `DELETE` request
-- Make sure you're sending the request to `localhost:4000/users/<THE USER ID YOU SELECTED>`    
-- Hit Send
-- You should see a message that says "User Deleted"
+- First, use a GET request to grab the data for a single user that you want to delete. For example, `http://localhost:4000/users/57eba9b84126ce61760606d3`
+- Make sure that you are making a `DELETE` request.
+- Make sure that you are sending the request to `localhost:4000/users/<THE USER ID YOU SELECTED>`.
+- Hit Send.
+- You should see a message that says "User Deleted".
 
 ![](https://i.imgur.com/51C9YVy.png)
 
-- Confirm that your user has been deleted by making a `GET` request to `http://localhost:4000/users/<THE USER ID YOU SELECTED>`
+- Confirm that your user has been deleted by making a `GET` request to `http://localhost:4000/users/<THE USER ID YOU SELECTED>`.
 
-<br>
+<br />
 
-&#x1F535; YOU DO - Destroy users
+### &#x1F535; YOU DO - Destroy Your Users (5 minutes)
 
 1. Add the Delete route
-2. Confirm the route is working by deleting a user via Postman
+2. Confirm that the route is working by deleting a user via Postman
 
-<br>
+<br />
 
-#### Embed an Item inside a User
+### Embed an Item to a User Document
 
 ```javascript
 // ADD A NEW ITEM
-router.post('/:id/items', function(req, res){
+router.post('/:id/items', function(req, res) {
   User.findById(req.params.id)
-  .exec(function(err, user){
+  .exec(function(err, user) {
     user.items.push(new Item({name: req.body.name}));
-    user.save(function(err){
+    user.save(function(err) {
       if (err) console.log(err);
+      
       res.send(user);
     });
   });
 });
 ```
 
-We'll test out sending form data using Postman
+We will test out sending form data using Postman.
 
-- First, use a `GET` request to grab the data for a single user that you want to update. For example, `http://localhost:4000/users/57eba9b84126ce61760606d7`
-- Make sure you're making a `POST` request to `/:id/items`. For example, `http://localhost:4000/users/57eba9b84126ce61760606d7/items`
-- Make sure you're on the `Body` tab and you have `x-www-form-urlencoded` selected
-- Make sure you have a key/value pair for `name`
+- First, use a `GET` request to grab the data for a single user that you would like to update. For example, `http://localhost:4000/users/57eba9b84126ce61760606d7`.
+- Make sure that you are making a `POST` request to `/:id/items`. For example, `http://localhost:4000/users/57eba9b84126ce61760606d7/items`.
+- Make sure that you are on the `Body` tab and you have `x-www-form-urlencoded` selected.
+- Make sure that you have a key/value pair for `name`.
 
 ![](https://i.imgur.com/B2xVMmm.png)
 
-- Hit Send
-- Confirm that the item has been added by making a `GET` request to `http://localhost:4000/users/<THE USER ID YOU SELECTED>`
+- Hit Send.
+- Confirm that the item has been added by making a `GET` request to `http://localhost:4000/users/<THE USER ID YOU SELECTED>`.
 
-<br>
+<br />
 
-&#x1F535; YOU DO - Embed an Item to a User
+### &#x1F535; YOU DO - Embed an Item to a User Document (2 minutes)
 
-1. Add the route
-2. Confirm the route is working by embedding an item on a user via Postman
+1. Add the items create route.
+2. Confirm that the route is working by embedding an item on a user via Postman.
 
-<br>
+<br />
 
-#### Remove an Item from a User
+### Remove an Item from a User
 
 ```javascript
 // REMOVE AN ITEM
-router.delete('/:userId/items/:id', function(req, res){
+router.delete('/:userId/items/:id', function(req, res) {
   User.findByIdAndUpdate(req.params.userId, {
-    $pull:{
+    $pull: {
       items: {_id: req.params.id}
     }
   })
-  .exec(function(err, item){
+  .exec(function(err, item) {
     if (err) console.log(err);
+    
     res.send(item + " Item deleted");
   });
 });
 ```
 
-We'll test out sending form data using Postman
+More info on [$pull](https://docs.mongodb.com/manual/reference/operator/update/pull/)
+
+We will test out sending form data using Postman.
 
 - First, use a GET request to grab a single user from whom you want to remove an Item. For example, `http://localhost:4000/users/57eba9b84126ce61760606d3`
-- Copy the `_id` for the item you want to remove
-- Make sure you're making a `DELETE` request
-- Make sure you're sending the request to `localhost:4000/users/<THE USER ID YOU SELECTED>/items/<THE ITEM ID YOU WANT TO REMOVE>`    
-- Hit Send
-- You should see a message that says "Item Deleted" next to the removed Item
+- Copy the `_id` for the item you want to remove.
+- Make sure that you are making a `DELETE` request.
+- Make sure that you are sending the request to `localhost:4000/users/<THE USER ID YOU SELECTED>/items/<THE ITEM ID YOU WANT TO REMOVE>`.
+- Hit Send.
+- You should see a message that says "Item Deleted" next to the removed Item.
 
 ![](https://i.imgur.com/GJ6R2pB.png)
 
-- Confirm that the item has been deleted by making a `GET` request to `http://localhost:4000/users/<THE USER ID YOU SELECTED>`
+- Confirm that the item has been deleted by making a `GET` request to `http://localhost:4000/users/<THE USER ID YOU SELECTED>`.
 
-<br>
+<br />
 
-&#x1F535; YOU DO - Remove an Item from a User
+### &#x1F535; YOU DO - Remove an Item from a User (2 minutes)
 
-1. Add the route
-2. Confirm the route is working by removing an item from a user via Postman
+1. Add the delete item route.
+2. Confirm that the route is working by removing an item from a user via Postman.
 
-<br>
+<br />
 
 
 ## Conclusion (5 mins)
-Mongoose is just a bridge to use MongoDB inside a NodeJS environment. There are a lot of options when creating a schema with Mongoose, we've just seen a few for the moment.
+Mongoose is just a bridge to use MongoDB inside of  a Node.js environment. There are a lot of options when creating a schema with Mongoose, we have just covered a few of them.
 
-<br>
+<br />
 
-## Labtime
+## Lab time
 
 - Add views and forms. Here are some sample starter steps. You should also reference the express/views/handlebars lessons and apps from last week.
     - `npm install --save hbs`
@@ -447,7 +448,7 @@ Mongoose is just a bridge to use MongoDB inside a NodeJS environment. There are 
 - Add external css and javascript files
 - Add promises to the app
 
-<br>
+<br />
 
 
 <details>
@@ -463,15 +464,13 @@ Using the code we just wrote and the [official Mongoose Models docs](http://mong
 
 Try them out in the `node` terminal, if you have time.
 
-<br>
+<br />
 
-## What are embedded documents? Codealong (20 mins)
+## What are Embedded Documents? Codealong (20 mins)
 
-> Note: Go slowly through this section as we anticipate students having trouble
+**[Embedded documents](http://mongoosejs.com/docs/subdocs.html)** are just what they sound like: documents with their own schemas nested in other documents. They take the form of objects within an array.  You can think of this as a sort of `has_many` relationship - the context to use embedded documents is data entities that need to be used/viewed in the context of another.
 
-Embedded documents are just what they sound like: documents with their own schemas nested in other documents. They take of the form of objects within an array.  You can think of this as a sort of `has_many` relationship - the context to use embedded documents is data entities need to be used/viewed in context of another.
-
-The nested schema are equipped with all the same features as your models: defaults, validators, middleware, and even error handling, as they are tied to the save() error callback; and Mongoose can work with embedded documents by default.
+The nested schemas are equipped with all the same features as your models: defaults, validators, middleware, and even error handling, as they are tied to the save() error callback. Mongoose can work with embedded documents by default.
 
 
 Let's look at these two schemas below - we can embed `childSchema` into the property `children`:
@@ -488,11 +487,12 @@ var parent = new Parent({ children: [{ name: 'Matt' }, { name: 'Sarah' }] })
 parent.children[0].name = 'Matthew';
 parent.save(function(err) {
   if (err) console.log(err);
+  
   console.log('New Parent!');
 });
 ```
 
-Or from mongoDB official docs, we can look at this example with Patron and Address models:
+Or from the MongoDB official docs, we can look at this example with Patron and Address models:
 
 ```javascript
 {
@@ -517,7 +517,7 @@ Or from mongoDB official docs, we can look at this example with Patron and Addre
 }
 ```
 
-The address documents make two references to the Joe Bookreader object, so instead we can:
+The address documents make two references to the Joe Bookreader object, so instead we can create something like this:
 
 ```javascript
 {
@@ -540,9 +540,11 @@ The address documents make two references to the Joe Bookreader object, so inste
  }
 ```
 
-Note that sub-documents do not save individually, only with the highest-level document; in this case, the addresses are saved with the Joe Bookreader Patron document.
+Note that sub-documents do not save individually, only with the highest-level document.  In this case, the addresses are saved with the Joe Bookreader Patron document.
 
-#### Finding a sub-document
+<br />
+
+### Finding a Sub-Document
 
 All documents in Mongoose have an  `_id`.  Look above at our Patron example.  Joe Bookreader has an `_id` of 'joe'. DocumentArrays have a special `id` method for looking up a document by its _id.
 
@@ -554,9 +556,11 @@ var doc = parent.children.id(id_you_are_looking_for);
 var doc = patron.addresses.id(id_you_are_looking_for)
 ```
 
-#### Adding and Removing sub-docs
+<br />
 
-Remember Ruby methods like `pop`, `push`, or the `<<` operator?  We'll, Mongoose comes with MongooseArray methods like as `push`, `unshift`, `addToSet`, and others.  And just like adding them, we can remove them with `remove()`
+### Adding and Removing Sub-Docs
+
+Remember JavaScript's array methods like `pop` or `push`?  We'll, Mongoose comes with MongooseArray methods like as `push`, `unshift`, `addToSet`, and others.  And because we can add them, we can also remove them with `remove()`.
 
 Using code from the official docs, we can see how these are used:
 
@@ -564,14 +568,15 @@ Using code from the official docs, we can see how these are used:
 var Parent = mongoose.model('Parent');
 var parent = new Parent;
 
-// create a child
-parent.children.push({ name: 'Liesl' });
+// create a child- it was Liesl, but I changed it to Diesel
+parent.children.push({ name: 'Diesel' });
 var subdoc = parent.children[0];
-console.log(subdoc) // { _id: '501d86090d371bab2c0341c5', name: 'Liesl' }
+console.log(subdoc); // { _id: '501d86090d371bab2c0341c5', name: 'Diesel' }
 subdoc.isNew; // true
 
 parent.save(function (err) {
-  if (err) return handleError(err)
+  if(err) { return handleError(err); }
+  
   console.log('Success!');
 });
 
@@ -579,18 +584,18 @@ parent.save(function (err) {
 
 var doc = parent.children.id(id_you_are_looking_for).remove();
 parent.save(function (err) {
-  if (err) return handleError(err);
-  console.log('the sub-doc was removed')
+  if(err) { return handleError(err); }
+  
+  console.log('the sub-doc was removed');
 });
 
 ```
 
-Sub-docs may also be created without adding them to the array by using the create method of MongooseArrays.
+Sub-docs may also be created without adding them to an array by using the **create** method from MongooseArrays.
 
 ```javascript
-var newdoc = parent.children.create({ name: 'Aaron' });
+var newdoc = parent.children.create({ name: 'Gus' });
 ```
-
 
 </details>
 

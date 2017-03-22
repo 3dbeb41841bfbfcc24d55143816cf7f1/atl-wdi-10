@@ -17,36 +17,39 @@ User.remove({}, function(err){
 });
 
 // create new users
-var gerry = new User({
-  first_name: 'Gerry',
-  email: 'gerry@gmail.com',
-  items: [{name: "Pay car insurance"}]
+var danny = new User({
+  first_name: 'Danny',
+  email: 'danny@gmail.com',
+  items: [{name: "Bike maintenance"}]
 });
 
-var marc = new User({
-  first_name: 'marc',
-  email: 'marc@gmail.com',
+var maren = new User({
+  first_name: 'Maren',
+  email: 'maren@gmail.com',
   items: [{name: "Get dry cleaning"}]
 });
 
 var diesel = new User({
   first_name: 'diesel',
   email: 'diesel@gmail.com',
-  items: [{name: "Go to the store"}]
+  items: [{name: "Go to the dog park"}]
 });
 
 // save the users
-gerry.save(function(err) {
+danny.save(function(err) {
   if (err) console.log(err);
+
   console.log('User created!');
 });
 
-marc.save(function(err) {
+maren.save(function(err) {
   if (err) console.log(err);
+
   console.log('User created!');
 });
 
 diesel.save(function(err) {
   if (err) console.log(err);
+  
   console.log('User created!');
 });
