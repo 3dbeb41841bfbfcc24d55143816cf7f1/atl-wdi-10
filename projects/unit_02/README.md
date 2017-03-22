@@ -34,10 +34,11 @@ Your app must:
 
 * A **working full-stack application, built by you**, hosted on Heroku
 * A **link to your hosted working app** in the URL section of your Github repo
-* A **git repository hosted on Github**, with a link to your hosted project,  and frequent commits dating back to the **very beginning** of the project. Commit early, commit often.
+* A **git repository hosted on Github**, with a link to your hosted project,  and frequent commits dating back to the **very beginning** of the project. Commit early, commit often.  Make your commit messages descriptive.
 * **A ``readme.md`` file** with explanations of the technologies used, the approach was taken, unsolved problems, and notes to yourself so you can come back to your project later in the course and be able to pick up your train of thought, etc.
 * **Wireframes of your app**, hosted somewhere & linked in your readme
-* A link in your ``readme.md`` to the publicly-accessible **user stories you created**
+* A link in your ``readme.md`` to the **PUBLICLY-accessible** **user stories you created/your trello board- with given, when, then statements for each story.**
+* A link on your portfolio site to your project 2.
 
 ---
 
