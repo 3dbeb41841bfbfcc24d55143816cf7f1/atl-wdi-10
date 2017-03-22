@@ -1,0 +1,21 @@
+<h1>{{user.first_name}}</h1>
+<div>
+  <a href="/users/{{user.id}}/edit">Edit User</a>
+</div>
+<div>
+  <form action="/users/{{user.id}}?_method=DELETE" method="POST">
+    <input type="submit" value="Delete User"/>
+  </form>
+</div>
+<div>
+  <a href="/users/{{user.id}}/items">See Items</a>
+</div>
+<div>
+  <a href="/users/{{user.id}}/project-ideas">See Project Ideas</a>
+</div>
+<ul>
+  <li>First Name: {{user.first_name}}</li>
+  <li>Email: {{user.email}}</li>
+  <li>Sign up date: {{user.created_at}}</li>
+  <li>Number of Items: {{user.items.length}}</li>
+</ul>

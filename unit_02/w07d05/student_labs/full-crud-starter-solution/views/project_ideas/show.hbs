@@ -1,0 +1,6 @@
+<h1>Description: {{projectIdea.description}}</h1>
+<h1>In Progress: {{projectIdea.in_progress}}</h1>
+<a href="/users/{{user.id}}/project-ideas/{{projectIdea.id}}/edit">Edit Project Idea</a>
+<form action="/users/{{user.id}}/project-ideas/{{projectIdea.id}}?_method=DELETE" method="POST">
+  <input type="submit" value="Delete Project Idea"/>
+</form>

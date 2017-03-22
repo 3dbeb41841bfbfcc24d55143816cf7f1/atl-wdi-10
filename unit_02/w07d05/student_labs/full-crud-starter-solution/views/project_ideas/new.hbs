@@ -1,0 +1,20 @@
+<h1>Edit Project Idea</h1>
+<form action="/users/{{user.id}}/project-ideas/" method="POST">
+  <div>
+    <label for="description">
+      Description
+    </label>
+    <input type="text" name="description" value="{{projectIdea.description}}"/>
+  </div>
+  <div>
+    <label for="in_progress">
+      In Progress?
+    </label>
+    <span>YES<input type="radio" name="in_progress" value="true" checked /></span>
+    <span>NO<input type="radio" name="in_progress" value="false"/></span>
+  </div>
+  <div>
+    <input type="submit" value="Update Project Idea"/>
+  </div>
+</form>
+
