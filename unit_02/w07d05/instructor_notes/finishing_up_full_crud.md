@@ -84,8 +84,7 @@ You can use your own code from yesterday if it's more or less complete.
     
     app.set('view engine', 'hbs');
     app.use(methodOverride('_method'))
-
-  Refer to https://github.com/ga-students/todo_crud_app or your notes for help.
+    
 
 #### Build views for student routes!
 
