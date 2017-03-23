@@ -22,7 +22,7 @@ router.get('/:id/edit', function editProjectIdea(req, res) {
   User.findById(req.params.userId)
     .exec(function (err, user){
       if (err) { console.log(err); }
-      const projectIdea = user.project_ideas.id(req.params.id);
+      const projectIdea = user.projectIdeas.id(req.params.id);
 
       res.render('project_ideas/edit', {
         projectIdea: projectIdea,
@@ -36,7 +36,7 @@ router.put('/:id', function updateProjectIdea(req, res){
   User.findById(req.params.userId)
     .exec(function (err, user){
       if (err) { console.log(err); }
-      const projectIdea = user.project_ideas.id(req.params.id);
+      const projectIdea = user.projectIdeas.id(req.params.id);
 
       projectIdea.description = req.body.description
       projectIdea.in_progress = req.body.in_progress
@@ -74,7 +74,7 @@ router.post('/', function createProjectIdea(req, res){
         in_progress: req.body.in_progress
       }
 
-      user.project_ideas.push(newProjectIdea)
+      user.projectIdeas.push(newProjectIdea)
 
       user.save(function (err) {
         if (err) console.log(err);
@@ -92,7 +92,7 @@ router.delete('/:id', function deleteProjectIdea(req, res) {
     .exec(function (err, user){
       if (err) { console.log(err); }
 
-      user.project_ideas.id(req.params.id).remove();
+      user.projectIdeas.id(req.params.id).remove();
 
       user.save(function (err) {
         if (err) console.log(err);
@@ -106,7 +106,7 @@ router.delete('/:id', function deleteProjectIdea(req, res) {
 
   // User.findByIdAndUpdate(req.params.userId, {
   //     $pull: {
-  //       project_ideas: {_id: req.params.id}
+  //       projectIdeas: {_id: req.params.id}
   //     }
   //   })
   //   .exec(function(err, project_idea) {
@@ -125,7 +125,7 @@ router.get('/:id', function showProjectIdea(req, res) {
   User.findById(req.params.userId)
     .exec(function (err, user){
       if (err) { console.log(err); }
-      const projectIdea = user.project_ideas.id(req.params.id);
+      const projectIdea = user.projectIdeas.id(req.params.id);
       res.render('project_ideas/show', {
         projectIdea: projectIdea,
         user: user
