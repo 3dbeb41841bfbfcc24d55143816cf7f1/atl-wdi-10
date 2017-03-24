@@ -44,9 +44,10 @@ Your app must:
 
 ### To Submit
 
-* **Create a GitHub issue on the Matey repo** with a link your Project Repo, and a link to Heroku where your project's deployed.
+* **Create a GitHub issue on the class repo** with a link your Project Repo, and a link to Heroku where your project's deployed.
 
 ---
+
 
 ### Suggested Ways to Get Started
 
@@ -174,7 +175,7 @@ Submit your issue by 10 am EDT and present your project.
 1. Seek out help online
 2. Seek out help with your classmates
 3. Seek out help with Jesse (TA)
-4. Submit a Github issue **on the Matey** class Github account to receive help from an instructor
+4. Submit a Github issue on the class Github account to receive help from an instructor
 
 ## Formatting your GitHub Issue for wdi-remote to ask for help
 
