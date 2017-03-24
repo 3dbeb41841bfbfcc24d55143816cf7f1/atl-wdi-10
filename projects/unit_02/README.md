@@ -44,9 +44,10 @@ Your app must:
 
 ### To Submit
 
-* **Create a GitHub issue on the Matey repo** with a link your Project Repo, and a link to Heroku where your project's deployed.
+* **Create a GitHub issue on the class repo** with a link your Project Repo, and a link to Heroku where your project's deployed.
 
 ---
+
 
 ### Suggested Ways to Get Started
 
@@ -175,7 +176,7 @@ Submit your project to ga-laxy by 2 pm EDT and present your project.
 ## Where to go for help during project week
 1. Seek out help online
 2. Seek out help with your classmates
-4. Submit a Github issue **on the WDI-ATL** class Github account to receive help from an instructor
+3. Submit a Github issue **on the WDI-ATL** class Github account to receive help from an instructor
 
 ## Formatting your GitHub Issue for wdi-remote to ask for help
 
