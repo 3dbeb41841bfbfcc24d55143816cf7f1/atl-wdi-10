@@ -171,7 +171,7 @@ Work on your project.
 Work on your project.
 
 **Wednesday, March 29th**<br>
-Submit your project to ga-laxy by 2 pm EDT and present your project.
+Submit your project to ga-laxy by 2 pm EDT and present your project. Make sure to also send us a new link to your portfolio site!
 
 ## Where to go for help during project week
 1. Seek out help online
