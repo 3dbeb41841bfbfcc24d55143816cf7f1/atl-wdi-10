@@ -178,7 +178,7 @@ Submit your project to ga-laxy by 2 pm EDT and present your project.
 2. Seek out help with your classmates
 3. Submit a Github issue **on the WDI-ATL** class Github account to receive help from an instructor
 
-## Formatting your GitHub Issue for wdi-remote to ask for help
+## Formatting your GitHub Issue for wdi-atl to ask for help
 
 *PUSH OFTEN! Your code on GitHub should be up to date. Submiting an issue and linking us to old, out-of-date code will hinder the process.*
 
