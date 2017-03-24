@@ -154,27 +154,28 @@ If you have ideas on how you can help a fellow-student with work that they are s
 ## Meetings with instructors
 _Your instructor will contact you to setup a meeting time_
 
-**Tuesday, January 24th**<br>
+**Friday, March 24th**<br>
 Work on your [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) and an initial wireframe in the morning. You will have a 15 minute meeting to get your project approved.
 
-**Wednesday, January 25th**<br>
+**Saturday, March 25th**<br>
 Work on your project.
 
-**Thursday, January 26th**<br>
+**Sunday, March 26th**<br>
+Work on your project.
 
-Lesson on Heroku deployment. 15 minute check in to see progress and decide whether to move forward with or abandon stretch goals.
-
-**Friday, January 27th**<br>
+**Monday, March 27th**<br>
 15 minute check in to see progress decide whether to move forward with or abandon stretch goals.
 
-**Monday, January 30th**<br>
-Submit your issue by 10 am EDT and present your project.
+**Tuesday, March 28th**<br>
+Work on your project.
+
+**Wednesday, March 29th**<br>
+Submit your project to ga-laxy by 2 pm EDT and present your project.
 
 ## Where to go for help during project week
 1. Seek out help online
 2. Seek out help with your classmates
-3. Seek out help with Jesse (TA)
-4. Submit a Github issue **on the Matey** class Github account to receive help from an instructor
+4. Submit a Github issue **on the WDI-ATL** class Github account to receive help from an instructor
 
 ## Formatting your GitHub Issue for wdi-remote to ask for help
 
