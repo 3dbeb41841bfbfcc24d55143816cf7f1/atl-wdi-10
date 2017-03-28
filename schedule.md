@@ -832,8 +832,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_intro.md">Intro to Angular</a>
     </td>
     <td>
-      <a href="https://docs.angularjs.org/tutorial">Angular Phonecat</a><br />
-      <a href="https://angular.io/docs/ts/latest/tutorial/">Tour of Heroes</a>
+      
     </td>
   </tr>
   <tr>
@@ -851,8 +850,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-intro-museum-app-lab-instructions.md">Angular Lab</a>
     </td>
     <td>
-      <a href="https://docs.angularjs.org/tutorial">Angular Phonecat</a><br />
-      <a href="https://angular.io/docs/ts/latest/tutorial/">Tour of Heroes</a><br />
+      
       + get started on homework
     </td>
   </tr>
