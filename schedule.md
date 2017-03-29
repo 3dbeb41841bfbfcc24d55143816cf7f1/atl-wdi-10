@@ -743,13 +743,14 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/homework">Homework</a>
     </td>
     <td>
+      Homework
+    </td>
+    <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d05/homework">Homework</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d01/homework">Homework</a>
-    </td>
-    <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d02/homework">Homework</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d02/homework">Homework</a> -->
     </td>
     <td>
       Project Three
