@@ -2,8 +2,8 @@
 
 | Monday | Tuesday | Wednesday | Thursday | Friday |
 |----------------|-----------------|---------------|---------------|-----------|
-| Ajax with $HTTP | UI-Router | Angular Services | Authentication Angular | Project Three Intro |
-| Ajax with $HTTP | UI-Router | Angular Services | Authentication Angular | Project Three |
+| Ajax with $HTTP | Webpack | UI-Router | Angular Services | Project Three Intro |
+| Ajax with $HTTP | Components | UI-Router | Angular Services | Project Three |
 | Lab | Lab | Lab | Lab | Project Three |
 
 ### Supplmental Reading for week 7
