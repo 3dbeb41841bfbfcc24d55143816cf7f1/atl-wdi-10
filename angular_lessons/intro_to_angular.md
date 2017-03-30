@@ -121,4 +121,4 @@ Client-side routing requires something known as a _router_.  A router in Angular
 
 ## Draw the Angular architecture
 
-GERRY: Draw the image from your phone
+![mvc_architecture](http://imgur.com/a/meRxa)
