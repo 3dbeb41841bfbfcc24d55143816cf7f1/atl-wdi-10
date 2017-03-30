@@ -391,7 +391,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d02/morning_exercise">Morning Exercise</a>
     </td>
     <td>
-      Morning Exercise
+      Outcomes
     </td>
     <td>
       Morning Exercise
@@ -415,7 +415,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/intro_to_active_record_and_migrations.md">Intro to Active Record</a>
     </td>
     <td>
-      <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br />
+<!--       <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br /> -->
       <a href="https://github.com/ATL-WDI-Curriculum/rails-intro/blob/master/README.md">Intro to Rails</a>
     </td>
     <td>
@@ -434,7 +434,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/active_record_one_to_many.md">Active Record One to Many</a>
     </td>
     <td>
-      <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br />
+<!--       <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br /> -->
       <a href="https://github.com/ATL-WDI-Curriculum/rails-intro/blob/master/README.md">Intro to Rails</a>
     </td>
     <td>
@@ -474,7 +474,7 @@
       <a href="https://github.com/ATL-WDI-Exercises/rails-active-record-migrations">Rails Migrations, Associations and Validations Lab</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-routing">Rails Resources and Routing Lab</a>
+      Rails Resources and Routing Lab
     </td>
   </tr>
   <tr>
