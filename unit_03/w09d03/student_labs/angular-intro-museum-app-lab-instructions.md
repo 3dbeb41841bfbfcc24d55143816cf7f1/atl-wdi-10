@@ -24,9 +24,8 @@ Create an example Node/Express app for this lesson.
 1. `mkdir museum-app` && `cd` into it
 
 2. `npm init -y`
-4. `touch server.js`
+3. `touch server.js`
 
-    ```js
     var express = require('express');
     var app     = express();
 
@@ -39,41 +38,32 @@ Create an example Node/Express app for this lesson.
     app.listen(4000, function(){
         console.log("app listening on port 4000");
     });
-```
     
-1. `npm install --save express`
-1. `mkdir public`
-1. `mkdir public/js`
-1. `touch public/js/app.js`
+4. `npm install --save express`
+5. `mkdir public`
+6. `mkdir public/js`
+7. `touch public/js/app.js`
 
-    ```js
-      angular.module('TheMET', []);
-```
 
-1. `touch public/js/donorController.js`
+  angular.module('TheMET', []);
 
-    ```js
-    angular.module('TheMET')
-     .controller('DonorController', DonorController);
-```
 
-2. `touch public/js/exhibitController.js`
+8. `touch public/js/donorController.js`
 
-    ```js
-    angular.module('TheMET')
-     .controller('ExhibitController', ExhibitController);
-```
 
-3. `touch public/js/generalInfoController.js`
+    angular.module('TheMET').controller('DonorController', DonorController);
 
-    ```js
-    angular.module('TheMET')
-     .controller('GeneralInfoController', GeneralInfoController);
-```
+9. `touch public/js/exhibitController.js`
 
-1. `touch public/index.html`
 
-    ```html
+    angular.module('TheMET').controller('ExhibitController', ExhibitController);
+
+10. `touch public/js/generalInfoController.js`
+
+    angular.module('TheMET').controller('GeneralInfoController', GeneralInfoController);
+
+11. `touch public/index.html`
+
     <!DOCTYPE html>
     <html>
       <head>
@@ -84,17 +74,16 @@ Create an example Node/Express app for this lesson.
     
       </body>
     </html>
-    ```
-1. Add `ng-app` to the `<html>` tag: 
+
+12. Add `ng-app` to the `<html>` tag: 
 
     ```html
     <html ng-app="TheMET">
     ```
 
-1. `mkdir public/css`
-2. `touch public/css/style.css`
+13. `mkdir public/css`
+14. `touch public/css/style.css`
 
-    ```css
     body {
      margin: 2rem auto;
      max-width: 900px;
@@ -112,22 +101,19 @@ Create an example Node/Express app for this lesson.
     img {
      max-width: 100%;
     }
-    ```
     
-1. Add the js, css, Angular CDN links to the `<head>` of index.html
+15. Add the js, css, Angular CDN links to the `<head>` of index.html
 
-    ```html
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src='js/app.js'></script>
     <script src='js/donorController.js'></script>
     <script src='js/exhibitController.js'></script>
     <script src='js/generalInfoController.js'></script>
-    ```
     
-1. Here is a link to the photo: http://www.metmuseum.org/~/media/Images/Exhibitions/2015/Sargent/Sargent_DIGITAL_Hero.jpg?h=360&mw=988&w=988
+16. Here is a link to the photo: http://www.metmuseum.org/~/media/Images/Exhibitions/2015/Sargent/Sargent_DIGITAL_Hero.jpg?h=360&mw=988&w=988
     
-1. Your folder structure should look similar to this.
+17. Your folder structure should look similar to this.
 
     ![](https://i.imgur.com/LEgPIqj.png)
 
