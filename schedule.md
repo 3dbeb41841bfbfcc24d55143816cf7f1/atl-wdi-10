@@ -211,7 +211,7 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      Technical Interviews
+      Technical Interviews/Lightning Talk Prep
     </td>
     <td>
       Technical Interviews/<br />
@@ -235,7 +235,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
+      Get Caught Up on Sleep
     </td>
     <td>
       Homework
@@ -268,10 +268,10 @@
       Morning Exercise
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d01/morning_exercise">Morning Exercise</a>
+      Outcomes
     </td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d01/morning_exercise">Morning Exercise</a>
     </td>
     <td>
       Morning Exercise
