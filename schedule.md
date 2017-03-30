@@ -877,7 +877,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-30-17-mean-machine.md">Homework</a>
     </td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-31-17-angular-videos.md">Homework</a>
     </td>
   </tr>
 </tbody></table>
