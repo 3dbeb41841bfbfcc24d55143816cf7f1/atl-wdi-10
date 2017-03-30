@@ -44,26 +44,22 @@ Create an example Node/Express app for this lesson.
 6. `mkdir public/js`
 7. `touch public/js/app.js`
 
-
-  angular.module('TheMET', []);
-
+    `angular.module('TheMET', []);`
 
 8. `touch public/js/donorController.js`
 
-
-    angular.module('TheMET').controller('DonorController', DonorController);
+    `angular.module('TheMET').controller('DonorController', DonorController);`
 
 9. `touch public/js/exhibitController.js`
 
-
-    angular.module('TheMET').controller('ExhibitController', ExhibitController);
+    `angular.module('TheMET').controller('ExhibitController', ExhibitController);`
 
 10. `touch public/js/generalInfoController.js`
 
-    angular.module('TheMET').controller('GeneralInfoController', GeneralInfoController);
+    `angular.module('TheMET').controller('GeneralInfoController', GeneralInfoController);`
 
 11. `touch public/index.html`
-
+    ```html
     <!DOCTYPE html>
     <html>
       <head>
@@ -74,16 +70,16 @@ Create an example Node/Express app for this lesson.
     
       </body>
     </html>
+    ```
 
 12. Add `ng-app` to the `<html>` tag: 
 
-    ```html
-    <html ng-app="TheMET">
-    ```
+    `<html ng-app="TheMET">`
 
 13. `mkdir public/css`
 14. `touch public/css/style.css`
 
+    ```css
     body {
      margin: 2rem auto;
      max-width: 900px;
@@ -101,16 +97,17 @@ Create an example Node/Express app for this lesson.
     img {
      max-width: 100%;
     }
+    ```
     
 15. Add the js, css, Angular CDN links to the `<head>` of index.html
-
+    ```html
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src='js/app.js'></script>
     <script src='js/donorController.js'></script>
     <script src='js/exhibitController.js'></script>
     <script src='js/generalInfoController.js'></script>
-    
+    ```
 16. Here is a link to the photo: http://www.metmuseum.org/~/media/Images/Exhibitions/2015/Sargent/Sargent_DIGITAL_Hero.jpg?h=360&mw=988&w=988
     
 17. Your folder structure should look similar to this.
