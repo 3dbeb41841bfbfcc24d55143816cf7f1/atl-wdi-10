@@ -268,7 +268,7 @@
       Morning Exercise
     </td>
     <td>
-      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w12d01/morning_exercise">Morning Exercise- CSS Frameworks- Update me to right repo</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d01/morning_exercise">Morning Exercise</a>
     </td>
     <td>
       Morning Exercise
