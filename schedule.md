@@ -1671,7 +1671,7 @@
 
 ## Important Links
 
-* [Google Calendar](https://calendar.google.com/calendar/embed?src=b4s54mkg0s2c1ddov57cffe4ls%40group.calendar.google.com&ctz=America/New_York)
+* [Google Calendar](https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FNew_York)
 * [Hypepotamus Calendar of Events](https://hypepotamus.com/events/)
 * [Meetups](http://www.meetup.com/)
 * [WDI-9 JS Cheat Sheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
