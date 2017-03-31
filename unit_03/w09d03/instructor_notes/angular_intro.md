@@ -102,20 +102,20 @@ Create a example Node/Express app for this lesson.
 2. `npm init -y`
 4. `touch server.js`
 
-    ```js
-    // server.js
-    var express = require('express');
-    var app     = express();
+```js
+// server.js
+var express = require('express');
+var app     = express();
 
-    app.use(express.static('public'));
+app.use(express.static('public'));
 
-    app.get('/', function(req, res){
-        res.render('index');
-    });
+app.get('/', function(req, res){
+    res.render('index');
+});
 
-    app.listen(4000, function(){
-        console.log("app listening on port 4000");
-    });
+app.listen(4000, function(){
+    console.log("app listening on port 4000");
+});
 ```
     
 1. `npm install --save express`
@@ -124,25 +124,23 @@ Create a example Node/Express app for this lesson.
 1. `touch public/js/app.js`
 1. `touch public/index.html`
 
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <title>Intro to Angular</title>
-      </head>
-      <body>
-    
-      </body>
-    </html>
-    ```
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to Angular</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+```
     
 1. Your folder structure should look similar to this.
 
-    ![](https://i.imgur.com/ncMjQme.png)
+![](https://i.imgur.com/ncMjQme.png)
     
-
-
 ##### &#x1F535; YOU DO
 
 Repeat the steps above to set-up our Angular app.
@@ -156,11 +154,11 @@ Like a few frameworks we've seen, there's no particular way to organize your app
 First, let's get Angular from [Google's CDN](https://developers.google.com/speed/libraries/#angularjs) and paste into script tag in the ```<head>```.
 
 ```html
- <head>
-   <meta charset="utf-8">
-   <title>Intro to Angular</title>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
- </head>
+<head>
+  <meta charset="utf-8">
+  <title>Intro to Angular</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+</head>
 ```
 
 
