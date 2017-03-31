@@ -840,7 +840,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_intro.md">Intro to Angular</a>
     </td>
     <td>
-      Lab
+    <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/labs/angular-controllers-lab">LAB</a>
     </td>
   </tr>
   <tr>
@@ -858,8 +858,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-intro-museum-app-lab-instructions.md">Angular Lab</a>
     </td>
     <td>
-      Lab
-      + get started on homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/labs/angular-controllers-lab">LAB</a>
     </td>
   </tr>
   <tr>
