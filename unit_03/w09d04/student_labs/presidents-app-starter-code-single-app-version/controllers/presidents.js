@@ -1,71 +1,67 @@
+var express = require('express')
+var router = express.Router()
+var bodyParser = require('body-parser') //parses information from POST
+var methodOverride = require('method-override') //used to manipulate POST
 var President = require('../models/President');
 
-// GET
-function getAll(request, response) {
+router.get('/', function indexAction(req, res) {
   President.find(function(error, presidents) {
-    if(error) response.json({message: 'Could not find any president'});
+    if(error) res.json({message: 'Could not find any president'});
 
-    response.json({presidents: presidents});
+    res.json({presidents: presidents});
   });
-}
+});
 
-// POST
-function createPresident(request, response) {
+router.post('/', function createAction(req, res) {
   console.log('in POST');
-  console.log('body:',request.body);
+  console.log('body:',req.body);
 
-  var president = new President(request.body);
+  var president = new President(req.body);
 
   president.save(function(error) {
-    if(error) response.json({messsage: 'Could not ceate president b/c:' + error});
+    if(error) res.json({messsage: 'Could not ceate president b/c:' + error});
 
-    response.json({president: president});
+    res.json({president: president});
   });
-}
+});
 
-// GET
-function getPresident(request, response) {
-  var id = request.params.id;
+router.get('/:id', function showAction(req, res) {
+  var id = req.params.id;
 
   President.findById({_id: id}, function(error, president) {
-    if(error) response.json({message: 'Could not find president b/c:' + error});
+    if(error) res.json({message: 'Could not find president b/c:' + error});
 
-    response.json({president: president});
+    res.json({president: president});
   });
-}
+});
 
-function updatePresident(request, response) {
-  var id = request.params.id;
+router.patch('/:id', function updateAction(req, res) {
+  var id = req.params.id;
 
   President.findById({_id: id}, function(error, president) {
-    if(error) response.json({message: 'Could not find president b/c:' + error});
+    if(error) res.json({message: 'Could not find president b/c:' + error});
 
-    if(request.body.name) president.name = request.body.name;
-    if(request.body.start) president.start = request.body.start;
-    if(request.body.end) president.end = request.body.end;
+    if(req.body.name) president.name = req.body.name;
+    if(req.body.start) president.start = req.body.start;
+    if(req.body.end) president.end = req.body.end;
 
     president.save(function(error) {
-      if(error) response.json({messsage: 'Could not update president b/c:' + error});
+      if(error) res.json({messsage: 'Could not update president b/c:' + error});
 
-      response.json({message: 'President successfully updated', president: president});
+      res.json({message: 'President successfully updated', president: president});
     });
   });
-}
+});
 
-function removePresident(request, response) {
-  var id = request.params.id;
+router.delete('/:id', function destroyAction(req, res) {
+  var id = req.params.id;
 
   President.remove({_id: id}, function(error) {
-    if(error) response.json({message: 'Could not delete president b/c:' + error});
+    if(error) res.json({message: 'Could not delete president b/c:' + error});
 
-    response.json({message: 'President successfully deleted'});
+    res.json({message: 'President successfully deleted'});
   });
-}
+});
 
-module.exports = {
-  getAll: getAll,
-  createPresident: createPresident,
-  getPresident: getPresident,
-  updatePresident: updatePresident,
-  removePresident: removePresident
-}
+
+module.exports = router;
