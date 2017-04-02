@@ -27,14 +27,15 @@ When you see the documentation for an API, when you see "RESTful" you can feel r
 
 Full CRUD for a Users resource.
 
-* Short name      HTTP method   URL
-* users#index     GET           `/users`
-* users#new       GET           `/users/new`
-* users#create    POST          `/users`
-* users#show      GET           `/users/:userId`
-* users#edit      GET           `/users/:userId/edit`
-* users#update    PUT/PATCH     `/users/:userId`
-* users#destroy   DELETE        `/users/:userId`
+| Short Name    | HTTP Method | URL Name            |
+|---------------|-------------|---------------------|
+| users#index   | GET         | /users              |
+| users#new     | GET         | /users/new          |
+| users#create  | POST        | /users              |
+| users#show    | GET         | /users/:userId      |
+| users#edit    | GET         | /users/:userId/edit |
+| users#update  | PATCH/PUT   | /users/:userId      |
+| users#destroy | DELETE      | /users/:userId      |
 
 Check out [Yelp's API docs](https://www.yelp.com/developers/documentation/v3/get_started) to see a good example of REST in practice.
 
