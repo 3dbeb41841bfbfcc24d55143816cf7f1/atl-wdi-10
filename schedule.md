@@ -211,7 +211,7 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      Technical Interviews
+      Technical Interviews/Lightning Talk Prep
     </td>
     <td>
       Technical Interviews/<br />
@@ -235,7 +235,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Exercises/rails_bog_app">Bog App</a>
+      Get Caught Up on Sleep
     </td>
     <td>
       Homework
@@ -268,10 +268,10 @@
       Morning Exercise
     </td>
     <td>
-      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w12d01/morning_exercise">Morning Exercise- CSS Frameworks- Update me to right repo</a>
+      Outcomes
     </td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d01/morning_exercise">Morning Exercise</a>
     </td>
     <td>
       Morning Exercise
@@ -391,7 +391,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d02/morning_exercise">Morning Exercise</a>
     </td>
     <td>
-      Morning Exercise
+      Outcomes
     </td>
     <td>
       Morning Exercise
@@ -415,7 +415,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/intro_to_active_record_and_migrations.md">Intro to Active Record</a>
     </td>
     <td>
-      <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br />
+<!--       <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br /> -->
       <a href="https://github.com/ATL-WDI-Curriculum/rails-intro/blob/master/README.md">Intro to Rails</a>
     </td>
     <td>
@@ -434,7 +434,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/active_record_one_to_many.md">Active Record One to Many</a>
     </td>
     <td>
-      <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br />
+<!--       <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br /> -->
       <a href="https://github.com/ATL-WDI-Curriculum/rails-intro/blob/master/README.md">Intro to Rails</a>
     </td>
     <td>
@@ -474,7 +474,7 @@
       <a href="https://github.com/ATL-WDI-Exercises/rails-active-record-migrations">Rails Migrations, Associations and Validations Lab</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-routing">Rails Resources and Routing Lab</a>
+      Rails Resources and Routing Lab
     </td>
   </tr>
   <tr>
@@ -786,7 +786,7 @@
       Project Two Retrospective
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/web-components.md">Morning Exercise</a>
     </td>
   </tr>
   <tr>
@@ -840,7 +840,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_intro.md">Intro to Angular</a>
     </td>
     <td>
-      Lab
+    <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/labs/angular-controllers-lab">LAB</a>
     </td>
   </tr>
   <tr>
@@ -858,8 +858,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-intro-museum-app-lab-instructions.md">Angular Lab</a>
     </td>
     <td>
-      Lab
-      + get started on homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/labs/angular-controllers-lab">LAB</a>
     </td>
   </tr>
   <tr>
@@ -874,10 +873,10 @@
       No Homework
     </td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-30-17-mean-machine.md">Homework</a>
     </td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-31-17-angular-videos.md">Homework</a>
     </td>
   </tr>
 </tbody></table>

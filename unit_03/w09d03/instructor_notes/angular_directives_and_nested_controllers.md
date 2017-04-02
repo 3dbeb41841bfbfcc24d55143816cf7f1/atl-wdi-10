@@ -50,49 +50,49 @@ We'll build a simple Node/Express app for this lesson.
 3. `npm install --save express`
 4. `touch server.js`
 
-    ```js
-    var express = require('express');
-    var app     = express();
+```js
+var express = require('express');
+var app     = express();
 
-    app.use(express.static('public'));
+app.use(express.static('public'));
 
-    app.get('/', function(req, res){
-        res.render('index');
-    });
+app.get('/', function(req, res){
+    res.render('index');
+});
 
-    app.listen(4000, function(){
-        console.log("app listening on port 4000");
-    });
+app.listen(4000, function(){
+    console.log("app listening on port 4000");
+});
 ```
     
 
 1. `mkdir public`
-1. `mkdir public/js`
-1. `touch public/js/app.js`
+2. `mkdir public/js`
+3. `touch public/js/app.js`
 
-    ```js
-    angular.module('todoApp', []);
+```js
+angular.module('todoApp', []);
 ```
-1. `touch public/js/todosController.js`
+4. `touch public/js/todosController.js`
 
-1. `touch public/index.html`
+5. `touch public/index.html`
 
-    ```html
-   <!DOCTYPE html>
-    <html ng-app="todoApp">
-      <head>
-        <meta charset="utf-8">
-        <title></title>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/todosController.js"></script>
-      </head>
-      <body>
-        {{1 + 1}}
-      </body>
-    </html>
-    ```
-    > Note that we added the `ng-app` directive to the opening `<html>` tag.
+```html
+<!DOCTYPE html>
+<html ng-app="todoApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/todosController.js"></script>
+  </head>
+  <body>
+    {{1 + 1}}
+  </body>
+</html>
+```
+> Note that we added the `ng-app` directive to the opening `<html>` tag.
     
 ##### &#x1F535; YOU DO
 
@@ -108,20 +108,20 @@ Set-up your Angular app. Run `nodemon server.js` to confirm that Angular is wire
 Let's start filling in our `todosController.js` a little bit - add in some initial seed data:
 
 ```js
-  angular
-    .module("todoApp")
-    .controller("TodosController", TodosController);
+angular
+  .module("todoApp")
+  .controller("TodosController", TodosController);
 
-  function TodosController(){
-    // this is our hardcoded seed data
-    this.all = [
-      {task: "build an awesome to-do list", done: false},
-      {task: "get super good at Angular", done: false},
-      {task: "party on code", done: false},
-      {task: "tackle the bonus challenges for this lesson", done: false},
-      {task: "take a nap", done: false}
-    ];
-  }
+function TodosController(){
+  // this is our hardcoded seed data
+  this.all = [
+    {task: "build an awesome to-do list", done: false},
+    {task: "get super good at Angular", done: false},
+    {task: "party on code", done: false},
+    {task: "tackle the bonus challenges for this lesson", done: false},
+    {task: "take a nap", done: false}
+  ];
+}
 ```
 
 This is great - we've got an array of simple objects. Granted, `.all` is whatever we want it to be, but calling it that makes it feel almost 'Mongoose-y', doesn't it? Totally your choice, though.
@@ -321,14 +321,15 @@ Angular filters format a value from within the view. It's just for presentation 
 1. order by
 	- sorting an array in the view!
 	
-	```html
-	<li ng-repeat="todo in todos.all | orderBy:'-task'">
-	```
+```html
+<li ng-repeat="todo in todos.all | orderBy:'-task'">
+```
+
 ##### &#x1F535; YOU DO
 
 Add a filter to your view
 
-<br>
+<br />
 
 ## More Directives Matey!
 Let's look at more examples of Angular directives. We'll add a new `MateyController` for this section.
@@ -409,23 +410,23 @@ angular.module('todoApp')
     .controller('ParentController', ParentController)
     .controller('ChildController', ChildController);
 
-  function ParentController(){
-    this.property1 = 'fun';
-  }
+function ParentController(){
+  this.property1 = 'fun';
+}
 
-  function ChildController(){
-    this.property1 = 'awesome';
-  }
+function ChildController(){
+  this.property1 = 'awesome';
+}
 ```
 Add some more code to your `index.html` file.
 
 ```html
-  <div ng-controller="ParentController as parent">
+<div ng-controller="ParentController as parent">
+  <span>{{child.property1}}:{{parent.property1}}</span>
+  <div ng-controller="ChildController as child">
     <span>{{child.property1}}:{{parent.property1}}</span>
-    <div ng-controller="ChildController as child">
-      <span>{{child.property1}}:{{parent.property1}}</span>
-    </div>
   </div>
+</div>
 ```
 
 - Note the way we've structured our controllers. The child controller can access parent properties and methods since it's nested, but a parent cannot access child properties. There _are_ ways to implement this, but it's outside of the scope of this lesson.
