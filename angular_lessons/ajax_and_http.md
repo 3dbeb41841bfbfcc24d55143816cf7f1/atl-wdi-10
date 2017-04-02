@@ -62,31 +62,15 @@ Let's redraw the diagram on the board and run through an example of creating a n
 
 ## Review Promises
 
-AJAX calls in Angular are done via Promises so let's do a quick review.
+When using Angular, AJAX calls are done via Promises, so let's do a quick review.
 
+AJAX in Angular are done via Promises so let's do a quick review.
 
+Promises in JS work similar to real-life Promises.
 
-TODO: DISCUSS THIS POINT WITH JOSH
-PROBABLY WANT TO TAKE THIS OUT -- AJAX IS INDEPENDENT OF PROMISES, IT'S JUST THAT ANGULARJS' `$http` USES `.then`ABLES
-The most important concept when using AJAX with AngularJS is the idea of Promises. Promises give us the ability to make a request (HTTP/AJAX call) from our FE framework to our Server.  
+When I order food at McDonald's, I get a receipt and a promise: "Go stand over there and I promise you I'll give you your food". When the cook completes (aka resolves) that promise, I am given my food then can continue to sit down and eat.
 
-The promise made in AngularJS will wait until we've received a response from the Server before continuing to execute any more code
-
-### Angular AJAX Example
-
-```javascript
-var self = this;
-
-function getPresidents($http) {
-  return $http
-    .get('/api/presidents')
-    .then(function parseResponse(response) {
-      self.allPresidents = response.data.presidents;
-    })
-    .catch(showError);
-}
-```
-END AREA WHERE TO TAKE OUT
+`orderFood.then(grabFood).then(sitDown).then(eatFood).catch(complainToManager);`
 
 
 ## Introduce Angular's `$http`
