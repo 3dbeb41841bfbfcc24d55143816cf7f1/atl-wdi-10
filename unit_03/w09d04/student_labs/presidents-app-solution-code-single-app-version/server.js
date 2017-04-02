@@ -17,7 +17,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
 
-
 var presidentsController = require("./controllers/presidents.js");
 app.use('/presidents', presidentsController);
 
