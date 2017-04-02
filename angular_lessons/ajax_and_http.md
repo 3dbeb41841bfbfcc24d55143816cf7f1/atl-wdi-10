@@ -1,6 +1,3 @@
-CHECK THAT ALL TODOs HAVE BEEN FINISHED BEFORE PUBLISHING
-
-
 # AJAX and `$http`
 
 ## Objectives
