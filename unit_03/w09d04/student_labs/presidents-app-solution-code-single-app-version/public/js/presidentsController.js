@@ -1,41 +1,50 @@
-angular.module('ThePresidentsApp', [])
+angular
+  .module('ThePresidentsApp')
   .controller('PresidentsController', PresidentsController);
 
 PresidentsController.$inject = ['$http'];
 
 function PresidentsController($http){
-  var self = this;
-  self.all = [];
-  self.addPresident = addPresident;
-  self.newPresident = {};
-  self.getPresidents = getPresidents;
-  self.deletePresident = deletePresident;
+  var vm = this;
 
-  getPresidents();
-  function getPresidents(){
-    $http
-      .get('/presidents')
-      .then(function(response){
-        self.all = response.data.presidents;
-    });
+  vm.addPresident = addPresident;
+  vm.all = [];
+  vm.deletePresident = deletePresident;
+  vm.newPresident = {};
+
+  activate();
+
+  function activate() {
+    getPresidents();
   }
 
   function addPresident(){
     $http
-      .post('/presidents', self.newPresident)
+      .post('/presidents', vm.newPresident)
       .then(function(response){
-        getPresidents();
-    });
-    self.newPresident = {};
+        vm.all.push(response.data.president);
+        vm.newPresident = {};
+      });
   }
 
   function deletePresident(president){
     $http
-      .delete("/presidents/" + president._id)
+      .delete('/presidents/' + president._id)
       .then(function(response){
-        getPresidents();
-        // var index = self.all.indexOf(president);
-        // self.all.splice(index, 1);
+        removePresidentFromList(president);
       });
+  }
+
+  function getPresidents(){
+    $http
+      .get('/presidents')
+      .then(function(response){
+        vm.all = response.data.presidents;
+      });
+  }
+
+  function removePresidentFromList(president) {
+    var index = vm.all.indexOf(president);
+    vm.all.splice(index, 1);
   }
 }
