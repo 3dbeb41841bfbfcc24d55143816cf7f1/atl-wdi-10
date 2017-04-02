@@ -159,7 +159,8 @@ End result for presidents#index:
 angular.module('ThePresidentsApp')
   .controller('PresidentsController', PresidentsController);
   
-PresidentsController.$inject = ['$http'
+PresidentsController.$inject = ['$http'];
+
 function PresidentsController($http) {
   var vm = this;
 
