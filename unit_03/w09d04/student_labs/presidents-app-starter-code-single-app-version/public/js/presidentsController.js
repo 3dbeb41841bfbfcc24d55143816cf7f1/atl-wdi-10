@@ -7,7 +7,7 @@ function PresidentsController(){
     {name: 'John Adams', start: 1797, end: 1801 },
     {name: 'Thomas Jefferson', start: 1801, end: 1809 },
     {name: 'James Madison', start: 1809, end: 1817 },
-    {name: 'Joshua Quincy Kushner', start: 2020, end: 2028 },
+    {name: 'Joshua Quincy Kushner', start: 2021, end: 2029 },
   ];
   this.addPresident = addPresident;
   this.newPresident = {};
