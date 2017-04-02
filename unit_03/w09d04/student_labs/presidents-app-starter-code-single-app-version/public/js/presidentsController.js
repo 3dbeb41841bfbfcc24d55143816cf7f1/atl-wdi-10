@@ -1,4 +1,4 @@
-angular.module('ThePresidentsApp', [])
+angular.module('ThePresidentsApp')
   .controller('PresidentsController', PresidentsController);
 
 function PresidentsController(){
