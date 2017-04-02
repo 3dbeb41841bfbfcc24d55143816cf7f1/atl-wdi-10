@@ -74,7 +74,7 @@ The promise made in AngularJS will wait until we've received a response from the
 ### Angular AJAX Example
 
 ```javascript
-const self = this;
+var self = this;
 
 function getPresidents($http) {
   return $http
@@ -107,8 +107,7 @@ $http
 // Note: Typically don't want $http in your controller, but for learning purposes we're going to put the AJAX call there for now.
 // After we cover Services tomorrow, you'll want to put it there.
 function PresidentsController($http) {
-  const allUsers = [];
-  const vm = this;
+  var vm = this;
   
   vm.allUsers = [];
   vm.createUser = createUser;
@@ -175,8 +174,7 @@ End result for presidents#index:
 angular.module('ThePresidentsApp')
   .controller('PresidentsController', PresidentsController);
   
-PresidentsController.$inject = ['$http'];
-
+PresidentsController.$inject = ['$http'
 function PresidentsController($http) {
   var vm = this;
 
