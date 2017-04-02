@@ -177,6 +177,8 @@ End result for presidents#index:
 ```javascript
 angular.module('ThePresidentsApp')
   .controller('PresidentsController', PresidentsController);
+  
+PresidentsController.$inject = ['$http'];
 
 function PresidentsController($http) {
   var vm = this;
@@ -209,6 +211,8 @@ Now let's link up presidents#create
 ```javascript
 angular.module('ThePresidentsApp')
   .controller('PresidentsController', PresidentsController);
+  
+PresidentsController.$inject = ['$http'];
 
 function PresidentsController($http) {
   var vm = this;
