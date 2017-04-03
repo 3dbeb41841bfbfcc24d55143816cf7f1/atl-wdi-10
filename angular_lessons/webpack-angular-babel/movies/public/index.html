@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="moviesApp">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/moviesController.js"></script>
+</head>
+<body>
+
+    <div ng-controller="MoviesController as movies">
+        <h1>Movies:</h1>
+        <div ng-repeat="movie in movies.movieList">
+            <div>Title: {{movie.title}}</div>
+            <div>Year: {{movie.year}}</div>
+            <br>
+        </div>
+    </div>
+
+</body>
+</html>

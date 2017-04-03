@@ -57,6 +57,17 @@ module.exports = {
 
 ## Getting started:
 
+- We've created a sample Express / Angular app called `movies`
+
+- Inside the app, we should see a structure that looks like this:
+ 
+     ```text
+     movies
+     server.js
+     _ public
+     
+     ```
+
 - Movies app
 - Build express / Angular structure (maybe give boilerplate)
 - Build a movies controller that ng-repeats over a list of movies (maybe make this look good w/ CSS)
