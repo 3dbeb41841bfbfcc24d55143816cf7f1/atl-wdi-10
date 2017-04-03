@@ -4,19 +4,18 @@
 
 ## Lesson Objectives:
 #### In this lesson, we will learn to...
-- Use Webpack to require JavaScript dependencies in our client-side code
 - Use Webpack to bundle our JavaScript into a single file
+- Use Webpack to require `npm` packages in our client-side code
 - Use `webpack --watch` along with `nodemon` to automatically compile our assets during development
 - Use loaders to add additional features to Webpack
 - Use the Babel loader to write ES2015 JavaScript for any browser
-- Use Webpack with Angular to create a new Controller
 
 ---
 ---
 ---
 npm installs and webpack config sample for reference:
 
-// npm i -D babel-core babel-loader babel-preset-env webpack
+// npm i -D babel-core babel-loader babel-preset-env webpack glob
 require('webpack');
 module.exports = {
     context: __dirname,
@@ -45,13 +44,17 @@ module.exports = {
 
 ## Why Webpack?
 
-- talk about DRY - we want modular code, but even then we end up with big files
-- so we split into more files
-- talk about large files
-- talk about many import statements
-- talk about how we solve this on the back-end
-- wouldn't it be great if we could use that same require syntax on the front-end?
-- enter Webpack
+We've learned a lot about client and server-side code at this point! We're full-stack 
+developers, and that means we'll have to deal with both worlds, equally. Even though 
+Node allows us to use JavaScript as our main language on both sides of the fence, 
+there are still some key differences between our front-end and back-end workflows 
+and the tools available to us. Wouldn't it be great if we could make our Angular 
+workflow on the front-end feel as smooth and powerful as our `npm`-powered 
+back-end workflow?
+
+This is one of the many problems Webpack is trying to solve. In today's lesson we 
+are going to take a couple of steps closer to having a single, unified development 
+experience across the entire stack of an application!
 
 ---
 
@@ -370,26 +373,80 @@ our front-end changes?
 
 - Enter `webpack --watch`! If we run Webpack with the `--watch` flag, it will now automatically 
 bundle up our front-end JavaScript for the next time we refresh the page. This makes for a much 
-more efficient development workflow, but there are a few caveats we'll need to consider.
+more efficient development workflow, but there are is an important caveat we'll need to consider.
 
-    - Right now, 
+- Right now, when any code in our application changes, `nodemon` refreshes our server. This is 
+great when we are making server-side changes, but we don't want it to happen when we update 
+client-side changes. So let's add a little bit more configuration, this time for `nodemon`.
 
-- Update controller to add some data
-- Did the data update on the page?
-- No, because we have to re-compile our assets
-- Enter webpack --watch
-- Show controller updates
-- Do we want to reload if server side code changes? Do we want nodemon to reload if client-side code changes?
-- No, let's refactor into client and server directories
-- Add ignores to Webpack and Nodemon configs (ignore public dir in both)
-- We have a workflow! (maybe talk about iTerm)
-- Gitignore public dir?
+- First, let's make a `nodemon.json` file in our `movies` directory:
 
+    `$ touch nodemon.json`
+    
+- Now, let's tell `nodemon` to ignore our `client` and `public` directories:
 
-## Using ES6 safely with Babel:
-- We have lets and consts and all of this ES6 stuff
-- We already know this isn't compatible with browsers, but wouldn't it be nice if we could use it anyways
-- Enter Babel - show transpiled code in browser
-- npm install babel stuff
-- add loader to webpack config
-- now we can safely write ES6 js
+    ```json
+    {
+      "ignore": [
+        "./public/*/*.js",
+        "./client/*/*.js"
+      ]
+    }
+    ```
+    
+- And there we go! Now we can have `nodemon` running in one terminal session while `webpack 
+--watch` runs in another! All of our code will auto-reload for us during development.
+
+## Using ES2015 safely with Babel:
+
+- One final thing... Let's take a look at our `client/app.js`:
+
+    ```javascript
+    const angular = require('angular');
+    
+    angular.module('moviesApp', []);
+    ```
+    
+- We are defining `angular` as a `const`, instead of a `var`. This is certainly a good 
+practice, but it will not run safely in all browsers because this is a feature of ES2015!
+
+- Enter Babel! Babel is a _transpiler_ that automatically re-writes your ES2015 JavaScript 
+into a browser-safe version of itself. There are several ways to use Babel, but for us 
+the easiest will be with a **Webpack loader**. Webpack loaders are essentially plugins 
+for Webpack that allow us to drop in special functionality to our _pipeline_. 
+
+- Let's add the `babel loader` to our `webpack.config.js`!
+
+- First, we'll have to install the `babel-loader` and its' dependencies:
+
+    `$ npm install --save-dev babel-core babel-loader babel-preset-env`
+
+- Now we'll add the `babel-loader` to our `webpack.config.js` as a **module**:
+
+    ```javascript
+    require('webpack');
+    var glob = require('glob');
+    
+    module.exports = {
+        context: __dirname,
+        entry: {
+            app: glob.sync(__dirname + '/client/**/*.js')
+        },
+        output: {
+            path: __dirname + '/public/js',
+            filename: '[name].bundle.js'
+        },
+        module: {
+            loaders: [
+                {
+                    test: /\.js$/,
+                    exclude: /node_modules/,
+                    loader: 'babel-loader'
+                }
+            ]
+        }
+    };
+    ```
+    
+- With this loader in place, all of our ES2015 JavaScript will run safely across 
+browsers! It's like magic!
