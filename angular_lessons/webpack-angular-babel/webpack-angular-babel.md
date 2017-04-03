@@ -362,6 +362,18 @@ automatically just like our own JavaScript.
 
 ## Using Webpack in our development workflow:
 
+- Webpack is great! We can clean up our `<script>` tags significantly and pull `npm` packages 
+directly into our front-end code! But now every time we want to see a change in our 
+front-end javascript, we have to run `webpack` first. On the server-side we have `nodemon` to 
+refresh our server automatically. Wouldn't it be great if Webpack could do the same thing for
+our front-end changes?
+
+- Enter `webpack --watch`! If we run Webpack with the `--watch` flag, it will now automatically 
+bundle up our front-end JavaScript for the next time we refresh the page. This makes for a much 
+more efficient development workflow, but there are a few caveats we'll need to consider.
+
+    - Right now, 
+
 - Update controller to add some data
 - Did the data update on the page?
 - No, because we have to re-compile our assets
