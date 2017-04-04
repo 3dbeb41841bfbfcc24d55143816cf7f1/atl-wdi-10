@@ -339,7 +339,7 @@ our front-end changes?
 
 - Enter `webpack --watch`! If we run Webpack with the `--watch` flag, it will now automatically 
 bundle up our front-end JavaScript for the next time we refresh the page. This makes for a much 
-more efficient development workflow, but there are is an important caveat we'll need to consider.
+more efficient development workflow, but there are is an important caveat we'll need to consider...
 
 - Right now, when any code in our application changes, `nodemon` refreshes our server. This is 
 great when we are making server-side changes, but we don't want it to happen when we update 
@@ -361,7 +361,7 @@ client-side changes. So let's add a little bit more configuration, this time for
     ```
     
 - And there we go! Now we can have `nodemon` running in one terminal session while `webpack 
---watch` runs in another! All of our code will auto-reload for us during development.
+--watch` runs in another! All of our front-end code will auto-reload for us during development.
 
 ## Using ES2015 safely with Babel:
 
