@@ -234,8 +234,6 @@ now see that all of our JavaScript is available to the page using only one `<scr
     build a new file called `app.bundle.js`. Had we called our `app` path in the `entry` object 
     `banana` instead, this would create a new file for us named `banana.bundle.js`. This is just 
     one small example of how flexible and powerful Webpack can be.
-    
-- refactor app to require controllers in app.js
 
 ## Let's try out a new file structure...
 
