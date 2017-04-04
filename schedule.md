@@ -665,7 +665,7 @@
         <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d01/instructor_notes/angular_services.md">Angular Services</a>
     </td>
     <td>
-    Webpack
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/angular_lessons/webpack-angular-babel/webpack-angular-babel.md">Webpack and Angular</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d05/instructor_notes/angular-ui-router.md">UI Router</a>
@@ -687,7 +687,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d01/instructor_notes/angular_services.md">Angular Services</a>
     </td>
     <td>
-      Webpack
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/angular_lessons/webpack-angular-babel/webpack-angular-babel.md">Webpack and Angular</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d05/instructor_notes/angular-ui-router.md">UI Router</a>
