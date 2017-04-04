@@ -448,3 +448,6 @@ for Webpack that allow us to drop in special functionality to our _pipeline_.
     
 - With this loader in place, all of our ES2015 JavaScript will run safely across 
 browsers! It's like magic!
+
+# Going Forward, you can use this gist to set up your Webpack config: https://gist.github.com/dphurley/f94813ab20e7baf8b325867a6f1179f1
+
