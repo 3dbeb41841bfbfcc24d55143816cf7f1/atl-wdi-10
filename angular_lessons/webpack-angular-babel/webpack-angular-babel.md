@@ -20,9 +20,9 @@ and the tools available to us. Wouldn't it be great if we could make our Angular
 workflow on the front-end feel as smooth and powerful as our `npm`-powered 
 back-end workflow?
 
-This is one of the many problems Webpack is trying to solve. In today's lesson we 
+This is one of the many problems Webpack can solve. In today's lesson we 
 are going to take a couple of steps closer to having a single, unified development 
-experience across the entire stack of an application!
+workflow across the entire stack of an application!
 
 ---
 
