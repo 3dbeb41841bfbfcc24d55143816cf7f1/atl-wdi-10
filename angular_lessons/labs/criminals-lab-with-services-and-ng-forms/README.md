@@ -17,6 +17,7 @@
 **"Must enter a location before proceeding"**
 - When we try to submit without entering a status, we should receive the message 
 **"Must choose a status before proceeding"**
+- We should not be able to **Submit** before all of these validation checks are met
 
 
 ### BONUS:
