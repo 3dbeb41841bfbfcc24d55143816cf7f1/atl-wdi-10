@@ -642,10 +642,10 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/morning_exercise">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d01/morning_exercise">Morning Exercise</a>
+      Morning Exercise / Review
     </td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d01/morning_exercise">Morning Exercise</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d02/morning_exercise">Morning Exercise</a>
