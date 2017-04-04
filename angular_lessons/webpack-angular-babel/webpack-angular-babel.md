@@ -10,38 +10,6 @@
 - Use loaders to add additional features to Webpack
 - Use the Babel loader to write ES2015 JavaScript for any browser
 
----
----
----
-npm installs and webpack config sample for reference:
-
-// npm i -D babel-core babel-loader babel-preset-env webpack glob
-require('webpack');
-module.exports = {
-    context: __dirname,
-    entry: {
-        scripts: __dirname + '/client/javascripts/scripts.js',
-        app: __dirname + '/client/app.js'
-    },
-    output: {
-        path: __dirname + '/public/javascripts',
-        filename: '[name].bundle.js'
-    },
-    module: {
-        loaders: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader'
-            }
-        ]
-    }
-};
-
----
----
----
-
 ## Why Webpack?
 
 We've learned a lot about client and server-side code at this point! We're full-stack 
