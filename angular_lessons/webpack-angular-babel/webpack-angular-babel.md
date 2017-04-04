@@ -10,38 +10,6 @@
 - Use loaders to add additional features to Webpack
 - Use the Babel loader to write ES2015 JavaScript for any browser
 
----
----
----
-npm installs and webpack config sample for reference:
-
-// npm i -D babel-core babel-loader babel-preset-env webpack glob
-require('webpack');
-module.exports = {
-    context: __dirname,
-    entry: {
-        scripts: __dirname + '/client/javascripts/scripts.js',
-        app: __dirname + '/client/app.js'
-    },
-    output: {
-        path: __dirname + '/public/javascripts',
-        filename: '[name].bundle.js'
-    },
-    module: {
-        loaders: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader'
-            }
-        ]
-    }
-};
-
----
----
----
-
 ## Why Webpack?
 
 We've learned a lot about client and server-side code at this point! We're full-stack 
@@ -52,9 +20,9 @@ and the tools available to us. Wouldn't it be great if we could make our Angular
 workflow on the front-end feel as smooth and powerful as our `npm`-powered 
 back-end workflow?
 
-This is one of the many problems Webpack is trying to solve. In today's lesson we 
+This is just one of the many problems Webpack can solve for us. In today's lesson we 
 are going to take a couple of steps closer to having a single, unified development 
-experience across the entire stack of an application!
+workflow across the entire stack of an application!
 
 ---
 
@@ -234,8 +202,6 @@ now see that all of our JavaScript is available to the page using only one `<scr
     build a new file called `app.bundle.js`. Had we called our `app` path in the `entry` object 
     `banana` instead, this would create a new file for us named `banana.bundle.js`. This is just 
     one small example of how flexible and powerful Webpack can be.
-    
-- refactor app to require controllers in app.js
 
 ## Let's try out a new file structure...
 
@@ -373,7 +339,7 @@ our front-end changes?
 
 - Enter `webpack --watch`! If we run Webpack with the `--watch` flag, it will now automatically 
 bundle up our front-end JavaScript for the next time we refresh the page. This makes for a much 
-more efficient development workflow, but there are is an important caveat we'll need to consider.
+more efficient development workflow, but there are is an important caveat we'll need to consider...
 
 - Right now, when any code in our application changes, `nodemon` refreshes our server. This is 
 great when we are making server-side changes, but we don't want it to happen when we update 
@@ -395,7 +361,7 @@ client-side changes. So let's add a little bit more configuration, this time for
     ```
     
 - And there we go! Now we can have `nodemon` running in one terminal session while `webpack 
---watch` runs in another! All of our code will auto-reload for us during development.
+--watch` runs in another! All of our front-end code will auto-reload for us during development.
 
 ## Using ES2015 safely with Babel:
 
@@ -450,3 +416,6 @@ for Webpack that allow us to drop in special functionality to our _pipeline_.
     
 - With this loader in place, all of our ES2015 JavaScript will run safely across 
 browsers! It's like magic!
+
+# Going Forward, you can use this gist to set up your Webpack config: https://gist.github.com/dphurley/f94813ab20e7baf8b325867a6f1179f1
+
