@@ -1,15 +1,3 @@
-# TODOs
-
-* Prepare for Pitfalls
-	* Guess where they'll be
-	* How to CFU
-* What are questions to know before going into the final (building static & dynamic routes & components)
-
-# Feedback
-
-* Speak up -- you're too quiet
-* Repeat question
-
 # UI Router
 
 ## Objectives
@@ -78,7 +66,7 @@ Showcase your skills: Add a new route and link to it.
 
 ## Use UI Router with Webpack
 
-Let's load up [a Webpack-ready project]().
+Let's load up [a Webpack-ready project](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/angular_lessons/labs/criminals-ui-router-starter).
 
 The name of the `npm` package is `angular-ui-router` so let's install that and `--save` it to our dependencies.
 
