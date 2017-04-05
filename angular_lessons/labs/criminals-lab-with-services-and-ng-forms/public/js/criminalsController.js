@@ -1,9 +1,9 @@
 angular.module('InfamousCriminals')
 .controller('CriminalsController', CriminalsController);
 
-CriminalsController.$inject = ['$http'];
+CriminalsController.$inject = ['CriminalsService'];
 
-function CriminalsController($http){
+function CriminalsController(CriminalsService){
   var self = this;
   self.all = [];
   self.addCriminal = addCriminal;
@@ -13,25 +13,20 @@ function CriminalsController($http){
 
   getCriminals();
   function getCriminals(){
-    $http
-      .get('/criminals')
-      .then(function(response){
-        self.all = response.data.criminals;
+    CriminalsService.getCriminals().then(function (criminalsData) {
+      self.all = criminalsData;
     });
   }
 
   function addCriminal(){
-    $http
-      .post('/criminals', self.newCriminal)
-      .then(function(response){
-        getCriminals();
-    });
-    self.newCriminal = {};
+   CriminalsService.addCriminal(self.newCriminal).then(function(){
+     self.getCriminals();
+       self.newCriminal = {};
+   });
   }
 
   function deleteCriminal(criminal){
-    $http
-      .delete("/criminals/" + criminal._id)
+    CriminalsService.deleteCriminal(criminal)
       .then(function(response){
         var index = self.all.indexOf(criminal);
         self.all.splice(index, 1);

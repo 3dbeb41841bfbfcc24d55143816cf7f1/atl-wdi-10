@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="moviesApp">
+<head>
+    <meta charset="utf-8">
+    <title>Movies</title>
+    <script src="js/app.bundle.js"></script>
+</head>
+<body>
+
+<div ng-controller="MoviesController as movies">
+    <h1>Movies:</h1>
+    <div ng-repeat="movie in movies.movieList">
+        <h3>Title: {{movie.title}}</h3>
+        <h3>Year: {{movie.year}}</h3>
+        <div ng-controller="ReviewsController as reviews">
+            <h3>Reviews:</h3>
+            <ul>
+                <li ng-repeat="review in reviews.reviewList">{{review.content}}</li>
+            </ul>
+
+        </div>
+        <br>
+    </div>
+</div>
+
+</body>
+</html>
