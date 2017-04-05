@@ -1,0 +1,16 @@
+<ul class="criminals">
+	<li ng-show="$ctrl.loading">
+		<strong>Loading...</strong>
+	</li>
+
+  <li ng-hide="$ctrl.loading" ng-repeat="criminal in $ctrl.criminals">
+    <strong>{{criminal.name}}</strong>
+
+		<!-- Reference for Gerry -->
+    <!-- <em>{{criminal.crime}}</em> -->
+    
+    <span ng-if="criminal.status" class='status {{criminal.status | lowercase }}'>{{criminal.status | uppercase}}</span>
+
+    <a>Click to see their crime (in users#show)</a>
+  </li>
+</ul>

@@ -5,7 +5,7 @@ var app = express();
 
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/infamous-masterminds');
+mongoose.connect('mongodb://localhost:27017/criminals-app');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
 
-var criminalsController = require("./controllers/criminals.js");
-app.use('/criminals', criminalsController);
+var criminalsController = require('./controllers/criminals.js');
+app.use('/api/criminals', criminalsController);
 
 app.listen(3000);

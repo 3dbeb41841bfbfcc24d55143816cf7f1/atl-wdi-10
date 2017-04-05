@@ -17,7 +17,7 @@ body {
 h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 4.8rem;
-  margin: 4.8rem auto 0;
+  margin: 1.2rem auto 0;
   letter-spacing: -2px;
 }
 
@@ -134,4 +134,8 @@ form#newCriminal input[type=submit]:hover {
 form#newCriminal input[type=submit]:focus {
   box-shadow: none;
   outline: none;
+}
+
+.criminals a {
+  font-size: 10px;
 }
