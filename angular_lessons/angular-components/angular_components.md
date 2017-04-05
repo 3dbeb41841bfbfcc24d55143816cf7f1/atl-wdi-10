@@ -275,24 +275,20 @@ when we can always reference this controller as `$ctrl` instead!
 - Get with a partner and refactor the `controllers/moviesController.js` 
 file using this same pattern. 
 
-- Hint: Our `index.html` should end up looking like this:
+- Hint: Our `movies.html` should end up looking like this:
 
     ```html
-    <!DOCTYPE html>
-    <html ng-app="moviesApp">
-    <head>
-        <meta charset="utf-8">
-        <title>Movies</title>
-        <script src="js/app.bundle.js"></script>
-    </head>
-    <body>
+    <div>
+        <h1>Movies:</h1>
+        <div ng-repeat="movie in $ctrl.movieList">
     
-    <movies>
-        <reviews></reviews>
-    </movies>
+            <h3>Title: {{movie.title}}</h3>
+            <h3>Year: {{movie.year}}</h3>
     
-    </body>
-    </html>
-
+            <reviews></reviews>
+            <br>
+    
+        </div>
+    </div>
     ```
     
