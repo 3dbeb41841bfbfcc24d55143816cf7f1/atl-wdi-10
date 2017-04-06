@@ -165,7 +165,7 @@ function UsersEditController(UsersService, $state) {
 			.then(function goToUsersShow() {
 				var thisUsersId = vm.thisUser._id;
 				
-				$state.go('usersShow', { id: thisUsersId });
+				$state.go('usersShow', {  userId: thisUsersId });
 			});
 	}
 }
