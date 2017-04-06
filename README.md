@@ -7,25 +7,21 @@ February 21, 2017 - May 12, 2017
 ##### Instructional Leads
 - Danny Hurley
     - danny.hurley@generalassemb.ly
-- Maren Woodruff
-    - maren.woodruff@generalassemb.ly | [Github](https://github.com/marenwoodruff)
+- Gerry Pass
+    - gerry.pass@generalassemb.ly
 - Josh Kushner
     - joshua.kushner@generalassemb.ly
 
 ##### Instructional Associates
-- John Dupper
-	- dupper.john@gmail.com
-- Lisa Holter
-    - lkholter@gmail.com
-
+- Justin Jacot
+	- Slack: @jeowulf
   
-#####Slack
+##### Slack
 
 - Danny: @dp_hurley
-- Maren: @marenwoodruff
+- Gerry: @gerry.pass
 - Josh: @jkushner
-- John: @johndupper
-- Lisa: @lkholter
+- Justin: @jeowulf
 
 
 ### Class Hours
