@@ -27,12 +27,10 @@ remainder of your time.
 
 Your app must:
 
-* **Have at _least_ 2 models** (more if they make sense) – one representing someone 
-using your application (a user), and one that represents the main functional idea 
+* **Have at _least_ 3 models** (more if they make sense) – one representing someone 
+using your application (a user), and two that represent the main functional ideas 
 for your app
 * **Use Angular as a front-end framework**
-* **Include sign up/log in functionality**, with encrypted passwords & an 
-authorization flow.
 * **Have complete RESTful routes** for at least one of your resources with GET, POST, 
 PUT, and DELETE
 * **Write Mongo queries using the Mongoose module** and interact with your document 
@@ -49,7 +47,7 @@ queries!
 
 ### Necessary Deliverables
 
-* A **working full-stack application, built by you**, hosted on Heroku
+* A **working full-stack application, built by your team**, hosted on Heroku
 * A **link to your hosted working app** in the URL section of your Github repo
 * A **git repository hosted on Github**, with a link to your hosted project,  and 
 frequent commits dating back to the **very beginning** of the project. Commit early, 
@@ -73,8 +71,7 @@ Most importantly a **technical demonstration** of your app which:
 
 ### To Submit
 
-* **Create a GitHub issue on the Matey repo** with a link your Project Repo, and 
-a link to Heroku where your project's deployed.
+* We will use **GAlaxy** to submit as a group Project. (https://ga-laxy.herokuapp.com/)
 
 ---
 
