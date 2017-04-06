@@ -16,7 +16,7 @@ February 21, 2017 - May 12, 2017
 - Justin Jacot
 	- Slack: @jeowulf
   
-#####Slack
+##### Slack
 
 - Danny: @dp_hurley
 - Gerry: @gerry.pass
