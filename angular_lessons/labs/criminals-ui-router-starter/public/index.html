@@ -7,11 +7,16 @@
   <script src="js/app.bundle.js"></script>
 </head>
 <body ng-app="criminals">
+  <nav>
+    <a ui-sref="home">Home</a> |
+    <a ui-sref="about">About</a> |
+    <a ui-sref="criminals">Criminals</a>
+  </nav>
+
   <h1>Infamous Criminals</h1>
+  <ui-view></ui-view>
 
-  <criminals></criminals>
 
-  
   <!-- For Gerry's reference -->
   <!-- Goal: Bring this into its own page -->
   <!-- <form ng-submit="criminals.addCriminal()" id="newCriminal">
