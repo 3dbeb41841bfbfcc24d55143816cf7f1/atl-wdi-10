@@ -117,8 +117,7 @@ And then we also want to see that customers orders specifically `amount` and `or
 ```sql
 SELECT name, zip, amount, order_date
 FROM customers
-JOIN orders
-  ON customers.id = orders.customer_id
+JOIN orders ON customers.id = orders.customer_id
 ```
 
 `JOIN` allow us to smoosh to tables together. We use `ON` to create JOINED rows specifically where the customer_id (foreign_key) and the primary key of the customer are the same.
@@ -128,8 +127,7 @@ This returns all of the customers so let's add our WHERE clause back in
 ```sql
 SELECT name, zip, amount, order_date
 FROM customers
-JOIN orders
-  ON customers.id = orders.customer_id
+JOIN orders ON customers.id = orders.customer_id
 WHERE customer_id = 1;
 ```
 
@@ -138,8 +136,7 @@ The default behavior of the JOIN statement is to make an INNER JOIN. You could r
 ```sql
 SELECT name, zip, amount, order_date
 FROM customers
-INNER JOIN orders
-  ON customers.id = orders.customer_id
+INNER JOIN orders ON customers.id = orders.customer_id
 WHERE customer_id = 1;
 ```
 
@@ -164,8 +161,7 @@ EXERCISE:
   <!-- ```sql
   SELECT name, address, city, state, zip, amount, order_date
   FROM customers
-  JOIN orders
-    ON customers.id = orders.customer_id
+  JOIN orders ON customers.id = orders.customer_id
   WHERE customer_id = 2;
   ``` -->
 2. Write a JOIN query that sums all the orders as order_total of `Grayce Mission` and returns a table with the `name` and `order_total`
@@ -178,8 +174,7 @@ EXERCISE:
   <!-- ```sql
   SELECT customers.name, SUM(Orders.amount) as total
   FROM customers
-  JOIN orders
-    ON customers.id = orders.customer_id
+  JOIN orders ON customers.id = orders.customer_id
   WHERE customers.id = 2 GROUP BY customers.name
   ``` -->
 3. Write a Join query that returns all of the users order summed as total:
@@ -194,8 +189,7 @@ EXERCISE:
   <!-- ```sql
   SELECT Customers.name, SUM(Orders.amount) as total
   FROM customers
-  JOIN orders
-    ON customers.id = orders.customer_id
+  JOIN orders ON customers.id = orders.customer_id
   GROUP BY Customers.name;
   ``` -->
 
@@ -224,10 +218,9 @@ Suppose for each employee, we want the number of employees they manage, or for e
 
 ```
 SELECT COUNT(e.id) AS reports_count, m.id, m.name
-  FROM employees AS e
-  INNER JOIN employees AS m
-    ON e.manager_id=m.id
-  GROUP BY e.manager_id, m.id, m.name;
+FROM employees AS e
+INNER JOIN managers AS m ON e.manager_id=m.id
+GROUP BY e.manager_id, m.id, m.name;
 ```
 
 This builds the join table from employees to employees, then aggregates the rows which have the same e.manager_id, m.id, and m.name.  Then it selects the number of rows aggregated and the id and name of the manager.
