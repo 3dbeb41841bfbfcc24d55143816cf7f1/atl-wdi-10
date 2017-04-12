@@ -117,7 +117,7 @@ And then we also want to see that customers orders specifically `amount` and `or
 ```sql
 SELECT name, zip, amount, order_date
 FROM customers
-JOIN orders ON customers.id = orders.customer_id
+JOIN orders ON customers.id = orders.customer_id;
 ```
 
 `JOIN` allow us to smoosh to tables together. We use `ON` to create JOINED rows specifically where the customer_id (foreign_key) and the primary key of the customer are the same.
