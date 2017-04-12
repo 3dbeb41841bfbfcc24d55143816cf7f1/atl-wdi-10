@@ -39,19 +39,19 @@ CREATE DATABASE joins_example_db;
 \c joins_example_db
 
 CREATE TABLE customers (
-  id SERIAL PRIMARY KEY,
-  name varchar(255),
-  address varchar(255),
-  city varchar(255),
-  state varchar(255),
-  zip integer
+id SERIAL PRIMARY KEY,
+name varchar(255),
+address varchar(255),
+city varchar(255),
+state varchar(255),
+zip integer
 );
 
 CREATE TABLE orders (
-  id SERIAL PRIMARY KEY,
-  customer_id INTEGER REFERENCES customers,
-  amount money,
-  order_date date
+id SERIAL PRIMARY KEY,
+customer_id INTEGER REFERENCES customers,
+amount money,
+order_date date
 );
 ```
 
