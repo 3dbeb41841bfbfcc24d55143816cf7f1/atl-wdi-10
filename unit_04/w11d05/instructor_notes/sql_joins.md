@@ -74,12 +74,12 @@ INSERT INTO customers (name, address, city, state, zip) VALUES ('Holland St', '9
 
 
 INSERT INTO orders (customer_id, amount, order_date) VALUES (1, 111.51, '01/5/2016');
-INSERT INTO orders (customer_id, amount, order_date) VALUES (2, 151.88, '12/22/2015');
+INSERT INTO orders (customer_id, amount, order_date) VALUES (2, 151.88, '07/13/2015');
 INSERT INTO orders (customer_id, amount, order_date) VALUES (3, 78.50, '05/05/2014');
 INSERT INTO orders (customer_id, amount, order_date) VALUES (1, 124.00, '07/13/2015');
-INSERT INTO orders (customer_id, amount, order_date) VALUES (2, 65.50, '02/15/2014');
+INSERT INTO orders (customer_id, amount, order_date) VALUES (2, 65.50, '09/16/2014');
 INSERT INTO orders (customer_id, amount, order_date) VALUES (1, 25.50, '09/16/2014');
-INSERT INTO orders (customer_id, amount, order_date) VALUES (2, 14.40, '03/03/2014');
+INSERT INTO orders (customer_id, amount, order_date) VALUES (2, 14.40, '09/16/2014');
 INSERT INTO orders (customer_id, amount, order_date) VALUES (1, 234.56, '10/08/2015');
 ```
 ---
@@ -214,16 +214,15 @@ A left outer join combines the ideas behind a left join and an outer join. Basic
 
 
 ## GROUP BY
-Suppose for each employee, we want the number of employees they manage, or for each library, we want the number of distinct books they stock.  We need to use GROUP BY.
+Suppose we want to know the total amount purchased on each order_date provided in the orders table.  We would use `GROUP BY` to sum the amounts for each date.
 
 ```
-SELECT COUNT(e.id) AS reports_count, m.id, m.name
-FROM employees AS e
-INNER JOIN managers AS m ON e.manager_id=m.id
-GROUP BY e.manager_id, m.id, m.name;
+SELECT order_date, SUM(amount) 
+FROM orders 
+GROUP BY order_date;
 ```
 
-This builds the join table from employees to employees, then aggregates the rows which have the same e.manager_id, m.id, and m.name.  Then it selects the number of rows aggregated and the id and name of the manager.
+This query will aggregate the total amount for each order_date
 
 ## Further Reading
 Some nice visuals of SQL Joins:
