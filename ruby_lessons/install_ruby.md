@@ -114,3 +114,12 @@ ruby example.rb
 ```
 
 Yay!
+
+
+## Weekend Homework
+
+There's an awesome book for getting started with Ruby called [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/).
+
+It's hosted online for free.
+
+This homework will not be graded, however the more you read through the book, the easier this week will be and the more you'll be able to do in your Rails project.
