@@ -34,18 +34,3 @@ Now that you had 3 full days to learn all about Ruby, what are 5 questions you s
 ### Recommended readings and references:
   - [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide)
   - [Ruby Mini-Tutorials Videos](https://www.youtube.com/playlist?list=PLw1xVKFbouelGegt-oL_Eip2GSUhr-a66)
-
-
-## Submitting Your Work
-
-  When you're ready to submit your work,
-
-  1.  Add, commit, and push your code to your fork of the class repo.
-  2.  File an issue on the class repo titled "Your Name -- wXXdXX".
-
-  The issue should include:
-
-  -   A link that points back to your fork.
-
-  -   A 'comfort' score on how you feel about the material, from 1 (very
-      uncomfortable) to 5 (very comfortable)
