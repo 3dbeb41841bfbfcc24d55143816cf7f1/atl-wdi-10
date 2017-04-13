@@ -243,6 +243,8 @@ Some nice visuals of SQL Joins:
 There are actually a number of ways to join multiple tables with `JOIN`, if
 you're really curious, check out this article:
 
+![All the joins in the world](https://www.codeproject.com/KB/database/Visual_SQL_Joins/Visual_SQL_JOINS_V2.png)
+
 [A visual explanation of SQL Joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 
 ## You Do: Books and Authors
