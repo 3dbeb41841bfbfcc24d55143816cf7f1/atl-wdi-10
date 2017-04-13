@@ -73,9 +73,3 @@ Your Answer Here
 ```
 Your Answer Here
 ```
-
-10. How much fun was this weekend?
-
-```
-Your Answer Here
-```
