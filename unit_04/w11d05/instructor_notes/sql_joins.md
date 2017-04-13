@@ -15,7 +15,7 @@ competencies: Relational Databases
 - What are JOIN tables?
 - Why do we need JOINS?
 - INNER JOIN
-- LEFT, RIGHT, and OUTER JOINs
+- LEFT and RIGHT JOINs
 
 
 ### Preparation
@@ -196,21 +196,27 @@ EXERCISE:
 
 There are several other forms of JOINS that are much less common
 
-
-*OUTER JOIN*
-An outer join is the inverse of the inner join. It only returns those records not in “left” table and the "right" table.
-
-“Give me the records that DON’T have a match.”
-
-In programming logic – think in terms of NOT AND.
-
 *LEFT JOIN*
-A left join returns all the records in the “left” table (Table 1) whether they have a match in the right table or not.
+
+```
+SELECT name, zip, amount, order_date
+FROM customers
+LEFT JOIN orders ON customers.id = orders.customer_id;
+```
+A left join returns all the records in the “left” table (customers) whether they have a match in the "right" (orders) table or not.
 
 If, however, they do have a match in the right table – give me the “matching” data from the right table as well. If not – fill in the holes with null.
 
-*LEFT OUTER JOIN*
-A left outer join combines the ideas behind a left join and an outer join. Basically – if you use a left outer join you will get the records in the left table that DO NOT have a match in the right table.
+
+*RIGHT JOIN*
+
+```
+SELECT name, zip, amount, order_date
+FROM customers
+RIGHT JOIN orders ON customers.id = orders.customer_id;
+```
+
+Returns all records in the "right" table (orders) whether they have a match in the "left" (customers) table or not.
 
 
 ## GROUP BY
@@ -219,10 +225,11 @@ Suppose we want to know the total amount purchased on each order_date provided i
 ```
 SELECT order_date, SUM(amount) 
 FROM orders 
-GROUP BY order_date;
+GROUP BY order_date
+ORDER BY order_date;
 ```
 
-This query will aggregate the total amount for each order_date
+This query will aggregate the total amount for each order_date.
 
 ## Further Reading
 Some nice visuals of SQL Joins:
