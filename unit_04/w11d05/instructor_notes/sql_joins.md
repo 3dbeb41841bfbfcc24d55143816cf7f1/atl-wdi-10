@@ -21,18 +21,62 @@ competencies: Relational Databases
 ### Preparation
 
 ## Intro (5 mins)
-psql -d library < seed.sql
+We've learned the four fundamental SQL operations: SELECT, INSERT, UPDATE, DELETE.
+
+Sometimes we want to select specific fields from different tables, and JOIN (hint hint) this information together in one table response from our database.  This allows us to combine 2+ tables to pull the exact information we want out of our SQL database.  
+
+For example, if we want to JOIN the `users` and `todos` table to see the users name next to the todo the user created, then it would look like this.
+
+_users_
+
+```
+| id | name  | fav_color | fav_ice_cream |
+|----|-------|-----------|---------------|
+| 1  | Josh  | green     | phish food    |
+| 2  | Danny | red       | cherry garcia |
+| 3  | Gerry | salmon    | cookie dough  |
+```
+
+_todos_
+
+```
+| id | description               | user_id     |
+|----|---------------------------|-------------|
+| 1  | I need to go to the store | 2           |
+| 2  | Go to the park            | 1           |
+| 3  | Chores and stuff          | 3           |
+```
+
+_SQL_
+
+```
+SELECT name, description
+FROM users
+JOIN todos ON users.id = todos.users_id;
+```
+
+RESULT
+
+```
+| name  | description               |
+|-------|---------------------------|
+| Danny | I need to go to the store |
+| Josh  | Go to the park            |
+| Gerry | Chores and stuff          |
+```
+
+
 
 ## Relationships and Joins
-In your first SQL lesson you learned how to CREATE TABLE and DROP TABLE, and how to do the four basic SQL operations: SELECT, INSERT, UPDATE, and DELETE.  With these features, we have what is essentially a spreadsheet, a spreadsheet which enforces constraints on the type of data in each column via the schema.  It's as if Excel could handle a million rows, but had no way of expressing the relationship between the items in one spreadsheet and another.
-
 Postgres and other SQL databases are __relational__.  They are designed for storing and viewing data that is interrelated.  To do this, one table has a __foreign key__ to another table.  If rows are related, one column in each row will have the same value.  Usually, a column in one row will contain the primary key of another row.
 
 How was this different in MONGO?
 
 ##
 
-In our system there are many libraries, so we will have a library table.  There are also many books, so we will have a books table.  Each book can have many copies in the system, so we will have a table which represents a copy of a book.  The libraries have many users, who can have a book checked out, and employees who work at a particular library.  Let's start by working out the library, books, and book-copy tables.
+In this next example we have a `customers` table and a `orders` table.
+
+CFU: What's the relationship between `customers` and `orders`?
 
 ```
 CREATE DATABASE joins_example_db;
@@ -158,25 +202,47 @@ EXERCISE:
   Grayce Mission | 40 College Avenue | Somerville | MA    | 2143 |  $14.40 | 2014-03-03
   ```
 
-  <!-- ```sql
-  SELECT name, address, city, state, zip, amount, order_date
-  FROM customers
-  JOIN orders ON customers.id = orders.customer_id
-  WHERE customer_id = 2;
-  ``` -->
+<details>
+
+<summary>**Solution**</summary>
+
+
+# Solution
+```sql
+SELECT name, address, city, state, zip, amount, order_date
+FROM customers
+JOIN orders ON customers.id = orders.customer_id
+WHERE customer_id = 2;
+```
+</details>
+
+<br>
+<br>
+
 2. Write a JOIN query that sums all the orders as order_total of `Grayce Mission` and returns a table with the `name` and `order_total`
   ```
   name           |  total  
   ----------------+---------
   Grayce Mission | $231.78
   ```
+  
+<details>
 
-  <!-- ```sql
-  SELECT customers.name, SUM(Orders.amount) as total
-  FROM customers
-  JOIN orders ON customers.id = orders.customer_id
-  WHERE customers.id = 2 GROUP BY customers.name
-  ``` -->
+<summary>**Solution**</summary>
+
+
+# Solution
+```sql
+SELECT customers.name, SUM(Orders.amount) as total
+FROM customers
+JOIN orders ON customers.id = orders.customer_id
+WHERE customers.id = 2 GROUP BY customers.name;
+```
+</details>
+
+<br>
+<br>
+
 3. Write a Join query that returns all of the users order summed as total:
 
   ```
@@ -186,13 +252,24 @@ EXERCISE:
   Walter Key         | $718.59
   Rosalinda Motorway |  $78.50
   ```
-  <!-- ```sql
-  SELECT Customers.name, SUM(Orders.amount) as total
-  FROM customers
-  JOIN orders ON customers.id = orders.customer_id
-  GROUP BY Customers.name;
-  ``` -->
+  
+  
+<details>
 
+<summary>**Solution**</summary>
+
+
+# Solution
+```sql
+SELECT customers.name, SUM(orders.amount) as total
+FROM customers
+JOIN orders ON customers.id = orders.customer_id
+GROUP BY customers.name;
+```
+</details>
+
+<br>
+<br>
 
 There are several other forms of JOINS that are much less common
 
@@ -222,6 +299,9 @@ Returns all records in the "right" table (orders) whether they have a match in t
 ## GROUP BY
 Suppose we want to know the total amount purchased on each order_date provided in the orders table.  We would use `GROUP BY` to sum the amounts for each date.
 
+## ORDER BY
+This operation will allow us to order the results based on a specific field we are SELECTing.
+
 ```
 SELECT order_date, SUM(amount) 
 FROM orders 
@@ -229,7 +309,7 @@ GROUP BY order_date
 ORDER BY order_date;
 ```
 
-This query will aggregate the total amount for each order_date.
+This query will aggregate the total amount for each order_date, and order the results by order_date.
 
 ## Further Reading
 Some nice visuals of SQL Joins:
