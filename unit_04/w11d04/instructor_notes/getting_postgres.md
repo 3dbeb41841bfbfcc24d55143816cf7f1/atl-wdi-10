@@ -3,7 +3,7 @@
   - Mac: http://postgresapp.com/
   
     - Homebrew: 
-      	- `$ brew install postgres`
+    	- `$ brew install postgres`
 	- `$ brew services start postgres`
   - Linux
     - `apt-get install postgresql-9.4`
