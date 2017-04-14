@@ -45,7 +45,7 @@ rbenv install -l
 # 2.4.1
 # that DOES NOT have a -dev or -rc, but a -p is OK
 # At the current time, the latest one is 2.4.1
-rbenv install
+rbenv install 2.4.1
 # This takes awhile!
 ```
 
