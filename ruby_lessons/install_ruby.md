@@ -60,6 +60,9 @@ Previously, when we ran `$ which ruby`, we got `/usr/bin/ruby` and `$ ruby -v` g
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 
+# Refresh bash source
+source ~/.bash_profile
+
 # Use your version here
 rbenv global 2.4.1
 which ruby
