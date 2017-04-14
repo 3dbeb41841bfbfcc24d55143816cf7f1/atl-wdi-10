@@ -39,7 +39,7 @@ brew install rbenv
 brew install ruby-build
 
 # list all the available Ruby versions
-ruby install -l
+rbenv install -l
 
 # Find the latest one that looks like:
 # 2.4.1
