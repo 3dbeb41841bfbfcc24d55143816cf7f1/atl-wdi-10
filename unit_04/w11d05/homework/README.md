@@ -1,5 +1,4 @@
 # Intro to Ruby
-What better way to spend a 3-day weekend than learning a brand new language? I can't think of any other way either!
 
 ![ruby](https://keystrokecreative.com/images/technology/web/icon-ruby.png)
 
@@ -23,7 +22,7 @@ What better way to spend a 3-day weekend than learning a brand new language? I c
 
 ### Part 5: 5 Questions
 
-Now that you had 3 full days to learn all about Ruby, what are 5 questions you still have or that came up? List them below and we'll do our best to answer them on Tuesday.
+What are 5 questions you still have or that came up?
 
   1. Your Question Here
   2. Your Question Here
