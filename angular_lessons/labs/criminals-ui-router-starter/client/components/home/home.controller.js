@@ -1,6 +1,7 @@
 HomeController.$inject = [];
 
 function HomeController() {
+
   // WHAT THIS CONTROLLER HAS / DOES THAT IS CONNECTED TO THE VIEW
   const vm = this;
 

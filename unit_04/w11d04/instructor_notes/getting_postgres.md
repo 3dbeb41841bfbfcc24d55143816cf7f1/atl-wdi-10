@@ -1,17 +1,10 @@
 # Getting PGSQL
 
   - Mac: http://postgresapp.com/
-    - Download
-    - Move it to `/Applications`
-    - We want to use it from the command line, so we add it to the search path.
-      - `$ atom ~/.bash_profile`
-      - Add this line:
-     `export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin`
-     - save and close.
-     - Update your terminal.
-    - Then open the app and click "Open psql"
-    - You should see an elephant icon in the menu bar at the top of your screen.
-    
+  
+    - Homebrew: 
+      - `$ brew install postgres`
+      - `$ brew services start postgres`
   - Linux
     - `apt-get install postgresql-9.4`
   - All
@@ -19,7 +12,7 @@
 
 ```
 $ psql
-psql (9.4.4)
+psql (9.6.1)
 Type "help" for help.
 
 matt=#

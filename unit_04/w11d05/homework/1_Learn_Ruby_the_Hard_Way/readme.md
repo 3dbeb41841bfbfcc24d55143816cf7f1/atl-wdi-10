@@ -14,11 +14,10 @@ share a number of similarities, but also a number of differences.
 
 You will read through the follow lessons and complete the "Study Drills" at the end of each reading. I recommend you watch the videos listed as well to get a video summary of the material.
 
-Inside `ruby_study_drills` you will create your ruby files and exercises in here. If you get stuck too long, create a bug report, and can move on to the next chapter. When you run your scripts make sure you're in the correct directory.
+When you run your scripts make sure you're in the correct directory.
 
 ** denotes that chapter is read only, no drills involved
 
-:dart: Commit after each exercise.
 
 ### Intruction to Ruby:
 

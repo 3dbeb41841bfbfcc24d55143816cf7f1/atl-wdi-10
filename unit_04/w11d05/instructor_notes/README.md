@@ -55,13 +55,7 @@ An inner join only returns those records that have “matches” in both tables.
 
 Inner join produces only the set of records that match in both Table A and Table B.
 
-*OUTER JOIN*
-An outer join is the inverse of the inner join. It only returns those records not in T1 and T2. “Give me the records that DON’T have a match.” In programming logic – think in terms of NOT AND.
-
 *LEFT JOIN*
 A left join returns all the records in the “left” table (T1) whether they have a match in the right table or not.
 
 If, however, they do have a match in the right table – give me the “matching” data from the right table as well. If not – fill in the holes with null.
-
-*LEFT OUTER JOIN*
-A left outer join combines the ideas behind a left join and an outer join. Basically – if you use a left outer join you will get the records in the left table that DO NOT have a match in the right table.

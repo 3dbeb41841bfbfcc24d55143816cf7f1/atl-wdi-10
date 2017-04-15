@@ -1,22 +1,25 @@
-CriminalsShowController.$inject = ['CriminalsService', '$stateParams'];
-function CriminalsShowController(CriminalsService, $stateParams) {
-  var vm = this;
+CriminalsShowController.$inject = ['$stateParams', 'CriminalsService'];
 
-  vm.current = {};
+function CriminalsShowController($stateParams, CriminalsService) {
+	const vm = this;
 
-  activate();
+	vm.current = {};
 
-  function activate() {
-    loadCurrentCriminal();
-  }
+	activate();
 
-  function loadCurrentCriminal() {
-    CriminalsService
-      .loadCurrent($stateParams.criminalId)
-      .then(function resolve(response) {
-        vm.current = response.data.criminal;
-      });
-  }
+	function activate() {
+		loadCurrentCriminal();
+	}
+
+	function loadCurrentCriminal() {
+		console.log($stateParams);
+
+		CriminalsService
+			.loadCurrent($stateParams.criminalId)
+			.then(function resolve(response) {
+				vm.current = response.data.criminal;
+			});
+	}
 }
 
 module.exports = CriminalsShowController;
