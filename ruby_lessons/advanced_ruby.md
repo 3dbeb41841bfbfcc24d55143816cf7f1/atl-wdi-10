@@ -1,0 +1,91 @@
+# Objectives
+
+* Questions and response using `gets.chomp`
+* Instance Variables
+* Pry gem
+
+## gets.chomp
+
+This command will issue a prompt in the terminal.  The entered answer can be set to a vairable.  The `gets` will prompt the user, and the `.chomp` will remove the 'return' separator.
+
+```ruby
+puts "Hey what's your name?"
+name = gets.chomp
+
+puts "Hey #{name}! Nice to meet you!"
+```
+
+Let's use it in a script and run it!
+
+## Instance Variables
+
+
+
+## pry
+
+In Ruby, gems are libaries we can use in our Ruby code.
+
+`pry` is a super helpful tool for debugging.
+
+Pry can be invoked in the middle of your code and it starts a 'Pry Session'.  You can then check variable values, run other methods, etc. at that specific point in your program.
+
+Here's the documentation: <a href="https://github.com/pry/pry">Pry Documentation</a>
+
+You'll be using this tool for the rest of your careers.
+
+`$ gem install pry`
+
+And here's how we use it in the code.
+
+`binding.pry`
+
+Let's see how it work in our script.
+
+
+# Shopping List
+
+Now you know how to use Ruby iterators, arrays, conditionals, and so many other awesome Ruby tools.  Let's put them to use and create our first shopping list script!
+
+<b>Two things:</b><br>
+1) Use `pry` when you get stuck!
+
+2) Don't be afraid to use Ruby documentation to figure it out.  Some of these questions require some googling.
+
+
+<br>
+In a directory of your choice, `touch shopping_list.rb`
+
+Run the file by using the ruby command: `ruby shopping_list.rb`
+
+```ruby
+shopping_list = ['peanuts', 'pretzels', 'coffee', 'pretzel sticks', 'fruit snacks', 'pretzel nuggets']
+```
+
+Do these exercises in order:
+
+* Add an item to the shopping list based on prompt response
+* Remove from our shopping list based on prompt response
+* Replace the second item on your list with `ice cream`
+* Iterate and `puts` each item from the shopping list in reverse
+* Iterate and `puts` a numbered shopping list
+
+```ruby
+1. peanuts
+2. pretzels
+3. coffee
+...
+```
+HINT: use ruby's <a href="https://apidock.com/ruby/Enumerator/each_with_index">`.each_with_index`</a> iterator
+
+* Find the word length of the 1st item in the shopping list and square it. Then, prompt the user for a number.  Take the user's response and add it to the squared number.
+* Take the length of the shopping list and return a boolean value if the length is an even number.
+* Take the first letter of the 2nd item and if it is the letter "a" then
+  * `puts` "The second item starts with the letter A!".
+
+  If not, then
+
+  * `puts` "Nope, starts with a different letter"
+
+
+### Bonus
+Use Ruby methods to clean up your code! Each exercise should have it's own method.  Don't forget to use instance variables to communicate values within and outside of methods.
