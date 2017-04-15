@@ -72,9 +72,9 @@ class Person
   end
 end
 
-gerry = Person.new("Gerry", "Pass")
+josh = Person.new("Josh", "Kushner")
 
-gerry.full_name # => "Gerry Pass"
+josh.full_name # => "Josh Kushner"
 ```
 
 
