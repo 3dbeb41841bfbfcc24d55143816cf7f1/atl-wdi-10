@@ -17,7 +17,67 @@ puts "Hey #{name}! Nice to meet you!"
 
 Let's use it in a script and run it!
 
-## Instance Variables
+## Types of Variables
+
+Let's talk about the different types of variables you'll encounter in Ruby. You'll need to use all of them at some point, but some more than others.
+
+In these examples, we'll define a variable, and then we'll write a tiny quick method that just spits that variable out, to see if it works.
+
+### Local Variable
+
+A local variable (lower_snake_case) is a quick placeholder, and gets forgotten as soon as your method or function is over.
+
+```ruby
+some_variable = "donuts"
+
+def some_method
+  some_variable
+end
+
+some_variable # => "donuts"
+              # because we're using it in the same place we defined it
+
+some_method   # Run our method, when it was defined outside that method –
+              # NameError: undefined local variable [blah blah blah]
+```
+
+These are great when you just need to temporarily store something or quickly give something a readable variable name, but won't need it later.
+
+### Instance Variable
+
+An instance variable (lower_snake_case) is a variable that is defined in an instance of an object. That's not meant to be a fancy term - an instance is just an example of an object.  A Table Class will create instances of tables.
+
+```ruby
+@some_variable = "donuts" # "donuts"
+
+def some_method
+  @some_variable
+end
+
+@some_variable # => "donuts"
+some_method # => "donuts"
+```
+
+Remember that it works this way, because when we get to Objects/Classes later this week, you'll see that instance variables let us store a variable once and use it however many methods we need inside an Class.
+
+```ruby
+class Person
+  def initialize(first_name, last_name)
+    @first_name = first_name
+    @last_name = last_name    
+  end
+  
+  def full_name
+    "#{@first_name} #{@last_name}
+  end
+end
+
+gerry = Person.new("Gerry", "Pass")
+
+gerry.full_name # => "Gerry Pass"
+```
+
+
 
 
 
