@@ -1520,10 +1520,10 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/big_goal_culture.md">Big Goal/Culture</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/big-goal-culture.md">Big Goal/Culture</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/git/git_github_setup.md">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/git/git-github-setup.md">Morning Exercise</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/css_intro_morning_exercise.md">Morning Exercise</a>
@@ -1538,10 +1538,10 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/big_goal_culture.md">Big Goal/Culture</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/big-goal-culture.md">Big Goal/Culture</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/git/git_github.md">Intro to Git + Github</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/git/git-github.md">Intro to Git + Github</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/html-dom">HTML + DOM</a>
@@ -1557,11 +1557,11 @@
     <td><strong>Mod 2</strong></td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/installation.md">Installation</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/the_tooling_of_wdi.md">Tooling</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/bug_report.md">Bug Report</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/the-tooling-of-wdi.md">Tooling</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/bug-report.md">Bug Report</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/git/git_github.md">Intro to Git + Github</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/git/git-github.md">Intro to Git + Github</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/html-practice-and-review.md">HTML Practice LAB</a><br />
@@ -1577,7 +1577,7 @@
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/command_line.md">Intro to CLI</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/command-line.md">Intro to CLI</a>
     </td>
     <td>
       <a href="https://www.atlassian.com/git/tutorials/what-is-version-control">Atlassian Git Lab</a><br />
@@ -1596,7 +1596,7 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/sublime_text_editor.md">Sublime Editor</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/sublime-text-editor.md">Sublime Editor</a>
     </td>
     <td>
       <a href="https://www.atlassian.com/git/tutorials/what-is-version-control">Atlassian Git Lab</a><br />
@@ -1607,6 +1607,9 @@
       + LAB
     </td>
     <td>
+      LAB
+    </td>
+    <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/student_labs/control_flow_practice.md">Control Flow LAB</a><br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d02/student_labs/choose_your_own_adventure">Choose your own adventure LAB</a>
     </td>
@@ -1615,16 +1618,19 @@
     <td><strong>Homework</strong></td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/wiki">Wiki</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/wiki_treasure_hunt.md">Wiki Treasure Hunt</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/culture/wiki-treasure-hunt.md">Wiki Treasure Hunt</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/02-22-17-git-practice-and-accessibility-reading.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/accessibility/accessibility-and-a-smarter-way.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/seven_stages_of_software_craftsmanship.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/craftsmanship/seven-stages-of-software-craftsmanship-and-a-smarter-way.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/a_smarter_way_to_learn_js_ch_1_through_30.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/a_smarter_way_to_learn_js_ch_11_through_15.md">Homework</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/a_smarter_way_to_learn_js_ch_16_through_45.md">Homework</a>
     </td>
   </tr>
 </tbody></table>
