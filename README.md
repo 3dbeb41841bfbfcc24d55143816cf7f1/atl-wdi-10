@@ -7,10 +7,8 @@ February 21, 2017 - May 12, 2017
 ##### Instructional Leads
 - Danny Hurley
     - danny.hurley@generalassemb.ly
-- Gerry Pass
-    - gerry.pass@generalassemb.ly
-- Josh Kushner
-    - joshua.kushner@generalassemb.ly
+- Maren Woodruff
+    - maren.woodruff@generalassemb.ly
 
 ##### Instructional Associates
 - Justin Jacot
@@ -19,8 +17,8 @@ February 21, 2017 - May 12, 2017
 ##### Slack
 
 - Danny: @dp_hurley
+- Maren: @marenwoodruff
 - Gerry: @gerry.pass
-- Josh: @jkushner
 - Justin: @jeowulf
 
 
