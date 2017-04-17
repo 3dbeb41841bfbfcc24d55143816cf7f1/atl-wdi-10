@@ -1,6 +1,6 @@
 ### A Smarter Way To Learn Javascript
 
-Work through Chapters 16-45 (don't worry, there are a lot of blank pages)
+Work through Chapters 16-40 (don't worry, there are a lot of blank pages)
 http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf
 
 ### [Bootstrap](http://getbootstrap.com/)-ify

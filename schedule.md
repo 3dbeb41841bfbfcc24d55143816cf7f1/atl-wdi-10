@@ -1526,13 +1526,13 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/git/git-github-setup.md">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/css_intro_morning_exercise.md">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/css/css-intro-morning-exercise.md">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/02-24-17-homework-review-and-typing-exercises.md">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/typing/homework-review-and-typing-exercises.md">Morning Exercise</a>
     </td>
     <td>
-      <a href="">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/typing/typing-exercise.md">Morning Exercise</a>
     </td>
   </tr>
   <tr>
@@ -1702,6 +1702,7 @@
 * [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Typing Sites
+* [Beginner](https://www.typingclub.com/sportal/team-2/program-typing-jungle.game)
 * [TypeRacer](http://play.typeracer.com/)
 * [Typing.io](http://typing.io)
 * [ztype](http://zty.pe/)
