@@ -1627,10 +1627,10 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/craftsmanship/seven-stages-of-software-craftsmanship-and-a-smarter-way.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/a_smarter_way_to_learn_js_ch_11_through_15.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/javascript/a_smarter_way_to_learn_js_ch_11_through_15.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/a_smarter_way_to_learn_js_ch_16_through_45.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/javascript/a_smarter_way_to_learn_js_ch_16_through_45.md">Homework</a>
     </td>
   </tr>
 </tbody></table>
