@@ -1,6 +1,6 @@
 ![ga](http://mobbook.generalassemb.ly/ga_cog.png)
 # Welcome to WDI-9
-February 21, 2017 - May 12, 2017
+April 24, 2017 - June 30, 2017
 
 
 ### Instructors
@@ -18,7 +18,6 @@ February 21, 2017 - May 12, 2017
 
 - Danny: @dp_hurley
 - Maren: @marenwoodruff
-- Gerry: @gerry.pass
 - Justin: @jeowulf
 
 
@@ -68,7 +67,4 @@ February 21, 2017 - May 12, 2017
 
 #### Course Content
 
-- [Unit 1 Content Outline](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01)
-- [Unit 2 Content Outline](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02)
-- [Unit 3 Content Outline](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03)
-- [Unit 4 Content Outline](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04)
+- [Schedule](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/schedule.md)
