@@ -271,7 +271,7 @@ end
 
 ### While/Until Loop
 
-`while` loops allow you to run something while a condition is `false`. `until` will run until it is `true`.
+`while` loops allow you to run something while a condition is `true`. `until` will run until it is `false`.
 
 These are rarely used because you can cause infinite loops if typed incorrectly! 
 

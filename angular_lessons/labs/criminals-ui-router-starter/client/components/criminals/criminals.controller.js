@@ -14,14 +14,15 @@ function CriminalsController(CriminalsService) {
 	function activate() {
 		loadAllCriminals();
 	}
-	
+
 
 	// HOW IT DOES STUFF
 	function loadAllCriminals() {
 		CriminalsService
 			.loadAll()
 			.then(function resolve(response) {
-				vm.criminals = response.data.criminals;
+				console.log(response)
+				vm.criminals = response.data.criminals; // array of criminals
 				vm.loading = false;
 			});
 	}
