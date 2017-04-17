@@ -1,16 +1,20 @@
+var express = require('express')
+var router = express.Router()
+var bodyParser = require('body-parser') //parses information from POST
+var methodOverride = require('method-override') //used to manipulate POST
 var Criminal = require('../models/Criminal');
 
 // GET
-function getAll(request, response) {
+router.get('/', function indexAction(request, response) {
   Criminal.find(function(error, criminals) {
     if(error) response.json({message: 'Could not find any criminal'});
 
     response.json({criminals: criminals});
   }).select('-__v');
-}
+});
 
 // POST
-function createCriminal(request, response) {
+router.post('/', function createAction(request, response) {
   console.log('in POST');
   console.log('body:',request.body);
 
@@ -21,10 +25,10 @@ function createCriminal(request, response) {
 
     response.json({criminal: criminal});
   });
-}
+});
 
 // GET
-function getCriminal(request, response) {
+router.get('/:id', function showAction(request, response) {
   var id = request.params.id;
 
   Criminal.findById({_id: id}, function(error, criminal) {
@@ -32,9 +36,9 @@ function getCriminal(request, response) {
 
     response.json({criminal: criminal});
   }).select('-__v');
-}
+});
 
-function updateCriminal(request, response) {
+router.patch('/:id', function updateAction(request, response) {
   var id = request.params.id;
 
   Criminal.findById({_id: id}, function(error, criminal) {
@@ -50,9 +54,9 @@ function updateCriminal(request, response) {
       response.json({message: 'Criminal successfully updated', criminal: criminal});
     });
   }).select('-__v');
-}
+});
 
-function removeCriminal(request, response) {
+router.delete('/:id', function destroyAction(request, response) {
   var id = request.params.id;
 
   Criminal.remove({_id: id}, function(error) {
@@ -60,12 +64,6 @@ function removeCriminal(request, response) {
 
     response.json({message: 'Criminal successfully deleted'});
   }).select('-__v');
-}
+});
 
-module.exports = {
-  getAll: getAll,
-  createCriminal: createCriminal,
-  getCriminal: getCriminal,
-  updateCriminal: updateCriminal,
-  removeCriminal: removeCriminal
-}
+module.exports = router;

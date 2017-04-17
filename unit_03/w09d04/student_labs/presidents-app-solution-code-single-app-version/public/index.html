@@ -15,7 +15,29 @@
 
       <ul id="presidents">
         <li ng-repeat="president in presidents.all">
-          <strong>{{president.name}}</strong> <em>({{president.start}} - {{president.end}})</em> <button ng-click="presidents.deletePresident(president)">Delete</button>
+          <strong>{{president.name}}</strong> <em>({{president.start}} - {{president.end}})</em>
+          <span ng-click="president.isEditing=true">Edit</span>
+          <form ng-show="president.isEditing" ng-submit="presidents.updatePresident(president)">
+            <div>
+              <label for="new-president-name">President's Name</label>
+              <input type="text" id="new-president-name" ng-model='president.name'>
+            </div>
+
+            <div>
+              <label for="new-president-start">President's Starting Year</label>
+              <input type="text" id="new-president-start" ng-model='president.start'>
+            </div>
+
+            <div>
+              <label for="new-president-end">President's Ending Year</label>
+              <input type="text" id="new-president-end" ng-model='president.end'>
+            </div>
+
+            <div>
+              <input type="submit" value="Update President">
+            </div>
+
+          </form>
         </li>
       </ul>
 

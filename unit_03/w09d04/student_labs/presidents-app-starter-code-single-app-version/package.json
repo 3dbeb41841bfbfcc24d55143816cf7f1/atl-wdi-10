@@ -2,7 +2,7 @@
   "name": "express-routing-lab",
   "version": "0.0.0",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "body-parser": "^1.13.2",
@@ -14,7 +14,8 @@
     "jade": "~1.11.0",
     "method-override": "^2.3.4",
     "mongoose": "^4.0.7",
-    "morgan": "~1.6.1"
+    "morgan": "~1.6.1",
+    "nodemon": "^1.11.0"
   },
   "license": "ISC"
 }
