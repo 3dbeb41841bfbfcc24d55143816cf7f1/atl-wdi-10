@@ -9,5 +9,8 @@ Do the labs in this order:
 	* Send a text via Twilio
 	* Find your own!
 	* If the docs say to use OAuth, avoid it for now
+* Finish Learn Ruby the Hard Way
+* Start [Project Euler](https://projecteuler.net/)
+	* Major props when bringing this up in an interview
 
 **Note:** Do NOT look up the answers! 
