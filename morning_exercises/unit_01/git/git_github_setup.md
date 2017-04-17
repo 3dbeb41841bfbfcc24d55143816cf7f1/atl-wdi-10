@@ -13,9 +13,9 @@ your respective GitHub accounts.
 (if you have not already done so)
 by running the following command from the terminal.
 
-    [brew documentation](http://brew.sh/)
+    - [brew documentation](http://brew.sh/)
 
-    ```bash
+```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 2. Next, run Homebrew's built-in diagnostic tool with the command `brew doctor`.
@@ -119,27 +119,26 @@ $ subl ~/.bash_profile
 
 3. In that file paste the following:
 
-    ```bash
-    # Load .bashrc, if it exists.
-    if [ -f ~/.bashrc ]; then
-       source ~/.bashrc
-    fi
+```bash
+# Load .bashrc, if it exists.
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
 ```
 
-    ```bash
-    # This will load the .git_prompt file each time you open Terminal window. 
-    # This will also give us some highlighting.    
-    source ~/.git-prompt.sh
+```bash
+# This will load the .git_prompt file each time you open Terminal window. 
+# This will also give us some highlighting.    
+source ~/.git-prompt.sh
 
-    GIT_PS1_SHOWDIRTYSTATE=true
-    GIT_PS1_SHOWUNTRACKEDFILES=true
-    GIT_PS1_SHOWCOLORHINTS=true
-    export PS1='\u:\W$(__git_ps1 " (%s)")\$ '
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWCOLORHINTS=true
+export PS1='\u:\W$(__git_ps1 " (%s)")\$ '
 ```
 
 4. Set your default editor:
 
-    ```bash
+```bash
 $ git config --global core.editor "subl -n -w"
 $ git config --list
 ```
@@ -200,8 +199,6 @@ Congratulations! You now have Git and GitHub set up and configured.
 
 ## [Linux or Windows Instructions](http://docs.railsbridge.org/installfest/choose_your_operating_system)
 
-
-### If you Finish
 
 
 

@@ -1519,7 +1519,7 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/big-goal-and-culture">Big Goal/Culture</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/big_goal_culture.md">Big Goal/Culture</a>
     </td>
     <td>
       Morning Exercise
@@ -1534,7 +1534,7 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/big-goal-and-culture">Big Goal/Culture</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/big_goal_culture.md">Big Goal/Culture</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/git_github.md">Intro to Git + Github</a>
@@ -1549,7 +1549,8 @@
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/student-laptop-requirements-and-setup">Laptop Requirements</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/installation.md">Installation</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/the_tooling_of_wdi.md">Tooling</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/git_github.md">Intro to Git + Github</a>
@@ -1564,7 +1565,7 @@
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/command-line">Intro to CLI</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/command_line.md">Intro to CLI</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/html-dom">HTML + DOM</a>
@@ -1596,7 +1597,8 @@
   <tr>
     <td><strong>Homework</strong></td>
     <td>
-      <a href="https://github.com/sf-wdi-27-28/command-line-mystery">Command Line</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/wiki">Wiki</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/wiki_treasure_hunt.md">Wiki Treasure Hunt</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/02-22-17-git-practice-and-accessibility-reading.md">Homework</a>
