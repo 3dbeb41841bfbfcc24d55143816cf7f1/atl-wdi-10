@@ -78,7 +78,29 @@ josh.full_name # => "Josh Kushner"
 ```
 
 
+## Gems and Bundler
 
+Gems are similar to npm packages that we used in our NodeJS projects.  Gems are libraries created by other developers in the Ruby community.  There are two ways to install gems.
+
+`gem install pry`
+
+OR
+
+We install Bundler.  Bundler is a gem that allows us to manage other gems in Ruby.  It's similar to how we installed multiple packages from an `npm install` when we kept different packages in our `package.json`
+
+`gem install bundler`
+
+Then we create our Gemfile in our app directory
+
+`touch Gemfile`
+
+```ruby
+source 'https://rubygems.org'
+
+gem "pry"
+```
+
+`bundle install`
 
 
 ## pry
@@ -91,10 +113,6 @@ Pry can be invoked in the middle of your code and it starts a 'Pry Session'.  Yo
 
 Here's the documentation: <a href="https://github.com/pry/pry">Pry Documentation</a>
 
-You'll be using this tool for the rest of your careers.
-
-`$ gem install pry`
-
 And here's how we use it in the code.
 
 `binding.pry`
@@ -102,7 +120,7 @@ And here's how we use it in the code.
 Let's see how it work in our script.
 
 
-# Shopping List
+# Shopping List Lab
 
 Now you know how to use Ruby iterators, arrays, conditionals, and so many other awesome Ruby tools.  Let's put them to use and create our first shopping list script!
 
@@ -145,7 +163,19 @@ HINT: use ruby's <a href="https://apidock.com/ruby/Enumerator/each_with_index">`
   If not, then
 
   * `puts` "Nope, starts with a different letter"
+  
+
+# Actual Interview Question Lab
+
+### FizzBuzz
+
+1) Create a method that will count to 20.  It should `puts` each number on the terminal.
+2) Now for every number divisible by 3, the method should `puts` "Fizz" instead of the number.
+3) Now for every number divisible by 5, the method should `puts` "Buzz" instead of the number.
+4) Now for every number divisible by 3 AND 5, the method should `puts` "FizzBuzz" instead of the number.
+5) Refactor if needed.
+
 
 
 ### Bonus
-Use Ruby methods to clean up your code! Each exercise should have it's own method.  Don't forget to use instance variables to communicate values within and outside of methods.
+Use Ruby methods to clean up your code in the Shopping List lab! Each exercise should have it's own method.  Don't forget to use instance variables to communicate values within and outside of methods.
