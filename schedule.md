@@ -1519,10 +1519,10 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/big_goal_culture.md">Big Goal/Culture</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/big_goal_culture.md">Big Goal/Culture</a>
     </td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/git/git_github_setup.md">Morning Exercise</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/css_intro_morning_exercise.md">Morning Exercise</a>
@@ -1534,7 +1534,7 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/big_goal_culture.md">Big Goal/Culture</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/big_goal_culture.md">Big Goal/Culture</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/git_github.md">Intro to Git + Github</a>
@@ -1549,8 +1549,9 @@
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/installation.md">Installation</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/the_tooling_of_wdi.md">Tooling</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/installation.md">Installation</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/the_tooling_of_wdi.md">Tooling</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/bug_report.md">Bug Report</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/git_github.md">Intro to Git + Github</a>
@@ -1565,7 +1566,7 @@
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/command_line.md">Intro to CLI</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/command_line.md">Intro to CLI</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/html-dom">HTML + DOM</a>
@@ -1580,7 +1581,8 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/text-editors">Sublime Editor</a>
+      https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/sublime_text_editor.md
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/sublime_text_editor.md">Sublime Editor</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/html-practice-and-review.md">HTML Practice LAB</a><br />
@@ -1648,7 +1650,6 @@
 <br />
 
 #### Bootstrap
-- [WDI-9 Bootstrap Cheat Sheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
 - [Bootstrap Classes Cheat Sheet](Bootstrap 3 Classes List With Description - Bootstrap Cheat Sheet)
 - [Bootstrap Site](http://getbootstrap.com/getting-started/)
 - [Built with Bootstrap](https://bootstrapbay.com/blog/built-with-bootstrap/)
@@ -1666,18 +1667,23 @@
 <br />
 <br />
 
+---
+
 ## Important Links
 
 * [Google Calendar](https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FNew_York)
 * [Hypepotamus Calendar of Events](https://hypepotamus.com/events/)
 * [Meetups](http://www.meetup.com/)
-* [WDI-9 JS Cheat Sheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
-* [WDI-9 Bootstrap Cheat Sheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
 * [Pomodoro Timer](http://www.marinaratimer.com/)
 * [Bullet Journal](http://bulletjournal.com/get-started/)
 * [Can I Use](http://caniuse.com/)
 * [Silicon Valley Scene](https://www.youtube.com/watch?v=oyVksFviJVE)
 * [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+## Typing Sites
+* [TypeRacer](http://play.typeracer.com/)
+* [Typing.io](http://typing.io)
+* [ztype](http://zty.pe/)
 
 ## Tutorial Sites
 

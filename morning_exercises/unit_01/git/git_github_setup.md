@@ -199,7 +199,10 @@ Congratulations! You now have Git and GitHub set up and configured.
 
 ## [Linux or Windows Instructions](http://docs.railsbridge.org/installfest/choose_your_operating_system)
 
+---
 
+### If you have finished setting up git, you can work on typing exercises
 
-
-
+* [TypeRacer](http://play.typeracer.com/)
+* [Typing.io](http://typing.io)
+* [ztype](http://zty.pe/)
