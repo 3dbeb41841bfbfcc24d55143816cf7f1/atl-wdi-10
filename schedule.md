@@ -1671,7 +1671,6 @@
 <br />
 
 #### Bootstrap
-- [Bootstrap Classes Cheat Sheet](Bootstrap 3 Classes List With Description - Bootstrap Cheat Sheet)
 - [Bootstrap Site](http://getbootstrap.com/getting-started/)
 - [Built with Bootstrap](https://bootstrapbay.com/blog/built-with-bootstrap/)
 - [Bootstrap Tutorial](https://www.youtube.com/watch?v=gqOEoUR5RHg)
@@ -1701,7 +1700,7 @@
 * [Silicon Valley Scene](https://www.youtube.com/watch?v=oyVksFviJVE)
 * [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-## Typing Sites
+## Typing Practice
 * [Beginner](https://www.typingclub.com/sportal/team-2/program-typing-jungle.game)
 * [TypeRacer](http://play.typeracer.com/)
 * [Typing.io](http://typing.io)
