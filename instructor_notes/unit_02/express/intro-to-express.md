@@ -113,7 +113,7 @@ $ subl .
 $ npm install --save express
 ```
 
-#### The `--save` flag allows us to update the `package.json` to include the dependency that you just installed. In the terminal, run `$ cat package.json` to observe these changes. We could have also entered express manually- to the dependencies list in our package.json file.  If we added Express this way, we would need to run npm install afterwards in order to install it. 
+The `--save` flag allows us to update the `package.json` to include the dependency that you just installed. In the terminal, run `$ cat package.json` to observe these changes. We could have also entered express manually- to the dependencies list in our package.json file.  If we added Express this way, we would need to run npm install afterwards in order to install it. 
     
  As we saw during `npm init`, the default file for a node app is `index.js`.  If your package.json still uses this as the default, you should update it to `server.js`.
 
