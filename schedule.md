@@ -1529,7 +1529,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/css/css-intro-morning-exercise.md">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/typing/homework-review-and-typing-exercises.md">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/typing/homework-review-and-typing-exercise.md">Morning Exercise</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/typing/typing-exercise.md">Morning Exercise</a>
@@ -1603,8 +1603,8 @@
       <a href="https://github.com/ATL-WDI-Exercises/command-line-mystery">Command Line Practice</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/css/css-box-model.md">CSS Box Model</a><br />
-      + LAB
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/css/css-box-model.md">CSS Box Model + </a><br />
+      Complete LABs from earlier or work on hw
     </td>
     <td>
       LAB

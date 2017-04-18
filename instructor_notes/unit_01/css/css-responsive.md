@@ -18,9 +18,9 @@ This is possible via the use of _media queries_!
 
 | Device        | Layout        | Typical Width       |
 |:-------------:|:-------------:|:-------------------:|
-| Desktop       | ![Desktop](images/responsive-desktop.png) | 1200px and up
-| Tablet        | ![Tablet](images/responsive-tablet.png)   | 992px and up
-| Phone         | ![Phone](images/responsive-phone.png)     | 768px and up
+| Desktop       | ![Desktop](https://i.imgur.com/ha5Hf4e.png) | 1200px and up
+| Tablet        | ![Tablet](https://i.imgur.com/n6nVlFS.png)   | 992px and up
+| Phone         | ![Phone](https://i.imgur.com/n6nVlFS.png)     | 768px and up
 
 
 Here is an example that uses floats to create a 12 column grid:
@@ -188,15 +188,15 @@ Using a _media query_ in this way creates a _breakpoint_, a point at which chang
 
 ## The _Responsive_ Holy Grail Layout
 
-![Holy Grail](images/holy-grail.jpg)
+![Holy Grail](https://i.imgur.com/hzZprf4.png)
 
 The _Holy Grail Layout_ is a common problem in CSS to layout a page. We want to make it _responsive_ as well so that it has the following behavior:
 
 | Device        | Layout        | Typical Width       |
 |:-------------:|:-------------:|:-------------------:|
-| Desktop       | ![Desktop](images/responsive-desktop.png) | 1200px and up
-| Tablet        | ![Tablet](images/responsive-tablet.png)   | 992px and up
-| Phone         | ![Phone](images/responsive-phone.png)     | 768px and up
+| Desktop       | ![Desktop](https://i.imgur.com/ha5Hf4e.png) | 1200px and up
+| Tablet        | ![Tablet](https://i.imgur.com/n6nVlFS.png)   | 992px and up
+| Phone         | ![Phone](https://i.imgur.com/n6nVlFS.png)     | 768px and up
 
 Example:
 
