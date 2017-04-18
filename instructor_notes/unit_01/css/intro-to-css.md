@@ -1,4 +1,4 @@
-# CSS
+# Intro to CSS
 
 ## LO's
 - Construct a CSS rule using selectors, declarations, properties, and values

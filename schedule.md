@@ -1526,13 +1526,13 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/git/git-github-setup.md">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/css/css-intro-morning-exercise.md">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/css/css-intro-morning-exercise.md">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/typing/homework-review-and-typing-exercises.md">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/typing/homework-review-and-typing-exercises.md">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/typing/typing-exercise.md">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/typing/typing-exercise.md">Morning Exercise</a>
     </td>
   </tr>
   <tr>
@@ -1544,13 +1544,13 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/git/git-github.md">Intro to Git + Github</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/html-dom">HTML + DOM</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/html/html-dom.md">HTML + DOM</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/css-selectors">CSS Specificity & Selectors</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/css/css-selectors.md">CSS Specificity & Selectors</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/bootstrap-intro">Intro to Bootstrap</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/css/intro-to-bootstrap.md">Intro to Bootstrap</a>
     </td>
   </tr>
   <tr>
@@ -1564,14 +1564,14 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/git/git-github.md">Intro to Git + Github</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/html-practice-and-review.md">HTML Practice LAB</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/student_labs/ga_dom.md">DOM LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/html/html-practice-and-review.md">HTML Practice LAB</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/html/ga-dom.md">DOM LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/css-responsive">Responsive CSS</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/css/css-responsive.md">Responsive CSS</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/javascript_intro.md">Intro to JS</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/javaScript/intro-to-javaScript.md">Intro to JS</a>
     </td>
   </tr>
   <tr>
@@ -1581,16 +1581,16 @@
     </td>
     <td>
       <a href="https://www.atlassian.com/git/tutorials/what-is-version-control">Atlassian Git Lab</a><br />
-      <a href="https://github.com/ATL-WDI-Exercises/command-line-mystery">Command Line Practice</a><br />
+      <a href="https://github.com/ATL-WDI-Exercises/command-line-mystery">Command Line Practice</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/css-responsive">Intro to CSS</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/css/intro-to-css.md">Intro to CSS</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/6fa2bf507f6108cb70500c1adf9ff68a7de66e2d/unit_01/w05d04/instructor_notes/flexbox.md">Flexbox</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/javaScript/flexbox.md">Flexbox</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/instructor_notes/control_flow.md">Control Flow</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/javaScript/control-flow.md">Control Flow</a>
     </td>
   </tr>
   <tr>
@@ -1599,19 +1599,19 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/sublime-text-editor.md">Sublime Editor</a>
     </td>
     <td>
-      <a href="https://www.atlassian.com/git/tutorials/what-is-version-control">Atlassian Git Lab</a><br />
-      <a href="https://github.com/ATL-WDI-Exercises/command-line-mystery">Command Line Practice</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/git/atlassian-lab.md">Atlassian Git Lab</a><br />
+      <a href="https://github.com/ATL-WDI-Exercises/command-line-mystery">Command Line Practice</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/css-box-model">CSS Box Model</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/css/css-box-model.md">CSS Box Model</a><br />
       + LAB
     </td>
     <td>
       LAB
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d02/student_labs/control_flow_practice.md">Control Flow LAB</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d02/student_labs/choose_your_own_adventure">Choose your own adventure LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/control-flow-practice.md">Control Flow LAB</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/choose_your_own_adventure">Choose your own adventure LAB</a>
     </td>
   </tr>
   <tr>
