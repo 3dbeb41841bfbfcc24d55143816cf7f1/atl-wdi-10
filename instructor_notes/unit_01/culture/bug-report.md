@@ -19,7 +19,7 @@ The error(s) returned, copy and pasted/typed out/screenshot,* **not paraphrased.
 
 *List everything you've done to solve the bug on your own in detail. List all resources you've looked up and tried to implement and provide links. Providing code surrounded by the md syntax to display nicely is very helpful.*
 
-![](.md_resources/formatting.png)
+![Formatting styles](https://i.imgur.com/rSrcBFD.png)
 
 Surround your code in single tics for one liners and triple tics for multilines.
 

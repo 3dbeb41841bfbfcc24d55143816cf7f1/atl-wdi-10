@@ -1556,8 +1556,8 @@
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/installation.md">Installation</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/the-tooling-of-wdi.md">Tooling</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/installation.md">Installation + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/the-tooling-of-wdi.md">Tooling + </a><br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/bug-report.md">Bug Report</a>
     </td>
     <td>
@@ -1580,7 +1580,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/command-line.md">Intro to CLI</a>
     </td>
     <td>
-      <a href="https://www.atlassian.com/git/tutorials/what-is-version-control">Atlassian Git Lab</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/git/atlassian-lab.md">Atlassian Git Lab</a><br />
       <a href="https://github.com/ATL-WDI-Exercises/command-line-mystery">Command Line Practice</a>
     </td>
     <td>
@@ -1610,7 +1610,7 @@
       LAB
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/control-flow-practice.md">Control Flow LAB</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/control-flow-practice.md">Control Flow LAB + </a><br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/choose_your_own_adventure">Choose your own adventure LAB</a>
     </td>
   </tr>
