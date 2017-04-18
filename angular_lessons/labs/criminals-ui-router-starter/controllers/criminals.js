@@ -10,7 +10,7 @@ router.get('/', function indexAction(request, response) {
     if(error) response.json({message: 'Could not find any criminal'});
 
     response.json({criminals: criminals});
-  }).select('-__v');
+  })
 });
 
 // POST

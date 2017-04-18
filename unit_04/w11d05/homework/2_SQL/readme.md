@@ -9,10 +9,8 @@
 ## Directions
 
 1. Complete the  [JOIN operation exercise](http://sqlzoo.net/wiki/The_JOIN_operation) and write your queries in a `JOIN_answers.sql` file in the `2_SQL` folder.
-- :dart: Commit "SQL JOIN queries complete"
 
 2. Once you're done, soldify those skills and [take the Join Quiz](http://sqlzoo.net/wiki/JOIN_Quiz)
-- :dart: Commit "SQL JOIN Quiz complete"
 
 ## Recommended Reading and Resources:
 

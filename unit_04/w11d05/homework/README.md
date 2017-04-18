@@ -1,5 +1,4 @@
 # Intro to Ruby
-What better way to spend a 3-day weekend than learning a brand new language? I can't think of any other way either!
 
 ![ruby](https://keystrokecreative.com/images/technology/web/icon-ruby.png)
 
@@ -23,7 +22,7 @@ What better way to spend a 3-day weekend than learning a brand new language? I c
 
 ### Part 5: 5 Questions
 
-Now that you had 3 full days to learn all about Ruby, what are 5 questions you still have or that came up? List them below and we'll do our best to answer them on Tuesday.
+What are 5 questions you still have or that came up?
 
   1. Your Question Here
   2. Your Question Here
@@ -34,18 +33,3 @@ Now that you had 3 full days to learn all about Ruby, what are 5 questions you s
 ### Recommended readings and references:
   - [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide)
   - [Ruby Mini-Tutorials Videos](https://www.youtube.com/playlist?list=PLw1xVKFbouelGegt-oL_Eip2GSUhr-a66)
-
-
-## Submitting Your Work
-
-  When you're ready to submit your work,
-
-  1.  Add, commit, and push your code to your fork of the class repo.
-  2.  File an issue on the class repo titled "Your Name -- wXXdXX".
-
-  The issue should include:
-
-  -   A link that points back to your fork.
-
-  -   A 'comfort' score on how you feel about the material, from 1 (very
-      uncomfortable) to 5 (very comfortable)

@@ -9,10 +9,7 @@ use case and how it would relate to the other two.
 
 2. Draw an ERD for your schema.
 
-3. Write out the SQL statements to create your `database` and each of your 
-`tables`. Remember to auto-increment your `primary keys`! 
-
-4. Use SQL to manipulate your database! 
+3. Use SQL to manipulate your database! 
 	- Write out the SQL statement to grab all data from one of your tables.
 	- Write out the SQL statement to grab all data from ALL of your tables.
 	- Write out the SQL statement to grab one column EACH from two of your tables.

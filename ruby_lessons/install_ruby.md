@@ -39,13 +39,13 @@ brew install rbenv
 brew install ruby-build
 
 # list all the available Ruby versions
-ruby install -l
+rbenv install -l
 
 # Find the latest one that looks like:
 # 2.4.1
 # that DOES NOT have a -dev or -rc, but a -p is OK
 # At the current time, the latest one is 2.4.1
-rbenv install
+rbenv install 2.4.1
 # This takes awhile!
 ```
 
@@ -59,6 +59,9 @@ Previously, when we ran `$ which ruby`, we got `/usr/bin/ruby` and `$ ruby -v` g
 ```bash
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+
+# Refresh bash source
+source ~/.bash_profile
 
 # Use your version here
 rbenv global 2.4.1
