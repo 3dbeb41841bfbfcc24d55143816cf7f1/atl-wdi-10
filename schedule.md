@@ -1580,7 +1580,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/command-line.md">Intro to CLI</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/git/atlassian-lab.md">Atlassian Git Lab</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/git/atlassian-lab.md">Atlassian Git Lab + </a><br />
       <a href="https://github.com/ATL-WDI-Exercises/command-line-mystery">Command Line Practice</a>
     </td>
     <td>
@@ -1599,7 +1599,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/culture/sublime-text-editor.md">Sublime Editor</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/git/atlassian-lab.md">Atlassian Git Lab</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/git/atlassian-lab.md">Atlassian Git Lab + </a><br />
       <a href="https://github.com/ATL-WDI-Exercises/command-line-mystery">Command Line Practice</a>
     </td>
     <td>
