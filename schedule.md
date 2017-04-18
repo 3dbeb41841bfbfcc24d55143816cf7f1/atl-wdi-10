@@ -1178,49 +1178,49 @@
       WDI9 Outcomes: Elevator Pitch + Networking in ATL
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/sdlc">SDLC / Agile</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/agile/sdlc-agile-xp.md">SDLC / Agile</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/sdlc">SDLC / Agile</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/agile/sdlc-agile-xp.md">SDLC / Agile</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
   </tr>
   <tr>
@@ -1229,16 +1229,16 @@
       User Stories
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One </a>Presentations
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One </a>Presentations
     </td>
   </tr>
   <tr>
@@ -1247,16 +1247,16 @@
         Wireframes
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One </a>Presentations
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One </a>Presentations
     </td>
   </tr>
   <tr>
@@ -1265,16 +1265,16 @@
       Homework: Catch Up
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/projects/unit_01/README.md">Project One</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/first-project-portfolio-site.md">Portfolio Site</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_01/portfolio/first-project-portfolio-site.md">Homework: Portfolio Site</a>
     </td>
   </tr>
 </tbody></table>
@@ -1327,7 +1327,7 @@
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/khan-academy.md">LAB</a><br />
       OR <br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/intro-to-ES2015.md">Intro to ES2015- Breakout Session</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/intro-to-ES2015.md">Intro to ES2015- (Breakout Session)</a>
     </td>
   </tr>
   <tr>
@@ -1347,7 +1347,7 @@
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/khan-academy.md">LAB</a><br />
       OR <br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/css/css-animations-and-transitions.md">CSS Animations- Breakout Session</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/css/css-animations-and-transitions.md">CSS Animations- (Breakout Session)</a>
     </td>
   </tr>
   <tr>
@@ -1412,10 +1412,10 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_01/javaScript/progress-bar-and-a-smarter-way.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-2-17-counter-factory%2Ba-smarter-way.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_01/javaScript/counter-factory-and-a-smarter-way.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-3-17-stopwatch%2Ba-smarter-way.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_01/javaScript/stopwatch-and-a-smarter-way.md">Homework</a>
     </td>
   </tr>
 </tbody></table>
