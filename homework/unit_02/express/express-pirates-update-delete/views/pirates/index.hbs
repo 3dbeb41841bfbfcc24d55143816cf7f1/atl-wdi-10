@@ -1,0 +1,11 @@
+<h1>The Flyest Pirates of Da 7 Cs</h1>
+
+<ul>
+  {{#each pirates}}
+    <li><a href="/pirates/{{@index}}"><h2>{{name}}</h2></a></li>
+  {{/each}}
+</ul>
+
+<form action="/pirates/new">
+    <input type="submit" value="Create a New Pirate" />
+</form>

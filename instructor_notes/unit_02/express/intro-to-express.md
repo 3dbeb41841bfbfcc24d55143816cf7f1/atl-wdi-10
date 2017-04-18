@@ -516,7 +516,6 @@ and you send a request to the URL `http://localhost:3000/greeting` which route w
 
 ## Lab Time
 
-
 1. Make routes for  `add, subtract, multiply, divide` that will take two numbers as query parameters `num1` and `num2` and perform the operation specified in the rout,e and send those answers to the browser.
 
 For example, this will send the number `15` to the browser:

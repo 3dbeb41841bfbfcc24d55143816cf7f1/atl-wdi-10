@@ -114,7 +114,7 @@ During Unit One, you likely inadvertently used the GET verb. Can you guess in wh
 
 So, let's get our hands dirty: what is the easiest way you can come up with to make a **GET** request?
 
-EXERCISE: For the next 15 minutes, look at this [link](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d01/instructor_notes/curl_lab.md), read through the explanation of cURL and work through the exercises.
+EXERCISE: For the next 15 minutes, look at this [link](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_02/node/node-lab/curl_lab.md), read through the explanation of cURL and work through the exercises.
 
 EXERCISE: 5 minute breakout session! With your partner, work together to come up with an explanation, in your own words, of how the internet works, HTTP verbs, and the request-response cycle.
 

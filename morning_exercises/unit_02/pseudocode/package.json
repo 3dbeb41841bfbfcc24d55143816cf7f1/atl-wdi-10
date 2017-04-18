@@ -1,0 +1,26 @@
+{
+  "name": "pseudocode_part_2",
+  "version": "1.0.0",
+  "description": "morning exercise -- turn pseudocode into code",
+  "main": "script.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "keywords": [
+    "javascript",
+    "functions",
+    "problem solving",
+    "pseudocode",
+    "morning exercise"
+  ],
+  "author": "Christine Yi",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}

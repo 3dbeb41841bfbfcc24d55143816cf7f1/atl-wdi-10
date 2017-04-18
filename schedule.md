@@ -1032,13 +1032,14 @@
       WDI9 Outcomes: Linkedin for your Job Search
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d03/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_02/pseudocode">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d04/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_02/clock-exercise">Morning Exercise</a>
     </td>
     <td>
-      Morning Exercise
+      <!-- https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/diagnostic/express-diagnostic-solution.md -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/diagnostic/express-diagnostic.md">Diagnostic</a>
     </td>
   </tr>
   <tr>
@@ -1048,18 +1049,16 @@
       <!-- Build Tools- https://github.com/ga-wdi-lessons/build-tools -->
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_views.md">Handlebar Views</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/express/express-views-handlebars.md">Express Views- Handlebars</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d03/instructor_notes/data_modeling.md">Database Design</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/databases/database-design.md">Database Design</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a>
-      <br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">Musical Chairs LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/express/express-update-delete.md">Express- Update/Delete</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/student_labs/to_dont_lab.md">DB Operations Update/Delete Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/ajax/ajax-with-jQuery.md">AJAX Session</a>
     </td>
   </tr>
   <tr>
@@ -1068,76 +1067,77 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/node/intro-to-the-internet.md">Intro to Node</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/instructor_notes/express_router.md">Express Routing</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/express/express-views-handlebars.md">Express Views- Handlebars</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/instructor_notes/express_create_read.md">DB Operations Create/Read</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/databases/database-design.md">Database Design</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/instructor_notes/update_delete.md">DB Operations- Update/Delete</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/express/express-update-delete.md">Express- Update/Delete</a>
     </td>
     <td>
-      <!-- https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/diagnostic_solution/diagnostic_solution_express.md -->
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/diagnostic/diagnostic_express.md">Diagnostic</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/ajax/ajax-with-jQuery.md">AJAX Session</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_intro.md">Intro to Express</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/express/intro-to-express.md">Intro to Express</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/student_labs/router_lab.md">REVIEW: Router LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/express/express-router.md">Express Router</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/instructor_notes/express_create_read.md">DB Operations Create/Read</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/express/express-create-read.md">DB Operations Create/Read</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/instructor_notes/update_delete.md">DB Operations Update/Delete</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_02/express/express-to-dont.md">Express To Don't- Update/Delete Lab + </a>
+      Add Update/Delete Functionality to Express Recipes Lab
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d01/instructor_notes/ajax_with_jquery.md">AJAX Session</a>
-      <!-- https://github.com/ga-wdi-lessons/api-intro-with-ajax -->
-      <!-- https://github.com/ga-wdi-lessons/js-ajax -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/ajax/giphy-app-starter">Giphy LAB + </a><br />
+      <a href="https://github.com/ATL-WDI-Exercises/bootflix">Bootflix LAB</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d01/student_labs/node_lab.md">Node Lab</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_02/node/node-lab/node-lab.md">Finish Node Lab or Start on hw</a><br />
     </td>
     <td>
-      <a href="https://github.com/ga-wdi-exercises/compliment-express">LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_02/express/express-router-lab.md">REVIEW: Router LAB + </a><br />
+      <a href="https://github.com/ATL-WDI-Exercises/99_bottles_express">99 Bottles Express LAB + </a><br />
+      <a href="https://github.com/ATL-WDI-Exercises/compliment-express">Compliment Express LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a>
-      <br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">Musical Chairs LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_02/express/express-recipes.md">Express Recipes- Create/Read Lab</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d05/student_labs/in-class-code-hbs">In-class-code-hbs</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_02/express/express-to-dont.md">Express To Don't- Update/Delete Lab + </a>
+      Add Update/Delete Functionality to Express Recipes Lab 
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d01/instructor_notes/giphy_app_starter">Giphy LAB</a><br />
-      <a href="https://github.com/ga-wdi-exercises/bootflix">LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/ajax/giphy-app-starter">Giphy LAB + </a><br />
+      <a href="https://github.com/ATL-WDI-Exercises/bootflix">Bootflix LAB</a>
     </td>
   </tr>
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d01/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/node/intro-to-node">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d02/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/express/pizza-express.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d03/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/express/express-pirates-create-read">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d04/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/express/express-pirates-update-delete">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d05/homework">Homework</a>
+      <a href="">Homework Update</a>
+      <!-- Practice Node and Express: https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/express/practice-node-and-express-with-nodeschool -->
     </td>
   </tr>
 </tbody></table>
