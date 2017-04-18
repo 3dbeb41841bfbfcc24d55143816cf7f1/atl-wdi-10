@@ -1,0 +1,5 @@
+<h1><%= @category.name.capitalize %> Todos</h1>
+
+<% @todos.each do |todo| %>
+  <h1>TODO: <%= todo.content %></h1>
+<% end %>
