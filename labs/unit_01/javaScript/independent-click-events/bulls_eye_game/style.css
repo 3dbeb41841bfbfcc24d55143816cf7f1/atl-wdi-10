@@ -1,0 +1,29 @@
+body {
+  line-height: 2rem;
+  text-align: center;
+  font-family: serif;
+}
+
+.ring {
+  border-radius: 10pt;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+
+.ring-1 {
+  background-color: red;
+  width: 150pt;
+  height: 150pt;
+}
+
+.ring-2 {
+  background-color: white;
+  width: 100pt;
+  height: 100pt;
+}
+
+.ring-3 {
+  background-color: red;
+  width: 50pt;
+  height: 50pt;
+}

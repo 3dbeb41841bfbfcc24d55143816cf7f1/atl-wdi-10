@@ -1,0 +1,20 @@
+{
+  "name": "js-functions-hw-drilling",
+  "version": "1.0.0",
+  "description": "Homework assignment -- practice creating functions.",
+  "main": "hw.js",
+  "scripts": {
+    "test": "mocha spec/hw-spec.js"
+  },
+  "keywords": [
+    "javascript",
+    "functions",
+    "problem solving"
+  ],
+  "author": "Matt Brendzel (matt.brendzel@generalassemb.ly)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}

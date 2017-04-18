@@ -1,8 +1,3 @@
-### A Smarter Way To Learn Javascript
-
-Work through Chapters 16-40 (don't worry, there are a lot of blank pages)
-http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf
-
 ### [Bootstrap](http://getbootstrap.com/)-ify
 
 - or [Foundation](http://foundation.zurb.com)-ify
@@ -12,3 +7,8 @@ http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf
 - or ????????-ify
 
 ...something that you built earlier in the course. If you don't want to overwrite your previous styling, you're welcome to work on a branch. Open an issue with a link to your re-styled homework/project/lab [here](https://github.com/ga-dc/bootstrap-ify).
+
+### A Smarter Way To Learn Javascript
+
+Work through Chapters 16-40 (don't worry, there are a lot of blank pages)
+http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf

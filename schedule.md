@@ -1295,13 +1295,13 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d02/homework">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_01/javaScript/js-practice">Morning Exercise</a>
     </td>
     <td>
       WDI9 Outcomes: Intro to Outcomes Program + Post-Course Support
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/javascript-good-and-bad-parts.md">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_01/javaScript/javascript-good-and-bad-parts.md">Morning Exercise</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d04/morning_exercise">Morning Exercise</a>
@@ -1313,10 +1313,10 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/arrays.md">JS Arrays</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-arrays.md">JS Arrays</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-functions_and_scope.md">JS Functions + Scope</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-intro-and-dev-tools.md">Debugging, Chrome Dev Tools</a> 
@@ -1332,17 +1332,17 @@
   <tr>
     <td><strong>Mod 2</strong></td>
     <td> 
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/javascript_objects.md">JS Objects</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-objects.md">JS Objects</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-functions_and_scope.md">JS Functions + Scope</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-intro-and-dev-tools.md">Debugging, Chrome Dev Tools</a> 
-      + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-dom-intro-and-chrome-dev-tools.md">Debugging, Chrome Dev Tools +</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-dom-commands.md">Dom Manipulation</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/instructor_notes/intro_to_jquery.md">Intro to jQuery</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/jQuery/intro-to-jquery.md">Intro to jQuery</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/es6-1">ES2015</a>
@@ -1350,17 +1350,17 @@
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
-    <td>Data Structures:
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/loops_iterators.md">JS Loops</a>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-loops.md">JS Loops</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-functions_and_scope.md">JS Functions + Scope</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d02/instructor_notes/click_events.md">DOM Events</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-click-events.md">Click Events</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/instructor_notes/intermediate_jquery.md">Intermediate jQuery</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/jQuery/intermediate-jQuery.md">Intermediate jQuery</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations</a>
@@ -1369,45 +1369,44 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/student_labs/99_problems.md">LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/99_problems.md">LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d04/student_labs/js-functions-lab
-      ">LAB - JS Functions</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d04/student_labs/js-dice-lab
-      ">LAB - JS Dice Lab</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d04/student_labs/js-independent-practice/independent-practice-starter.js
-      ">LAB - Independent Practice</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/js-functions
+      ">JS Functions LAB + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/js-dice
+      ">JS Dice LAB + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/js-independent-practice
+      ">Independent Practice LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d02/student_labs/independent_click_events">Click Events LAB</a>
-      <br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d02/student_labs/wendy_bite">Wendy Bite LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/independent-click-events">Click Events LAB + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/wendy-bite">Wendy Bite LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d04/student_labs/in_class_exercises
-      ">In class LAB</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d04/student_labs/homes
-      ">Homes LAB</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/student_labs/jquery_lab/instructions.md
-      ">jQuery LAB</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d05/student_labs/jedi-jquery-starter
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/jQuery/in-class-exercises
+      ">In class LAB + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/jQuery/homes
+      ">Homes LAB + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/jQuery/jQuery-lab
+      ">jQuery LAB + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d05/student_labs/jQuery-jedi
       ">Javascript Jedi LAB</a><br />
     </td>
     <td>
-      Guest Speaker
+      LAB or Guest Speaker
     </td>
   </tr>
   <tr>
     <td><strong>Homework</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/2-27-17-progress-bar%2Ba-smarter-way.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_01/javaScript/data-modeling-and-a-smarter-way.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/2-28-17-function-drills%2Ba-smarter-way.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_01/javaScript/function-drills-and-a-smarter-way.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-1-17-progress-bar%2Ba-smarter-way.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_01/javaScript/progress-bar-and-a-smarter-way.md">Homework</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-2-17-counter-factory%2Ba-smarter-way.md">Homework</a>
@@ -1627,10 +1626,10 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/craftsmanship/seven-stages-of-software-craftsmanship-and-a-smarter-way.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/javaScript/a-smarter-way-to-learn-js-ch-11-15.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/javaScript/dev-tools-and-a-smarter-way.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/javaScript/a-smarter-way-to-learn-js-ch-16-40.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/javaScript/bootstrap-and-a-smarter-way.md">Homework</a>
     </td>
   </tr>
 </tbody></table>
