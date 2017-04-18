@@ -1,0 +1,243 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #F8F8F6;
+	font-family: 'Josefin Sans', sans-serif;
+
+}
+
+/*===================*/
+/*NAVIGATION BAR STUFF*/
+/*===================*/
+nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: inline-block;
+	background: white;
+	padding: 0.5em;
+	z-index: 1;
+	border-bottom: 1px solid #B9D6C2;
+	box-shadow: 0px 1px 1px #888888;
+	min-width: 480px;
+
+}
+
+nav a {
+	color: black;
+}
+
+nav h1 {
+	padding-left: 10%;
+	padding-top: 4px;
+	color: black;
+	font-family: 'Rochester', cursive;
+	display: inline-block;
+	font-size: 3em;
+}
+#shoppingcart {
+	padding-right: 10%;
+	display: inline-block;
+	float: right;
+	text-align: center;
+}
+
+#shoppingcart img {
+	margin: 0 auto;
+	display: inline-block;
+	width: 60px;
+}
+
+/*img {
+	width: 200px;
+}*/
+
+/*===================*/
+/* MAIN SECTION      */
+/*===================*/
+main {
+	/*float: right;
+	display: inline-block;*/
+	margin: 0 auto;
+	margin-top: 120px;
+}
+
+.main-img {
+	width: 100%;
+	max-width: 300px;
+	border-bottom: 1px solid #B9D6C2;
+}
+
+/*#buy {
+	width: 100px;
+	height: 50px;
+	border: 1px solid black;
+	background-color: blue;
+	color: white;
+}*/
+
+/*===================*/
+/* SIDE MENU         */
+/*===================*/
+
+.sidebar{
+	text-align: center;
+	position: fixed;
+	height: 440px;
+	margin-top: 120px;
+	width: 20%;
+	display: inline-block;
+	background: white;
+	border-radius: 4px;
+    border: 1px solid #B9D6C2;
+    margin-left: 5%;
+    padding: .5em;
+    overflow: auto;
+}
+
+.sidebar img{
+	width: 80%;
+}
+
+#create-donut {
+	margin: 0 auto;
+	text-align: center;
+	width: 100px;
+	height: 50px;
+	background: #6BB381;
+	color: white;
+	padding-top: 1em;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+#create-donut a {
+	color: white;
+}
+
+#create-donut:hover{
+	background: #b9d6c2;
+    box-shadow: 0px 2px 2px #888888;
+}
+
+/*===================*/
+/* INDEX PAGE PRODUCT*/
+/*===================*/
+
+.donut-container {
+	text-align: center;
+	display: inline-block;
+	width: 30%;
+	background: white;
+    border: 1px solid #B9D6C2;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.donut-container:hover {
+    box-shadow: 0px 2px 2px #888888;
+}
+
+.donut-container p, h3{
+	margin: 5px;
+	width: 100%;
+}
+
+/*=============================*/
+/* SHOW PRODUCT & SHOPPING CART*/
+/*=============================*/
+
+.donut-container-show {
+	text-align: center;
+	display: inline-block;
+	width:85%;
+	background: white;
+    border: 1px solid #B9D6C2;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+    padding: 2em;
+    position: relative;
+    min-width: 340px;
+    max-width:800px;
+}
+
+.donut-container-show img {
+	width: 50%;
+}
+
+.donut-container-show ul {
+	list-style-type: none;
+	text-align: left;
+}
+
+#donut-name {
+	color: #6BB381;
+}
+
+/*===================*/
+/* ANCHOR TAGS       */
+/*===================*/
+
+a {
+	color: #6BB381;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*===================*/
+/* INPUT FORMS       */
+/*===================*/
+
+input {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	width: 50%;
+	height: 30px;
+	font-size: 12px;
+}
+
+#edit-form {
+	text-align: left;
+}
+
+#img-preview{
+	width: 50%;
+	display: inline-block;
+	position: absolute;
+    top: 34%;
+    right: -14%;
+}
+
+/*===================*/
+/* MEDIA QUERIES     */
+/*===================*/
+
+/*for devices 480px and smaller*/
+@media (max-width: 480px) {
+    #img-preview {
+        display: none;
+    }
+
+    .donut-container p{
+    	display: none;
+    }
+
+    .sidebar {
+    	display: none;
+    }
+
+    main {
+    	width: 100%;
+    }
+}

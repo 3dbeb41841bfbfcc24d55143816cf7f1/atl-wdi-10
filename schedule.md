@@ -892,36 +892,39 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d03/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_02/javaScript/promises">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d04/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_02/mongo/mongo-install.md">Mongo Install + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_02/javaScript/js-higher-order-functions.md">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d05/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_02/javaScript/js-higher-order-functions-part-two">Morning Exercise</a>
     </td>
     <td>
-      Diagnostic
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_02/mongo/mongo-vampire-hunt">Morning Exercise</a>
+      <!-- Diagnostic? -->
     </td>
     <td>
-      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w08d01/morning_exercise">Morning Exercise</a> -->
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d01/homework">Sample Project</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/projects/blob/master/project2-sample-projects.md">Previous Projects</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Intro to Project Two</a><br />
+      <a href="https://github.com/marenwoodruff/project_2_instructions">Sample Project- (Breakout Session)</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d02/instructor_notes/constructors-and-prototypes.md">Constructors +</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/js-modern-array-methods">Advanced Array Functions</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/javaScript/js-constructors-and-prototypes.md">Constructors And Prototypes + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/javaScript/js-modern-array-methods.md">Advanced JS Array Methods</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d03/instructor_notes/mongo_install.md">Mongo Set up</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/mongo/intro-to-mongoose.md">Intro to Mongoose</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/mongo_terminal_env.md">CRUD Mongo</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/mongo/mongo-terminal-commands.md">Mongo Terminal Commands</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w08d01/instructor_notes/auth_lesson.md">Authentication</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/authentication/authentication-and-authorization.md">Authentication</a>
       <!-- https://github.com/ATL-WDI-Curriculum/express-security-with-passport -->
       <!-- https://github.com/ATL-WDI-Curriculum/security-and-auth -->
       <!-- https://github.com/ga-wdi-lessons/express-passport -->
@@ -929,83 +932,82 @@
       <!-- https://github.com/ga-wdi-lessons/express-sequelize -->
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d01/homework">Sample Project</a>
+      <a href="https://github.com/marenwoodruff/project_2_instructions">Sample Project- (Breakout Session)</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d02/student_labs/constructor-lab-prompt.md">Constructors LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_02/javaScript/js-constructor-lab.md">JS Constructor LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d04/instructor_notes/mongoose_intro.md">Mongoose Intro</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/mongo/intro-to-mongoose.md">Intro to Mongoose</a>
       <!-- <a href="https://github.com/ga-wdi-lessons/mongo-intro">Intro to Mongo</a> -->
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d05/instructor_notes/finishing_up_full_crud.md">Finishing up CRUD</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/mongo/full-crud-with-mongoose.md">Full up CRUD with Mongoose</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w08d01/student_labs/auth_starter">Authentication LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_02/authentication/auth-starter">Authentication LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d01/homework">Sample Project</a>
+      <a href="https://github.com/marenwoodruff/project_2_instructions">Sample Project- (Breakout Session)</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d02/instructor_notes/promises.md">Promises</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/javaScript/js-promises.md">Promises</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d04/instructor_notes/mongoose_express.md">Mongoose Postman Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/mongo/mongoose-and-express.md">Mongoose And Express</a>
     </td>
     <td>
       LAB
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/heroku-deployment">Heroku Deployment</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/deployment/node-heroku-deployment.md">Heroku Deployment</a>
       <!-- digital ocean- https://github.com/ga-wdi-lessons/express-deploy-mongo -->
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/projects/blob/master/project2-sample-projects.md">Previous Projects</a><br />
-      Intro to Project Two/Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d02/student_labs/promises-lab-starter">Promises LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_02/javaScript/promises/js-promises-lab-starter">Promises LAB</a>
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/mongo/mongoose-and-express.md">Mongoose And Express</a>
     </td>
     <td>
       LAB
     </td>
     <td>
-      LAB
+      Catch up/start hw
     </td>
     <td>
-      Catch up/Sessions?/start hw
-    </td>
-    <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
   </tr>
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d02/homework">Constructors Homework</a>
-      <a href="https://github.com/ga-wdi-exercises/JSON-bourne">Promises Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/javaScript/js-constructor">Constructor Homework</a>
+      <a href="https://github.com/ATL-WDI-Exercises/JSON-bourne">Promises Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d03/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/javaScript/js-data-modeling">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w07d04/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/mongo/donut-shop">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w08d01/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/authentication/summer-bucket-list-with-auth">Homework</a>
     </td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
   </tr>
 </tbody></table>
@@ -1035,7 +1037,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_02/pseudocode">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_02/clock-exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_02/javaScript/clock-exercise">Morning Exercise</a>
     </td>
     <td>
       <!-- https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/diagnostic/express-diagnostic-solution.md -->
