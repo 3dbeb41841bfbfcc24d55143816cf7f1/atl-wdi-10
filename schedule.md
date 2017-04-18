@@ -1564,7 +1564,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/git/git-github.md">Intro to Git + Github</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/html/html-practice-and-review.md">HTML Practice LAB</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/html/html-practice-and-review.md">HTML Practice LAB + </a><br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/html/ga-dom.md">DOM LAB</a>
     </td>
     <td>
