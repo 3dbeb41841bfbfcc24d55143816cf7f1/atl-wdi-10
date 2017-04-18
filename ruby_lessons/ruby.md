@@ -215,7 +215,7 @@ scruff = {
 }
 ```
 
-Notice that last line. That's called _fat-arrow syntax_. It's the same thing as above.
+Notice that last line. That's called a _hash rocket_. It's the same thing as above.
 
 To access attributes in `scruff`, we use Symbols. Symbols are similar to Strings but they are immutable.
 
