@@ -1304,10 +1304,10 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_01/javaScript/javascript-good-and-bad-parts.md">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d04/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_01/javaScript/making-change">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d05/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_01/code-wars/count-of-positives-sum-of-negatives.md">Morning Exercise</a>
     </td>
   </tr>
   <tr>
@@ -1319,14 +1319,15 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-functions_and_scope.md">JS Functions + Scope</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-intro-and-dev-tools.md">Debugging, Chrome Dev Tools</a> 
-      + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-dom-intro-and-chrome-dev-tools.md">Debugging, Chrome Dev Tools</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/instructor_notes/intro_to_jquery.md">Intro to jQuery</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/jQuery/intro-to-jQuery.md">Intro to jQuery</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/labs/3-3-17-khan-academy.md">LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/khan-academy.md">LAB</a><br />
+      OR <br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/intro-to-ES2015.md">Intro to ES2015- Breakout Session</a>
     </td>
   </tr>
   <tr>
@@ -1338,14 +1339,15 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-functions_and_scope.md">JS Functions + Scope</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-dom-intro-and-chrome-dev-tools.md">Debugging, Chrome Dev Tools +</a><br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/js-dom-commands.md">Dom Manipulation</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/jQuery/intro-to-jquery.md">Intro to jQuery</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/jQuery/intro-to-jQuery.md">Intro to jQuery</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/es6-1">ES2015</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/khan-academy.md">LAB</a><br />
+      OR <br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/css/css-animations-and-transitions.md">CSS Animations- Breakout Session</a>
     </td>
   </tr>
   <tr>
@@ -1363,7 +1365,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/jQuery/intermediate-jQuery.md">Intermediate jQuery</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/khan-academy.md">LAB</a>
     </td>
   </tr>
   <tr>
@@ -1391,10 +1393,11 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/jQuery/jQuery-lab
       ">jQuery LAB + </a><br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d05/student_labs/jQuery-jedi
-      ">Javascript Jedi LAB</a><br />
+      ">jQuery Jedi LAB</a><br />
     </td>
     <td>
-      LAB or Guest Speaker
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/khan-academy.md">LAB</a>
+      <!-- LAB or Guest Speaker -->
     </td>
   </tr>
   <tr>

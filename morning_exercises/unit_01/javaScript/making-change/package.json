@@ -1,0 +1,21 @@
+{
+  "name": "js-exercise-cashier",
+  "version": "1.0.0",
+  "description": "Morning exercise -- write our a function to give out the proper quantities of change.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec/index-spec.js"
+  },
+  "keywords": [
+    "javascript",
+    "functions",
+    "problem solving"
+  ],
+  "author": "Matt Brendzel (matt.brendzel@generalassemb.ly)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.0.2"
+  }
+}
