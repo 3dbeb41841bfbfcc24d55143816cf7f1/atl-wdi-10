@@ -99,7 +99,7 @@ View solution [here](http://codepen.io/dphurley/pen/PWywEE)
 
 ## How It Works (10 minutes / 0:10)
 
-![flexbox diagram](img/flexbox-diagram.jpg)
+![flexbox diagram](https://i.imgur.com/O509yNh.png)
 
 When you declare `display: flex` on a container, it becomes a **flex container**.
 
@@ -293,7 +293,7 @@ If you finish early, try exploring some of the [other flexbox properties](https:
 
 ## The Holy Grail Layout (5 minutes / 1:15)
 
-![holy grail layout](img/holy-grail-layout.png)
+![holy grail layout](https://i.imgur.com/vkZ4inC.png)
 
 This is something you know well, even if you don't recognize the term. It describes a webpage with a header bar, a footer bar, and three columns along the middle: a wide "main" column, a navigation column on the left, and an advertisement, site map, or extra info column along the right.
 
