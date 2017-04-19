@@ -388,7 +388,7 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d02/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_04/ruby/ruby-treasure-hunt.md">Morning Exercise</a>
     </td>
     <td>
       Outcomes
@@ -397,7 +397,7 @@
       Morning Exercise
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d04/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_04/tip-calculator">Morning Exercise</a>
     </td>
     <td>
       Morning Exercise
@@ -406,72 +406,78 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d02/instructor_notes/intro_to_ruby.md">Intro to Ruby</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/ruby-intro">Intro to Ruby</a> -->
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/ruby/intro-to-ruby.md">Intro to Ruby</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/ruby_lessons/ruby.md">Intro to Ruby</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d03/instructor_notes/inheritance_in_ruby.md">Inheritance in Ruby</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/ruby/inheritance-in-ruby.md">Inheritance in Ruby</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/intro_to_active_record_and_migrations.md">Intro to Active Record</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/active-record/intro-to-active-record.md">Intro to Active Record</a>
     </td>
     <td>
-<!--       <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br /> -->
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-intro/blob/master/README.md">Intro to Rails</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/intro-to-rails.md">Intro to Rails</a><br /> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/rails_lessons/intro_to_rails.md">Intro to Rails</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-views-and-controller">Rails Views + Controllers</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/rails-views-and-controller">Rails Views + Controllers</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-views-and-controllers.md">Rails Views + Controllers</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d02/instructor_notes/intro_to_ruby.md">Intro to Ruby</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/ruby-intro">Intro to Ruby</a> -->
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/ruby/intro-to-ruby.md">Intro to Ruby</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/ruby_lessons/ruby.md">Intro to Ruby</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d03/instructor_notes/inheritance_in_ruby.md">Inheritance in Ruby</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/ruby/inheritance-in-ruby.md">Inheritance in Ruby</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d04/instructor_notes/active_record_one_to_many.md">Active Record One to Many</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/active-record/active-record-one-to-many.md">Active Record One to Many</a>
     </td>
     <td>
-<!--       <a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_04/w12d04/instructor_notes/intro_rails_api.md">Intro to Rails API</a><br /> -->
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-intro/blob/master/README.md">Intro to Rails</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/intro-to-rails.md">Intro to Rails</a><br /> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/rails_lessons/intro_to_rails.md">Intro to Rails</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/pet-lab">Rails Views + Controllers Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/pet-lab">LAB</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      Advanced Ruby
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/ruby_lessons/advanced_ruby.md">Advanced Ruby</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d03/instructor_notes/oop_ruby.md">OOP in Ruby</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/ruby/oop-in-ruby.md">OOP in Ruby</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Exercises/fridge_tracker"Active Record Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_04/active-record/fridge-tracker.md"Active Record Lab</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-active-record-migrations">Rails Migrations, Associations and Validations</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-migrations-associations-and-validations.md">Rails Migrations, Associations and Validations</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-routing">Rails Resources and Routing</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/rails-routing">Rails Resources and Routing</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-resources-and-routing.md">Rails Resources and Routing</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w12d02/student_labs/reps.md">Ruby Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_04/ruby/reps.md">LAB</a>
     </td>
     <td>
-      Lab
+      LAB
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Exercises/fridge_tracker">Active Record Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_04/active-record/fridge-tracker.md">LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Exercises/rails-active-record-migrations">Rails Migrations, Associations and Validations Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-migrations-associations-and-validations.md">LAB</a>
     </td>
     <td>
       Rails Resources and Routing Lab
@@ -480,7 +486,7 @@
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d02/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_04/ruby/ruby-ninja.md">Homework</a>
     </td>
     <td>
       Homework
@@ -489,10 +495,10 @@
       Homework
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d04/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_04/rails/glitch-in-the-matrix.md">Homework</a>
     </td>
     <td>
-      Homework- Hartl Tutorial
+      <a href="https://www.railstutorial.org/book">Homework</a>
     </td>
   </tr>
 </tbody></table>
@@ -584,7 +590,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/sql/domain-modeling.md">Domain Modeling & ERDs</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/ruby/install-ruby.md">Install Ruby</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/ruby_lessons/install_ruby.md">Install Ruby</a>
     </td>
   </tr>
   <tr>
@@ -620,7 +626,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_04/sql">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_04/ruby">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_04/ruby/ruby-intro">Homework</a>
     </td>
   </tr>
 </tbody></table>
