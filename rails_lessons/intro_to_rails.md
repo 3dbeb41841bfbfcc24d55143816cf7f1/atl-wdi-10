@@ -402,9 +402,25 @@ $ rails db:seed
 
 ### Associations
 
+Associations in Rails give us the ability to write really clean code.
+
+Here are a few random examples to show how simple the Rails code is. We'll test out what it looks like SQL soon, but for now let's see the big picture.
+
+```ruby
+# Get all the todos of a specific category
+this_category = Category.find(params[:id])
+@todos = this_category.todos
+```
+
+```html
+<!-- Get the current todo's category -->
+<%= @todo.category %>
+```
+
 * Add ActiveRecord Associations to our models
 
 ```ruby
+# app/models/category.rb
 class Category < ApplicationRecord
   has_many :todos
 end
@@ -416,13 +432,16 @@ class Todo < ApplicationRecord
 end
 ```
 
-Let's go through some cool examples with associations
+Let's go through some cool examples with associations. First, open up `rails console`.
 
 ```ruby
+# Create a todo inside of a category
 category = Category.first
 category.todos
 category.todos.create(content: "wow a new todo!")
 ```
+
+Notice how we didn't have to set the `category_id` field above! Magic!
 
 ```ruby
 todo = Todo.first
@@ -442,7 +461,24 @@ class Todo < ApplicationRecord
 
   validates :content, presence: true, length: { minimum: 5 }
 end
+```
 
+Now let's try to create a new Todo in `rails c`
+
+```ruby
+Todo.create(content: '')
+   (0.2ms)  BEGIN
+   (0.2ms)  ROLLBACK
+```
+
+It doesn't save it!
+
+Even better, Rails will generate error messages for us to show the user. Don't worry, these are customizable, but Rails does a good job.
+
+```ruby
+blank_todo = Todo.create(content: '')
+blank_todo.errors
+blank_todo.errors.messages
 ```
 
 
@@ -474,6 +510,14 @@ end
 ```
 
 * Iterate through the categories in the view, use `link_to` instead of `<a></a>` tags.  Pass the category id to `todos#index`
+
+Rails provides some helper methods (aka view-specific methods) to assist us in writing more flexible HTML.
+
+For example, `link_to` is more flexible than `<a></a>`. The only thing we need to know is which path to provide.
+
+To see a list of which paths are available, run `rails routes`.
+
+In our case, the first result shows `todos` under `Prefix`. This means we can refer to it using `todos_path`
 
 ```ruby
 <h1>Categories</h1>
