@@ -638,6 +638,7 @@
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_04/ruby/ruby-intro">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_04/ruby/ruby-and-rails-code-school.md">Extra Code School Resources</a>
     </td>
   </tr>
 </tbody></table>
