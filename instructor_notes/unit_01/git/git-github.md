@@ -134,7 +134,7 @@ Git is pretty confusing and complex at first, but I have full confidence that yo
 
 Git was created by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), the principal developer of Linux.
 
-**I DO:** I'll `ls -la` into our class repo and show the `.git` directory.
+**I DO:** I'll `ls -A` into our class repo and show the `.git` directory.
 
 ### What is GitHub?
 
@@ -248,22 +248,25 @@ Initialized empty Git repository in <location>
 
 - You now have initialized a working directory.
 
+<br />
+
 **EXERCISE:** Take 3 minutes to go through this process on your own. Can you write down what actual changes have been made to our directory and to your Terminal?
 
 **Give me a thumbs up in Slack when you are done**
+
+<br />
 
 ### The .git folder
 
 If we look at the contents of this empty folder using:
 
 ```bash
-ls -A
+$ ls -A
 ```
 
-We should see that there is now a hidden folder called `.git`. This is where all of the information about your project is stored. This folder allows us to control the git flow using `git` commands.  **If you delete it, you will lose your project's history.**
+We should see that there is now a hidden folder called `.git`. This is where all of the information about your project is stored. This folder allows us to control our git flow using `git` commands.  **If you delete this folder, you will lose your project's history.** So, just don't do it.
 
-
-#### Add a file
+### Add a file
 
 1. Let's create a new file:
 
