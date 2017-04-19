@@ -132,6 +132,7 @@ _ActiveRecord is to SQL as Mongoose is to Mongo_
 
 It allows you to work with Ruby objects in Ruby code, while persisting the data in an SQL database.
 
+
 |Person ERD|\\|People Table||||
 |---|-|----|----|---|---|
 |**Name:** String|\\|**id**|**name**|**age**|**occupation**|
