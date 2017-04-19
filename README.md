@@ -61,9 +61,9 @@ April 24, 2017 - June 30, 2017
 - Unit 5: Final Projects
 
 
-#### [Class Wiki!](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/wiki)
+#### [Class Wiki!](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/wiki)
 
-#### [Bug Journal](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/wiki/Bug-Journal)
+#### [Bug Journal](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/wiki/Bug-Journal)
 
 #### Course Content
 
