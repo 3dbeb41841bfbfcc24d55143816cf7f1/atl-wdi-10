@@ -158,7 +158,7 @@
       <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/lightning_talks">Lightning Talks</a>
     </td>
     <td>
       Intro to TDD
@@ -176,7 +176,7 @@
       <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project Presentations</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks Presentations</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/lightning_talks">Lightning Talks Presentations</a>
     </td>
     <td>
       Intro to TDD
@@ -191,7 +191,8 @@
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      Technical Interviews/Lightning Talk Prep
+      Technical Interviews<br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/lightning_talks">Lightning Talk</a> Prep
     </td>
     <td>
       Technical Interviews/<br />
@@ -211,7 +212,8 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      Technical Interviews/Lightning Talk Prep
+      Technical Interviews<br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/lightning_talks">Lightning Talk</a> Prep
     </td>
     <td>
       Technical Interviews/<br />
@@ -232,7 +234,7 @@
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/lightning_talks">Homework</a>
     </td>
     <td>
       Get Caught Up on Sleep
@@ -265,16 +267,16 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_04/front-end-frameworks">Morning Exercise</a>
     </td>
     <td>
       Outcomes
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w12d01/morning_exercise">Morning Exercise</a>
+      HTTP Party
     </td>
     <td>
-      Morning Exercise
+      Sample Project
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
@@ -283,13 +285,16 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      Rake
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-asset-pipeline.md">Rails Asset Pipeline, Forms, Helpers</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-helpers.md">Helpers and Forms</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/rails-asset-pipeline">Rails Asset Pipeline, Forms, Helpers</a> -->
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/rails-helpers-updated">Helpers and Forms</a> -->
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-asset-pipeline">Rails Asset Pipeline, Forms, Helpers</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-api-code-along">Angular on Rails with Webpack</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-authorization_devise">Devise + Cancancan</a>
+      HTTP Party
     </td>
     <td>
       Sample Project
@@ -301,13 +306,16 @@
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      Rake
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-asset-pipeline.md">Rails Asset Pipeline, Forms, Helpers</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-helpers.md">Helpers and Forms</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/rails-asset-pipeline">Rails Asset Pipeline, Forms, Helpers</a> -->
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/rails-helpers-updated">Helpers and Forms</a> -->
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-asset-pipeline">Rails Asset Pipeline, Forms, Helpers</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/rails-api-code-along">Angular on Rails with Webpack</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-authorization_devise">Devise + Cancancan</a>
+      HTTP Party
     </td>
     <td>
       Sample Project
@@ -319,16 +327,18 @@
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      Gulp
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-authentication-with-devise.md">Devise + Cancancan</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/rails-authorization_devise">Devise + Cancancan</a> -->
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/css-sass">SASS</a>
+      SASS with Webpack
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/css-sass">SASS</a> -->
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-api-code-along">Angular on Rails API</a>
+      Review
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
+      <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Intro to Vagabond Project</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
@@ -337,13 +347,14 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      Gulp
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-authentication-with-devise.md">Devise + Cancancan</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/rails-authorization_devise">Devise + Cancancan</a> -->
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/css-sass">SASS</a>
+      LAB
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/rails-api-code-along">Angular on Rails API</a>
+      Review
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Exercises/project-vagabond">Vagabond Project</a>
@@ -388,7 +399,7 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_04/ruby/ruby-treasure-hunt.md">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_04/ruby/ruby-treasure-hunt.MDN">Morning Exercise</a>
     </td>
     <td>
       Outcomes
@@ -1146,8 +1157,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/express/express-pirates-update-delete">Homework</a>
     </td>
     <td>
-      <a href="">Homework Update</a>
-      <!-- Practice Node and Express: https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/express/practice-node-and-express-with-nodeschool -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_02/mean-machine/mean-machine.md">Homework Update</a>
     </td>
   </tr>
 </tbody></table>
