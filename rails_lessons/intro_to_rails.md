@@ -548,8 +548,14 @@ end
 <% end %>
 ```
 
+## Lab Time
 
-
+* Create a Rails app from scratch using Postgres as the database
+* Create an Article model
+* Create a Comment model
+* Set up the associations (hint: you'll need to add `article_id:integer` field to the `comments` table)
+* Create an articles#index controller action and view
+* When you click on an article in articles#index, you are taken to another page where you see just that article and its comments
 
 
 
