@@ -1,5 +1,5 @@
 ![ga](http://mobbook.generalassemb.ly/ga_cog.png)
-# Welcome to WDI-9
+# Welcome to WDI-10
 April 24, 2017 - June 30, 2017
 
 
@@ -68,3 +68,7 @@ April 24, 2017 - June 30, 2017
 #### Course Content
 
 - [Schedule](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/schedule.md)
+
+#### Google Calendar
+
+- [Schedule](https://calendar.google.com/calendar/embed?src=26j8bskc5mh5vbfr6fr1bk5qi0%40group.calendar.google.com&ctz=America/New_York)
