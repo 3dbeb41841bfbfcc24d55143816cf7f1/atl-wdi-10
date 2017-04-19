@@ -71,4 +71,4 @@ April 24, 2017 - June 30, 2017
 
 #### Google Calendar
 
-- [Schedule](https://calendar.google.com/calendar/embed?src=26j8bskc5mh5vbfr6fr1bk5qi0%40group.calendar.google.com&ctz=America/New_York)
+- [Calendar](https://calendar.google.com/calendar/embed?src=26j8bskc5mh5vbfr6fr1bk5qi0%40group.calendar.google.com&ctz=America/New_York)

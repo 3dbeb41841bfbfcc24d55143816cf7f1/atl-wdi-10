@@ -677,8 +677,9 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-http.md">Ajax and $HTTP</a>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d04/instructor_notes/w09d04%20-%20%24http%20lesson%20presidents%20app.png">Presidents png</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-http.md">Ajax and $HTTP</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/angular_lessons/angular_and_http.md">Ajax and $HTTP</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d04/instructor_notes/w09d04%20-%20%24http%20lesson%20presidents%20app.png">Presidents png</a> -->
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_03/angular/presidents-app">Presidents LAB</a>
     </td>
     <td>
@@ -688,7 +689,8 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/angular_lessons/webpack-angular-babel/webpack-angular-babel.md">Webpack and Angular</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-ui-router.md">UI Router</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-ui-router.md">UI Router</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/angular_lessons/ui-router.md">UI Router</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a> Intro<br />
@@ -699,8 +701,9 @@
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-http.md">Ajax and $HTTP</a>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d04/instructor_notes/w09d04%20-%20%24http%20lesson%20presidents%20app.png">Presidents png</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-http.md">Ajax and $HTTP</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/angular_lessons/angular_and_http.md">Ajax and $HTTP</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d04/instructor_notes/w09d04%20-%20%24http%20lesson%20presidents%20app.png">Presidents png</a> -->
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_03/angular/presidents-app">Presidents LAB</a>
     </td>
     <td>
@@ -710,7 +713,8 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/angular_lessons/webpack-angular-babel/webpack-angular-babel.md">Webpack and Angular</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-ui-router.md">UI Router</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-ui-router.md">UI Router</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/angular_lessons/ui-router.md">UI Router</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
