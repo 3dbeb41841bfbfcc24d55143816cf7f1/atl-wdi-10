@@ -513,112 +513,114 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
       Project Three Retrospective
     </td>
     <td>
-      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w11d04/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_04/sorting-algorithms">Morning Exercise</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/getting_postgres.md">Downloading Postgres</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_basics.md">Intro to SQL</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/postgres/getting-postgres.md">Downloading Postgres</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/sql/sql-basics.md">Intro to SQL</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_joins.md">SQL Joins</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/schema.sql">Schema SQL</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/sql/sql-joins.md">SQL Joins + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/schema.sql">Schema SQL + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/sql/sql_advanced_sol.sql">Advanced SQL</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/sql_relationships.md">Relationships in SQL</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/sql/sql_relationships.md">Relationships in SQL</a><br />
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_advanced_sol.sql">Advanced SQL</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/sql/sql-joins.md">SQL Joins + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/sql/schema.sql">Schema SQL + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/sql/sql_advanced_sol.sql">Advanced SQL</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      Project Three Presentations
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a> Presentations
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/instructor_notes/erd_domains.md">Domain Modeling & ERDs</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/sql/domain-modeling.md">Domain Modeling & ERDs</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/install_ruby.md">Install Ruby</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/how_to_run_ruby.md">How to Run Ruby</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/ruby/install-ruby.md">Install Ruby</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      Project Three Presentations
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a> Presentations
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d04/student_labs/library_sql">Library SQL</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_04/sql/library_sql">Library SQL</a>
     </td>
     <td>
-      <a href="https://github.com/ga-students/wdi-remote-matey/tree/master/unit_04/w11d04/homework">Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/ruby/how-to-run-ruby.md">How to Run Ruby</a>
     </td>
   </tr>
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
     <td>
       No Homework
     </td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_04/sql">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d05/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_04/ruby">Homework</a>
     </td>
   </tr>
 </tbody></table>
@@ -639,16 +641,16 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_03/coffee-shop">Morning Exercise</a>
     </td>
     <td>
       Morning Exercise / Review
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d01/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_03/fun-functions">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d02/morning_exercise">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_03/psd-to-html">Morning Exercise</a>
     </td>
     <td>
       Morning Exercise
@@ -657,98 +659,98 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d04/instructor_notes/angular-http.md">Ajax and $HTTP</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-http.md">Ajax and $HTTP</a>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d04/instructor_notes/w09d04%20-%20%24http%20lesson%20presidents%20app.png">Presidents png</a>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/student_labs/presidents-app-starter-code-single-app-version">Presidents Starter Code</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_03/angular/presidents-app">Presidents LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d01/instructor_notes/angular_services.md">Angular Services</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-services.md">Angular Services</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/angular_lessons/webpack-angular-babel/webpack-angular-babel.md">Webpack and Angular</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/angular_lessons/webpack-angular-babel/webpack-angular-babel.md">Webpack and Angular</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d05/instructor_notes/angular-ui-router.md">UI Router</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-ui-router.md">UI Router</a>
     </td>
     <td>
-      Project Three Intro<br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d03/instructor_notes/git_cheatsheet.md">Git Cheat Sheet</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d03/instructor_notes/collaborating_with_git.md">Collaborating with git</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a> Intro<br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/git/git-cheatsheet.md">Git Cheat Sheet + </a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/git/collaborating-with-git.md">Collaborating with git</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d04/instructor_notes/angular-http.md">Ajax and $HTTP</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-http.md">Ajax and $HTTP</a>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d04/instructor_notes/w09d04%20-%20%24http%20lesson%20presidents%20app.png">Presidents png</a>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/student_labs/presidents-app-starter-code-single-app-version">Presidents Starter Code</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_03/angular/presidents-app">Presidents LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d01/instructor_notes/angular_services.md">Angular Services</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-services.md">Angular Services</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/angular_lessons/webpack-angular-babel/webpack-angular-babel.md">Webpack and Angular</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/angular_lessons/webpack-angular-babel/webpack-angular-babel.md">Webpack and Angular</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d05/instructor_notes/angular-ui-router.md">UI Router</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-ui-router.md">UI Router</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/student_labs/criminals-starter-code-single-app">Criminals Starter Code</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_03/angular/criminals-app">LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/angular-forms">Angular Forms + Validations</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-validations.md">Angular Forms + Validations</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/angular_lessons/angular-components/angular_components.md">Components</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/angular_lessons/angular-components/angular_components.md">Components</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d05/instructor_notes/finish_crud_with_http.md">Giphy with UI Router</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/finish-crud-with-http.md">Giphy with UI Router</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/student_labs/criminals-starter-code-single-app">Criminals Starter Code</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_03/angular/criminals-app">LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/angular_lessons/labs/criminals-lab-with-services-and-ng-forms">Services and Forms LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/angular_lessons/labs/criminals-lab-with-services-and-ng-forms">Services and Forms LAB</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/angular_lessons/angular-components/angular_components.md">Components</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/angular_lessons/angular-components/angular_components.md">Components</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d05/student_labs/giphy_ang_starter">Giphy Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_03/angular/giphy-ang-app">Giphy Lab</a>
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
   </tr>
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_03/angular/world-bank">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d05/homework">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_03/angular/ron-swanson">Homework</a>
     </td>
     <td>
       Homework
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d01/homework">Homework</a>
-      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w10d02/homework">Homework</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_03/angular/budget-app">Homework</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_03/angular/bucket-list">Homework</a> -->
     </td>
     <td>
-      Project Three
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>
     </td>
   </tr>
 </tbody></table>
@@ -781,7 +783,7 @@
       Project Two Retrospective
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/web-components.md">Morning Exercise</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_03/web-components.md">Morning Exercise</a>
     </td>
   </tr>
   <tr>

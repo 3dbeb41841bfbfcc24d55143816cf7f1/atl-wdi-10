@@ -1,0 +1,10 @@
+body {
+  text-align: center;
+  background: url("https://images6.alphacoders.com/316/316876.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ul{
+  list-style-type: none
+}

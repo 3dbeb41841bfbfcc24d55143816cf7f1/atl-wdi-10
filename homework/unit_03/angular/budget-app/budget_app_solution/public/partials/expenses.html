@@ -1,0 +1,22 @@
+<h1>EXPENSES PAGE</h1>
+
+deduct  $<input type="number" placeholder="100" ng-model="main.deduction"><br>
+<label>NOTE:</label>
+<input type="text" placeholder="groceries" ng-model="main.expenseNote"><br>
+<button ng-click="main.addExpense()">Add Expense</button>
+
+<h3>Total Expenses</h4>
+
+<h3>${{main.expenses.toString()}}</h3>
+
+<button ng-click="showme= !showme">View History</button>
+
+<table ng-show="showme">
+  <tbody>
+    <tr ng-repeat="ticket in main.expenseHistory">
+      <td>${{ticket.total}}</td>
+      <td>{{ticket.note}}</td>
+      <td>{{ticket.created_at}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,63 @@
+<html ng-app="worldbank">
+<head>
+  <title>World Bank Loan Records Finder</title>
+  <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js'></script>
+  <script type="text/javascript" src="/js/app.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+    <h1 id="header">World Bank Loan Records Finder</h1>
+    <p id="subheader">Number of records: <!-- Number of records --> </p>
+
+    <div id="left">
+      <!-- Example HTML -->
+      <!--
+        <div>
+          <h3 class="region-title"> Bosnia and Herzegovina </h3>
+          <h4 class="project-name"> REAL ESTATE REGISTRATION PROJECT </h4>
+          <p class="project-abstract">
+            The objective of the Real Estate Registration Project for Bosnia and
+            Herzegovina is to support development of a sustainable real estate
+            registration system...
+          </p>
+          <span class="loan">Total loan: </span><span class="loanamnt">34100000</span>
+          <p>Year approved: 2013</p>
+        </div>
+      -->
+    </div>
+
+    <div id="right">
+      <div>
+        <span class="search-text">Search for records by region:</span>
+        <input class="region-search" type="text" placeholder="region name">
+        <ul>
+          <!-- EXAMPLE HTML -->
+          <!--
+          <span class="region-select"> Bosnia and Herzegovina </span>
+          -->
+        </ul>
+      </div>
+
+      <div id="new-record-container">
+        <p id="new-record-title">ADD NEW RECORD</p>
+        <form name="newRecordForm">
+          <input class="new-record-input" type="text" placeholder="region name">
+          <input class="new-record-input" type="text" placeholder="project name">
+          <textarea class="new-record-input new-project-abstract"
+            type="text" placeholder="project abstract"></textarea>
+          <input class="new-record-input" type="text" placeholder="year approved">
+          <input class="new-record-input" type="text" placeholder="loan amount">
+          <button id="new-record-submit" type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+body {
+  font-family: 'Old Standard TT', serif;
+}
+
+#header, #subheader {
+  font-family: 'Old Standard TT', serif;
+  text-align: center;
+}
+
+#header {
+  font-size: 50px;
+}
+
+#subheader {
+  font-size: 20px;
+}
+
+#container {
+  width: 1300px;
+  height: 2000px;
+  margin: 0 auto;
+}
+
+#left {
+  display: inline-block;
+  width: 650px; height: 2000px;
+}
+
+#right {
+  display: inline-block;
+  width: 600px; height: 2000px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+
+#right ul span {
+  margin-right: 10px;
+}
+
+#new-record-container textarea,
+#new-record-container input,
+#new-record-container button {
+  display: block;
+  margin-left: 40px;
+}
+
+input:focus, select:focus,textarea:focus, button:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.region-search {
+  height: 30px; width: 320px;
+  border: 1px solid black;
+}
+
+.search-text {
+  font-size: 20px;
+}
+
+.region-select {
+  cursor: pointer;
+}
+
+.region-select:hover, .region-title {
+  color: red;
+}
+
+.region-title {
+  font-size: 30px;
+}
+
+.project-name {
+  font-size: 20px;
+}
+
+.project-abstract {
+
+}
+
+.loan, .loanamnt {
+  display: inline-block;
+}
+
+.loanamnt {
+  color: red;
+}
+
+#new-record-container {
+  margin: 0 auto;
+/*  border: 1px solid red;*/
+  width: 400px;
+  text-align: center;
+}
+
+#new-record-title {
+  font-size: 30px;
+}
+
+.new-record-input {
+  height: 50px; width: 320px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.new-project-abstract {
+  height: 200px;
+}
+
+#new-record-submit {
+  height: 50px; width: 320px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

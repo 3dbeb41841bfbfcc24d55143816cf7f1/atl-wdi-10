@@ -1,0 +1,58 @@
+body {
+	background: blue;
+}
+
+h1, h3 {
+	text-align: center;
+}
+
+#regions {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 30px;
+	padding: 1em;
+	border-radius: 10px;
+	background-color: #EFECEC;
+}
+
+#records{
+	padding: 1em 5%;
+	width: 40%;
+	display: inline-block;
+	background: white;
+	vertical-align: top;
+	text-align: left;
+}
+span {
+	font-size: 14px;
+}
+
+#wrapper {
+	width: 100%;
+	text-align: center;
+
+}
+
+#searchbar {
+	text-align: center;
+	width: 30%;
+	margin-bottom: 30px;
+}
+
+#addrecord {
+	width: 100%;
+}
+
+
+form {
+	padding: 1em;
+	width: 100%;
+	display: inline-block;
+	background: #F9E9DA;
+}
+
+#deleteform {
+	background-color: transparent;
+	text-align: center;
+}

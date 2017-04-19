@@ -1,0 +1,6 @@
+<h1>HOME PAGE</h1>
+<h3>List of All Users:</h3>
+
+<ul>
+  <li ng-repeat="user in auth.allUsers"  ng-click="list.showUser(user._id)">{{user.name}}</li>
+</ul>
