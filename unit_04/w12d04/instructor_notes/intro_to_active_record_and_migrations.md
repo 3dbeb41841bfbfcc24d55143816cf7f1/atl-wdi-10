@@ -12,11 +12,15 @@ But Ruby objects don't persist. How do we store data from a Ruby object to an SQ
 [Object Relational Mapping](https://en.wikipedia.org/wiki/Object-relational_mapping)  - _What was Mongoose?_
 
 <br>
+
 **Learning Objectives**
 
   _Be able to create SQL tables and perform CRUD operations on them using ActiveRecord._
+
   <details>
+
   <summary></summary>
+
   - Use Rails generators to create models and migrations.
   - Run generated migrations to create tables in SQL.
   - Seed the db using ActiveRecord's `.create` method.
@@ -42,14 +46,18 @@ Given the SQL table below, how would you perform the following CRUD operations?
 Add a new row to the table.
 
 <details>
+
 <summary>**SQL**</summary>
+
   ```
   INSERT INTO animals (name, age, type) VALUES ('Snowball 2', 12, 'Cat');
   ```
 </details>
 
 <details>
+
 <summary>**ActiveRecord**</summary>
+
   ```ruby
   Animal.create(name: 'Snowball 2', age: 12, type: 'Cat')
   ```
@@ -60,14 +68,18 @@ Add a new row to the table.
 Get the row with an ID of 2.
 
 <details>
+
 <summary>**SQL**</summary>
+
   ```
   SELECT (*) FROM animals WHERE id = 2;
   ```
 </details>
 
 <details>
+
 <summary>**ActiveRecord**</summary>
+
   ```ruby
   Animal.find(2)
   ```
@@ -78,14 +90,18 @@ Get the row with an ID of 2.
 Change Scooby Doo's age to 14.
 
 <details>
+
 <summary>**SQL**</summary>
+
   ```
   UPDATE animals SET age = 14 WHERE name = 'Scooby Doo';
   ```
 </details>
 
 <details>
+
 <summary>**ActiveRecord**</summary>
+
   ```ruby
   Animal.find_by(name: 'Scooby Doo').update(age: 14);
   ```
@@ -96,28 +112,36 @@ Change Scooby Doo's age to 14.
 Delete Garfield.
 
 <details>
+
 <summary>**SQL**</summary>
+
   ```
   DELETE FROM animals WHERE name = 'Garfield';
   ```
 </details>
 
 <details>
+
 <summary>**ActiveRecord**</summary>
+
   ```ruby
   Animal.find_by(name: 'Garfield').delete;
   ```
 </details>
 
 <details>
+
 <summary>_Note_</summary>
+
   ```ruby
 # Why not do this?
 Animal.where(name: 'Garfield').destroy;
   ```
 
 <details>
+
 <summary></summary>
+
   ```ruby
   Animal.where(name: 'Garfield') # => returns a collection
   Animal.find_by(name: 'Garfield') # => returns the first match
@@ -133,11 +157,11 @@ _ActiveRecord is to SQL as Mongoose is to Mongo_
 It allows you to work with Ruby objects in Ruby code, while persisting the data in an SQL database.
 
 
-|Person ERD|\\|People Table||||
-|---|-|----|----|---|---|
-|**Name:** String|\\|**id**|**name**|**age**|**occupation**|
-|**Age:** Integer|\\|1|Terry|54|Pilot|
-|**Occupation:** String|\\
+| Person ERD | \\ | People Table | | | |
+| --- | - | ---- | ---- | --- | --- |
+| **Name:** String | \\ | **id** | **name** | **age** | **occupation** |
+| **Age:** Integer | \\ | 1 | Terry | 54 | Pilot |
+| **Occupation:** String | \\ | | | | |
 
 <br>
 
