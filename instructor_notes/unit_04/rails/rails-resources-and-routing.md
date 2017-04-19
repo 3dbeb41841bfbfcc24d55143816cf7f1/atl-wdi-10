@@ -317,7 +317,7 @@ Okay, so our `routes.rb` file is updated with nested resources. Let's see them i
 
 ### Uh oh. It broke...
 
-![First error](images/first-error.png)
+![First error](https://i.imgur.com/G6vWLOK.png)
 
 That's okay. You're going to spend the next hour fixing it!
 
@@ -377,7 +377,7 @@ Having seen this, let's make a To-Do list of things to change in our Rails app s
 
 ### Let's take another look at that error...
 
-![First error](images/first-error.png)
+![First error](https://i.imgur.com/G6vWLOK.png)
 
 Q. How do we fix this?
 ---
@@ -391,7 +391,7 @@ Q. How do we fix this?
 
 Another error! What went wrong this time?
 
-![Second error](images/second-error.png)
+![Second error](https://i.imgur.com/VGY3Gnq.png)
 
 Our app does not like the `new_song_path` we used in a link helper in our `artists/show.html.erb` file.
 
@@ -414,7 +414,7 @@ By nesting resources, `new_song_path` became `new_artist_song_path` since every 
 * But our app is still giving us an error. WHY?!
 
 
-![Third error](images/third-error.png)
+![Third error](https://i.imgur.com/heYsY36.png)
 
 You'll notice that we're getting a different error this time that ends with: `missing required keys: [:artist_id]`
 
@@ -433,7 +433,7 @@ We need to feed our `new_artist_song_path` helper an artist as a variable. Now o
 And that'll do it. Let's refresh our page...
 
 
-![Fourth Error](images/fourth-error.png)
+![Fourth Error](https://i.imgur.com/ouBYeCh.png)
 
 So now what? The link helper for an individual song inside of our .each enumerator isn't working.
 
@@ -481,7 +481,7 @@ Something else we'll need to change are forms. Let's try making a new song.
 
 No immediate error! But it's not working quite yet. Let's try creating a song.
 
-![Seventh error](images/seventh-error.png)
+![Seventh error](https://i.imgur.com/mR4a9Tt.png)
 
 Looks like our form is trying to access a `/songs` route.
 * Our application does not support that particular route.

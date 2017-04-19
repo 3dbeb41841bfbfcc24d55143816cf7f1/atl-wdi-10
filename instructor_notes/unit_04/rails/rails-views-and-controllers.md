@@ -41,7 +41,7 @@ With a partner, discuss:
 
 The design pattern that rails is built around is rMVC - Router, Model, View and Controller.
 
-![rMVC](images/mvc_diagram.png)
+![rMVC](https://i.imgur.com/147nsdW.png)
 
 **Question:** Who can remind us the role the View plays in a Rails application?
 
@@ -166,7 +166,7 @@ and in our browser, visit the route to view all artists:
 
 What do we see?
 <br>
-![unknown_action](images/unknown_action.png)
+![unknown_action](https://i.imgur.com/2XmTkAS.png)
 
 When we go to `http://localhost:3000/artists` our router says it knows where to send it. It's sending it to the artists controller and expects it to do the index action. Unfortunately we haven't defined it yet, so it's unknown. Let's go ahead and define that action now
 
@@ -185,7 +185,7 @@ end
 
 Great let's reload:
 
-![template_missing](images/template_missing.png)
+![template_missing](https://i.imgur.com/Fgm20Ms.png)
 
 Another error... We'll get more into this later. But this one is yelling at us for not having a view(template) yet. Specifically in this case, the index view. So let's create that. Let's first make a directory and file in the terminal:
 
