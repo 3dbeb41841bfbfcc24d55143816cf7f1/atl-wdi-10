@@ -322,7 +322,11 @@ ModelName.create()
 
 So far we've only seen how to create tables with ActiveRecord, what happens when we need to add or remove columns from an existing table?
 
+Sometimes you'll need to use raw SQL along with ActiveRecord to get what you want:
 
+```ruby
+Author.joins("JOIN books ON books.author_id = author.id")
+```
 
 ## Exercise
 [Libary SQL](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_04/w11d04/student_labs/library_sql) but with ActiveRecord.
