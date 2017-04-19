@@ -227,16 +227,18 @@ $ cd ga
 $ mkdir planets
 $ cd planets
 ```
-    - What does `cd` mean?
-    - What does `~` mean?
-    - What does `mkdir` mean?
+
+- What does `cd` mean?
+- What does `~` mean?
+- What does `mkdir` mean?
 
 2. You can initialize a Git directory using the command `git init`:
 
 ```bash
 $ git init
 ```
-    - What does git init do?
+
+- What does git init do?
 
 3. Git will reply:
 
@@ -244,7 +246,7 @@ $ git init
 Initialized empty Git repository in <location>
 ```
 
-    You now have initialized a working directory.
+- You now have initialized a working directory.
 
 **EXERCISE:** Take 3 minutes to go through this process on your own. Can you write down what actual changes have been made to our directory and to your Terminal?
 
