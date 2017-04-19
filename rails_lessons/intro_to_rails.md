@@ -164,6 +164,8 @@ OK, so we've done our `rails new` command.  Let's start our server.
 $ rails s
 ```
 
+Now navigate over to `localhost:3000` to see if it's running.
+
 Oh no! We got an error :(
 
 `FATAL: database "todos_development" does not exist`
@@ -176,16 +178,20 @@ Let's go ahead and setup our database.
 
 `$ rails db:migrate`
 
+Now refresh `localhost:3000` -- you should see "Yay! You're on Rails!"
 
-* Create the route in our routes.rb
+Next we need to create a basic route.
+
+* Create the route in `config/routes.rb`
 
 ``` ruby
+# Take in GET requests to /todos and send them to the Todos controller, Index action
 get 'todos' => 'todos#index'
 ```
 
 * Create the `todos_controller.rb` controller
 
-``` ruby
+```bash
 rails generate controller Todos index
 ```
 
@@ -203,6 +209,8 @@ Here's an example:
 ```
 
 * Add a message instance variable to our `todos_controller.rb`
+
+The way we take messages and/or data from our controller into our view is via instance variables.
 
 ```ruby
 class TodosController < ApplicationController
@@ -225,13 +233,15 @@ end
 
 And there it is! Our first "Hello World" in Rails.  Next we have to create a Model for our todos.
 
+If this doesn't work, restart the server.
+
 * Create the `todo.rb` model
 
 ```ruby
 rails generate model Todo
 ```
 
-We should see this in our terminal.
+We should see this in our Terminal.
 
 ```bash
 $ rails generate model Todo
@@ -284,11 +294,17 @@ $ rails db:migrate
 
 **Always restart your server after a migration!**
 
-If you want to create a model with specific fields, then you would use a command similar to this.
+In the future, when we generate a model, we'll give it the fields that we know we want. This is better than first creating an empty table then adding in the fields. The syntax for this is:
 
 ```bash
-$ rails generate model Todos content:text priority: number
+$ rails generate model Todos content:text priority:number
 ```
+
+* View `db/schema.rb`
+
+The Schema is a snapshot of what your database looks like. _Editing this file will do nothing._ In fact, in large projects, editing this file can be dangerous.
+
+Viewing this file is good and will give you an understanding of how things are connected and what data is important!
 
 * Access Rails console and create a new Todo
 
@@ -323,6 +339,8 @@ end
 <% end %>
 ```
 
+Let's troubleshoot a common error -- putting a `<%=` when you should have `<%` or vice-versa!
+
 
 ## ActiveRecord Associations and Validations
 
@@ -340,7 +358,7 @@ $ rails generate model Category name:string
 $ rails db:migrate
 ```
 
-In this case, we want to store todos in specific categories.  So, **Category has many Todo, and Todo belongs to Category**.
+In this case, we want to store todos in specific categories.  So, **Category has many Todos, and Todo belongs to Category**.
 
 CFU: What field do we need to add to Todo?
 
@@ -350,7 +368,7 @@ CFU: What field do we need to add to Todo?
 * Add a `category_id` to the todos table
 
 ```bash
-$ rails generate migration AddCategoryIdToTodos category_id: string
+$ rails generate migration AddCategoryIdToTodos category_id:integer
 $ rails db:migrate
 ```
 
@@ -360,7 +378,7 @@ $ rails db:migrate
 $ rails s
 ```
 
-* Create a seed file in `seeds.rb`
+* To test out Associations, let's populate `db/seeds.rb`
 
 ```ruby
 Todo.delete_all
