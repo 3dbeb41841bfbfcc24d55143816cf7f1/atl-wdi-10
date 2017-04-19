@@ -47,7 +47,9 @@ Add a new row to the table.
 
 <details>
 
-<summary>**SQL**</summary>
+<summary>
+  **SQL**
+</summary>
 
   ```
   INSERT INTO animals (name, age, type) VALUES ('Snowball 2', 12, 'Cat');
@@ -56,12 +58,15 @@ Add a new row to the table.
 
 <details>
 
-<summary>**ActiveRecord**</summary>
+<summary>
+  **ActiveRecord**
+</summary>
 
   ```ruby
   Animal.create(name: 'Snowball 2', age: 12, type: 'Cat')
   ```
 </details>
+
 ***
 
 #### Read
@@ -69,7 +74,9 @@ Get the row with an ID of 2.
 
 <details>
 
-<summary>**SQL**</summary>
+<summary>
+  **SQL**
+</summary>
 
   ```
   SELECT (*) FROM animals WHERE id = 2;
@@ -78,12 +85,15 @@ Get the row with an ID of 2.
 
 <details>
 
-<summary>**ActiveRecord**</summary>
+<summary>
+  **ActiveRecord**
+</summary>
 
   ```ruby
   Animal.find(2)
   ```
 </details>
+
 ***
 
 #### Update
@@ -91,7 +101,9 @@ Change Scooby Doo's age to 14.
 
 <details>
 
-<summary>**SQL**</summary>
+<summary>
+  **SQL**
+</summary>
 
   ```
   UPDATE animals SET age = 14 WHERE name = 'Scooby Doo';
@@ -100,12 +112,15 @@ Change Scooby Doo's age to 14.
 
 <details>
 
-<summary>**ActiveRecord**</summary>
+<summary>
+  **ActiveRecord**
+</summary>
 
   ```ruby
   Animal.find_by(name: 'Scooby Doo').update(age: 14);
   ```
 </details>
+
 ***
 
 #### Delete
@@ -113,7 +128,9 @@ Delete Garfield.
 
 <details>
 
-<summary>**SQL**</summary>
+<summary>
+  **SQL**
+</summary>
 
   ```
   DELETE FROM animals WHERE name = 'Garfield';
@@ -122,7 +139,9 @@ Delete Garfield.
 
 <details>
 
-<summary>**ActiveRecord**</summary>
+<summary>
+  **ActiveRecord**
+</summary>
 
   ```ruby
   Animal.find_by(name: 'Garfield').delete;
@@ -131,7 +150,9 @@ Delete Garfield.
 
 <details>
 
-<summary>_Note_</summary>
+<summary>
+  _Note_
+</summary>
 
   ```ruby
 # Why not do this?
