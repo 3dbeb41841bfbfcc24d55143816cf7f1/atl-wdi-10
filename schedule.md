@@ -662,7 +662,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d04/student_labs/presidents-app-starter-code-single-app-version">Presidents Starter Code</a>
     </td>
     <td>
-        <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d01/instructor_notes/angular_services.md">Angular Services</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w10d01/instructor_notes/angular_services.md">Angular Services</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/angular_lessons/webpack-angular-babel/webpack-angular-babel.md">Webpack and Angular</a>
@@ -769,13 +769,13 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
       Project Two Retrospective
@@ -787,52 +787,52 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/homework">Code School Angular</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_03/angular/code-school-angular.md">Code School Angular</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_directives_and_nested_controllers.md">Intro to Angular with Nested Controllers</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/angular-directives-and-nested-controllers.md">Angular Directives and Nested Controllers</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_03/w09d02/homework">Code School Angular</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_03/angular/code-school-angular.md">Code School Angular</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-directives-happy-app-instructions.md">Angular Directives</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_03/angular/angular-directives-lab.md">Angular Directives LAB</a>
     </td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      Project Two Presentations
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a> Presentations
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/instructor_notes/angular_intro.md">Intro to Angular</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_03/angular/intro-to-angular.md">Intro to Angular</a>
     </td>
     <td>
     <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/labs/angular-controllers-lab">LAB</a>
@@ -841,16 +841,16 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      Project Two Presentations
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a> Presentations
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d03/student_labs/angular-intro-museum-app-lab-instructions.md">Angular Lab</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_03/angular/angular-intro-museum-lab.md">LAB</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/labs/angular-controllers-lab">LAB</a>
@@ -859,19 +859,19 @@
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
-      Project Two
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
     </td>
     <td>
       No Homework
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-30-17-mean-machine.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_03/angular/mean-machine.md">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-31-17-angular-videos.md">Homework</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_03/angular/angular-videos.md">Homework</a>
     </td>
   </tr>
 </tbody></table>
