@@ -31,7 +31,7 @@ creator:
 <br />
 
 ## Hook (5m)
-When you think back to your favorite trip, you probably took a lot of snapshots, maybe you created a photo album as a keepsake, when you returned.  You have these moments, that allow you to time travel back and remember what happened.
+When you think back to a favorite trip, you most likely took a lot of snapshots, maybe you created a photo album as a keepsake upon return.  You have these moments, that allow you to time travel back to those moments and remember what happened.
 
 These are some snapshots from a trip that I took to Nepal to meet with a group called Women's Empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
 ### Women's Empowerment leaders
@@ -53,25 +53,18 @@ Similarly, git is a software that allows us to keep track, or keep snapshots, of
 
 ---
 
-##**YOU DO** (15m)
+## YOU DO (15m)
 
-Spend the next 15 minutes reading the first 4 chapters
+Spend the next 15 minutes reading the first 4 chapters from this website: https://swcarpentry.github.io/git-novice/01-basics/
 - Automated version control
 - Setting up git
 - Creating a repository
-- Tracking change
-
-from this website: https://swcarpentry.github.io/git-novice/01-basics/ 
+- Tracking change 
 
 <br />
 
----
-
-## Why Version Control? **YOU DO** (3m)
-
-
-* Spend the next few minutes with your buddy, discussing the following questions:
-  Assuming that version control systems did not exist, how would you:
+### Then, spend the next few minutes discussing the following questions with your buddy (3m)
+  - Assuming that version control systems did not exist, how would you:
     - Share your source code with other developers?
     - Collaborate with other developers
     - Manage multiple versions of a software product?
@@ -89,11 +82,13 @@ from this website: https://swcarpentry.github.io/git-novice/01-basics/
 * _Version Control_ is the management of changes to documents, computer programs, web sites, and other collections of information.
 
 * _Version Control_ provides:
-    - a database containing a history of changes to a set of files
+    - a database that contains the history of changes to a set of files
     - a set of commands for managing that database
 
+<br />
+
 ## What is Version Control Good For?
-* Manage Changes Over Time
+* Manages Changes Over Time
     - Save various points in the development of your work.
     - See the history of your work.
     - Go "Back In Time" to see previous versions of your work.
@@ -116,11 +111,11 @@ from this website: https://swcarpentry.github.io/git-novice/01-basics/
 
 ---
 
-## Git vs GitHub and version control - Intro (5m)
+## Git vs GitHub and Version Control - Intro (5m)
 
 First things first - Git is not GitHub. This is a common mistake that people make.
 
-#### What is Git?
+### What is Git?
 
 [Git](https://git-scm.com/) is:
 
@@ -129,20 +124,19 @@ First things first - Git is not GitHub. This is a common mistake that people mak
 
 Programmers use Git so that they can keep the history of all the changes to their code. This means that they can rollback changes (or switch to older versions) as far back in time as they started using Git on their project.
 
-**EXERCISE:** Think about some version control tools or processes you've used. These could be
-formal processes imposed by a professor or manager, or a methods you've used personally. Can anyone think of a version control example?
+**EXERCISE:** Think about some version control tools or processes you have used. These could be formal processes imposed by a professor or manager, or methods that you have used personally. Can anyone think of a version control example?
 
-#### Terminology/History
+### Terminology/History
 
 A codebase in Git is referred to as a **repository**, or **repo**, for short.
 
-Git is pretty confusing and complex at first, but I have full confidence that you will pick it up before you know it. When we talk about repos and codebases we're really just talking about a directory that has a file in it named .git. This .git is very importanta.  It tells git binary to treat the directory as a repo and listen for changes, track files, and do git-related tasks when asked.
+Git is pretty confusing and complex at first, but I have full confidence that you will pick it up before you know it. When we talk about repos and codebases we are really talking about a directory that has a file in it named `.git`. This .git file is very important.  It tells **git binary** to treat the directory as a repo and listen for changes, track files, and run git-related tasks when asked.
 
 Git was created by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), the principal developer of Linux.
 
 **I DO:** I'll `ls -la` into our class repo and show the `.git` directory.
 
-#### What is GitHub?
+### What is GitHub?
 
 [GitHub](https://github.com/) is:
 
@@ -155,63 +149,68 @@ Git was created by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds
 - You can use it to work on open source project
 - GitHub uses Git
 
-#### Can you use git without GitHub?
+### Can you use git without GitHub?
 
 Think about this quote: “Git is software. GitHub is company that happens to use Git software.”  
 
-**Exercise:** If you think this statement is true, react to with a thumbs up or a thumbs down if you think it is false. Why?
+**Exercise:** If you think this statement is true, react to with a thumbs up.  If you think it is false, a thumbs down. 
 
-The answer is true! Git and Github just share a similar name, but GitHub is a platform in the browser where we can share repos/code with each other. And we use git, locally, to keep track of our files, and then we push those files/changes to GitHub.
+The answer is true! 
 
-You can certainly use Git without GitHub!
 
-<br>
+#### Why?
+
+Git and Github just share a similar name, but GitHub is a platform in the browser where we can share repos/code with each other. And we use git, locally, to keep track of our files, and then we push those files/changes to GitHub.
+
+You can certainly use Git without GitHub! The Visual Studio Team offers a version control.  And Bitbucket also has one. But GitHub is an industry standard.
+
+<br />
 
 ## Why is Git tricky to understand? Demo (5m)
 
 Git is tricky to understand because describing 'how' it works, like many things in programming, requires a breadth of technical knowledge. 
 
-We need to work with Git and many other complex technologies and approach them critically (i.e. as a critical thinker: the objective analysis and evaluation of an issue in order to form a judgment). But we need to also suspend our disbelief as it were and accept that at their core these technologies are complex, built by some of the best programming minds, and are the result of sometimes 50 years of iteration.
+We need to work with Git and many other complex technologies and approach them critically (i.e. as a critical thinker: the objective analysis and evaluation of an issue in order to form a judgment). But we need to also suspend our disbelief, as it were, and accept that at their core these technologies are complex, built by some of the best programming minds in the world, and are the result of sometimes 50 years of iteration.
 
-I don't need to explain music theory to you in order to play the guitar.  It may help in a bind, but it is not mandatory.
+I don't need to explain music theory to you in order to play the guitar.  It may your understanding, but it is not mandatory.
 
-Today, we will learn a bit about how Git works, but for now it's enough to learn how to use it for this class - by keeping track of homework and classwork. Through this process, we will better understand how we will use it as professional developers.
+Today, we will learn a bit about how Git works, enough to learn how to use it for this class - by keeping track of homework and classwork. Through this process, we will better understand how we will use it as professional developers.
 
-
-> Things we don't need to know but might be curious to know!
+> Things we did not discuss/need to know right now, but might be curious to know about in the future!
 
 - [Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 - [SHA-1](https://en.wikipedia.org/wiki/SHA-1)
 - blob
 - tree
 
-#### Ask me if I am a tree.
+### Ask me if I am a tree.
 
-Even though you don't need to know how they work, it is useful to know that your local repository consists of three "trees" maintained by Git.
+Even though you don't need to know how they work, it is useful to know that your local repository consists of three "trees" that are maintained by Git.
 
-- **Working Directory**: the directory and subdirectories containing the files we are currently working on and holds the actual files.
-- **Index (stage)**: a staging area where we list changes we want to commit
-- **HEAD**: which points to the last commit you've made 
+- **Working Directory**: the directory and subdirectories containing the files we are currently working on and which holds the actual files.
+- **Staging**: a staging area where we list the changes we want to commit
+- **HEAD**: which points to the last commit you have made 
 
-#### More terminology
+### More terminology
 
 - **Repository** - a collection of related commits that form a directed acyclic graph (find out more that if you click on the link above)
-- **Commit** - a snapshot of the working tree at a giving time (make sure to include a message explaining what has changed)
+- **Commit** - a snapshot of the working tree at any given time (make sure to include a detailed message that explains what has changed)
 - **Master** - the default name for the "main" development branch
 
-![workflow](https://cloud.githubusercontent.com/assets/40461/8221736/f1f7e972-1559-11e5-9dcb-66b44139ee6f.png)
+<!-- ![workflow](https://cloud.githubusercontent.com/assets/40461/8221736/f1f7e972-1559-11e5-9dcb-66b44139ee6f.png) -->
+![workflow](https://i.imgur.com/Y7wd0Yd.png)
 
 <br />
 
-#### So many commands?!
+### So many commands!?!
 
-There are a lot of commands available for git. You can look at the list of commands by running:
+There are a lot of commands available for git. You can look at the list of these commands by running:
 
 ```bash
 $ git help -a
 ```
 
-Even though there are lots of commands, during this course we will probably only utilize about 10 of them.
+We can see that there is an inordinate amount of commands, however, during this course we will probably only utilize about 10 of them.
 
 <br />
 
@@ -221,35 +220,37 @@ Even though there are lots of commands, during this course we will probably only
 
 1. First, create a directory on your Desktop:
 
-    ```bash
+```bash
 $ cd ~/Desktop
+$ mkdir ga
+$ cd ga
 $ mkdir planets
-```
-    - What does `~` mean?
-    - What does mkdir mean?
-
-2. You can place this directory under Git revision control using the command:
-
-    ```bash
 $ cd planets
+```
+    - What does `cd` mean?
+    - What does `~` mean?
+    - What does `mkdir` mean?
+
+2. You can initialize a Git directory using the command `git init`:
+
+```bash
 $ git init
 ```
-    - What does cd mean?
     - What does git init do?
 
 3. Git will reply:
 
-    ```bash
+```bash
 Initialized empty Git repository in <location>
 ```
 
-    You've now initialized the working directory.
+    You now have initialized a working directory.
 
-**EXERCISE:** Take 3 minutes to go through this process on your own. React with a thumbs up when you're finished. Can you write down what actual changes have been made to our directory and to your Terminal?
+**EXERCISE:** Take 3 minutes to go through this process on your own. Can you write down what actual changes have been made to our directory and to your Terminal?
 
-**Give me a thumbs up in Slack when you're done**
+**Give me a thumbs up in Slack when you are done**
 
-#### The .git folder
+### The .git folder
 
 If we look at the contents of this empty folder using:
 
@@ -264,7 +265,7 @@ We should see that there is now a hidden folder called `.git`. This is where all
 
 1. Let's create a new file:
 
-    ```bash
+```bash
 $ touch mars.txt
 ```
 
@@ -276,6 +277,7 @@ $ touch mars.txt
 That % sign indicates that we have an untracked file that Git doesn't know about
 
 3. Run 
+
 ```bash
 $ ls
 ````
@@ -285,22 +287,22 @@ $ ls
 
 4. If we run `git status` we should get:
 
-    ```bash
-    On branch master
+```bash
+On branch master
 
-    Initial commit
+Initial commit
 
-    Untracked files:
-    (use "git add <file>..." to include in what will be committed)
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
 
-    mars.txt
+mars.txt
 
-    nothing added to commit but untracked files present (use "git add" to track)
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 5. This means that there is a new **untracked** file. Next, tell Git to take a snapshot of the contents of all files under the current directory (note the -A)
 
-    ```bash
+```bash
 $ git add -A
 ```
 
