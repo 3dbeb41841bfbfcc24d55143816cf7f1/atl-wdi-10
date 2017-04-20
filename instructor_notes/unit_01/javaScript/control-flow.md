@@ -95,7 +95,7 @@ var x = 1;
 console.log(x); // outputs 2
 ```
 
-Only **functions** introduce scope in Javascript.  
+Only **functions** introduce scope in Javascript.  Does everyone understand what 'scope' means?
 
 ---
 
@@ -131,7 +131,9 @@ if (name === "puppies") {
 name === "kittens!!";
 //=> true
 ```
-**TIP**: Always finish your if statements with an else.  You never know when you will need it, and it could save you.  Even if you never expect to hit that else, it should be there.  In my last job, if we never expected to hit the else, we would write- `console.log("Waldo, you shouldn't be here.");` in the code block.
+**TIP**: Always finish your if statements with an else.  You never know when you will need it, and it could save you.  Even if you never expect to hit that else, it should be there.  <!-- In my last job, if we never expected to hit the else, we would write- `console.log("Waldo, you shouldn't be here.");` in the code block. -->
+
+Can anyone explain why we used three equal signs in the example above?  What is the difference between three equal signs, and two?
 
 **WARNING**: It is highly recommended that you **do not** assign variables in the conditional expression, because the assignment of a value to a variable, like this:
 
@@ -144,9 +146,7 @@ will **always** be true.
 
 The expression above will return the value (as shown on the second line). If you assign a truthy value inside of a conditional statement, then the condition will always be true, and no other conditions will ever be tested.  If you assign a variable something undefined, it will make the conditional statement false (because undefined is falsey). 
 
-Can anyone explain why we used three equal signs?  What is the difference between three equal signs, and two?
-
-The example below is the illustration of WHAT NOT TO DO, in general:
+The example below is the illustration of **WHAT NOT TO DO**, in general:
 
 ```javascript
 if (x = 3) {
@@ -182,23 +182,14 @@ allowed
 
 ---
 
-###YOU DO - Exercises (10m)
+### YOU DO - Exercises (10m)
 
-Goto [repl.it](https://www.repl.it/) to complete the following exercises.
+Goto [repl.it](https://www.repl.it/) to complete the following exercises.  Click on the 'Search for a Language' section and choose JavaScript, and it should open up a new repl in that same window.
 
-1. Write a script that prompts the user for their current mood. If the user inputs `happy`, print 'Yay me too!' to the console, `sad` print 'Aw cheer up', else print 'So moody!'. (A solution is at the bottom of this lesson:)
+1. Write a script that prompts the user for their current mood. If the user inputs `happy`, print 'Yay me too!' to the console, `sad` print 'Aw cheer up', else print 'So moody!'.
 
 
-1. Use conditionals to check if a hardcoded number is `odd` or `even`, and then `console.log` the number is `odd` or `even` with the numbers value.
-
-    ```js
-    var num = ;// write a number here
-    
-    // write your conditions here
-    
-    ```
-
-2. Use conditionals to check if a hardcoded number is divisible by `2` or  `3` and then `console.log` that the number is divisible by two or three.
+2. Use conditionals to check if a hardcoded number is `odd` or `even`, and then `console.log` the number is `odd` or `even` with the numbers value.
 
     ```js
     var num = ;// write a number here
@@ -207,7 +198,16 @@ Goto [repl.it](https://www.repl.it/) to complete the following exercises.
     
     ```
 
-3. Use conditionals to check if a hardcoded `quantity` is `1` or greater than one. If the `quantity`  is one or greater `console.log` either `1 pet` or `quantity + " pets"` respectively.
+3. Use conditionals to check if a hardcoded number is divisible by `2` or  `3` and then `console.log` that the number is divisible by two or three.
+
+    ```js
+    var num = ;// write a number here
+    
+    // write your conditions here
+    
+    ```
+
+4. Use conditionals to check if a hardcoded `quantity` is `1` or greater than one. If the `quantity`  is one or greater `console.log` either `1 pet` or `quantity + " pets"` respectively.
 
     ```js
     var quantity = ;// write a number here
@@ -215,6 +215,8 @@ Goto [repl.it](https://www.repl.it/) to complete the following exercises.
     // write your conditions here
     
     ```
+
+(There are solutions at the bottom of this lesson.)
 
 <br />
 
@@ -233,14 +235,14 @@ Goto [repl.it](https://www.repl.it/) to complete the following exercises.
 
 #### All other values become true when converted to a Boolean
 
-Do not confuse the primitive boolean values `true` and `false` with the true and false values of the Boolean object. For example:
+<!-- Do not confuse the primitive boolean values `true` and `false` with the true and false values of the Boolean object. For example:
 
 ```javascript
 var b = new Boolean(false);
 
 if (b) { console.log("true"); }
 //=> true
-```
+``` -->
 
 There is a simple way of verifying the truthiness or falsiness of a value. When you add `!` in front of a value, the returned value will be the inverse of the value in a boolean. So if you add two `!` then you'll get the boolean value of the original one:
 
@@ -278,7 +280,7 @@ There is a simple way of verifying the truthiness or falsiness of a value. When 
 !!NaN
 //=> false
 ```
-A double bang(!!) may be used in development to change a variable into a boolean.  When I was working with a team in India, instead of writing boolean values, they would want us to return no/yes values instead of booleans for certain data points in the API.
+A double bang(!!) may be used in development to change a variable into a boolean.  <!-- When I was working with a team in India, instead of writing boolean values, they would want us to return no/yes values instead of booleans for certain data points in the API. -->
 
 <br />
 
@@ -345,6 +347,8 @@ The `!` takes a value and returns the opposite boolean value, i.e.
 
 The `&&` and `||` operators use short-circuit logic, which means that executing their second operand depends on whether the first is true of false. This is useful for checking for null objects before accessing their attributes:
 
+##### The And `&&` operator
+
 ```javascript
 var name = otherName && o.getName();
 ```
@@ -353,15 +357,16 @@ As stated above, when using the `&&` operator, the expression will be true only 
 
 So, if the first operand `otherName` is false, then the second operand `o.getName()` will not be evaluated. The expression is basically saying "we already know the whole `&&` expression is false, because `otherName` is falsey. Why bother dealing with the second operand?"
 
-Or for setting default values:
+
+##### The Or `||` operator can be used to set default values:
 
 ```javascript
 var name = otherName || "Schmitty";
 ```
 
-For the `||` operator, the expression will be false, only if both items are false.  If either operand is true, when using the `||` operator, the expression will be true.
+If you use the `||` operator, the expression will be false, only if both operands are false.  If either operand is true, when using the `||` operator, the expression will be true.
 
-So, if the first operand `otherName` is false, then we'll see that `"Schmitty"` will be returned. If `otherName` is truthy (e.g. it contains a value), the expression will get returned/is true, and the second expression won't even be evaluated. 
+So, if the first operand `otherName` is false, then the variable name will be set to "Schmitty". If `otherName` is truthy (e.g. it contains a value), the expression will be evaluated, and the second expression won't. 
 
 The expression is basically saying "we already know the whole `||` expression is true, because `otherName` is truthy. Why bother dealing with the second operand?"
 
@@ -372,12 +377,6 @@ The expression is basically saying "we already know the whole `||` expression is
 [Comparisons](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators) in JavaScript can be made using `<`, `>`, `<=` and `>=`. These work for both strings and numbers. This is both useful, and can be the source of frustration for some developers as most languages do not implicitly convert strings to numbers the way that JavaScript does.
 
 ```javascript
-"A" > "a";
-//=> false
-
-"b" > "a";
-//=> true
-
 12 > "12";
 //=> false
 
@@ -387,15 +386,12 @@ The expression is basically saying "we already know the whole `||` expression is
 
 #### Equality Operator `==`
 
-Equality is a bit more complex. There are 2 ways in JavaScript to verify equality.
+Equality is a bit more complex. There are 2 ways in JavaScript to verify equality, with a double equals(==) or a triple equals(===).
 
 When verifying equality using the double equal sign(`==`), JavaScript does a lot of the "type coercion" in the background. Like we mentioned above, if the operands have a different type (i.e.: the number `12` and the string `"12"`), JavaScript will try to change the type of both operands to check whether they are equal. This means that a lot of times, expressions will return equal more easily than if we were stricter about what things were equivalent. Some examples:
 
 ```javascript
 "dog" == "dog";
-//=> true
-
-1 == true;
 //=> true
 
 12 == "12";
@@ -411,16 +407,13 @@ To avoid type coercion and measure equality more strictly, **use the triple-equa
 Some examples:
 
 ```javascript
-1 === true;
-//=> false
+"dog" === "dog";
+//=> true
 
 12 === "12";
 //=> false
 
 true === true;
-//=> true
-
-"hello" === "hello";
 //=> true
 ```
 
@@ -428,7 +421,7 @@ However, there are some times when this will not do what we expect, for example 
 
 ```javascript
 {} === {}
-//=> Uncaught SyntaxError: Unexpected token ===
+//=> false
 
 [] === []
 //=> false
@@ -445,7 +438,7 @@ What this means is that when we compare two objects or arrays with `===`, JavaSc
 
 #### != and !==
 
-There are also `!=`(not equal) and `!==`(strict not equal) operators, which are the negative versions of `==`(equal) and `===`(strict equal).
+There are also `!=`(not equal) and `!==`(strict not equal) operators, which are the negative versions of `==`(equals) and `===`(strict equals).
 
 ---
 
@@ -476,8 +469,7 @@ switch(food) {
 In this case, the `switch` statement compares `food` to each of the "cases" (`pear` and `apple`), and evaluates the expressions beneath them if there is a match. It uses `===` to evaluate equality.
 
 The default clause is optional, but just like an else statement, it is highly recommended.
-
-####Example
+<!-- #### Example
 
 The .getDay() method returns the weekday as a number between 0 and 6. (Sunday=0, Monday=1, Tuesday=2 ..)
 
@@ -509,7 +501,7 @@ switch (new Date().getDay()) {
     default:
         console.log("Waldo, you shouldn't be here.");
 }
-```
+``` -->
 
 - When the JavaScript code interpreter reaches a "break" keyword, it breaks out of the switch block.
 
@@ -540,7 +532,7 @@ These are some of the foundational tools you will use in the majority of your ap
 ---
 
 ## Independent Practice
-- [Choose Your own Adventure](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d02/student_labs/choose_your_own_adventure)
+- [Choose Your own Adventure](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/choose_your_own_adventure)
 
 ---
 
