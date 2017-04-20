@@ -364,7 +364,8 @@ $ subl mars.txt
 Inside the file, write:
 
 ```bash
-Discovered by Galileo Galilei in 1610, Mars is a cold and dry planet, but the surface is a rich red that looks like a beautiful sunset. 
+Discovered by Galileo Galilei in 1610, Mars is a cold and dry planet, but the surface is a rich red 
+that looks like a beautiful sunset. 
 ```
 
 Save the file.
@@ -505,83 +506,82 @@ Refresh your GitHub repo webpage, and the files should be there.
 
 ## What is forking? Intro
 
-The `fork` & `pull` model lets anyone fork an existing repository and push changes to their personal fork without requiring access to be granted to the source repository.
+The `fork` & `pull` model lets anyone fork an existing repository and push changes to their personal fork without requiring access granted from the source repository.
 
-Most commonly, forks are used to either propose changes to someone else's project (like an open source project) or to use someone else's project as a starting point for your own idea. This is how most open source projects operate.
+Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea. This is how most open source projects operate.
 
 ## Now that everyone has their first repository on GitHub, let's fork and clone our first repository! 
 
-#### Clone practice
+### Clone practice
 
 Cloning allows you to get a local copy of a remote repository.
 
 1. Navigate back to your Desktop and **delete your `planets` repository**:
 
-    ```bash
-cd ~/Desktop
-rm -Rf planets
+```bash
+$ cd ~/Desktop/ga
+$ rm -Rf planets
 ```
 
 2. Go to your GitHub repo for `planets`
-3. Click the green "Clone or Download" button and copy the URl. Make sure that you use **Clone with SSH** 
+3. Click the green "Clone or Download" button and copy the URL. Make sure that you use **Clone with SSH** 
 
-    ![clone](https://i.imgur.com/FjdRT66.png)
+![clone](https://i.imgur.com/FjdRT66.png)
     
-4. From the terminal prompt, clone the repo with the following command (you can clone the repo to your Desktop):
+4. From the terminal prompt, clone the repo with the following command (you can clone the repo to your Desktop), `git clone` + your repo name:
 
-    ```bash
+```bash
 git clone <YOUR_PLANET_REPO_URL>
 ```
 
-#### Fork the student repo
+### Fork the student repo
  
-2. Go to the link below, this is going to be our class repo where you'll receive your morning exercises, classwork, and homework. It's also where you'll push to submit your homework.
+1. Go to the link below, this is going to be our class repo where you will receive your morning exercises, classwork, and homework. 
 
-    https://github.com/ATL-WDI-Curriculum/atl-wdi-9
+https://github.com/ATL-WDI-Curriculum/atl-wdi-10
 
-2. Click fork, and select your name then on your fork of the repo.
-3. Click on the Green Button on the right hand side you will see:
+2. Click Fork (on the upper right), and select your name to create your own fork of the repo.  (If you only have access to one github name, it will create the fork in your own repo automatically.)
+3. Click on the Green Clone of download Button on the right hand side, you will see:
 
-    ![clone](https://i.imgur.com/FjdRT66.png)
+![clone](https://i.imgur.com/FjdRT66.png)
 
-4. Ensure that you have SSH checked and copy this url.
+4. Ensure that you have SSH checked (It will either say Clone with SSH or Clone with HTTPS) and copy this url.
 
-#### Clone your fork of the student repo!
+### Clone your fork of the student repo!
 
-To retrieve the contents of your repo, all you need to do is:
+To retrieve the contents of your repo, all you need to do is run `git clone` + the name of your repo:
 
 ```bash
-$ git clone git@github.com:<your-github-name>/atl-wdi-9.git
+$ git clone <git@github.com:<your-github-name>/atl-wdi-10.git>
 ```
 
 Git should reply:
 
 ```bash
-Cloning into 'atl-wdi-9'...
+Cloning into 'atl-wdi-10'...
 remote: Counting objects: 3, done.
 remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
 Receiving objects: 100% (3/3), done.
 Checking connectivity... done.
 ```
 
-You now have cloned your first repository!
+You have now cloned your first repository!
 
+### Cloning vs Forking
 
-#### Cloning vs Forking
-
-When you fork a repository, you make a new **remote** repository that is exactly the same as the original, except you are the owner. You can then `clone` your new fork and `push` and `pull` to it without needing any special permissions.
+When you fork a repository, you make a new **remote** repository that is exactly the same as the original, except that you are the owner. You can then `clone` your new fork and `push` and `pull` to it without needing any special permissions.
 
 When you clone a repository, unless you have been added as a contributor, you will not be able to push your changes to the original remote repository.
 
-#### Setting your upstream remote to get updates using Git
+### Set your upstream remote to get updates using Git
 
 ```bash
-$ git remote add upstream git@github.com:ATL-WDI-Curriculum/atl-wdi-9.git
+$ git remote add upstream git@github.com:ATL-WDI-Curriculum/atl-wdi-10.git
 ```
 
 Run `git remote -v` again! What's changed?
 
-- We just created an `upstream` link so that you can fetch from changes from the atl-wdi-9 repository.
+- We just created an `upstream` link so that you can fetch from changes from the atl-wdi-10 repository.
 
 <br />
 
@@ -589,7 +589,9 @@ Run `git remote -v` again! What's changed?
 
 You can create branches of your master branch to work on or experiment with new features. When ready, you can merge the branch into the master branch. Why might branches be beneficial?
 
-**Demo:** GitUp - https://github.com/git-up/GitUp
+
+![Git branch](https://i.imgur.com/7NJoVML.png)
+<!-- **Demo:** GitUp - https://github.com/git-up/GitUp -->
 
 <br />
 
@@ -597,14 +599,14 @@ You can create branches of your master branch to work on or experiment with new 
 
 ## Assess - Independent Practice (8m)
 
-Use the internet and what you've learned today to answer the following questions with a partner:
+Use the internet and what you have learned today to answer the following questions with a partner:
 
 * How do I send changes to the staging area?
 * How do I check what is going to be committed?
 * How do I send the commits to GitHub?
 * Why do I write a commit message?
 * How do I check the status of my repository?
-* How does github know that I am allowed to push to a specific repo?
+* How does Github know that I am allowed to push to a specific repo?
 * What does remote mean, and what does it point to?
 * What is the whole process to push code from your local machine to github?
 * What is the difference between forking and cloning?
@@ -615,7 +617,7 @@ Use the internet and what you've learned today to answer the following questions
 
 ## Conclusion (2m)
 
-As a developer, you will have to use Git everyday. The learning curve is steep and all the principles of version control can  be a bit confusing sometimes. This is why we ask students to push their homework everyday and to commit hourly during project time.
+As a developer, you will use Git everyday. The learning curve is steep and all of the principles of version control can be a bit confusing sometimes. This is why we ask students to pull from our class master repository everyday, create github repositories for your homework and to commit hourly during project time.
 
 Don't get frustrated by all of the new commands because we will have plenty of time to practice them during this course.
 
