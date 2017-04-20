@@ -413,9 +413,6 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      
-    </td>
-    <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/ruby/inheritance-in-ruby.md">Inheritance in Ruby</a>
     </td>
     <td>
@@ -429,6 +426,12 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-views-and-controllers.md">Rails Views + Controllers</a>
       <!-- Resource -->
       <!-- <a href="https://github.com/ATL-WDI-Curriculum/rails-views-and-controller">Rails Views + Controllers</a> -->
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-asset-pipeline.md">Rails Asset Pipeline, Forms, Helpers</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_04/rails/rails-helpers.md">Helpers and Forms</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/rails-asset-pipeline">Rails Asset Pipeline, Forms, Helpers</a> -->
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/rails-helpers-updated">Helpers and Forms</a> -->
     </td>
   </tr>
   <tr>
