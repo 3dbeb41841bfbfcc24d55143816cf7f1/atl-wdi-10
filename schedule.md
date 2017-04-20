@@ -665,13 +665,16 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_03/coffee-shop">Morning Exercise</a>
-    </td>
-    <td>
-      Morning Exercise / Review
+      Review
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_03/coffee-shop">Morning Exercise</a> -->
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_03/fun-functions">Morning Exercise</a>
+      <!-- Morning Exercise / Review -->
+    </td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_03/psd-to-html">Morning Exercise</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_03/fun-functions">Morning Exercise</a> -->
     </td>
     <td>
       Week 7 Survey
@@ -824,8 +827,8 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a> -->
       Memorial Day
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a> -->
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
@@ -839,15 +842,15 @@
       <!-- Project Two Retrospective -->
     </td>
     <td>
-
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_03/coffee-shop">Morning Exercise</a>
       <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_03/web-components.md">Morning Exercise</a> -->
     </td>
   </tr>
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a> -->
       Memorial Day
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a> -->
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_02">Project Two</a>
