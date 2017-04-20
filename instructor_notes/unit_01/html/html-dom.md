@@ -35,21 +35,18 @@ The DOM (Document Object Model) is the browser's intrepretation of the HTML. You
 examples: 
 
 - skeleton => HTML, body => DOM
-- song chords, lyrics => HTML, recorded song => DOM
+- song chords/lyrics => HTML, recorded song => DOM
 - recipe ingredients => HTML, finished dish => DOM
 
 </details>
 
-
 **WE DO:** Goto [Kickass App](http://kickassapp.com/) and use it. What is happening?
 
+We are going to get into DOM manipulation later in the week, but to demonstrate the difference between an _HTML_ document and the _DOM_ that is created from the _HTML_ document, let's go to the [Jezebel](http://jezebel.com/) website and play around with some headlines.
 
-We're gonna get into DOM manipulation later in the week, but to demonstrate the difference between an _HTML_ document and the _DOM_ that is created from the _HTML_ document, let's go to the [Jezebel](http://jezebel.com/) web site and play around with some headlines.
+Using the Chrome DevTools Inspector (What's the shortcut?), and alter something on the page.
 
-Using the Chrome DevTools Inspector, alter something on the page.
-
-
-**YOU DO** Go to [Atlanta Craigslist](https://atlanta.craigslist.org/) and try running the following `javascript` DOM manipulation code in the JavaScript console:
+**YOU DO** Go to the [Atlanta Craigslist](https://atlanta.craigslist.org/) Site and try running the following `javascript` DOM manipulation code in the JavaScript console:
 
 ```javascript
 document.getElementById('logo').children[0].text = 'MarensList';
@@ -75,7 +72,8 @@ You are changing the DOM.  The developers at Craigslist will not be worried that
 
 ---
 
-## **YOU DO**
+## **YOU DO** (15 min)
+
 - 5 min - Read this article on the difference between HTML and the DOM from [CSS Tricks](https://css-tricks.com/dom/) 
 - 5 min - Pair and Share - discuss what you learned with your partner
 - 5 min - Ask each group for something they learned in the article
@@ -86,7 +84,7 @@ You are changing the DOM.  The developers at Craigslist will not be worried that
 
 ## Let's Differentiate between HTML and the DOM
 
-* **HTML**: the language we use to create an HTML Page/Document
+* **HTML**: the language that we use to create an HTML Page/Document
 * **DOM**: the Document Object Model, i.e. the in-memory representation of the HTML page, that is created every time the browser _renders_ the HTML document.
 
 **Note**: the _DOM_ can be _manipulated_ via _JavaScript_ code.  And we will discuss this in further detail next week.
@@ -94,6 +92,7 @@ You are changing the DOM.  The developers at Craigslist will not be worried that
 <br />
 
 ### What is HTML?
+
 **HTML** stands for "Hyper Text Markup Language". It is not a general purpose programming language like *JavaScript* or _Ruby_ but rather a **markup language**, i.e. a language for representing structured text.
 
 To create any website, you need HTML, CSS and JavaScript.  While CSS provides the style and color for a site, and JavaScript allows interaction with the end user, HTML creates the skeleton of a website. It is the *structured content*.
@@ -102,7 +101,7 @@ To create any website, you need HTML, CSS and JavaScript.  While CSS provides th
 
 The `<head>` section is for metadata, which gives the browser information about the site.  Inside of the head, we would add the title of our website- which is what you see in the browser tab, any link tags to css pages.     
 
-The `<body>` section is for the visible content on a web page.  As well as our JavaScript `<script>` tags.
+The `<body>` section is for the visible content on a web page.  As well as our JavaScript `<script>` tags. Where do they go?
 
 ```html
 <!doctype html>
@@ -112,6 +111,9 @@ The `<body>` section is for the visible content on a web page.  As well as our J
   </head>
   <body>
     <!-- document contents go here. -->
+
+    <!-- script tags go here, just above the closing body tag. -->
+    <script></script>
   </body>
 </html>
 ```
@@ -130,28 +132,32 @@ The `<body>` section is for the visible content on a web page.  As well as our J
 
 - In the console, type `document.` and check out the available methods.
 - In the console, type `document.title`.
+
 <details>
 <summary>What do you expect to see?</summary>
 The `document.title` is going to output the title of the website, or what you see in your browser tab.
 </details>
+
 - In the console, type `document.body.children[5]`.
+
 <details>
 <summary>What do you expect to see?</summary>
 This statement will highlight the main content div, and we can click through and highlight other content from there.
 </details>
 
 
-#### **WE DO**
+### **WE DO**
+
 - Go to Jezebel.
 - In the console, type `document.getElementsByClassName('headline')[0];`
-  - We will discuss this more later, but getElementsByClassName, returns an array/list of items with that class.  Arrays are zero-indexed, which means that they start with zero, so we need to add that number in square brackets to highligh the first title. 
+  - We will discuss this more later, but getElementsByClassName, returns an array/list of items with that class.  Arrays are zero-indexed, which means that they start with zero, so we need to add that number in square brackets to highlight the first title. 
   - This will highlight the first news title on the page.
 - Update that title to have the id="first-title"
-  - The funny thing is that Jezebel doesn't really use ids, so in order to access and Id, we need to take the initiative to add it ourselves.
+  <!-- - The funny thing is that Jezebel doesn't really use ids, so in order to access and Id, we need to take the initiative to add it ourselves. -->
 - In the console, type `document.getElementById('first-title');`
-  - This statement will also highlight the first news title on the page, but in a different way.
+  <!-- - This statement will also highlight the first news title on the page, but in a different way. -->
 
-- As with our earlier Jezebel example, you can change the HTML in the inspector but when you re-render the page, the changes are gone. Try `document.write('WDI Rocks!!!')`. (Traditionally, you only use document.write for testing purposes because you don't have any control over where it renders on the page, and it overwrites everything else).
+- As with our earlier Jezebel example, you can change the HTML in the inspector but when you re-render the page, the changes are gone, because we are only changing the DOM (What is the DOM?). Try `document.write('WDI Rocks!!!')`. (Traditionally, you only use document.write for testing purposes because you can't add any styles to it, and it overwrites everything else).
 
 <br />
 
@@ -160,6 +166,7 @@ This statement will highlight the main content div, and we can click through and
 - The **Window Object** represents the window that is open in the browser.
 - The location property is the URL of the page.
 - In the console, type `window.` and check out the available methods.
+
 <details>
 <summary>Do you recognize any of these methods?</summary>
 `alert()` will alert a message to the user.
@@ -168,7 +175,9 @@ This statement will highlight the main content div, and we can click through and
 `setInterval()` calls a function or expression at specified intervals (in milliseconds).
 `setTimeOut()` calls a function or expression after a certain amount of time (in milliseconds).
 </details>
+
 - In the console, type `window.location`.
+
 <details>
 <summary>What do you expect to see?</summary>
 `window.location.href` returns the href (URL) of the current page
@@ -177,7 +186,9 @@ This statement will highlight the main content div, and we can click through and
 `window.location.protocol` returns the web protocol used (http: or https:)
 `window.location.assign` loads a new document
 </details>
+
 - In the console, type `window.document.write('Hello')`.
+
 <details>
 <summary>Knowing what happened before, what do you expect this statement to do?</summary>
 It will write over everything that exists on the webpage with the string 'Hello'.  Notice that this is similar to `document.write`.  The only difference is that we added `window.` in front of that statement.  `Document`, returns the document object for the window.  Often, the `window.` is left off of window object methods.
@@ -214,28 +225,28 @@ Note that when placing a tag inside another tag, you should indent the new tag t
 #####QUESTION
 <details>
 <summary>Can anyone explain the HTML above?</summary>
-    The `href` attribute above makes the image of Sir Timothy John Berners-Lee "clickable" and redirects the user to the W3 website.
+  The `href` attribute above makes the image of Sir Timothy John Berners-Lee "clickable" and redirects the user to the W3 website.
 </details>
 
 <details>
 <summary>What is the importance of the 'alt' attribute?</summary>
-    The `alt` attribute tells screen readers about the image displayed.
+  The `alt` attribute tells screen readers about the image displayed.
 </details>
 
 <details>
 <summary>Who is Sir Timothy John Berners-Lee?</summary>
-Sir Timothy John Berners-Lee invented the World Wide Web in 1989.  He founded and Directs the World Wide Consortium (W3C) which oversees the continued development of the web. He also founded the World Wide Web Foundation whose mission is for the WWW to serve Humanity through improvement and availability, and he co-founded the Open Data Institute in London.
+  Sir Timothy John Berners-Lee invented the World Wide Web in 1989.  He founded and Directs the World Wide Consortium (W3C) which oversees the continued development of the web. He also founded the World Wide Web Foundation whose mission is for the WWW to serve Humanity through improvement and availability, and he co-founded the Open Data Institute in London.
 </details>
 
 <br />
 
 ![We Do](http://i.imgur.com/6Kce0ca.png)
 
-#####WE DO - (10m)
+### WE DO - (10m)
 
 As a quick review, I will give you some examples of broken HTML and you tell me what's wrong with them. 
 
-[HTML Fixit](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/html_fixit.md)
+[HTML Fixit](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/html/html-fixit.md)
 
 <hr>
 
@@ -243,7 +254,7 @@ As a quick review, I will give you some examples of broken HTML and you tell me 
 
 ![We Do](http://i.imgur.com/6Kce0ca.png)
 
-# WE DO - CODE ALONG -  90 min 
+# WE DO - CODE ALONG - 90 min 
 
 ## Common Tags
 
@@ -251,7 +262,7 @@ In general, we don't create our own tags.  Instead there are a set of pre-define
 
 ### Initializing a page
 
-Every site should start with:
+Every site should start with these 5 tags:
 
 ```html
 <!DOCTYPE html>
@@ -263,17 +274,13 @@ Every site should start with:
 </html>
 ```
 
-1. The DOCTYPE tag is special and doesn't get closed.  It also is the only tag that can have non-alpha-numeric (letters/numbers) values in it.
-1. html: shows where the html begins
-1. head: contains content specifically for the browser, not the user, to see (e.g.- meta tags, google analytics scripts). 
-
+1. The DOCTYPE tag is special and doesn't get a closing tag.  It also is the only tag that can have non-alpha-numeric (letters/numbers) values in it.
+2. html: shows where the html begins
+3. head: contains content specifically for the browser, not the user, to see (e.g.- meta tags, google analytics scripts). 
   - The `head` section is important for search engines, as it helps provide additional information about the website. Anything within the opening and closing `<head>` tags will **NOT** be displayed on the page.
-
   - The `<head>` tags are placed right after the opening `<html>` tag, and before the opening `<body>` tag.
-
-1. body: contains all the content that the user will see when viewing the html in a web browser like Chrome, Firefox, etc.
-
-1. title: This is what shows up in your browser tab.
+4. body: contains all the content that the user will see when viewing the html in a web browser like Chrome, Firefox, etc.
+5. title: This is what shows up in your browser tab.
 
 ** These are the 4 pairs of tags: html, head, title and body that are mandatory for every web page.
 
@@ -283,10 +290,11 @@ Every site should start with:
 
 | Element        | Description                                               |
 |:-------------- |:--------------------------------------------------------- |
-| `<link>`       | used to load a CSS file - it is self closing. |
+| `<link>`       | used to load a CSS file - it is a self closing tag. |
 | `<script>`     | used to load a JavaScript file or for embedding JavaScript code. |
 
 **Although any script tags should really be at the bottom of your html page**
+
 <details>
 <summary>Does anyone know why?</summary>
 If your `<script>` tags are placed in the `<head>` of your document, your html will wait to render until the javaScript has been loaded.  Therefore, it is best to place it at just before your closing body tag.
@@ -297,14 +305,14 @@ If your `<script>` tags are placed in the `<head>` of your document, your html w
 **YOU DO**
 
 1. Create the initial structure of the page
-    - `cd ~/dev`
+    - `cd ~/Desktop/ga`
     - `mkdir html_css_intro`
-    - `cd` into the folder
+    - `cd` into the folder - `cd html_css_intro`
     - `touch index.html`
     - `subl .`
     - Create the basic html structure
 2. Add the meta tags for external `css` and `javascript` files.
-    - `<link rel="stylehseet" type="text/css" href="main.css" />`
+    - `<link rel="stylehseet" type="text/css" href="style.css" />`
     - `<script src="main.js"></script>`
 
 ---
@@ -322,7 +330,7 @@ For example: `<p></p>` - paragraph tag, block element, used for basic text on a 
 ### Basic Tags
 
 1. h1, h2, h3, h4, h5, h6
-  - These are headers.  Imagine you are giving a lecture and you would like to create an outline.  Headers will help a computer/programmer figure out what are the title, sub sections, sub-sub sections, etc. of your outline.  The allude to importance on an html page.
+  - These are headers.  Imagine you are giving a lecture and you would like to create an outline.  Headers will help a computer/programmer figure out what are the title, sub sections, sub-sub sections, etc. of your outline.  They allude to importance on an html page.
   - The lower the number, the more important the header is.  h1 tags are generally the title of the page.  h2 denote a section, and so on.
 1. p
   - These are paragraphs
@@ -333,19 +341,20 @@ Of course a website is more than just headers and paragraphs.  It has many secti
 
 See also [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.asp)
 
+##### All HTML5 Elements
 1. header
   - could contain elements like a logo and a nav bar.  Perhaps the title of the page too?
-1. footer
+2. footer
   - could contain disclaimers, copyrights, and less important links (privacy, terms and conditions, legal, etc).
-1. main
+3. main
   - the bulk of your site goes in here
-1. section
+4. section
   - within some of the tags listed above, there can be different sections.  Use this tag to block off those sections.
-1. nav
+5. nav
   - this will hold navigation links
-1. article
+6. article
   - if you're writing a blog, or have a page with many self contained sections, you might think about using the article tag
-1. aside
+7. aside
   - this is for tangential material.  Sidebars, inserts, etc.
 
 <br />
@@ -365,7 +374,7 @@ In the `index.html` file you created earlier...
 
 ### Generic Structure
 
-Sometimes we need a tag that doesn't quite fit into any of the previously defined categories.  If this is the case, we can use one of two generic tags
+Sometimes we need a tag that doesn't quite fit into any of the previously defined categories.  If this is the case, we can use one of two generic tags.
 
 1. div
   - used to block out chunks of content
@@ -374,13 +383,14 @@ Sometimes we need a tag that doesn't quite fit into any of the previously define
 
 ### Elements
 
-Some elements are not structural, but will make the content display differently
+Some elements are not structural, but will make the content display differently.
 
 1. ul/ol/li
   - creates a list, either unordered (ul) or ordered (ol)
   - inside each `ul` or `ol` is a set of `li` list item elements.
 
-### Styled Text 
+### Styled Text
+
 1. em
   - this will emphasize a chunk of text, usually making it italicized
   - best practice- use **em** instead of **i**
@@ -408,7 +418,7 @@ In the `index.html` file you created earlier...
 
 ### Decorative Elements
 
-Some elements do not contain content and instead are purely for decoration.  Elements that do not contain content are written like so `<no-content-tag/>`.  Note there is no closing tag and the slash comes before the final `>`
+Some elements do not contain content and instead are purely for decoration.  Elements that do not contain content are written like so- `<no-content-tag/>`.  Note it is a self-closing tag/there is no closing tag and the slash comes before the final `>`
 
 1. hr
   - horizontal rule, `<hr>` creates a divider
@@ -429,24 +439,25 @@ We can add more meaning to a tag by adding "attributes" to it.  It looks like `<
 
 <br />
 
-**QUESTION:** What are some attributes that we add to HTML tags?
+**QUESTION:** What are some attributes that you know of?
 
 <br />
 
 ## Common tags with attributes
 
 1. a
-  - Anchor tag.  Creates a clickable link to another page.  Uses the `href` attribute to do so
+  - Anchor tag.  Creates a clickable link to another page.  It uses the `href` attribute to do so.
   - example: `<a href="http://www.google.com">This link will go to Google</a>`
   - note that the actual URL (location) of the page is hidden, and that only the content is shown.
-1. img
-  - self closing, but contains a `src` attribute with is the URL for the image
+2. img
+  - self-closing tag, but contains a `src` attribute with the URL for the image
+  - make sure to add an `alt` attribute, as you need this for accessibility purposes or if your image doesn't show up.
   - example: `<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google logo"/>`
-1. video
+3. video
   - like `img` but links to a video
   - example: `<video src="http://www.w3schools.com/html/mov_bbb.mp4"/>`
   - also has attributes like `autoplay`, `controls`, `loop`
-1. audio
+4. audio
   - like `img` and `video`
   - example: `<audio controls="true" src="http://www.w3schools.com/tags/horse.mp3" />`
 
@@ -465,7 +476,7 @@ In the `index.html` file you created earlier...
 
 ## Describe what Semantic HTML means
 
-The most important thing to remember is that these tags and attributes are supposed to give structure and meaning your content, not appearance.  Sometimes you might want the title of the page to be smaller than the titles of the sub sections.  You should still use the tag that conveys the proper meaning, even if it doesn't look right.  You mainly need to focus on this because of screen readers, so that they can understand the importance of the tags/flow of your page.
+The most important thing to remember is that these tags and attributes are supposed to give structure and meaning your content, not appearance.  Sometimes you might want the title of the page to be smaller than the titles of the sub sections.  You should still use the tag that conveys the proper meaning, even if it doesn't look right.  You need to order your content this way because of screen readers, so that they can understand the importance of the tags/flow of your page.
 
 <br />
 
@@ -490,7 +501,7 @@ Go to this [HTML Practice Exercise](https://github.com/ATL-WDI-Exercises/html-do
 
 ## Exercise #1
 
-Using HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website:
+Fork this [HTML/DOM](https://github.com/ATL-WDI-Exercises/html-dom) repo.  Using HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website:
 
 [How We Use Energy](http://needtoknow.nas.edu/energy/energy-use/)
 
@@ -499,13 +510,13 @@ Using HTML tags only (don't worry about CSS), use the starter code below to recr
 
 ## Exercise #2
 
-Clone your HTML/DOM repo and work on the [Busy Hands](https://github.com/ATL-WDI-Exercises/busy-hands) exercise.
+Work on the [Busy Hands](https://github.com/ATL-WDI-Exercises/busy-hands) exercise.
 
 ---
 
 ## HTML Cheatsheet
 
-![Anatomy of an HTML Document](images/html-cheat-sheet-v1.png)
+![Anatomy of an HTML Document](https://i.imgur.com/L9bBuUw.png)
 
 ---
 
@@ -518,7 +529,7 @@ In Chrome, you can access it with:
   - `Ctrl + Shift + C` or `F12` on Windows or Linux
   - or right-click on the browser and click on the "Inspect element" option
 
-As of now, let's mainly look at the "Elements" tab -> This tab is a very powerful way to look at the page structure, and locate specific elements within the page as well as view their styles.
+For now, let's mainly look at the "Elements" tab -> This tab is a very powerful way to look at the page structure, and locate specific elements within the page as well as view their styles.
 
 You can gain some useful information on all of the elements by looking at the data on the right column of the console, most notably the CSS properties that are currently applied to the elements. You can change them/"live" update them to play around with different styles. These changes, however, only apply to the page that is displayed, you are only updating the DOM - they will not save to your CSS file unless you manually add them, and they will disappear on the next page reload.
 
@@ -534,14 +545,15 @@ See [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.asp)
 
 ## Other Topics
 
-For information on accessibility and search engine optimization, see [Accessibility and SEO](accessibility-and-seo.md).
+For information on accessibility and search engine optimization, see [Accessibility and SEO](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/html/accessibility-and-seo.md).
 
-For information on HTML5 Boilerplate, see [HTML5 Boilerplate](html5-boilerplate.md).
+For information on HTML5 Boilerplate, see [HTML5 Boilerplate](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/html/html5-boilerplate.md).
 
 ---
 
 ## Additional Resources
 
+* [HTML and CSS review](https://github.com/ATL-WDI-Curriculum/html-dom/blob/master/html_css_review.pdf)
 * [Online HTML live editor](https://thimble.webmaker.org/en-US/projects/wrangler/)
 * [HTML element reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 * [HTML Elements by Category](http://www.w3schools.com/tags/ref_byfunc.asp)

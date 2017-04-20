@@ -3,10 +3,7 @@
 ## Create This Mockup
 See if you can create the HTML for this mockup by following the steps below. Don't worry about the CSS. We'll add that tomorrow!
 
-![Mockup](mockup.png)
-
-
-
+![Mockup](https://i.imgur.com/VWjFZnC.png)
 
 ## Initializing a page
 1. In your `dev` folder:
@@ -42,6 +39,6 @@ See if you can create the HTML for this mockup by following the steps below. Don
 
 ## Other Topics
 
-For information on accessibility and search engine optimization, see [Accessibility and SEO](accessibility-and-seo.md).
+For information on accessibility and search engine optimization, see [Accessibility and SEO](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/html/accessibility-and-seo.md).
 
-For information on HTML5 Boilerplate, see [HTML5 Boilerplate](html5-boilerplate.md).
+For information on HTML5 Boilerplate, see [HTML5 Boilerplate](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/html/html5-boilerplate.md).
