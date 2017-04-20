@@ -1,0 +1,13 @@
+<h1>Todos#index</h1>
+
+<!-- <h2><%# @category.name %></h2> -->
+<h2><%= @category.name %></h2>
+
+<!-- i for index, e for JS events, f for Rails forms, t for table in our Schema, sometimes n for current num -->
+<ul>
+	<% @todos.each do |todo| %>
+		<li>
+				Content: <%= todo.content %>, Priority: <%= todo.priority %>
+		</li>
+	<% end %>
+</ul>
