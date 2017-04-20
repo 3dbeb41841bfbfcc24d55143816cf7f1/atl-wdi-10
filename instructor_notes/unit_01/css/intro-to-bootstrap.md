@@ -156,7 +156,7 @@ The bulk of Bootstrap's customizing power lies in its dozens of components, whic
 
 ---
 
-### YOU DO: Bootstravenger Hunt (20m)
+<!-- ### YOU DO: Bootstravenger Hunt (20m)
 
 As a class, we're going to compile an appendix to the Bootstrap documentation, providing tips and tricks on the implementation of some of Bootstrap's Greatest Hits.
 
@@ -199,7 +199,7 @@ Each group should create Codepen demo of their three components and write up the
 
 Be prepared to share! It may be helpful to split into subgroups so you can divide and conquer...
 
----
+--- -->
 
 ## Making it Your Own (15m)
 
