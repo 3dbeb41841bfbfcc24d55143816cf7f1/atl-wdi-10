@@ -188,7 +188,7 @@ Today, we will learn a bit about how Git works, enough to learn how to use it fo
 Even though you don't need to know how they work, it is useful to know that your local repository consists of three "trees" that are maintained by Git.
 
 - **Working Directory**: the directory and subdirectories containing the files we are currently working on and which holds the actual files.
-- **Staging**: a staging area where we list the changes we want to commit
+- **Index/Staging**: a staging area where we list the changes we want to commit
 - **HEAD**: which points to the last commit you have made 
 
 ### More terminology
@@ -238,7 +238,7 @@ $ cd planets
 $ git init
 ```
 
-- What does git init do?
+- What does `git init` do?
 
 3. Git will reply:
 
@@ -264,6 +264,9 @@ If we look at the contents of this empty folder using:
 $ ls -A
 ```
 
+- What does `la` mean?
+- What does `-A` mean?
+
 We should see that there is now a hidden folder called `.git`. This is where all of the information about your project is stored. This folder allows us to control our git flow using `git` commands.  **If you delete this folder, you will lose your project's history.** So, just don't do it.
 
 ### Add a file
@@ -274,11 +277,14 @@ We should see that there is now a hidden folder called `.git`. This is where all
 $ touch mars.txt
 ```
 
-2. A small `%` should show next to your prompt! (_I have a `?` because I set mine up differently, do not panic_) 
+- What does `touch` mean?
 
-    ```bash
+2. A small `%` should show next to your prompt!
+
+```bash
 <your name>:<current directory> (master #%)
 ```
+
 That % sign indicates that we have an untracked file that Git doesn't know about
 
 3. Run 
@@ -286,11 +292,12 @@ That % sign indicates that we have an untracked file that Git doesn't know about
 ```bash
 $ ls
 ````
- and you will see `mars.text` 
+ 
+and you will see `mars.text` 
 
 3. If we run `git diff` we should see the uncommitted changes that we have made/the staged files.
 
-4. If we run `git status` we should get:
+4. If we run `git status` we should get the current status of our files:
 
 ```bash
 On branch master
@@ -305,117 +312,123 @@ mars.txt
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-5. This means that there is a new **untracked** file. Next, tell Git to take a snapshot of the contents of all files under the current directory (note the -A)
+This message also tells you exactly what needs to happen next.
+
+5. This means that there is a new **untracked** file. Next, tell Git to take a snapshot of all of files in the current directory (note the -A).
 
 ```bash
 $ git add -A
 ```
 
-    - `git add -A` will add every file that has been changed.
-    - You can specify a single file by typing `git add mars.txt`, instead of using `-A`.
+- `git add -A` will add every file that has been changed.
+- You can specify a single file by typing `git add mars.txt`, instead of using `-A`.
 
-    - A small cross should show next to your prompt!
-    - This snapshot is now stored in a temporary staging area which Git calls the "index".
+- A small cross should show next to your prompt!
+- This snapshot is now stored in a temporary staging area which Git calls the "index".
 
 
-#### Commit
+### Commit
 
-1. To permanently store the contents of the index in the repository, (commit these changes to the HEAD), you need to run:
+1. To permanently store the contents of the index into the repository, (commit these changes to the HEAD), you need to run:
 
-    ```bash
+```bash
 $ git commit -m "Initial commit"
 ```
+
 - You are telling git to remember this file/these changes.
 
 2. You should now get:
 
-    ```bash
+```bash
 [master (root commit) b4faebd] Initial commit
  1 file changed, 0 insertions(+), 0 deletions(-)
   create mode 100644 mars.txt
 ```
 
-- When we run `git commit`, Git takes everything we have told it to save by using git add and stores a copy permanently inside the special .git directory. This permanent copy is called a commit (or revision) and its short identifier is b4faebd (Your commit may have another identifier.)
+- When we run `git commit`, Git takes everything we have told it to save when we ran `git add`, and stores a permanently copy inside of the special `.git` directory. This permanent copy is called a `commit` (or revision) and its short identifier is b4faebd (Your commit may have another identifier.)
 
-- We use the `-m` flag (for “message”) to record a short, descriptive, and specific comment that will help us remember later on what we did and why. If we just run git commit without the -m option, Git will launch nano (or whatever other editor we configured as core.editor) so that we can write a longer message.
+- We use the `-m` flag (for “message”) to record a short, descriptive, and specific comment that will help us remember what we did and why. If we just run git commit without the -m option, Git will launch nano (or whatever other editor we configured as core.editor) so that we can write a longer message.
 
-- **Good commit messages** start with a brief (<50 characters) summary explaining the changes made in the commit.
+**Good commit messages** start with a brief (<50 characters) summary explaining the changes made in the commit.
 
-**REMEMBER:** it is always easier to rollback to a previous commit if it is an incremental change.  Therefore, don't write your whole project and commit at the end.  You should have tiny changes committed as you work through the project.
+**REMEMBER:** it is always easier to rollback to a previous commit if it is an incremental change.  Do not complete your whole project and only commit at the end.  You should make tiny changes, and commit as you work through the project.
 
+### Make changes to the file
 
-#### Make changes to the file
-
-Now let's open mars.txt in Sublime or Atom:
-
+Now let's open mars.txt in Sublime:
 
 ```bash
 $ subl mars.txt
 ```
 
 Inside the file, write:
+
 ```bash
-Discovered by Galileo Galilei in 1610, Mars is a cold and dry planet, but the surface is a rich red 
-that looks like a beautiful sunset. 
+Discovered by Galileo Galilei in 1610, Mars is a cold and dry planet, but the surface is a rich red that looks like a beautiful sunset. 
 ```
+
 Save the file.
+What is the shortcut command to save a file?
 
-If you press `return` in the terminal, you will now see that you have untracked changes marked by a red `*`. **(Mine may look different, do not panic)** 
+If you press `return` in the terminal, you will now see that you have untracked changes marked by a red `*`.
 
-Running
- ```bash
+Running `cat` followed by the file name and extension,
+
+```bash
  $ cat mars.text
 ```
+
 will show you the contents of the document- `Discovered by Galileo Galilei in 1610, Mars is a cold and dry planet, but the surface is a rich red 
 that looks like a beautiful sunset. `
 
-Running `git status` again will show you that mars.txt has been **modified**.
+Run `git status` again, and you will see that mars.txt has been **modified**.
 
-#### Make a second commit and check the log
+### Make a second commit and check the log
 
 1. Let's now make a second commit.
 
-    ```bash
+```bash
 $ git add -A
 $ git commit -m "Start notes on mars as a base"
 ```
 
-2. Checking `git log` will show you 2 commits with different ids:
+2. Running `git log` will show you your 2 commits with their different IDs:
 
-    ```bash
+```bash
 * 6e78569 (HEAD, master) Start notes on mars as a base
 * b4faebd Please remember this file at this time
 ```
-    - press `q` to quit out of the log file
-    - press the spacebar to **page** up and down
-    - `git log` will show you the commits that you have made so far, in reverse chronological order.
 
-> NOTE: if you get the message `git config --global --edit`, open it in Atom with `atom git config --global --edit`
+- press `q` to quit out of the log file
+- press the spacebar to **page** up and down
+- `git log` will show you the commits that you have made so far, in reverse chronological order.
 
-#### Git File Lifecycle
+> NOTE: if you get the message `git config --global --edit`, open it in Sublime with `sublime git config --global --edit`
 
-To understand how Git works, we need to talk about the lifecycle of a Git-tracked file.  You can think of git as taking snapshots over the life of the project.  `git add .` specifies what goes in the snapshot, and `git commit` actually takes the snapshot.
+### Git Lifecycle
+
+To understand how Git works, we need to talk about the lifecycle of a Git-tracked file.  As I stated before, you can think of git as the process of taking snapshots over the lifetime of the project.  `git add .` specifies what goes into the snapshot, and `git commit` actually takes the snapshot.
 
 ![lifecycle](https://cloud.githubusercontent.com/assets/40461/8226866/62730b4c-159a-11e5-89cd-20b72ed1de45.png)
 
 Schema From [git-scm.com](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
 
-There are 4 main stages of Git version controlled file:
+There are 4 main stages of a Git file:
 
-1. **Untracked**: The file will not be added in the next commit (pre git add)
-2. **Staged**: Staged files have not yet been committed to memory but they are "on deck" so to speak for your next commit (after git add)
-3. **Unmodified**: The file has already been committed and has not changed since the last commit (git status)
-4. **Modified**: You have changes in the file since it was last committed, you will need to stage them again for the changes to be added in the next commit (git status)
+1. **Untracked**: The file will not be added in the next commit (this is pre `git add`)
+2. **Staged**: Staged files have not yet been committed to memory but they are "on deck" so to speak for your next commit (after `git add`)
+3. **Unmodified**: The file has already been committed and has not changed since the last commit (You can see this by running `git status`)
+4. **Modified**: You have changes in the file since it was last committed, you will need to stage them again for the changes to be added in the next commit (You can see this by running `git status`)
 
 Once you have committed a file and it becomes "unmodified" then it's contents are saved in Git's memory.
 
-- **Not saved in git memory**: Your file is not saved until you commit the file to Git's memory
-- **Saved in git memory**: Only once you have committed a file, it becomes saved in Git's memory
+**Not saved in git memory**: Your file is **NOT saved** until you commit the file to Git's memory
+
+**Saved in git memory**: Only once you have committed a file, does it become saved in Git's memory
 
 <br />
 
-
-#### Creating repositories - Codealong (10m)
+### Creating repositories - Codealong (10m)
 
 Let's do this together:
 
@@ -424,7 +437,7 @@ Let's do this together:
 ![](https://help.github.com/assets/images/help/repository/repo-create.png)
 3. Name your repository `planets`
 ![](https://help.github.com/assets/images/help/repository/repo-create-name.png)
-4. **Initialize this repository with a README** (So that we can `git pull`)
+4. **Initialize this repository with a README** (Only so that we can practice `git pull`.  You wouldn't normally do this.)
 4. Click the big green Create Repository button
 5. We now need to connect our local Git repo with our remote repository on GitHub. We have to add a "remote" repository, an address where we can send our local files to be stored.
 
@@ -432,18 +445,17 @@ Let's do this together:
 
     ![](https://i.imgur.com/FjdRT66.png)
 
-6. Click on the clipboard to copy the URL and run this command in your Terminal. Make sure that you `cd` into the directory where you want to place this clone.
+6. Click on the **clipboard** to copy the URL and run this command in your Terminal. Make sure that you `cd` into the directory where you want to place this clone. Run `git remote add origin` + your github name.
 
-
-    ```bash
-git remote add origin <git@github.com:github-name/planets.git>
+```bash
+git remote add origin + <git@github.com:your-github-name/planets.git>
 ```
 
-#### Pushing to a Remote Repository - Codealong (10m)
+## Pushing to a Remote Repository - Codealong (10m)
 
-#### What are Remotes? 
+### What are Remotes? 
 
-Remotes are pointers or aliases we set up to tell git where to go on github.
+Remotes are pointers or aliases that we set up to tell git where to go on github.
 
 Try running the following:
 
@@ -452,9 +464,10 @@ $ git remote
 
 $ git remote -v
 ```
+
 -- The name `origin` is a local nickname for your remote repository. 
 
-#### Pushing to GitHub 
+### Pushing to GitHub 
 
 In order to send files from our local machine to our remote repository on GitHub, we need to use the command `git push`. However, you also need to add the name of the remote, in this case we called it `origin` and the name of the branch, in this case `master`.
 
@@ -464,24 +477,25 @@ git push origin master
 
 This should fail due to new files on the remote repo.
 
-#### Pulling from GitHub
+### Pulling from GitHub
 
 1. As we added the README.md in our repo, we need to first `pull` that file to our local repository to check that we haven't got a 'conflict'.
 
-    ```bash
+```bash
 git pull origin master
 ```
-    - `git pull` will check for changes and pull those changes to our remote repository
 
-2. Once we have done this, you should see the README file on your computer. Now you can push your changes:
+- `git pull` will check for changes (aka add in the README that we created), and pull those changes to our remote repository.
 
-    ```bash
+2. Once we have done this, you should see the README file on your computer. Now you can push all of your changes:
+
+```bash
 git push -u origin master
 ```
 
-    - The name of our remote is origin. The default local branch name is master. The -u stands for upstream, and tells Git to remember these parameters/set the upstream to this repo, so that when we type `git push` and Git will know what to do
+- The name of our remote is `origin`. The default local branch name is `master`. The `-u` stands for upstream, and tells Git to remember these parameters/set the upstream to this repo, so that when we run `git push`, Git will know what to do.
 
-Refresh your GitHub webpage, and the files should be there.
+Refresh your GitHub repo webpage, and the files should be there.
 
 <br />
 
@@ -491,9 +505,9 @@ Refresh your GitHub webpage, and the files should be there.
 
 ## What is forking? Intro
 
-The `fork` & `pull` model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository.
+The `fork` & `pull` model lets anyone fork an existing repository and push changes to their personal fork without requiring access to be granted to the source repository.
 
-Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea. This is how most open source projects operate.
+Most commonly, forks are used to either propose changes to someone else's project (like an open source project) or to use someone else's project as a starting point for your own idea. This is how most open source projects operate.
 
 ## Now that everyone has their first repository on GitHub, let's fork and clone our first repository! 
 
