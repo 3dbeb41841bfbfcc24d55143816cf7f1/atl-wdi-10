@@ -164,6 +164,8 @@ OK, so we've done our `rails new` command.  Let's start our server.
 $ rails s
 ```
 
+Now navigate over to `localhost:3000` to see if it's running.
+
 Oh no! We got an error :(
 
 `FATAL: database "todos_development" does not exist`
@@ -176,16 +178,20 @@ Let's go ahead and setup our database.
 
 `$ rails db:migrate`
 
+Now refresh `localhost:3000` -- you should see "Yay! You're on Rails!"
 
-* Create the route in our routes.rb
+Next we need to create a basic route.
+
+* Create the route in `config/routes.rb`
 
 ``` ruby
+# Take in GET requests to /todos and send them to the Todos controller, Index action
 get 'todos' => 'todos#index'
 ```
 
 * Create the `todos_controller.rb` controller
 
-``` ruby
+```bash
 rails generate controller Todos index
 ```
 
@@ -203,6 +209,8 @@ Here's an example:
 ```
 
 * Add a message instance variable to our `todos_controller.rb`
+
+The way we take messages and/or data from our controller into our view is via instance variables.
 
 ```ruby
 class TodosController < ApplicationController
@@ -225,13 +233,15 @@ end
 
 And there it is! Our first "Hello World" in Rails.  Next we have to create a Model for our todos.
 
+If this doesn't work, restart the server.
+
 * Create the `todo.rb` model
 
 ```ruby
 rails generate model Todo
 ```
 
-We should see this in our terminal.
+We should see this in our Terminal.
 
 ```bash
 $ rails generate model Todo
@@ -284,11 +294,17 @@ $ rails db:migrate
 
 **Always restart your server after a migration!**
 
-If you want to create a model with specific fields, then you would use a command similar to this.
+In the future, when we generate a model, we'll give it the fields that we know we want. This is better than first creating an empty table then adding in the fields. The syntax for this is:
 
 ```bash
-$ rails generate model Todos content:text priority: number
+$ rails generate model Todos content:text priority:number
 ```
+
+* View `db/schema.rb`
+
+The Schema is a snapshot of what your database looks like. _Editing this file will do nothing._ In fact, in large projects, editing this file can be dangerous.
+
+Viewing this file is good and will give you an understanding of how things are connected and what data is important!
 
 * Access Rails console and create a new Todo
 
@@ -323,6 +339,8 @@ end
 <% end %>
 ```
 
+Let's troubleshoot a common error -- putting a `<%=` when you should have `<%` or vice-versa!
+
 
 ## ActiveRecord Associations and Validations
 
@@ -340,7 +358,7 @@ $ rails generate model Category name:string
 $ rails db:migrate
 ```
 
-In this case, we want to store todos in specific categories.  So, **Category has many Todo, and Todo belongs to Category**.
+In this case, we want to store todos in specific categories.  So, **Category has many Todos, and Todo belongs to Category**.
 
 CFU: What field do we need to add to Todo?
 
@@ -350,7 +368,7 @@ CFU: What field do we need to add to Todo?
 * Add a `category_id` to the todos table
 
 ```bash
-$ rails generate migration AddCategoryIdToTodos category_id: string
+$ rails generate migration AddCategoryIdToTodos category_id:integer
 $ rails db:migrate
 ```
 
@@ -360,7 +378,7 @@ $ rails db:migrate
 $ rails s
 ```
 
-* Create a seed file in `seeds.rb`
+* To test out Associations, let's populate `db/seeds.rb`
 
 ```ruby
 Todo.delete_all
@@ -384,9 +402,25 @@ $ rails db:seed
 
 ### Associations
 
+Associations in Rails give us the ability to write really clean code.
+
+Here are a few random examples to show how simple the Rails code is. We'll test out what it looks like SQL soon, but for now let's see the big picture.
+
+```ruby
+# Get all the todos of a specific category
+this_category = Category.find(params[:id])
+@todos = this_category.todos
+```
+
+```html
+<!-- Get the current todo's category -->
+<%= @todo.category %>
+```
+
 * Add ActiveRecord Associations to our models
 
 ```ruby
+# app/models/category.rb
 class Category < ApplicationRecord
   has_many :todos
 end
@@ -398,13 +432,16 @@ class Todo < ApplicationRecord
 end
 ```
 
-Let's go through some cool examples with associations
+Let's go through some cool examples with associations. First, open up `rails console`.
 
 ```ruby
+# Create a todo inside of a category
 category = Category.first
 category.todos
 category.todos.create(content: "wow a new todo!")
 ```
+
+Notice how we didn't have to set the `category_id` field above! Magic!
 
 ```ruby
 todo = Todo.first
@@ -424,7 +461,24 @@ class Todo < ApplicationRecord
 
   validates :content, presence: true, length: { minimum: 5 }
 end
+```
 
+Now let's try to create a new Todo in `rails c`
+
+```ruby
+Todo.create(content: '')
+   (0.2ms)  BEGIN
+   (0.2ms)  ROLLBACK
+```
+
+It doesn't save it!
+
+Even better, Rails will generate error messages for us to show the user. Don't worry, these are customizable, but Rails does a good job.
+
+```ruby
+blank_todo = Todo.create(content: '')
+blank_todo.errors
+blank_todo.errors.messages
 ```
 
 
@@ -457,6 +511,14 @@ end
 
 * Iterate through the categories in the view, use `link_to` instead of `<a></a>` tags.  Pass the category id to `todos#index`
 
+Rails provides some helper methods (aka view-specific methods) to assist us in writing more flexible HTML.
+
+For example, `link_to` is more flexible than `<a></a>`. The only thing we need to know is which path to provide.
+
+To see a list of which paths are available, run `rails routes`.
+
+In our case, the first result shows `todos` under `Prefix`. This means we can refer to it using `todos_path`
+
 ```ruby
 <h1>Categories</h1>
 
@@ -486,8 +548,14 @@ end
 <% end %>
 ```
 
+## Lab Time
 
-
+* Create a Rails app from scratch using Postgres as the database
+* Create an Article model
+* Create a Comment model
+* Set up the associations (hint: you'll need to add `article_id:integer` field to the `comments` table)
+* Create an articles#index controller action and view
+* When you click on an article in articles#index, you are taken to another page where you see just that article and its comments
 
 
 
