@@ -1197,7 +1197,7 @@
   <tr>
     <td><strong>WarmUp</strong></td>
     <td>
-      Morning Exercise
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/agile/sdlc-agile-xp.md">SDLC / Agile</a>
     </td>
     <td>
       WDI9 Outcomes: Elevator Pitch + Networking in ATL
@@ -1269,7 +1269,7 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-        Wireframes
+      Wireframes
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_01">Project One</a>
