@@ -1559,7 +1559,8 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/typing/homework-review-and-typing-exercise.md">Morning Exercise</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/typing/typing-exercise.md">Morning Exercise</a>
+      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/morning_exercises/unit_01/typing/typing-exercise.md">Morning Exercise</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/css/intro-to-bootstrap.md">Intro to Bootstrap</a>
     </td>
   </tr>
   <tr>
@@ -1577,7 +1578,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/css/css-selectors.md">CSS Specificity & Selectors</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/css/intro-to-bootstrap.md">Intro to Bootstrap</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_01/javaScript/intro-to-javaScript.md">Intro to JS</a>
     </td>
   </tr>
   <tr>
