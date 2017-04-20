@@ -627,7 +627,7 @@ misunderstand you.
 */
 
 1.toString();
-=> Syntax/Float Error
+=> SyntaxError
 
 // but the following works
 1..toString();
