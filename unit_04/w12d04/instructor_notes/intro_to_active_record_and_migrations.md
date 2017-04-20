@@ -334,3 +334,64 @@ Author.joins("JOIN books ON books.author_id = author.id")
 [Basic Queries](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d04/student_labs/library_sql/basic_queries.sql)
 
 [Advanced Queries](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_04/w11d05/instructor_notes/sql_advanced_sol.sql)
+
+
+
+## Step by step
+If starting a Rails app from scratch, you can create a boilerplate Rails app with:
+```
+$ rails new project_folder_name
+```
+
+You can use a Rails generator to create your model and migration files with one command.
+```
+$ rails g model Animal name:string age:integer is_alive:boolean
+```
+
+You should see it output something like this:
+```
+  invoke  active_record
+  create    db/migrate/20170419171600_create_animals.rb
+  create    app/models/animal.rb
+```
+
+The file `db/migrate/20170419171600_create_animals.rb` is your migration file, it should look something like this:
+```ruby
+class CreateAnimals < ActiveRecord::Migration[5.0]
+  def change
+    create_table :animals do |t|
+      t.string :name
+      t.integer :age
+      t.boolean :is_alive
+
+      t.timestamps
+    end
+  end
+end
+```
+[Read more about migrations here](http://guides.rubyonrails.org/active_record_migrations.html)
+
+The file `app/models/animal.rb` is your model file. It should look like this:
+```ruby
+class Animal < ApplicationRecord
+end
+```
+
+You can run your new migration with:
+```
+$ rails db:migrate
+```
+
+If it runs successfully, you should see this output:
+```
+== 20170420132333 CreateAnimals: migrating ====================================
+-- create_table(:animals)
+   -> 0.0047s
+== 20170420132333 CreateAnimals: migrated (0.0048s) ===========================
+```
+
+Now you should be able to open up a rails console with `rails c` in your command line.
+Try creating a new Animal like so:
+```ruby
+2.2.2 :001 > Animal.create(name: 'Rex', age: 4, is_alive: true)
+```
