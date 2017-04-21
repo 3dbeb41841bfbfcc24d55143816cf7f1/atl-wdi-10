@@ -3,7 +3,7 @@
 <ul>
 	<% @categories.each do |category| %>
 		<li>
-			<%= link_to category.name, todos_path(category_id: category.id) %>
+			<%= link_to category.name, todos_index_path(category) %>
 			<%# syntax for link_to: %>
 			<%# link_to text_to_show_up, path_to_go_to %>
 		</li>
