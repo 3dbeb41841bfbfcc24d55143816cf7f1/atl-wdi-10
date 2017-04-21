@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FinishedDeviseCancan</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+		<ul>
+      <li><%= link_to "Home", home_path %></li>
+      <li><%= link_to "About", about_path %></li>
+      <%# if user_signed_in? && current_user.is_admin? %>
+        <li><%= link_to "Super Secret", super_secret_path %></li>
+      <%# end %>
+      <% if user_signed_in? %>
+        <li><%= link_to "FAQs", faqs_path %></li>
+        <li><%= link_to "Sign Out", destroy_user_session_path, method: "delete" %></li>
+      <% else %>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+        <li><%= link_to "Sign In", new_user_session_path %></li>
+      <% end %>
+    </ul>
+
+		<!-- Devise messages -->
+		<% if notice %>
+			<p class="alert alert-success"><%= notice %></p>
+		<% end %>
+		<% if alert %>
+			<p class="alert alert-danger"><%= alert %></p>
+		<% end %>
+
+    <%= yield %>
+  </body>
+</html>
