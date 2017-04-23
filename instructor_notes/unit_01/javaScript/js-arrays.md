@@ -19,7 +19,7 @@ competencies: Programming
   - Declare object literals
 
 # Hook
-In 2009, the **BBC** and the **British Museum** collaborated on a hugely successful radio series and book called “A History of the World in 100 Objects.” In 2014, the **Smithsonian** followed up with its “History of the World in 1,000 Objects.”  You can listen to the podcasts later, here: http://www.bbc.co.uk/programmes/b00nrtd2/episodes/downloads
+In 2009, the **BBC** and the **British Museum** collaborated on a hugely successful radio series and book called “A History of the World in 100 Objects.” In 2014, the **Smithsonian** followed up with its “History of the World in 1,000 Objects.”  You can learn more about them on their podcasts: http://www.bbc.co.uk/programmes/b00nrtd2/episodes/downloads
 
 “It is only in the world of objects that we have time and space,” T. S. Eliot wrote. Think of the mark that things — the wheel, the crucifix, the credit card or the computer chip — have made on civilization.  What objects or collection of items tell the story of your life?  Think about 5 items that define you.
 
@@ -33,7 +33,7 @@ An **array** is syntactically defined with opening and closing square brackets `
 
 Arrays are used for:
 
-* Storing data in a particular order
+* Storing any type data in a particular order
 * Enumerating over data, i.e. using a zero-based index to find them
 * Quickly reordering data
 
@@ -41,10 +41,15 @@ An array is ultimately, a data structure, similar in concept to a comma separate
 
 ```javascript
 var friends = ['Moe', 'Larry', 'Curly'];
+=> undefined
+
+friends
 => ['Moe', 'Larry', 'Curly']
 ```
 
-Items in an array are stored in sequential order, and indexed starts at `0` (zero-based index) and ends at `length - 1` (since the length is not zero-based, length starts counting at 1, so it is always 1 more than the largest index in the array).
+Items in an array are stored in sequential order, with indexes starting at `0` (zero-based index) and ending at `length -1` (since the length is not zero-based, length starts counting at 1, so it is always 1 more than the largest **index** in an array).
+
+You can set or read items in an array via Bracket Notation.  Inside of the brackets, you add the number of index of the item that you would like to retrieve/set.
 
 ```javascript
 // First friend
@@ -60,13 +65,13 @@ var lastFriend = friends[friends.length - 1];
 => 'Curly'
 ```
 
-We can even use strings like arrays: (literally array-like)
+We can use array-methods, like length and bracket notation on strings. They are literally array-like.
 
 ```javascript
 var newFriend = 'bobby bottleservice';
 //=> undefined
 
-// pick out first character
+// pick out the first character
 newFriend[0];
 //=> 'b'
 
@@ -77,38 +82,40 @@ newFriend.length;
 
 ## Working with Arrays - Codealong (15m)
 
-Using the JavaScript `new` keyword, is one way of creating arrays:
+Using the JavaScript `new` keyword, is one way of creating arrays.  It will create an empty array that is set to your variable.  You can add items to the array via their index- which is zero-based.
 
 ```javascript
-var a = new Array();
+var vacations = new Array();
 => undefined
 
-a[0] = 'Bali';
+vacations;
+=> []
+
+vacations[0] = 'Bali';
 => 'Bali'
 
-a[1] = 'Argentina';
+vacations[1] = 'Argentina';
 => 'Argentina'
 
-a[2] = 'Greece';
+vacations[2] = 'Greece';
 => 'Greece'
 
-a
+vacations
 => ['Bali', 'Argentina', 'Greece']
 
-a.length;
+vacations.length;
 => 3
 ```
-- You can add or change items in an array via their index.  Call the array followed by the desired index in square brackets.
 
 A more convenient notation is to use an array literal:
 
 ```javascript
-var a = ['Bali', 'Argentina', 'Greece'];
+var newVacations = ['Singapore', 'Russia', 'Belize'];
 
-a
-=> ['Bali', 'Argentina', 'Greece']
+newVacations;
+=> ['Singapore', 'Russia', 'Belize']
 
-a.length;
+newVacations.length;
 => 3
 ```
 
@@ -119,48 +126,133 @@ The `length` method works in an interesting way in Javascript. It is always one 
 So `array.length` isn't necessarily the number of items in the array. Consider the following:
 
 ```javascript
-var a = ['Bali', 'Argentina', 'Greece'];
-a[100] = 'Egypt';
-a.length; // 101
+var newestVacations = ['Dominican Republic', 'Australia', 'Hong Kong'];
+vacations[10] = 'Egypt';
+vacations.length; // 11
 ```
-**Remember**: the length of the array is one more than the highest index.
+**Remember**: the length of the array is one more than the highest **index**.
 
-**EXERCISE**: Take the next 2 minutes to create an array of the five items that define you and save them to the variable `myLife`
-
+**EXERCISE**: Take the next 2 minutes to create an array of the five items that define you and save them to the variable `myLife`.  When you are done, add your array to slack. (make sure to end your line with a semi-colon!)
 
 ### Getting data from an array
 
-If you query a non-existent array index, it will return `undefined`:
+If you use the method `typeof` to query a **non-existent array index**, it will return `undefined`:
 
 ```javascript
-var a = ['Bali', 'Argentina', 'Greece'];
+var vacations = ['Bali', 'Argentina', 'Greece'];
 => undefined
 
-typeof a[1];
+typeof vacations[1];
 => 'string'
 
-typeof a[90];
+typeof vacations[12];
 => undefined
 ```
 
 <br />
 
-**EXERCISE**: Take 10 minutes, to get these values in your array: the first item in your array, the last item in your array. Bonus: Can you print out all of the items in your array?  Can you come up with a way of getting a random item/index (whole number) between zero and the length of your array? HINT: Math.random() and Math.floor()
+**EXERCISE**: Take 10 minutes, to query these values in your `myLife` array: the first item in your array, the last item in your array. Bonus: Can you print out all of the items in your array?  Can you come up with a way of getting a random item/index (whole number) between zero and the length of your array? HINT: Math.random() and Math.floor().
 
 ### Array helper methods
 
 Arrays come with a number of helper methods. Here is a list of some popular helpers:
 
-- `a.toString()` - Returns a string with the `toString()` of each element separated by commas.
+- `vacations.toString()` - Returns a string with the `toString()` of each element separated by commas.
 
-- `a.pop()` - Removes and returns the last item in your array.
+```javascript
+var vacations = ['Bali', 'Argentina', 'Greece'];
+=> undefined
 
-- `a.push(item1, ..., itemN)` - `.push()` adds one or more items to the end of your array.
+vacations.toString();
+=> "Bali,Argentina,Greece"
+```
 
-- `a.reverse()` - Reverses the array.
+- `vacations.pop()` - Removes and returns the last item in your array.
 
-- `a.shift()` - Removes and returns the first item in your array.
+```javascript
+vacations
+=> ['Bali', 'Argentina', 'Greece']
 
-- `a.unshift('item')` - Prepends items to the beginning of your array.
+vacations.pop();
+=> ['Bali', 'Argentina']
+```
+
+- `vacations.push(item1, ..., itemN)` - `.push()` adds one or more items to the end of your array.
+
+```javascript
+vacations;
+=> ['Bali', 'Argentina']
+
+vacations.push('Greece');
+=> 3
+
+vacations
+=> ['Bali', 'Argentina', 'Greece']
+```
+
+- `vacations.reverse()` - Reverses the array.
+
+```javascript
+vacations
+=> ['Bali', 'Argentina', 'Greece'];
+
+vacations.reverse();
+=> ['Greece', 'Argentina', 'Bali']
+```
+
+- `vacations.shift()` - Removes and returns the first item in your array.
+
+```javascript
+vacations;
+=> ['Greece', 'Argentina', 'Bali']
+
+vacations.shift();
+=> 'Greece'
+
+vacations
+=> ['Argentina', 'Bali']
+```
+
+- `vacations.unshift('item')` - Prepends items to the beginning of your array.
+
+```javascript
+vacations;
+=> ['Argentina', 'Bali']
+
+vacations.unshift('Greece');
+=> 3
+
+vacations;
+=> ['Greece', 'Argentina', 'Bali']
+```
 
 Remember, though, you will never remember _every_ method.  Explore the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for particular objects.
+
+<br />
+
+---
+
+### Some of my favorite JS books
+* [A Smarter Way to Learn JS](http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf)
+* [A Smarter Way to Learn jQuery](https://github.com/JideLambo/javascript-books/blob/master/A%20Smarter%20Way%20to%20Learn%20jQuery%20-%20Mark%20Myers.pdf)
+* [JavaScript + JQuery](https://www.dropbox.com/s/05je29f3oxj7oa0/JavaScript%20and%20JQuery%20Interactive%20Front-End%20Web%20Development%202014.pdf?dl=0) - So good! Might be worth buying...
+* [JavaScript the Good Parts](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf)
+* [Eloquent JS](http://eloquentjavascript.net/)
+* [DOM Enlightenment](http://domenlightenment.com/#1.1)
+* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+* [You Don't Know ES6](https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond)
+
+---
+
+#### Solution to Exercise
+
+var myLife = ['family photo album', 'Seagull parlor guitar', 'journal', 'professional stand mixer', 'Diesel'];
+
+myLife[0];
+=> 'family photo album'
+
+myLife[4];
+=> 'Diesel'
+
+var itemIndex = Math.floor(Math.random() * 5)
+var randomItem = myLife[itemIndex];

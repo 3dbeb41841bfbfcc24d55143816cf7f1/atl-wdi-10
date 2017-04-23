@@ -1,4 +1,4 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI ...!!!
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI ...!!! - with bcrypt
 
 ### Week 12
 <table><thead>
@@ -773,12 +773,10 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_03/angular/ron-swanson">Homework</a>
     </td>
     <td>
-      Homework
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_03/angular/budget-app">Homework</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_03/angular/budget-app">Homework</a>
-      <!-- Because we took out authentication -->
-      <!-- <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_03/angular/bucket-list">Homework</a> -->
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_03/angular/bucket-list">Homework</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/projects/unit_03">Project Three</a>

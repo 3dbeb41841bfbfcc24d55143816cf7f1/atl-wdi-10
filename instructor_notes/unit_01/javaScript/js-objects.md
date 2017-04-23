@@ -28,18 +28,17 @@ competencies: Programming
 - Create and manipulate arrays in JavaScript
 Objects in JavaScript
 
-
 ## Intro
 
 ### What is an object? (5m)
 
-I was thinking about intro-ing this lesson by discussing Ariel's Secret Grotto of human objects, but decided just to continue on the theme that I began in the last lesson...  In the last lesson, I asked you to think about 5 objects that define you.  You added these items to an array and were able to iterate over them/console.log them.  But there wasn't any detail given about the items, we just stated their names.  Objects can help us out with that.
+In the last lesson, I asked you to think about 5 objects that define you.  You added these items to an array and were able to iterate over them/console.log them.  But there we just wrote the name of the item, there wasn't any details given.  Objects can help us out with that.
 
 * Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they are called a dictionary, in Ruby they are called a hash).
 * In JavaScript, an object is a type of key-value store, or a way to group pairs of keys and values together
 * Like arrays, objects can hold multiple pieces of data of varying types; but unlike arrays, objects use named keys rather than ordered indices to access those pieces of data.
 
-For example, a puppy has properties, a breed/type, the color of his/her fur, a size, a demeanor etc. Following the same logic, a JavaScript object will have **keys/names** and **values** for each property.
+For example, a puppy has properties that define it, like a breed/type, the color of his/her fur, a size, a demeanor etc. Following the same logic, a JavaScript object will have **keys/names** and **values** for each property.
 
 <br />
 
@@ -47,9 +46,7 @@ For example, a puppy has properties, a breed/type, the color of his/her fur, a s
 
 #### Object literal syntax
 
-Strings are defined in 'quotes', arrays are in ['square bracets'], objects follow the same lexical pattern but use `{curlyBraces: 'and are structured as key/value pairs'}`, the `key`/name comes before the colon and the `value`, after the colon.
-
-Like arrays, these key-value pairs are comma separated!
+Strings are defined in 'quotes', arrays are in ['square bracets'], objects follow the same lexical pattern but contain key value pairs, like this `{key: value}`.  The `key` comes before the colon and the `value`, after the colon.  Like arrays, these key-value pairs are comma separated!
 
 ```javascript
 var myObject = {};
@@ -59,7 +56,9 @@ var myObject = {};
 
 Objects in JavaScript **always** have properties associated with them.
 
-You can think of a property on a JavaScript object as a type of variable that contains a value. The properties of an object can be accessed using "dot notation":
+You can think of a property on a JavaScript object as a type of variable that contains a value. The properties of an object can be accessed using "dot notation" or bracket notation which will be discussed in a minute:
+
+##### Bracket Notation
 
 ```javascript
 var person = {
@@ -76,52 +75,55 @@ You can define or change a property by assigning it a value using the assignment
 var person = {
   name: "Danny"
 }
+=> undefined
 
 person.name;
 => "Danny"
 
-person.name = "John";
+person.name = "Maren";
+=> "Maren"
+
 person.name;
-=> "John"
+=> "Maren"
 ```
 
 ## We Do: Create an object with properties
 
-We are going to create an object `classroom` that contains the properties `name` and `campus`:
+We are going to create an object called `classroom` that contains the properties `name` and `campus`:
 
 ```javascript
 var classroom = {};
 => undefined
 
-classroom.name = "WDI ATL 9";
-=> "WDI ATL 9"
+classroom.name = "WDI ATL 10";
+=> "WDI ATL 10"
 
 classroom.campus = "Atlanta!";
 => "Atlanta!"
 
 classroom;
-=> Object {name: "WDI ATL 9", campus: "Atlanta!"}
+=> Object {name: "WDI ATL 10", campus: "Atlanta!"}
 ```
 
 ### Bracket Notation
 
-There is another way to set properties on a JavaScript object.
+The other way to set properties on a JavaScript object, call the variable, followed by square brackets- inside of the square brackets is the key, and you assign it the value.
 
 ```javascript
-classroom["name"] = "WDI ATL 9";
-classroom["campus"] = "Atlanta!";
+classroom["name"] = "WDI 10 Rocks";
+classroom["campus"] = "PCM!";
 ```
 
-This syntax can also be used to read properties of an object:
+This syntax can also be used to read the properties of an object, as well as create new ones:
 
 ```javascript
 console.log(classroom["name"]);
-=> "WDI ATL 9";
+=> "WDI ATL 10";
 
-classroom.property = "Ponce City Market";
+classroom.size = 13;
 
-console.log(classroom["property"]);
-=> "Ponce City Market";
+console.log(classroom["size"]);
+=> 13;
 ```
 
 - You can use dot notation or bracket notation to set or change your properties.
@@ -136,40 +138,42 @@ If you want to delete a property in an object (and by extension, the value attac
 The following code shows how to remove a property:
 
 ```javascript
-var classroom = {name: "WDI ATL 9", campus: "Atlanta!", start: "02/21/2017"};
-delete classroom.start;
+classroom;
+=> {name: "WDI 10 Rocks", campus: "PCM!", size: 13};
+delete classroom.size;
 
 classroom;
-=> {name: "WDI ATL 9", campus: "Atlanta!"}
+=> {name: "WDI 10 Rocks", campus: "PCM!"}
 ```
 
 <br />
 
 ## Object Methods
 
-As we have stated before, the value of a property can be anything in JavaScript, which means that we can also attach functions to object properties. When a function is attached to a property, this function becomes a `method`. Methods are defined the exact same way as a function, except that they have to be defined as the property of an object.
+As we have stated before, the value of a property can be anything in JavaScript, which means that we can also attach functions to object properties. When a function is attached to a property, this function becomes a `method`. Methods are defined the exact same way as a function, except that they are assigned to a key, and are the property of an object.
 
 We will be discussing functions in more detail tomorrow.  
 
 ```javascript
 var classroom = {
-  name: "WDI ATL 9", // key: value,
-  campus: "Atlanta!", // key: value,
-  start: "02/21/2017",
-  instructors: ['Danny', 'Maren', 'Josh', 'John', 'Lisa'],
+  name: "WDI 10 Rocks", // key: value,
+  campus: "PCM!", // key: value,
+  size: 13,
+  start: "04/24/2017",
+  instructors: ['Danny', 'Maren'],
   sayHello: function() {
-    console.log("Hello");
+    console.log("Hello, all of you crazy cats!");
   }
 };
 ```
 
 **How do we ask for values in an object? How do we call functions?**
 
-To call the method, we add a pair of parentheses at the end, in order to execute it:
+To call the method, we add a pair of parentheses at the end of our key's name, in order to execute it:
 
 ```javascript
 classroom.sayHello();
-=> Hello
+=> Hello, all of you crazy cats!
 ```
 
 ### Assigning a previously-defined function
@@ -177,11 +181,13 @@ classroom.sayHello();
 We can attach regular functions to objects as methods, even after they are created.
 
 ```javascript
-var sayHello = function() { console.log("Hello"); }
+var goodbye = function() {
+  console.log("See ya later!");
+}
 
-classroom.sayHello = sayHello;  
+classroom.sayGoodbye = goodbye;  
 
-classroom.sayHello();
+classroom.sayGoodbye();
 => Hello
 ```
 
@@ -200,11 +206,9 @@ var classroom = {
   },
   sayHelloToOne: function(instructorIndex) {
     console.log('Hi, ' + this.instructors[instructorIndex]);
-
-    console.log(`Hi, ${this.instructors[instructorIndex]}`);
   },
-  classInfo: function(){
-    console.log("This is " + this.name + " and the class starts on " + this.start);
+  classInfo: function() {
+    console.log("This " + this.name + " and the class starts on " + this.start);
   }
 };
 ```
@@ -213,56 +217,53 @@ var classroom = {
 
 ### Enumerating properties of an object
 
-There are three native ways to list the properties of an object we're just going to explore the `for ... in` loop:
+There are three native ways to list the properties of an object we are just going to explore the `for ... in` loop:
 
-* **for...in loops** This method traverses all enumerable properties of an object and its prototype chain
+* **for...in loops** This method traverses all enumerable properties of an object and its prototype chain.
 
 ```javascript
 for (var eachKey in classroom) {
   console.log(eachKey);
 }
-
 ```
 
 Which items in the object are returned? And which are missing?
 
-We only see the keys returned, right?  So, can you think of a way to access the values?
+We only see the keys returned, right?  In order to see the values returned, we need to use bracket notation.
 
 ```javascript
 for (var eachKey in classroom) {
   console.log(classroom[eachKey]);
 }
-
 ```
+
+You can use the bracket notation with for...in to iterate over all of the enumerable properties of an object.
+
+Other methods to access the keys/values of an object.
+
 * **Object.keys(classroom)**  This method returns an array with all of the enumerable property's names/the keys of the object classroom.
 * **Object.getOwnPropertyNames(classroom)** This method returns an array containing all of the enumberable property's names/the keys of the object classroom.
 * **Object.values(classroom);**
 
-**Loop over an object's properties**
-
-You can use the bracket notation with for...in to iterate over all of the enumerable properties of an object.
-
-** If you are still confused by the difference between `==` and `===` review MDN's notes on [equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality_()) and [strict equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Identity_strict_equality_())**
-
 <br />
 
-## Independent Vacation Exercise (15m)
+## Independent Dream Vacation Exercise (15m)
 
-- Create a `vacation` object, which has the following properties:
+- Create a vacation object, which has the following properties:
 
-  - `city`
-  - `country`
-  - `timeOfYear`
-  - `restaurants`
-  - `activities`
+  - `city` // a string
+  - `country` // a string
+  - `local_phrase` // a string
 
   And the following methods:
 
-  - `introduce`: produces a string introducing the vacation, including its city, country, timeOfYear, what restaurants you would like to go to while there, and the activities that you'd like to take part in.
+  - `summary`: produces a string the summarizes the vacation, including it's city, country, and a local phrase.
 
-- Create 3 vacations. Make sure all 3 vacations have all of the properties set and the methods defined.
+- Create 2 dream vacations. Make sure that both objects have all of the same properties and methods defined. (You might set them to variables that describe the vacation via city, instead of just typing vacation and vacation_01.)
 
-- Exercise your vacations by retrieving their properties and using their methods. Practice using dot notation and bracket notation for retrieving these properties.
+- Practice using dot notation and bracket notation for retrieving these properties.
+
+**We will discuss constructor functions in a few weeks.  Constructor functions will help, in terms of you not having to create a new object every time that you would like to create a new dream vacation.
 
 ## Conclusion (5m)
 
@@ -271,3 +272,37 @@ We will continue to use JavaScript objects every day, and you will have plenty o
 - [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 - [Intro to Object-Orientated Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
 - [Objects in Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+
+---
+
+### Some of my favorite JS books
+* [A Smarter Way to Learn JS](http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf)
+* [A Smarter Way to Learn jQuery](https://github.com/JideLambo/javascript-books/blob/master/A%20Smarter%20Way%20to%20Learn%20jQuery%20-%20Mark%20Myers.pdf)
+* [JavaScript + JQuery](https://www.dropbox.com/s/05je29f3oxj7oa0/JavaScript%20and%20JQuery%20Interactive%20Front-End%20Web%20Development%202014.pdf?dl=0) - So good! Might be worth buying...
+* [JavaScript the Good Parts](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf)
+* [Eloquent JS](http://eloquentjavascript.net/)
+* [DOM Enlightenment](http://domenlightenment.com/#1.1)
+* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+* [You Don't Know ES6](https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond)
+
+---
+
+##### Exercise Solution
+
+var cinque_terre = {
+  city: "Cinque Terre",
+  country: "Italy",
+  local_phrase: "Bonjourno",
+  summary: function() {
+    console.log('I would love to go to ' + this.city + ', ' + this.country + '. And learn a phrase other than ' + this.local_phrase );
+  }
+}
+
+var oaxaca = {
+  city: "Oaxaca",
+  country: "Mexico",
+  local_phrase: "Hola",
+  summary: function() {
+    console.log('I would love to go to ' + this.city + ', ' + this.country + '. And learn a phrase other than ' + this.local_phrase );
+  }
+}

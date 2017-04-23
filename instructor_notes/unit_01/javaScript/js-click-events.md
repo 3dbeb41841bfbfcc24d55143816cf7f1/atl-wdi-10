@@ -51,39 +51,53 @@ Refresh your window and make sure your script is still running!
 
 It is fired after the entire page loads, includ­ing its con­tent (images, css, scripts, etc.) -->
 
+## Hook
+We have started learning about the different pieces of JS.  We needed this understanding in order to know what is happening when we manipulate the DOM.  Now we can put it all together and actually start manipulating our webpages.  For reals.  
+
+<br />
+
 ## Review — functions
 
 ### The syntax
 
-A function is written using the `function` keyword, a function name (optional: dependent on whether you are writing a named or anonymous function), followed by a pair of parenthesis `()` with optional arguments, and a code block `{}`.
+A function is written using the `function` keyword, a function name (optional: depends on whether you are writing a named or anonymous function), followed by a pair of parenthesis `()` with optional arguments, and a code block `{}`.
 
 There are actually three ways we can write functions:
 
 ```javascript
-// anonymous functions, which get passed as arguments
-function() {
-  console.log('hi');
+// anonymous functions, which get passed as arguments, like as a method in an object or as a function reference (which we will discuss in a few minutes)
+var newGreeting = {
+  greeting: function() {
+    console.log('hi');
+  }
 }
+// you would call this object method this way
+newGreeting.greeting();
 
-// a named function or function declaration.
-function newFunction() {
-  console.log('hi');
+// a named function or function declaration, which gives the function a descriptive name, after the function keyword.
+function newestGreeting() {
+  console.log('hello');
 }
 
 // saved to a variable or a function expression
-var newFunction = function() { 
-  console.log('hi');
+var bestGreeting = function() { 
+  console.log('What\'s happenin\'?');
 }
-
 ```
 
-These functions all behave the same way, and are merely written slightly differently.
+These functions all behave the same way.  They are merely written slightly differently.
+
+<br />
+
+--- 
 
 **Exercise**: (5m) Write a function using the three different patterns mentioned above. The function should take two arguments, `num1` and `num2`, and log the sum of the two numbers to the console.
 
-**[NOTE]**: Even though you can declare an anonymous function you can't actually call it. Only named functions and those saved to variables can be invoked with a parens `()`.
+<!-- **[NOTE]**: Even though you can declare an anonymous function you can't actually call it. Only named functions and those saved to variables can be invoked with a parens `()`.
 
-So, why would we even want to write a function without a name? We are building up to this. Keep it in the back of your head for a moment.
+So, why would we even want to write a function without a name? We are building up to this. Keep it in the back of your head for a moment. -->
+
+---
 
 ### Function References
 
@@ -91,11 +105,19 @@ Function references are what is returned when we ask for a function without invo
 
 We have defined several functions already. Let's call them without invoking them and see what the response is.
 
+```javascript
+newGreeting;
+
+newestGreeting;
+
+bestGreeting;
+```
+
 ### Passing a function as an argument (CALLBACKS!!!)
 
-Functions can be passed as an argument by way of a function reference to other functions. 
+Functions can be passed as an argument by way of a **function reference** to other functions. 
 
-Let's define a function called `sayHello()`. It will to take one argument called name, and it will return a string that says `hello, <name>`
+Let's define a function called `sayHello()`. It will to take one argument called name, and it will return a string that says `hello, <name>`.  The **return** keyword is mandatory, as it is the only way that the second function will have access to the data in the first function.
 
 ```javascript
 var sayHello = function(name){

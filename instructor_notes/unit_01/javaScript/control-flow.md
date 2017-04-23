@@ -440,6 +440,8 @@ What this means is that when we compare two objects or arrays with `===`, JavaSc
 
 There are also `!=`(not equal) and `!==`(strict not equal) operators, which are the negative versions of `==`(equals) and `===`(strict equals).
 
+** If you are still confused by the difference between `==` and `===` review MDN's notes on [equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality_()) and [strict equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Identity_strict_equality_())**
+
 ---
 
 ## Switch Statement (5m)
@@ -533,6 +535,18 @@ These are some of the foundational tools you will use in the majority of your ap
 
 ## Independent Practice
 - [Choose Your own Adventure](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/choose_your_own_adventure)
+
+---
+
+### Some of my favorite JS books
+* [A Smarter Way to Learn JS](http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf)
+* [A Smarter Way to Learn jQuery](https://github.com/JideLambo/javascript-books/blob/master/A%20Smarter%20Way%20to%20Learn%20jQuery%20-%20Mark%20Myers.pdf)
+* [JavaScript + JQuery](https://www.dropbox.com/s/05je29f3oxj7oa0/JavaScript%20and%20JQuery%20Interactive%20Front-End%20Web%20Development%202014.pdf?dl=0) - So good! Might be worth buying...
+* [JavaScript the Good Parts](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf)
+* [Eloquent JS](http://eloquentjavascript.net/)
+* [DOM Enlightenment](http://domenlightenment.com/#1.1)
+* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+* [You Don't Know ES6](https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20%26%20beyond)
 
 ---
 

@@ -1,4 +1,4 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI 10!!!
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI ...!!! - without bcrypt
 
 ### Week 12
 <table><thead>
@@ -1063,8 +1063,9 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_02/javaScript/clock-exercise">Morning Exercise</a>
     </td>
     <td>
-      <!-- https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/diagnostic/express-diagnostic-solution.md -->
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/diagnostic/express-diagnostic.md">Diagnostic</a>
+      <!-- Diagnostic solution -->
+      <!-- https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_02/diagnostic/express-diagnostic-solution.md -->
     </td>
   </tr>
   <tr>
