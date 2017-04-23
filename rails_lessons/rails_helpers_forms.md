@@ -34,7 +34,7 @@ Rails gives us path helpers that correspond to specific routes in our applicatio
 ```bash
 $ rails routes
 ```
-We might see somethign like this:
+We might see something like this:
 
 ```bash
    Prefix Verb URI Pattern                     Controller#Action
@@ -106,15 +106,15 @@ Examples:
 
 ```
 <%= link_to @category.name, category_path(@category) %>
-<%= link_to "Edit Category", edit_ category_path(@ category) %>
+<%= link_to "Edit Category", edit_ category_path(@category) %>
 ```
 
 Note that Rails has a shortcut for the show path, instead of `category_path(@category)`,
 you can just pass in the model object itself.
 
 ```
-<%= link_to @category.name, @ category %>
-<%= link_to @ category.name, category_path(@ category) %>
+<%= link_to @category.name, @category %>
+<%= link_to @category.name, category_path(@category) %>
 ```
 
 Note that it doesn't have to be in an instance variable, what matters is that
