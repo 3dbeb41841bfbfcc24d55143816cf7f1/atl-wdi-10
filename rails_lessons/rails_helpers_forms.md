@@ -137,7 +137,7 @@ can be used to set any attributes.
 Example:
 
 ```
-<%= link_to @category.name, @panda, class: "fancy-category" %>
+<%= link_to @category.name, @category, class: "fancy-category" %>
 ```
 
 For more examples, see the [API Docs for Rails link_to](http://apidock.com/rails/ActionView/Helpers/UrlHelper/link_to)
@@ -217,7 +217,7 @@ Important facts about the `form_for` helper:
   * If the object is not new (id exists, `object.new_record? == false`), it will create an form to update (prepopulated)
 * Methods to generate labels and inputs take one argument, the name of the attribute
 * The submit button takes an optional argument for the text on the button
-  * If you omit the argument, it will say either "Create Panda" or "Update Panda" accordingly (subbing in the name of your model)
+  * If you omit the argument, it will say either "Create Category" or "Update Category" accordingly (subbing in the name of your model)
 
 
 ## Why use form_for?
