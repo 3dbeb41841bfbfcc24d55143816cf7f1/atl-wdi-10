@@ -106,11 +106,20 @@ Function references are what is returned when we ask for a function without invo
 We have defined several functions already. Let's call them without invoking them and see what the response is.
 
 ```javascript
-newGreeting;
+newGreeting.greeting;
+=> function() {
+  console.log('hi');
+}
 
 newestGreeting;
+=> function newestGreeting() {
+  console.log('hello');
+}
 
 bestGreeting;
+=> function() { 
+  console.log('What\'s happenin\'?');
+}
 ```
 
 ### Passing a function as an argument (CALLBACKS!!!)
@@ -125,15 +134,17 @@ var sayHello = function(name){
 }
 ```
 
-Let's now define a second function called shout().
+Let's now define a second function called shoutHello().
 
 ```javascript
-var shout = function(a, callback) { // the argument 'callback' here is expected to be a function reference
-  alert(callback(a)); // the function reference, stored in the argument 'callback', is getting invoked with a parens
+// the argument 'callback' here is a function reference
+var shoutHello = function(name, callback) { 
+  // the function reference, stored in the argument 'callback', is getting invoked with a parens
+  alert(callback(name)); 
 }
 
-shout('world!', sayHello);
-// alert box says "hello world!"
+// the alert says "hello, WDI 10!"
+shoutHello('WDI 10!', sayHello);
 ```
 
 ```javascript
@@ -150,9 +161,10 @@ var subtract = function(num1, num2) {
 }
 
 performMath(5, 5, add);
+=> 10
 
 performMath(10, 5, subtract);
-
+=> 5
 ```
 
 ## Click Events
@@ -165,7 +177,7 @@ You can think about click events as follows:
 
 This pattern is called an **event listener**. Events can be clicks, hovers, scrolls etc. It requires that we have a DOM node saved to a variable. We can then call `node.addEventListener()` and pass it two arguments, a string with the type of event we are listening for, and a second argument that is a function with an event argument.
 
-This could be either an anonymous function or a function expression/declaration written elsewhere— like in an object *hint hint hint COUGH*
+This could be either an anonymous function or a function expression/declaration written elsewhere— like in an object **hint hint**
 
 ```javascript
 var button = document.querySelector("button");
@@ -188,7 +200,7 @@ An `event`, is another magical object!
 
 What is the difference?
 
-Exercise: (20m) Look at the starter code <a href="hhttps://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/in-class-click-events">here</a>. There are three buttons. Add event listeners to all of three buttons.
+Exercise: (20m) Look at the starter code <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/in-class-click-events">here</a>. There are three buttons. Add event listeners to all of three buttons.
 
 1. Button one, when clicked, should trigger an alert saying `"you have clicked button one"`
 2. Button two, when clicked, should trigger a function that creates a `<p>` with the following string:
@@ -204,10 +216,10 @@ Exercise: (20m) Look at the starter code <a href="hhttps://github.com/ATL-WDI-Cu
 
 ## Independent Practice
 
-##### Exercise #1 - Independent Click Events
+#### Exercise #1 - Independent Click Events
 
 [Independent Click Events](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/independent-click-events)
 
-##### Exercise #2 - Wendy Bite
+#### Exercise #2 - Wendy Bite
 
 [Wendy Bite](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/wendy-bite)

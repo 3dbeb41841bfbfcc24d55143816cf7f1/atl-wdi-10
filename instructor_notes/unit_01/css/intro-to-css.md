@@ -121,6 +121,8 @@ p {
 
 Ahh, that is much better. You might be asking yourself, "Self? Isn't this a lot more work?" And you might be right initially. But we're talking about 1 `<p>` right now. What if we're talking about 100 `<p>`'s and now those elements were spread across multiple web pages. Now all of a sudden this last method is a lot less work.  Instead of writing the styles over and over again on each web page, we can link them all to the same stylesheet, and have them look the same.  
 
+External stylesheets help keep your CSS dry (avoid duplicate styles), easier to maintain and allows you to make site-wide changes in one place. 
+
 ### Separation of Concerns
 
 The other big advantage of the external stylesheet approach is that it preserves your Separation of Concerns. It is possible to style web pages using HTML alone. We did this in the early 2000s using mostly images and table borders. CSS allows us to separate the styles of our website/app from the content and behavior:
@@ -134,7 +136,8 @@ The other big advantage of the external stylesheet approach is that it preserves
 
 ## Why CSS
 
-As stated before, CSS is important for every webpage.  It will catch your user's attention and keep them coming back to your site for more.  Sites ultimately live and die via CSS.   
+As stated before, CSS is important for every webpage.  It controls the look and feel of your site.  It can catch your user's attention and keep them coming back for more.  Sites ultimately live and die for multiple reasons, but good CSS is a huge factor.   
+
 
 <!-- ## CSS Selectors (15 min)
 

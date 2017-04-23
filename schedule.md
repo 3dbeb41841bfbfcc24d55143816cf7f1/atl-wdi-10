@@ -140,8 +140,7 @@
       Day Off for Fourth of July
     </td>
     <td>
-      Day Off for Fourth of July
-      <!-- <a href="https://github.com/ATL-WDI-Curriculum/wdi-8/blob/master/ruby-lightning-talks/README.md">Lightning Talks</a> -->
+      Fourth of July
     </td>
     <td>
       Morning Exercise + <br />
@@ -159,10 +158,10 @@
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>
-      Day Off for Fourth of July
+      Day Off for the Fourth
     </td>
     <td>
-      Day Off for Fourth of July
+      Fourth of July
     </td>
     <td>
       Intro to TDD
@@ -177,10 +176,10 @@
   <tr>
     <td><strong>Mod 2</strong></td>
     <td>
-      Day Off for Fourth of July
+      Day Off for the Fourth
     </td>
     <td>
-      Day Off for Fourth of July
+      Fourth of July
     </td>
     <td>
       Intro to TDD
@@ -195,10 +194,10 @@
   <tr>
     <td><strong>Mod 3</strong></td>
     <td>
-      Day Off for Fourth of July
+      Day Off for the Fourth
     </td>
     <td>
-      Day Off for Fourth of July
+      Fourth of July
     </td>
     <td>
       Technical Interviews/<br />
@@ -216,10 +215,10 @@
   <tr>
     <td><strong>Mod 4</strong></td>
     <td>
-      Day Off for Fourth of July
+      Day Off for the Fourth
     </td>
     <td>
-      Day Off for Fourth of July
+      Fourth of July
     </td>
     <td>
       Technical Interviews/<br />
@@ -238,10 +237,10 @@
   <tr>
     <td><strong>Training</strong></td>
     <td>
-      Day Off for Fourth of July
+      Day Off for the Fourth
     </td>
     <td>
-      Day Off for Fourth of July
+      Fourth of July
     </td>
     <td>
       Homework- Catch Up or work on Lightning talks

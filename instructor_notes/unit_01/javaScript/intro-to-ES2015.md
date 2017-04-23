@@ -44,10 +44,17 @@ the new syntax.
 
 > For a more complete backstory, we recommend checking out [this talk](https://www.youtube.com/watch?v=PlmsweSNhTw) from Brendan Eich on what he views as the future of JS.
 
+<details>
+<summary>Who is Brendan Eich?</summary>
+
+He is the creator of JavaScript, which he created in 10 days!  He co-founded Mozilla.  And is the CEO of Brave Software, an internet security company.
+
+</details>
+
 <br />
 
 ## You Do
-Take 15 minutes to read through this article: [Getting Started with ECMAScript 6](http://blog.teamtreehouse.com/get-started-ecmascript-6) from the Treehouse blog.  If you have time leftover, you can read about the differences between [Understanding ES5, ES2015 and TypeScript](https://johnpapa.net/es5-es2015-typescript/).
+Take 20 minutes to read through this article: [Getting Started with ECMAScript 6](http://blog.teamtreehouse.com/get-started-ecmascript-6) from the Treehouse blog.  If you have time leftover, you can read about the differences between [Understanding ES5, ES2015 and TypeScript](https://johnpapa.net/es5-es2015-typescript/).
 
 <br />
 
@@ -64,7 +71,7 @@ Make sure that if you are using Chrome, you enable the experimental javascript f
 <details>
 <summary>What does the concept of scope refer to in JS?</summary>
 
-In short, it is the notion of which variables are available where.
+In short, it is the notion of which variables are available and where.
 
 </details>
 
@@ -85,27 +92,27 @@ Scope in ES5:
 
 ```js
 // ES5
-var a = 1;
-function myFunction() {
-  a = 2;
-  console.log(a);
+var num = 1;
+{
+  var num = 2;
+  console.log(num);
 }
-console.log(a);
-myFunction();
+console.log(num);
 
-// will print out 1, 2
+// will print out 2, 2
 ```
 
 Scope in ES2015:
 
 ```js
 // ES2015
-var a = 1;
+var newNum = 1;
 {
-  let a = 2;
-  console.log(a);
+  let newNum = 2;
+  console.log(newNum);
 }
-console.log(a);
+console.log(newNum);
+
 // will print out 2, 1
 ```
 
@@ -127,27 +134,27 @@ for(let j = 0; j < 10; j++){
 }
 console.log("outside loop:", j);
 // throws an error
-// because of block scope, j will not be available outside of the for block
+// because of block scope, j will not be available outside of the for loop
 ```
 
 <br />
 
 #### `const`
 
-[Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const): ES2015 introduces another keyword for declaring variables called `const`. `const` is an identifier for variables that can not be reassigned and are considered read only variables. It is not a constant variable, but a constant reference to your variable.
+[Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const): ES2015 introduces another keyword for declaring variables called `const`. `const` is an identifier for variables that can not be reassigned and are considered read only variables. It is not a constant variable, but a **constant reference** to your variable.
 
 In ES5, if you want to declare a variable that should remain constant, it is a common practice to write the name in all uppercase letters.  However, this will not prevent the variable from being reassigned. It is used more as a note to other developers about your intention for that variable.
 
 ```js
-const a = 1;
-a = 2;
-// Throws an error in chrome
+const num1 = 1;
+num1 = 2;
+// Throws a type error- assignment to constant variable
 
-const a = 2;
-// throws an error
+const num1 = 2;
+// throws a syntax error- identifier has already been declared
 
-var a = 2;
-// throws an error
+var num1 = 2;
+// throws a syntax error- identifier has already been declared
 ```
 
 <br />
@@ -156,31 +163,30 @@ var a = 2;
 
 [Default Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters): With ES2015, we now have the option to set default values for any of our functions' parameters.
 
-
 In ES5, we had to use the 'or' expression in order to create a default.  However, in ES6, you can set a default within your function's parens.
 
 ```js
 // ES5
 function hello(name){
-    name = name || "Frankie P";
+    name = name || "stranger";
     console.log("Hello, " + name);
 }
 
 hello(); // Hello, stranger
-hello("Jesse"); // Hello, Jesse
+hello("Danny"); // Hello, Danny
 ```
 
 ```js
 // ES2015
-function hello(name = "stranger"){
-    console.log("Hello, " + name);
+function helloAgain(name = "stranger"){
+    console.log("Hello again, " + name);
 }
 
-hello(); // Hello, stranger
-hello("Jesse"); // Hello, Jesse
+helloAgain(); // Hello again, stranger
+helloAgain("Danny"); // Hello again, Danny
 ```
 
-The ES2015 way is generally better because you won't have 'or' expressions all over your code.
+The ES2015 way is generally better because it keeps your code more concise= you won't have 'or' expressions all over your code.
 
 <br />
 
@@ -189,9 +195,9 @@ The ES2015 way is generally better because you won't have 'or' expressions all o
 [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment): The destructuring assignment makes it possible to extract data from complex data types (arrays and objects) into distinct variables:
 
 ```js
-let [a, b] = [1, 2];
-a; //= 1
-b; //= 2
+let [num1, num2] = [1, 2];
+num1; //= 1
+num2; //= 2
 let nums = [1, 2, 3, 4, 5];
 let [first, second, third] = nums;
 first; //= 1
@@ -199,39 +205,42 @@ second; //= 2
 third; //= 3
 ```
 
-What is on the left([a, b]), looks like an array literal, but you are actually working with individual variables, and surrounding them with square brackets because you are destructuring an array. You are telling the first value in the array to assign itself to 'a', and the second value to assign itself to 'b'.
+What is on the left([num1, num2]), looks like an array literal, but you are actually working with individual variables, and surrounding them with square brackets because you are **destructuring the array**. You are telling the first value in the array (1) to assign itself to 'num1', and the second value (2) to assign itself to 'num2'.
 
 Destructuring also applies to objects:
 
 ```js
-var user = {
+var congressionalCandidate = {
     id: 1,
-    name: "Bob",
-    age: 43 ,
-    profile_url:  "http://api.co/users/1",
-    location: "DC"
+    name: "Jon",
+    age: 30,
+    profile_url:  "http://www.myajc.com/rf/image_medium/Pub/p8/MyAJC/2017/02/27/Images/newsEngin.17889157_House_Election_Georgia_5058.jpg",
+    location: "Atlanta"
 }
 
 // ES5
-function greetUser (user) {
-    console.log("Hello " + user.name + ", how's the weather in " + user.location + "?");
+function greetPolitician(congressionalCandidate) {
+    console.log("Hello, " + congressionalCandidate.name + ". How's the race going in " + congressionalCandidate.location + "?");
 }
+greetUser(congressionalCandidate);
+=> Hello, Jon. How's the race going in Atlanta?
+
 
 // In ES2015 this becomes:
-function greetUser({ name, location })  {
-    console.log("Hello " + name + ", how's the weather in " + location + "?");
+function greetNewPolitician({ name, location })  {
+    console.log("Hello, " + name + ".  How's the race going in " + location + "?");
 }
-// You would call both by using: greetUser(user);
-
+greetNewPolitician(congressionalCandidate);
+=> Hello, Jon. How's the race going in Atlanta?
 ```
 
-If you are destructuring an object, you would surround the desired variables with curly braces, which will make it look like you are creating an object literal, but you are really just building an assignment statement.  You will want to pick off specific properties in the object.
+If you are destructuring an object, you would surround the desired variables with curly braces, which will make it look like you are creating an object literal, but you are really just building an destructuring assignment statement.  You will want to pick off specific properties in the object.
 
 <br />
 
 ### Concise Object Properties and Methods
 
-[Property Shorthand](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer): ES2015 allows us to use property shorthand to shorten method definitions.  For functions within objects, you can leave out the `function` keyword, and just add parens to the `key`, like in the **drive()** example below.
+[Property Shorthand](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer): ES2015 allows us to use **property shorthand** to shorten method definitions.  For functions within objects, you can leave out the `function` keyword, and just add parens to the `key`, like in the **drive()** example below.
 
 ```js
 // ES5
@@ -257,18 +266,18 @@ And for properties where the key is the same as the variable storing the value:
 
 ```js
 // ES5
-var x = 1;
-var y = 2;
+var num1 = 1;
+var num2 = 2;
 
-var obj = {x:x, y:y};
+var obj = {num1:num1, num2:num2};
 ```
 
 ```js
 // ES2015
-let x = 1;
-let y = 2;
+let num3 = 3;
+let num4 = 4;
 
-let obj = {x, y};
+let obj = {num3, num4};
 ```
 
 <br />
@@ -285,11 +294,15 @@ var name = "Inigo Montoya";
 var killee = "father";
 var prepareTo = "die";
 
-console.log("Hello. My name is "+ name + ". You killed my " + killee +". Prepare to " + prepareTo + ".");
-console.log("Hello.\n" + 
-"My name is "+ name + ".\n" + 
-"You killed my " + killee +".\n" + 
-"Prepare to " + prepareTo + ".");
+console.log("Hello. My name is " + name + ". You killed my " + killee +". Prepare to " + prepareTo + ".");
+
+// Or if you wanted to write it on multiple lines.
+console.log(
+  "Hello.\n" + 
+  "My name is "+ name + ".\n" + 
+  "You killed my " + killee +".\n" + 
+  "Prepare to " + prepareTo + "."
+);
 ```
 
 In ES2015, we can interpolate variables using template literal syntax: '(`)' (backticks), and replace the long-winded ES5 string concatenation code.
@@ -301,39 +314,14 @@ let killee = "father";
 let prepareTo = "die";
 
 console.log(`Hello. My name is ${name}. You killed my ${killee}. Prepare to ${prepareTo}.`);
-```
 
-A template literal can also be on multiple lines and it would still be valid! 
-
-```js
-// ES2015
-let name = "Inigo Montoya";
-let killee = "father";
-let prepareTo = "die";
-
-console.log(
-  `
-    Hello. 
-    My name is ${name}. 
-    You killed my ${killee}. 
-    Prepare to ${prepareTo}.
-  `
-);
-// So concise!  
-```
-
-As opposed to this:
-
-```js
-// ES5
-var name = "Inigo Montoya";
-var killee = "father";
-var prepareTo = "die";
-
-console.log("Hello.\n" + 
-"My name is "+ name + ".\n" + 
-"You killed my " + killee +".\n" + 
-"Prepare to " + prepareTo + ".");
+// A template literal can also be on multiple lines and it would still be valid!
+console.log(`
+  Hello. 
+  My name is ${name}. 
+  You killed my ${killee}. 
+  Prepare to ${prepareTo}.
+`);
 ```
 
 <br />
@@ -344,17 +332,17 @@ console.log("Hello.\n" +
 
 ```js
 // ES5
-let foods = ["pizza", "mac n cheese", "lasagna"];
-foods.forEach(function(food) {
-    console.log("I love " + food);
+var favoriteFoods = ["indian", "ice cream", "grilled cheese"];
+favoriteFoods.forEach(function(favoriteFood) {
+    console.log("I love " + favoriteFood);
 });
 ```
 
 ```js
 // ES2015
-let foods = ["pizza", "mac n cheese", "lasagna"];
-foods.forEach((food) => {
-  console.log(`I love ${food}`);
+let healthyFavoriteFood = ["salad", "yogurt with honey", "strawberries"];
+healthyFavoriteFood.forEach((healthyFave) => {
+  console.log(`I love ${healthyFave}`);
 });
 ```
 
@@ -362,8 +350,8 @@ You can get access to each element in this array using a `for` loop.  However, t
 
 ```js
 // ES5- with a for loop
-let foods = ["pizza", "mac n cheese", "lasagna"];
-for(var i = 0; i < foods.length; i++) {
+let newFavoriteFood = ["thai", "sushi", "Little Tart croissants"];
+for(var i = 0; i < favoriteFood.length; i++) {
     console.log("I love " + foods[i]);
 }
 ```
@@ -372,15 +360,16 @@ You can write the whole arrow function on one line, and if you only have one par
 
 ```js
 // ES2015
-let foods = ["pizza", "mac n cheese", "lasagna"];
-foods.forEach(food => console.log(`I love ${food}`));
+let newHealthyFavorites = ["salmon with honey and basil", "pineapple", "dark chocolate"];
+newHealthyFavorites.forEach(newHealthyFave => console.log(`I love ${newHealthyFave}`));
 ```
 
 If there is more than one parameter in the function, make sure to wrap them in parens:
 
 ```js
-let foods = ["pizza", "mac n cheese", "lasagna"];
-foods.forEach((food, i) => console.log(`My #${i} favorite food is ${food}`));
+let foodFaves = ["pizza from Little Star in SF", "pop tarts from Star Provisions", "hard tacos from Superica"];
+// you need to add 1 to the index because it will start at 0
+foodFaves.forEach((food, i) => console.log(`My number ${i + 1} favorite food is ${food}`));
 ```
 
 [SIDE NOTE] Arrow functions also have the benefit of not changing the value of `this`.
@@ -389,24 +378,31 @@ Additionally, the `return` statement is not needed with single line arrow functi
 
 ```js
 //ES5
-function subtract(x, y) { x + y; }
-//undefined in console
+function addNum(num1, num2) { return num1 + num2; }
+
+addNum(1, 2);
+=> 3
 ```
 
 ```js
 // ES2015
-let add = (x, y) => x + y;
-add(2, 3); //5
+let addNewNum = (num1, num2) => num1 + num2;
+
+addNewNum(2, 3);
+=> 5
 ```
 
 If the function is on multiple lines, you will need to **explicitly return**:
 
 ```js
 // ES2015
-let add = (x, y) => {
-  return x + y;
+let addNewestNums = (num1, num2) => {
+  let total = num1 + num2;
+  return total;
 }
-add(2, 3);
+
+addNewestNums(3, 4);
+=> 7
 ```
 
 <br />
@@ -415,16 +411,16 @@ add(2, 3);
 
 Support for ES2015 is growing! - https://kangax.github.io/compat-table/es6/
 
-If you need to support a legacy browser (depending on your user), check out the following transpilers.  A transpiler will convert one language into another.  In this case, it will convert your ES6 code back into ES5.
+If you need to support a legacy browser (depending on your user), check out the following transpilers.  A transpiler will convert one language into another.  In this case, it will convert your ES2015 code back into ES5.
 - [Traceur](https://github.com/google/traceur-compiler/wiki/Getting-Started)
-  - project ran by google, which takes ES6 code and compiles it to ES5.
-  - it doesn't support all of ES6.
+  - project ran by google, which takes ES2015 code and compiles it to ES5.
+  - it doesn't support all of ES2015.
   - [Traceur repl](https://google.github.io/traceur-compiler/demo/repl.html#)
-  - [Plnkr](https://plnkr.co/)
+  - [Plnkr](https://plnkr.co/) - great place to try out your code
     - make sure to add the traceur from the search packages.
       - will add traceur.js and bootstrap.js
       - if you have an external js file, just make sure to add a type="module" to the tag
-- [Babel](https://babeljs.io/)
+- [Babel](https://babeljs.io/) - one of the most popular
 - [Addy osmani ES6 Tools](https://github.com/addyosmani/es6-tools)
 
 **You always need to make sure that you are supporting the browsers that your users are using. If they can't use your site because it is 'too modern' you will lose them.**
@@ -437,7 +433,7 @@ If you need to support a legacy browser (depending on your user), check out the 
 
 [Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator): The spread operator `...` allows an expression (like an array) to be expanded into multiple elements.
 
-This make separating an array into individual elements incredibly simple. In ES5, you would need to use the index of each array item in order to get access to that value/send in that value as an argument.
+This makes separating an array into individual elements incredibly simple. In ES5, you would need to use the index of each array item in order to get access to that value/send in that value as an argument.
 
 ```js
 // ES5
@@ -449,8 +445,7 @@ var volume = function(height, width, length) {
 volume(dimensions[0], dimensions[1], dimensions[2]);
 ```
 
-In ES6, you can just use the spread operator, which makes your code more dry and easier to understand.
-
+In ES6, you can just use the spread operator, which keeps your code DRY and makes it easier to understand.
 
 ```js
 // ES2015
@@ -465,11 +460,11 @@ volume(...dimensions);
 You can also use the spread operator to add two arrays together. 
 
 ```ES5
-var a = [4, 5, 6];
-var nums = [1, 2, 3, a, 7, 8, 9];
+var nums = [4, 5, 6];
+var newNums = [1, 2, 3, nums, 7, 8, 9];
 
-nums;
-> [1, 2, 3, [4, 5, 6], 7, 8, 9]
+newNums;
+=> [1, 2, 3, [4, 5, 6], 7, 8, 9]
 ```
 
 Notice that without the spread operator (in ES5), the array doesn't just add in the values from the 'a' array.  It actually imports the whole array (at index 3) within the nums array, creating an array within an array.
@@ -477,10 +472,10 @@ Notice that without the spread operator (in ES5), the array doesn't just add in 
 The spread operator will seamlessly add the two arrays together.
 
 ```ES2015
-var a = [4, 5, 6];
-var nums = [1, 2, 3, ...a, 7, 8, 9];
+let nums1 = [4, 5, 6];
+let newestNums = [1, 2, 3, ...nums1, 7, 8, 9];
 
-nums;
+newestNums;
 > [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
