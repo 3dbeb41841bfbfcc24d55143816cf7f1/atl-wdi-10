@@ -3,9 +3,11 @@
 <ul>
 	<% @categories.each do |category| %>
 		<li>
-			<%= link_to category.name, todos_path(category_id: category.id) %>
-			<%# syntax for link_to: %>
-			<%# link_to text_to_show_up, path_to_go_to %>
+			<%= link_to category.name, todos_index_path(category) %>
+			<%= link_to "Edit #{category.name}", edit_category_path(category) %>
+      <br/>
 		</li>
 	<% end %>
+  <br/>
+  <%= link_to "New Category", new_category_path, { class: "btn" } %>
 </ul>
