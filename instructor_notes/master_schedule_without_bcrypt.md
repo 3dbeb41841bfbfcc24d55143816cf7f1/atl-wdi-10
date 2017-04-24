@@ -1647,7 +1647,8 @@
     <td><strong>Homework</strong></td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/wiki">Wiki +</a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/culture/wiki-treasure-hunt.md">Wiki Treasure Hunt</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/culture/wiki-treasure-hunt.md">Wiki Treasure Hunt + </a><br />
+      <a href="https://github.com/ATL-WDI-Exercises/command-line-mystery">Command Line Mystery</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/homework/unit_01/accessibility/accessibility-and-a-smarter-way.md">Homework</a>
