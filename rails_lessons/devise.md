@@ -31,7 +31,8 @@ We use Devise in Rails for authN. For authZ, we use CanCan.
 
 ```bash
 cd ~/rails_projects
-rails new devise_cancan -d postgresql
+rails new devise_tutorial -d postgresql
+cd devise_tutorial
 rails db:setup
 rails db:migrate
 ```
