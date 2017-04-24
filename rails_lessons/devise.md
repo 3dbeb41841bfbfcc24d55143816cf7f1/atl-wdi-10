@@ -398,6 +398,7 @@ Create a new Rails app with four pages:
 * Welcome -- Only visitors (aka unauthenticated users) can see
 * Support -- Only authenticated users can see
 * Configure -- Only admins can see
+* Create a navbar and hide/show based on logged in and/or admin
 
 Bonus:
 
