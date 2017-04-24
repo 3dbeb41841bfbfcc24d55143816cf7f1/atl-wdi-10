@@ -44,7 +44,7 @@ as well as Vendor Prefixes
 
 For example, we have more control over how the animation repeats, we can change between multiple values at once, etc.
 
-**Vendor Prefixes** - A prefix provides browser support for features that are not fully supported.  If you are using chrome, you won't need to add a prefix to any of the properties used this lesson, but in general, it's a good idea to check **Can I Use** (http://www.caniuse.com) to see if you need to use prefixes to support most users/browsers. For CSS Animations, you should use prefixes to ensure support for Safari, IE, and other browsers.
+**Vendor Prefixes** - A prefix provides browser support for features that are not fully supported.  If you are using chrome, you will not need to add a prefix to any of the properties used this lesson, but in general, it's a good idea to check **Can I Use** (http://www.caniuse.com) to see if you need to use prefixes to support most users/browsers. For CSS Animations, you should use prefixes to ensure support for Safari, IE, and other browsers.
 
 **Vendor Prefixes**
     <br />
@@ -92,7 +92,7 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 
 ## Create Basic Transitions in CSS
 
-Transitions are a way to introduce **timing** to a given effect. In order to use any effect, you first need to define an initial state and a final state for the element that you would like to change.
+**Transitions** are a way to introduce **timing** to a given effect. In order to use any effect, you first need to define an **initial state** and a **final state** for the element that you would like to change.
 
 <!-- ```css
 a {
@@ -196,32 +196,32 @@ Next, add a transition property:
 1. Create a 100px by 100px square box that has a background color of tomato.
 1. Write a CSS rule that will transition your div from this initial state:
 
-    ```css
-    div {
-        background: tomato;
-        width: 100px;
-        height: 100px;
+```css
+div {
+    background: tomato;
+    width: 100px;
+    height:å 100px;
 }
 ```
 
 1. Add to this final state... Write a CSS rule that changes the background color to turquoise when you hover over the element with your mouse
 
-    ```css
-    div:hover {
-        background: turquoise;
-    }
+```css
+div:hover {
+    background: turquoise;
+}
 ```
 
 1. Let's make that transition a little smoother:
 
-    ```css
-    div {
-        ...  
-        transition-duration: 3s;
-        transition-property: background; /* specify which property you want to transition */
-        transition-timing-function: linear;
-    }
-    ```
+```css
+div {
+    ...  
+    transition-duration: 3s;
+    transition-property: background; /* specify which property you want to transition */
+    transition-timing-function: linear;
+}
+```
 
 - There are many timing functions. Check them out at http://easings.net
 
