@@ -80,15 +80,15 @@ What is the command to create a directory? To change directories?
 
 ```bash
 $ cd ~
-$ mkdir dev
-$ cd dev
+$ mkdir ga
+$ cd ga
 $ mkdir notes
 $ mkdir unit_projects
 ```
 
-Your `dev` directory will be where you store all of the code related files, notes, and projects.
+Your `ga` directory will be where you store all of the code related files, notes, and projects.
 
-Tomorrow you'll clone the GitHub class repo into your `dev` directory.
+Tomorrow you'll clone the GitHub class repo into your `ga` directory.
 
 ## Interacting with your classroom
 
