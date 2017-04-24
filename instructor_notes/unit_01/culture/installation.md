@@ -24,7 +24,7 @@ competencies: Course Prep
 
 Brew is a piece of software that runs in the Terminal. The Homebrew commands can be run from any directory on your computer. Using the Homebrew command `brew` you can install other pieces of software, frequently referred to as packages.
 
-We'll use it install all kinds of things throughout WDI: from Git and Node to Ruby and Rails.
+We'll use it to install all kinds of things throughout WDI: from Git and Node to Ruby and Rails.
 
 
 #### To install homebrew

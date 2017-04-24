@@ -29,12 +29,12 @@ This is it: [The Five Obstructions Animation](https://www.youtube.com/watch?v=9-
 
 ## Intro
 
-Today we'll be covering 3 major topics:
+Today we will be covering 3 major topics:
 
 * CSS Transitions
 * CSS Transforms (2D)
 * CSS Animations
-* Vendor Prefixes
+as well as Vendor Prefixes
 
 **Transitions** let us tell the browser how to smoothly change a property over time. For example, if the height of an element changes (due to a :hover selector), we can tell the browser to change the height gradually over 1 second.
 
