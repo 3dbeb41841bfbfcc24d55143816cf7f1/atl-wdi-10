@@ -59,7 +59,7 @@ https://vimeo.com/85040589
   - After class hours
   - COLLABORATE!!
 
-## Student Expectations (Gabby)
+## Student Expectations (Maren)
 1. Be Present
   - Attendance at 9:00 AM
   - Pay attention
@@ -93,8 +93,6 @@ Plagiarism includes copying homework solutions and switching content around.
 If an instructor is in doubt of a students work or has evidence of plagiarism, the student will be asked to justify the work they've submitted. This often is in the context of making you explain your code line by line. Should they be unable to show the work they have claimed as their own is in fact theirs, the student will face disciplinary action.
 
 Instances of plagiarism will be evaluated on a case by case basis, but will most likely result in removal from the program
-
-## Intro to Assessments and Exit Tickets (Gabby)
 
 ## Stand-Up (Danny)
 - Yesterday (What's been a win since your last Standup?)
@@ -133,6 +131,4 @@ Instances of plagiarism will be evaluated on a case by case basis, but will most
 
 ## Briefly Tell Us About You
 - What's your name?
-- Where are you from?
-- What were you doing before WDI?
 - What do you hope to do with your WDI skills?
