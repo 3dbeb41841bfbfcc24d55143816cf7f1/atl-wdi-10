@@ -35,19 +35,19 @@ When you think back to a favorite trip, you most likely took a lot of snapshots,
 
 These are some snapshots from a recent trip to New York.
 
-Blue Bottle
+#### Blue Bottle
 ![](https://i.imgur.com/Fs9zMpg.png)
 
-Little Italy
+#### Little Italy
 ![](https://i.imgur.com/9fAu6x9.png)
 
-At MOMA
+#### At MOMA
 ![](https://i.imgur.com/h0HW09p.png)
 
-Klimt
+#### Klimt
 ![](https://i.imgur.com/IlcrZhA.png)
 
-Marilyn
+#### Marilyn
 ![](https://i.imgur.com/05cMsBV.png)
 
 <!-- These are some snapshots from a trip that I took to Nepal to meet with a group called Women's Empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
