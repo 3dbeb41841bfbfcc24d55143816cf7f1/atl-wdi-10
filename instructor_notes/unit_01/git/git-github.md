@@ -33,7 +33,24 @@ creator:
 ## Hook (5m)
 When you think back to a favorite trip, you most likely took a lot of snapshots, maybe you created a photo album as a keepsake upon return.  You have these moments, that allow you to time travel back to those moments and remember what happened.
 
-These are some snapshots from a trip that I took to Nepal to meet with a group called Women's Empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
+These are some snapshots from a recent trip to New York.
+
+Blue Bottle
+![](https://i.imgur.com/Fs9zMpg.png)
+
+Little Italy
+![](https://i.imgur.com/9fAu6x9.png)
+
+At MOMA
+![](https://i.imgur.com/h0HW09p.png)
+
+Klimt
+![](https://i.imgur.com/IlcrZhA.png)
+
+Marilyn
+![](https://i.imgur.com/05cMsBV.png)
+
+<!-- These are some snapshots from a trip that I took to Nepal to meet with a group called Women's Empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
 ### Women's Empowerment leaders
 ![Women's empowerment leaders](https://i.imgur.com/Zwaa4Bw.jpg)
 ### View of the Himalayas
@@ -45,7 +62,7 @@ These are some snapshots from a trip that I took to Nepal to meet with a group c
 ### Prayer bells at the Monkey Temple
 ![Prayer bells at the Monkey temple](https://i.imgur.com/nVGfRYz.jpg)
 ### Traditional Women's Clothing
-![Traditional dress](https://i.imgur.com/rMFihvS.jpg)
+![Traditional dress](https://i.imgur.com/rMFihvS.jpg) -->
 
 Similarly, git is a software that allows us to keep track, or keep snapshots, of our projects as we develop them.
 
