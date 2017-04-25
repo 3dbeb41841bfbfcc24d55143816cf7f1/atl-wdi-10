@@ -43,10 +43,10 @@ $ git --version
 - `git --version` will output which version of git you have
 
 4. Run each of the following commands in the terminal
-(substituting in your personal information as appropriate).
+(substituting in your personal information for what is in the quotes).  **Make sure to use the same username and email that you use in github.**
 
 ```bash
-git config --global user.name "arbitraryUsername"
+git config --global user.name "yourGithubUsername"
 git config --global user.email "your_github_email@example.com"
 ```
 
@@ -54,14 +54,13 @@ git config --global user.email "your_github_email@example.com"
 $ git config --get user.name
 ```
 
-- will output your name
+- should output your name
 
 ```bash
 $ git config --get user.email
 ```
 
-- will output your email
-
+- should output your email
 
 5. To check to see if you have set up an ssh key, run this command
 
@@ -69,18 +68,15 @@ $ git config --get user.email
 $ ls ~/.ssh/id_rsa
 ```
 
-- if you have, it will output '/Users/[something]/.ssh/id_rsa'
+- if you have one, it will output '/Users/[something]/.ssh/id_rsa'
 - if you see 'No such file or directory', you have not created an ssh key
 
-
-#### If you haven't yet created a ssh key, follow this link.
+#### If you have not yet created a ssh key, follow this link.
 [generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 
-
-- I set mine up without a passphrase
+**I set mine up without a passphrase.**
 
 <br />
-
 
 4. You are also going to install brew cask and atom/sublime and [spectacle](https://www.spectacleapp.com/).
 
@@ -97,18 +93,16 @@ $ brew tap caskroom/cask
 
 But what's a [sym link](https://en.wikipedia.org/wiki/Symbolic_link)? Well, ideally you should be able to open files from  your terminal/bash using the command subl/atom and the file/directory name.
 
-
 ```bash
 $ brew cask install sublime-text3
 $ brew cask install spectacle
 ```
 
-
 <br />
 
 ## Configure your Git Prompt
 
-1. Copy and paste the contents of this [file](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh ) into `~/.git-prompt.sh`
+1. Run through the commands below.  The touch command will create your git-prompt file.  The subl command will open that file in sublime.  Then, click on this link and copy/paste its contents into your `~/.git-prompt.sh`- [git prompt contents](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh ) 
 
 ```bash
 # To create the file
@@ -116,20 +110,20 @@ $ touch ~/.git-prompt.sh
 $ subl ~/.git-prompt.sh
 ```
 
-2. Create a `.bash_profile` in your home directory, if it doesn't already exist
+2. If you don't have a bash-profile in your home directory, run through the commands below to touch/create a `.bash_profile`.  Then, open the file in sublime.
 
 ```bash
 $ touch ~/.bash_profile
 $ subl ~/.bash_profile
 ```
 
-3. In that file paste the following:
+3. In that file paste the following code:
 
-```bash
+<!-- ```bash
 # Load .bashrc, if it exists.
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
-```
+``` -->
 
 ```bash
 # This will load the .git_prompt file each time you open Terminal window. 
@@ -194,11 +188,9 @@ If everything's working, you should get a response like the following:
 Hi your Username! You\'ve succesfully authenticated, but GitHub does not provide shell access.
 ```
 
-Congratulations! You now have Git and GitHub set up and configured.
-
+Congratulations! You now have **Git** and **GitHub** set up and configured.
 
 ---
-
 
 ## [Linux or Windows Instructions](http://docs.railsbridge.org/installfest/choose_your_operating_system)
 
