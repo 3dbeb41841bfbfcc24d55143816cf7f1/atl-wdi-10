@@ -44,11 +44,11 @@ These are some snapshots from a recent trip to New York.
 ### At MOMA
 ![](https://i.imgur.com/h0HW09p.png)
 
-### Klimt
+### Gustav Klimt- Hope, ||
 ![](https://i.imgur.com/IlcrZhA.png)
 
-<!-- #### Marilyn
-![](https://i.imgur.com/05cMsBV.png) -->
+### Andy Warhol's- Portraits of Marilyn Monroe
+![](https://i.imgur.com/05cMsBV.png)
 
 <!-- These are some snapshots from a trip that I took to Nepal to meet with a group called Women's Empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
 ### Women's Empowerment leaders
@@ -64,7 +64,7 @@ These are some snapshots from a recent trip to New York.
 ### Traditional Women's Clothing
 ![Traditional dress](https://i.imgur.com/rMFihvS.jpg) -->
 
-Similarly, git is a version control software that allows us to keep track, or keep snapshots, of our projects as we develop them.
+Similarly, git is a distributed version control system that allows us to keep track, or keep snapshots, of our projects as we develop them.
 
 <br />
 
@@ -72,15 +72,20 @@ Similarly, git is a version control software that allows us to keep track, or ke
 
 ## YOU DO (15m)
 
-Spend the next 15 minutes reading the first 4 chapters from this website: https://swcarpentry.github.io/git-novice/01-basics/
-- Automated version control
-- Setting up git
-- Creating a repository
-- Tracking change 
+Spend the next 15 minutes reading the first 4 chapters from this website: https://git-scm.com/book/en/v2
+- Getting Started - About Version Control
+- A Short History of Git
+- Git Basics
+- The Command Line
+
+<!-- https://www.atlassian.com/git/tutorials/what-is-version-control
+- What is version control
+- What is Git 
+- Why Git for your Organization -->
 
 <br />
 
-### Then, spend the next few minutes discussing the following questions with your buddy (3m)
+### Then, discussing the following questions with your buddy (3m)
   - Assuming that version control systems did not exist, how would you:
     - Share your source code with other developers?
     - Collaborate with other developers
@@ -205,7 +210,7 @@ Today, we will learn a bit about how Git works, enough to learn how to use it fo
 Even though you don't need to know how they work, it is useful to know that your local repository consists of three "trees" that are maintained by Git.
 
 - **Working Directory**: the directory and subdirectories containing the files we are currently working on and which holds the actual files.
-- **Index/Staging**: a staging area where we list the changes we want to commit
+- **Index/Staging Area**: a staging area where we list the changes we want to commit
 - **HEAD**: which points to the last commit you have made 
 
 ### More terminology
@@ -215,7 +220,8 @@ Even though you don't need to know how they work, it is useful to know that your
 - **Master** - the default name for the "main" development branch
 
 <!-- ![workflow](https://cloud.githubusercontent.com/assets/40461/8221736/f1f7e972-1559-11e5-9dcb-66b44139ee6f.png) -->
-![workflow](https://i.imgur.com/Y7wd0Yd.png)
+<!-- ![workflow](https://i.imgur.com/Y7wd0Yd.png) -->
+![workflow](https://i.imgur.com/QDbCnZy.png)
 
 <br />
 
