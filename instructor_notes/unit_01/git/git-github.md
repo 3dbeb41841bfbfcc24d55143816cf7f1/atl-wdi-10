@@ -36,7 +36,7 @@ When you think back to a favorite trip, you most likely took a lot of snapshots,
 These are some snapshots from a recent trip to New York.
 
 #### Blue Bottle
-![](https://i.imgur.com/Fs9zMpg.png)
+![](https://i.imgur.com/qfALEqw.png)
 
 #### Little Italy
 ![](https://i.imgur.com/9fAu6x9.png)
