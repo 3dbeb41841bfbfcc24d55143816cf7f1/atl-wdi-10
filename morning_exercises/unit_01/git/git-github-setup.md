@@ -13,11 +13,12 @@ your respective GitHub accounts.
 (if you have not already done so)
 by running the following command from the terminal.
 
-    - [brew documentation](http://brew.sh/)
+- [brew documentation](http://brew.sh/)
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
 2. Next, run Homebrew's built-in diagnostic tool with the command `brew doctor`.
 You may see a list of various different errors and warnings; if so, please flag
 an instructor and get their assistance.
@@ -26,45 +27,50 @@ an instructor and get their assistance.
 
 3. Once you see that message, run these commands in bash:
 
-    ```bash
+```bash
 $ brew update
 $ brew upgrade
 $ brew -v
 ```
-    - will output your version of homebrew
-    ```bash
+- will output your version of homebrew
+
+```bash
 $ brew install git
 $ git --version
 ```
-    - this will download and install Git with Homebrew
-    - `git --version` will output which version of git you have
+
+- this will download and install Git with Homebrew
+- `git --version` will output which version of git you have
 
 4. Run each of the following commands in the terminal
 (substituting in your personal information as appropriate).
 
-    ```bash
+```bash
 git config --global user.name "arbitraryUsername"
 git config --global user.email "your_github_email@example.com"
 ```
 
-    ```bash
+```bash
 $ git config --get user.name
 ```
-    - will output your name
 
-    ```bash
+- will output your name
+
+```bash
 $ git config --get user.email
 ```
-    - will output your email
+
+- will output your email
 
 
 5. To check to see if you have set up an ssh key, run this command
 
-    ```bash
+```bash
 $ ls ~/.ssh/id_rsa
 ```
-    - if you have, it will output '/Users/[something]/.ssh/id_rsa'
-    - if you see 'No such file or directory', you have not created an ssh key
+
+- if you have, it will output '/Users/[something]/.ssh/id_rsa'
+- if you see 'No such file or directory', you have not created an ssh key
 
 
 #### If you haven't yet created a ssh key, follow this link.
@@ -78,9 +84,9 @@ $ ls ~/.ssh/id_rsa
 
 4. You are also going to install brew cask and atom/sublime and [spectacle](https://www.spectacleapp.com/).
 
-    - [Brew Caskroom](https://caskroom.github.io/)
+- [Brew Caskroom](https://caskroom.github.io/)
 
-    ```
+```
 $ brew tap caskroom/cask
 ```
 
@@ -104,7 +110,7 @@ $ brew cask install spectacle
 
 1. Copy and paste the contents of this [file](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh ) into `~/.git-prompt.sh`
 
-    ```bash
+```bash
 # To create the file
 $ touch ~/.git-prompt.sh
 $ subl ~/.git-prompt.sh
@@ -112,7 +118,7 @@ $ subl ~/.git-prompt.sh
 
 2. Create a `.bash_profile` in your home directory, if it doesn't already exist
 
-    ```bash
+```bash
 $ touch ~/.bash_profile
 $ subl ~/.bash_profile
 ```
@@ -142,12 +148,12 @@ export PS1='\u:\W$(__git_ps1 " (%s)")\$ '
 $ git config --global core.editor "subl -n -w"
 $ git config --list
 ```
-    - `--global` means that you should use these settings for every project
-    - You should see a list of the settings that you have configured
+
+- `--global` means that you should use these settings for every project
+- You should see a list of the settings that you have configured
 
 
-5. Then, create a new file called `.gitignore` in your home directory, and copy
-the contents of [this file](https://raw.githubusercontent.com/ga-wdi-boston/orientation/master/.gitignore)
+5. Then, create a new file called `.gitignore` in your home directory, and copy the contents of [this file](https://raw.githubusercontent.com/ga-wdi-boston/orientation/master/.gitignore)
 into it.
 
 Run `git config --global core.excludesfile ~/.gitignore` in the terminal.
@@ -167,10 +173,7 @@ Feel free to put in a password or select a non-default location for your keys,
 but it's not necessary to do so; you can just keep hitting enter to move ahead.
 
 Once the key's been created, add it to your system (`ssh-add ~/.ssh/id_rsa`),
-and then copy it to your clipboard (`pbcopy < ~/.ssh/id_rsa.pub`). Then, go to
-[https://github.com/settings/ssh](https://github.com/settings/ssh) and click
-'New Key'; paste in the key you've just created, and give that key a name of
-your choosing.
+and then copy it to your clipboard (`pbcopy < ~/.ssh/id_rsa.pub`). Then, go to [https://github.com/settings/ssh](https://github.com/settings/ssh) and click 'New Key'; paste in the key you've just created, and give that key a name of your choosing.
 
 Your key is now on both Git and GitHub! To test the connection, run
 
