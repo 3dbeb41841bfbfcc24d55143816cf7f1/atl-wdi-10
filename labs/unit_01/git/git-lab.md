@@ -21,6 +21,7 @@
 #### Try Git- Code School: https://www.codeschool.com/courses/try-git 
 
 #### Atlassian Tutorial: https://www.atlassian.com/git/tutorials/what-is-version-control
+- You can just continue using github for this, instead of bitbucket.
 
 #### Git Real- code school: https://www.codeschool.com/courses/git-real- only the first level is free
 
