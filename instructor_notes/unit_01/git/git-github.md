@@ -31,20 +31,20 @@ creator:
 <br />
 
 ## Hook (5m)
-When you think back to a favorite trip, you most likely took a lot of snapshots, maybe you created a photo album as a keepsake upon return.  You have these moments, that allow you to time travel back to those moments and remember what happened.
+When you think back to a favorite trip, you most likely took a lot of photos.  You have these moments, that allow you to time travel back to those moments and remember what happened.
 
 These are some snapshots from a recent trip to New York.
 
-#### Blue Bottle
+### Blue Bottle
 ![](https://i.imgur.com/qfALEqw.png)
 
-#### Little Italy
+### Little Italy
 ![](https://i.imgur.com/9fAu6x9.png)
 
-#### At MOMA
+### At MOMA
 ![](https://i.imgur.com/h0HW09p.png)
 
-#### Klimt
+### Klimt
 ![](https://i.imgur.com/IlcrZhA.png)
 
 <!-- #### Marilyn
@@ -64,7 +64,7 @@ These are some snapshots from a recent trip to New York.
 ### Traditional Women's Clothing
 ![Traditional dress](https://i.imgur.com/rMFihvS.jpg) -->
 
-Similarly, git is a software that allows us to keep track, or keep snapshots, of our projects as we develop them.
+Similarly, git is a version control software that allows us to keep track, or keep snapshots, of our projects as we develop them.
 
 <br />
 
