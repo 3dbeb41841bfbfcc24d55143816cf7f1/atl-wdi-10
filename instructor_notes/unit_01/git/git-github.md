@@ -72,7 +72,7 @@ Similarly, git is a **distributed version control system** that allows us to kee
 
 ## YOU DO (15m)
 
-Spend the next 15 minutes reading the first 4 chapters from this website, Pro Git: https://git-scm.com/book/en/v2
+Spend the next 15 minutes reading the first 4 sections from this website, Pro Git: https://git-scm.com/book/en/v2
 - Getting Started - About Version Control
 - A Short History of Git
 - Git Basics
@@ -647,7 +647,7 @@ As a developer, you will use Git everyday. The learning curve is steep and all o
 Don't get frustrated by all of the new commands because we will have plenty of time to practice them during this course.
 
 
-##BREAK
+## BREAK
 
 
 ## Labtime
