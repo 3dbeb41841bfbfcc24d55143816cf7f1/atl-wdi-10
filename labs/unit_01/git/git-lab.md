@@ -34,5 +34,5 @@
 #### Learn Git Branching- http://learngitbranching.js.org/
 - This will be helpful when we get into our group projects
 - Or if you like to keep your master branch pristine and experiment on a different branch
-<br />
+
 #devpreferences
