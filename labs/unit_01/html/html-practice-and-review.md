@@ -1,22 +1,28 @@
 # HTML Practice and Review Exercise
 
 ## Create This Mockup
-See if you can create the HTML for this mockup by following the steps below. Don't worry about the CSS. We'll add that tomorrow!
+See if you can create the HTML for this mockup by following the steps below. If you get to the basic structure for CSS, go for it.  Otherwise, don't worry about it. 
 
 ![Mockup](https://i.imgur.com/VWjFZnC.png)
 
 ## Initializing a page
-1. In your `dev` folder:
-    - create a new folder called `html_blog_practice`
-    - create an `index.html`
+1. In your `~/Desktop/ga` folder:
+    - create/mkdir a new folder called `labs`
+    - cd into it
+    - create/mkdir a new folder called `unit_01`
+    - cd into it
+    - create/mkdir a new folder called `html_blog_practice`
+    - cd into it
+    - create/touch an `index.html`
+    - `subl .` the folder
     - set up a basic html page with `DOCTYPE`, `html`, `head`, and `body` tags.
 1. Add some content to the page
-1. Open the page in your browser
+1. Open the page in your browser- right click on the page to open it
 
 ## basic tags
 1. Pretend you are preparing a paper with title, headings, and sub headings
 1. Add the relevant heading tags
-1. Add some fake content as if they were paragraphs
+1. Add some fake content as if they were paragraphs- use your favorite lorem ipsum
 
 ## specific structure
 1. In your page, add `header`, `footer`, `main`, `section`, and `nav` tags where appropriate
@@ -36,6 +42,10 @@ See if you can create the HTML for this mockup by following the steps below. Don
 ## Describe what Semantic HTML means
 1. Go to a favorite web page of yours
 1. Write down what kind of tag you think is being used for each piece of text
+
+**If you want to get an idea of colors on a webpage, I use the chrome extension- eye dropper.  It allows you to pick a color on a web page, and will show you the hsl, rgb, hex and color variable name (if there is one).**
+
+<br />
 
 ## Other Topics
 

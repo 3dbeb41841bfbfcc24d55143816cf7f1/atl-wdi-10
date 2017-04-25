@@ -1,12 +1,10 @@
 # Git Lab
 
-#### Learn Enough to Be Dangerous: https://www.learnenough.com/git-tutorial
+## Books to Read
 
-#### Try Git- Code School: https://www.codeschool.com/courses/try-git 
+#### Learn Enough to Be Dangerous- Book + Tutorial: https://www.learnenough.com/git-tutorial
 
 #### Pro Git: https://git-scm.com/book/en/v2
-
-#### Version Control with Git: https://code.tutsplus.com/tutorials/easy-version-control-with-git--net-7449
 
 #### Git Immersion: http://gitimmersion.com/
 
@@ -14,20 +12,22 @@
 
 #### Git Magic: http://www-cs-students.stanford.edu/~blynn/gitmagic/
 
-#### Git in Action: https://vimeo.com/16395537
+#### Git in Action- 18 minute video: https://vimeo.com/16395537
 
-#### Atlassian Git Lab: https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/git/atlassian-lab.md
+<br />
 
-#### Work through the Atlassian Tutorial- https://www.atlassian.com/git/tutorials/what-is-version-control
+## More interactive git tutorials:
 
-##### Beginner
-1. Read 'What is version control'
-2. Read 'What is Git'
+#### Try Git- Code School: https://www.codeschool.com/courses/try-git 
 
-##### Getting Started
-1. Read 'Setting up a Repository'
-2. Read 'Saving Changes'
-3. Read 'Inspecting a Repository'
+#### Atlassian Tutorial: https://www.atlassian.com/git/tutorials/what-is-version-control
 
-##### Learn Git
-1. Go through tutorial
+#### Git Real- code school: https://www.codeschool.com/courses/git-real- only the first level is free
+
+#### Learn Enough to be Dangerous- book + tutorial: https://www.learnenough.com/git-tutorial
+
+#### Git in Action (an 18 minute video that's really good): https://vimeo.com/16395537
+
+#### Git Immersion is good as well: http://gitimmersion.com/
+
+#### Learn Git Branching- this will be helpful when we get into projects, or if you like to keep your master branch pristine and experiment on a different branch- http://learngitbranching.js.org/

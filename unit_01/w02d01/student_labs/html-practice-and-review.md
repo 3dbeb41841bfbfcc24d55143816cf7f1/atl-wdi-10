@@ -5,9 +5,6 @@ See if you can create the HTML for this mockup by following the steps below. Don
 
 ![Mockup](mockup.png)
 
-
-
-
 ## Initializing a page
 1. In your `dev` folder:
     - create a new folder called `html_blog_practice`
