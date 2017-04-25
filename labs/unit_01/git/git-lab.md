@@ -8,7 +8,7 @@
 
 #### Git Immersion: http://gitimmersion.com/
 
-#### Git from the bottom up:http://ftp.newartisans.com/pub/git.from.bottom.up.pdf
+#### Git from the Bottom Up: http://ftp.newartisans.com/pub/git.from.bottom.up.pdf
 
 #### Git Magic: http://www-cs-students.stanford.edu/~blynn/gitmagic/
 
