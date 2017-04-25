@@ -30,4 +30,5 @@
 
 #### Git Immersion is good as well: http://gitimmersion.com/
 
-#### Learn Git Branching- this will be helpful when we get into projects, or if you like to keep your master branch pristine and experiment on a different branch- http://learngitbranching.js.org/
+#### Learn Git Branching- http://learngitbranching.js.org/
+- this will be helpful when we get into projects, or if you like to keep your master branch pristine and experiment on a different branch
