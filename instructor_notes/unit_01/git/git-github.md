@@ -47,8 +47,8 @@ These are some snapshots from a recent trip to New York.
 #### Klimt
 ![](https://i.imgur.com/IlcrZhA.png)
 
-#### Marilyn
-![](https://i.imgur.com/05cMsBV.png)
+<!-- #### Marilyn
+![](https://i.imgur.com/05cMsBV.png) -->
 
 <!-- These are some snapshots from a trip that I took to Nepal to meet with a group called Women's Empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
 ### Women's Empowerment leaders
