@@ -7,14 +7,14 @@ See if you can create the HTML for this mockup by following the steps below. If 
 
 ## Initializing a page
 1. In your `~/Desktop/ga` folder:
-    - create/mkdir a new folder called `labs`
+    - create (mkdir) a new folder called `labs`
     - cd into it
-    - create/mkdir a new folder called `unit_01`
+    - create (mkdir) a new folder called `unit_01`
     - cd into it
-    - create/mkdir a new folder called `html_blog_practice`
+    - create (mkdir) a new folder called `html_blog_practice`
     - cd into it
-    - create/touch an `index.html`
-    - `subl .` the folder
+    - create (touch) an `index.html`
+    - `subl .` into the folder
     - set up a basic html page with `DOCTYPE`, `html`, `head`, and `body` tags.
 1. Add some content to the page
 1. Open the page in your browser- right click on the page to open it
