@@ -186,7 +186,7 @@ The answer is true!
 
 Git and Github just share a similar name, but GitHub is a platform in the browser where we can share repos/code with each other. And we use git, locally, to keep track of our files, and then we push those files/changes to GitHub.
 
-You can certainly use Git without GitHub! The Visual Studio Team offers a version control.  And Bitbucket also has one. But GitHub is an industry standard.
+You can certainly use Git without GitHub! The Visual Studio Team offers a version control system.  And Bitbucket also has one. But GitHub is an industry standard.
 
 <br />
 
@@ -200,7 +200,7 @@ I don't need to explain music theory to you in order to play the guitar.  It may
 
 Today, we will learn a bit about how Git works, enough to learn how to use it for this class - by keeping track of homework and classwork. Through this process, we will better understand how we will use it as professional developers.
 
-> Things we did not discuss/need to know right now, but might be curious to know about in the future!
+> Things we did not discuss/need to know right now, but you might be curious to know more about/research in the future!
 
 - [Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 - [SHA-1](https://en.wikipedia.org/wiki/SHA-1)
@@ -235,7 +235,7 @@ There are a lot of commands available for git. You can look at the list of these
 $ git help -a
 ```
 
-We can see that there is an inordinate amount of commands, however, during this course we will probably only utilize about 10 of them.
+We can see that there is a large number of commands, however, during this course we will probably only utilize about 10 of them.
 
 <br />
 
@@ -289,7 +289,7 @@ If we look at the contents of this empty folder using:
 $ ls -A
 ```
 
-- What does `la` mean?
+- What does `ls` mean?
 - What does `-A` mean?
 
 We should see that there is now a hidden folder called `.git`. This is where all of the information about your project is stored. This folder allows us to control our git flow using `git` commands.  **If you delete this folder, you will lose your project's history.** So, just don't do it.
