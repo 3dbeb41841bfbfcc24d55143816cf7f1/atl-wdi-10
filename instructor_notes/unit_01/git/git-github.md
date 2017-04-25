@@ -175,7 +175,7 @@ Git was created by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds
 
 ### Can you use git without GitHub?
 
-Think about this quote: “Git is software. GitHub is company that happens to use Git software.”  
+Think about this quote: “Git is software. GitHub is a company that happens to use Git software.”  
 
 **Exercise:** If you think this statement is true, react to with a thumbs up.  If you think it is false, a thumbs down. 
 
