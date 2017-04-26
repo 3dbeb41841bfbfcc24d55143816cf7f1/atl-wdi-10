@@ -318,7 +318,7 @@ If your script tags are placed in the head of your document, your html will wait
 
 **YOU DO**
 
-1. Create the initial structure of the page
+1. Create the initial structure of the page, that will be about our post WDI plans.
     - `cd ~/Desktop/ga`
     - `mkdir html-css-intro`
     - `cd` into the folder - `cd html-css-intro`
@@ -341,8 +341,6 @@ For example: `<p></p>` - paragraph tag, block element, used for basic text on a 
 
 ---
 
-<br />
-
 ### Basic Tags
 
 ##### h1, h2, h3, h4, h5, h6
@@ -358,20 +356,26 @@ Of course a website is more than just headers and paragraphs.  It has many secti
 
 See also [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.asp)
 
-##### All HTML5 Elements
-1. header
+#### All HTML5 Elements
+##### header
   - could contain elements like a logo and a nav bar.  Perhaps the title of the page too?
-2. footer
+
+##### footer
   - could contain disclaimers, copyrights, and less important links (privacy, terms and conditions, legal, etc).
-3. main
+
+##### main
   - the bulk of your site goes in here
-4. section
+
+##### section
   - within some of the tags listed above, there can be different sections.  Use this tag to block off those sections.
-5. nav
+
+##### nav
   - this will hold navigation links
-6. article
+
+##### article
   - if you're writing a blog, or have a page with many self contained sections, you might think about using the article tag
-7. aside
+
+##### aside
   - this is for tangential material.  Sidebars, inserts, etc.
 
 <br />
@@ -381,37 +385,37 @@ See also [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.a
 In the `index.html` file you created earlier...
 
 1. Add a `header` tag for your post WDI plans
-2. Add `title` tags and empty `nav` tags inside the `body` 
+2. Add empty `nav` tags inside the `body` 
 3. Add a `main` section
 4. Add a `footer` section with your name
 
 ---
 
-<br />
-
 ### Generic Structure
 
 Sometimes we need a tag that doesn't quite fit into any of the previously defined categories.  If this is the case, we can use one of two generic tags.
 
-1. div
+##### div
   - used to block out chunks of content
-1. span
+
+##### span
   - use inline, to separate out small bits of content (e.g. letters, words, sentences, etc)
 
 ### Elements
 
 Some elements are not structural, but will make the content display differently.
 
-1. ul/ol/li
+##### ul/ol/li
   - creates a list, either unordered (ul) or ordered (ol)
   - inside each `ul` or `ol` is a set of `li` list item elements.
 
 ### Styled Text
 
-1. em
+##### em
   - this will emphasize a chunk of text, usually making it italicized
   - best practice- use **em** instead of **i**
-1. strong
+
+##### strong
   - this will emphasize a chunk of text, usually making it bold.
   - best practice- use **strong** instead of *b*
 
@@ -425,21 +429,21 @@ Some elements are not structural, but will make the content display differently.
 
 In the `index.html` file you created earlier...
 
-1. Add a `ul` with 4 `li` tags to your `nav`
+1. Add a `ul` with 2 `li` tags to your `nav` called: Home and About
 2. Add styled text tags to some piece of content
-3. Add a `span` tag to a small piece of content
+3. Add a `p` tag with your favorite lorem ipsum
+4. Add a `span` tag to a small piece of content
 
 --- 
-
-<br />
 
 ### Decorative Elements
 
 Some elements do not contain content and instead are purely for decoration.  Elements that do not contain content are written like so- `<no-content-tag/>`.  Note it is a self-closing tag/there is no closing tag and the slash comes before the final `>`
 
-1. hr
+##### hr
   - horizontal rule, `<hr>` creates a divider
-1. br
+
+##### br
   - break, `<br />`, starts a new line in a chunk of text.
 
 ---
@@ -462,19 +466,22 @@ We can add more meaning to a tag by adding "attributes" to it.  It looks like `<
 
 ## Common tags with attributes
 
-1. a
+##### a
   - Anchor tag.  Creates a clickable link to another page.  It uses the `href` attribute to do so.
   - example: `<a href="http://www.google.com">This link will go to Google</a>`
   - note that the actual URL (location) of the page is hidden, and that only the content is shown.
-2. img
+
+##### img
   - self-closing tag, but contains a `src` attribute with the URL for the image
   - make sure to add an `alt` attribute, as you need this for accessibility purposes or if your image doesn't show up.
   - example: `<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google logo"/>`
-3. video
+
+##### video
   - like `img` but links to a video
   - example: `<video src="http://www.w3schools.com/html/mov_bbb.mp4"/>`
   - also has attributes like `autoplay`, `controls`, `loop`
-4. audio
+
+##### audio
   - like `img` and `video`
   - example: `<audio controls="true" src="http://www.w3schools.com/tags/horse.mp3" />`
 
@@ -486,6 +493,7 @@ In the `index.html` file you created earlier...
 
 1. Add a link to your GitHub repo in the `footer` section of your page.
 2. Add an image to your page
+- Make sure that you add an alt tag
 
 <br />
 
