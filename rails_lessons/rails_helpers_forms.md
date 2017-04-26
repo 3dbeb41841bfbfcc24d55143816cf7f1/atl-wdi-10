@@ -34,7 +34,7 @@ Rails gives us path helpers that correspond to specific routes in our applicatio
 ```bash
 $ rails routes
 ```
-We might see somethign like this:
+We might see something like this:
 
 ```bash
    Prefix Verb URI Pattern                     Controller#Action
@@ -106,15 +106,15 @@ Examples:
 
 ```
 <%= link_to @category.name, category_path(@category) %>
-<%= link_to "Edit Category", edit_ category_path(@ category) %>
+<%= link_to "Edit Category", edit_ category_path(@category) %>
 ```
 
 Note that Rails has a shortcut for the show path, instead of `category_path(@category)`,
 you can just pass in the model object itself.
 
 ```
-<%= link_to @category.name, @ category %>
-<%= link_to @ category.name, category_path(@ category) %>
+<%= link_to @category.name, @category %>
+<%= link_to @category.name, category_path(@category) %>
 ```
 
 Note that it doesn't have to be in an instance variable, what matters is that
@@ -137,7 +137,7 @@ can be used to set any attributes.
 Example:
 
 ```
-<%= link_to @category.name, @panda, class: "fancy-category" %>
+<%= link_to @category.name, @category, class: "fancy-category" %>
 ```
 
 For more examples, see the [API Docs for Rails link_to](http://apidock.com/rails/ActionView/Helpers/UrlHelper/link_to)
@@ -217,7 +217,7 @@ Important facts about the `form_for` helper:
   * If the object is not new (id exists, `object.new_record? == false`), it will create an form to update (prepopulated)
 * Methods to generate labels and inputs take one argument, the name of the attribute
 * The submit button takes an optional argument for the text on the button
-  * If you omit the argument, it will say either "Create Panda" or "Update Panda" accordingly (subbing in the name of your model)
+  * If you omit the argument, it will say either "Create Category" or "Update Category" accordingly (subbing in the name of your model)
 
 
 ## Why use form_for?
