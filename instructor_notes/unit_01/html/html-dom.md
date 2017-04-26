@@ -160,7 +160,7 @@ This statement will highlight the main content div, and we can click through and
 - In the console, type `document.getElementById('firstTitle');`
   <!-- - This statement will also highlight the first news title on the page, but in a different way. -->
 
-- As with our earlier Jezebel example, you can change the HTML in the inspector but when you re-render the page, the changes are gone, because we are only changing the DOM (What is the DOM?). Try `document.write('WDI Rocks!!!')`. (Traditionally, you only use document.write for testing purposes because you can't add any styles to it, and it overwrites everything else).
+- As with our earlier Jezebel example, you can change the HTML in the inspector but when you re-render the page, the changes are gone, because we are only changing the DOM (What is the DOM?). Try `document.write('WDI Rocks!!!')`. (Traditionally, you only use **document.write** for testing purposes because you can't add any styles to it, and it overwrites everything else).
 
 <br />
 
