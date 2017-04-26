@@ -155,9 +155,9 @@ This statement will highlight the main content div, and we can click through and
 - In the console, type `document.getElementsByClassName('headline')[0];`
   - We will discuss this more later, but getElementsByClassName, returns an array/list of items with that class.  Arrays are zero-indexed, which means that they start with zero, so we need to add that number in square brackets to highlight the first title. 
   - This will highlight the first news title on the page.
-- Update that title to have the id="firstTitle"
+- In the DOM, update that element's title to have the id="firstTitle"
   <!-- - The funny thing is that Jezebel doesn't really use ids, so in order to access and Id, we need to take the initiative to add it ourselves. -->
-- In the console, type `document.getElementById('first-title');`
+- In the console, type `document.getElementById('firstTitle');`
   <!-- - This statement will also highlight the first news title on the page, but in a different way. -->
 
 - As with our earlier Jezebel example, you can change the HTML in the inspector but when you re-render the page, the changes are gone, because we are only changing the DOM (What is the DOM?). Try `document.write('WDI Rocks!!!')`. (Traditionally, you only use document.write for testing purposes because you can't add any styles to it, and it overwrites everything else).
