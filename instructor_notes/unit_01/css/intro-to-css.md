@@ -16,7 +16,7 @@
 
 ## Hook: The Power of CSS (5 min / 10:00)
 
-To start this lesson, I want to mosey on over to my favorite website, [Twitter.com/GA_DC](https://twitter.com/GA_DC). It's pretty great. It's pretty fancy. But what would it be without CSS? Take 1 minute to talk with the people around you about how this wonder of the modern web would look different without CSS, and how that would impact your interactions with the site.
+To start this lesson, I want to mosey on over to my favorite website, [GA ATL Instagram](https://www.instagram.com/_gaatlanta/?hl=en). It's pretty great. It's pretty fancy. But what would it be without CSS? Take 1 minute to talk with the people around you about how this wonder of the modern web would look different without CSS, and how that would impact your interactions with the site.
 
 **Exercise** (1min) Share some ideas, then mute the stylesheets in DevTools and discuss anything surprising.
 
