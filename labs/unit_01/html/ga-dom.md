@@ -29,7 +29,7 @@ After some searching you will find that the header lives in a div with an id of 
 
 Is it gone? ... Nice work. Okay, so we know for sure that that's the div we want gone. So let's figure out how to do what we just did manually but in Javascript. Refresh the page and use one of the query selector functions to pull the div out of the tree and then delete it.
 
-![](https://i.imgur.com/hYwtexr.png)
+<!-- ![](https://i.imgur.com/hYwtexr.png) -->
 
 Nice job. Now we need to build a function to start documenting each of these scripts so we can ultimately write one complete function that will mod our google homepage in one go! We're gonna do this using a snippet. Here is the documentation: https://developers.google.com/web/tools/chrome-devtools/javascript/snippets
 
