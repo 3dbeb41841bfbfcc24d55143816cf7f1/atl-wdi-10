@@ -173,11 +173,16 @@ This statement will highlight the main content div, and we can click through and
 
 <details>
 <summary>Do you recognize any of these methods?</summary>
-##### [alert()](https://www.w3schools.com/jsref/met_win_alert.asp) will alert a message to the user.
-##### [focus()](https://www.w3schools.com/jsref/met_win_focus.asp) will set the focus in a new window
-##### [prompt()](https://www.w3schools.com/jsref/met_win_prompt.asp) displays a dialogue box to the user that prompts them for input
-##### [setInterval()](https://www.w3schools.com/jsref/met_win_setinterval.asp) calls a function or evaluates an expression at specified intervals (in milliseconds).
-##### [setTimeOut()](https://www.w3schools.com/jsref/met_win_settimeout.asp) calls a function or evaluates an expression after a certain amount of time (in milliseconds).
+- [alert()](https://www.w3schools.com/jsref/met_win_alert.asp) will alert a message to the user.
+<br />
+- [focus()](https://www.w3schools.com/jsref/met_win_focus.asp) will set the focus in a new window
+<br />
+- [prompt()](https://www.w3schools.com/jsref/met_win_prompt.asp) displays a dialogue box to the user that prompts them for input
+<br />
+- [setInterval()](https://www.w3schools.com/jsref/met_win_setinterval.asp) calls a function or evaluates an expression at specified intervals (in milliseconds).
+<br />
+- [setTimeOut()](https://www.w3schools.com/jsref/met_win_settimeout.asp) calls a function or evaluates an expression after a certain amount of time (in milliseconds).
+<br />
 **Remember: 1000ms = 1s**
 </details>
 
