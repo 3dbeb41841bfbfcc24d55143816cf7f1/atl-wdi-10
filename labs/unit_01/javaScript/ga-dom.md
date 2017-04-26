@@ -4,13 +4,15 @@ Let's get down and dirty with the DOM on a familiar yet unfamiliar website. www.
 
 Such a seemingly simple page:
 
-![](https://i.imgur.com/tN5tqit.png)
+![](https://i.imgur.com/Z0Ob5bl.png)
 
 But open up the Chrome Developer tools and you will discover a swamp of esoteric id's and classes, hidden input fields, and divs within divs within divs.
 
 So, what is your task? Utilizing your newfound knowledge of the DOM and Vanilla Javascript you are going to write a script to turn the Google homepage into a GA modded search page.
 
-![](https://i.imgur.com/4l2dtQj.png)
+Use this image: ![](https://i.imgur.com/4l2dtQj.png), and change the height to 95, and the width to 320.
+
+![](https://i.imgur.com/o7lm7vq.png)
 
 You can't just dive into this task without a plan. You will want spend a couple of minutes just exploring the DOM and trying to isolate what areas need to be deleted and what areas need to be changed or updated.
 
@@ -54,6 +56,6 @@ var ga_mod = function() {
 
 Nice now move on to the footer. The rest of this job is up to you! Good luck.
 
-Images:
+<!-- Images:
 - [gear](https://dl.dropboxusercontent.com/s/whkficbkox6t66a/Screen%20Shot%202016-01-24%20at%205.43.31%20PM.png)
-- [logo](https://dl.dropboxusercontent.com/s/e2iqc2r53r6omzn/General_Assembly_logo.png)
+- [logo](https://dl.dropboxusercontent.com/s/e2iqc2r53r6omzn/General_Assembly_logo.png) -->
