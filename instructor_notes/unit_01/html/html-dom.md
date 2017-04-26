@@ -173,17 +173,17 @@ This statement will highlight the main content div, and we can click through and
 
 <details>
 <summary>Do you recognize any of these methods?</summary>
-- `alert()`: (https://www.w3schools.com/jsref/met_win_alert.asp) will alert a message to the user.
+- alert(): (https://www.w3schools.com/jsref/met_win_alert.asp) will alert a message to the user.
 <br />
-- `focus()`: (https://www.w3schools.com/jsref/met_win_focus.asp) will set the focus in a new window
+- focus(): (https://www.w3schools.com/jsref/met_win_focus.asp) will set the focus in a new window
 <br />
-- `prompt()`: (https://www.w3schools.com/jsref/met_win_prompt.asp) displays a dialogue box to the user that prompts them for input
+- prompt(): (https://www.w3schools.com/jsref/met_win_prompt.asp) displays a dialogue box to the user that prompts them for input
 <br />
-- `setInterval()`: (https://www.w3schools.com/jsref/met_win_setinterval.asp) calls a function or evaluates an expression at specified intervals (in milliseconds).
+- setInterval(): (https://www.w3schools.com/jsref/met_win_setinterval.asp) calls a function or evaluates an expression at specified intervals (in milliseconds).
 <br />
-- `setTimeOut()`: (https://www.w3schools.com/jsref/met_win_settimeout.asp) calls a function or evaluates an expression after a certain amount of time (in milliseconds).
+- setTimeOut(): (https://www.w3schools.com/jsref/met_win_settimeout.asp) calls a function or evaluates an expression after a certain amount of time (in milliseconds).
 <br />
-**Remember: 1000ms = 1s**
+*** Remember: 1000ms = 1s ***
 </details>
 
 <br />
@@ -191,10 +191,13 @@ This statement will highlight the main content div, and we can click through and
 
 <details>
 <summary>What do you expect to see?</summary>
-- `window.location.href`: (https://www.w3schools.com/jsref/prop_loc_href.asp) returns the entire URL of the current page
-- `window.location.hostname`: (https://www.w3schools.com/jsref/prop_loc_hostname.asp) returns the host name or domain name of the URL
-- `window.location.pathname`: (https://www.w3schools.com/jsref/prop_loc_pathname.asp) returns the path of the URL
-- `window.location.protocol`: (https://www.w3schools.com/jsref/prop_loc_protocol.asp) returns the web protocol used (for example: http: or https:)- including the colon
+- window.location.href: (https://www.w3schools.com/jsref/prop_loc_href.asp) returns the entire URL of the current page
+<br />
+- window.location.hostname: (https://www.w3schools.com/jsref/prop_loc_hostname.asp) returns the host name or domain name of the URL
+<br />
+- window.location.pathname: (https://www.w3schools.com/jsref/prop_loc_pathname.asp) returns the path of the URL
+<br />
+- window.location.protocol: (https://www.w3schools.com/jsref/prop_loc_protocol.asp) returns the web protocol used (for example: http: or https:)- including the colon
 </details>
 
 <br />
