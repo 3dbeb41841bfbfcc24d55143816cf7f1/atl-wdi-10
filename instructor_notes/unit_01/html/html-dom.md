@@ -142,7 +142,7 @@ The `document.title` is going to output the title of the website, or what you se
 
 <br />
 - In the console, type `document.body.children[5]`.
-
+<br />
 <details>
 <summary>What do you expect to see?</summary>
 This statement will highlight the main content div, and we can click through and highlight other content from there.
