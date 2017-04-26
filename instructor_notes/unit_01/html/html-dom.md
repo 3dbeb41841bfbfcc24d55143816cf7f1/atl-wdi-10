@@ -320,6 +320,10 @@ If your script tags are placed in the head of your document, your html will wait
 
 1. Create the initial structure of the page, that will be about our post WDI plans.
     - `cd ~/Desktop/ga`
+    - `mkdir class-exercises`
+    - `cd` into the folder - `cd class-exercises`
+    - `mkdir unit-01`
+    - `cd` into the folder - `cd unit-01`
     - `mkdir html-css-intro`
     - `cd` into the folder - `cd html-css-intro`
     - `touch index.html`
@@ -527,7 +531,7 @@ Go to this [HTML Practice Exercise](https://github.com/ATL-WDI-Exercises/html-do
 
 ## Exercise #1
 
-Fork this [HTML/DOM](https://github.com/ATL-WDI-Exercises/html-dom) repo.  Using HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website:
+cd into your `~/Desktop/ga/labs/unit-01` folder.  Fork this [HTML/DOM](https://github.com/ATL-WDI-Exercises/html-dom) repo, and then clone it into your folder.  Using HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website:
 
 [How We Use Energy](http://needtoknow.nas.edu/energy/energy-use/)
 
@@ -536,7 +540,7 @@ Fork this [HTML/DOM](https://github.com/ATL-WDI-Exercises/html-dom) repo.  Using
 
 ## Exercise #2
 
-Work on the [Busy Hands](https://github.com/ATL-WDI-Exercises/busy-hands) exercise.
+Work on the [Busy Hands](https://github.com/ATL-WDI-Exercises/busy-hands) exercise, which is also in that folder.
 
 ---
 

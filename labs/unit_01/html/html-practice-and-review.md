@@ -6,11 +6,7 @@ See if you can create the HTML for this mockup by following the steps below. If 
 ![Mockup](https://i.imgur.com/VWjFZnC.png)
 
 ## Initializing a page
-1. In your `~/Desktop/ga` folder:
-    - create (mkdir) a new folder called `labs`
-    - cd into it
-    - create (mkdir) a new folder called `unit_01`
-    - cd into it
+1. In your `~/Desktop/ga/labs/unit-01` folder:
     - create (mkdir) a new folder called `html_blog_practice`
     - cd into it
     - create (touch) an `index.html`
