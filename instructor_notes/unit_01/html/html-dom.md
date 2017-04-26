@@ -311,7 +311,7 @@ Every site should start with these 5 tags:
 
 <details>
 <summary>Does anyone know why?</summary>
-If your `<script>` tags are placed in the `<head>` of your document, your html will wait to render until the javaScript has been loaded.  Therefore, it is best to place it at just before your closing body tag.
+If your script tags are placed in the head of your document, your html will wait to render until the javaScript has been loaded.  Therefore, it is best to place it at just before your closing body tag.
 </details>
 
 <br />
@@ -320,14 +320,16 @@ If your `<script>` tags are placed in the `<head>` of your document, your html w
 
 1. Create the initial structure of the page
     - `cd ~/Desktop/ga`
-    - `mkdir html_css_intro`
-    - `cd` into the folder - `cd html_css_intro`
+    - `mkdir html-css-intro`
+    - `cd` into the folder - `cd html-css-intro`
     - `touch index.html`
     - `subl .`
     - Create the basic html structure
 2. Add the meta tags for external `css` and `javascript` files.
     - `<link rel="stylehseet" type="text/css" href="style.css" />`
     - `<script src="main.js"></script>`
+
+**Make sure that you add them in the right place!**
 
 ---
 
@@ -343,10 +345,11 @@ For example: `<p></p>` - paragraph tag, block element, used for basic text on a 
 
 ### Basic Tags
 
-1. h1, h2, h3, h4, h5, h6
+##### h1, h2, h3, h4, h5, h6
   - These are headers.  Imagine you are giving a lecture and you would like to create an outline.  Headers will help a computer/programmer figure out what are the title, sub sections, sub-sub sections, etc. of your outline.  They allude to importance on an html page.
   - The lower the number, the more important the header is.  h1 tags are generally the title of the page.  h2 denote a section, and so on.
-1. p
+
+##### p
   - These are paragraphs
 
 ### Specific Structural Elements
