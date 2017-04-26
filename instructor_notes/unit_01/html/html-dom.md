@@ -167,16 +167,18 @@ This statement will highlight the main content div, and we can click through and
 ## What is the Window Object?
 
 - The **Window Object** represents the window that is open in the browser.
-- The location property is the URL of the page.
+- The location property contains information about the current URL.
+
 - In the console, type `window.` and check out the available methods.
 
 <details>
 <summary>Do you recognize any of these methods?</summary>
-`alert()` will alert a message to the user.
-`focus()` will set the focus/cursor in an input box- this is helpful with forms. 
-`prompt()` displays a dialogue box to the user.
-`setInterval()` calls a function or expression at specified intervals (in milliseconds).
-`setTimeOut()` calls a function or expression after a certain amount of time (in milliseconds).
+- [alert()](https://www.w3schools.com/jsref/met_win_alert.asp) will alert a message to the user.
+- [focus()](https://www.w3schools.com/jsref/met_win_focus.asp) will set the focus in a new window
+- [prompt()](https://www.w3schools.com/jsref/met_win_prompt.asp) displays a dialogue box to the user that prompts them for input
+- [setInterval()](https://www.w3schools.com/jsref/met_win_setinterval.asp) calls a function or evaluates an expression at specified intervals (in milliseconds).
+- [setTimeOut()](https://www.w3schools.com/jsref/met_win_settimeout.asp) calls a function or evaluates an expression after a certain amount of time (in milliseconds).
+**Remember: 1000ms = 1s**
 </details>
 
 <br />
@@ -184,11 +186,10 @@ This statement will highlight the main content div, and we can click through and
 
 <details>
 <summary>What do you expect to see?</summary>
-`window.location.href` returns the href (URL) of the current page
-`window.location.hostname` returns the domain name of the web host
-`window.location.pathname` returns the path and filename of the current page
-`window.location.protocol` returns the web protocol used (http: or https:)
-`window.location.assign` loads a new document
+- [window.location.href](https://www.w3schools.com/jsref/prop_loc_href.asp) returns the entire URL of the current page
+- [window.location.hostname](https://www.w3schools.com/jsref/prop_loc_hostname.asp) returns the host name or domain name of the URL
+- [window.location.pathname](https://www.w3schools.com/jsref/prop_loc_pathname.asp) returns the path of the URL
+- [window.location.protocol](https://www.w3schools.com/jsref/prop_loc_protocol.asp) returns the web protocol used (for example: http: or https:)- including the colon
 </details>
 
 <br />
