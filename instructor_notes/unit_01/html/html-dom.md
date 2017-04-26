@@ -231,7 +231,7 @@ Note that when placing a tag inside another tag, you should indent the new tag t
 ##### Example of an Anchor tag containing an Image tag
 
 ```html
-<a href="www.w3.org" target="_blank">
+<a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">
   <img src="http://www.misiide.net/images/2013/03/Tim-Berners-Lee.jpg" alt="A picture of Tim Berners-Lee!" />
 </a>
 ```
@@ -288,15 +288,15 @@ Every site should start with these 5 tags:
 </html>
 ```
 
-1. The DOCTYPE tag is special and doesn't get a closing tag.  It also is the only tag that can have non-alpha-numeric (letters/numbers) values in it.
-2. html: shows where the html begins
-3. head: contains content specifically for the browser, not the user, to see (e.g.- meta tags, google analytics scripts). 
+1. **The DOCTYPE tag** is special and doesn't get a closing tag.  It also is the only tag that can have non-alpha-numeric (letters/numbers) values in it.
+2. **html tag**: shows where the html begins
+3. **head tag**: contains content specifically for the browser, not the user, to see (e.g.- meta tags, google analytics scripts). 
   - The `head` section is important for search engines, as it helps provide additional information about the website. Anything within the opening and closing `<head>` tags will **NOT** be displayed on the page.
   - The `<head>` tags are placed right after the opening `<html>` tag, and before the opening `<body>` tag.
-4. body: contains all the content that the user will see when viewing the html in a web browser like Chrome, Firefox, etc.
-5. title: This is what shows up in your browser tab.
+4. **body tag**: contains all the content that the user will see when viewing the html in a web browser like Chrome, Firefox, etc.
+5. **title tag**: This is what shows up in your browser tab.
 
-** These are the 4 pairs of tags: html, head, title and body that are mandatory for every web page.
+**The DOCTYPE + these are the 4 pairs of tags: html, head, title and body that are mandatory for every web page** 
 
 <br />
 
