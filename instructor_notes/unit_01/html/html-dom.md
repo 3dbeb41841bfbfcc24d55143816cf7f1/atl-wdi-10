@@ -179,6 +179,7 @@ This statement will highlight the main content div, and we can click through and
 `setTimeOut()` calls a function or expression after a certain amount of time (in milliseconds).
 </details>
 
+<br />
 - In the console, type `window.location`.
 
 <details>
@@ -190,6 +191,7 @@ This statement will highlight the main content div, and we can click through and
 `window.location.assign` loads a new document
 </details>
 
+<br />
 - In the console, type `window.document.write('Hello')`.
 
 <details>
