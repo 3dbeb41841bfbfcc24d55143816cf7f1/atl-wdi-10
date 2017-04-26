@@ -26,7 +26,7 @@
 - Pre-work and About Me page completion
 
 ## Hook (5m)
-This morning we are going to take a look at the DOM and how we can use the Chrome Dev Tools to manipulate it. This afternoon we will look at more advanced ways to perform DOM manipulation using Javascript.
+This morning we are going to take a look at the DOM and how we can use the Chrome Dev Tools to manipulate it. Next Wednesday we will look at more advanced ways to perform DOM manipulation using Javascript.
 
 <details>
 <summary>To start, can someone describe the difference between HTML and the DOM in their own words?</summary>
@@ -40,9 +40,11 @@ examples:
 
 </details>
 
+<br />
+
 **WE DO:** Goto [Kickass App](http://kickassapp.com/) and use it. What is happening?
 
-We are going to get into DOM manipulation later in the week, but to demonstrate the difference between an _HTML_ document and the _DOM_ that is created from the _HTML_ document, let's go to the [Jezebel](http://jezebel.com/) website and play around with some headlines.
+We are going to get into DOM manipulation next week, but to demonstrate the difference between an _HTML_ document and the _DOM_ that is created from the _HTML_ document, let's go to the [Jezebel](http://jezebel.com/) website and play around with some headlines.
 
 Using the Chrome DevTools Inspector (What's the shortcut?), and alter something on the page.
 
@@ -138,6 +140,7 @@ The `<body>` section is for the visible content on a web page.  As well as our J
 The `document.title` is going to output the title of the website, or what you see in your browser tab.
 </details>
 
+<br />
 - In the console, type `document.body.children[5]`.
 
 <details>
