@@ -517,6 +517,7 @@ Go to this [HTML Practice Exercise](https://github.com/ATL-WDI-Exercises/html-do
 
 1. Why should we use the `<strong>` tag instead of the `<b>` tag?
 2. What does Accessibility mean?
+  - What did you learn from your accessibility homework last night?
 
 <br />
 
