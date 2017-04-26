@@ -151,7 +151,7 @@ This statement will highlight the main content div, and we can click through and
 
 ### **WE DO**
 
-- Go to Jezebel.
+- Go to [Jezebel](http://jezebel.com/).
 - In the console, type `document.getElementsByClassName('headline')[0];`
   - We will discuss this more later, but getElementsByClassName, returns an array/list of items with that class.  Arrays are zero-indexed, which means that they start with zero, so we need to add that number in square brackets to highlight the first title. 
   - This will highlight the first news title on the page.
