@@ -10,7 +10,10 @@ But open up the Chrome Developer tools and you will discover a swamp of esoteric
 
 So, what is your task? Utilizing your newfound knowledge of the DOM and Vanilla Javascript you are going to write a script to turn the Google homepage into a GA modded search page.
 
-Use this image: ![](https://i.imgur.com/Qg26PYt.png), and change the height to 95, and the width to 320.
+Use this image: ![](https://i.imgur.com/Qg26PYt.png)
+- change the height to 95, and the width to 320.  
+
+So that your GA search looks like this:
 
 ![](https://i.imgur.com/o7lm7vq.png)
 
