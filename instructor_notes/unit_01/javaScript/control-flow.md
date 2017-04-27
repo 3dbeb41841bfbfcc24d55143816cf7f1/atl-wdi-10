@@ -36,11 +36,11 @@ Life is made up of choices.
 - What should I eat for breakfast?
 - Should I go for a run this morning or attend that dance class later?
 
-You made a choice to stop what you were doing for a career, and join this class.  And cheers to you for making that decision.  Change is difficult, but I am proud of you for making the choice to be here today.
+You made a choice to stop what you were doing for a career, and join this class.  And cheers to you for making that decision.
 
 Our computers, however, do not have the ability to reason on their own.  We have to think about how we are going to fit the pieces together.  And tell our programs exactly what they need to do.
 
-Much like a cookie recipe, we can add all of the ingredients together without beating the sugar and butter for 5 minutes, without sifting the dry ingredients, or without chilling the batter before we bake our cookies, but they won't turn out as delicious.  Maybe they are too crunchy, or too hard.  There are certain steps/processes that we need to take in order to make these morsels heavenly. [Here are some tips for better cookie making](https://www.craftybaking.com/learn/baked-goods/cookies/problems-and-solutions), but for now, we will get back to programming.
+Much like a cookie recipe, we can add all of the ingredients together without beating the sugar and butter for 5 minutes, without sifting the dry ingredients, or without chilling the batter before we bake our cookies, but they won't turn out as delicious.  Maybe they are too crunchy, or too hard.  There are certain steps/processes that we need to take in order to have people ask for the recipe. [Here are some tips for better cookie making](https://www.craftybaking.com/learn/baked-goods/cookies/problems-and-solutions), but for now, we will get back to programming.
 
 When we create programs, we need to code specific instructions that tell our program what to do should a certain sitation arise.  **Control Flow statements**- like if/else statements, switch statements, while or do-while loops, are what we use in JavaScript to help our programs make choices and follow the correct path.  
 
@@ -68,13 +68,14 @@ http://eloquentjavascript.net/02_program_structure.html
 
 <br />
 
-![Funny Flow Chart](https://www.laserfiche.com/content/uploads/2014/03/engineering-flow-chart.png)
+![control flow diagram](https://dhhmzgirqh63s.cloudfront.net/1952.gif)
+<!-- ![Funny Flow Chart](https://www.laserfiche.com/content/uploads/2014/03/engineering-flow-chart.png) -->
 
-**Control Flow** is a fundamental concept in programming that allows you to dictate how your code runs under different conditions or until a certain condition is met. 
+[Control Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling) is a fundamental concept in programming that allows you to dictate how your code runs under different conditions or until a certain condition is met. 
 
 ### Block Statements
 
-**Block statements** are statements that are meant to be executed after a control flow operation. These statements are wrapped between a pair of curly braces:
+**Block statements** are statements group statements together that are meant to be executed after a control flow operation. These statements are wrapped between a pair of curly braces:
 
 ```javascript
 {
@@ -95,7 +96,7 @@ var x = 1;
 console.log(x); // outputs 2
 ```
 
-Only **functions** introduce scope in Javascript.  Does everyone understand what 'scope' means?
+Only **functions** introduce scope in Javascript.  Does everyone understand what [scope](https://scotch.io/tutorials/understanding-scope-in-javascript) means?  It is basically the accessibility of variables.
 
 ---
 
@@ -105,12 +106,25 @@ Only **functions** introduce scope in Javascript.  Does everyone understand what
 
 ### if...else statement
 
-`if(expression) { code }`
+##### if...else basic syntax
+```javascript
+if(expression) { 
+    // code to execute
+}
+else {
+    // code to execute
+}
+```
 
-... means run the block of`code` if the `expression` is `true`
+which means: run the first block of `code` if the `expression` is `true`, else, run the second block of code.  Notice that you don't add an expression after an `else`.  It is the default, and will be run if all other conditions fail.
 
 ```javascript
-if (1 > 0) { console.log("hi"); }
+if (1 > 0) {
+    console.log("hi");
+}
+else {
+    console.log("bye");
+}
 //=> hi
 ```
 
@@ -128,17 +142,22 @@ if (name === "puppies") {
 }
 //=> 'kittens!!'
 
-name === "kittens!!";
+name === "kittens";
 //=> true
 ```
-**TIP**: Always finish your if statements with an else.  You never know when you will need it, and it could save you.  Even if you never expect to hit that else, it should be there.  <!-- In my last job, if we never expected to hit the else, we would write- `console.log("Waldo, you shouldn't be here.");` in the code block. -->
+**TIP**: Always finish your if statements with an else.  You never know when you will need it, and it could save you.  Even if you never expect to hit that else, it should be there.
 
 Can anyone explain why we used three equal signs in the example above?  What is the difference between three equal signs, and two?
 
 **WARNING**: It is highly recommended that you **do not** assign variables in the conditional expression, because the assignment of a value to a variable, like this:
 
 ```javascript
-student = "Jamie";
+if(student = "Jamie") {
+    console.log("Jamie");
+}
+else {
+    console.log("This student is not Jamie.");
+}
 //=> "Jamie"
 ```
 
@@ -146,19 +165,11 @@ will **always** be true.
 
 The expression above will return the value (as shown on the second line). If you assign a truthy value inside of a conditional statement, then the condition will always be true, and no other conditions will ever be tested.  If you assign a variable something undefined, it will make the conditional statement false (because undefined is falsey). 
 
-The example below is the illustration of **WHAT NOT TO DO**, in general:
-
-```javascript
-if (x = 3) {
-    console.log("boo");
-}
-```
-
-Why wouldn't we do this?
+The example above is an illustration of **WHAT NOT TO DO**, in general.
 
 ### Ternary Operator
 
-JavaScript also has a **ternary operator** for conditional expressions. You can think about the ternary operator as a concise "if-else in one line":
+JavaScript also has a [ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) for conditional expressions. You can think of the ternary operator as a concise "if-else statement, on one line":
 
 ```javascript
 expression ? this will run if it is true: this will run if it is false;
@@ -191,30 +202,27 @@ Goto [repl.it](https://www.repl.it/) to complete the following exercises.  Click
 
 2. Use conditionals to check if a hardcoded number is `odd` or `even`, and then `console.log` the number is `odd` or `even` with the numbers value.
 
-    ```js
-    var num = ;// write a number here
-    
-    // write your conditions here
-    
-    ```
+```javascript
+var num = ;// write a number here
+
+// write your conditions here
+```
 
 3. Use conditionals to check if a hardcoded number is divisible by `2` or  `3` and then `console.log` that the number is divisible by two or three.
 
-    ```js
-    var num = ;// write a number here
-    
-    // write your conditions here
-    
-    ```
+```javascript
+var num = ;// write a number here
+
+// write your conditions here
+```
 
 4. Use conditionals to check if a hardcoded `quantity` is `1` or greater than one. If the `quantity`  is one or greater `console.log` either `1 pet` or `quantity + " pets"` respectively.
 
-    ```js
-    var quantity = ;// write a number here
-    
-    // write your conditions here
-    
-    ```
+```javascript
+var quantity = ;// write a number here
+
+// write your conditions here
+```
 
 (There are solutions at the bottom of this lesson.)
 
@@ -224,7 +232,8 @@ Goto [repl.it](https://www.repl.it/) to complete the following exercises.  Click
 
 ## Truthy & Falsey (10m)
 
-#### All of the following become false when converted to a Boolean
+### Falsey in JavaScript
+All of the following become false when converted to a Boolean
 
 - `false`
 - `0`
@@ -233,7 +242,8 @@ Goto [repl.it](https://www.repl.it/) to complete the following exercises.  Click
 - `null`
 - `undefined`
 
-#### All other values become true when converted to a Boolean
+### Truthy in JavaScript
+All other values become true when converted to a Boolean
 
 <!-- Do not confuse the primitive boolean values `true` and `false` with the true and false values of the Boolean object. For example:
 
@@ -244,14 +254,13 @@ if (b) { console.log("true"); }
 //=> true
 ``` -->
 
+### Double negative in JavaScript
+
 There is a simple way of verifying the truthiness or falsiness of a value. When you add `!` in front of a value, the returned value will be the inverse of the value in a boolean. So if you add two `!` then you'll get the boolean value of the original one:
 
 ```javascript
 !!true
 //=> true
-
-!!false
-//=> false
 
 !!1
 //=> true
@@ -259,7 +268,13 @@ There is a simple way of verifying the truthiness or falsiness of a value. When 
 !!-1
 //=> true
 
+!!false
+//=> false
+
 !!0
+//=> false
+
+!!""
 //=> false
 
 !![]
@@ -267,20 +282,9 @@ There is a simple way of verifying the truthiness or falsiness of a value. When 
 
 !!{}
 //=> true
-
-!!""
-//=> false
-
-!!null
-//=> false
-
-!!undefined
-//=> false
-
-!!NaN
-//=> false
 ```
-A double bang(!!) may be used in development to change a variable into a boolean.  <!-- When I was working with a team in India, instead of writing boolean values, they would want us to return no/yes values instead of booleans for certain data points in the API. -->
+
+A double bang(!!) may be used in development to change a variable into a boolean.
 
 <br />
 
@@ -350,25 +354,32 @@ The `&&` and `||` operators use short-circuit logic, which means that executing 
 ##### The And `&&` operator
 
 ```javascript
-var name = otherName && o.getName();
+var yourName = prompt('What is your name?');
+
+var name = yourName && (yourName === "Princess Leia");
+// If the user doesn't answer your prompt with 'Princess Leia', the variable name will be false.
+// If the user's name is 'Princess Leia', the variable name will be true
 ```
 
-As stated above, when using the `&&` operator, the expression will be true only if both operands are true.  If either operand is false, when using the `&&` operator, it will all be false.  
+As stated above, when using the `&&` operator, the expression will be true only if both operands are true.  If either operand is false, when using the `&&` operator, the whole expression will be false.  The expression is basically saying "we already know the whole `&&` expression is false, because `yourName` is truthy. Why bother dealing with the second operand?" 
 
-So, if the first operand `otherName` is false, then the second operand `o.getName()` will not be evaluated. The expression is basically saying "we already know the whole `&&` expression is false, because `otherName` is falsey. Why bother dealing with the second operand?"
-
+So, if your user enters a name, and it is not equal to 'Princess Leia', the variable name will be false.  If the name that your user enters is 'Princess Leia', the variable name will be true.
 
 ##### The Or `||` operator can be used to set default values:
 
 ```javascript
-var name = otherName || "Schmitty";
+var yourName = prompt('What is your name?');
+
+var name = yourName || "Princess Leia";
+// if your user doesn't type anything into the prompt, the variable name will default to 'Princess Leia'
+// otherwise, the variable name will be set to yourName
 ```
 
 If you use the `||` operator, the expression will be false, only if both operands are false.  If either operand is true, when using the `||` operator, the expression will be true.
 
-So, if the first operand `otherName` is false, then the variable name will be set to "Schmitty". If `otherName` is truthy (e.g. it contains a value), the expression will be evaluated, and the second expression won't. 
+So, if the first operand `yourName` is false, then the variable name will be set to "Princess Leia". If `yourName` is truthy (e.g. it contains a value), the variable name will be set to the value of yourName, and the second expression won't get evaluated. 
 
-The expression is basically saying "we already know the whole `||` expression is true, because `otherName` is truthy. Why bother dealing with the second operand?"
+The expression is basically saying "we already know the whole `||` expression is true, because `yourName` is truthy. Why bother dealing with the second operand?"
 
 ---
 
@@ -396,13 +407,16 @@ When verifying equality using the double equal sign(`==`), JavaScript does a lot
 
 12 == "12";
 //=> true
+
+true == "true";
+//=> true
 ```
 
 #### Equality Operator `===`
 
-To avoid type coercion and measure equality more strictly, **use the triple-equals operator**. Because `===` measures strict equality, we will use this far more often when checking whether two things are, in fact, the same thing.  It makes sure that the operands are the same, and also that the type is the same.
+To avoid type coercion and measure equality more strictly, **use the triple-equals operator**. Because `===` measures strict equality, we will use this far more often when checking whether two things are, in fact, the same thing.  It makes sure that the operands are the same, and also that the type is the same.  It is a best practice to use strict equality.
 
-> **Note:** "Sameness" and "equality" have various definitions and can be somewhat "fuzzy". They can also differ in programming languages. Because you'll often be measuring whether two things are equal, you should investigate the way this works carefully.
+> **Note:** "Sameness" and "equality" have various definitions and can be somewhat "fuzzy". They can also differ in programming languages. Because you will often be measuring whether two things are equal, you should investigate the way this works carefully.
 
 Some examples:
 
@@ -413,8 +427,8 @@ Some examples:
 12 === "12";
 //=> false
 
-true === true;
-//=> true
+true === "true";
+//=> false
 ```
 
 However, there are some times when this will not do what we expect, for example when working with empty objects or arrays:
@@ -446,7 +460,7 @@ There are also `!=`(not equal) and `!==`(strict not equal) operators, which are 
 
 ## Switch Statement (5m)
 
-The **switch statement** should be used, instead of an if/else statement, if you are comparing multiple things (more than three? or four?):
+The **switch statement** should be used, instead of an if/else statement, if you are comparing multiple things (more than three or more than four):
 
 - The switch expression is evaluated once.
 - The value of the expression is compared with the values of each case.
@@ -462,13 +476,16 @@ switch(food) {
   case 'apple':
     console.log("I like apples.");
     break;
+  case 'chocolate cake':
+    console.log("I like beautiful chocolate cake.");
+    break;
   default:
-    console.log("I'm more of a strawberry fan myself.");
+    console.log("I'm more of a strawberry shortcake fan myself.");
 }
 //=> I like apples
 ```
 
-In this case, the `switch` statement compares `food` to each of the "cases" (`pear` and `apple`), and evaluates the expressions beneath them if there is a match. It uses `===` to evaluate equality.
+In this case, the `switch` statement compares the variable `food` to each of the "cases" (`pear` and `apple`), and evaluates the expressions beneath them if there is a match. It uses `===` to evaluate equality.
 
 The default clause is optional, but just like an else statement, it is highly recommended.
 <!-- #### Example

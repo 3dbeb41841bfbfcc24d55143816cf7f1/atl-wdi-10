@@ -53,13 +53,20 @@ creator:
 
 <!-- I am a huge [Gustav Klimt](https://i.imgur.com/1EOSuCm.jpg) fan.  I actually created a reproduction of this piece, _The Kiss_, by Klimt for our turquoise living room wall.  I also love puzzles.  This is part of why I love development, as I think of every problem as a puzzle and work on bite-sized pieces as I go along.  My family gave me this puzzle for Christmas, combining two of my loves. -->
 
-Today, we are going to look at **primitive** data types in JavaScript, of which there are 6- strings, booleans, numbers, null, undefined and symbols.  We will continue onto **complex** data types on Monday.
+Today, we are going to look at **primitive** data types in JavaScript, of which there are 6- 
+    - strings
+    - booleans
+    - numbers
+    - null
+    - undefined
+    - symbols (new in ES2015- we will discuss ES2015 next Friday) 
+We will continue onto **complex** data types on Monday.
 
 <br />
 
 ## YOU DO (10m)
 
-Take 10 minutes and read through this:
+Take 10 minutes and read through the first chapter of Eloquent JavaScript:
 
 http://eloquentjavascript.net/01_values.html
 
@@ -74,7 +81,7 @@ In 1995, Netscape and Microsoft were warring for best browser.  In order to comb
 
 By 1997, JS was used in every browser, and by millions of people.  But there were no standards in place, or even an overriding language. Each browser rendered JavaScript/JScript differently, and therefore every website differently.  This made it extremely time consuming and costly to try to make your site render the same on every browser. 
 
-JavaScript/ECMAScript 3 was standardized and released in 1999 by ECMA International (the European Computer Manufacturers Association), which is a foundation that creates standards in technology and on the web.  Netscape and Microsoft agreed to call JavaScript, ECMAScript, and you will hear the two used interchangeably.
+JavaScript/ECMAScript 3 was standardized and released in 1999 by **ECMA International** (the European Computer Manufacturers Association), which is a foundation that creates standards in technology and on the web.  Netscape and Microsoft agreed to call JavaScript, ECMAScript, and you will hear the two used interchangeably.
 
 <br />
 
@@ -115,49 +122,47 @@ For this lesson, we're going to use the **Node REPL** in the terminal.
 
 1. `$ brew install node`
 2. Once you have node installed you can run `$ node` and it will open up a JavaScript REPL
-3. Type ^C (control + C) **twice** to exit.
+3. Type ^C (control + C) **twice** to exit. **This is important to remember!!**
 
 
 ### Running a JavaScript file
 
-1. `cd ~/Desktop/ga`
+1. `cd ~/Desktop/ga/class-exercises`
 2. `mkdir intro-to-javascript`
 3. `cd intro-to-javascript`
 4. `touch test.js`
-5. `subl test.js`
+5. `subl .` (Make sure to click on the file on your left hand tab before adding step 6).
 6. Add the line `console.log('Hello, friends!');`
 7. Save that file.
-8. Run `node test.js` in the Terminal.
+8. Run `node test.js` in the Terminal. (You need to be in the intro-to-javascript folder in your terminal).
 
 With this command, node will run the file `test.js` and the function `console.log()` will log whatever value is passed into the console (the terminal).
-
-(Project non-specific binaries can be run from any directory!)
 
 #### <a name="typeof">typeof()</a>
 
 To get an idea of the type of the data types we are working with, we can use the [`typeof()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) method.  Let's try it out in the console with the following:
 
 ```js
-typeof 37
+typeof(37);
 => 'number'
 
-typeof 37 === 'number';
+typeof(37) === 'number';
 => true
 
-typeof 'hi there'
+typeof('hi there');
 => string
 
-typeof 'hi there' === 'string';
+typeof('hi there') === 'string';
 => true
 
 ```
 
-The `typeof()` method returns a string with the type of the operand, or expression of the object to which you are looking.  
+**The `typeof()` method returns a string with the type of the operand, or expression of the object to which you are looking.**
 
 
 #### <a name="numbers">Numbers</a>
 
-In low-level languages, numbers are divided into two data type sets:
+In some languages, numbers are divided into two data type sets:
 
 * Integers (or whole numbers)
 
@@ -221,19 +226,19 @@ Try these statements in your console:
 
 We have seen that JavaScript allows us to perform simple arithmetic functions, but what about more complex functions like square roots or exponents?
 
-* Like taking a number to some `power`? You can just use `Math.pow`.
+* Like taking a number to some `power`? You can just use [Math.pow(x, y)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow).
 
 ```js
 // 3^2 becomes
-Math.pow(3,2);
+Math.pow(3, 2);
 => 9
 
 // 2^4 becomes
-Math.pow(2,4);
+Math.pow(2, 4);
 => 16
 ```
 
-* Taking a square root
+* Taking a square root- [Math.sqrt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt)
 
 ```js
 // √(4) becomes
@@ -241,10 +246,10 @@ Math.sqrt(4);
 => 2
 ```
 
-* Need a `random` number? You can use `Math.random`.
+* Need a `random` number? You can use [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random).
 
 ```js
-// The following only returns a random decimal
+// The following only returns a random decimal between 0 and 1.  It is inclusive of 0 and not inclusive of 1.
 Math.random()
 => .229375290430
 
@@ -255,7 +260,7 @@ random number between 0 and 10
 Math.random() * 10;
 ```
 
-* Since JavaScript Numbers can be **Floats** or **Integers** we often want to get rid of remaining decimal places, which can be done using `Math.floor`.  Math.floor will round down to the nearest whole number.
+* Since JavaScript Numbers can be **Floats** or **Integers** we often want to get rid of remaining decimal places, which can be done using [Math.floor()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor).  Math.floor will always round down to the nearest whole number.
 
 ```js
 // Remove the decimal
@@ -270,7 +275,7 @@ Math.floor(3.9999)
 
 ![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
-**EXERCISE**: Take 3 minutes to look at the [Math documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) and pick a function to quickly explain to the class. We'll popcorn around the room each person will get 30 seconds to explain what their function is/does. Don't worry if you chose the same one as someone else. Repetition leads to retention!
+**EXERCISE**: Take 3 minutes to look at the [Math documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) and pick a function to quickly explain to the class. We will then popcorn around the room. Each person will get 30 seconds to explain what their function is/does. Don't worry if you chose the same one as someone else. Repetition leads to retention!
 
 1. Go to the [Math documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 2. Pick out a Math method that we didn’t cover.
@@ -282,7 +287,7 @@ Math.floor(3.9999)
 
 ### <a name="strings">Strings</a>
 
-**Strings** are collections of letters and symbols known as *characters*, and we use them to handle words and text in JavaScript. Strings are a data type in Javascript.
+[Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) are collections of letters and symbols known as *characters*, and we use them to handle words and text in JavaScript. Strings are a data type in Javascript.
 
 ```js
 'John'
@@ -296,14 +301,18 @@ Math.floor(3.9999)
 
 #### <a name="string-helper-methods">String helper methods</a>
 
-To find the length of a string, use the [`.length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) property:
+To find the length of a string, use the [str.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) property:
 
 ```js
 'hello'.length;
 => 5
 ```
 
-Strings have other [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods) as well, that allow you to manipulate the string and access information about that string:
+Strings have other [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods) as well, that allow you to manipulate the string and access information about that string like:
+
+- [str.charAt(index)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt)
+- [str.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+- [str.toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
 
 ```js
 // .charAt() returns the character at the specified index in a string
@@ -409,7 +418,7 @@ var c = String(a);    // explicit coercion
 
 ### parseInt()
 
-You can convert a string to an integer using the built-in [`parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) method. This takes the 'base' for the conversion as an optional second argument, which you should always provide:
+You can convert a string to an integer using the built-in [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) method. This takes the 'base' for the conversion as an optional second argument:
 
 ```javascript
 parseInt('123');
@@ -423,7 +432,7 @@ This will be important later when we are taking user input from the web or from 
 
 ### parseFloat()
 
-Similarly, you can parse floating point numbers using the built-in [`parseFloat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) function which always uses base 10, unlike its `parseInt()` cousin.
+Similarly, you can parse floating point numbers using the built-in [parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) function which always uses base 10, unlike its `parseInt()` cousin.
 
 ```javascript
 parseFloat('11.2');
@@ -458,7 +467,7 @@ Username example:
 parseInt('colin1990');
 => NaN
 
-// be careful when using parseInt() because if JS sees a number, it will only parse it, and disregard the rest.
+// be careful when using parseInt() because if JS sees a number, it will only parse the number part of your string, and disregard the rest.
 parseInt('1990colin');
 => 1990
 ```
@@ -502,11 +511,11 @@ var a;
 So, let's try assigning a value to variable:
 
 ```javascript
-var name = 'Schmitty';
+var name = 'Maren';
 => undefined
 
 name;
-=> 'Schmitty'
+=> 'Maren'
 ```
 
 Having created a few expressions, it becomes evident that we need to store these values.
@@ -613,7 +622,7 @@ h;
 
 In Javascript, when you are working with different data types, you also have access to helpful methods.
 
-* If you want to turn a number into a string you can use a method called `toString()`.
+* If you want to turn a number into a string you can use a method called [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString).
 
 ```javascript
 (1).toString()
