@@ -11,7 +11,7 @@ Screencasts:
 - Explain the benefits (and shortcomings) of using a design framework.
 - Describe the use cases for Bootstrap as a library versus as a framework.
 - List 10 useful classes from the Bootstrap library.
-- Compare and contrast Bootstrap with other design frameworks (e.g., Foundation and Material Design).
+<!-- - Compare and contrast Bootstrap with other design frameworks (e.g., Foundation and Material Design). -->
 
 ---
 
