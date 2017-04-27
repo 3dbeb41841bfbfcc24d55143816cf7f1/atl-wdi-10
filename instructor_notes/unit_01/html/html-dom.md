@@ -236,7 +236,8 @@ Note that when placing a tag inside another tag, you should indent the new tag t
 </a>
 ```
 
-#####QUESTION
+##### QUESTION
+
 <details>
 <summary>Can anyone explain the HTML above?</summary>
   The `href` attribute above makes the image of Sir Timothy John Berners-Lee "clickable" and redirects the user to the W3 website.

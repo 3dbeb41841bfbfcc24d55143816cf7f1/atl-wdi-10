@@ -1,6 +1,6 @@
-##Control Flow Lab
+## Control Flow Lab
 
-###1. Nightclub Bouncer
+### 1. Nightclub Bouncer
 
 Using an if/else expression, create a script that prompts the user for their age, then:
 
@@ -9,12 +9,12 @@ Using an if/else expression, create a script that prompts the user for their age
   * If the user is between 18 and 21, he/she should receive a message that he/she can enter, but not drink.
   * If the user is older than 21, he/she should receive a message that he/she can both enter and drink.
 
-###2. Grade.js
+### 2. Grade.js
 Output the following letter grade from a variable with with a test score. 
 
 Based on the user input, display either "A", "B", "C", "D", or "F", for an score that is an integer between 0 and 100. Try and use a `switch` statement.
 
-###3. Pluralizer.js
+### 3. Pluralizer.js
 Take an input like
 
 ```

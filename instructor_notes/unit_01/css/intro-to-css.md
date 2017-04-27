@@ -18,7 +18,7 @@
 
 To start this lesson, I want to mosey on over to my favorite website, [GA ATL Instagram](https://www.instagram.com/_gaatlanta/?hl=en). It's pretty great. It's pretty fancy. But what would it be without CSS? Take 1 minute to talk with the people around you about how this wonder of the modern web would look different without CSS, and how that would impact your interactions with the site.
 
-**Exercise** (1min) Share some ideas, then mute the stylesheets in DevTools and discuss anything surprising.
+**Exercise** (1min) Share some ideas, then download the chrome dev tool- Web Developer, and click on the option to mute the stylesheets. Discuss anything that surprises you.
 
 CSS is powerful. There is such a wide breadth of things to learn about CSS and honestly, you could probably teach a whole 12-weeks just learning its capabilities, nuances, and subtleties. The goal of this class isn't to do a rundown of every possible CSS selector, but to have you guys walk away with a solid foundation of how to approach the task of styling your sites. As you use it consistently you realize that, while sometimes [frustrating]( http://gph.is/1heneJM?tc=1), CSS provides a powerful toolkit for making your UI more usuable, marketable, and generally awesome!  It helps keep your users coming back.  
 

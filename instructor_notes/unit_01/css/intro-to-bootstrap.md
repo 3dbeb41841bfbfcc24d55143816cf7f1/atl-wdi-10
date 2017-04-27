@@ -24,7 +24,6 @@ Let's take a look at some bad website examples: http://www.topdesignmag.com/20-e
 
 In comparison, let's look at examples of sites that are built with bootstrap: https://bootstrapbay.com/blog/built-with-bootstrap/
 
-
 Spend the next 3 minutes, reading through these two pages on why you should consider bootstrap:
 <br />
 https://css-tricks.com/bootstrap/
@@ -55,12 +54,13 @@ AND, unlike your hand-rolled CSS, Bootstrap is [well-documented](http://getboots
 
 ## Getting Started
 
-### Download Options
+### What you need to add to use bootstrap
 
-- You can grab it from a [CDN](http://getbootstrap.com/getting-started/#download-cdn).
+#### CDN
+- You can grab bootstrap from a [CDN](http://getbootstrap.com/getting-started/#download-cdn).
   - Does anyone know what CDN stands for?
 
-  A **Content Delivery Network** is a system of distributed servers that deliver content based on the user's geographic location.  A CDN can also provide protection from traffic serges.  Because these servers exist around the world, they can help speed up the process of getting the content to your end user.  **Speed** is the most important word in that sentence.  
+A **Content Delivery Network** is a system of distributed servers that deliver content based on the user's geographic location.  A CDN can also provide protection from traffic serges.  Because these servers exist around the world, they can help speed up the process of getting the content to your end user.  **Speed** is the most important word in that sentence.  
 
 ``` html
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -70,8 +70,10 @@ AND, unlike your hand-rolled CSS, Bootstrap is [well-documented](http://getboots
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 ```
 
+#### Download minified files
 - You can [download the complied and minified CSS, JS, and fonts](http://getbootstrap.com/getting-started/#download) and include them manually in link and script tags.
 
+#### Download uncompiled source code
 - You can [download the uncompiled source code as SASS or LESS](http://getbootstrap.com/getting-started/#download) (which we'll touch on later), pick the components that you want, and compile the subset that you need.
 
 ### You Are Also Going to Need jQuery...
@@ -80,7 +82,7 @@ AND, unlike your hand-rolled CSS, Bootstrap is [well-documented](http://getboots
 
 …if you want to use any of Bootstrap's JS components.
 
-- Does anything stand out from that url?
+- This script tag should go above your other bootstrap script tag.  If this is confusing, check out the getting started section of the [bootstrap website](http://getbootstrap.com/getting-started/).
 
 ### Document Setup
 
@@ -144,9 +146,9 @@ The numbers indicate how many 1/12ths of the viewport width you would like that 
 
 ### Out-of-the-box, Bootstrap styles some elements
 
-For starters, Bootstrap implements baseline styles for links and typography, as well as using the styles from `normalize.css` to improve cross-browser performance. For instance, you'll notice changes with `<button>`, `<mark>`, `<code>`, `<samp>`, `<kbd>`, `<pre>`, `<abbr>`...
+For starters, Bootstrap implements baseline styles for links and typography, as well as using the styles from `normalize.css` to improve cross-browser performance. 
 
-These are all standard HTML elements, and browsers have default styling for all of them. For instance, on pretty much every browser anything inside `<code>`, `<kbd>`, and `<pre>` will be in a monospace font.
+These are all standard HTML elements, and browsers have default styling for all of them. For instance, on pretty much every browser anything inside `<code>`, and `<pre>` will be in a monospace font.
 
 ### Out-of-the-box, Bootstrap *doesn't* style most elements
 
@@ -205,15 +207,15 @@ Be prepared to share! It may be helpful to split into subgroups so you can divid
 
 ### Customization
 
-Some use "Bootstrap-y" as a perjorative — a shorthand for "generic and uninspired". I wonder what those people would say to [these](https://bootstrapbay.com/blog/built-with-bootstrap/) which we have seen, or [these](http://builtwithbootstrap.com/).
+Some use "Bootstrap-y" as a perjorative — a shorthand for "generic and uninspired". I wonder what those people would say to [these](http://builtwithbootstrap.com/).
 
 You can assemble a custom download or modify an existing configuration at http://getbootstrap.com/customize/
 
 ### Bootstrap
 
-As many of you might have noticed when preparing your demos, implementing customized Bootstrap elements can easily get repetitive, lengthy and difficult to read.
+Implementing customized Bootstrap elements can easily get repetitive, lengthy and difficult to read.
 
-For instance, if I wanted to make a small "delete" button, I'd write something like this:
+For instance, if I wanted to make an extra-small "delete" button, I'd write something like this:
 
 ``` html
 <button class="btn btn-danger btn-xs">Delete</button>
@@ -227,7 +229,11 @@ This is one place where you sort-of see Bootstrap trying to straddle the line be
 
 **You insert a library into your code; you insert your code into a framework.**
 
-To explain the difference between a framework and a library a bit further, we are going to watch this short 3 minute video: https://www.youtube.com/watch?v=D_MO9vIRBcA
+Spend the next 5 minutes reading through these articles: 
+- https://hashnode.com/post/vanilla-javascript-vs-frameworks-and-libraries-finding-a-good-balance-civ1zfus90pphdc53q8vtakz5
+- http://www.geeksforgeeks.org/software-framework-vs-library/
+
+<!-- To explain the difference between a framework and a library a bit further, we are going to watch this short 3 minute video by Udacity: https://www.youtube.com/watch?v=JRU-w8O2Ziw -->
 
 To reiterate, the differences between a library and framework can be summarized by The Hollywood Principle: "don't call us, we'll call you."
 
@@ -235,20 +241,20 @@ A framework encapsulates common application functionality, allowing the develope
 
 Libraries are packages of code that typically get called by your application to perform a task, like DOM manipulation or HTTP requests; jQuery, for example.  With a library, we can use the functionality directly without changing our code.
 
-It is not unlikely that a developer using Bootstrap, will want to make their own CSS class called `.danger` that is completely unrelated to Bootstrap. It's extremely unlikely, however, that anyone is going to create their own class called `.btn-danger`.
+It is possible that a developer using Bootstrap, will want to make their own CSS class called `.danger` that is completely unrelated to Bootstrap. It's extremely unlikely, however, that anyone is going to create their own class called `.btn-danger`.
 
 Bootstrap works to be as unobtrusive as possible and not conflict with any classes users might be defining, so it engages in this sort of **classnamespacing**.
 
 ![Inversion of Control](https://qph.ec.quoracdn.net/main-qimg-590e2cd0dfea3a4466296e48167029ac-p)
 
-The key difference between a library and a framework is **“Inversion of Control”**. When you call a method from a library, you are in control. But with a framework, the control is inverted: the framework calls you.
+The key difference between a library and a framework is [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control). When you call a method from a library, you are in control. But with a framework, the control is inverted: the framework calls you.
 
 <br />
 
 #### We Do: An InFORMED Case Study
 
 - cd into your ga folder
-- cd into your exercises folder
+- cd into your class-exercise folder
 - `mkdir bootstrap-case-study`
 - `cd bootstrap-case-study`
 - touch an `index.html` that contains this form:
@@ -296,7 +302,7 @@ The key difference between a library and a framework is **“Inversion of Contro
 </form>
 ```
 
-Then, touch a stylesheet called `form-styles.css` that contains this:
+Then, touch a stylesheet called `styles.css` that contains this:
 
 ``` css
 h1 {
@@ -305,7 +311,7 @@ h1 {
 }
 ```
 
-Make sure to link the stylesheet to your html- `<link rel="stylesheet" href="form-styles.css" />`
+Make sure to link the stylesheet to your html- `<link rel="stylesheet" href="styles.css" />`
 
 --- 
 
