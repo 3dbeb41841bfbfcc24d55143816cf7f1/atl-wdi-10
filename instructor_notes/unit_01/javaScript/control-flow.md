@@ -208,7 +208,8 @@ Goto [repl.it](https://www.repl.it/) to complete the following exercises.  Click
 2. Use conditionals to check if a hardcoded number is `odd` or `even`, and then `console.log` the number is `odd` or `even` with the numbers value.
 
 ```javascript
-var num = ;// write a number here
+// write a number here
+var num = ;
 
 // write your conditions here
 ```
@@ -216,7 +217,8 @@ var num = ;// write a number here
 3. Use conditionals to check if a hardcoded number is divisible by `2` or  `3` and then `console.log` that the number is divisible by two or three.
 
 ```javascript
-var num = ;// write a number here
+// write a number here
+var num = ;
 
 // write your conditions here
 ```
@@ -224,7 +226,8 @@ var num = ;// write a number here
 4. Use conditionals to check if a hardcoded `quantity` is `1` or greater than one. If the `quantity`  is one or greater `console.log` either `1 pet` or `quantity + " pets"` respectively.
 
 ```javascript
-var quantity = ;// write a number here
+// write a number here
+var quantity = ;
 
 // write your conditions here
 ```
