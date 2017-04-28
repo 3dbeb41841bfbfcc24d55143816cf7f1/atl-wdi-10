@@ -569,9 +569,9 @@ These are some of the foundational tools you will use in the majority of your ap
 ```js
 var mood = prompt("What is your mood?");
 
-if (mood == 'sad') {
+if (mood === 'sad') {
     console.log('hrmph');
-} else if (mood == 'happy') {
+} else if (mood === 'happy') {
     console.log('YOWZA!');
 } else {
     console.log('not impressed');
