@@ -237,9 +237,9 @@ Spend the next 5 minutes reading through these articles:
 
 To reiterate, the differences between a library and framework can be summarized by The Hollywood Principle: "don't call us, we'll call you."
 
-A framework encapsulates common application functionality, allowing the developer to focus on the parts that are unique to their application. Usually that means the developer writes pieces of code that get called by the framework when various things happen.  With a framework, we change the structure of our code according to the rules given by them, and use the functionality provided by them.
+A framework encapsulates common application functionality, allowing the developer to focus on the parts that are unique to their application. Usually that means the developer writes pieces of code that get called by the framework when various things happen. With a framework, we change the structure of our code according to the rules given by them, and use the functionality provided by them.
 
-Libraries are packages of code that typically get called by your application to perform a task, like DOM manipulation or HTTP requests; jQuery, for example.  With a library, we can use the functionality directly without changing our code.
+Libraries are packages of code that typically get called by your application to perform a task, like DOM manipulation or HTTP requests; jQuery, for example. A library provides a set of helper functions/objects/modules which your application code calls for specific functionality. Libraries typically focus on a narrow scope (e.g., strings, IO, sockets), so their API's also tend to be smaller and require fewer dependencies. With a library, we can use the functionality directly without changing our code.
 
 It is possible that a developer using Bootstrap, will want to make their own CSS class called `.danger` that is completely unrelated to Bootstrap. It's extremely unlikely, however, that anyone is going to create their own class called `.btn-danger`.
 

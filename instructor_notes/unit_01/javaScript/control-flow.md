@@ -75,12 +75,12 @@ http://eloquentjavascript.net/02_program_structure.html
 
 ### Block Statements
 
-**Block statements** are statements group statements together that are meant to be executed after a control flow operation. These statements are wrapped between a pair of curly braces:
+**Block statements** group together statements that are meant to be executed after a control flow expression. These statements are wrapped between a pair of curly braces:
 
 ```javascript
 {
   console.log("hello");
-  console.log("roar");
+  console.log("rawr");
 }
 ```
 
