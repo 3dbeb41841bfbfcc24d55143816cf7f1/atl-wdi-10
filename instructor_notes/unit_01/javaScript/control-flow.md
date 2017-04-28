@@ -127,7 +127,7 @@ if (name === "Maren") {
 else {
     console.log("bye");
 }
-//=> hi
+//=> hi, Maren
 ```
 
 When you need to test more than one expression/conditional, you can use an `else if` statement:
@@ -187,11 +187,11 @@ false ? console.log("it is true"): console.log("it is false");
 var age = 12;
 //=> undefined
 
-var allowed = (age > 18) ? "welcome to the club" : "try again when you are over 18.";
+var allowed = (age > 18) ? "welcome to the club" : "try again when you are over 18";
 //=> undefined
 
 allowed
-//=> "no"
+//=> "try again when you are over 18"
 ```
 
 <br />
@@ -246,18 +246,6 @@ All of the following become false when converted to a Boolean
 - `NaN` (not a number)
 - `null`
 - `undefined`
-
-### Truthy in JavaScript
-All other values become true when converted to a Boolean
-
-<!-- Do not confuse the primitive boolean values `true` and `false` with the true and false values of the Boolean object. For example:
-
-```javascript
-var b = new Boolean(false);
-
-if (b) { console.log("true"); }
-//=> true
-``` -->
 
 ### Double negative in JavaScript
 
