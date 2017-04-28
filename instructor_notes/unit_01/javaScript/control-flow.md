@@ -187,7 +187,7 @@ false ? console.log("it is true"): console.log("it is false");
 var age = 12;
 //=> undefined
 
-var allowed = (age > 18) ? "yes" : "no";
+var allowed = (age > 18) ? "welcome to the club" : "try again when you are over 18.";
 //=> undefined
 
 allowed
