@@ -190,7 +190,7 @@ var age = 12;
 var allowed = (age > 18) ? "welcome to the club" : "try again when you are over 18";
 //=> undefined
 
-allowed
+allowed;
 //=> "try again when you are over 18"
 ```
 
