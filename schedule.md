@@ -1631,7 +1631,7 @@
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/control-flow-practice.md">Control Flow LAB + </a><br />
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/choose_your_own_adventure">Choose your own adventure LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/choose-your-own-adventure">Choose your own adventure LAB</a>
     </td>
   </tr>
   <tr>
