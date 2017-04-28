@@ -547,7 +547,9 @@ These are some of the foundational tools you will use in the majority of your ap
 ---
 
 ## Independent Practice
-- [Choose Your own Adventure](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/choose_your_own_adventure)
+- [Choose Your own Adventure](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/choose-your-own-adventure)
+
+- [Control Flow Lab](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_01/javaScript/control-flow-practice.md)
 
 ---
 
