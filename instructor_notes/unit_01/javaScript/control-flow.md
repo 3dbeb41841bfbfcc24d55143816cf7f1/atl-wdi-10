@@ -142,6 +142,7 @@ if (favoritePet === "puppies") {
 } else {
   favoritePet = "My favorite pet is not a kitten or a puppy.";
 }
+
 alert(favoritePet);
 //=> 'puppies!!!'
 
