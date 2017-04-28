@@ -108,7 +108,7 @@ Only **functions** introduce scope in Javascript.  Does everyone understand what
 
 ##### if...else basic syntax
 ```javascript
-if(expression) { 
+if (expression) { 
     // code to execute
 }
 else {
@@ -119,8 +119,10 @@ else {
 which means: run the first block of `code` if the `expression` is `true`, else, run the second block of code.  Notice that you don't add an expression after an `else`.  It is the default, and will be run if all other conditions fail.
 
 ```javascript
-if (1 > 0) {
-    console.log("hi");
+var name = "Maren";
+
+if (name === "Maren") {
+    console.log("hi, " + name);
 }
 else {
     console.log("bye");
@@ -131,21 +133,23 @@ else {
 When you need to test more than one expression/conditional, you can use an `else if` statement:
 
 ```javascript
-var name = "kittens";
+var favoritePet = "puppies";
 
-if (name === "puppies") {
-  name += "!";
-} else if (name === "kittens") {
-  name += "!!";
+if (favoritePet === "puppies") {
+  favoritePet += "!!!";
+} else if (favoritePet === "kittens") {
+  favoritePet += "!!";
 } else {
-  name = name + " is not a kitten or a puppy.";
+  favoritePet = "My favorite pet is not a kitten or a puppy.";
 }
-//=> 'kittens!!'
+alert(favoritePet);
+//=> 'puppies!!!'
 
-name === "kittens";
+favoritePet === "puppies!!!";
 //=> true
 ```
-**TIP**: Always finish your if statements with an else.  You never know when you will need it, and it could save you.  Even if you never expect to hit that else, it should be there.
+
+**PRO TIP**: Always finish your if statements with an else.  You never know when you will need it, and it could save you.  Even if you never expect to hit that else, it should be there.
 
 Can anyone explain why we used three equal signs in the example above?  What is the difference between three equal signs, and two?
 
