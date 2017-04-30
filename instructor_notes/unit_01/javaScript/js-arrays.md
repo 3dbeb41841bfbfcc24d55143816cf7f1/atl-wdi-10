@@ -21,7 +21,7 @@ competencies: Programming
 # Hook
 In 2009, the **BBC** and the **British Museum** collaborated on a hugely successful radio series and book called “A History of the World in 100 Objects.” In 2014, the **Smithsonian** followed up with its “History of the World in 1,000 Objects.”  You can learn more about them on their podcasts: http://www.bbc.co.uk/programmes/b00nrtd2/episodes/downloads
 
-“It is only in the world of objects that we have time and space,” T. S. Eliot wrote. Think of the mark that things — the wheel, the crucifix, the credit card or the computer chip — have made on civilization.  What objects or collection of items tell the story of your life?  Think about 5 items that define you.
+“It is only in the world of objects that we have time and space,” T. S. Eliot wrote. Think of the mark that things — the wheel, the crucifix, the credit card or the computer chip — have made on civilization.  What objects or collection of items tell the story of your life?  Think about 4 items that define you.
 
 On Friday, we reviewed basic data types in Javascript. Strings, Integers, variables, etc. These are the building blocks of most programming languages. But you are limited in how much you can build without a good way of storing those data types. This is where 'data structures' or collections like **Arrays** and **Objects** are invaluable.
 
@@ -34,7 +34,7 @@ An **array** is syntactically defined with opening and closing square brackets `
 Arrays are used for:
 
 * Storing any type data in a **particular order**
-* Enumerating over data, i.e. using a zero-based index to find them
+* Enumerating over data, i.e. using a **zero-based index** to find them
 * Quickly reordering data
 
 An array is ultimately, a data structure, similar in concept to a comma separated list. Each item in an array is called an element, and the collection can contain data of the same or different types. In JavaScript, arrays can dynamically grow and shrink in size.
@@ -68,19 +68,21 @@ var lastFriend = friends[friends.length - 1];
 We can use array-methods, like length and bracket notation on strings. They are literally array-like.
 
 ```javascript
-var newFriend = 'bobby bottleservice';
+var newFriend = 'Veronica Mars';
 //=> undefined
 
 // pick out the first character
 newFriend[0];
-//=> 'b'
+//=> 'V'
 
 newFriend.length;
-//=> 19
+//=> 13
 ```
 <br />
 
 ## Working with Arrays - Codealong (15m)
+
+### Array constructor
 
 Using the JavaScript `new` keyword, is one way of creating arrays.  It will create an empty array that is set to your variable.  You can add items to the array via their index- which is zero-based.
 
@@ -107,6 +109,8 @@ vacations.length;
 => 3
 ```
 
+### Array Literal
+
 A more convenient notation is to use an array literal:
 
 ```javascript
@@ -127,20 +131,20 @@ So `array.length` isn't necessarily the number of items in the array. Consider t
 
 ```javascript
 var newestVacations = ['Dominican Republic', 'Australia', 'Hong Kong'];
-vacations[10] = 'Egypt';
-vacations.length; // 11
+newestVacations[10] = 'Egypt';
+newestVacations.length; // 11
 ```
 **Remember**: the length of the array is one more than the highest **index**.
 
-**EXERCISE**: Take the next 2 minutes to create an array of the five items that define you and save them to the variable `myLife`.  When you are done, add your array to slack. (make sure to end your line with a semi-colon!)
+**EXERCISE**: Take the next 2 minutes to create an array of the four items that define you and save them to the variable `myLife`.  When you are done, add your array to slack. (make sure to end your line with a semi-colon!)
 
 ### Getting data from an array
 
 If you use the method `typeof` to query a **non-existent array index**, it will return `undefined`:
 
 ```javascript
-var vacations = ['Bali', 'Argentina', 'Greece'];
-=> undefined
+vacations;
+=> ['Bali', 'Argentina', 'Greece']
 
 typeof vacations[1];
 => 'string'
@@ -165,6 +169,8 @@ var vacations = ['Bali', 'Argentina', 'Greece'];
 
 vacations.toString();
 => "Bali,Argentina,Greece"
+<!-- vacations.join(", ");
+=> "Bali, Argentina, Greece" -->
 ```
 
 - `vacations.pop()` - Removes and returns the last item in your array.
@@ -254,5 +260,4 @@ myLife[0];
 myLife[4];
 => 'Diesel'
 
-var itemIndex = Math.floor(Math.random() * 5)
-var randomItem = myLife[itemIndex];
+myLife[Math.floor(Math.random() * 4)];
