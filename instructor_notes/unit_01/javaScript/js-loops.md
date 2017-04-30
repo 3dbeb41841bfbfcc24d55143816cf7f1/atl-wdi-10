@@ -25,7 +25,7 @@ Iterating in programming is a way of incrementally repeating a task.
 
 If I wanted to console.log something 5 times, how would I do that without a loop?   I would have to write it out 5 times.  Loops are extremely helpful in programming.  We can use them to iterate over arrays or objects.  They allow us to keep our code more DRY- Don't Repeat Yourself.
 
-**Exercise:** (2m) In your own words, define a loop and what a loop does. (It does not need to be technical).
+**Exercise:** (2m) In your own words, define a loop and what a loop does. (It does not need to be technical).  Add your answers into slack.
 
 ---
 
@@ -48,29 +48,39 @@ console.log('Tell me that you love me more.');
 
 ### Elements of a for loop
 
-A for loop starts with the `for` keyword, and takes three arguments- the ititialization, the condition, and the increment:
+A `for` loop starts with the `for` keyword, and takes three arguments- the ititialization, the condition, and the increment:
 
-1. **initialization**:
+1. **initialExpression**:
   `var i = 0;` 
     - A loop traditionally starts at zero. 
     - The `i` is the **counter**, a way to keep track of how many times we have looped, as well as how we keep track of where we are in the array.
 2. **condition**:
   `i < newArray.length;`
     - This is the expression that decides whether a loop is completed or if it should continue. In this case, we would say that if the variable `i` is less than the length of the array, keep on looping.
-3. **increment**:
+3. **incrementExpression**:
   `i++`
     - This syntax is going to add `1` to the variable i, each time the loop runs.
 
-For each iteration of the loop, before the expression or condition is false, the loop will run the code in the code block. 
+#### Basic `for loop` syntax
+
+```javascript
+for(initialExpression; condition; incrementExpression) {
+  // code block
+}
+```
+
+For each iteration through the loop (as long as the condition is true), the loop will run the code in the code block. 
 
 **Reminder** A **code block** refers to the code that will be executed between two curly brackets `{ }`.
 
-**Exercise:** Take two minutes and write down everything you could do with the variable `i` in a for loop.  Put your answers in slack.
+**Exercise:** Take 2 minutes and write down everything you could do with the variable `i` in a for loop.  Put your answers in slack.
 
-```js
+```javascript
 var favoriteMovies = ['The Five Obstructions', 'The Triplets of Belleville', 'About Time', 'Two Weeks Notice'];
+
+console.log('My favorite movies are: ');
 for (var i = 0; i < favoriteMovies.length; i++) {
-  console.log(favoriteMovies[i]);
+  console.log([i + 1] + ". " + favoriteMovies[i]);
 }
 ```
 
@@ -149,10 +159,10 @@ var j = 0;
 do {
   console.log(j);
   j++;
-} while (j < 10);
+} while (j <= 10);
 ```
 
-This loop will run 0 through 9 times.
+This loop will run 0 through 10 times.
 
 Choosing between a while and do-while loops means that we can choose to run a expression before or after the block of code in the loop, executes.
 
