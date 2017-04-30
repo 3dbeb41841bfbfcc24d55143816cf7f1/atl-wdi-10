@@ -23,17 +23,17 @@ In 2009, the **BBC** and the **British Museum** collaborated on a hugely success
 
 “It is only in the world of objects that we have time and space,” T. S. Eliot wrote. Think of the mark that things — the wheel, the crucifix, the credit card or the computer chip — have made on civilization.  What objects or collection of items tell the story of your life?  Think about 5 items that define you.
 
-On Friday, we reviewed basic datatypes in Javascript. Strings, Integers, variables, etc. These are the building blocks of most programming languages. But you are limited in how much you can build without a good way of storing those datatypes. This is where 'data structures' or collections like **Arrays** and **Objects** are invaluable.
+On Friday, we reviewed basic data types in Javascript. Strings, Integers, variables, etc. These are the building blocks of most programming languages. But you are limited in how much you can build without a good way of storing those data types. This is where 'data structures' or collections like **Arrays** and **Objects** are invaluable.
 
 ---
 
 ## Arrays (5m)
 
-An **array** is syntactically defined with opening and closing square brackets `[ ]`. Between those braces, we will add pieces of data separated by commas.
+An **array** is syntactically defined with opening and closing square brackets `[ ]`. Between those brackets, we will add pieces of data separated by commas.
 
 Arrays are used for:
 
-* Storing any type data in a particular order
+* Storing any type data in a **particular order**
 * Enumerating over data, i.e. using a zero-based index to find them
 * Quickly reordering data
 
