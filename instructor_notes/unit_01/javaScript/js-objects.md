@@ -32,13 +32,25 @@ Objects in JavaScript
 
 ### What is an object? (5m)
 
-In the last lesson, I asked you to think about 5 objects that define you.  You added these items to an array and were able to iterate over them/console.log them.  But there we just wrote the name of the item, there wasn't any details given.  Objects can help us out with that.
+In the last lesson, I asked you to think about 4 objects that define you.  You added these items to an array and were able to iterate over them/console.log them.  But we just wrote the name of the item, there weren't any details given.  Objects can help us out with that.
 
 * Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they are called a dictionary, in Ruby they are called a hash).
 * In JavaScript, an object is a type of key-value store, or a way to group pairs of keys and values together
 * Like arrays, objects can hold multiple pieces of data of varying types; but unlike arrays, objects use named keys rather than ordered indices to access those pieces of data.
 
-For example, a puppy has properties that define it, like a breed/type, the color of his/her fur, a size, a demeanor etc. Following the same logic, a JavaScript object will have **keys/names** and **values** for each property.
+For example, a puppy has properties that define it, like a name, a breed/type, the color of his/her fur, a size, a demeanor etc. This would look like:
+
+```javascript
+var puppy = {
+  name: "Diesel",
+  breed: "Malchi",
+  color: "white",
+  size: "small",
+  demeanor: "old, grouchy man"
+}
+```
+
+This JavaScript object will have **keys/names/properties** for the item we are defining, and **values** for each property.
 
 <br />
 
@@ -56,7 +68,7 @@ var myObject = {};
 
 Objects in JavaScript **always** have properties associated with them.
 
-You can think of a property on a JavaScript object as a type of variable that contains a value. The properties of an object can be accessed using "dot notation" or bracket notation which will be discussed in a minute:
+You can think of a property on a JavaScript object as a type of variable that contains a value. The properties of an object can be accessed using **dot notation** or **bracket notation** which will be discussed in a minute:
 
 ##### Bracket Notation
 
@@ -107,23 +119,23 @@ classroom;
 
 ### Bracket Notation
 
-The other way to set properties on a JavaScript object, call the variable, followed by square brackets- inside of the square brackets is the key, and you assign it the value.
+The other way to set properties on a JavaScript object, call the object, followed by square brackets- inside of the square brackets is the key/properties, and you assign it the value.
 
 ```javascript
-classroom["name"] = "WDI 10 Rocks";
-classroom["campus"] = "PCM!";
+classroom["name"] = "WDI 10 Rocks!";
+classroom["campus"] = "Ponce City Market!";
 ```
 
 This syntax can also be used to read the properties of an object, as well as create new ones:
 
 ```javascript
 console.log(classroom["name"]);
-=> "WDI ATL 10";
+=> "WDI 10 Rocks!";
 
-classroom.size = 13;
+classroom.size = 10;
 
 console.log(classroom["size"]);
-=> 13;
+=> 10;
 ```
 
 - You can use dot notation or bracket notation to set or change your properties.
@@ -139,11 +151,11 @@ The following code shows how to remove a property:
 
 ```javascript
 classroom;
-=> {name: "WDI 10 Rocks", campus: "PCM!", size: 13};
+=> {name: "WDI 10 Rocks!", campus: "Ponce City Market!", size: 10};
 delete classroom.size;
 
 classroom;
-=> {name: "WDI 10 Rocks", campus: "PCM!"}
+=> {name: "WDI 10 Rocks!", campus: "PCM!"}
 ```
 
 <br />
@@ -156,9 +168,9 @@ We will be discussing functions in more detail tomorrow.
 
 ```javascript
 var classroom = {
-  name: "WDI 10 Rocks", // key: value,
-  campus: "PCM!", // key: value,
-  size: 13,
+  name: "WDI 10 Rocks!", // key: value,
+  campus: "Ponce City Market!", // key: value,
+  size: 10,
   start: "04/24/2017",
   instructors: ['Danny', 'Maren'],
   sayHello: function() {
@@ -188,27 +200,30 @@ var goodbye = function() {
 classroom.sayGoodbye = goodbye;  
 
 classroom.sayGoodbye();
-=> Hello
+=> See ya later!
 ```
 
-##`this` for object references
+## This keyword in objects
 
-In JavaScript, `this` is a keyword that refers to the current object. When used in a method on an object, it will always refer to the current object.
+In JavaScript, the `this` is a keyword that refers to the current object. When used in a method on an object, it will always refer to the current object.
 
 ```javascript
 var classroom = {
-  name: "WDI ATL 9", // key: value,
-  campus: "Atlanta!", // key: value,
-  start: "02/21/2017",
-  instructors: ['Danny', 'Maren', 'Josh', 'John', 'Lisa'],
+  name: "WDI 10 Rocks!", // key: value,
+  campus: "Ponce City Market!", // key: value,
+  start: "04/24/2017",
+  instructors: ['Danny', 'Maren'],
   sayHello: function() {
-    console.log("Hello");
+    console.log("Hello, all of you crazy cats!");
+  },
+  sayGoodbye: function() {
+    console.log("See ya later!");
   },
   sayHelloToOne: function(instructorIndex) {
-    console.log('Hi, ' + this.instructors[instructorIndex]);
+    console.log('Hi, ' + this.instructors[instructorIndex] + ".");
   },
   classInfo: function() {
-    console.log("This " + this.name + " and the class starts on " + this.start);
+    console.log(this.name + " It is located at " + this.campus + " The class started on " + this.start + ".");
   }
 };
 ```
@@ -219,7 +234,7 @@ var classroom = {
 
 There are three native ways to list the properties of an object we are just going to explore the `for ... in` loop:
 
-* **for...in loops** This method traverses all enumerable properties of an object and its prototype chain.
+* [for...in loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) This method traverses all enumerable properties of an object and its prototype chain.
 
 ```javascript
 for (var eachKey in classroom) {
@@ -237,13 +252,13 @@ for (var eachKey in classroom) {
 }
 ```
 
-You can use the bracket notation with for...in to iterate over all of the enumerable properties of an object.
+You can use the **bracket notation** with for...in to iterate over all of the enumerable properties of an object.
 
 Other methods to access the keys/values of an object.
 
-* **Object.keys(classroom)**  This method returns an array with all of the enumerable property's names/the keys of the object classroom.
-* **Object.getOwnPropertyNames(classroom)** This method returns an array containing all of the enumberable property's names/the keys of the object classroom.
-* **Object.values(classroom);**
+* [Object.keys(classroom);](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)  This method returns an array with all of the enumerable property's names/the keys of the object classroom.
+* [Object.getOwnPropertyNames(classroom);](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames) This method returns an array containing all of the enumberable property's names/the keys of the object classroom.
+* [Object.values(classroom);](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values)
 
 <br />
 
@@ -263,7 +278,7 @@ Other methods to access the keys/values of an object.
 
 - Practice using dot notation and bracket notation for retrieving these properties.
 
-**We will discuss constructor functions in a few weeks.  Constructor functions will help, in terms of you not having to create a new object every time that you would like to create a new dream vacation.
+**We will discuss constructor functions in a few weeks.  Constructor functions will help, in terms of you not having to create a new object every time that you would like to create a new dream vacation.**
 
 ## Conclusion (5m)
 
