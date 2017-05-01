@@ -70,7 +70,7 @@ Objects in JavaScript **always** have properties associated with them.
 
 You can think of a property on a JavaScript object as a type of variable that contains a value. The properties of an object can be accessed using **dot notation** or **bracket notation** which will be discussed in a minute:
 
-##### Bracket Notation
+##### Dot Notation
 
 ```javascript
 var person = {
