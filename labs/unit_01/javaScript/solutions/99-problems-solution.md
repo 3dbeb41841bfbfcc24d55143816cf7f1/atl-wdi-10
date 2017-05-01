@@ -22,7 +22,7 @@ Topics: datatypes, conditionals, loops, functions <br>
 Write a for loop that will console.log the numbers 0 to 999.
 
 ```javascript
-var num = 99;
+var num = 999;
 => undefined
 
 for(var i = 0; i <= num; i++) { 
