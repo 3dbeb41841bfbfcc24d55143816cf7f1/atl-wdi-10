@@ -46,12 +46,12 @@ Write another for loop that iterates over the directors array but also adds the 
 
 etc.
 
-Write a function `isCool` that accepts one parameter, `name` as an argument. The function should return a string that outputs the name and a message saying that that person is cool.
+Write a function `isCool` that accepts one parameter, `name` as an argument. The function should return a string that outputs the name and a message saying that that person is super cool.
 
 ```
 console.log(isCool("Thom"));
 
-=> "Thom is almost cool";
+=> "Thom is super cool";
 ```
 
 ## 6
