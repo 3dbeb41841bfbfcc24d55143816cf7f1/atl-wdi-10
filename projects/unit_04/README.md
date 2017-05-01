@@ -23,6 +23,7 @@ Your app must:
 * **Have at _least_ 3 models** (more if they make sense) – one representing someone
 using your application (a user), and two that represent the main functional ideas
 for your app
+* **Have validations on any applicable fields on your models**
 * **Have complete RESTful routes** for at least one of your resources with GET, POST,
 PUT, and DELETE
 * **Use MongoDB or SQL for your database**
