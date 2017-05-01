@@ -304,6 +304,7 @@ We will continue to use JavaScript objects every day, and you will have plenty o
 
 ##### Exercise Solution
 
+```javascript
 var cinque_terre = {
   city: "Cinque Terre",
   country: "Italy",
@@ -321,3 +322,4 @@ var oaxaca = {
     console.log('I would love to go to ' + this.city + ', ' + this.country + '. And learn a phrase other than ' + this.local_phrase );
   }
 }
+```
