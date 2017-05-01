@@ -90,7 +90,7 @@ JavaScript arrays have several advanced **iterator methods**- like forEach, map,
 
 **Independent practice:** (3m)
 
-1. Create an array of numbers.  Loop over the array of numbers and console.log `i`.
+1. Create an array of numbers.  Loop over the array of numbers and console.log each number in the array.
 2. Create an array of names.  Loop over the array of names and console.log each name.
 
 <br />
