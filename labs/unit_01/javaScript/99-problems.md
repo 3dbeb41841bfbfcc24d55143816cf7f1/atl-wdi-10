@@ -131,7 +131,8 @@ console.log(wordReverse("Ishmael me Call"));
 Write a function `longestWord` that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
 
 ```
-console.log(longestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+newArray = ["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"];
+console.log(longestWord(newArray));
 
 => "Peanutbutter"
 ```
@@ -142,7 +143,7 @@ console.log(longestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutte
 Write a function `digitSum` that accepts a number and returns the sum of its digits using a `for` loop.
 
 ```
-console.log(digitSum(42))
+console.log(digitSum(42));
 => 6;
 ```
 
