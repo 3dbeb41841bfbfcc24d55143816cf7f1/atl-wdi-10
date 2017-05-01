@@ -1317,13 +1317,13 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_01/javaScript/js-practice">Morning Exercise</a>
     </td>
     <td>
-      WDI9 Outcomes: Intro to Outcomes Program + Post-Course Support
-    </td>
-    <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_01/javaScript/javascript-good-and-bad-parts.md">Morning Exercise</a>
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_01/javaScript/making-change">Morning Exercise</a>
+    </td>
+    <td>
+      WDI9 Outcomes: Intro to Outcomes Program + Post-Course Support
     </td>
     <td>
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/morning_exercises/unit_01/code-wars/count-of-positives-sum-of-negatives.md">Morning Exercise</a>

@@ -169,8 +169,9 @@ var vacations = ['Bali', 'Argentina', 'Greece'];
 
 vacations.toString();
 => "Bali,Argentina,Greece"
-<!-- vacations.join(", ");
-=> "Bali, Argentina, Greece" -->
+
+vacations.join(", ");
+=> "Bali, Argentina, Greece"
 ```
 
 - `vacations.pop()` - Removes and returns the last item in your array.
