@@ -380,6 +380,8 @@ The [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp) property
 - [backface-visibility](https://www.w3schools.com/cssref/css3_pr_backface-visibility.asp)
     - defines whether an element should be visible when it is facing the screen
 
+<br />
+
 ### 3D Transform Methods
 
 #### Rotate
@@ -439,14 +441,14 @@ If you know the math, you can write your own transformation matrix
 }
 
 .square:hover {
-    ...
-    transform: translateX(100px); /* end state */
+    background: darkBlue;
+    transform: skewX(20deg) translateX(100px); /* end state */
 }    
 ```
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
-Use the definitions above to work on the exercises below: 
+Use the definitions above to work on the exercises below to work with your second div with a class of `square2`: 
 
 1. Rotate your box 45 degrees
 2. Translate it along the X axis by 200px
