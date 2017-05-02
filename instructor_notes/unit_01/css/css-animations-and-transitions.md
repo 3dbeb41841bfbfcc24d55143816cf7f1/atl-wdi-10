@@ -103,20 +103,6 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 - touch main.css
 - subl .
 
-<!-- ```css
-a {
-    padding: 2em; /* initial state */
-    display: inline-block;
-    border: 1px solid black;
-    position: relative;
-    left: 0;
-    background: yellow;
-}
-a:hover {
-    background: green; /* final state */
-}
-``` -->
-
 #### In your index.html
 
 ```
@@ -199,8 +185,8 @@ Next, add a transition property:
     height: 200px;
     background: crimson; /* initial state */
     transition-property: background;
-    transition-duration: 5s; /* 1s is the default */
-    transition-delay: 1s;
+    transition-duration: 3s; /* 1s is the default */
+    transition-delay: .5s;
 }
 
 .square:hover {
@@ -208,12 +194,14 @@ Next, add a transition property:
 }
 ```
 
-### Updating to transition shorthand
+##### Transition Shorthand
 
 **Transition Shorthand**- allows your code to be shorter and more maintainable, especially if you are using vendor prefixes.
 
 - `transition: <transition-property> <transition-duration> <timing-function> <transition-delay>`
     - Example: `transition: transform 1s ease-in-out;` 
+
+### We Do
 
 #### In the main.css
 
@@ -222,7 +210,7 @@ Next, add a transition property:
     width: 200px;
     height: 200px;
     background: crimson; /* initial state */
-    transition: background-color 5s 1s; 
+    transition: background-color 3s .5s; 
 }
 
 .square:hover {
@@ -230,16 +218,20 @@ Next, add a transition property:
 }
 ```
 
+<br />
+
 ![](http://i.imgur.com/ylb6WX9.gif)
+
+##### In that same index.html
 
 1. Create a 100px by 100px square box that has a background color of tomato, with a class of `square2`.
 2. Write a CSS rule that will transition your div from this initial state:
 
 ```css
 .square2 {
-    background: tomato;
     width: 100px;
     height: 100px;
+    background: tomato;
 }
 ```
 
@@ -255,11 +247,11 @@ Next, add a transition property:
 
 ```css
 .square2 {
-    background: tomato;
     width: 100px;
     height: 100px;  
-    transition-duration: 3s;
+    background: tomato;
     transition-property: background; /* specify which property you want to transition */
+    transition-duration: 3s;
     transition-timing-function: linear;
 }
 ```
@@ -316,9 +308,11 @@ The [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp) property
         - [skewX(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_skewx)
         - [skewY(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_skewy)
 
-Syntax:
+##### Basic Transform Syntax:
  
 - `transform: method(parameter);`
+
+<br />
 
 ### We Do
 
@@ -342,15 +336,17 @@ Syntax:
 
 - You can check out the `transform` options in the Dev Tools using autocomplete. 
 
-**Transform Shorthand**:
+##### Transform Shorthand
 
-1. `transform: scale(2) skewX(20deg) rotate(4deg);`
+- With **transform shorthand**, you can combine multiple transform options together.
+
+- `transform: scale(2) skewX(20deg) rotate(4deg);`
 
 <br />
 
-### 3D Space
+### 3D Transformations in the 3D Space
 
-3D transformations extends CSS transform to allow elements in CSS to be transformed in three-dimensional space.  You use the same values for the x and y-axis (horizontally and vertically).  The z-axis allows us to transform front and back/extend out of the screen or 2D pane.
+3D transformations extends CSS transform to allow elements in CSS to be transformed in a three-dimensional space.  You use the same values for the x and y-axis (horizontally and vertically).  The z-axis allows us to transform front and back/extend out of the screen or 2D pane.
 
 #### New CSS Properties
 
@@ -383,9 +379,9 @@ Syntax:
 - [backface-visibility](https://www.w3schools.com/cssref/css3_pr_backface-visibility.asp)
     - defines whether an element should be visible when it is facing the screen
 
-#### 3D Transform Methods
+### 3D Transform Methods
 
-##### Rotate
+#### Rotate
 
 - [rotateX(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotatex) // transform clockwise
 
@@ -396,7 +392,7 @@ Syntax:
 - rotate 3D shorthand: `rotate3d(x-axis, y-axis, z-axis, angle deg);`
     `rotate3d(1, 1, 1, 360deg);`
 
-##### Translate
+#### Translate
 
 -  [translateX(x)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translatex) // transform horizontally
 
@@ -407,7 +403,7 @@ Syntax:
 - translate 3D shorthand: `translate3d(x-axis, y-axis, z-axis);`
     `translate3d(50px, 50px, 75px);`
 
-##### Scale
+#### Scale
 
 - [scaleX(x)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scalex) // transform  width
 
@@ -419,7 +415,7 @@ Syntax:
     `translate3d(2, 2, 2);`
     3D- allows you to transform on the size and not on the movement
 
-##### Matrix
+#### Matrix
 
 If you know the math, you can write your own transformation matrix
 
