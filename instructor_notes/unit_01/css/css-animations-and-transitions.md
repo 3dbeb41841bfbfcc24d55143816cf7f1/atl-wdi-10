@@ -567,6 +567,8 @@ Transitions are great for going from one state to another, but sometimes you nee
 
 [Animation Example](http://codepen.io/marenwoodruff/pen/EWKMKJ?editors=1100)
 
+<br />
+
 ![](http://i.imgur.com/ylb6WX9.gif)
 
 1. Add the keyframe example and example1 to your main.css
