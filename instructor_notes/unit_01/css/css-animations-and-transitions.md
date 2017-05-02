@@ -568,6 +568,7 @@ Transitions are great for going from one state to another, but sometimes you nee
 [Animation Example](http://codepen.io/marenwoodruff/pen/EWKMKJ?editors=1100)
 
 <br />
+<br />
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
