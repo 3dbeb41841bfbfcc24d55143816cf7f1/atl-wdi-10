@@ -695,21 +695,22 @@ Here are some [common jQuery effects](http://www.w3schools.com/jquery/jquery_ref
  You can accomplish a lot of the CSS animation code from above using 
 [animate()](https://www.w3schools.com/jquery/jquery_animate.asp). The jQuery animate() method is used to create custom animations.
 
-**Syntax**
-<rb />
-`$(selector).animate({params},speed,callback);`
+##### Basic Syntax
+- `$(selector).animate({params},speed,callback);`
+
 - **params**- required params parameter defines the CSS properties to be animated
 - **speed**- speed parameter specifies the duration of the effect. 
     - slow
     - fast
     - milliseconds
+
 - **callback parameter**- a function to be executed after the animation completes
 
 Here is an example:
  
-1. in the index.html:
+1. in the index.html: add the html below
 
-```html
+<!-- ```html
 <!DOCTYPE>
 <html>
   <head>
@@ -718,8 +719,8 @@ Here is an example:
   </head>
   <body>
     <div class="container">
-        <div id="box1">BOX 1</div>
-        <div id="box2">BOX 2</div>
+        <div class="square1">BOX 1</div>
+        <div class="square2">BOX 2</div>
     </div>
     <div class="controlButtons">
         <button type="button">Toggle</button>
@@ -727,12 +728,20 @@ Here is an example:
     <script src="script.js"></script>
   </body>
 </html>
+``` -->
+```html
+<div class="square4"></div>
+
+<div class="controlButtons">
+    <button type="button">Toggle</button>
+</div>
+
 ```
 
 2. in the main.css:
 
 ```css
-#box2 {
+.square4 {
     height: 100px;
     width: 100px;
     padding: 10px;
@@ -744,10 +753,12 @@ Here is an example:
 3. in the script.js- add this jQuery:
 
 ```js
-$("button").click(function(){
-    $("#box2").animate({
-        height: 'toggle';
-    }, 4000);
+$(window).on('load', function() {
+    $("button").click(function(){
+        $(".square4").animate({
+            height: 'toggle';
+        }, 4000);
+    });
 });
 ```
 
