@@ -494,7 +494,8 @@ Transitions are great for going from one state to another, but sometimes you nee
 ![](http://i.imgur.com/ylb6WX9.gif)
 
 1. Define a named animation with a set of keyframes. These are similar to the traditional animation "tweeners" that were mentioned earlier.
-    
+
+##### Using from... to
 ```css
 @keyframes example {
     from { background-color: red; }
@@ -503,6 +504,7 @@ Transitions are great for going from one state to another, but sometimes you nee
 ```
 <br />
 
+##### Using percentages
 ```css
 @keyframes example {
     0%   { background-color: red; left: 0px; top: 0px; }
@@ -515,7 +517,7 @@ Transitions are great for going from one state to another, but sometimes you nee
 > Note, remember that for production, `translate` will be faster than `left`, `top`, etc.
 
 
-1. Assign the animation to a rule and give it a duration
+2. Assign the animation to a rule and give it a duration
     
 ```css
 div {
