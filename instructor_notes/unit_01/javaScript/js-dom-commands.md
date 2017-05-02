@@ -61,7 +61,7 @@ Let's create a web page and begin to inspect its structure.
 
 - Open your terminal
 - `cd` into your `ga` folder
-  - (`cd ~/Desktop/ga`)
+  - (`cd ~/Desktop/ga/clas-exercises`)
 - Create a new directory called `dom-intro-lesson`
   - (`mkdir dom-intro-lesson`)
 - `cd` into it and create a new file called `index.html`
@@ -70,7 +70,7 @@ Let's create a web page and begin to inspect its structure.
 - Open the file in Sublime
   - `subl .`
 - Copy this code into the file then open it in Chrome:
-  - to open in Chrome, right click on the html page and, go down to open in browser
+  - to open in Chrome, right click on the html page and, click on 'Open in Browser'
 
 ```html
 <!DOCTYPE html>
@@ -90,9 +90,9 @@ Let's create a web page and begin to inspect its structure.
 </html>
 ```
 
-Here is the DOM tree for the above HTML document:
+<!-- Here is the DOM tree for the above HTML document:
 
-![DOM Tree](https://i.imgur.com/8goR1EO.png)
+![DOM Tree](https://i.imgur.com/8goR1EO.png) -->
 
 <br />
 
@@ -120,8 +120,8 @@ We will then come back together as class. Each group will briefly demo and expla
   * document.getElementById
   * document.getElementsByClassName
   * document.getElementsByName
-  * document.querySelector
 * **Creation** 
+  * document.querySelector
   * document.createElement
   * node.style
 * **Traversal** 

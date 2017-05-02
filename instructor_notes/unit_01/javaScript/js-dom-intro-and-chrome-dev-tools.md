@@ -124,7 +124,7 @@ Pretty sweet, eh?
 ![You Do](http://i.imgur.com/ylb6WX9.gif)
 
 ### YOU DO - Alter the GA logo (5m)
-- Inspect the General Assemb.ly logo in the top left corner and change the image to an image of your choosing (from somewhere on the internet)
+- Go to the [General Assemb.ly site](https://generalassemb.ly/).  Inspect the General Assemb.ly logo in the top left corner and change the image to an image of your choosing (from somewhere on the internet)
 - Change the values of the logo margin to make the image fit
 - Change the font-family of the first `h1` on the page to Arial and the font-color to red
 
@@ -136,7 +136,7 @@ The goal of this exercise is to try to get you comfortable editing and manipulat
 
 ### YOU DO (2 min)
 
-- Change the text of the first `h1` on the page to "Hello, WDI ATL 10!".
+- Change the text of the first `h1` on the page to "WDI ATL 10 gets down with Chrome Dev Tools!".
 - If you finish with this task, experiment with what else you can manipulate on the page.
 
 <br />
@@ -165,7 +165,7 @@ Lastly, let's have a look at the console tab (practice the shortcut – `⌘ + o
 The **JavaScript Console** provides two primary ways for developers to test web pages and applications:
 
 1. Log diagnostic information in the development process using the [Console API](https://developer.chrome.com/devtools/docs/console-api)
-  - This is where console.log comes from.
+**This is where console.log comes from.**
 2. A shell prompt, which can be used to interact with the document and the DevTools.
 
 When we write JavaScript that we intend to have processed in a browser, we can use commands like `console.log()` to log values from our JavaScript straight to this tab, as the code executes. This is immensely helpful when we are trying to figure out if certain values are being retrieved or passed between functions. We will use this feature/statement **a lot** in the coming weeks.
