@@ -114,6 +114,9 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
     </head>
     <body>
         <div class="square"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
 ```
@@ -581,7 +584,7 @@ Transitions are great for going from one state to another, but sometimes you nee
 
 1. Add the keyframe definition for example and example1 to your main.css
 
-2. Try adding the following properties
+2. Assign the animation to a rule and give it a duration with the following properties:
 
 ```css
 .square2 {
@@ -651,22 +654,22 @@ jQuery has some simple animation methods like [fadeIn()](https://www.w3schools.c
 - **easing**- specifies the speed of the element in different points of the animation. Default value is "swing"
     - swing - moves slower at the beginning/end, but faster in the middle
     - linear - moves in a constant speed
-    
+
 - **callback**- a function to be executed after the fadeIn() method is completed
 
-Let's try this in Codepen.io (make sure to include the jQuery library under Settings -> Quick Add).
+<!-- Let's try this in Codepen.io (make sure to include the jQuery library under Settings -> Quick Add). -->
 <br />
 
-1. html:
+1. in your index.html:
 
 ```html
-<div id="box1">BOX 1</div>
+<div class="square3"></div>
 ```
 
-2. css:
+2. in your main.css:
 
 ```css
-#box1 {
+.square3 {
     height: 100px;
     width: 100px;
     padding: 10px;
@@ -675,10 +678,12 @@ Let's try this in Codepen.io (make sure to include the jQuery library under Sett
 }
 ```
 
-3. jQuery:
+3. in your script.js, add this jQuery:
 
 ```js
-$('#box1').fadeIn(3000).fadeOut(10000);
+$(window).on('load', function() {
+    $('.square3').fadeIn(3000).fadeOut(3000);
+});
 ```
 
 Here are some [common jQuery effects](http://www.w3schools.com/jquery/jquery_ref_effects.asp) you can use.
