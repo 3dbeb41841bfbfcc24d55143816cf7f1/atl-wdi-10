@@ -338,10 +338,11 @@ The [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp) property
 
 ##### Transform Shorthand
 
-- With **transform shorthand**, you can combine multiple transform options together.
+- With **transform shorthand**, you can combine multiple transform options together - note that they aren't comma-separated.
 
 - `transform: scale(2) skewX(20deg) rotate(4deg);`
 
+<br />
 <br />
 
 ### 3D Transformations in the 3D Space
