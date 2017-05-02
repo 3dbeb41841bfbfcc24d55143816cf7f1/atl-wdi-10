@@ -27,7 +27,7 @@ In short, I like to think of ECMAScript as the language, and JavaScript as an im
 
 > Check out [this awesome visualization](http://shaunlebron.github.io/solar-system-of-js/#0) of the current state of the JS universe
 
-Condensed timeline:
+#### Condensed timeline:
 
 - 1999 - ES3 was released, the first widespread use of the language.
 - ES4 was never released, largely due to  political reasons.
@@ -47,7 +47,7 @@ the new syntax.
 <details>
 <summary>Who is Brendan Eich?</summary>
 
-He is the creator of JavaScript, which he created in 10 days!  He co-founded Mozilla.  And is the CEO of Brave Software, an internet security company.
+He is the creator of JavaScript, which he created in 10 days!  He co-founded Mozilla.  And he is the CEO of Brave Software, an internet security company.
 
 </details>
 
@@ -60,7 +60,7 @@ Take 20 minutes to read through this article: [Getting Started with ECMAScript 6
 
 ## Support Modern Browsers
 
-Make sure that if you are using Chrome, you enable the experimental javascript flag by going to Chrome Flags (chrome://flags). And then relaunch Chrome.
+Make sure that if you are using Chrome, you enable the experimental javascript flag by going to Chrome Flags (chrome://flags), and clicking on the 'Experimental JavaScipt link' in order to enable it. And then relaunch Chrome.
 
 <br />
 
@@ -78,7 +78,7 @@ In short, it is the notion of which variables are available and where.
 <details>
 <summary>So far in class, what is the primary way to control scope in JS?</summary>
 
-If you wanted block level scope in ES5, you would need to use functions- either a regular function or an IIFE (immediately invoked function expression.
+If you wanted block level scope in ES5, you would need to use a function.
 
 </details>
 
@@ -86,17 +86,19 @@ If you wanted block level scope in ES5, you would need to use functions- either 
 
 #### `let`
 
-[Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let): ES2015 introduces the concept of block scoping, which allows us to limit the scope of a variable declared with `let` to a given block `{ ... }`. It also avoids variables hoisting, as a variable is only declared/assigned where it exists within our code.
+[Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let): ES2015 introduces the concept of block scoping, which allows us to limit the scope of a variable declared with `let` to a given block of code `{ ... }`. It also avoids variables hoisting, as a variable is only declared/assigned where it exists within our code.
 
 Scope in ES5:
 
 ```js
 // ES5
 var num = 1;
+
 {
   var num = 2;
   console.log(num);
 }
+
 console.log(num);
 
 // will print out 2, 2
@@ -141,7 +143,7 @@ console.log("outside loop:", j);
 
 #### `const`
 
-[Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const): ES2015 introduces another keyword for declaring variables called `const`. `const` is an identifier for variables that can not be reassigned and are considered read only variables. It is not a constant variable, but a **constant reference** to your variable.
+[Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const): ES2015 introduces another keyword for declaring variables called `const`. `const` is an identifier for variables that can not be reassigned and are considered read only variables. It is not a constant variable, but a **constant reference** to a variable.
 
 In ES5, if you want to declare a variable that should remain constant, it is a common practice to write the name in all uppercase letters.  However, this will not prevent the variable from being reassigned. It is used more as a note to other developers about your intention for that variable.
 
@@ -186,7 +188,7 @@ helloAgain(); // Hello again, stranger
 helloAgain("Danny"); // Hello again, Danny
 ```
 
-The ES2015 way is generally better because it keeps your code more concise= you won't have 'or' expressions all over your code.
+The ES2015 way is generally better because it keeps your code more concise- you won't have 'or' expressions all over your code.
 
 <br />
 
@@ -198,6 +200,7 @@ The ES2015 way is generally better because it keeps your code more concise= you 
 let [num1, num2] = [1, 2];
 num1; //= 1
 num2; //= 2
+
 let nums = [1, 2, 3, 4, 5];
 let [first, second, third] = nums;
 first; //= 1
@@ -220,18 +223,18 @@ var congressionalCandidate = {
 
 // ES5
 function greetPolitician(congressionalCandidate) {
-    console.log("Hello, " + congressionalCandidate.name + ". How's the race going in " + congressionalCandidate.location + "?");
+    console.log("Hello, " + congressionalCandidate.name + ". How is the race going in " + congressionalCandidate.location + "?");
 }
-greetUser(congressionalCandidate);
-=> Hello, Jon. How's the race going in Atlanta?
+greetPolitician(congressionalCandidate);
+=> Hello, Jon. How is the race going in Atlanta?
 
 
 // In ES2015 this becomes:
 function greetNewPolitician({ name, location })  {
-    console.log("Hello, " + name + ".  How's the race going in " + location + "?");
+    console.log("Hello, " + name + ".  We hope you win the " + location + " race!");
 }
 greetNewPolitician(congressionalCandidate);
-=> Hello, Jon. How's the race going in Atlanta?
+=> Hello, Jon. We hope you win the Atlanta race!
 ```
 
 If you are destructuring an object, you would surround the desired variables with curly braces, which will make it look like you are creating an object literal, but you are really just building an destructuring assignment statement.  You will want to pick off specific properties in the object.
