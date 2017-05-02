@@ -312,18 +312,18 @@ In ES2015, we can interpolate variables using template literal syntax: '(`)' (ba
 
 ```js
 // ES2015
-let name = "Inigo Montoya";
-let killee = "father";
-let prepareTo = "die";
+let newName = "Inigo Montoya";
+let newKillee = "father";
+let newPrepareTo = "die";
 
-console.log(`Hello. My name is ${name}. You killed my ${killee}. Prepare to ${prepareTo}.`);
+console.log(`Hello. My name is ${newName}. You killed my ${newKillee}. Prepare to ${newPrepareTo}.`);
 
 // A template literal can also be on multiple lines and it would still be valid!
 console.log(`
   Hello. 
-  My name is ${name}. 
-  You killed my ${killee}. 
-  Prepare to ${prepareTo}.
+  My name is ${newName}. 
+  You killed my ${newKillee}. 
+  Prepare to ${newPrepareTo}.
 `);
 ```
 
@@ -343,7 +343,7 @@ favoriteFoods.forEach(function(favoriteFood) {
 
 ```js
 // ES2015
-let healthyFavoriteFood = ["salad", "yogurt with honey", "strawberries"];
+let healthyFavoriteFood = ["salad with lemon, olive oil and Maldons", "yogurt with honey", "strawberries"];
 healthyFavoriteFood.forEach((healthyFave) => {
   console.log(`I love ${healthyFave}`);
 });
