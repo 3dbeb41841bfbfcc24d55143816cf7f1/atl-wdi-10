@@ -757,6 +757,10 @@ $(window).on('load', function() {
 
 <br />
 
+## My Solution to today's in-class exercise
+
+https://github.com/marenwoodruff/css-animation
+
 ## Lab
 
 Look at these links and complete as many of these exercises as you can:
