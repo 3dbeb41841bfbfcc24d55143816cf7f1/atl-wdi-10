@@ -25,7 +25,7 @@ window.onload = function() {
     var buttonThree = document.getElementById('buttonThree');
 
     buttonThree.addEventListener("click", function(){
-        var par = document.createElement("p");
+        var par = document.getElementsByTagName("p")[0];
 
         var containerDiv = document.getElementById('container');
         containerDiv.removeChild(par);
