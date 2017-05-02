@@ -572,7 +572,7 @@ Transitions are great for going from one state to another, but sometimes you nee
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
-1. Add the keyframe example and example1 to your main.css
+1. Add the keyframe definition for example and example1 to your main.css
 
 2. Try adding the following properties
 
