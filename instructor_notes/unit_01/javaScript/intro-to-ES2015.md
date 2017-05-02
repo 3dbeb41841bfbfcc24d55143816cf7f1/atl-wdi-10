@@ -237,7 +237,7 @@ greetNewPolitician(congressionalCandidate);
 => Hello, Jon. We hope you win the Atlanta race!
 ```
 
-If you are destructuring an object, you would surround the desired variables with curly braces, which will make it look like you are creating an object literal, but you are really just building an destructuring assignment statement.  You will want to pick off specific properties in the object.
+If you are destructuring an object, you would surround the desired variables with curly braces, which will make it look like you are creating an object literal, but you are really just building a destructuring assignment statement.  You will be allowed to pick off specific properties in the object.
 
 <br />
 
@@ -280,7 +280,7 @@ var obj = {num1:num1, num2:num2};
 let num3 = 3;
 let num4 = 4;
 
-let obj = {num3, num4};
+let newObj = {num3, num4};
 ```
 
 <br />
