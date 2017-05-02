@@ -537,6 +537,8 @@ Transitions are great for going from one state to another, but sometimes you nee
 }
 ``` -->
 
+<br />
+
 #### Additional properties:
 
 - [animation-duration](https://www.w3schools.com/cssref/css3_pr_animation-duration.asp)
