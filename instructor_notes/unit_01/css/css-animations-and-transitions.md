@@ -522,7 +522,7 @@ Transitions are great for going from one state to another, but sometimes you nee
 ```
 > Note, remember that for production, `translate` will be faster than `left`, `top`, etc.
 
-#### Assign the animation to a rule and give it a duration
+<!-- #### Assign the animation to a rule and give it a duration
 
 ```css
 .square2 {
@@ -534,7 +534,7 @@ Transitions are great for going from one state to another, but sometimes you nee
     animation-duration: 4s;
     animation-timing-function: linear;
 }
-```
+``` -->
 
 #### Additional properties:
 
