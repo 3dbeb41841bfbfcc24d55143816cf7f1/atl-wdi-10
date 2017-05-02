@@ -570,7 +570,9 @@ Transitions are great for going from one state to another, but sometimes you nee
 `animation: <animation-name> <animation-duration> <animation-timing-function> <animation-delay>
         <animation-iteration-count> <animation-direction>;`
 
-[Animation Example](http://codepen.io/marenwoodruff/pen/EWKMKJ?editors=1100)
+<br />
+
+[Codepen Animation Example](http://codepen.io/marenwoodruff/pen/EWKMKJ?editors=1100)
 
 <br />
 <br />
