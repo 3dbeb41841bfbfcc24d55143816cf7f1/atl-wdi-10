@@ -31,7 +31,7 @@ laptops, we might be pick the following attributes.
   > e.g.
 
   ```js
-  laptop = {
+  var laptop = {
     salePrice: 1000,
     brand: 'Lenovo',
     RAM: 8,

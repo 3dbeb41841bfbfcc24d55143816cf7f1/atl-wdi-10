@@ -280,18 +280,20 @@ The [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp) property
 
 ### 2D Transform Methods 
 
-1. [rotate(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotate)
+- [rotate(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotate)
     - `transform: rotate(10deg);`
     - rotate an element clockwise or counter-clockwise via degrees(deg)
     - will rotate clockwise by default
     - if you use a negative value, it will rotate counter-clockwise
-1. [scale(x, y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scale)
+
+- [scale(x, y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scale)
     - `transform: scale(1.1);`
     - allows you to increase/decrease the size of an element
     - takes 2 parameters
         - 1st parameter(width)
         - 2nd parameter(height)
-1. [translate(x, y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translate)
+
+- [translate(x, y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translate)
     - `transform: translateX(10px);`
     - move an element from its **current position** on the x and y-axis
     - takes 2 parameters
@@ -301,7 +303,8 @@ The [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp) property
         - 2nd parameter- y-axis
             - will move vertically
         - optional: use `translateX()` or `translateY()`
-1. [skew(x-angle, y-angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_skew)
+
+- [skew(x-angle, y-angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_skew)
     - `transform: skewX(45deg);`
     - skew elements on the x and y-axis via degrees(deg)
     - takes 2 parameters
@@ -351,7 +354,7 @@ Syntax:
 
 #### New CSS Properties
 
-1. [perspective](https://www.w3schools.com/cssref/css3_pr_perspective.asp)
+- [perspective](https://www.w3schools.com/cssref/css3_pr_perspective.asp)
     - distance between the viewer and the object
     - if you ever took an art class, you probably discussed perspective
         - **vanishing point**- when all points converge on a single point
@@ -361,44 +364,70 @@ Syntax:
     - a higher value will feel far away (1500px)
     - a lower value (400px) will make you feel closer to the object
     - **must be applied to the parent element**
+
     <br />
     ![Vanishing point](http://imgs.abduzeedo.com/files/articles/vanishing/vanishing-12.jpg)
-1. [perspective-origin](https://www.w3schools.com/cssref/css3_pr_perspective-origin.asp)
+
+- [perspective-origin](https://www.w3schools.com/cssref/css3_pr_perspective-origin.asp)
     - defines where the element exists on the x and y-axis
     - default 50% 50%, which represents the x and y-axis
-1. [transform-origin](https://www.w3schools.com/cssref/css3_pr_transform-origin.asp)
+
+- [transform-origin](https://www.w3schools.com/cssref/css3_pr_transform-origin.asp)
     - allows you to change the original x and y-positions
-1. [transform-style](https://www.w3schools.com/cssref/css3_pr_transform-style.asp)
+
+- [transform-style](https://www.w3schools.com/cssref/css3_pr_transform-style.asp)
     - allows child elements to preserve 3D transformations
     - flat (default)
     - `transform-style: preserve-3d;` // will keep that style for the child elements
-1. [backface-visibility](https://www.w3schools.com/cssref/css3_pr_backface-visibility.asp)
+
+- [backface-visibility](https://www.w3schools.com/cssref/css3_pr_backface-visibility.asp)
     - defines whether an element should be visible when it is facing the screen
 
 #### 3D Transform Methods
 
-1. [rotateX(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotatex) // transform clockwise
-1. [rotateY(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotatey) // transform counterclockwise
-1. [rotateZ(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotatez) // transform front and back
-1. rotate 3D shorthand: `rotate3d(x-axis, y-axis, z-axis, angle deg);`
+##### Rotate
+
+- [rotateX(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotatex) // transform clockwise
+
+- [rotateY(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotatey) // transform counterclockwise
+
+- [rotateZ(angle)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotatez) // transform front and back
+
+- rotate 3D shorthand: `rotate3d(x-axis, y-axis, z-axis, angle deg);`
     `rotate3d(1, 1, 1, 360deg);`
-1. [translateX(x)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translatex) // transform horizontally
-1. [translateY(y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translatey) // transform vertically
-1. `translateZ(z);` // transform front and back
-1. translate 3D shorthand: `translate3d(x-axis, y-axis, z-axis);`
+
+##### Translate
+
+-  [translateX(x)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translatex) // transform horizontally
+
+- [translateY(y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translatey) // transform vertically
+
+- `translateZ(z);` // transform front and back
+
+- translate 3D shorthand: `translate3d(x-axis, y-axis, z-axis);`
     `translate3d(50px, 50px, 75px);`
-1. [scaleX(x)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scalex) // transform  width
-1. [scaleY(y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scaley) // transform height
-1. `scaleZ(z);` // transform front and back
-1. scale 3D shorthand: `scalee3d(width, height, z-axis);`
+
+##### Scale
+
+- [scaleX(x)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scalex) // transform  width
+
+- [scaleY(y)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scaley) // transform height
+
+- `scaleZ(z);` // transform front and back
+
+- scale 3D shorthand: `scalee3d(width, height, z-axis);`
     `translate3d(2, 2, 2);`
     3D- allows you to transform on the size and not on the movement
 
+##### Matrix
+
 If you know the math, you can write your own transformation matrix
 
-1. [matrix(n,n,n,n,n,n)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_matrix)
-1. matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
-1. Example of a matrix: http://periodic.famo.us/
+- [matrix(n,n,n,n,n,n)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_matrix)
+
+- matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
+
+- Example of a matrix: http://periodic.famo.us/
 
 
 #### Example of `translateX()`
@@ -420,14 +449,16 @@ If you know the math, you can write your own transformation matrix
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
+Use the definitions above to work on the exercises below: 
+
 1. Rotate your box 45 degrees
-1. Translate it along the X axis by 200px
-1. Translate it along the Y axis by 200px
-2. Try `transform: translate(200px, 200px);`
-1. Scale the div so it is twice as big
-2. Skew the div by 10 degrees
-3. You can also combine multiple values: `transform: translateX(200px) skew(30deg) scale(3);`
-4. `transform: perspective(35px) translate3d(20px, 30px, 15px);`
+2. Translate it along the X axis by 200px
+3. Translate it along the Y axis by 200px
+4. Try `transform: translate(200px, 200px);`
+5. Scale the div so it is twice as big
+6. Skew the div by 10 degrees
+7. You can also combine multiple values: `transform: translateX(200px) skew(30deg) scale(3);`
+8. `transform: perspective(35px) translate3d(20px, 30px, 15px);`
     - x, y, z axis
     - perspective is distance from the user 
     - when perspective === z-axis you're behind the element
@@ -447,7 +478,7 @@ Transforms are better for animation for two reasons:
     * Add `display: inline-block` to your CSS rule
     * Add some lorem ipsum 
  
-1. If you're doing a 3D transform, the computer's Graphics Processing Unit (GPU) is engaged, which is really fast
+2. If you're doing a 3D transform, the computer's Graphics Processing Unit (GPU) is engaged, which is really fast
     - http://codepen.io/paulirish/pen/nkwKs (uses top/left position)
         - Ultimately, the element has to re-calculate every time the computer 
         moves based on what is around it.
@@ -498,30 +529,31 @@ div {
 }
 ```
 
-1. Additional properties:
-    - [animation-duration](https://www.w3schools.com/cssref/css3_pr_animation-duration.asp)
-        - specifies how many seconds or milliseconds an animation takes to complete one cycle
-        - mandatory in order for the animation to happen
-        - the default is 0
-    - [animation-timing-function](https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp)
-        - defines the speed curve of the animation
-        - linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(n, n, n, n)
-    - [animation-iteration-count](https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp) (can be set to infinite)
-        - specifies the number of times an animation should run
-    - [animation-direction](https://www.w3schools.com/cssref/css3_pr_animation-direction.asp)
-        - specifies whether an animation should play in reverse direction or alternate cycles
-        - reverse
-        - alternate
-    - [animation-delay](https://www.w3schools.com/cssref/css3_pr_animation-delay.asp)
-        - specifies a delay for the start of an animation
-    - [animation-play-state](https://www.w3schools.com/cssref/css3_pr_animation-play-state.asp)
-        - specifies whether the animation is running or paused
-        - paused
-        - running
-    - [animation-fill-mode](https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp)
-        - specifies a style for the element when the animation is not playing (when it is finished, or when it has a delay)
+#### Additional properties:
 
-**Animation Shorthand**
+- [animation-duration](https://www.w3schools.com/cssref/css3_pr_animation-duration.asp)
+    - specifies how many seconds or milliseconds an animation takes to complete one cycle
+    - mandatory in order for the animation to happen
+    - the default is 0
+- [animation-timing-function](https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp)
+    - defines the speed curve of the animation
+    - linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(n, n, n, n)
+- [animation-iteration-count](https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp) (can be set to infinite)
+    - specifies the number of times an animation should run
+- [animation-direction](https://www.w3schools.com/cssref/css3_pr_animation-direction.asp)
+    - specifies whether an animation should play in reverse direction or alternate cycles
+    - reverse
+    - alternate
+- [animation-delay](https://www.w3schools.com/cssref/css3_pr_animation-delay.asp)
+    - specifies a delay for the start of an animation
+- [animation-play-state](https://www.w3schools.com/cssref/css3_pr_animation-play-state.asp)
+    - specifies whether the animation is running or paused
+    - paused
+    - running
+- [animation-fill-mode](https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp)
+    - specifies a style for the element when the animation is not playing (when it is finished, or when it has a delay)
+
+#### Animation Shorthand
 
 `animation: <animation-name> <animation-duration> <animation-timing-function> <animation-delay>
         <animation-iteration-count> <animation-direction>;`
@@ -540,7 +572,7 @@ div {
 }
 ```
     
-1. Try adding another keyframe
+2. Try adding another keyframe
 
 ```css
 15% {
@@ -603,30 +635,34 @@ Let's try this in Codepen.io (make sure to include the jQuery library under Sett
 
 1. html:
 
-    ```html
-    <div id="box1">BOX 1</div>
+```html
+<div id="box1">BOX 1</div>
 ```
+
 2. css:
 
-    ```css
-    #box1 {
-        height: 100px;
-        width: 100px;
-        padding: 10px;
-        position: relative;
-        background-color: aqua;
-    }
+```css
+#box1 {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    position: relative;
+    background-color: aqua;
+}
 ```
-1. jQuery:
 
-    ```js
-    $('#box1').fadeIn(3000).fadeOut(10000);
+3. jQuery:
+
+```js
+$('#box1').fadeIn(3000).fadeOut(10000);
 ```
+
 Here are some [common jQuery effects](http://www.w3schools.com/jquery/jquery_ref_effects.asp) you can use.
 
 <br />
 
 ### `animate()`
+
  You can accomplish a lot of the CSS animation code from above using 
 [animate()](https://www.w3schools.com/jquery/jquery_animate.asp). The jQuery animate() method is used to create custom animations.
 
@@ -642,9 +678,16 @@ Here are some [common jQuery effects](http://www.w3schools.com/jquery/jquery_ref
 
 Here is an example:
  
-1. html:
+1. in the index.html:
 
-    ```html
+```html
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Box colors</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
     <div class="container">
         <div id="box1">BOX 1</div>
         <div id="box2">BOX 2</div>
@@ -652,28 +695,33 @@ Here is an example:
     <div class="controlButtons">
         <button type="button">Toggle</button>
     </div>
-```
-2. css:
-
-    ```css
-    #box2 {
-        height: 100px;
-        width: 100px;
-        padding: 10px;
-        position: relative;
-        background-color: mediumVioletRed;
-    }
+    <script src="script.js"></script>
+  </body>
+</html>
 ```
 
-1. jQuery:
+2. in the main.css:
 
-    ```js
-    $("button").click(function(){
-        $("#box2").animate({
-            height: 'toggle';
-        }, 4000);
+```css
+#box2 {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    position: relative;
+    background-color: mediumVioletRed;
+}
+```
+
+3. in the script.js- add this jQuery:
+
+```js
+$("button").click(function(){
+    $("#box2").animate({
+        height: 'toggle';
+    }, 4000);
 });
 ```
+
 <br />
 
 [animate() Example](http://codepen.io/marenwoodruff/pen/mWPowR)
