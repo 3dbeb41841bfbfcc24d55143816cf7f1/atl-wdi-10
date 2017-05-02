@@ -495,7 +495,7 @@ Transitions are great for going from one state to another, but sometimes you nee
 
 1. Define a named animation with a set of keyframes. These are similar to the traditional animation "tweeners" that were mentioned earlier.
 
-##### Using from... to
+##### Keyframes using from... to
 ```css
 @keyframes example {
     from { background-color: red; }
@@ -504,7 +504,7 @@ Transitions are great for going from one state to another, but sometimes you nee
 ```
 <br />
 
-##### Using percentages
+##### Keyframes using percentages
 ```css
 @keyframes example {
     0%   { background-color: red; left: 0px; top: 0px; }
