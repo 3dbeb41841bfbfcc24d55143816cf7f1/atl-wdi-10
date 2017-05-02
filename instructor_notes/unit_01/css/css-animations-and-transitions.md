@@ -450,15 +450,21 @@ If you know the math, you can write your own transformation matrix
 
 Use the definitions above to work on the exercises below to work with your second div with a class of `square2`: 
 
-1. Rotate your box 45 degrees
+1. Rotate your box 45 degrees.
 2. Translate it along the X axis by 200px
-3. Translate it along the Y axis by 200px
-4. Try `transform: translate(200px, 200px);`
-5. Scale the div so it is twice as big
-6. Skew the div by 10 degrees
-7. You can also combine multiple values: `transform: translateX(200px) skew(30deg) scale(3);`
-8. `transform: perspective(35px) translate3d(20px, 30px, 15px);`
-    - x, y, z axis
+3. Translate it along the Y axis by -200px
+  - Shorthand: translate(200px, -200px);`
+4. Scale the div so it is twice as big
+5. Skew the div by 20 degrees
+6.  Add a perspective of 35px
+7.  Add a translate 3d where the x-axis is 20px, the y-axis is 30px, and the z-axis is 15px
+
+<br />
+
+#### If you need help
+
+- Try `transform: rotate(45deg) translateX(200px) translateY(-200px) scale(2) skew(20deg) perspective(35px) translate3d(20px, 30px, 15px);`
+    - x, y, z-axis
     - perspective is distance from the user 
     - when perspective === z-axis you're behind the element
 
@@ -490,22 +496,23 @@ Transforms are better for animation for two reasons:
 
 Transitions are great for going from one state to another, but sometimes you need more than an initial and a final state.  [Keyframes](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp) can be used to add color changes based on the percentage of visibility. A keyframe is similar to a function declaration, in that it starts with **@keyframes**, followed by the animation name, followed by curly braces.  Inside of the curly braces, you add the keyframes-selector/percentage followed by a normal css rule.
 
-![](http://i.imgur.com/ylb6WX9.gif)
-
-1. Define a named animation with a set of keyframes. These are similar to the traditional animation "tweeners" that were mentioned earlier.
+#### Define a named animation with a set of keyframes. These are similar to the traditional animation "tweeners" that were mentioned earlier.
 
 ##### Keyframes using from... to
+
 ```css
 @keyframes example {
     from { background-color: red; }
     to   { background-color: yellow; }
 }
 ```
+
 <br />
 
 ##### Keyframes using percentages
+
 ```css
-@keyframes example {
+@keyframes example1 {
     0%   { background-color: red; left: 0px; top: 0px; }
     25%  { background-color: yellow; left: 200px; top: 0px; }
     50%  { background-color: blue; left: 200px; top: 200px; }
@@ -515,11 +522,10 @@ Transitions are great for going from one state to another, but sometimes you nee
 ```
 > Note, remember that for production, `translate` will be faster than `left`, `top`, etc.
 
+#### Assign the animation to a rule and give it a duration
 
-2. Assign the animation to a rule and give it a duration
-    
 ```css
-div {
+.square2 {
     width: 100px;
     height: 100px;
     background-color: red;
@@ -563,24 +569,28 @@ div {
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
-1. Try adding the following properties
+1. Add the keyframe example and example1 to your main.css
+
+2. Try adding the following properties
 
 ```css
-div {
-    ...
+.square2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: linear;
     animation-iteration-count: inifinite;
     animation-direction: alternate;    
 }
 ```
     
-2. Try adding another keyframe
+3. Try adding another keyframe to your example1 keyframe definition
 
 ```css
-15% {
-    background-color: orange;
-    left: 400px; 
-    top: 400px;
-}
+15% { background-color: orange; left: 400px; top: 400px; }
 ```
 
 <br />
