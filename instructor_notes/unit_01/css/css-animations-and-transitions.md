@@ -563,6 +563,8 @@ Transitions are great for going from one state to another, but sometimes you nee
 - [animation-fill-mode](https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp)
     - specifies a style for the element when the animation is not playing (when it is finished, or when it has a delay)
 
+<br />
+
 #### Animation Shorthand
 
 `animation: <animation-name> <animation-duration> <animation-timing-function> <animation-delay>
