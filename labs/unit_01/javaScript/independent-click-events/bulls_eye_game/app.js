@@ -6,15 +6,12 @@
 //           10 points - Outer Ring
 //            0 points - Miss  (done for you)
 
-// STEP 2: Break down the updateScore method, write a paragraph or comment
-//         how the function works line by line
+// STEP 2: Break down the updateScore method, write a paragraph or comment how the function works line by line
 
-// STEP 3:  Highlight the element that was clicked on
-//          using the CSS `background-color: yellow`
+// STEP 3:  Highlight the element that was clicked on using the CSS `background-color: yellow`
 // BONUS:  Implement setTimeout so the background is yellow for only two seconds
 
-// EXPLORATION: Comment out event.stopPropagation in each function, and then click
-//              the inner ring. What happens?
+// EXPLORATION: Comment out event.stopPropagation in each function, and then click the inner ring. What happens?
 
 
 
@@ -44,8 +41,7 @@ var bullseyeGame = {
     alert('YOU MISSED');
 
     bullseyeGame.updateScore(0);
-    // [ALERT:] needs to be bullseyeGame because this in clickEvents refers to the html
-    // element that was clicked
+    // [ALERT:] needs to be bullseyeGame because this in clickEvents refers to the html element that was clicked
   },
 
   outerRing: function(event) {
