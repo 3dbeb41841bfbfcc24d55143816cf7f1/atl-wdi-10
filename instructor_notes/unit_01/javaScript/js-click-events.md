@@ -60,6 +60,8 @@ We have started learning about the different pieces of JS.  We needed this under
 
 ### The syntax
 
+- What are the three parts of a function?
+
 A function is written using the `function` keyword, a function name (optional: depends on whether you are writing a named or anonymous function), followed by a pair of parenthesis `()` with optional arguments, and a code block `{}`.
 
 There are actually three ways we can write functions:
@@ -74,12 +76,12 @@ var newGreeting = {
 // you would call this object method this way
 newGreeting.greeting();
 
-// a named function or function declaration, which gives the function a descriptive name, after the function keyword.
+// function declaration or a named function, which gives the function a descriptive name, after the function keyword.
 function newestGreeting() {
-  console.log('hello');
+  console.log('hello, friend');
 }
 
-// saved to a variable or a function expression
+// a function expression which is a function that is saved to a variable
 var bestGreeting = function() { 
   console.log('What\'s happenin\'?');
 }
@@ -113,7 +115,7 @@ newGreeting.greeting;
 
 newestGreeting;
 => function newestGreeting() {
-  console.log('hello');
+  console.log('hello, friend');
 }
 
 bestGreeting;
@@ -138,33 +140,36 @@ Let's now define a second function called shoutHello().
 
 ```javascript
 // the argument 'callback' here is a function reference
-var shoutHello = function(name, callback) { 
+var shoutHello = function(name, callback) {
+
   // the function reference, stored in the argument 'callback', is getting invoked with a parens
-  alert(callback(name)); 
+  alert(callback(name).toUpperCase()); 
 }
 
 // the alert says "hello, WDI 10!"
 shoutHello('WDI 10!', sayHello);
 ```
 
+#### Another example using different math operators
+
 ```javascript
 var performMath = function(num1, num2, callback) {
-    callback(num1, num2);
+  return callback(num1, num2);
 }
 
 var add = function(num1, num2) {
-    console.log(num1 + num2); 
+  console.log(num1 + num2); 
 }
 
 var subtract = function(num1, num2) {
-    console.log(num1 - num2);
+  console.log(num1 - num2);
 }
 
 performMath(5, 5, add);
 => 10
 
-performMath(10, 5, subtract);
-=> 5
+performMath(15, 5, subtract);
+=> 10
 ```
 
 ## Click Events
@@ -175,7 +180,9 @@ You can think about click events as follows:
 
 > A click event essentially ties a function (as a callback) to an HTML DOM element and specifies what action needs to happen in order to trigger/call/invoke that function (callback). In this case, it's a click!
 
-This pattern is called an **event listener**. Events can be clicks, hovers, scrolls etc. It requires that we have a DOM node saved to a variable. We can then call `node.addEventListener()` and pass it two arguments, a string with the type of event we are listening for, and a second argument that is a function with an event argument.
+This pattern is called an **event listener**. Events can be clicks, hovers, scrolls etc. It requires that we have a DOM node saved to a variable. We can then call `node.addEventListener()` and pass it **two arguments**: 
+- a string with the type of event we are listening for
+- and a second argument that is a **function** with an **event** parameter.
 
 This could be either an anonymous function or a function expression/declaration written elsewhere— like in an object **hint hint**
 
@@ -191,7 +198,7 @@ button.addEventListener("click", function(event){
 
 - `.addEventListener` is a function we can call on nodes.
 - The **event listener** function takes two arguments, a string and an anonymous function.
-- the anonymous function takes an argument `event`... whatt?
+- the anonymous function takes an argument `event`... a what?!?
 
 An `event`, is another magical object!
 
@@ -200,7 +207,9 @@ An `event`, is another magical object!
 
 What is the difference?
 
-Exercise: (20m) Look at the starter code <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/in-class-click-events">here</a>. There are three buttons. Add event listeners to all of three buttons.
+**Exercise: (20m)** 
+
+Look at the starter code <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/in-class-click-events">here</a>. There are three buttons. Add event listeners to all of three buttons.
 
 1. Button one, when clicked, should trigger an alert saying `"you have clicked button one"`
 2. Button two, when clicked, should trigger a function that creates a `<p>` with the following string:
