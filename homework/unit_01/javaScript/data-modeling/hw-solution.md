@@ -31,7 +31,7 @@ laptops, we might be pick the following attributes.
   > e.g.
 
   ```js
-  laptop = {
+  var laptop = {
     salePrice: 1000,
     brand: 'Lenovo',
     RAM: 8,
@@ -74,7 +74,20 @@ keep them organized.
 > -   a name
 > -   a description
 > -   a set of tasks
->
+
+```javascript
+var task {
+  name: 'clean house',
+  dateStarted: '05/02/2017',
+  dateCompleted: 'unfinished'
+};
+
+var project = {
+  name: 'Project 1',
+  description: 'game built in JS',
+  setOfTasks: ['create HTML page', 'create CSS page', 'create JS page', 'link the three pages together', 'create basic boilerplate', 'start creating game functionality', 'create win scenarios', 'create clickable start button', 'create clickable reset button', 'create winner screen']
+};
+```
 
 ### 2. Photo Sharing App
 
@@ -99,6 +112,27 @@ In this app, users can upload photos to their accounts and share them with other
 > -   a username
 > -   a set of photos that they've uploaded
 > -   a set of albums that they've created
+
+```javascript
+var photo = {
+  name: 'photo from beach',
+  date: 'February 2016',
+  url: 'images/photo1.jpg'
+};
+
+var album = {
+  name: 'Trip to the Bahamas',
+  setOfPhotos: ['images/photo1.jpg', 'images/photo2.jpg', 'images/photo3.jpg', 'images/photo4.jpg', 'images/photo5.jpg']
+};
+
+var user = {
+  username: 'marenwoodruff',
+  imagesUploaded: ['images/photo1.jpg', 'images/photo2.jpg', 'images/photo3.jpg', 'images/photo4.jpg', 'images/photo5.jpg'],
+  albumsCreated: ['Trip to the Bahamas', 'Exploring Prague', 'Dream trip to Bali (to be added)']
+};
+
+```
+
 
 ### 3. Home Automation Manager
 
@@ -125,6 +159,19 @@ and down.
 > A Home has:
 > -   a temperature
 > -   a set of lights
+
+```javascript
+var light = {
+  brightnessLevel: 'super bright',
+  location: 'living room',
+  name: 'chandlier'
+};
+
+var homeSystem = {
+  temp: '73 degrees',
+  setOfLights: ['living room', 'office', 'kitchen', 'bedroom', ' bathroom']
+};
+```
 
 ### 4. Sneaker Store
 
@@ -153,6 +200,23 @@ purchase is complete.
 > -   a status (i.e. 'in progress', 'completed')
 > -   a date of when the order was completed
 
+var product = {
+  name: 'Vitamix Ascent A2500 Blender, Black',
+  description: 'The best blender in the world.  Part blender, part food processor.  Can make soup, smoothies, sauces!  It is the item that will last forever- you can pass it on to your children.  So, spend the money now, and let them save later!',
+  price: '$499.95'
+};
+
+var vitamixOrder = {
+  product: 'vitamix',
+  quantity: 1
+};
+
+var order: {
+  setOfOrderItems: [vitamixOrder],
+  status: 'in progress',
+  dateCompleted: 'incomplete'
+};
+
 ## Representing Abstractions in Code
 
 Once you've chosen the abstractions that your app will use, the next step is to
@@ -163,10 +227,7 @@ vs another.
 
 ### 5. Subway System
 
-Suppose that you're building an app that tells travelers how many stops they
-need to travel to get from one station to another. Two abstractions that you
-decide to use to model your application's data are Stations and Rail Lines, with
-the following properties:
+Suppose that you're building an app that tells travelers how many stops they need to travel to get from one station to another. Two abstractions that you decide to use to model your application's data are Stations and Rail Lines, with the following properties:
 
 A Station has:
 -   a name
