@@ -496,7 +496,8 @@ Transforms are better for animation for two reasons:
 
 Transitions are great for going from one state to another, but sometimes you need more than an initial and a final state.  [Keyframes](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp) can be used to add color changes based on the percentage of visibility. A keyframe is similar to a function declaration, in that it starts with **@keyframes**, followed by the animation name, followed by curly braces.  Inside of the curly braces, you add the keyframes-selector/percentage followed by a normal css rule.
 
-### Define a named animation with a set of keyframes. These are similar to the traditional animation "tweeners" that were mentioned earlier.
+### Define a named animation with a set of keyframes. 
+- These are similar to the traditional animation "tweeners" that were mentioned earlier.
 
 #### Keyframes using from... to
 
