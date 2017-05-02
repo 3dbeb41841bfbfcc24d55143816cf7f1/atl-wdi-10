@@ -23,7 +23,7 @@ Lars Von Trier (a Danish director most known for _Dancer in the Dark_ and _Dogvi
 
 Von Trier is part of a wave of directors that thought that in order to create new pieces of art, they should place restrictions on each other.  Von Trier 'dares' Jordan Leth to re-create his famous short, with restrictions that are decided upon by Von Trier.  One of the restrictions is to create an animated short.
 
-This is it: [The Five Obstructions Animation](https://www.youtube.com/watch?v=9-Y1PhOt6sM).
+Let's watch it: [The Five Obstructions Animation](https://www.youtube.com/watch?v=9-Y1PhOt6sM).
 
 <br />
 
@@ -34,9 +34,9 @@ Today we will be covering 3 major topics:
 * CSS Transitions
 * CSS Transforms (2D)
 * CSS Animations
-as well as Vendor Prefixes
+* Bonus: Vendor Prefixes
 
-**Transitions** let us tell the browser how to smoothly change a property over time. For example, if the height of an element changes (due to a :hover selector), we can tell the browser to change the height gradually over 1 second.
+**Transitions** let us tell the browser how to smoothly change a property over time. For example, if the height of an element changes (due to a :hover selector), then we can tell the browser to use a transition to change the height gradually over 1 second.
 
 **Transforms** are a set of CSS properties that take an element and transform it's shape, e.g. rotating it, scaling it, skewing it, etc.
 
@@ -48,13 +48,13 @@ For example, we have more control over how the animation repeats, we can change 
 
 **Vendor Prefixes**
     <br />
-    -webkit- // Chrome/Safari
+    -webkit- = Chrome/Safari
     <br />
-    -moz- // Firefox
+    -moz- = Firefox
     <br />
-    -o- // Opera
+    -o- = Opera
     <br />
-    -ms // IE
+    -ms = IE
 
 The easiest way to do this is with **prefix free** (http://leaverou.github.io/prefixfree/).
 
@@ -94,6 +94,15 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 
 **Transitions** are a way to introduce **timing** to a given effect. In order to use any effect, you first need to define an **initial state** and a **final state** for the element that you would like to change.
 
+### We Do
+
+- cd into your ga folder
+- cd into class-exercises
+- mkdir css-transitions
+- touch index.html
+- touch main.css
+- subl .
+
 <!-- ```css
 a {
     padding: 2em; /* initial state */
@@ -107,6 +116,24 @@ a:hover {
     background: green; /* final state */
 }
 ``` -->
+
+#### In your index.html
+
+```
+<!DOCTYPE>
+<html>
+    <head>
+        <title>CSS Animations</title>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+    </head>
+    <body>
+        <div class="square"></div>
+    </body>
+</html>
+```
+
+#### In your main.css
+
 ```css
 .square {
     width: 200px;
@@ -118,6 +145,8 @@ a:hover {
     background: darkBlue; /* final state */
 }
 ```
+
+### Transition properties
 
 Next, add a transition property:
 
@@ -158,6 +187,12 @@ Next, add a transition property:
     - `transition-delay: 1s;`
     - allows you to delay the start of the animation
 
+---
+
+### We Do
+
+#### In your main.css
+
 ```css
 .square {
     width: 200px;
@@ -173,10 +208,14 @@ Next, add a transition property:
 }
 ```
 
+### Updating to transition shorthand
+
 **Transition Shorthand**- allows your code to be shorter and more maintainable, especially if you are using vendor prefixes.
 
 - `transition: <transition-property> <transition-duration> <timing-function> <transition-delay>`
     - Example: `transition: transform 1s ease-in-out;` 
+
+#### In the main.css
 
 ```css
 .square {
@@ -193,30 +232,32 @@ Next, add a transition property:
 
 ![](http://i.imgur.com/ylb6WX9.gif)
 
-1. Create a 100px by 100px square box that has a background color of tomato.
-1. Write a CSS rule that will transition your div from this initial state:
+1. Create a 100px by 100px square box that has a background color of tomato, with a class of `square2`.
+2. Write a CSS rule that will transition your div from this initial state:
 
 ```css
-div {
+.square2 {
     background: tomato;
     width: 100px;
-    height:å 100px;
+    height: 100px;
 }
 ```
 
-1. Add to this final state... Write a CSS rule that changes the background color to turquoise when you hover over the element with your mouse
+3. Add to this final state... Write a CSS rule that changes the background color to turquoise when you hover over the element with your mouse
 
 ```css
-div:hover {
+.square2:hover {
     background: turquoise;
 }
 ```
 
-1. Let's make that transition a little smoother:
+4. Let's make that transition a little smoother:
 
 ```css
-div {
-    ...  
+.square2 {
+    background: tomato;
+    width: 100px;
+    height: 100px;  
     transition-duration: 3s;
     transition-property: background; /* specify which property you want to transition */
     transition-timing-function: linear;
@@ -275,6 +316,10 @@ The [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp) property
 Syntax:
  
 - `transform: method(parameter);`
+
+### We Do
+
+#### In the main.css
 
 ```css
 .square {
@@ -360,7 +405,9 @@ If you know the math, you can write your own transformation matrix
 
 ```css
 .square {
-  ...
+  width: 200px;
+  height: 200px;
+  background-color: crimson;
   transform: translateX(0); /* start state */
   transition-property: background-color, transform; /* make sure to add transform here */    
 }
@@ -417,39 +464,39 @@ Transitions are great for going from one state to another, but sometimes you nee
 
 1. Define a named animation with a set of keyframes. These are similar to the traditional animation "tweeners" that were mentioned earlier.
     
-    ```css
-    @keyframes example {
-        from { background-color: red; }
-        to   { background-color: yellow; }
-    }
-    ```
+```css
+@keyframes example {
+    from { background-color: red; }
+    to   { background-color: yellow; }
+}
+```
 <br />
 
-    ```css
-    @keyframes example {
-        0%   { background-color: red; left: 0px; top: 0px; }
-        25%  { background-color: yellow; left: 200px; top: 0px; }
-        50%  { background-color: blue; left: 200px; top: 200px; }
-        75%  { background-color: green; left: 0px; top: 200px; }
-        100% { background-color: red; left:0px; top: 0px; }
-    }
-    ```
-    > Note, remember that for production, `translate` will be faster than `left`, `top`, etc.
+```css
+@keyframes example {
+    0%   { background-color: red; left: 0px; top: 0px; }
+    25%  { background-color: yellow; left: 200px; top: 0px; }
+    50%  { background-color: blue; left: 200px; top: 200px; }
+    75%  { background-color: green; left: 0px; top: 200px; }
+    100% { background-color: red; left:0px; top: 0px; }
+}
+```
+> Note, remember that for production, `translate` will be faster than `left`, `top`, etc.
 
 
 1. Assign the animation to a rule and give it a duration
     
-    ```css
-    div {
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        position: relative;
-        animation-name: example;
-        animation-duration: 4s;
-        animation-timing-function: linear;
-    }
-    ```
+```css
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+```
 
 1. Additional properties:
     - [animation-duration](https://www.w3schools.com/cssref/css3_pr_animation-duration.asp)
@@ -485,22 +532,22 @@ Transitions are great for going from one state to another, but sometimes you nee
 
 1. Try adding the following properties
 
-    ```css
-    div {
-        ...
-        animation-iteration-count: inifinite;
-        animation-direction: alternate;    
-    }
-    ```
+```css
+div {
+    ...
+    animation-iteration-count: inifinite;
+    animation-direction: alternate;    
+}
+```
     
 1. Try adding another keyframe
 
-    ```css
-    15% {
-        background-color: orange;
-        left: 400px; 
-        top: 400px;
-    }
+```css
+15% {
+    background-color: orange;
+    left: 400px; 
+    top: 400px;
+}
 ```
 
 <br />

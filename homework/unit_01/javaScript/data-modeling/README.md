@@ -14,7 +14,19 @@ Read through `hw.md` and follow all of the directions given there.
 
 When you're ready to submit your work,
 
-To the atl-wdi9-hmwork channel, include:
+#### In your terminal
+(Make sure that you are in you atl-wdi-10 repo)
+- `git add .`
+- `git commit -m "updated data modeling hw"`
+- `git push`
+
+#### In github
+
+Then on your github profile, go to the link for the data modeling repo and copy it.
+
+#### On Schoology
+
+On the Schoology assignment, include:
 
 -   A link that points back to your fork/github repo.
 
