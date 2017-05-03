@@ -61,7 +61,7 @@ Let's create a web page and begin to inspect its structure.
 
 - Open your terminal
 - `cd` into your `ga` folder
-  - (`cd ~/Desktop/ga/clas-exercises`)
+  - (`cd ~/Desktop/ga/class-exercises`)
 - Create a new directory called `dom-intro-lesson`
   - (`mkdir dom-intro-lesson`)
 - `cd` into it and create a new file called `index.html`
