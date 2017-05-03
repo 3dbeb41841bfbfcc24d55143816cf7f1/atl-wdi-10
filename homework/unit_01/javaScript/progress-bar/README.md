@@ -4,7 +4,7 @@
 
 ## Setup
 
-Make sure that you are on the `master` branch of your `atl-wdi-9` repo.
+Make sure that you are on the `master` branch of your `atl-wdi-...` repo.
 Then run `git pull upstream master` to pull the latest materials from the
 instructors' repository. You shouldn't hit a merge conflict here, but if you do, flag down an instructor right away.
 
