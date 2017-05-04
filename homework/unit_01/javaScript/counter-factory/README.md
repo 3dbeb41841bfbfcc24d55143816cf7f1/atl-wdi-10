@@ -93,8 +93,8 @@ accordance with the specs.
 
 When you're ready to submit your work,
 
-1.  Push your code to your fork of the class repo.
-2.  File an issue on the class repo titled "Your Name -- wXXdXX".
+1.  Git add, commit and push your code to your fork of the class repo.
+2.  Add the url to of repo to Schoology.
 
 The issue should include:
 
