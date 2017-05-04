@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1 class="first">My first H1</h1>
+  <h1 id="second">My second H1</h1>
+
+  <div id="myDiv">Hello world!</div>
+
+
+  <div id="container">
+    <form>
+      <input type="text">
+      <button> add </button>
+    </form>
+  </div>
+
+  <script src="scripts/script.js"></script>
+  <script>
+    $('button').click(function($event) {
+      $event.preventDefault()
+      console.log($('input').val())
+
+
+    })
+
+  </script>
+</body>
+</html>
