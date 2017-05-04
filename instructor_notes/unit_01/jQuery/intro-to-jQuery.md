@@ -245,7 +245,7 @@ In the jQuery code example above, we first select the DIV with `id="container"`,
   </div>
 ```
 
-Exercise: Do the next two prompts in student_starter
+**Exercise:** Do the next two prompts in [student_starter](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/jQuery/in-class-exercises)
 
 
 #### Modifying Styles (CSS) Using jQuery
