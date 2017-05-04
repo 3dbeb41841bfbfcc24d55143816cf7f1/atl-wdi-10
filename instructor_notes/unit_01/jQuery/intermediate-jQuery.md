@@ -40,16 +40,16 @@ http://getbootstrap.com/css/
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome Back to jQuery</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="js/app.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome Back to jQuery</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body>
 
-</body>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
 </html>
 ```
 
@@ -101,7 +101,9 @@ We are going to display a list homes for sell in Lake Arrowhead. Here's some HTM
     </table>
     <br>
     <button id="addHome" class="btn btn-danger">Add Home</button>
-
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 ```
 
