@@ -79,10 +79,11 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 
 1. In traditional (hand-drawn) animations, there were two kinds of animators
     - Keyframe artist
-        - Draws the main frames for the animation
+        - Draws the main frames for the animation- the starting and ending points of any smooth transition.  Their position is measured in frames on a strip of film.
     - Inbetweener  (tweener)
         - Fills in the frames between each keyframe, so it looks fluid
-1. In computer animation, the developer acts as the keyframe artist, and the computer is the 'tweener'.
+        
+2. In computer animation, the developer acts as the keyframe artist, and the computer is the 'tweener'.
 
 <br />
 
