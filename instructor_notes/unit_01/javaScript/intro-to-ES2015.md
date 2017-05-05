@@ -47,7 +47,7 @@ the new syntax.
 <details>
 <summary>Who is Brendan Eich?</summary>
 
-He is the creator of JavaScript, which he created in 10 days!  He co-founded Mozilla.  And he is the CEO of Brave Software, an internet security company.
+He is the creator of JavaScript, which he created in 10 days!  He co-founded Mozilla.  And he is the CEO of Brave Software, an internet security company. [Learn More](https://en.wikipedia.org/wiki/Brendan_Eich)
 
 </details>
 
