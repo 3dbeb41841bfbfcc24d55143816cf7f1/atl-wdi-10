@@ -1344,7 +1344,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/jQuery/intro-to-jQuery.md">Intro to jQuery</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/khan-academy.md">LAB</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/khan-academy.md">LAB</a><br />
       OR <br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/intro-to-ES2015.md">Intro to ES2015- (Breakout Session)</a>
     </td>
@@ -1364,7 +1364,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/jQuery/intro-to-jQuery.md">Intro to jQuery</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/khan-academy.md">LAB</a><br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/khan-academy.md">LAB</a><br />
       OR <br />
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/css/css-animations-and-transitions.md">CSS Animations- (Breakout Session)</a>
     </td>
@@ -1384,7 +1384,7 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/jQuery/intermediate-jQuery.md">Intermediate jQuery</a>
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/khan-academy.md">LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/khan-academy.md">LAB</a>
     </td>
   </tr>
   <tr>
@@ -1415,7 +1415,7 @@
       ">jQuery Jedi LAB</a><br />
     </td>
     <td>
-      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/instructor_notes/unit_01/javaScript/khan-academy.md">LAB</a>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_01/javaScript/khan-academy.md">LAB</a>
       <!-- LAB or Guest Speaker -->
     </td>
   </tr>

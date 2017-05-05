@@ -82,7 +82,7 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
         - Draws the main frames for the animation- the starting and ending points of any smooth transition.  Their position is measured in frames on a strip of film.
     - Inbetweener  (tweener)
         - Fills in the frames between each keyframe, so it looks fluid
-        
+
 2. In computer animation, the developer acts as the keyframe artist, and the computer is the 'tweener'.
 
 <br />
@@ -102,6 +102,7 @@ Each group will have 20 minutes to prepare a short explanation / demo of their a
 - mkdir css-transitions
 - touch index.html
 - touch main.css
+- touch script.js
 - subl .
 
 #### In your index.html, add the html below:
