@@ -1471,7 +1471,7 @@
 - [jQuery- W3 Schools](https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_html_set)
 <br />
 
-#### ES6
+#### ES2015
 - [Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 - [Const](http://es6-features.org/#Constants)
 - [Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
@@ -1496,7 +1496,7 @@
 - [ES6 Compatibility](https://kangax.github.io/compat-table/es6/)
 <br />
 
-#### ES6 we didn't cover
+#### ES2015 we didn't cover
 - [Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 - [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 - [Classes](http://es6-features.org/#ClassDefinition)
