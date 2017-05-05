@@ -93,12 +93,10 @@ Scope in ES5:
 ```js
 // ES5
 var num = 1;
-
 {
   var num = 2;
   console.log(num);
 }
-
 console.log(num);
 
 // will print out 2, 2
@@ -122,7 +120,7 @@ You are more likely to see `let` declarations inside an `if` or `for` block beca
 
 ```js
 // ES5
-for(var i = 0; i < 10; i++){
+for(var i = 0; i < 10; i++) {
   console.log(i);
 }
 console.log("outside loop:", i);
@@ -131,7 +129,7 @@ console.log("outside loop:", i);
 
 ```js
 // ES2015
-for(let j = 0; j < 10; j++){
+for(let j = 0; j < 10; j++) {
   console.log(j);
 }
 console.log("outside loop:", j);
