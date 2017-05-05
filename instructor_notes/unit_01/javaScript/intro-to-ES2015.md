@@ -163,7 +163,7 @@ var num1 = 2;
 
 [Default Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters): With ES2015, we now have the option to set default values for any of our functions' parameters.
 
-In ES5, we had to use the 'or' expression in order to create a default.  However, in ES6, you can set a default within your function's parens.
+In ES5, we had to use the 'or' expression in order to create a default.
 
 ```js
 // ES5
@@ -175,6 +175,8 @@ function hello(name){
 hello(); // Hello, stranger
 hello("Danny"); // Hello, Danny
 ```
+
+In ES2015, you can set a default within your function's parens.
 
 ```js
 // ES2015
@@ -196,14 +198,19 @@ The ES2015 way is generally better because it keeps your code more concise- you 
 
 ```js
 let [num1, num2] = [1, 2];
-num1; //= 1
-num2; //= 2
+num1; 
+//= 1
+num2; 
+//= 2
 
 let nums = [1, 2, 3, 4, 5];
 let [first, second, third] = nums;
-first; //= 1
-second; //= 2
-third; //= 3
+first; 
+//= 1
+second; 
+//= 2
+third; 
+//= 3
 ```
 
 What is on the left([num1, num2]), looks like an array literal, but you are actually working with individual variables, and surrounding them with square brackets because you are **destructuring the array**. You are telling the first value in the array (1) to assign itself to 'num1', and the second value (2) to assign itself to 'num2'.
@@ -227,7 +234,7 @@ greetPolitician(congressionalCandidate);
 => Hello, Jon. How is the race going in Atlanta?
 
 
-// In ES2015 this becomes:
+// In ES2015:
 function greetNewPolitician({ name, location })  {
     console.log("Hello, " + name + ".  We hope you win the " + location + " race!");
 }
@@ -235,7 +242,7 @@ greetNewPolitician(congressionalCandidate);
 => Hello, Jon. We hope you win the Atlanta race!
 ```
 
-If you are destructuring an object, you would surround the desired variables with curly braces, which will make it look like you are creating an object literal, but you are really just building a destructuring assignment statement.  You will be allowed to pick off specific properties in the object.
+If you are destructuring an object, you would surround the desired variables/parameters with curly braces, which will make it look like you are creating an object literal, but you are really just building a destructuring assignment statement.  You will be allowed to pick off specific properties in the object.
 
 <br />
 
@@ -246,7 +253,7 @@ If you are destructuring an object, you would surround the desired variables wit
 ```js
 // ES5
 var car = {
-  drive: function(){
+  drive: function() {
     console.log("vroom vroom");
   }
 }
@@ -347,7 +354,7 @@ healthyFavoriteFood.forEach((healthyFave) => {
 });
 ```
 
-You can get access to each element in this array using a `for` loop.  However, the forEach() method is a method on an array that will iterate through the array.  You pass in a function to the forEach method, and tell it what you want to do with each item (via the param - (food, in this case)) in the array.
+You can get access to each element in this array using a `for` loop.  However, the forEach() method is a method on an array that will iterate through the array.  You pass in a function to the forEach method, and tell it what you would like to do with each item (via the param - (healthyFave, in this case)) in the array.
 
 ```js
 // ES5- with a for loop
@@ -357,7 +364,7 @@ for(var i = 0; i < favoriteFood.length; i++) {
 }
 ```
 
-You can write the whole arrow function on one line, and if you only have one parameter, you don't have to put it in parens.  Check out this even more concise syntax:
+If your arrow function is short, you can write the whole arrow function on one line, and if you only have one parameter, you don't even have to put it in parens.  Check out this even more concise syntax:
 
 ```js
 // ES2015
@@ -373,7 +380,7 @@ let foodFaves = ["pizza from Little Star in SF", "pop tarts from Star Provisions
 foodFaves.forEach((food, i) => console.log(`My number ${i + 1} favorite food is ${food}`));
 ```
 
-[SIDE NOTE] Arrow functions also have the benefit of not changing the value of `this`.
+**[SIDE NOTE]** Arrow functions also have the benefit of not changing the value of `this`.
 
 Additionally, the `return` statement is not needed with single line arrow functions. There is an **implicit return**.
 
@@ -417,12 +424,14 @@ If you need to support a legacy browser (depending on your user), check out the 
   - project ran by google, which takes ES2015 code and compiles it to ES5.
   - it doesn't support all of ES2015.
   - [Traceur repl](https://google.github.io/traceur-compiler/demo/repl.html#)
-  - [Plnkr](https://plnkr.co/) - great place to try out your code
-    - make sure to add the traceur from the search packages.
-      - will add traceur.js and bootstrap.js
-      - if you have an external js file, just make sure to add a type="module" to the tag
 - [Babel](https://babeljs.io/) - one of the most popular
 - [Addy osmani ES6 Tools](https://github.com/addyosmani/es6-tools)
+
+
+- [Plnkr](https://plnkr.co/) - great place to try out your code
+  - make sure to add the traceur from the search packages.
+    - will add traceur.js and bootstrap.js
+    - if you have an external js file, just make sure to add a type="module" to the tag
 
 **You always need to make sure that you are supporting the browsers that your users are using. If they can't use your site because it is 'too modern' you will lose them.**
 
@@ -434,7 +443,7 @@ If you need to support a legacy browser (depending on your user), check out the 
 
 [Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator): The spread operator `...` allows an expression (like an array) to be expanded into multiple elements.
 
-This makes separating an array into individual elements incredibly simple. In ES5, you would need to use the index of each array item in order to get access to that value/send in that value as an argument.
+This makes separating an array into individual elements incredibly simple. In ES5, you would need to use the index of each array item in order to get access to that value or to send in that value as an argument.
 
 ```js
 // ES5
@@ -446,7 +455,7 @@ var volume = function(height, width, length) {
 volume(dimensions[0], dimensions[1], dimensions[2]);
 ```
 
-In ES6, you can just use the spread operator, which keeps your code DRY and makes it easier to understand.
+In ES2015, you can just use the spread operator, which keeps your code DRY and makes it easier to understand.
 
 ```js
 // ES2015
