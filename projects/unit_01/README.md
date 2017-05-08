@@ -191,7 +191,7 @@ You will come with your choice of project, pseudo-code, wireframes and user stor
 6. Post to Stack Overflow, be sure to follow the format for submitting bug reports, provide lots of context!
 7. Javascript and Jquery [videos](https://www.youtube.com/playlist?list=PLw1xVKFboueks5UMLogE01mdThRU577oa) produced by GA! 
 
-## Formatting your GitHub Issue for atl-wdi-9 to ask for help
+## Formatting your GitHub Issue for atl-wdi-10 to ask for help
 
 *COMMIT/PUSH OFTEN! Your code on GitHub should be up to date. Submitting an issue and linking your classmates to old, out-of-date code will hinder the process.*
 
