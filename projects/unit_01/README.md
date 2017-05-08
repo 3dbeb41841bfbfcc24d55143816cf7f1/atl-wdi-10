@@ -124,6 +124,7 @@ Have a unique sound for each colored button and play the sound both when the com
   - A Link to the Trello Board
   - A Link to any Wirefames or Mockups (or inline photos / screenshots will work too!)
   - A list of technologies, libraries, and/or frameworks used in the project, such as `Twitter Bootstrap`, `jQuery`, or `Animate.css`
+  - What you would like to add in version 2
 * Wireframes or Mockups -- what does the app look like?
   - Simple: take a picture of a whiteboard drawing
   - Advanced: use a tool such as [Balsamiq](https://balsamiq.com/) or [Mockingbird](https://gomockingbird.com/home)
@@ -135,6 +136,7 @@ Have a unique sound for each colored button and play the sound both when the com
     * In Progress
     * Under Review
     * Done
+    * Icebox
 
 ### Sample Project `README.md` files:
 
