@@ -17,9 +17,9 @@ The objectives of this project are to:
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: The Game
 ​
 ## Project due date
-Your project is due at 2 pm on Friday, March, 10th.
+Your project is due at 2 pm on Friday, May, 12th.
 
-**Friday, March 10th**<br>
+**Friday, March 12th**<br>
 Submit a link to your repo AND a link to your live site if you were able to deploy it to Ga-laxy. You will be presenting your projects in front of the class on Friday!
 
 ## Make a new repo
@@ -38,21 +38,6 @@ Write a _Connect 4_ game that allows two players to compete. The players are sha
 * Alternate the first player to move: Player 1 moves first in game 1, Player 2 moves first in game 2, etc.
 * Allow players to enter their name and display their name instead of "Player 1" and "Player 2".
 * Provide a way to play against the computer (using a simple A.I. algorithm)
-
----
-
-### Simon
-
-![Simon Game](images/simon-game.jpg)
-
-Write a _Simon_ game that displays 4 colored buttons (or clickable areas) that light up and play a sound. Have the computer play a random sequence, starting with a length of 1 and growing with each round. If the user can replay the sequence by clicking on the colored buttons in the correct order, then the computer goes to the next round and the sequence gets longer (same sequence but with one new randomly generated selection added to the end). If the user is unable to replay the sequence, then their score is the length of the sequence they successfully replayed.
-
-Have a unique sound for each colored button and play the sound both when the computer plays the sequence and when the user clicks on the buttons to replay the sequence. Have a special sound for when the user makes a mistake.
-
-#### Bonuses:
-
-* Display a scoreboard of the longest sequence successfully played to date.
-* Have a way for the user to choose the difficulty (`easy`, `medium`, or `hard`) where the `easy` mode plays the sequence slowly (one second per highlighted button) and the `hard` mode plays the sequence more quickly (1/4 second per highlight).
 
 ---
 
@@ -108,6 +93,22 @@ Write a _BlackJack_ game to try to beat the dealer. Allow the user to place a be
   - Comic Book Characters
 * Add avatar choices for the player
 * Implement multiple games on your site
+
+---
+
+<!-- ### Up for a real challenge? Simon
+**You will need to figure out promises in order to make this work**
+
+![Simon Game](images/simon-game.jpg)
+
+Write a _Simon_ game that displays 4 colored buttons (or clickable areas) that light up and play a sound. Have the computer play a random sequence, starting with a length of 1 and growing with each round. If the user can replay the sequence by clicking on the colored buttons in the correct order, then the computer goes to the next round and the sequence gets longer (same sequence but with one new randomly generated selection added to the end). If the user is unable to replay the sequence, then their score is the length of the sequence they successfully replayed.
+
+Have a unique sound for each colored button and play the sound both when the computer plays the sequence and when the user clicks on the buttons to replay the sequence. Have a special sound for when the user makes a mistake.
+
+#### Bonuses:
+
+* Display a scoreboard of the longest sequence successfully played to date.
+* Have a way for the user to choose the difficulty (`easy`, `medium`, or `hard`) where the `easy` mode plays the sequence slowly (one second per highlighted button) and the `hard` mode plays the sequence more quickly (1/4 second per highlight). -->
 
 
 ## Planning and Deliverables
