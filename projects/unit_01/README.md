@@ -177,7 +177,7 @@ We encourage you to hold your stand-ups in the mornings when you start working t
 
 If you have ideas on how you can help a fellow-student with work that they are stuck on, please follow-up with information AFTER the stand up.
 
-**Tuesday, March 7th**
+**Tuesday, May 9th**
 <br />
 You will come with your choice of project, pseudo-code, wireframes and user stories
 
