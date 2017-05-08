@@ -20,7 +20,7 @@ The objectives of this project are to:
 Your project is due at 2 pm on Friday, May, 12th.
 
 **Friday, March 12th**<br>
-Submit a link to your repo AND a link to your live site if you were able to deploy it to Ga-laxy. You will be presenting your projects in front of the class on Friday!
+Submit a link to your repo AND a link to your live site if you were able to deploy it, to Schoology. You will be presenting your projects in front of the class on Friday!
 
 ## Make a new repo
 Before you begin, make a new github repo for your project. **Do not** begin your project within the class repo.
