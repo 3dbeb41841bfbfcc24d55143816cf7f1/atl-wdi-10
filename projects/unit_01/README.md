@@ -117,6 +117,7 @@ Have a unique sound for each colored button and play the sound both when the com
 
 * All source code is checked into GitHub
   - create a repo for your app and show that you've been commiting early and often while utilizing clear commit messages.
+  - 30+ commits
 * A `README.md` file containing:
   - A Project description
   - A Link to the Deployed App
