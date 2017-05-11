@@ -1,6 +1,6 @@
 # Part One — Headfirst into Node and HTTP
 
-Create a directory called `node_lab`. cd into that directory.  Touch a file called `server.js` and paste the following code into that file:
+cd into your ga folder.  Create a directory called `node_lab`. cd into that directory.  Touch a file called `server.js` and paste the following code into that file:
 
 ```js
 var http = require('http');
@@ -23,7 +23,7 @@ server.on('request', function(request, response) {
 
 1.  Run the file using `$ node server.js`
 
-2. After running the file, make a GET request to your server using cURL `$ curl localhost:3001`, and examine the response.  Compare the response to the code in server.js. Take 1 minutes to take notes on what you think is happening.
+2. After running the file, make a GET request to your server using cURL `$ curl localhost:3001`, and examine the response.  Compare the response to the code in server.js. Take 2 minutes to take notes on what you think is happening.
 
 3. Then, open your browser and make a GET request using the browser. Go to http://localhost:3001, open your chrome dev tools and compare the response you see in the browser to the response you saw in the terminal after curling, as well as to the code in server.js.
 
@@ -39,7 +39,7 @@ In the `server.js` file, the first code we wrote, requires a package called `htt
 
 Using the `require` method, we save the library to the variable `http`, which gives us access to all of the methods and behaviors built into the package. You can read more about this in the [documentation](https://nodejs.org/api/http.html).
 
-The next line, `var server = http.createServer().listen(3001);` calls the `createServer` method built into `http`, and then calls `.listen()` passing it the number `3001` as an argument. It reads a little bit like English, doesn't it?
+The next line, `var server = http.createServer().listen(3001);` calls the `createServer` method built into `http`, and then calls `.listen()` method, passing it the number `3001` as an argument. 
 
 > Create an HTTP server that listens for requests at port 3001 and save the resulting created server to the variable `server`.
 
@@ -51,7 +51,7 @@ The callback is responsible for building and sending the response back to the cl
 
 You could modify the code in the `server.js` to inspect what the argument request holds, `console.log(request)` but it is just a Javascript object that holds all of the information received in the request.
 
-The `response` is also an object. We call the `response.writeHead()` function to build the header we are going to send back to the client. We then use the `response.write()` method to add text to the body, in this case, we are adding lines of html to send back to the client.
+The `response` is also an object. We call the `response.writeHead()` method to build the header we are going to send back to the client. We then use the `response.write()` method to add text to the document body, in this case, we are adding lines of html to send back to the **client**.
 
 Finally, we call `response.end()`. This tells the server the the response is built and ready to be sent back to the client. The `http` package handles the rest.
 
@@ -104,7 +104,7 @@ requested: /portfolio
 
 We can now keep track of the different routes that you have asked for, but we are not handling them yet.
 
-Handling them is pretty straight forward.  You use an if/else statement or switch statement - the same that you have used for the last three weeks.
+Handling them is pretty straight forward.  You can use an if/else statement or switch statement - the same conditional statements that you have used for the last three weeks.
 
 If the variable `pathname` is `/fun-times` build x response <br />
 else if the variable `pathname` is `/movies` build y response <br />

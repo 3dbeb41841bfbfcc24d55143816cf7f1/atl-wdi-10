@@ -44,7 +44,7 @@ The internet as a concept, ignoring all of the layers and layers of technical kn
 
 ![](https://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg)
 
-A **client**, your browser, makes a *request* through the internet to a **server** for a webpage, a song, an image, or some sort of _Resource_.
+A **client**, your browser, makes a **request** through the internet to a **server** for a webpage, a song, an image, or some sort of **resource**.
 
 **What makes up a web page?**
 
@@ -73,14 +73,14 @@ A **client**, your browser, makes a *request* through the internet to a **server
 <br />
 **SET DESIGN**: DAVE BRYANT
 
-Think back to what programming felt like on day one, or when you were deciding to take WDI. That was not that long ago.  The concepts of string manipulation, looping, variables and so on likely seemed pretty magical. I know they were to me, but ultimately, you are just making rules about the input that is received, and the appropriate output.
+Think back to what programming felt like on day one, or when you were deciding to take WDI. That was not that long ago.  The concepts of string manipulation, looping, variables and so on likely seemed pretty magical. Ultimately, you are just making rules about the input that is received, and the appropriate output.
 
 <br />
 
 ### What the Internet Actually Looks Like:
 
 *The image below comes from the Chrome developer tools. Swedish! This is what an actual request looks like:*
-![](headers.png)
+![](https://i.imgur.com/TH3R9lv.png)
 
 Open Chrome dev tools, go to the network tab, refresh the page, and you can see all of the requests made for the content. You can see that there is a _lot_ more than just html and css. And if you click on one of those requests, you can then see the headers for it.
 
@@ -104,7 +104,7 @@ HTTP is made up of seven **HTTP verbs**, though we will just focus on four and t
     - Can anyone tell me what CRUD means? 
 - Create(POST), Read(GET), Update(PUT), Delete(DELETE) — (CRUD)
 
-If we think about this in terms of a blog: we can ask to see a blog post (Read/GET), we can create blog post and save it (Create/POST), we can then go and edit that blog post (Update/PUT), and finally if we are embarrassed by it, we can delete it (Delete/DELETE).
+If we think about this in terms of a blog: we can ask to see a blog post (Read/GET), we can create blog post and save it (Create/POST), we can then go and edit that blog post (Update/PUT), and if the content becomes out of date, we can delete it (Delete/DELETE).
 
 During Unit One, you likely inadvertently used the GET verb. Can you guess in what context you used it?
 
@@ -114,17 +114,17 @@ During Unit One, you likely inadvertently used the GET verb. Can you guess in wh
 
 So, let's get our hands dirty: what is the easiest way you can come up with to make a **GET** request?
 
-EXERCISE: For the next 15 minutes, look at this [link](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_02/node/node-lab/curl_lab.md), read through the explanation of cURL and work through the exercises.
+EXERCISE: For the next 15 minutes, look at this [link](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_02/node/node-lab/curl-lab.md), read through the explanation of cURL and work through the exercises.
 
 EXERCISE: 5 minute breakout session! With your partner, work together to come up with an explanation, in your own words, of how the internet works, HTTP verbs, and the request-response cycle.
-
-> **SIDE NOTE**: What happens if you put 146.115.8.93 instead of www.google.com?
 
 <br />
 
 ### The Web as _Resources_
 
-So, what if I wanted to go across the web (or to the grocer) and GET some resource (like coconut oil)? I could find the unique IP address of that computer and make the request, or I could LOCATE its RESOURCES UNIVERSALLY by its **URL** (Uniform Resource Locator):
+What happens if you put 146.115.8.93 instead of www.google.com?
+
+So, what if I wanted to go across the web (or to the grocer) and GET some resource (like coconut oil)? I could find the unique IP address of that computer and make the request, or I could LOCATE its RESOURCES UNIVERSALLY via its **URL** (Uniform Resource Locator):
 
  ![resource diagram](https://cloud.githubusercontent.com/assets/25366/8561247/75b73966-24d7-11e5-896a-06506648c4fe.png)
 
@@ -180,7 +180,7 @@ There are really **two big takeaways** here: We are _familiar_ with JS and being
 
 ### Async
 
-We won't dive too far into this and will talk about this in much more detail later. However, the other big difference is that Node.js is designed to be _event-driven_ and _asynchronous_. The opposite of this are servers that can only run one thing at a time. Node purposefully sends nearly everything to the background and in the meantime, allows the browser to keep going until all of thes processes are completed.
+We won't dive too far into this and will talk about this in much more detail next week. However, the other big difference is that Node.js is designed to be _event-driven_ and _asynchronous_. The opposite of this are servers that can only run one thing at a time. Node purposefully sends nearly everything to the background and in the meantime, allows the browser to keep going until all of thes processes are completed.
 
 In layman's terms:
 
@@ -208,4 +208,4 @@ Anything in a URL that comes after the domain extension is called a route, path,
 
 We want to tell our server to listen for certain _routes_ and send some kind of response back.
 
-Let's open up the [node_lab](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/labs/unit_02/node/node-lab/node-lab.md) at this link.
+Let's open up the [node_lab](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/labs/unit_02/node/node-lab/node-lab.md) at this link.
