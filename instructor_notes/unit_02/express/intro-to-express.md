@@ -21,20 +21,20 @@ creator:
 
 <br />
 
-## What are we Learning Today?
+## What are we Learning This afternoon?
 
-Today, we are going to learn about how to set up and configure a server that will listen for HTTP requests from the browser.
+This afternoon, we are going to learn about how to set up and configure a server that will listen for HTTP requests from the browser.
 
 <br />
 
 ## Intro
-How many of you, prior to this course, had heard of the MEAN stack?  Today, we are jumping in.  We will be talking about [ExpressJS](https://expressjs.com/) the "E" in the MEAN stack. Which incidentally, is super buzz wordy right now. Express is a "Fast, unopinionated, minimalist web framework for Node.js".
+How many of you, prior to this course, had heard of the MEAN stack?  Today, we will be talking about [ExpressJS](https://expressjs.com/) the "E" in the MEAN stack. Which is super buzz wordy right now. Express is a "Fast, unopinionated, minimalist web framework for Node.js".
 
 > Node.js is not a framework. It is an application runtime environment that allows you to write server-side applications in javascript. Javascript that does not depend on a browser.
 
-Some frameworks, like Rails, are very opinionated frameworks- meaning that it follows convention over configuration.  A Rails developer can go into any other Rails app, and understand the basic layout, because all Rails applications are built in the same way, with the same structure.  
+Some frameworks, like Rails, are very opinionated frameworks- meaning that it follows convention over configuration.  A Rails developer can go into any other Rails app, and understand the basic layout, because all Rails applications are built in the same way, with the same file structure.  
 
-Express, as we stated before, is much less opinionated. We have a lot of freedom in how we structure our application (folders and files, how to load different files, how to manage dependencies, etc).
+Express is much less opinionated. We have a lot of freedom in how we structure our application (folders and files, how to load different files, how to manage dependencies, etc).
 
 <br />
 
@@ -54,7 +54,7 @@ With you buddy, discuss the following questions:
 
 &#x1F535; **YOU DO:** Take 5 minutes to read and watch this [video] (https://docs.npmjs.com/getting-started/what-is-npm)
 
-> Summary: **npm**, short for node package manager. Allows us to install dependencies for our Node.js application.
+> Summary: **npm** (node package manager), allows us to install dependencies for our Node.js application.
 
 <br />
 
@@ -73,6 +73,7 @@ I **HIGHLY** recommend that you take notes on this process, and write the comman
 In the terminal:
 
 ```bash
+$ cd ~/Desktopga/class-exercises
 $ mkdir hello-express
 $ cd hello-express
 $ npm init
@@ -83,19 +84,15 @@ you whether this is 'ok' at the end of the questions/set up
 $ subl .
 ```
 
-- `$ npm init` will initialize a new Node.js application. Upon initialization, it will prompt you for your input in order to update the `package.json`.
-
+- `npm init` will initialize a new Node.js application. Upon initialization, it will prompt you for your input in order to update the `package.json`.
 
 - If we hit enter and use all of the default values (except for the `server.js`) and we take a look at the contents of the `package.json` file, we'll see something like this:
 
-
 ![](https://i.imgur.com/mP6KyeW.png)
-
 
 - The `package.json` file contains meta data about your app or module. More importantly, it includes the list of dependencies to install from npm when running npm install. **We** certainly don't want to keep track of them!  This makes it really easy for other people to work on the same app.  All they need to do is clone your repo, and then npm install all of the dependencies in order to start working on the app.
 
-
-> **Pro Tip**: `npm init -y` is a shortcut that will select all the defaults for your `package.json` for you.
+> **Pro Tip**: `npm init -y` is a shortcut that will select all of the defaults for your `package.json` for you.
 
 <br />
 
@@ -113,9 +110,9 @@ $ subl .
 $ npm install --save express
 ```
 
-The `--save` flag allows us to update the `package.json` to include the dependency that you just installed. In the terminal, run `$ cat package.json` to observe these changes. We could have also entered express manually- to the dependencies list in our package.json file.  If we added Express this way, we would need to run npm install afterwards in order to install it. 
+The `--save` flag is very important as it allows us to update the `package.json` to include the dependency that you just installed. In the terminal, run `$ cat package.json` to observe these changes. We could have also entered express manually- to the dependencies list in our package.json file.  If we added Express this way, we would need to run `npm install` afterwards in order to install the package. 
     
- As we saw during `npm init`, the default file for a node app is `index.js`.  If your package.json still uses this as the default, you should update it to `server.js`.
+ **SIDE NOTE** As we saw during `npm init`, the default file for a node app is `index.js`.  If your package.json still uses this as the default, you should update it to `server.js`.
 
 <br />
 
@@ -131,11 +128,11 @@ The `--save` flag allows us to update the `package.json` to include the dependen
 
 ```javascript
 var express = require('express'); // Loading the express module on our server
-var app = express(); // Create a new instance of express on our server
+var app = express(); // Creates a new instance of express on our server
 
 
 app.get('/', function(req, res) { 
-  // when a request comes in at localhost:3000, it will respond
+  // when a request comes in at localhost:3000, it will respond 
 });
 
 var port = process.env.PORT || 3000; // tells the server where to listen for requests
@@ -143,13 +140,13 @@ var port = process.env.PORT || 3000; // tells the server where to listen for req
 app.listen(port, function() {
   // tells the server where to listen for requests on port 3000
 
-  console.log('hello-express is listening on port 3000');
+  console.log('hello-express is listening on port ' + port);
 }); // actualizing the line above
 ```
 
 <br />
 
-### What does all that mean??
+### Let's talk through this...
 
 #### `require()`
 
@@ -170,7 +167,7 @@ With express invoked and running, we now have access to various functions and pr
 
 &#x1F535; **YOU DO:**
 
-1. Walk through STEP 3 above and create a `server.js`.
+1. Walk through STEP 3 above and create a `server.js` with the code above.
 
 <br />
 
@@ -194,21 +191,21 @@ app.get("/", function(req, res){
 ```
 With the script above, we are telling the app that when a user goes to our home route at localhost:3000 (their request), that we will send back a response of 'Hello World!'    
     
-1. Let's restart the server (`$ node server.js`) and reload the browser. You should now see `Hello World`.
+1. Let's restart the server (`$ node server.js`) and reload the browser. You should now see `Hello World!`.
 
 <br />
 
 &#x1F535; **YOU DO: 2 minutes**
 
-1. Walk through the section above to make "Hello World" render in the browser.
+1. Walk through the section above to make "Hello World!" render in the browser.
 
 <br />
 
 ## Nodemon
 
-This is grrrrrrreat! (You can't not love Tony the Tiger.)  But it is kind of a pain to have to restart the server every time we make changes to our files... 
+This is great!  But it is kind of a pain to have to restart the server every time we make changes to our files... 
 
-[Nodemon](http://nodemon.io/) is a very helpful npm module that will automatically restart your server when a file changes.
+[Nodemon](http://nodemon.io/) is a very helpful npm module that will automatically restart your server when a file is saved.
 
 ```bash
 $ npm install --global nodemon
@@ -256,7 +253,7 @@ Get together with your buddy. Remember: We are here and you can still ask questi
 
 http://expressjs.com/en/starter/basic-routing.html
 
-1. Write a second route underneath the first that listens for `/greeting` and responds with `'HEY, WDI 9!'`
+1. Write a second route underneath the first that listens for `/greeting` and responds with `'Hey, WDI 10!'`
 
 1. Write a third route underneath the that one that listens for `/rihanna` and responds with `"Work work work work work"`
 
@@ -265,7 +262,7 @@ http://expressjs.com/en/starter/basic-routing.html
 
 ```javascript
 app.get('/greeting', function(req, res) {
-  res.send('HEY, WDI 9!');
+  res.send('HEY, WDI 10!');
 });
 
 app.get('/rihanna', function(req, res) {
@@ -274,9 +271,12 @@ app.get('/rihanna', function(req, res) {
 ```
 </details>
 
+<br />
+
 **Stretch Goal**: Implement `req.query` functions in one of your routes explanation [here](http://expressjs.com/en/api.html#req.query)
 
 <br />
+
 ---
 
 # Break Time
@@ -285,7 +285,7 @@ app.get('/rihanna', function(req, res) {
 
 ## Request and Response
 
-#### The 'req' Argument
+### The 'req' Argument
 
 The [req](https://expressjs.com/en/api.html#req) argument is an object that contains information about the incoming HTTP **request**:
 
@@ -294,17 +294,17 @@ The [req](https://expressjs.com/en/api.html#req) argument is an object that cont
 - req.params
 - req.body (see bodyParser below)
 
-> You can also use `request`, but we use `req` for brevity.
+> You can also use the full name- `request`, but we use `req` for brevity.
 
-#### The 'res' Argument
+### The 'res' Argument
 
 The [res](https://expressjs.com/en/api.html#res) argument is another object that contains information about the **response** we want to send to the server.
 
-We initially started with using `res.send` to just send text to the browser, when using handlebars however, we can use `res.render` to render an html or hbs file.
+We initially started using `res.send` to send text to the browser, when using handlebars.  However, we can use `res.render` to render an html or hbs file.
 
-We can also use `res.redirect` to trigger another route before sending a response back to the browser
+We can also use `res.redirect` to trigger another route before sending a response back to the browser.
 
-> You can also use `response`, but we use `res` for brevity.
+> You can also use the full name- `response`, but we use `res` for brevity.
 
 <br />
 
@@ -330,7 +330,7 @@ Try this URL: `http://localhost:3000/schmitty`. What is returned?
 
 <br />
 
-#### Why are params important?
+### Why are params important?
 
 Eventually, we will use "wildcard" params to grab specific information from our app. For example, if we were builing a Facebook replica, and we wanted to grab a specific friend of a specific user, we might build a route that looks like this:
 
@@ -359,17 +359,17 @@ Our base route is a fixed path to a specific resource (like an html page, a piec
 The query parameter pattern should be familiar, it is essentially a key and a value:
 
 ```javascript
-?q=blah&foo=bar
+?q=foo&a=bar
 ```
 
-The `?` tells the server that all of the text that follows, should be interpreted and parsed as query parameters, with `q` as the key and `blah` as the value. Unlike arguments in functions, or key/value pairs in JS objects, query parameters are not comma separated but separated by an `&`, so our second query parameter key is `foo` and it's value is `bar`. 
+The `?` tells the server that all of the text that follows, should be interpreted and parsed as query parameters, with `q` as the key and `foo` as the value. Unlike arguments in functions, or key/value pairs in JS objects, query parameters are not comma separated but separated by an `&`, so our second query parameter key is `a` and it's value is `bar`. 
 
 A `console.log()` of our query parameters would look something like this:
 
 ```javascript
 {
-    q:   "blah",
-    foo: "bar"
+    q:   "foo",
+    a: "bar"
 }
 ```
 
@@ -380,6 +380,7 @@ app.get("/:name", function(req, res){
   console.log(req.params);
   console.log(req.route);
   console.log(req.query);
+  // parameter is name, query parameter is first_name
   res.send(`Hello, ${req.params.name}. My name is ${req.query.first_name}.`);
 });
 ```
