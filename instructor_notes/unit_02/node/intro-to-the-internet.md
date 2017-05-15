@@ -79,7 +79,7 @@ Think back to what programming felt like on day one, or when you were deciding t
 
 ### What the Internet Actually Looks Like:
 
-*The image below comes from the Chrome developer tools. Swedish! This is what an actual request looks like:*
+*The image below comes from the Chrome developer tools. This is what an actual request looks like:*
 ![](https://i.imgur.com/TH3R9lv.png)
 
 Open Chrome dev tools, go to the network tab, refresh the page, and you can see all of the requests made for the content. You can see that there is a _lot_ more than just html and css. And if you click on one of those requests, you can then see the headers for it.

@@ -73,7 +73,7 @@ I **HIGHLY** recommend that you take notes on this process, and write the comman
 In the terminal:
 
 ```bash
-$ cd ~/Desktopga/class-exercises
+$ cd ~/Desktop/ga/class-exercises
 $ mkdir hello-express
 $ cd hello-express
 $ npm init
