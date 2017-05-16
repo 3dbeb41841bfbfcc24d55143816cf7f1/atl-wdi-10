@@ -288,11 +288,11 @@ app.use(express.static(__dirname + '/public')); // VERY IMPORTANT!! Make sure to
 
 > `.use()` is another method that Express makes available to us. It is called "Middleware". Middleware gives us the ability to take action between the request and response, like authentication, or to log info to our server logs, etc.
 
-1. Create a public directory: `mkdir public` 
-2. cd into your `public` directory
-3. `mkdir css`
-1. Create a `styles.css` file: `touch css/styles.css`
-1. Add a CSS rule to test it out:
+2. Create a public directory: `mkdir public` 
+3. cd into your `public` directory
+4. `mkdir css`
+5. Create a `styles.css` file: `touch css/styles.css`
+6. Add a CSS rule to test it out:
     
 ```css
 body {
