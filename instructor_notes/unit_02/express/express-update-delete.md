@@ -27,7 +27,7 @@ MVC
 
 Acronyms galore. But let's quickly revisit what these are, and how we have applied them thus far.
 
-### Exercise: Steps to Create a Node App
+## Steps to Create a Node App
 
 ### Naming Conventions
 
@@ -56,7 +56,7 @@ router.delete('/:id', function(req, res) {
 In our `controllers/todos_controller.js` file, make sure that your index route looks something like this:
 
 ```javascript
-router.get('/', function(req,res) {
+router.get('/', function(req, res) {
 
   res.render('todos/index', {
     todos: data.seededTodos
@@ -65,7 +65,7 @@ router.get('/', function(req,res) {
 
 ```
 
-Inside of our `index.hbs` file, add a form with just a delete button.
+**Inside of our `todos/index.hbs` file**, add a form with just a delete button.
 
 ```html
 <h1> Todos </h1>
@@ -131,30 +131,51 @@ You can read the conversation about adding PUT and DELETE form functionality to 
 
 ### Create an Edit Route
 
-In our `controllers/todos.js`, create a GET route that will display an edit form for a single todo item.
+In our `controllers/todos_controller.js`, create a **GET route** that will display an edit form for a single todo item.
 
 ```javascript
 router.get('/:id/edit', function(req, res){
   res.render('todos/edit', {
     todo: {
+      id: req.params.id
       description: data.seededTodos[req.params.id].description,
       urgent: data.seededTodos[req.params.id].urgent,
-      id: req.params.id
     }
   });
 });
 ```
 
-Now create a very basic form for editing in the `views/edit.hbs`.
+Now create an edit.hbs file in your views folder, and then create a very basic form for editing in the `views/edit.hbs`.
 
 ```html
-<h1>Edit</h1>
-<form>
+<h1>Edit {{todo.description}}</h1>
+
+<div class="row">
+  <form class="col-md-6 col-md-offset-3">
+    <div class="form-group">
+      <label for="description">description:</label>
+      <input type="text" name="description" class="form-control" value="{{todo.description}}">
+    </div>
+    <div class="form-group">
+      <label for="location">location:</label>
+      <input type="text" name="location" class="form-control" value="{{todo.location}}">
+    </div>
+    <div class="form-group">
+      <label for="urgent">urgent:</label>
+      <input type="text" name="urgent" class="form-control" value="{{todo.urgent}}" />
+    </div>
+    <div>
+      <input type="submit" value="Update Todo" class="btn btn-default">
+    </div>
+  </form>
+</div>
+```
+
+<!-- <form >
   <input type="text" name="description" value="{{todo.description}}" />
   <input type="text" name="urgent" value="{{todo.urgent}}" />
   <input type="submit" value="Submit Changes"/>
-</form>
-```
+</form> -->
 
 ### Create a Link to the Edit Route
 
@@ -200,18 +221,25 @@ Check the server logs. What happens when we submit our changes?
 When we click on the "Submit Changes" button on our edit page (edit.hbs), the form needs to make a PUT request to our update route.
 
 ```html
-<form action="/todos/{{todo.id}}" method="">
-  <div class="">
-    <label for="description">description:</label>
-    <input type="text" name="description" value="{{todo.description}}">
-  </div>
-  <div>
-    <label for="urgent">urgent:</label>
-    <input type="text" name="urgent" value="{{todo.urgent}}">
-  </div>
-  <input type="submit" name="" value="Submit Changes">
-</form>
-
+<div class="row">
+  <form action="/todos/{{todo.id}}" method="" class="col-md-6 col-md-offset-3">
+    <div class="form-group">
+      <label for="description">description:</label>
+      <input type="text" name="description" class="form-control" value="{{todo.description}}">
+    </div>
+    <div class="form-group">
+      <label for="location">location:</label>
+      <input type="text" name="location" class="form-control" value="{{todo.location}}">
+    </div>
+    <div class="form-group">
+      <label for="urgent">location:</label>
+      <input type="text" name="urgent" class="form-control" value="{{todo.urgent}}" />
+    </div>
+    <div>
+      <input type="submit" value="Update Todo" class="btn btn-default">
+    </div>
+  </form>
+</div>
 ```
 
 The problem is that forms can't make PUT requests.  Only POST and GET requests.  So we need to use method-override again.
@@ -219,7 +247,7 @@ The problem is that forms can't make PUT requests.  Only POST and GET requests. 
 Now go back and set up our edit form to send a PUT request.
 
 ```html
-<form action="/todos/{{todo.id}}?_method=PUT" method="POST">
+<form action="/todos/{{todo.id}}?_method=PUT" method="POST" class="col-md-6 col-md-offset-3">
 ```
 
 <br />
