@@ -4,7 +4,7 @@ var logger      = require('morgan');
 var express     = require('express');
 var hbs         = require('hbs');
 var bodyParser  = require('body-parser');
-var todosController = require('./controllers/todos.js');
+var todosController = require('./controllers/todos_controller.js');
 /* app settings*/
 var app         = express();
 var port        = process.env.PORT || 3000;
