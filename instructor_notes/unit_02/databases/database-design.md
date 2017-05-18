@@ -27,20 +27,20 @@ A database is a place where information gets stored in a hard drive - or distrib
 
 Inside a database, we do basic actions like create, read, update, and destroy data – hey look, CRUD!
 
-In modern web development, there are different categories of databases – SQL, NoSQL. We're focusing on NoSQL because it typically get's paired with Node and Express, but we will talk about SQl later in the course.
+In modern web development, there are different categories of databases – SQL, NoSQL. We're focusing on NoSQL because it typically get's paired with Node and Express, but we will talk about SQL later in the course.
 
-SQL stands for Structured Query Language, and it's a language used to manage and get information from considered what are considered "relational" databases.
+SQL stands for Structured Query Language, and it's a language used to manage and get information from what are considered "relational" databases.
 
 NoSQL means... No Structured Query Language.
 
 
 ## Why Mongo
 
-Flexibility
+### Flexibility
 
-Flexibility, however, is a double-edged sword; more flexibility means more choices to face when deciding how to model data.
+Flexibility, however, is a double-edged sword- more flexibility means more choices to face when deciding how to model data.
 
-Speed
+### Speed
 
 Data is in a document when you need it instead of "joining" other tables.
 
@@ -50,7 +50,7 @@ NoSQL is more flexible, while SQL is more structured in it's approach to creatin
 
 Let's look at a ```book``` entity:
 
-MongoDB
+### MongoDB
 
 ```
 {
@@ -69,7 +69,7 @@ MongoDB
 }
 ```
 
-PostgreSQL
+### PostgreSQL
 
 | ISBN          | title                       | author       | format | price |
 |---------------|-----------------------------|--------------|--------|-------|
@@ -101,16 +101,16 @@ ACID defines a set of rules for database transactions. These rules are built-in 
 
 What does ACID stand for:
 
-A - Atomicity
+**A - Atomicity**
 * All or nothing, if one part fails, the entire transaction fails
 
-C - Consistency
+**C - Consistency**
 * Any valid transaction can only result in creating an equally valid state as defined by the various rules built by the programmer, constraints, cascades, etc. Transactions need to follow the rules inherent in the database and the programmer that built it.
 
-I - Isolation
+**I - Isolation**
 * Concurrent transactions will not result invalid data. Transaction results look as though Concurrent transactions were run serially (one after another).
 
-D - Durability
+**D - Durability**
 * The durability property ensures that once a transaction has been committed, it will remain so, even in the event of power loss, crashes, or errors. Once a change has been made, nothing but another transaction will change it.
 
 Mongo bends these standards a little for the sake of speed, availability and scaling.
