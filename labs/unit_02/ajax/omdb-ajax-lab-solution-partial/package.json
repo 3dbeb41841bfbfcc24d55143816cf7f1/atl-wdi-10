@@ -1,0 +1,22 @@
+{
+  "name": "omdb-ajax-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "hbs": "^4.0.1",
+    "method-override": "^2.3.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
