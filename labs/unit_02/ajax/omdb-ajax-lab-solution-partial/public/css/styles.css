@@ -1,0 +1,10 @@
+.movie-result {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.movie-poster {
+    height: 100px;
+}
