@@ -19,7 +19,7 @@ Identify what you need to build and accomplish to meet project expectations and 
 Your app must:
 
 * **Have at _least_ 2 models** (more if they make sense) – one representing someone using your application (a user), and one that represents the main functional idea for your app
-* **Include sign up/log in functionality**, with encrypted passwords & an authorization flow. The boilerplate is here: https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/projects/unit_02/project2_boilerplate
+<!-- * **Include sign up/log in functionality**, with encrypted passwords & an authorization flow. The boilerplate is here: https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/projects/unit_02/project2_boilerplate -->
 * **Have complete RESTful routes** for at least one of your resources with GET, POST, PUT, and DELETE
 * **Write Mongo queries using the Mongoose module** and interact with your document database. Promises will likely make your life easier as you start to build complex queries!
 * **Include wireframes** that you designed during the planning process
@@ -155,23 +155,20 @@ If you have ideas on how you can help a fellow-student with work that they are s
 ## Meetings with instructors
 _Your instructor will contact you to setup a meeting time_
 
-**Friday, March 24th**<br>
+**Friday, May 26th**<br>
 Work on your [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) and an initial wireframe in the morning. You will have a 15 minute meeting to get your project approved.
 
-**Saturday, March 25th**<br>
+**Saturday, March 27th**<br>
 Work on your project.
 
-**Sunday, March 26th**<br>
+**Sunday, March 28th**<br>
 Work on your project.
 
-**Monday, March 27th**<br>
-15 minute check in to see progress decide whether to move forward with or abandon stretch goals.
-
-**Tuesday, March 28th**<br>
+**Monday, May 29th**<br>
 Work on your project.
 
-**Wednesday, March 29th**<br>
-Submit your project to ga-laxy by 2 pm EDT and present your project. Make sure to also send us a new link to your portfolio site!
+**Tuesday, May 30th**<br>
+Submit your project to schoology by 2 pm EDT and present your project. Make sure to also send us a new link to your portfolio site!
 
 ## Where to go for help during project week
 1. Seek out help online
