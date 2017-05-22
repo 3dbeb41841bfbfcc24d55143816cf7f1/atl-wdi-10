@@ -20,36 +20,36 @@ User.remove({}, function(err){
 var danny = new User({
   first_name: 'Danny',
   email: 'danny@gmail.com',
-  items: [{name: "Bike maintenance"}]
+  items: [{ name: "Take my bike to the shop for maintenance" }]
 });
 
 var maren = new User({
   first_name: 'Maren',
   email: 'maren@gmail.com',
-  items: [{name: "Get dry cleaning"}]
+  items: [{ name: "Get dry cleaning" }]
 });
 
 var diesel = new User({
-  first_name: 'diesel',
+  first_name: 'Diesel',
   email: 'diesel@gmail.com',
-  items: [{name: "Go to the dog park"}]
+  items: [{ name: "Go to the dog park" }]
 });
 
 // save the users
 danny.save(function(err) {
   if (err) console.log(err);
 
-  console.log('User created!');
+  console.log('danny created!');
 });
 
 maren.save(function(err) {
   if (err) console.log(err);
 
-  console.log('User created!');
+  console.log('maren created!');
 });
 
 diesel.save(function(err) {
   if (err) console.log(err);
   
-  console.log('User created!');
+  console.log('diesel created!');
 });

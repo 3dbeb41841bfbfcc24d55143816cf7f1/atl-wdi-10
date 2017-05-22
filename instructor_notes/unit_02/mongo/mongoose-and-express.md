@@ -61,7 +61,7 @@ I have included starter code in your **/labs/unit_02/mongo** folder called `expr
     - Keep another tab open to the Terminal prompt `$`, in order to run commands
 
 
-In this example, we are connecting to a local database named `express-mongoose-lesson-starter`. You can now execute all the mongoDB commands in the database `express-mongoose-lesson-starter`.
+In this example, we are connecting to a local database named `express-mongoose-lesson-starter`. You can now execute all the mongoDB commands in the database `express-mongoose-lesson-starter`.  View this code on the `server.js` file.
 
 ![](https://i.imgur.com/ebX8wCK.png)
 
@@ -124,7 +124,7 @@ var UserSchema = new Schema({
 });
 ```
 
-Check out this morning's Mongoose Intro lesson (near the bottom) for more custom validation info. Here are the Mongoose docs: http://mongoosejs.com/docs/validation.html
+Check out this morning's Mongoose Intro lesson (near the bottom) for more custom validation info. Here are the Mongoose docs: http://mongoosejs.com/docs/validation.html.
 
 <br />
 
@@ -132,7 +132,7 @@ Check out this morning's Mongoose Intro lesson (near the bottom) for more custom
 
 ### Seed your database
 
-From your Terminal prompt tab, run `$ node db/seeds.js` to seed your database. This will add 3 users to your `express-mongoose-lesson-starter` database.
+From your Terminal prompt tab, run `$ node db/seeds.js` to seed your database. This will add 3 users to your `express-mongoose-lesson-starter` database.  Make sure that your output doesn't end in 2 nulls, as this will nullify your data in your database.  Remember how we said that mongo is asynchronous?  If you are getting null at the end of your node db/seeds.js command, the Item.remove and the User.remove functions are running after you seed your database.  You can get around this by writing a promise on your remove functions.  Or by just running the command again.
 
 <br />
 
@@ -142,7 +142,29 @@ From your Terminal prompt tab, run `$ node db/seeds.js` to seed your database. T
 
 <br />
 
-### Users Index
+## Postman
+
+It is a good practice to build your app one step at a time for testing and efficency. 
+
+- STEP 1 - This morning we created the Mongoose queries and confirmed that the code works. 
+- STEP 2 - This afternoon we are going to take those working pieces of code and wrap them in Express routes. 
+- STEP 3 - Tomorrow we will worry about the views, once the routes are working, etc. 
+
+For our current app, we have not created views and forms yet, so we need a way to test our non-`.get` routes. We are going to use a tool called Postman. 
+
+- You can download it from here: https://www.getpostman.com/. 
+- Click on the "Mac App" icon.
+- Open the app.
+
+Postman is a simple app that allows us to make HTTP requests. We will also use it to mimic using forms to send data to our server.
+
+<br />
+
+### &#x1F535; YOU DO - Download/Open Postman (2 minutes)
+
+<br />
+
+## Users Index
 
 For the most part, we are repeating what we did in our intro to mongoose app. However, now we are using the Express Router. Inside `usersController.js` let's add:
 
@@ -174,7 +196,7 @@ Test it out in your browser. **NOTE - this app runs on localhost port `:4000` in
 
 <br />
 
-### Users Show
+## Users Show
 
 ```javascript
 // USER SHOW ROUTE
@@ -203,29 +225,7 @@ Test it out in your browser. Grab the `id` of one of your users and add it to th
 
 <br />
 
-## Postman
-
-It is a good practice to build your app one step at a time for testing and efficency. 
-
-- STEP 1 - This morning we created the Mongoose queries and confirmed that the code works. 
-- STEP 2 - This afternoon we are going to take those working pieces of code and wrap them in Express routes. 
-- STEP 3 - Tomorrow we will worry about the views, once the routes are working, etc. 
-
-For our current app, we have not created views and forms yet, so we need a way to test our non-`.get` routes. We are going to use a tool called Postman. 
-
-- You can download it from here: https://www.getpostman.com/. 
-- Click on the "Mac App" icon.
-- Open the app.
-
-Postman is a simple app that allows us to make HTTP requests. We will also use it to mimic using forms to send data to our server.
-
-<br />
-
-### &#x1F535; YOU DO - Download/Open Postman (2 minutes)
-
-<br />
-
-## Back to CRUD
+## Users Create
 
 ### Create
 ```javascript
@@ -265,7 +265,7 @@ We will test out sending form data using Postman.
 
 <br />
 
-### Update
+## Users Update
 
 To update, you can write it in one of two ways (both are super easy!) - use the helper methods: `.findByIdAndUpdate()` or `.findOneAndUpdate()`:
 
@@ -311,7 +311,7 @@ We will test out sending form data using Postman.
 
 <br />
 
-### Destroy
+### Users Destroy
 
 Mongoose gives you two easy helper methods to delete documents - `findByIdAndRemove()`and `.findOneAndRemove()`.
 

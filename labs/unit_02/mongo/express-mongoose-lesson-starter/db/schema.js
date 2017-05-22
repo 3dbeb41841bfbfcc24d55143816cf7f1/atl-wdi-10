@@ -10,7 +10,6 @@ var ItemSchema = new Schema({
 
 var UserSchema = new Schema({
   first_name: String,
-  last_name: String,
   email: { type: String, required: true, unique: true },
   created_at: Date,
   updated_at: Date,
