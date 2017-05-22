@@ -49,7 +49,7 @@ Mongoose is an object modeling package - think of it as an ORM (Object Relationa
 
 ## Setting up your app - Codealong (5 mins)
 
-I have included starter code in your **w07d04/student_labs** folder called `express-mongoose-lesson-starter`
+I have included starter code in your **/labs/unit_02/mongo** folder called `express-mongoose-lesson-starter`
 
 1. `cd` into the folder
 2. run `npm install`
