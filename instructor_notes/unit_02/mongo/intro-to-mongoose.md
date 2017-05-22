@@ -14,7 +14,7 @@
 
 ## Opening Framing (10 minutes / 0:10)
 
-Before we dive into Mongoose, let's talk a bit about about last week's Mongo/NoSQL lesson. **What are some of the takeaways?**
+Before we dive into Mongoose, let's talk a bit about about Mongo/NoSQL.
 
 #### What is a NoSQL database?
 
@@ -151,7 +151,7 @@ kitty.save(function (err) {
 
 ## I Do: Set Up for Mongoose Intro Lesson App (5 minutes / 0:20)
 
-1. Create a new project folder in your `/labs` folder: `$ mkdir mongoose-intro-lesson`
+1. Create a new project folder in your `/class-exercises` folder: `$ mkdir mongoose-intro-lesson`
 
 2. `cd` into the new folder. 
 3. `$ npm init -y`
@@ -169,7 +169,7 @@ Your folder structure should look like this:
 
 <br />
 
-###&#x1F535; YOU DO (2 minutes)
+### &#x1F535; YOU DO (2 minutes)
 
 Walk through the previous steps to set-up your app
 
@@ -369,12 +369,13 @@ First let's create an instance of our Student model. Below is an example that de
 // in the db/schema.js
 
 // First we create a new student. It's just like generating a new instance of a constructor function!
-var frankie = new StudentModel({name: "Frankie P.", age: 30});
+var frankie = new StudentModel({ name: "Frankie P.", age: 30 });
 
 // Then we save it to the database using .save
-frankie.save(function(err, student){
+frankie.save(function(err, student) {
   if (err) {
     console.log(err);
+    return;
   }
   else {
     console.log(student);
@@ -387,9 +388,10 @@ Run `node db/schema.js` in the Terminal to run it. We can also consolidate this 
 ```js
 // in the db/schema.js
 
-StudentModel.create({ name: 'Frankie P.', age: 30 }, function (err, student) {
+StudentModel.create({ name: 'Frankie Q.', age: 31 }, function (err, student) {
   if (err) {
     console.log(err);
+    return;
   }
   else {
     console.log(student);
@@ -419,8 +421,8 @@ Next, let's create a Project...
 ```js
 // db/schema.js
 
-var anna = new StudentModel({name: "Anna", age: 28});
-var project1 = new ProjectModel({title: "memory game", unit: "JS"});
+var anna = new StudentModel({ name: "Anna", age: 28 });
+var project1 = new ProjectModel({ title: "memory game", unit: "JS" });
 
 // Now we add that project to a student's collection / array of projects.
 anna.projects.push(project1);
@@ -449,7 +451,7 @@ Run `node db/schema.js` in the Terminal to run the code.
 
 ## Seed Data (10 minutes / 1:30)
 
-Let's seed some data in our database. In order to do that, we need to make sure that we can connect the `schema.js` to the `seeds.js`. Comment out the code we created above, and add the following to the bottom of the `db/schema.js`.
+Let's delete this create code, and actually add some seed some data in our database, from our `seeds.js` file. In order to do that, we need to make sure that we can connect the `schema.js` to the `seeds.js`. Comment out the code we created above, and add the following to the bottom of the `db/schema.js`.
 
 ```js
 // in the db/schema.js
@@ -496,17 +498,17 @@ ProjectModel.remove({}, function(err) {
 });
 
 // Now, we will generate instances of a Student and of their Project.
-var becky = new StudentModel({name: "becky"});
-var brandon = new StudentModel({name: "brandon"});
-var steve = new StudentModel({name: "steve"});
+var becky = new StudentModel({name: "Becky"});
+var brandon = new StudentModel({name: "Brandon"});
+var steve = new StudentModel({name: "Steve"});
 
-var project1 = new ProjectModel({title: "project1!!", unit: "JS"});
-var project2 = new ProjectModel({title: "project2!!", unit: "Express"});
-var project3 = new ProjectModel({title: "project3!!", unit: "Angular"});
-var project4 = new ProjectModel({title: "project4!!", unit: "Rails"});
+var project1 = new ProjectModel({title: "Project 1!!", unit: "JS"});
+var project2 = new ProjectModel({title: "Project 2!!", unit: "Express"});
+var project3 = new ProjectModel({title: "Project 3!!", unit: "Angular"});
+var project4 = new ProjectModel({title: "Project 4!!", unit: "Rails"});
 
 // create two arrays that we can iterate over
-var students = [becky, brandon, steve];
+var students = [Becky, Brandon, Steve];
 var projects = [project1, project2, project3, project4];
 
 // Here we assign some projects to each student.
@@ -514,7 +516,10 @@ students.forEach(function(student, i){
   student.projects.push(projects[i], projects[i + 1]);
 
   student.save(function(err) {
-    if(err) { console.log(err); }
+    if(err) {
+      console.log(err);
+      return;
+    }
     
     console.log(student);
   });
@@ -595,11 +600,14 @@ var ProjectModel = Schema.ProjectModel;
 var studentsController = {
   index: function() {
     StudentModel.find({})
-    .exec(function(err, docs) {
-      if (err) { console.log(err); }
+    .exec(function(err, students) {
+      if (err) { 
+        console.log(err);
+        return;
+      }
 
-      docs.forEach(function(doc) {
-        console.log(doc);
+      students.forEach(function(student) {
+        console.log(student);
       });
     });
   }
@@ -619,25 +627,31 @@ Now let's create a `show` method...
 var studentsController = {
   index: function(){
     StudentModel.find({})
-    .exec(function(err, docs){
-      if (err) { console.log(err); }
+    .exec(function(err, students) {
+      if (err) {
+        console.log(err);
+        return;
+      }
 
-      docs.forEach(function(doc){
-        console.log(doc);
+      students.forEach(function(student){
+        console.log(student);
       });
     });
   },
   show: function(req) {
     StudentModel.findOne({"name": req.name})
-    .exec(function(err, docs) {
-      if (err) { console.log(err); }
+    .exec(function(err, student) {
+      if (err) { 
+        console.log(err);
+        return;
+      }
       
-      console.log(docs);
+      console.log(student);
     });
   }
 };
 
-studentsController.show({name: "becky"});
+studentsController.show({name: "Becky"});
 ```
 
 <br />
@@ -661,19 +675,42 @@ Then use the [Mongoose documentation](http://mongoosejs.com/docs/api.html#query-
   ```js
   // controllers/studentsController.js
   var studentsController = {
+    index: function(){
+      StudentModel.find({})
+      .exec(function(err, students) {
+        if (err) {
+          console.log(err);
+          return;
+        }
 
+        students.forEach(function(student){
+          console.log(student);
+        });
+      });
+    },
+    show: function(req) {
+      StudentModel.findOne({"name": req.name})
+      .exec(function(err, student) {
+        if (err) { 
+          console.log(err);
+          return;
+        }
+        
+        console.log(student);
+      });
+    },
     // This method takes two arguments: (1) the old instance and (2) what we want to update it with.
     update: function(req, update) {
-      StudentModel.findOneAndUpdate({name: req.name}, {name: update.name}, {new: true})
-      .exec(function(err, docs) {
+      StudentModel.findOneAndUpdate({ name: req.name }, { name: update.name }, { new: true })
+      .exec(function(err, student) {
         if (err) { console.log(err); }
         
-        console.log(docs);
+        console.log(student);
       });
     }
   };
 
-  studentsController.update({name: "becky"}, {name: "Sarah"});
+  studentsController.update({name: "Becky"}, {name: "Sarah"});
   ```
 
   > **Important:** We are inserting {new: true} as an additional option. If we do not, we will get the old document as the return value -- not the updated one.
@@ -688,17 +725,49 @@ Then use the [Mongoose documentation](http://mongoosejs.com/docs/api.html#query-
   // controllers/studentsController.js
 
   var studentsController = {
-    destroy: function(req) {
-      StudentModel.findOneAndRemove({name: req.name})
-      .exec(function(err, docs) {
+    index: function(){
+      StudentModel.find({})
+      .exec(function(err, students) {
+        if (err) {
+          console.log(err);
+          return;
+        }
+
+        students.forEach(function(student){
+          console.log(student);
+        });
+      });
+    },
+    show: function(req) {
+      StudentModel.findOne({"name": req.name})
+      .exec(function(err, student) {
+        if (err) { 
+          console.log(err);
+          return;
+        }
+        
+        console.log(student);
+      });
+    },
+    update: function(req, update) {
+      StudentModel.findOneAndUpdate({ name: req.name }, { name: update.name }, { new: true })
+      .exec(function(err, student) {
         if (err) { console.log(err); }
         
-        console.log(docs);
+        console.log(student);
+      });
+    },
+    destroy: function(req) {
+      StudentModel.findOneAndRemove({name: req.name})
+      .exec(function(err, student) {
+        if (err) { console.log(err); }
+        
+        console.log(student);
       });
     }
   };
 
-  studentsController.destroy({name: "steve"});
+  studentsController.destroy({name: "Steve"});
   ```
 
 </details>
@@ -719,13 +788,13 @@ Validators are defined at the field level in a document, and are executed when t
 Example: Let's say you want to verify the existence of a username field and ensure that it is unique before you save the user document.
 
 ```js
-var UserSchema = new Schema({
-  ...
-  username: {
+var StudentSchema = new Schema({
+  name: {
     type: String,
     unique: true,
     required: true
   }
+  ...
 });
 
 ```
@@ -733,15 +802,16 @@ var UserSchema = new Schema({
 
 * `match`: type based validator for strings, added to the field's object, in your schema.
 
-Continuing off the above example, to validate your email field, you would need to change your UserSchema as follows:
+Continuing off the above example, to validate your email field, you would need to change your StudentSchema as follows:
 
 ```js
-var UserSchema = new Schema({
-  username: {
+var StudentSchema = new Schema({
+  name: {
     type: String,
     unique: true,
     required: true
   },
+  age: Number,
   email: {
     type: String,
     match: /.+\@.+\..+/
@@ -754,24 +824,25 @@ var UserSchema = new Schema({
 * `enum`: helps to define a set of strings that are only available for that field value.
 
 ```js
-var UserSchema = new Schema({
-  username: {
+var StudentSchema = new Schema({
+  name: {
     type: String,
     unique: true,
     required: true
   },
+  age: Number,
   email: {
     type: String,
     match: /.+\@.+\..+/
   },
   role: {
     type: String,
-    enum: ['Admin', 'Owner', 'User']
+    enum: ['Admin', 'Instructor', 'Student']
   },
 
 });
 ```
->By Adding an `enum`, we are adding a validation to ensure that only these three possible strings  ('Admin', 'Owner', 'User') are saved in the document.
+>By Adding an `enum`, we are adding a validation to ensure that only these three possible strings  ('Admin', 'Instructor', 'Student') are saved in the document.
 
 ### Custom Validations
 
@@ -779,10 +850,10 @@ We can also define our own validators by using the `validate` property.
 
 This `validate` property value is typically an array consisting of a validation function.
 
-For example, say that we want to validate the length of a user's password. To do so, you would have to make these changes in your UserSchema:
+For example, say that we want to validate the length of a user's password. To do so, you would have to make these changes in your StudentSchema:
 
 ```js
-var UserSchema = new Schema({
+var StudentSchema = new Schema({
   ...
   password: {
     type: String,
@@ -802,10 +873,10 @@ var UserSchema = new Schema({
 By using `.pre`, these are executed before the validations happen.
 
 ```js
-UserSchema.pre("save", function(next) {
+StudentSchema.pre("save", function(next) {
     var self = this;
 
-    UserModel.findOne({email : this.email}, 'email', function(err, results) {
+    StudentModel.findOne({email : this.email}, 'email', function(err, results) {
         if(err) {
             next(err);
         }
@@ -843,6 +914,8 @@ After this class you should be able to complete [Emergency Compliment](https://g
 * [Active Record Versus Mongoose](active_record_comparison.md)
 * [ODM For Mongo and Rails](https://github.com/mongodb/mongoid)
 
+<br />
+
 ### Multiple Collections & References
 
 Similar to how we use foreign keys to represent a one-to-many relationship in a SQL database, we can add [references](https://docs.mongodb.org/manual/tutorial/model-referenced-one-to-many-relationships-between-documents) to documents in other collections by storing an array of `ObjectIds` that references document Ids from another model.
@@ -874,3 +947,4 @@ var ProjectModel = mongoose.model("Project", ProjectSchema);
 
 #### Disadvantages
 * Requires more work. Need to find both documents that have the references (i.e., multiple queries).
+* Not the way that Mongo was meant to be used.
