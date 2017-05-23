@@ -41,9 +41,9 @@ Since we will be able to use JSON across our application - with Mongo and Node -
 
 For today, we will build a simple Node app in a folder and a file app.js.
 
-#### What Is Mongoose?
+### What Is Mongoose?
 
-Mongoose is an object modeling package - think of it as an ORM (Object Relational Mapper) for Node.  It gives us the MongoDB CRUD commands.
+Mongoose is an object data modeling package - think of it as an ORM (Object Relational Mapper) for Node.  It gives us the MongoDB CRUD commands.
 
 <br />
 
