@@ -508,7 +508,7 @@ var project3 = new ProjectModel({title: "Project 3!!", unit: "Angular"});
 var project4 = new ProjectModel({title: "Project 4!!", unit: "Rails"});
 
 // create two arrays that we can iterate over
-var students = [Becky, Brandon, Steve];
+var students = [becky, brandon, steve];
 var projects = [project1, project2, project3, project4];
 
 // Here we assign some projects to each student.
