@@ -584,14 +584,14 @@ Let's use `.find()` to implement the `index` functionality. We will do that in t
 
 ```bash
 $ mkdir controllers
-$ touch controllers/studentsController.js
+$ touch controllers/students_controller.js
 ```
 
-> We are adding a `controllers` directory and `studentsController.js` file to mimic how we might define a controller in an Express application. We will follow REST conventions and use our controllers to listen for incoming requests and communication with our database.
+> We are adding a `controllers` directory and `students_controller.js` file to mimic how we might define a controller in an Express application. We will follow REST conventions and use our controllers to listen for incoming requests and communication with our database.
 
 
 ```js
-// in the controllers/studentsController.js
+// in the controllers/students_controller.js
 
 var Schema = require("../db/schema.js");
 var StudentModel = Schema.StudentModel;
@@ -615,14 +615,14 @@ var studentsController = {
 
 studentsController.index();
 ```
-Run `node controllers/studentsController.js` in the terminal.
+Run `node controllers/students_controller.js` in the terminal.
 
 > Every model method that accepts query conditions can be executed by means of a callback or the `exec()` method (which is essentially a Mongoose-y promise). http://mongoosejs.com/docs/promises.html
 
 Now let's create a `show` method...
 
 ```js
-// controllers/studentsController.js
+// in controllers/students_controller.js
 
 var studentsController = {
   index: function(){
@@ -673,7 +673,8 @@ Then use the [Mongoose documentation](http://mongoosejs.com/docs/api.html#query-
   <summary>**This is how to update...**</summary>
 
   ```js
-  // controllers/studentsController.js
+  // in controllers/students_controller.js
+
   var studentsController = {
     index: function(){
       StudentModel.find({})
@@ -722,7 +723,7 @@ Then use the [Mongoose documentation](http://mongoosejs.com/docs/api.html#query-
   <summary>**This is how to delete...**</summary>
 
   ```js
-  // controllers/studentsController.js
+  // in controllers/students_controller.js
 
   var studentsController = {
     index: function(){
