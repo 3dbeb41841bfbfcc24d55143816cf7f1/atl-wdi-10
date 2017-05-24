@@ -132,7 +132,6 @@ app.listen(4000, function(){
     <title>Intro to Angular</title>
   </head>
   <body>
-
   </body>
 </html>
 ```
@@ -157,8 +156,10 @@ First, let's get Angular from [Google's CDN](https://developers.google.com/speed
 <head>
   <meta charset="utf-8">
   <title>Intro to Angular</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 </head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+</body>
 ```
 
 
@@ -179,9 +180,11 @@ Now, back in our HTML, make sure your `app.js` is included in a script tag, and 
   <head>
     <meta charset="utf-8">
     <title>Intro to Angular</title>
+  </head>
+  <body>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="js/app.js"></script>
-  </head>
+  </body>
 ```
 
 Since we defined it in `app.js` with a name of `IntroToAngularApp`, we just reference what we named it here. This tells the HTML to use that module.
@@ -190,7 +193,7 @@ Now, let's just check to make sure it worked. If it worked correctly, we should 
 
 ```html
 <body>
-{{ 1 + 1 }}
+  {{ 1 + 1 }}
 </body>
 ```
 
@@ -299,17 +302,19 @@ The last step here is to connect our controller to the view. We attach any contr
   <head>
     <meta charset="utf-8">
     <title>Intro to Angular</title>
+  </head>
+  <body>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="js/app.js"></script>
     <script src="js/homeController.js"></script>
-  </head>
+  </body>
 ```
 
 Now:
 
 ```html
 <body>
-  <section ng-controller="HomeController as homeCtrl">
+  <section ng-controller="HomeController as home">
     {{home.awesome}}
   </section>
 </body>
@@ -322,7 +327,7 @@ When you render the page, it should actually render! That's awesome – that mea
 
 ##### &#x1F535; YOU DO
 
-Connect the HomeController to your view and render `homeCtrl.awesome`
+Connect the HomeController to your view and render `home.awesome`
 
 <br>
 
