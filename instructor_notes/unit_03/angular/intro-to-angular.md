@@ -309,7 +309,7 @@ Now:
 
 ```html
 <body>
-  <section ng-controller="HomeController as home">
+  <section ng-controller="HomeController as homeCtrl">
     {{home.awesome}}
   </section>
 </body>
@@ -322,7 +322,7 @@ When you render the page, it should actually render! That's awesome – that mea
 
 ##### &#x1F535; YOU DO
 
-Connect the HomeController to your view and render `home.awesome`
+Connect the HomeController to your view and render `homeCtrl.awesome`
 
 <br>
 

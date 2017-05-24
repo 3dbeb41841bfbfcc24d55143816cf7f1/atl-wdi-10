@@ -87,7 +87,7 @@ Our donut collection will look like this:
 
   ```
   var newDonut = new mongoose.Schema({
-  	name: String,
+  	  name: String,
       description: String,
       img: String,
       price: Number,
