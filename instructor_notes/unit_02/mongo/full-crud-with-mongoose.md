@@ -58,7 +58,7 @@ You can use your own code from yesterday if it's more or less complete.
 
   1. copy and paste the app from `w07d04/student_labs` to todays student_labs directory
 
-#### Using the Marc's solution from yesterday for todays starter
+#### OR Using the solution from yesterday for todays starter
 
   1. cd into `student_labs/full-crud-starter`
 
