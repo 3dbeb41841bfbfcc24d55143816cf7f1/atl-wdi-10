@@ -1,0 +1,20 @@
+{
+  "name": "express-mongoose-lesson-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.14.0",
+    "hbs": "^4.0.1",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.6.1",
+    "nodemon": "^1.11.0"
+  }
+}

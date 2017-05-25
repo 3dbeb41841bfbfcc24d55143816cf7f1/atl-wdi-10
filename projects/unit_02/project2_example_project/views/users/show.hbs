@@ -1,0 +1,21 @@
+<div>
+    <h1>User {{user.id}}</h1>
+
+    <div>First Name: {{user.first_name}}</div>
+    <div>Last Name: {{user.last_name}}</div>
+    <div>Email: {{user.email}}</div>
+    <div>Items: 
+        <ul>
+            {{# each user.items}}
+                <span><li>Name: {{name}}</li></span> 
+                <span><a href="/users/{{../user.id}}/items/{{_id}}/edit">Edit</a></span>
+                <span><a href="/users//{{../user.id}}/items/{{id}}/delete">Delete</a></span>
+            {{/ each}}
+        </ul>
+    </div>
+
+    <div><a href="/users/edit/{{user.id}}">Edit This User</a></div>
+    <div><a href="/users/{{user.id}}/items/new">Add a New Item</a></div>
+    <div><a href="/users">Back to Users</a></div>
+
+</div>
