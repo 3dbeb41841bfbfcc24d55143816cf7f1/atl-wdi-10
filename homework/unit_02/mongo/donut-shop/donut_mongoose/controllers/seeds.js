@@ -8,9 +8,9 @@ var mongoose = require("mongoose");
 var Donut = require("../models/donuts.js");
 
 
-router.get('/newproducts', function(req, res) {
+router.get('/donuts', function(req, res) {
 
-	var newProducts = [
+	var newDonuts = [
 			{
 					name: "Sprinkles",
 					description: "A lotta sprinkles, a lotta yum.",
@@ -39,7 +39,7 @@ router.get('/newproducts', function(req, res) {
 	];
 
 
-  Donut.create(newProducts, function(err) {
+  Donut.create(newDonuts, function(err) {
         console.log("SEED: NEW PRODUCTS CREATED!");
         res.redirect('/');
   });
