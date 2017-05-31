@@ -339,7 +339,7 @@ Angular filters format a value from within the view. It's just for presentation 
     - sorts an array in the view!
     
 ```html
-<li ng-repeat="todo in todosCtrl.all | orderBy:'-task'">
+<li ng-repeat="todo in todosCtrl.all | orderBy:'-task' ">
 ```
 
 ##### &#x1F535; YOU DO
@@ -380,15 +380,19 @@ And add some CSS and HTML to our `index.html`
 </style>
 
 <!-- add to the body below our todos code-->
-<br>
-  <div ng-controller="MateyController as mateyCtrl">
-    <div ng-bind="mateyCtrl.hello"></div>
-    <div ng-hide="mateyCtrl.hideDiv">Hide Me</div>
-    <div ng-show="mateyCtrl.showDiv" ng-class="{ red: mateyCtrl.showDiv }">Show Me</div>
-    <img ng-src="{{mateyCtrl.imgSrc}}" />
-    <button type="button" ng-click="mateyCtrl.helloAlert()">Click Me</button>
-  </div>
-<br>
+<br />
+
+<div ng-controller="MateyController as mateyCtrl">
+
+  <div ng-bind="mateyCtrl.hello"></div>
+  <div ng-hide="mateyCtrl.hideDiv">Hide Me</div>
+  <div ng-show="mateyCtrl.showDiv" ng-class="{ red: mateyCtrl.showDiv }">Show Me</div>
+  <img ng-src="{{mateyCtrl.imgSrc}}" />
+  <button type="button" ng-click="mateyCtrl.helloAlert()">Click Me</button>
+
+</div>
+
+<br />
 ```
 
 1. ng-bind
@@ -448,7 +452,7 @@ Add some more code to your `index.html` file.
 
 - Note the way we've structured our controllers. The child controller can access parent properties and methods since it's nested, but a parent cannot access child properties. There _are_ ways to implement this, but it's outside of the scope of this lesson.
 - You can try this with our Todos/Matey controllers also.
-- We'll use this nesting technique to maintain our `currentUser` object. Controllers re-instantiate each time yuo refresh the page.
+- We'll use this nesting technique to maintain our `currentUser` object. Controllers re-instantiate each time you refresh the page.
     
 <br />
 
