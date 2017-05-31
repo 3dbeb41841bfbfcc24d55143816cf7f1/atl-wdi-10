@@ -143,7 +143,7 @@ We would attach an event handler to the button.  The handler code would select t
 
 We declare a click handler on the Button element.  The handler could set a variable named editMode equal to true, and the view would respond automatically.
 
-**Remember, drive your application using data - your data model is the single source of truth!**
+**Remember to drive your application using data - your data model is the single source of truth!**
 
 ### SPA Architecture
 
