@@ -49,9 +49,6 @@ Angular is a client-side framework that has been adopted by companies large and 
 * Makes us more productive when developing web apps because it provides features, such as data binding, that requires less code from the developer.
 * Do not have to refresh on every interaction
 * Was designed with testing in mind.
-<!-- * Declarative
-  * Tell a program what to do instead of how to do something
-  * Do more with less code -->
 
 ### Solve common problems (write these down)
 
@@ -126,17 +123,23 @@ Directives are "markers" in HTML - most commonly as attributes and custom elemen
 
 Filters are used to transform data. They are very flexible and can be used for formatting text in a view, such as making it all uppercase, or used to filter and sort an array of items.  Filters are added to your HTML page via a pipe (|), followed by the filter name, followed by colon and any options.
 
-#### The AngularJS Mindset
+<br />
+
+### The AngularJS Mindset
 
 Programming a web app with AngularJS requires a different mindset. To use AngularJS effectively, it helps to think of your application being driven by data (and AJAX calls) - you change that data and the app will respond. We naturally think more procedurally when coding, we attach an event handler and write the code to respond to that event.
 
+<!-- * Declarative
+  * Tell a program what to do instead of how to do something
+  * Do more with less code -->
+
 Let's look at an example of these two different approaches.  Say we want an edit form to show when a button is clicked:
 
-##### Procedurally
+#### Procedurally
 
 We would attach an event handler to the button.  The handler code would select the element and set its display property to something besides "none".
 
-##### Using AngularJS
+#### Using AngularJS
 
 We declare a click handler on the Button element.  The handler could set a variable named editMode equal to true, and the view would respond automatically.
 
