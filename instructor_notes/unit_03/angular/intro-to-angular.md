@@ -27,16 +27,62 @@ competencies: Front-end frameworks
 - Have a thorough understanding of JS
 - Know how to build JS constructor functions
 
-## Intro - What is AngularJS and Why Should You Learn it? (20 mins)
+### Hook
 
+One of the benefits of FE frameworks is that we don't have to refresh on every interaction.
 
-Angular is an open source JS framework maintained by Google. It was created nearly 8 years ago, and its longevity is a testament to its capability and usefulness.  AngularJS is one of the most widely adopted MVC JS frameworks in use today, and is a valuable job skill to put on your resume. Further, it was built upon jqLite, so it goes hand-in-hand with jQuery!
+Imagine how annoying it'd be on Facebook that **every** Like would refresh the page.
+
+Or every time you drag something in Trello it refreshes.
+
+Get with a partner and write down three websites that would have a terrible UX if the page reloaded on every click. Also, write down three where it'd be OK. For example, a news website. You can't use the examples I gave though.
+
+## What is AngularJS and Why Should You Learn it? (20 mins)
+
+Angular is a client-side framework that has been adopted by companies large and small.  It is an open source JS framework maintained by Google that adds interactivity to our HTML. It was created nearly 8 years ago, and its longevity is a testament to its capability and usefulness.  AngularJS is one of the most widely adopted MVC JS frameworks in use today, and is a valuable job skill to put on your resume. Furthermore, it was built upon jqLite, so it goes hand-in-hand with jQuery!
 
 AngularJS provides the following benefits when used to develop web apps:
 
-- Enables us to organize and structure Single Page Apps using the popular MVC design pattern.
-- Makes us more productive when developing web apps because it provides features, such as data binding, that requires less code from the developer.
-- Was designed with testing in mind.
+* Enables us to keep our code organized and structure Single Page Apps using the popular MVC design pattern.
+<!-- * Makes us more productive when developing web apps because it provides features, such as data binding, that requires less code from the developer. -->
+* Was designed with testing in mind.
+* Do not have to refresh on every interaction
+* Declarative
+  * Tell a program what to do instead of how to do something
+  * Do more with less code
+
+* Solve common problems (write these down)
+  * Looping through a list of items (possibly coloring alternate rows)
+    * `ng-repeat="item in itemsArray"`
+  * Filter an array of items
+    * `<input ng-model="termToFilterBy">` `ng-repeat="item in itemsArray | filter:termToFilterBy"`
+  * Immediate form validation
+    * `ng-pattern="/^\S+@\S+$/"`
+  * Hiding and showing different divs depending on the state (user is logged in, hide buttons for Log In and Sign Up)
+    * `ng-show="user.isLoggedIn()"`
+  * Real time interactions (like Uber's map of cars near by)
+    * Not Angular-specific, but WebSockets are easy in front-end framworks
+  * Add things to a shopping cart
+    * `ng-click="addToCart(item)"` `{{ allItems.length }}`
+
+## Describe when to and not to use them
+
+### When To Use FE Frameworks
+
+* High level of interaction (like Facebook, Trello, Gmail)
+* Filling out a lot of forms (https://admin.lawn.com/get_a_quote)
+* Lots of view logic that depends on the state
+* Anything real time!
+
+### When NOT To Use FE Frameworks
+
+You will see soon that FE frameworks add a level of complexity
+
+* Content heavy (https://www.mitsubishipro.com/) or no interaction
+  * Delays because it has to hit the server and there's no loading indicator
+* Minimal interaction
+
+<br />
 
 ### The Components of AngularJS
 
@@ -44,87 +90,94 @@ AngularJS provides the following benefits when used to develop web apps:
 
 ### Modules
 
-Modules are where we write the pieces of our app, containers for related code.  The concept of *modules* is prevalent throughout programming, and here, we can consider it essentially a container for our app.
+Modules are where we write the pieces of our app, containers for related code.  The concept of **modules** is prevalent throughout programming, and here, we can consider it essentially a container for our app.
 
 ### Config & Routes
 
-Each AngularJS module has a *config* method that allows us to provide code that runs when a module is loaded.  The *config* method is used most commonly to setup routing.
+Each AngularJS module has a **config** method that allows us to provide code that runs when a module is loaded.  The **config** method is used most commonly to setup routing.
 
 ### Controller
 
-Controllers in AngularJS serve two primary purposes:
+Controllers tell our application how to behave.  Controllers in AngularJS serve two primary purposes:
 
-- Initialize the data used for the view they are attached to
-- Contain the primary code to respond to user events, such as when a user clicks on a button
+- Initialize the data used for the HTML view to which they are attached.
+- Contain the primary code to respond to user events, such as when a user clicks on a button.
 
-A controller is a JS constructor function that is instantiated by the _ng-controller_ directive.
+A **controller** is a JS constructor function that is instantiated by the `ng-controller` directive.  
 
 ### Services & Factories
 
-Services provide a way to organize related code and data that can be shared by controllers and even other services. Unlike controllers, which are instantiated and destroyed as the views they are attached to come into and out of view, services are created once (singletons) and persist for the life of the application.
+Services provide a way to organize related code and data that can be shared by controllers and even other services. Unlike controllers, which are instantiated and destroyed as the views they are attached to come into and out of the view, services are created once (singletons) and persist for the life of the application.
 
-Services should be used to hold the bulk of your application's logic and data, thus keeping controllers focused on what they are responsible for. Often, you can consider a service or factory something like a model or class.
+Services should be used to hold the bulk of your application's logic and data, thus keeping controllers focused on what they are responsible for. Often, you can consider a **service** or factory something like a model or class.
 
 ### Directives
 
-Directives are "markers" in HTML - most commonly as attributes and custom element tags. When processed by AngularJS's HTML compiler, they attach behavior to DOM elements or even transform them and/or their children.
-
+Directives are "markers" in HTML - most commonly as attributes and custom element tags. When processed by AngularJS's HTML compiler, they attach behavior to DOM elements or even transform them and/or their children.  Directives are anything that is attached to your HTML, and start with `ng-`.
 
 ### Filters
 
-Filters are used to transform data. They are very flexible and can be used for formatting text in a view, such as making it all uppercase, or used to filter and sort an array of items.
-
+Filters are used to transform data. They are very flexible and can be used for formatting text in a view, such as making it all uppercase, or used to filter and sort an array of items.  Filters are added to your HTML page via a pipe (|), followed by the filter name, followed by colon and any options.
 
 #### The AngularJS Mindset
 
-Programming a web app with AngularJS requires a different mindset. To use AngularJS effectively, it helps to think of your application being driven by data (and AJAX calls) - you change data and the app responds. We naturally think more procedurally when coding, we attach an event handler and write code to respond.
+Programming a web app with AngularJS requires a different mindset. To use AngularJS effectively, it helps to think of your application being driven by data (and AJAX calls) - you change that data and the app will respond. We naturally think more procedurally when coding, we attach an event handler and write the code to respond to that event.
 
-Let's look at an example of the different approaches.  Say we want an edit form to show when a button is clicked:
+Let's look at an example of these two different approaches.  Say we want an edit form to show when a button is clicked:
 
-- Procedurally, we would attach an event handler to the button.  The handler code would select the element and set its display property to something besides "none".
-- Using AngularJS, we declare a click handler on the Button element.  The handler could set a variable named editMode equal to true, and the view would respond automatically.
-- Remember, drive your application using data - your data model is the single source of truth!
+##### Procedurally
+
+We would attach an event handler to the button.  The handler code would select the element and set its display property to something besides "none".
+
+##### Using AngularJS
+
+We declare a click handler on the Button element.  The handler could set a variable named editMode equal to true, and the view would respond automatically.
+
+**Remember, drive your application using data - your data model is the single source of truth!**
 
 ### SPA Architecture
 
-Single Page Applications (SPA) are all the rage today. A misconception is that a SPA has only a single view - this is far from the truth!  The single page aspect of a SPA refers to a single page coming from the server, such as our _index.html_ page.  Once loaded, the SPA changes views by using _client-side_ routing, which loads partial HTML snippets called templates.
+Single Page Applications (SPA) are all the rage today. A misconception is that a SPA has only a single view - this is far from the truth!  The single page aspect of a SPA refers to a single page coming from the server, such as our `index.html` page.  Once loaded, the SPA changes views by using **client-side** routing, which loads partial HTML snippets called templates.
 
 ![spa_architecture](https://cloud.githubusercontent.com/assets/25366/8970635/896c4cce-35ff-11e5-96b2-ef7e62784764.png)
 
-Client-side routing requires something known as a _router_.  A router in AngularJS, at a minimum, is used to define our routes, specify the template for that route, and specify which controller to attach to that view. You'll get to see routers in action in a later lesson.
-
+Client-side routing requires something known as a **router**.  A router in AngularJS, at a minimum, is used to define our routes, specify the template for that route, and specify which controller to attach to that view. You will get to see routers in action in a later lesson.
 
 ## Basic Setup - Modules, Controllers, Views - Codealong (20 mins)
 
 Create a example Node/Express app for this lesson.
 
-1. `mkdir angular-intro-app` && `cd` into it
-2. `npm init -y`
+1. cd into your ga folder- `~/Desktop/ga/class-exercises`
+2. `mkdir angular-intro-app` && `cd` into it
+3. `npm init -y`
 4. `touch server.js`
+5. `npm install --save express`
 
 ```js
-// server.js
+// in your server.js
 var express = require('express');
 var app     = express();
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + 'public'));
 
-app.get('/', function(req, res){
-    res.render('index');
+app.get('/', function(req, res) {
+  res.render('index');
 });
 
-app.listen(4000, function(){
-    console.log("app listening on port 4000");
+var port = 4000;
+
+app.listen(port, function(){
+  console.log("app listening on port " + port);
 });
 ```
-    
-1. `npm install --save express`
+
 1. `mkdir public`
-1. `mkdir public/js`
-1. `touch public/js/app.js`
-1. `touch public/index.html`
+2. `mkdir public/js`
+3. `touch public/js/app.js`
+4. `touch public/index.html`
 
 ```html
+// in your public/index.html
 <!DOCTYPE html>
 <html>
   <head>
@@ -140,17 +193,17 @@ app.listen(4000, function(){
 
 ![](https://i.imgur.com/ncMjQme.png)
     
-##### &#x1F535; YOU DO
+##### &#x1F535; YOU DO (2 minutes)
 
 Repeat the steps above to set-up our Angular app.
 
-<br>
+<br />
 
-## Set Up AngularJS
+## Setting Up AngularJS
 
-Like a few frameworks we've seen, there's no particular way to organize your application to make Angular work. We'll have to create our own, but let's try to keep it standard.
+Like a few frameworks we have seen, there is not a particular way to organize your application in order to make Angular work. We will have to create our own, but let's try to keep it standard.
 
-First, let's get Angular from [Google's CDN](https://developers.google.com/speed/libraries/#angularjs) and paste into script tag in the ```<head>```.
+First, let's get Angular from [Google's CDN](https://developers.google.com/speed/libraries/#angularjs) and paste it into script tag just before the closing `<body>` tag.
 
 ```html
 <head>
@@ -162,17 +215,17 @@ First, let's get Angular from [Google's CDN](https://developers.google.com/speed
 </body>
 ```
 
-
-Now, we set up a module. Go to your `app.js` file, and all it takes is this little line:
+Now, we need to set up the main module for our app. Go into to your `app.js` file, and all it takes is one little line:
 
 ```js
-// Define a new module. The first argument is what we want to call our app, the second is an array of dependencies (which we don't need at the moment, so there are none)
+// Define a new module. The first argument is what we want to call our angular app, the second argument is an array of dependencies (which we don't need at the moment, as we don't have any)
+
 angular.module('IntroToAngularApp', []);
 ```
 
-This sets our app up. It's important to include that array when defining a module, even if there are no dependencies – that tells Angular we're initializing a module.
+This line sets our app up. It's important to include that empty array when defining a module, even if we don't have any dependencies – as it tells Angular that we are initializing a module.
 
-Now, back in our HTML, make sure your `app.js` is included in a script tag, and add an `ng-app` directive in the `<html>` tag.
+Now, back in our HTML, make sure your `app.js` is included in a script tag, and add an `ng-app` directive to the opening `<html>` tag.
 
 ```html
 <!DOCTYPE html>
