@@ -29,7 +29,7 @@ competencies: Front-end frameworks
 
 ### Hook
 
-One of the benefits of FE frameworks is that we don't have to refresh on every interaction.
+One of the benefits of Front End frameworks is that we don't have to refresh on every interaction.
 
 Imagine how annoying it'd be on Facebook that **every** Like would refresh the page. Or every time you drag something in Trello it refreshes.
 
