@@ -181,7 +181,7 @@ Let's walk through that. First, hello `ng-repeat`! This is used for instantiatin
 
 > "For each item in `todosCtrl.all`, call the one we're on `todo`."
 
-The first argument (`todo`) in `ng-repeat="todo in todosCtrl.all"` is a declaration of how we want to refer to an item in a collection (`todos.all`), which is the second argument.  Then, inside that element, we have access to the item `{{todo}}`.
+The first argument (`todo`) in `ng-repeat="todo in todosCtrl.all"` is a declaration of how we want to refer to an item in a collection (`todosCtrl.all`), which is the second argument.  Then, inside that element, we have access to the item `{{todo}}`.
 
 ##### &#x1F535; YOU DO
 
