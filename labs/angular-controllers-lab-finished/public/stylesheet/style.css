@@ -1,0 +1,25 @@
+body {
+    text-align: center; 
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+/**** used when product container was a div ****/
+
+/*.productContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}*/
+
+span {
+    width: 20%;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
