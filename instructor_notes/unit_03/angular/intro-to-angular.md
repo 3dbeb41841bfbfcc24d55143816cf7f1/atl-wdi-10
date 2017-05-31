@@ -41,7 +41,7 @@ Get with a partner and write down three websites that would have a terrible UX i
 
 Angular is a client-side framework that has been adopted by companies large and small.  It is an open source JS framework maintained by Google that adds interactivity to our HTML. It was created nearly 8 years ago, and its longevity is a testament to its capability and usefulness.  AngularJS is one of the most widely adopted MVC JS frameworks in use today, and is a valuable job skill to put on your resume. Furthermore, it was built upon jqLite, so it goes hand-in-hand with jQuery!
 
-AngularJS provides the following benefits when used to develop web apps:
+### Benefits when used to develop web apps:
 
 * Enables us to keep our code organized and structure Single Page Apps using the popular MVC design pattern.
 * Makes us more productive when developing web apps because it provides features, such as data binding, that requires less code from the developer.
