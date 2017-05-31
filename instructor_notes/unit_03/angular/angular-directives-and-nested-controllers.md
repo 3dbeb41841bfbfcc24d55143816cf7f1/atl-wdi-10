@@ -283,7 +283,7 @@ You can see, it keeps the data synced, nearly in real time. As you are updating 
 The last step is to update our `todos.add()` function to utilize this new knowledge. Just like in the view, how do you think we access that newTodo in our controller?
 
 ```js
-var addTodo = function(){
+this.addTodo = function(){
   this.all.push({task: this.newTodo.task, done: false});
   // this last piece isn't necessary, but nicely resets the task to an empty string, which will clear the textbox because the view is bound to the data
   this.newTodo.task = '';
