@@ -31,11 +31,11 @@ competencies: Front-end frameworks
 
 One of the benefits of FE frameworks is that we don't have to refresh on every interaction.
 
-Imagine how annoying it'd be on Facebook that **every** Like would refresh the page.
-
-Or every time you drag something in Trello it refreshes.
+Imagine how annoying it'd be on Facebook that **every** Like would refresh the page. Or every time you drag something in Trello it refreshes.
 
 Get with a partner and write down three websites that would have a terrible UX if the page reloaded on every click. Also, write down three where it'd be OK. For example, a news website. You can't use the examples I gave though.
+
+<br />
 
 ## What is AngularJS and Why Should You Learn it? (20 mins)
 
@@ -65,6 +65,8 @@ Angular is a client-side framework that has been adopted by companies large and 
     * Not Angular-specific, but WebSockets are easy in front-end framworks
   * Add things to a shopping cart
     * `ng-click="addToCart(item)"` `{{ allItems.length }}`
+
+<br />
 
 ## Describe when to and not to use them
 
