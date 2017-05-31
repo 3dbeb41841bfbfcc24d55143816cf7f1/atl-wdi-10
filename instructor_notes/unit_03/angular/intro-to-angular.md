@@ -44,14 +44,15 @@ Angular is a client-side framework that has been adopted by companies large and 
 AngularJS provides the following benefits when used to develop web apps:
 
 * Enables us to keep our code organized and structure Single Page Apps using the popular MVC design pattern.
-<!-- * Makes us more productive when developing web apps because it provides features, such as data binding, that requires less code from the developer. -->
-* Was designed with testing in mind.
+* Makes us more productive when developing web apps because it provides features, such as data binding, that requires less code from the developer.
 * Do not have to refresh on every interaction
-* Declarative
+* Was designed with testing in mind.
+<!-- * Declarative
   * Tell a program what to do instead of how to do something
-  * Do more with less code
+  * Do more with less code -->
 
-* Solve common problems (write these down)
+### Solve common problems (write these down)
+
   * Looping through a list of items (possibly coloring alternate rows)
     * `ng-repeat="item in itemsArray"`
   * Filter an array of items
@@ -67,16 +68,16 @@ AngularJS provides the following benefits when used to develop web apps:
 
 ## Describe when to and not to use them
 
-### When To Use FE Frameworks
+### When To Use Client Side Frameworks
 
 * High level of interaction (like Facebook, Trello, Gmail)
 * Filling out a lot of forms (https://admin.lawn.com/get_a_quote)
 * Lots of view logic that depends on the state
 * Anything real time!
 
-### When NOT To Use FE Frameworks
+### When NOT To Use Client Side Frameworks
 
-You will see soon that FE frameworks add a level of complexity
+You will see soon that Front End frameworks add a level of complexity
 
 * Content heavy (https://www.mitsubishipro.com/) or no interaction
   * Delays because it has to hit the server and there's no loading indicator
@@ -90,7 +91,7 @@ You will see soon that FE frameworks add a level of complexity
 
 ### Modules
 
-Modules are where we write the pieces of our app, containers for related code.  The concept of **modules** is prevalent throughout programming, and here, we can consider it essentially a container for our app.
+Modules are where we write the pieces of our app.  Modules are small containers for related code.  The concept of **modules** is prevalent throughout programming, and here, we can consider it essentially a container for our app.
 
 ### Config & Routes
 
