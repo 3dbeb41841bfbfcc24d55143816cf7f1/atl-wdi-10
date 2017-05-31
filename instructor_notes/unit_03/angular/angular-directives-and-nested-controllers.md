@@ -299,9 +299,9 @@ this.addTodo = function(){
 
 ## ng-if Codealong (5 mins)
 
-We're pretty much at capacity for now, but there's one other awesome useful directive you might want to try.
+We're pretty much at capacity for now, but there's one other awesome and useful directive you might want to try.
 
-As an example, let's say we think the paragraph that says "About to add to-do: blah blah" only should show when `newTodo` isn't empty. Normally, we'd use some sort of if/else statement...
+As an example, let's say we think the paragraph that says "About to add to-do: something" only should show when `newTodo` isn't empty. Normally, we would use some sort of if/else statement...
 
 ```html
 <form id='add-todo' ng-submit="todosCtrl.addTodo()">
@@ -330,13 +330,13 @@ Angular filters format a value from within the view. It's just for presentation 
 1. `{{ todo.task | uppercase }}`
     - uppercases string
 1. `{{ todo.task | limitTo:8 }}`
-    - truncate a string
+    - truncates a string
 1. `{{ product.price | currency }}`
-    - format as money
+    - formats as money
 1. `{{ '1388123412323' | date:'MM/dd/yyyy @ h:mma' }}`
-    - format a date
+    - formats a date
 1. orderBy
-    - sorting an array in the view!
+    - sorts an array in the view!
     
 ```html
 <li ng-repeat="todo in todosCtrl.all | orderBy:'-task'">
