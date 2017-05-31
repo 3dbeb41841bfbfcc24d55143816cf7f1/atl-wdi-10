@@ -260,8 +260,8 @@ Now we know that in both the controller, and now, the view, if we access the `.n
 In `index.html`:
 
 ```html
-<form id='add-todo' ng-submit="todos.add()">
-  <input type="text" placeholder='I need to...' ng-model="todos.newTodo.task">
+<form id='add-todo' ng-submit="todosCtrl.addTodo()">
+  <input type="text" placeholder='I need to...' ng-model="todosCtrl.newTodo.task">
 </form>
 ```
 
@@ -270,10 +270,10 @@ What does `ng-model` do? It binds the data not just from the controller to the v
 Don't believe me? Let's watch it happen.
 
 ```html
-<form id='add-todo' ng-submit="todos.add()">
-  <input type="text" placeholder='I need to...' ng-model="todos.newTodo.task">
+<form id='add-todo' ng-submit="todosCtrl.addTodo()">
+  <input type="text" placeholder='I need to...' ng-model="todosCtrl.newTodo.task">
 </form>
-<p>About to add to-do: <strong>{{todos.newTodo.task}}</strong></p>
+<p>About to add to-do: <strong>{{todosCtrl.newTodo.task}}</strong></p>
 ```
 
 You can see, it keeps the data synced, nearly in real time. As you are updating the model with each keystroke, the $watch list activates the $digest cycle because angular context has changed, and then, the $digest cycle performs a "dirty-check" updating any model in the UI that has been updated. That's _powerful._
@@ -304,10 +304,10 @@ We're pretty much at capacity for now, but there's one other awesome useful dire
 As an example, let's say we think the paragraph that says "About to add to-do: blah blah" only should show when `newTodo` isn't empty. Normally, we'd use some sort of if/else statement...
 
 ```html
-<form id='add-todo' ng-submit="todos.add()">
-  <input type="text" placeholder='I need to...' ng-model="todos.newTodo.task">
+<form id='add-todo' ng-submit="todosCtrl.addTodo()">
+  <input type="text" placeholder='I need to...' ng-model="todosCtrl.newTodo.task">
 </form>
-<p ng-if='todos.newTodo.task'>About to add todo: <strong>{{todos.newTodo.task}}</strong></p>
+<p ng-if='todosCtrl.newTodo.task'>About to add todo: <strong>{{todos.newTodo.task}}</strong></p>
 ```
 
 ngIf removes or recreates a portion of the DOM tree based on its value which is an expression. If it evaluates the expression (i.e. `todos.newTodo.task`) to be false, it will remove the element from the DOM, otherwise a clone of the element is reinserted into the DOM.
@@ -321,25 +321,25 @@ Other ngDirectives, such as `ngHide`, can also be used to "hide" elements in the
 
 Add ng-if to your view
 
-<br>
+<br />
 
-## Angular filters
+## Angular Filters
 
 Angular filters format a value from within the view. It's just for presentation purposes and does not alter data. Don't format data within the model/controller.
 
-1. `{{todo.task | uppercase}}`
+1. `{{ todo.task | uppercase }}`
     - uppercases string
-1. `{{todo.task | limitTo:8}}`
+1. `{{ todo.task | limitTo:8 }}`
     - truncate a string
-1. `{{product.price | currency }}`
+1. `{{ product.price | currency }}`
     - format as money
-1. `{{'1388123412323' | date:'MM/dd/yyyy @ h:mma'}}`
+1. `{{ '1388123412323' | date:'MM/dd/yyyy @ h:mma' }}`
     - format a date
-1. order by
+1. orderBy
     - sorting an array in the view!
     
 ```html
-<li ng-repeat="todo in todos.all | orderBy:'-task'">
+<li ng-repeat="todo in todosCtrl.all | orderBy:'-task'">
 ```
 
 ##### &#x1F535; YOU DO
@@ -363,9 +363,9 @@ function MateyController(){
   this.hideDiv = false;
   this.showDiv = true;
   this.imgSrc = 'http://images6.fanpop.com/image/photos/37900000/-sweet-Jack-Sparrow-captain-jack-sparrow-37974096-400-274.jpg';
-  this.makeAlert = function(){
-      alert("Hello World");
-    };
+  this.helloAlert = function(){
+    alert("Hello, Matey-O!");
+  };
 }
 ```
 
@@ -374,19 +374,19 @@ And add some CSS and HTML to our `index.html`
 ```html
 <!-- add to the head -->
 <style>
-.red {
-  background-color: red;
-}
+  .red {
+    background-color: red;
+  }
 </style>
 
 <!-- add to the body below our todos code-->
 <br>
-  <div ng-controller="MateyController as matey">
-    <div ng-bind="matey.hello"></div>
-    <div ng-hide="matey.hideDiv">Hide Me</div>
-    <div ng-show="matey.showDiv" ng-class="{ red:matey.showDiv }">Show Me</div>
-    <img ng-src="{{matey.imgSrc}}" />
-    <button type="button" ng-click="matey.makeAlert()">Click Me</button>
+  <div ng-controller="MateyController as mateyCtrl">
+    <div ng-bind="mateyCtrl.hello"></div>
+    <div ng-hide="mateyCtrl.hideDiv">Hide Me</div>
+    <div ng-show="mateyCtrl.showDiv" ng-class="{ red: mateyCtrl.showDiv }">Show Me</div>
+    <img ng-src="{{mateyCtrl.imgSrc}}" />
+    <button type="button" ng-click="mateyCtrl.helloAlert()">Click Me</button>
   </div>
 <br>
 ```
@@ -400,9 +400,9 @@ And add some CSS and HTML to our `index.html`
 1. ng-class
     - binds the class of an element to the result of an "expression"
         - an expression is just some code that gets evaluated
-           - `matey.showDiv`
-        - if `matey.showDiv` evaluates to true, the class of the element will be 'red'
-           - `ng-class="{ red:matey.showDiv }`
+           - `mateyCtrl.showDiv`
+        - if `mateyCtrl.showDiv` evaluates to true, the class of the element will be 'red'
+           - `ng-class="{ red: mateyCtrl.showDiv }"`
 1. ng-repeat
     - we saw this earlier
 1. ng-if
@@ -410,7 +410,7 @@ And add some CSS and HTML to our `index.html`
 1. ng-show/hide
     - like ng-if, but it hides it (`display: none`), not remove it from the DOM
 1. ng-src
-    - `<img ng-src="{{ctrl.imgsrc}}" />`
+    - `<img ng-src="{{mateyCtrl.imgSrc}}" />`
     - sets the src of an img to the result of an expression
 
 
@@ -438,10 +438,10 @@ function ChildController(){
 Add some more code to your `index.html` file.
 
 ```html
-<div ng-controller="ParentController as parent">
-  <span>{{child.property1}}:{{parent.property1}}</span>
-  <div ng-controller="ChildController as child">
-    <span>{{child.property1}}:{{parent.property1}}</span>
+<div ng-controller="ParentController as parentCtrl">
+  <span>{{childCtrl.property1}}:{{parentCtrl.property1}}</span>
+  <div ng-controller="ChildController as childCtrl">
+    <span>{{childCtrl.property1}}:{{parentCtrl.property1}}</span>
   </div>
 </div>
 ```
@@ -450,13 +450,13 @@ Add some more code to your `index.html` file.
 - You can try this with our Todos/Matey controllers also.
 - We'll use this nesting technique to maintain our `currentUser` object. Controllers re-instantiate each time yuo refresh the page.
     
-<br>
+<br />
 
 ##### &#x1F535; YOU DO
 
 Add nested controllers to your app
 
-<br>
+<br />
 
 ## Conclusion (5 mins)
 
