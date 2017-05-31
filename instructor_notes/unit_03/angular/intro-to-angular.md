@@ -27,6 +27,8 @@ competencies: Front-end frameworks
 - Have a thorough understanding of JS
 - Know how to build JS constructor functions
 
+<br />
+
 ### Hook
 
 One of the benefits of Front End frameworks is that we don't have to refresh on every interaction.
