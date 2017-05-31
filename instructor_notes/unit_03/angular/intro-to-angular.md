@@ -388,13 +388,13 @@ When you render the page, it should actually render! That's awesome – that mea
 > Note: Keep in mind, while `HomeController` is so named because that's what we called it in the file, the `home` in this example is just a variable we're choosing on the spot. Pick something obvious that makes sense, but it can be anything.
 
 
-##### &#x1F535; YOU DO
+#### &#x1F535; YOU DO
 
 Connect the HomeController to your view and render `home.awesome`
 
 <br>
 
-#### But how does it work?
+### But how does it work?
 
 With Javascript in play, our browser is naturally event-driven. For example, when you have an onClick event listener placed on a button, you also have an event handler that can update the DOM in some way. The 'magic' behind Angular, the way that it seemingly knows to update the DOM when need be, is due to the fact that it extends the traditional js event-loop by extending it with angular context.
 
