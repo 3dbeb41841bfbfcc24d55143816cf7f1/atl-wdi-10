@@ -65,7 +65,6 @@ app.listen(4000, function(){
 });
 ```
     
-
 1. `mkdir public`
 2. `mkdir public/js`
 3. `touch public/js/app.js`
@@ -83,12 +82,13 @@ angular.module('todoApp', []);
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/todosController.js"></script>
   </head>
   <body>
     {{1 + 1}}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/todosController.js"></script>
   </body>
 </html>
 ```
@@ -140,17 +140,25 @@ Now, let's start filling out the view with this data. Head over to `index.html`:
     <h1>Angular Todo App</h1>
     <h3>You have {{}} to-dos to do!</h3>
   </header>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/todosController.js"></script>
 </body>
 ```
 
 Now, how do we get the data our controller has access to? We'll use the `controller as` syntax. 
 
 ```html
-<body ng-controller="TodosController as todos">
+<body ng-controller="TodosController as todosCtrl">
   <header>
     <h1>Angular Todo App</h1>
-    <h3>You have {{todos.all.length}} to-dos to do!</h3>
+    <h3>You have {{todosCtrl.all.length}} to-dos to do!</h3>
   </header>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/todosController.js"></script>
 </body>
 ```
 
@@ -160,7 +168,7 @@ Beautiful! But we need more. How do we actually list out our todos? We can use t
 
 ```html
 <ul id='todos'>
-  <li ng-repeat="todo in todos.all">
+  <li ng-repeat="todo in todosCtrl.all">
     {{todo.task}}
   </li>
 </ul>
@@ -171,9 +179,9 @@ Beautiful! But we need more. How do we actually list out our todos? We can use t
 
 Let's walk through that. First, hello `ng-repeat`! This is used for instantiating a template once per item from a collection. Rather than our old-fashioned `for` loop, Angular uses `ng-repeat` on the element we want to iterate over. Sort of like JavaScript's forEach, we say:
 
-> "For each item in `todos.all`, call the one we're on `todo`."
+> "For each item in `todosCtrl.all`, call the one we're on `todo`."
 
-The first argument (`todo`) in `ng-repeat="todo in todos.all"` is a declaration of how we want to refer to an item in a collection (`todos.all`), which is the second argument.  Then, inside that element, we have access to the item `{{todo}}`.
+The first argument (`todo`) in `ng-repeat="todo in todosCtrl.all"` is a declaration of how we want to refer to an item in a collection (`todos.all`), which is the second argument.  Then, inside that element, we have access to the item `{{todo}}`.
 
 ##### &#x1F535; YOU DO
 
@@ -202,19 +210,28 @@ var addTodo = function(){
 };
 
 //this will add our new function as a property on our controller, so we can use it in the view
-this.add = addTodo;
+this.addTodo = addTodo;
+```
+
+More concise way of writing this:
+
+```js
+// this just adds a new object to our array, with defaults for now
+this.addTodo = function(){
+  this.all.push({task: "something", done: false});
+};
 ```
 
 By including the `this.addTodo = addTodo;` line, we now can use that function in our view, when we want to. So check out this other useful form directive, `ng-submit`:
 
 
 ```html
-<form id='add-todo' ng-submit="todos.add()">
+<form id='add-todo' ng-submit="todos.addTodo()">
    <input type="text" placeholder='I need to...'>
 </form>
 ```
 
-Now, it'll be adding fake todos, but I can't resist – try it! You'll see why Angular is so exciting. As soon as you press enter, **it auto-updates the list and the count** above, without any extra work. That's _data binding_, it's watching for changes to our data in the controller and updating the view _for_ us.
+Now, it will be adding fake todos, but I can't resist – try it! You will see why Angular is so exciting. As soon as you press enter, **it auto-updates the list and the count** above, without any extra work. That's _data binding_, it's watching for changes to our data in the controller and updating the view _for_ us.
 
 ##### &#x1F535; YOU DO
 
