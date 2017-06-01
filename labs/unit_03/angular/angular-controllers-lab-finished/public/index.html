@@ -28,20 +28,25 @@
 
       <h2>Products</h2>
       <table class="table table-striped table-bordered">
-        <tr>
-          <td>Product Name</td>
-          <td>Price</td>
-          <td>Date Added</td>
-        </tr>
-        <tr ng-repeat="product in productsCtrl.products | orderBy: '-price' ">
-          <td>{{ product.name }}</td>
-          <td>{{ product.price | currency }}</td>
-          <td>{{ product.dateAdded | date: "MM/dd/yyyy" }}</td>
-        </tr>
+        <thead>
+          <tr>
+            <td>Product Name</td>
+            <td>Price</td>
+            <td>Date Added</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="product in productsCtrl.products | orderBy: '-price' ">
+            <td>{{ product.name }}</td>
+            <td>{{ product.price | currency }}</td>
+            <td>{{ product.dateAdded | date: "MM/dd/yyyy" }}</td>
+          </tr>
+        </tbody>
       </table>
-      <!-- <div class="productContainer" ng-repeat="product in productsCtrl.products">
+      <!-- this is what the assignment originally asked you to create -->
+      <div class="productContainer" ng-repeat="product in productsCtrl.products">
         <span>Product Name: {{ product.name }} </span><span>|</span><span>Price: {{ product.price | currency }} </span><span>|</span><span>Date Added: {{ product.dateAdded | date: "MM/dd/yyyy" }}</span>
-      </div> -->
+      </div>
 
       <div class="row">
         <h3>Add a new Product</h3>
