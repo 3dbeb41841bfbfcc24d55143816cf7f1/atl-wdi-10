@@ -15,6 +15,9 @@ competencies: Front-end frameworks
 
 ### Objectives
 
+- Review RESTful routes
+- Review AJAX
+- Review Promises
 - Use $http to access an API resource, rather than use hard-coded data
 
 ### Preparation
