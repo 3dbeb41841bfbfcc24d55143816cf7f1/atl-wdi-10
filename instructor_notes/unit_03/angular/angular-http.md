@@ -53,7 +53,7 @@ AJAX (Asyncronous Javascript And Xml) is the term to describe getting data from 
 In a [previous lesson](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d01/instructor_notes/ajax_with_jquery.md) you used AJAX calls to grab GIFs.
 
 ``` javascript
-var ajax = $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rating=pg')
+var ajax = $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rating=pg');
 ```
 
 AJAX calls are the way Single-Page Apps (SPAs) communicate with the Server.
