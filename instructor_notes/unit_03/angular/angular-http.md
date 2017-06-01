@@ -55,6 +55,16 @@ var ajax = $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rati
 
 AJAX calls are the way Single-Page Apps (SPAs) communicate with the Server.
 
+## Review Promises
+
+When using Angular, AJAX calls are done via **Promises**, so let's do a quick review.
+
+Promises in JS work similar to real-life Promises.
+
+When I order food at H&F, I get a receipt and a promise: "Go stand over there and I promise you I will give you your food". When the cook completes (aka resolves) that promise, I am given my food then can continue to sit down and eat.
+
+`orderFood.then(grabFood).then(sitDown).then(eatFood).catch(complainToManager);`
+
 ## Codealong Intro (10 mins)
 
 We've only been working with hardcoded data so far. Today that changes, it's time to kick it up a notch.
