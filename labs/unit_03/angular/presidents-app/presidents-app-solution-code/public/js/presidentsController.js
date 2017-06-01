@@ -1,10 +1,10 @@
 angular
-  .module('ThePresidentsApp')
+  .module('thePresidentsApp')
   .controller('PresidentsController', PresidentsController);
 
 PresidentsController.$inject = ['$http'];
 
-function PresidentsController($http){
+function PresidentsController($http) {
   var vm = this;
 
   vm.addPresident = addPresident;

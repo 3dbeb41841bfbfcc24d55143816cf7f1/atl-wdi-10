@@ -23,7 +23,39 @@ competencies: Front-end frameworks
 - Be able to create an Angular app with controllers
 - Understand AJAX and RESTful routing
 
-## Intro (10 mins)
+### RESTful
+
+When you see the documentation for an API, when you see "RESTful" you can feel relieved. This means that all you need to know are the names of the resources.
+
+Full CRUD for a Users resource.
+
+| Short Name    | HTTP Method | URL Name            |
+|---------------|-------------|---------------------|
+| users#index   | GET         | /users              |
+| users#new     | GET         | /users/new          |
+| users#create  | POST        | /users              |
+| users#show    | GET         | /users/:userId      |
+| users#edit    | GET         | /users/:userId/edit |
+| users#update  | PATCH/PUT   | /users/:userId      |
+| users#destroy | DELETE      | /users/:userId      |
+
+Check out [Yelp's API docs](https://www.yelp.com/developers/documentation/v3/get_started) to see a good example of REST in practice.
+
+Note: It's a great sign when a company has RESTful routes. Before interviewing, mess around with the product and check the routes. Keep in mind that sometimes companies will go away from RESTful routes in favor of SEO -- such as `/sign-up`, `/join`, `/login`, `/articles/search`, `/articles/{name of article rather than ID}`.
+
+## Review AJAX
+
+AJAX (Asyncronous Javascript And Xml) is the term to describe getting data from a server without doing a full-page refresh.
+
+In a [previous lesson](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d01/instructor_notes/ajax_with_jquery.md) you used AJAX calls to grab GIFs.
+
+``` javascript
+var ajax = $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rating=pg')
+```
+
+AJAX calls are the way Single-Page Apps (SPAs) communicate with the Server.
+
+## Codealong Intro (10 mins)
 
 We've only been working with hardcoded data so far. Today that changes, it's time to kick it up a notch.
 
@@ -51,7 +83,7 @@ Now, real quick – we might want a little seed data.
 ]
 ```
 
-Once you have some seeds, start your server- `nodemon server.js`, open postman, and do a quick `GET` request to `http://localhost:3000/presidents` to make sure that you have a few seeded presidents.
+Once you have some seeds, start your server- `npm start`, open postman, and do a quick `GET` request to `http://localhost:3000/presidents` to make sure that you have a few seeded presidents.
 
 ![](https://i.imgur.com/QYHlWfm.png)
 
@@ -128,7 +160,7 @@ function PresidentsController($http) {
     $http
       .get('/presidents')
       .then(function(response) {
-        console.log(response);
+        console.log(response.data);
         vm.all = response.data.presidents;
     });
   }
@@ -149,7 +181,7 @@ function PresidentsController($http){
     $http
       .get('/presidents')
       .then(function(response) {
-        console.log(response);
+        console.log(response.data);
         vm.all = response.data.presidents;
     });
   }
@@ -219,6 +251,7 @@ function PresidentsController($http) {
     $http
       .get('/presidents')
       .then(function(response) {
+        console.log(response.data);
         vm.all = response.data.presidents;
     });
   }

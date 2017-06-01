@@ -1,4 +1,4 @@
-angular.module('ThePresidentsApp')
+angular.module('thePresidentsApp')
   .controller('PresidentsController', PresidentsController);
 
 function PresidentsController(){
@@ -8,6 +8,7 @@ function PresidentsController(){
     {name: 'Thomas Jefferson', start: 1801, end: 1809 },
     {name: 'James Madison', start: 1809, end: 1817 }
   ];
+
   this.addPresident = addPresident;
   this.newPresident = {};
 
