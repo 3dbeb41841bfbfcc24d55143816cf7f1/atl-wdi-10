@@ -26,6 +26,12 @@ competencies: Front-end frameworks
 - Be able to create an Angular app with controllers
 - Understand AJAX and RESTful routing
 
+<br />
+
+## Review RESTful
+
+RESTful routes bring a standard to web APIs.
+
 ### RESTful
 
 When you see the documentation for an API, when you see "RESTful" you can feel relieved. This means that all you need to know are the names of the resources.
@@ -46,6 +52,8 @@ Check out [Yelp's API docs](https://www.yelp.com/developers/documentation/v3/get
 
 Note: It's a great sign when a company has RESTful routes. Before interviewing, mess around with the product and check the routes. Keep in mind that sometimes companies will go away from RESTful routes in favor of SEO -- such as `/sign-up`, `/join`, `/login`, `/articles/search`, `/articles/{name of article rather than ID}`.
 
+<br />
+
 ## Review AJAX
 
 AJAX (Asyncronous Javascript And Xml) is the term to describe getting data from a server without doing a full-page refresh.
@@ -58,6 +66,8 @@ var ajax = $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rati
 
 AJAX calls are the way Single-Page Apps (SPAs) communicate with the Server.
 
+<br />
+
 ## Review Promises
 
 When using Angular, AJAX calls are done via **Promises**, so let's do a quick review.
@@ -68,7 +78,9 @@ When I order food at H&F, I get a receipt and a promise: "Go stand over there an
 
 `orderFood.then(grabFood).then(sitDown).then(eatFood).catch(complainToManager);`
 
-## Codealong Intro (10 mins)
+<br />
+
+## Codealong Intro
 
 We've only been working with hardcoded data so far. Today that changes, it's time to kick it up a notch.
 
@@ -78,7 +90,7 @@ Now, since we're going to be interacting with an API, in an ideal world we'd for
 
 We want to make it fast, so we've already made you a sweet little Node API.
 
-Now, real quick – we might want a little seed data. 
+Now, real quicklt – we might want a little seed data. 
 
 ## Demo of Starter Code (5 mins)
 
@@ -113,7 +125,6 @@ It's our job to mush together this little API we have, and our Angular applicati
 We will do this with two different methods ($http and services), and this lesson is the $http lesson.
 
 <img width="752"  src="https://cloud.githubusercontent.com/assets/25366/9017871/7cf4a79e-378e-11e5-85d8-d018f0a7ab21.png">
-
 
 ## Hitting an API with `$http` - Codealong (30 mins)
 
