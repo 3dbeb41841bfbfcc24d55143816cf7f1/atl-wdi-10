@@ -65,16 +65,16 @@ app.listen(4000, function(){
 });
 ```
     
-1. `mkdir public`
-2. `mkdir public/js`
-3. `touch public/js/app.js`
+5. `mkdir public`
+6. `mkdir public/js`
+7. `touch public/js/app.js`
 
 ```js
 angular.module('todoApp', []);
 ```
-4. `touch public/js/todosController.js`
 
-5. `touch public/index.html`
+8. `touch public/js/todosController.js`
+9. `touch public/index.html`
 
 ```html
 <!DOCTYPE html>
