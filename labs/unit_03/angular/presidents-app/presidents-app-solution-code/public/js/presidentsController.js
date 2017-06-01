@@ -7,16 +7,16 @@ PresidentsController.$inject = ['$http'];
 function PresidentsController($http) {
   var vm = this;
 
-  vm.addPresident = addPresident;
   vm.all = [];
-  vm.deletePresident = deletePresident;
   vm.newPresident = {};
+  vm.addPresident = addPresident;
   vm.updatePresident = updatePresident;
+  vm.deletePresident = deletePresident;
 
   activate();
 
   function activate() {
-    getPresidents();
+    getAllPresidents();
   }
 
   function addPresident(){
@@ -36,7 +36,7 @@ function PresidentsController($http) {
       });
   }
 
-  function getPresidents(){
+  function getAllPresidents(){
     $http
       .get('/presidents')
       .then(function(response){
