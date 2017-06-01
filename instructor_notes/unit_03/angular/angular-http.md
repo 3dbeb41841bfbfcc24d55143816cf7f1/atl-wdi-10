@@ -58,7 +58,7 @@ Note: It's a great sign when a company has RESTful routes. Before interviewing, 
 
 AJAX (Asyncronous Javascript And Xml) is the term to describe getting data from a server without doing a full-page refresh.
 
-In a [previous lesson](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_03/w09d01/instructor_notes/ajax_with_jquery.md) you used AJAX calls to grab GIFs.
+In a [previous lesson](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/blob/master/instructor_notes/unit_02/ajax/ajax-with-jQuery.md) you used AJAX calls to grab GIFs.
 
 ``` javascript
 var ajax = $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rating=pg');
