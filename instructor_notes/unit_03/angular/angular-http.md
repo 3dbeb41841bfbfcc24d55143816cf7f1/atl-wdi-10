@@ -301,5 +301,4 @@ Now that we have GETing down, it's up to you to try POSTing and DELETING. Just l
 ## Conclusion (5 mins)
 - How do you inject dependencies into an Angular controller?
 - How do you use $http to do a GET request?
-- Why did we start using `self` instead of `this`?
-- How do you do a POST request?
+- Why did we start using `vm` or `self` instead of `this`?
