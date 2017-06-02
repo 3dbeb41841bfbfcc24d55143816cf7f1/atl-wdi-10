@@ -95,7 +95,7 @@ Now, real quickly – we might want to seed a little data first.
 ## Demo of Starter Code (5 mins)
 
 1. `git pull upstream master`
-1. cd into `labs/unit_03/angular/presidents-app/presidents-all-starter-code`
+1. cd into `labs/unit_03/angular/presidents-app/presidents-app-starter-code`
 1. `npm install`
 2. `node config/seeds.js`
 
