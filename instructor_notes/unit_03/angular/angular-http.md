@@ -220,7 +220,7 @@ function PresidentsController($http){
 
 We call `$http`, then our favorite HTTP verb, `.get`. There is one for `.post`, too. What's returned from our asynchronous call is a unique object called a **promise**. A promise can have three states: pending, fulfilled or rejected. We will use `.then()` (a method inherent to a promise object) to capture the callback when it's _done_ and the state is either fulfilled or rejected.  Then, we can pass `.then()` a function to overwrite our `.all` array with the response we get back.
 
-When we `console.log(response)`, we see everything that comes back. `.data` is just the data, `.presidents` is the key inside our JSON holding an array of presidents.
+When we `console.log(response.data)`, we see everything that comes back. `.data` is just the data, `.presidents` is the key inside our JSON holding an array of presidents.
 
 That's all we are doing in that function. Afterwords, we literally just run the function, which runs when we first load up the app. Easy.
 
