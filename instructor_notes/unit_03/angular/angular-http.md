@@ -112,11 +112,13 @@ Once you have some seeds, start your server- `npm start`, open postman, and do a
 
 ![](https://i.imgur.com/QYHlWfm.png)
 
-##### &#x1F535; YOU DO - Set up your workspace
+#### &#x1F535; YOU DO - Set up your workspace
 
 Run through the steps above, and then add then take a minute to make some POST requests in postman to add some new presidents to our database.
 
 <br />
+
+### $http + services
 
 Okay, so we have included a bunch of starter code that looks quite a bit like the code you have previously written. There's a controller, with some hard-coded data, listing out some of the Presidents in the United States. Hopefully [Wikipedia](https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States) is accurate, because who knows stuff like that off the top of their head?
 
