@@ -120,7 +120,7 @@ Run through the steps above, and then add then take a minute to make some POST r
 
 ### $http + services
 
-Okay, so we have included a bunch of starter code that looks quite a bit like the code you have previously written. There's a controller, with some hard-coded data, listing out some of the Presidents in the United States. Hopefully [Wikipedia](https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States) is accurate, because who knows stuff like that off the top of their head?
+Okay, so we have included starter code that looks quite a bit like the code you have previously written. There's a controller, with some hard-coded data, listing out some of the Presidents in the United States. Hopefully [Wikipedia](https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States) is accurate, because who knows stuff like that off the top of their head?
 
 It's our job to mush together this little API we have, and our Angular application.
 
