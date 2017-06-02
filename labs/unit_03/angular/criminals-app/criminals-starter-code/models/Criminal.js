@@ -7,4 +7,3 @@ var CriminalSchema = mongoose.Schema({
 });
 
 module.exports = mongoose.model('Criminal', CriminalSchema);
-

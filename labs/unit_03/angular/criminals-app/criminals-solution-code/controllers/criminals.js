@@ -5,7 +5,7 @@ var methodOverride = require('method-override') //used to manipulate POST
 var Criminal = require('../models/Criminal');
 
 // GET
-router.get('/', function indexAction(request, response) {
+router.get('/', function(request, response) {
   Criminal.find(function(error, criminals) {
     if(error) response.json({message: 'Could not find any criminal'});
 
@@ -14,7 +14,7 @@ router.get('/', function indexAction(request, response) {
 });
 
 // POST
-router.post('/', function createAction(request, response) {
+router.post('/', function(request, response) {
   console.log('in POST');
   console.log('body:',request.body);
 
@@ -28,42 +28,45 @@ router.post('/', function createAction(request, response) {
 });
 
 // GET
-router.get('/:id', function showAction(request, response) {
+router.get('/:id', function(request, response) {
   var id = request.params.id;
 
-  Criminal.findById({_id: id}, function(error, criminal) {
-    if(error) response.json({message: 'Could not find criminal b/c:' + error});
+  Criminal.findById({_id: id},
+    function(error, criminal) {
+      if(error) response.json({message: 'Could not find criminal b/c:' + error});
 
-    response.json({criminal: criminal});
-  }).select('-__v');
+      response.json({criminal: criminal});
+    }).select('-__v');
 });
 
-router.patch('/:id', function updateAction(request, response) {
+router.patch('/:id', function(request, response) {
   var id = request.params.id;
 
-  Criminal.findById({_id: id}, function(error, criminal) {
-    if(error) response.json({message: 'Could not find criminal b/c:' + error});
+  Criminal.findById({_id: id},
+    function(error, criminal) {
+      if(error) response.json({message: 'Could not find criminal b/c:' + error});
 
-    if(request.body.name) criminal.name = request.body.name;
-    if(request.body.location) criminal.location = request.body.location;
-    if(request.body.status) criminal.status = request.body.status;
+      if(request.body.name) criminal.name = request.body.name;
+      if(request.body.location) criminal.location = request.body.location;
+      if(request.body.status) criminal.status = request.body.status;
 
-    criminal.save(function(error) {
-      if(error) response.json({messsage: 'Could not update criminal b/c:' + error});
+      criminal.save(function(error) {
+        if(error) response.json({messsage: 'Could not update criminal b/c:' + error});
 
-      response.json({message: 'Criminal successfully updated', criminal: criminal});
-    });
-  }).select('-__v');
+        response.json({message: 'Criminal successfully updated', criminal: criminal});
+      });
+    }).select('-__v');
 });
 
-router.delete('/:id', function destroyAction(request, response) {
+router.delete('/:id', function(request, response) {
   var id = request.params.id;
 
-  Criminal.remove({_id: id}, function(error) {
-    if(error) response.json({message: 'Could not delete criminal b/c:' + error});
+  Criminal.remove({_id: id},
+    function(error) {
+      if(error) response.json({message: 'Could not delete criminal b/c:' + error});
 
-    response.json({message: 'Criminal successfully deleted'});
-  }).select('-__v');
+      response.json({message: 'Criminal successfully deleted'});
+    }).select('-__v');
 });
 
 module.exports = router;

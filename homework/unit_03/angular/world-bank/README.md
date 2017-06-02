@@ -12,9 +12,10 @@
   dependencies.
 
   **Seed Some Data!** Before you launch the app, run the script found in
-  `scripts/add_example_data.js`; this file will load up your app with example
+  `node scripts/add_example_data.js`; this file will load up your app with example
   data so that it can work correctly.
 
+  Run your server with `npm start`
 ## Specifications
 
   Your Angular page should display:
