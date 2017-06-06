@@ -33,7 +33,7 @@ Use $http to:
 
 #### Starter Code
 
-There's an Express-built API ready to run with a simple `nodemon server.js` along with an `index.html` file that includes comments to help you out. Don't forget to have Mongo running. There's no seed data - you'll have to save your own criminals.
+There's an Express-built API ready to run with a simple `npm start` along with an `index.html` file that includes comments to help you out. Don't forget to have Mongo running. There's no seed data - you'll have to save your own criminals.
 
 #### Deliverable
 

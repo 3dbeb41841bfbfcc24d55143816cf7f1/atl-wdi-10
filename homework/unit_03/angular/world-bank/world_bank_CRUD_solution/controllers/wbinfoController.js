@@ -1,5 +1,5 @@
 var express = require('express'),
-    router  = express.Router();
+  router  = express.Router();
 
 var Wbinfo = require('../models/wbinfo.js');
 
@@ -44,19 +44,18 @@ router.put('/:id', function(req, res){
 // console.log("this is the req.body", req.body);
 	Wbinfo.findByIdAndUpdate(req.params.id, req.body, {new: true}, function(err, info){
 		// console.log("this is the info it found: ", info)
-		res.send(info)
-	})
+		res.send(info);
+	});
 });
 
 //delete record 
 router.delete('/:id', function(req, res){
-    // console.log("this is req.body: " + req.body)
-    Wbinfo.findById(req.params.id, function(err, info){
-        info.remove();
-        // console.log("This record got removed: ", info)
-        res.send(info)
-    })
-})
-
+  // console.log("this is req.body: " + req.body)
+  Wbinfo.findById(req.params.id, function(err, info) {
+    info.remove();
+    // console.log("This record got removed: ", info)
+    res.send(info);
+  });
+});
 
 module.exports = router;

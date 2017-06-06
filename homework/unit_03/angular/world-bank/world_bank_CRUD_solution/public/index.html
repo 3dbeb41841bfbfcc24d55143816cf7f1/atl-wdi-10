@@ -1,16 +1,14 @@
 <html ng-app="myApp">
 <head>
 	<title>World Loan Records</title>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/app.css">
-	<script type="text/javascript" src="js/app.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
-<body ng-controller="MainController as main">
+<body ng-controller="MainController as mainCtrl">
 
 	<section id="wrapper">
 		<h1> World Bank Record Loans Finder </h1>
-		<h3>Total Number of Records:  {{main.total}}</h3>
+		<h3>Total Number of Records:  {{ mainCtrl.total }}</h3>
 
 			<form id="searchbar">
 				<label class="control-label" for="searchbarr">Search for records by region: </label>
@@ -18,7 +16,7 @@
 			</form><br/>
 
 			<div id="regions">
-				<span ng-repeat="region in main.regions | filter:searchBox | orderBy:'toString()'" ng-click="main.showRegion(region)"> {{region}}&nbsp; &nbsp; &nbsp; 
+				<span ng-repeat="region in mainCtrl.regions | filter:searchBox | orderBy:'toString()'" ng-click="mainCtrl.showRegion(region)"> {{region}}&nbsp; &nbsp; &nbsp; 
 				</span>
 			</div>
 
@@ -26,7 +24,7 @@
 
 				<a href="#newrecordform">Create a New Record</a>
 
-				<div ng-repeat="info in main.infos track by $index">
+				<div ng-repeat="info in mainCtrl.infos track by $index">
 					<h3> {{info.region}} </h3>
 					<h4> {{info.projectname}}</h4>
 					<p> {{info.projectabstract}} </p>
@@ -34,7 +32,7 @@
 					<p> <strong>Year approved: </strong>{{info.year}}</p><br/>
 					<h4>Edit this Record: </h4>
 
-					<form id="editform" ng-submit="main.edit(info, $index)">
+					<form id="editform" ng-submit="mainCtrl.edit(info, $index)">
 						<label class="control-label" for="inputregion">Region:</label>
 						<input class="form-control" type="text" id="inputregion" name="region" ng-model="info.region"><br/>
 						<label class="control-label" for="inputproject">Project Name:</label>
@@ -48,24 +46,24 @@
 						<button id="updatebtn" class="btn btn-primary">Update Record</button>
 					</form>
 
-					<form id="deleteform" ng-submit="main.delete(info, $index)">
+					<form id="deleteform" ng-submit="mainCtrl.delete(info, $index)">
 						<button id="deletebtn" class="btn btn-danger">Delete</button>
 					</form>
 				</div>
 
 
 				<h3>Add a New Record</h3>
-				<form id="newrecordform" ng-submit="main.addRecord()">
+				<form id="newrecordform" ng-submit="mainCtrl.addRecord()">
 					<label for="newregion" class="control-label">Region</label>
-					<input class="form-control" id="newregion" type="text" ng-model="main.formdata.region"><br/>
+					<input class="form-control" id="newregion" type="text" ng-model="mainCtrl.formdata.region"><br/>
 					<label for="newproject" class="control-label">Project Name</label>
-					<input class="form-control" id="newproject" type="text" ng-model="main.formdata.projectname"><br/>
+					<input class="form-control" id="newproject" type="text" ng-model="mainCtrl.formdata.projectname"><br/>
 					<label for="newdescription" class="control-label">Description</label>
-					<textarea class="form-control" id="newdescription" rows="4" cols="50" ng-model="main.formdata.projectabstract"></textarea><br/>
+					<textarea class="form-control" id="newdescription" rows="4" cols="50" ng-model="mainCtrl.formdata.projectabstract"></textarea><br/>
 					<label for="newyear" class="control-label">Year Approved</label>
-					<input class="form-control" id="newyear" type="number" ng-model="main.formdata.year"><br/>
+					<input class="form-control" id="newyear" type="number" ng-model="mainCtrl.formdata.year"><br/>
 					<label for="newloan" class="control-label">Loan Amount</label>
-					<input class="form-control" id="newloan" type="number" ng-model="main.formdata.loanamnt"><br/>
+					<input class="form-control" id="newloan" type="number" ng-model="mainCtrl.formdata.loanamnt"><br/>
 					<button id="addrecord" class="btn btn-primary">Add Record</button>
 				</form>
 
@@ -74,5 +72,7 @@
 
 	</section>
 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

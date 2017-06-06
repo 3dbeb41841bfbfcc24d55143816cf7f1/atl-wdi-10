@@ -1,1 +1,1 @@
-angular.module('ThePresidentsApp', []);
+angular.module('thePresidentsApp', []);

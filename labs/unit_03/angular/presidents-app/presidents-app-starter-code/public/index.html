@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ThePresidentsApp">
+<html ng-app="thePresidentsApp">
   <head>
     <meta charset="utf-8">
     <title>The Presidents App</title>
@@ -10,29 +10,29 @@
   </head>
   <body>
 
-    <section ng-controller="PresidentsController as presidents">
+    <section ng-controller="PresidentsController as presidentsCtrl">
       <h1>The Presidents of the United States of America</h1>
 
       <ul id="presidents">
-        <li ng-repeat="president in presidents.all">
+        <li ng-repeat="president in presidentsCtrl.all">
           <strong>{{president.name}}</strong> <em>({{president.start}} - {{president.end}})</em>
         </li>
       </ul>
 
-      <form class="add-president" ng-submit='presidents.addPresident()'>
+      <form class="add-president" ng-submit='presidentsCtrl.addPresident()'>
         <div>
           <label for="new-president-name">President's Name</label>
-          <input type="text" id="new-president-name" placeholder="James Monroe" ng-model='presidents.newPresident.name'>
+          <input type="text" id="new-president-name" placeholder="James Monroe" ng-model='presidentsCtrl.newPresident.name'>
         </div>
 
         <div>
           <label for="new-president-start">President's Starting Year</label>
-          <input type="text" id="new-president-start" placeholder="1817" ng-model='presidents.newPresident.start'>
+          <input type="text" id="new-president-start" placeholder="1817" ng-model='presidentsCtrl.newPresident.start'>
         </div>
 
         <div>
           <label for="new-president-end">President's Ending Year</label>
-          <input type="text" id="new-president-end" placeholder="1825" ng-model='presidents.newPresident.end'>
+          <input type="text" id="new-president-end" placeholder="1825" ng-model='presidentsCtrl.newPresident.end'>
         </div>
 
         <div>

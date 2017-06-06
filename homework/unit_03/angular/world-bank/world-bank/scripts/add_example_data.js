@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/world_bank_loan_app');
+
 var db = mongoose.connection;
 
 var csvdata = require('csvdata');

@@ -4,38 +4,39 @@ angular.module('InfamousCriminals')
 CriminalsController.$inject = ['$http'];
 
 function CriminalsController($http){
-  var self = this;
-  self.all = [];
-  self.addCriminal = addCriminal;
-  self.newCriminal = {};
-  self.getCriminals = getCriminals;
-  self.deleteCriminal = deleteCriminal;
+  var vm = this;
+
+  vm.all = [];
+  vm.newCriminal = {};
+  vm.getCriminals = getCriminals;
+  vm.addCriminal = addCriminal;
+  vm.deleteCriminal = deleteCriminal;
 
   getCriminals();
+
   function getCriminals(){
     $http
       .get('/criminals')
       .then(function(response){
-        self.all = response.data.criminals;
+        vm.all = response.data.criminals;
     });
   }
 
   function addCriminal(){
     $http
-      .post('/criminals', self.newCriminal)
+      .post('/criminals', vm.newCriminal)
       .then(function(response){
         getCriminals();
     });
-    self.newCriminal = {};
+    vm.newCriminal = {};
   }
 
   function deleteCriminal(criminal){
     $http
       .delete("/criminals/" + criminal._id)
       .then(function(response){
-        var index = self.all.indexOf(criminal);
-        self.all.splice(index, 1);
+        var index = vm.all.indexOf(criminal);
+        vm.all.splice(index, 1);
       });
   }
-
 }

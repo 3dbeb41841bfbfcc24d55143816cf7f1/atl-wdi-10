@@ -65,17 +65,16 @@ app.listen(4000, function(){
 });
 ```
     
-
-1. `mkdir public`
-2. `mkdir public/js`
-3. `touch public/js/app.js`
+5. `mkdir public`
+6. `mkdir public/js`
+7. `touch public/js/app.js`
 
 ```js
 angular.module('todoApp', []);
 ```
-4. `touch public/js/todosController.js`
 
-5. `touch public/index.html`
+8. `touch public/js/todosController.js`
+9. `touch public/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -83,12 +82,13 @@ angular.module('todoApp', []);
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/todosController.js"></script>
   </head>
   <body>
     {{1 + 1}}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/todosController.js"></script>
   </body>
 </html>
 ```
@@ -140,17 +140,25 @@ Now, let's start filling out the view with this data. Head over to `index.html`:
     <h1>Angular Todo App</h1>
     <h3>You have {{}} to-dos to do!</h3>
   </header>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/todosController.js"></script>
 </body>
 ```
 
 Now, how do we get the data our controller has access to? We'll use the `controller as` syntax. 
 
 ```html
-<body ng-controller="TodosController as todos">
+<body ng-controller="TodosController as todosCtrl">
   <header>
     <h1>Angular Todo App</h1>
-    <h3>You have {{todos.all.length}} to-dos to do!</h3>
+    <h3>You have {{todosCtrl.all.length}} to-dos to do!</h3>
   </header>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/todosController.js"></script>
 </body>
 ```
 
@@ -160,7 +168,7 @@ Beautiful! But we need more. How do we actually list out our todos? We can use t
 
 ```html
 <ul id='todos'>
-  <li ng-repeat="todo in todos.all">
+  <li ng-repeat="todo in todosCtrl.all">
     {{todo.task}}
   </li>
 </ul>
@@ -171,9 +179,9 @@ Beautiful! But we need more. How do we actually list out our todos? We can use t
 
 Let's walk through that. First, hello `ng-repeat`! This is used for instantiating a template once per item from a collection. Rather than our old-fashioned `for` loop, Angular uses `ng-repeat` on the element we want to iterate over. Sort of like JavaScript's forEach, we say:
 
-> "For each item in `todos.all`, call the one we're on `todo`."
+> "For each item in `todosCtrl.all`, call the one we're on `todo`."
 
-The first argument (`todo`) in `ng-repeat="todo in todos.all"` is a declaration of how we want to refer to an item in a collection (`todos.all`), which is the second argument.  Then, inside that element, we have access to the item `{{todo}}`.
+The first argument (`todo`) in `ng-repeat="todo in todosCtrl.all"` is a declaration of how we want to refer to an item in a collection (`todosCtrl.all`), which is the second argument.  Then, inside that element, we have access to the item `{{todo}}`.
 
 ##### &#x1F535; YOU DO
 
@@ -202,19 +210,28 @@ var addTodo = function(){
 };
 
 //this will add our new function as a property on our controller, so we can use it in the view
-this.add = addTodo;
+this.addTodo = addTodo;
+```
+
+More concise way of writing this:
+
+```js
+// this just adds a new object to our array, with defaults for now
+this.addTodo = function(){
+  this.all.push({task: "something", done: false});
+};
 ```
 
 By including the `this.addTodo = addTodo;` line, we now can use that function in our view, when we want to. So check out this other useful form directive, `ng-submit`:
 
 
 ```html
-<form id='add-todo' ng-submit="todos.add()">
+<form id='add-todo' ng-submit="todos.addTodo()">
    <input type="text" placeholder='I need to...'>
 </form>
 ```
 
-Now, it'll be adding fake todos, but I can't resist – try it! You'll see why Angular is so exciting. As soon as you press enter, **it auto-updates the list and the count** above, without any extra work. That's _data binding_, it's watching for changes to our data in the controller and updating the view _for_ us.
+Now, it will be adding fake todos, but I can't resist – try it! You will see why Angular is so exciting. As soon as you press enter, **it auto-updates the list and the count** above, without any extra work. That's _data binding_, it's watching for changes to our data in the controller and updating the view _for_ us.
 
 ##### &#x1F535; YOU DO
 
@@ -243,8 +260,8 @@ Now we know that in both the controller, and now, the view, if we access the `.n
 In `index.html`:
 
 ```html
-<form id='add-todo' ng-submit="todos.add()">
-  <input type="text" placeholder='I need to...' ng-model="todos.newTodo.task">
+<form id='add-todo' ng-submit="todosCtrl.addTodo()">
+  <input type="text" placeholder='I need to...' ng-model="todosCtrl.newTodo.task">
 </form>
 ```
 
@@ -253,10 +270,10 @@ What does `ng-model` do? It binds the data not just from the controller to the v
 Don't believe me? Let's watch it happen.
 
 ```html
-<form id='add-todo' ng-submit="todos.add()">
-  <input type="text" placeholder='I need to...' ng-model="todos.newTodo.task">
+<form id='add-todo' ng-submit="todosCtrl.addTodo()">
+  <input type="text" placeholder='I need to...' ng-model="todosCtrl.newTodo.task">
 </form>
-<p>About to add to-do: <strong>{{todos.newTodo.task}}</strong></p>
+<p>About to add to-do: <strong>{{todosCtrl.newTodo.task}}</strong></p>
 ```
 
 You can see, it keeps the data synced, nearly in real time. As you are updating the model with each keystroke, the $watch list activates the $digest cycle because angular context has changed, and then, the $digest cycle performs a "dirty-check" updating any model in the UI that has been updated. That's _powerful._
@@ -266,7 +283,7 @@ You can see, it keeps the data synced, nearly in real time. As you are updating 
 The last step is to update our `todos.add()` function to utilize this new knowledge. Just like in the view, how do you think we access that newTodo in our controller?
 
 ```js
-var addTodo = function(){
+this.addTodo = function(){
   this.all.push({task: this.newTodo.task, done: false});
   // this last piece isn't necessary, but nicely resets the task to an empty string, which will clear the textbox because the view is bound to the data
   this.newTodo.task = '';
@@ -282,15 +299,15 @@ var addTodo = function(){
 
 ## ng-if Codealong (5 mins)
 
-We're pretty much at capacity for now, but there's one other awesome useful directive you might want to try.
+We're pretty much at capacity for now, but there's one other awesome and useful directive you might want to try.
 
-As an example, let's say we think the paragraph that says "About to add to-do: blah blah" only should show when `newTodo` isn't empty. Normally, we'd use some sort of if/else statement...
+As an example, let's say we think the paragraph that says "About to add to-do: something" only should show when `newTodo` isn't empty. Normally, we would use some sort of if/else statement...
 
 ```html
-<form id='add-todo' ng-submit="todos.add()">
-  <input type="text" placeholder='I need to...' ng-model="todos.newTodo.task">
+<form id='add-todo' ng-submit="todosCtrl.addTodo()">
+  <input type="text" placeholder='I need to...' ng-model="todosCtrl.newTodo.task">
 </form>
-<p ng-if='todos.newTodo.task'>About to add todo: <strong>{{todos.newTodo.task}}</strong></p>
+<p ng-if='todosCtrl.newTodo.task'>About to add todo: <strong>{{todos.newTodo.task}}</strong></p>
 ```
 
 ngIf removes or recreates a portion of the DOM tree based on its value which is an expression. If it evaluates the expression (i.e. `todos.newTodo.task`) to be false, it will remove the element from the DOM, otherwise a clone of the element is reinserted into the DOM.
@@ -304,25 +321,25 @@ Other ngDirectives, such as `ngHide`, can also be used to "hide" elements in the
 
 Add ng-if to your view
 
-<br>
+<br />
 
-## Angular filters
+## Angular Filters
 
 Angular filters format a value from within the view. It's just for presentation purposes and does not alter data. Don't format data within the model/controller.
 
-1. `{{todo.task | uppercase}}`
+1. `{{ todo.task | uppercase }}`
     - uppercases string
-1. `{{todo.task | limitTo:8}}`
-    - truncate a string
-1. `{{product.price | currency }}`
-    - format as money
-1. `{{'1388123412323' | date:'MM/dd/yyyy @ h:mma'}}`
-    - format a date
-1. order by
-    - sorting an array in the view!
+1. `{{ todo.task | limitTo:8 }}`
+    - truncates a string
+1. `{{ product.price | currency }}`
+    - formats as money
+1. `{{ '1388123412323' | date:'MM/dd/yyyy @ h:mma' }}`
+    - formats a date
+1. orderBy
+    - sorts an array in the view!
     
 ```html
-<li ng-repeat="todo in todos.all | orderBy:'-task'">
+<li ng-repeat="todo in todosCtrl.all | orderBy:'-task' ">
 ```
 
 ##### &#x1F535; YOU DO
@@ -346,9 +363,9 @@ function MateyController(){
   this.hideDiv = false;
   this.showDiv = true;
   this.imgSrc = 'http://images6.fanpop.com/image/photos/37900000/-sweet-Jack-Sparrow-captain-jack-sparrow-37974096-400-274.jpg';
-  this.makeAlert = function(){
-      alert("Hello World");
-    };
+  this.helloAlert = function(){
+    alert("Hello, Matey-O!");
+  };
 }
 ```
 
@@ -357,21 +374,25 @@ And add some CSS and HTML to our `index.html`
 ```html
 <!-- add to the head -->
 <style>
-.red {
-  background-color: red;
-}
+  .red {
+    background-color: red;
+  }
 </style>
 
 <!-- add to the body below our todos code-->
-<br>
-  <div ng-controller="MateyController as matey">
-    <div ng-bind="matey.hello"></div>
-    <div ng-hide="matey.hideDiv">Hide Me</div>
-    <div ng-show="matey.showDiv" ng-class="{ red:matey.showDiv }">Show Me</div>
-    <img ng-src="{{matey.imgSrc}}" />
-    <button type="button" ng-click="matey.makeAlert()">Click Me</button>
-  </div>
-<br>
+<br />
+
+<div ng-controller="MateyController as mateyCtrl">
+
+  <div ng-bind="mateyCtrl.hello"></div>
+  <div ng-hide="mateyCtrl.hideDiv">Hide Me</div>
+  <div ng-show="mateyCtrl.showDiv" ng-class="{ red: mateyCtrl.showDiv }">Show Me</div>
+  <img ng-src="{{mateyCtrl.imgSrc}}" />
+  <button type="button" ng-click="mateyCtrl.helloAlert()">Click Me</button>
+
+</div>
+
+<br />
 ```
 
 1. ng-bind
@@ -383,9 +404,9 @@ And add some CSS and HTML to our `index.html`
 1. ng-class
     - binds the class of an element to the result of an "expression"
         - an expression is just some code that gets evaluated
-           - `matey.showDiv`
-        - if `matey.showDiv` evaluates to true, the class of the element will be 'red'
-           - `ng-class="{ red:matey.showDiv }`
+           - `mateyCtrl.showDiv`
+        - if `mateyCtrl.showDiv` evaluates to true, the class of the element will be 'red'
+           - `ng-class="{ red: mateyCtrl.showDiv }"`
 1. ng-repeat
     - we saw this earlier
 1. ng-if
@@ -393,7 +414,7 @@ And add some CSS and HTML to our `index.html`
 1. ng-show/hide
     - like ng-if, but it hides it (`display: none`), not remove it from the DOM
 1. ng-src
-    - `<img ng-src="{{ctrl.imgsrc}}" />`
+    - `<img ng-src="{{mateyCtrl.imgSrc}}" />`
     - sets the src of an img to the result of an expression
 
 
@@ -421,25 +442,25 @@ function ChildController(){
 Add some more code to your `index.html` file.
 
 ```html
-<div ng-controller="ParentController as parent">
-  <span>{{child.property1}}:{{parent.property1}}</span>
-  <div ng-controller="ChildController as child">
-    <span>{{child.property1}}:{{parent.property1}}</span>
+<div ng-controller="ParentController as parentCtrl">
+  <span>{{childCtrl.property1}}:{{parentCtrl.property1}}</span>
+  <div ng-controller="ChildController as childCtrl">
+    <span>{{childCtrl.property1}}:{{parentCtrl.property1}}</span>
   </div>
 </div>
 ```
 
 - Note the way we've structured our controllers. The child controller can access parent properties and methods since it's nested, but a parent cannot access child properties. There _are_ ways to implement this, but it's outside of the scope of this lesson.
 - You can try this with our Todos/Matey controllers also.
-- We'll use this nesting technique to maintain our `currentUser` object. Controllers re-instantiate each time yuo refresh the page.
+- We'll use this nesting technique to maintain our `currentUser` object. Controllers re-instantiate each time you refresh the page.
     
-<br>
+<br />
 
 ##### &#x1F535; YOU DO
 
 Add nested controllers to your app
 
-<br>
+<br />
 
 ## Conclusion (5 mins)
 

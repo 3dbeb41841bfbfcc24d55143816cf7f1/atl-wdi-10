@@ -27,7 +27,8 @@ Create a example Node/Express app for this lesson.
 
 1. `mkdir happyApp` && `cd` into it
 2. `npm init -y`
-4. `touch server.js`
+3. `touch server.js`
+4. make sure to update your package.json after you `subl .`
 
 ```js
 var express = require('express');
@@ -44,15 +45,15 @@ app.listen(4000, function(){
 });
 ```
     
-1. `npm install --save express`
-1. `mkdir public`
-1. `mkdir public/js`
-1. `touch public/js/app.js`
+5. `npm install --save express`
+6. `mkdir public`
+7. `mkdir public/js`
+8. `touch public/js/app.js`
 
 ```js
 angular.module('HappyApp', []);
 ```
-1. `touch public/js/ratingsController.js`
+9. `touch public/js/ratingsController.js`
 
 ```js
 angular.module('HappyApp', [])
@@ -66,7 +67,7 @@ angular.module('HappyApp', [])
       }
   }
 ```
-1. `touch public/index.html`
+10. `touch public/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -75,23 +76,23 @@ angular.module('HappyApp', [])
     <meta charset="utf-8">
     <title>Happy App</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/ratingsController.js"></script>
   </head>
   <body>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/ratingsController.js"></script>
   </body>
 </html>
 ```
     
-1. Make sure to add `ng-app` to your `<html>`
+11. Make sure to add `ng-app` to your `<html>`
 
 ```html
 <html ng-app="HappyApp">
 ```
 
-1. Here is some starter html body code with the Angular directives missing.
+12. Here is some starter html body code with the Angular directives missing.
 
 ```html
 <h1>HappyApp</h1>
@@ -129,8 +130,9 @@ angular.module('HappyApp', [])
 ``` 
     
 
-2. `mkdir public/css`
-3. `touch public/css/style.css`
+13. `mkdir public/css`
+14. `touch public/css/style.css`
+- this stylesheet is already linked in your index.html
 
 ```css
 @import url(http://fonts.googleapis.com/css?family=Raleway:900,200,600|League+Script);
@@ -241,11 +243,12 @@ h1:after {
   color:red;
 }
 ```
-
-    
-1. Your folder structure should look similar to this.
+  
+16. Your folder structure should look similar to this.
 
     ![](https://i.imgur.com/ASNEYNK.png)
+
+17. make sure to run nodemon server.js to start your app
 
 ## Exercise
 

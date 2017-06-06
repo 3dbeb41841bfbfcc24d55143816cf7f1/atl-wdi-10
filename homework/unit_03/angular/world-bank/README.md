@@ -12,9 +12,11 @@
   dependencies.
 
   **Seed Some Data!** Before you launch the app, run the script found in
-  `scripts/add_example_data.js`; this file will load up your app with example
+  `node scripts/add_example_data.js`; this file will load up your app with example
   data so that it can work correctly.
 
+  Run your server with `npm start`.
+  
 ## Specifications
 
   Your Angular page should display:
@@ -107,9 +109,7 @@
 
 ## Submitting Your Work
 
-When you're ready, push the code to your fork on GitHub and create an issue with
-a title in the format "YourGitHubUsername -- Week XX Day XX".
-The issue body should have:
+When you're ready, push the code to your fork on GitHub and add that specific homework link to schoology.  Your submission should include:
 
 -   A link that points back to your fork.
 

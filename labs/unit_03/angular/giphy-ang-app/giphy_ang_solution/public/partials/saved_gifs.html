@@ -1,0 +1,10 @@
+<div class="all-gifs-container">
+  <div ng-repeat="gif in giphy.savedGifs">
+    <div>
+      <h4>{{gif.name}}</h4>
+      <img ng-src="{{gif.url}}" alt="">
+      <button ng-click="giphy.deleteGif(gif._id)">Delete</button>
+      <button ng-click="giphy.populateFormData(gif)">Edit</button>
+    </div>
+  </div>
+</div>
