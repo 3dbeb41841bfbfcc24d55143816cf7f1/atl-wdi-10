@@ -290,7 +290,7 @@ Remember the gifName and url are coming from two different places. The url is be
 
 ```js
 function saveGif(url) {
-  $http.post('/gifs', { url: vm.gifUrl, gifName: vm.gifName} )
+  $http.post('/gifs', { url: vm.gifUrl, name: vm.gifName} )
     .then(function(giphyResponse) {
       console.log(giphyResponse);
     });
