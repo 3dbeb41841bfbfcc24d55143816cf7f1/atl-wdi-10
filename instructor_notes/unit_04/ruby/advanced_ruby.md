@@ -6,7 +6,7 @@
 
 ## gets.chomp
 
-This command will issue a prompt in the terminal.  The entered answer can be set to a vairable.  The `gets` will prompt the user, and the `.chomp` will remove the 'return' separator.
+This command will issue a prompt in the terminal.  The entered answer can be set to a variable.  The `gets` will prompt the user, and the `.chomp` will remove the 'return' separator.
 
 ```ruby
 puts "Hey what's your name?"
@@ -109,6 +109,8 @@ In Ruby, gems are libaries we can use in our Ruby code.
 
 `pry` is a super helpful tool for debugging.
 
+We've previously used pry as a REPL in the command line to mess with Ruby.
+
 Pry can be invoked in the middle of your code and it starts a 'Pry Session'.  You can then check variable values, run other methods, etc. at that specific point in your program.
 
 Here's the documentation: <a href="https://github.com/pry/pry">Pry Documentation</a>
@@ -118,6 +120,42 @@ And here's how we use it in the code.
 `binding.pry`
 
 Let's see how it work in our script.
+
+```ruby
+require 'pry'
+
+class Bomb
+  @fuse_active = false
+  def light_fuse
+    @fuse_active = true
+    puts "oh no! someone stop the bomb"
+  end
+
+  def explode
+    return "BOOM!!!" if @fuse_active
+
+    "You stopped the bomb! You're a hero!"
+
+  end
+
+  def save_the_day
+    @fuse_active = false
+
+    puts "That was close!"
+  end    
+end
+
+bomb = Bomb.new
+bomb.light_fuse
+
+# Pry can freeze time and allow you to debug your program 
+binding.pry
+
+# program resumes here (after pry session)
+puts bomb.explode
+
+
+```
 
 
 # Shopping List Lab
