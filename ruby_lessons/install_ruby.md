@@ -20,7 +20,7 @@ If it does not, tell us now and go to [the uninstall steps](https://richonrails.
 
 ## Have the correct Ruby running
 
-Mac OSX comes with its own version of Ruby which is no good. We need to set it so that we have control.
+MacOS comes with its own version of Ruby (2.0.0). The OS uses Ruby to run various processes. So while it’s not terrible to mess with the configuration of your systems Ruby i.e. changing permissions, sudo installing gems etc. It’s better just have our own version that we can change and update without worrying about the side effects.   
 
 To see where the current Ruby is being executed, run: `$ which ruby`. This should output to `/usr/bin/ruby`.
 
@@ -91,6 +91,9 @@ rbenv global 2.3.0
 # It should be 2.3.0
 ruby -v
 ```
+
+
+>We now have the most up to date version of Ruby available.  If you want to learn more about how rbenv works check out it's documentation [here](https://github.com/sstephenson/rbenv).
 
 
 ## Execute a Ruby script

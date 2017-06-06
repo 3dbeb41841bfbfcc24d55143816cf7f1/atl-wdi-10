@@ -1,3 +1,5 @@
+[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+
 # Running your Ruby scripts
 
 You'll interact with your .rb files in a very similar way to your .js files.
@@ -21,12 +23,16 @@ Remember that Javascript runs server side as well as in the brower.
 
 ## Running ruby in the REPL
 
-1. Start pry, $`pry`
+1. Start pry, $`pry`.  If you get an error stating 'pry: command not found', run this command.
+
+```bash
+  gem install pry
+```
 
 2. You can now run any ruby code, similar to when we type JavaScript into `node`
 
 
-## loading files into pry
+## Loading files into pry
 
 You can also load ruby files into the `pry` repl using the `load`
 
@@ -46,6 +52,6 @@ You can also load ruby files into the `pry` repl using the `load`
 
   - try invoking the `hello` method
 
-5. add a new method to test.rb
+5. Add a new method to test.rb
 
-6. run `load 'test.rb'` again and invoke the new function!
+6. Run `load 'test.rb'` again and invoke the new function!

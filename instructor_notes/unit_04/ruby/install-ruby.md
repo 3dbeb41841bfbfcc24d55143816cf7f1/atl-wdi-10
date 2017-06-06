@@ -1,39 +1,131 @@
-#### NOTE: If you have RVM already set up you will need to decide whether you want to continue using RVM or if you'd prefer to switch to rbenv.
+# Installing Ruby
 
-To uninstall follow these instructions: https://richonrails.com/articles/uninstalling-rvm
+## Objectives
 
-To check if you have RVM installed simply run the command $`rvm`. If it is not installed you'll see the message `command not found: rvm`
+* Install Ruby via rbenv
+* Have the correct Ruby running
+* Easily switch Ruby versions
+* Execute a Ruby script
 
-RVM and Rbenv do NOT work well together, so having both installed will cause _weirdness_
+## Sanity check
 
-------
+There's two Ruby version management tools which conflict with each other.
 
+Make sure you do NOT have the other one by running `$ rvm`. It needs to output `command not found: rvm`.
 
-1: $`brew install rbenv ruby-build`
+If it does not, tell us now and go to [the uninstall steps](https://richonrails.com/articles/uninstalling-rvm).
 
-2: $`echo 'eval "$(rbenv init -)"' >> ~/.bash_profile`
-
-3: $`echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile`
-
-> Once you've completed the first two steps you can run the command $`rbenv` which will give you a short list of rbenv commands. Rbenv is a ruby environment manager, which allows you to install multiple versions of Ruby.
-
-
-## Why we need rbenv and our own version of Ruby.
+**Note:** the `$` means to run it in the Terminal. So if I write `$ which ruby` it means to run `which ruby` in your bash Terminal. This works for zsh as well.
 
 
-> Every apple computer comes with a version of Ruby already installed (2.0.0). Your computer's OS uses Ruby to run various processes. So while it’s not terrible to mess with the configuration of your systems Ruby i.e. changing permissions, sudo installing gems etc. It’s better just have our own version.   
+## Have the correct Ruby running
 
-> Also, consider this: if we have have Ruby 2.0.0 installed by default and we then install Ruby 2.3.0, how do we tell the computer which version of Ruby to use and in what instance? This is why we need an environment management tool   
+MacOS comes with its own version of Ruby (2.0.0). The OS uses Ruby to run various processes. So while it’s not terrible to mess with the configuration of your systems Ruby i.e. changing permissions, sudo installing gems etc. It’s better just have our own version that we can change and update without worrying about the side effects.   
 
-## Steps 4 - 6
+To see where the current Ruby is being executed, run: `$ which ruby`. This should output to `/usr/bin/ruby`.
+
+If we run `$ ruby -v`, it'll output the standard one which is `2.0.0` at the current time. Not every app uses this version, so we need to use our own tool to manage Ruby versions.
 
 
-4: After you run $`rbenv` you’ll see a list of commands like `rbenv versions`, `rbenv install`, `rebenv global` etc. We want to run $`rbenv install 2.3.0`
+## Install Ruby via rbenv
 
-5: Run $`rbenv rehash`
+In your bash terminal:
 
-6: Run $`rbenv global 2.3.0`
+```bash
+# rbenv enables us to download Ruby
+brew install rbenv
 
->Steps 4 through 6 install the Ruby version 2.3.0. Rehashing is a configuration process specific to rbenv. Rehash needs to be run after installing any new version of Ruby. The command `rbenv global 2.3.0` sets 2.3.0 to be the version that’s used globally on your computer. You may have also noticed `rbenv local`, which will set a ruby version specific to a project, and `rbenv shell` which sets a specific ruby version to run in your terminal.
+# ruby-build enables us to install multiple Ruby versions
+brew install ruby-build
 
->You can read all about this and more about Rbenv, what it does and how to use it [here](https://github.com/sstephenson/rbenv):
+# list all the available Ruby versions
+rbenv install -l
+
+# Find the latest one that looks like:
+# 2.4.1
+# that DOES NOT have a -dev or -rc, but a -p is OK
+# At the current time, the latest one is 2.4.1
+rbenv install 2.4.1
+# This takes awhile!
+```
+
+
+## Have the correct Ruby running (continued)
+
+Now we'll check to see if we're using the correct version of Ruby.
+
+Previously, when we ran `$ which ruby`, we got `/usr/bin/ruby` and `$ ruby -v` gave us `2.0.0`. Let's fix that.
+
+```bash
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+
+# Refresh bash source
+source ~/.bash_profile
+
+# Use your version here
+rbenv global 2.4.1
+which ruby
+```
+
+The end result you should be similar to `/Users/<your user name>/.rbenv/shims/ruby`.
+
+
+## Easily switch Ruby versions
+
+Let's install another version of Ruby. Previously we had `2.4.1`. Let's install `2.3.0` for funsies.
+
+```bash
+# bash
+
+# This will take a minute
+rbenv install 2.3.0
+
+# Now we can see what we have available to us
+rbenv versions
+
+# Let's set it to 2.3.0
+rbenv global 2.3.0
+
+# Print our current Ruby version
+# It should be 2.3.0
+ruby -v
+```
+
+
+>We now have the most up to date version of Ruby available.  If you want to learn more about how rbenv works check out it's documentation [here](https://github.com/sstephenson/rbenv).
+
+
+## Execute a Ruby script
+
+Let's make a directory for our random Ruby scripts.
+
+```bash
+# bash
+cd ~
+mkdir ruby_scripts
+cd ruby_scripts
+touch example.rb
+subl example.rb	# or whatever your preferred editor is
+```
+
+```ruby
+# example.rb
+puts "Hello World!"
+```
+
+```bash
+# bash
+ruby example.rb
+```
+
+Yay!
+
+
+## Weekend Homework
+
+There's an awesome book for getting started with Ruby called [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/).
+
+It's hosted online for free.
+
+This homework will not be graded, however the more you read through the book, the easier this week will be and the more you'll be able to do in your Rails project.
