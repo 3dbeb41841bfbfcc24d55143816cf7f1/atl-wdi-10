@@ -10,7 +10,6 @@ competencies: Programming
 
 # Lesson Objectives
 
-- Fill in gaps from weekend studying
 - Accurately compare JS syntax to Ruby
 - Build equivalency of understanding of foundational Ruby to JS
 - Advanced Ruby argument discussion
@@ -57,16 +56,17 @@ nil.hello
 
 This is an extreme example to make the openness and flexibility of Ruby clear. But perhaps you can imagine how this could be a powerful tool in the hands of a skilled Rubyist.
 
-#### readability
+#### Readability
 
 Ruby is hyper readable the lack of `;`, `()`, `{}`, keywords like `var`, `return`, `function` mean that your semantic naming of methods and variables combined with the semantic nature of the core library methods result in code that feels more like English than a programming language.
 
 #### Frameworks
 
-We're going to learn Ruby on Rails at the end of this week. It's a application framework for Ruby similar to Express but 10x the size.
+We're going to learn Ruby on Rails early next week. It's a application framework for Ruby similar to Express but 10x more robust.
 
 Ruby has a smaller framework called Sinatra, which syntactically is _very_ similar to Express, which you could easily learn on your own.
- ß
+ 
+Find out more about Sinatra [here](https://github.com/sinatra/sinatra).
 
 ## Methods, Arguments, and blocks
 
@@ -80,7 +80,7 @@ In JavaScript you can define anonymous functions and pass them as arguments. Eff
 
 TLDR:
 
-Methods always require a name in Ruby.
+Methods **always** require a name in Ruby.
 
 ```ruby
 def hello
@@ -99,18 +99,18 @@ Well that looks pretty similar, is there any behavior differences?
 
 First, define the behaviors of arguments in JS
 
-In Ruby, if you specify a number of arguments, the function must take that number of arguments. No more, No less.
+In Ruby, if you specify a number of arguments, the function must take that number of arguments. No more, No less. 
 
 #### Less
 ```ruby
-$ hello("Marc", "Lo", "frickin' cold eh")
+$ hello("Jamie", "Hark", "frickin' cold eh")
 
 => ArgumentError: wrong number of arguments (given 3, expected 4)
 ```
 
 #### More
 ```ruby
-$ hello("Marc", "Lo", "frickin' cold eh", ".", "Forsooth, ye yonder pilgrim is quite the bespoke son of a tailors daughter, ai?")
+$ hello("Jamie", "Hark", "frickin' cold eh", ".", "Forsooth, ye yonder pilgrim is quite the bespoke son of a tailors daughter, ai?")
 
 => ArgumentError: wrong number of arguments (given 5, expected 4)
 ```
@@ -150,9 +150,9 @@ end
 
 #### Woah, that return statement?
 
-In Ruby, returns are implicit by design. The last line of the method will always be returned. So why the first return?
+In Ruby, returns are implicit by design. Ruby will always assume that the last line of the method will be returned. So why the first return?
 
-Can you read it in English? Ruby is wonderful as a language in that it should read pretty closely to English
+Can you read it in English? One of Ruby's biggest benefitsis that it reads pretty closely to English
 
 
 ## Bang methods and predicate methods
@@ -266,9 +266,8 @@ Remember that it works this way, because when we get to Objects/Classes later th
 
 Loops work almost exactly the same as JS, but use a slightly different syntax.
 
-What loops did you use or study this weekend?
+What are some different ways that you can loop in JavaScript?
 
-.map, .each, .reduce
 
 ### .each is going to be your go to
 
@@ -530,7 +529,7 @@ That `do`/`end` thing you're messing with is called a _block_, and it just runs 
 You'll see blocks all the time, and you'll use `.each` like it's your job. It just loops through each value in your array and assigns a local variable (that you decide) to each object. You come up with what you want it called in the "pipes", aka those tall neighbors surrounding the variable: `|a_variable_of_my_choosing|`.
 
 
-<!-- ## Arrays - Independent Practice (10 minutes)
+## Arrays - Independent Practice (10 minutes)
 
 Alright, practice time. Quick solo challenge, we'll be setting a timer for 10 minutes!
 
@@ -541,7 +540,7 @@ Alright, practice time. Quick solo challenge, we'll be setting a timer for 10 mi
 
 ```ruby
 students = ['Suzy', 'Daniel', 'James', 'Mary', 'Phillip', 'Siegfried']
-``` -->
+```
 
 ## You're Ready to Move On to Hashes - Codealong (20 mins)
 
