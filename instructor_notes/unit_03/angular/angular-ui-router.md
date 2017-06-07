@@ -25,15 +25,11 @@ competencies: Front-end Frameworks
 
 Routing, as you saw in our last unit, is the process of constructing a system that renders different pages in an application based on a RESTful url.
 
-<!-- In Angular, we _could_ display views to the user by showing/hiding different parts of the DOM. The problem with this is that users can't really navigate through your application, share urls, bookmark parts of your website etc.  --> 
-
 So far, we have only dealt with a single page. What websites do you go to daily that only has _one page_ and doesn't change with interaction?
 
 Comparatively, how many websites do you go to daily that have multiple pages (aka views)?
 
 We still need a solution. A way to maintain our Single Page Architecture (SPA) while giving the illusion that the user is navigating to different pages.  That's where UI-Router comes in.  But before that...
-
-<!-- What is the benefit of this? Why even make it single page? Why add that complexity? The main use case for front-end frameworks is speed – by loading everything upfront, and using AJAX to grab the sections that we need, our page will be super speedy. -->
 
 ## Review: Routes
 
@@ -67,7 +63,7 @@ You can read more about [here](https://docs.angularjs.org/api/ngRoute/service/$r
 
 However, the community realized there was a lot of missing functionality, so they made their own solution. Enter in [UI Router](https://github.com/angular-ui/ui-router)!
 
-## Seven Steps to UI-Router - Codealong (40 mins)
+## The Five Steps to UI-Router - Codealong (40 mins)
 
 ### Step One: UI-Router
 
@@ -75,7 +71,9 @@ We'll need the UI-Router source. It's not an official, core library, and it's no
 
 Let's load up a Webpack-ready project-
 - cd into `atl-wdi-10/angular-lessons/labs/criminals-ui-router-starter`
-- npm install
+- run `npm install`
+- run `node config/seeds`
+- run `npm start`
 
 #### To add UI-Router:
 
@@ -84,26 +82,6 @@ The name of the `npm` package is `@uirouter/angularjs`, so we need to install it
 ```bash
 npm install @uirouter/angularjs --save
 ```
-
-<!-- CDNJS [has the file](https://cdnjs.com/libraries/angular-ui-router)
-
-```
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-```
-
-Make sure your script tag is _after_ including Angular, and before you try to use it.
-
-In public/index.html -->
-
-<!-- ```html
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> -->
-
-<!-- new router script -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script> -->
-<!-- end new router script -->
-
-<!-- <script src="js/app.js"></script>
-``` -->
 
 ### Step Two: Adding a Dependency
 
@@ -118,27 +96,6 @@ angular.module('criminalsApp', ['ui.router']);
 `'ui.router'` is what the library is called at it's source. Most libraries will tell you how to add the dependency in their documentation. If you need more than one dependency, just list them like any array.
 
 Now we're _almost_ ready to rock!
-
-<!-- Because we're adding in a new library, it'll be a dependency – we'll need to make sure Angular knows about our library, so we can use it.
-
-We're going to touch a new file called `router.js` inside of our public directory
-```javascript
-// in router.js
-angular
-  .module('giphyAngularApp', ['ui.router']);
-```
-
-`'ui.router'` just happens to be what the library is called in it's source. Most libraries will tell you what to write here in their documentation, and if you need more than one, just list them like any array. -->
-
-<!-- #### Philosophically, what is routing?
-
-A route, in general, is just the path you take to get somewhere. That's not specific to web development, but it's one of those words we've latched on because it's a good description – when you're changing URL, when that location bar changes, you're on a new route.
-
-Our router just sets up which routes we want to exist and points our code where to make it happen.
-
-This means our Angular app can simulate having multiple pages, which gives us the ability to make more complex applications...which is awesome!
-
-Let's open up our `app.js` and add some routes. -->
 
 ### Step Three: Add Some Configuration
 
@@ -229,19 +186,19 @@ Now if we were to go to `url.com/#/criminals/1`, the following would be `console
 
 ### Step Five: Building Partials
 
-Before our route can work we actually need to create the partial we're trying to render, just like in server side rendering.
+Before our route can work we actually need to create the component we are trying to render, just like in server side rendering.
 
-1. Create a directory called `partials` in your public directory
-2. Inside of that directory create a file called `test.html`
-3. Add an h1 with the content `HELLO WORLD`
+1. Look in the `/client/components` directory
+2. Open the `/client/components/home` directory check out the `home.html` and home.component.js
+3. Also, look at how we are rendering this tab in the HTML view
 
 #### Where do we render the partial
 
 When you implemented server side rendering last unit you had a layout file and you called `{{{body}}}` to inject all of your views in that space.
 
-We'll implement a similar pattern!
+We will implement a similar pattern!
 
-Add a `ui-view` tag in the body of our html
+Add a `ui-view` tag in the body of our `/public/index.html` 
 
 ```html
 <ui-view></ui-view>
@@ -249,32 +206,27 @@ Add a `ui-view` tag in the body of our html
 
 #### How to trigger our partial?
 
-1. Let's first initialize the html as an angular application.
-2. Let's add a button above `ui-view` called test.
-3. Finally we're going to implement a state reference directive that behaves sort of similar to a click event
+You might notice in the nav bar that we have a hrefs that look a little different.  Instead of href, you can use ui-sref.
 
-`ui-sref="routingTest"`
+`ui-sref="home"`
 
-sref stands for state reference. We pass it the name of the state we'd like to load.
+`sref` stands for state reference. We pass this attribute the name of the state that we would like to load.
 
-When the element is clicked, it's going to look at our router.js file find the state that matches the name routingTest, change the url to what we configured in the router, and then load the relevant partial *INSIDE* the ui-view tag
-
+When the element is clicked, it's going to look at our `/client/app.component.js` file find the state that matches the name home, change the url to what we configured in the router (the first key/value pair in our object), and then load the relevant partial *INSIDE* of the ui-view tag that is on our `/public/index.html`.
 
 ## High Level
 
 That very, very simply is how to route on the front end in Angular.
 
-*Take Aways:*
+### Take Aways:
 
 1. It is *NOT* backend routing.
 
   They do not interact, they have no knowledge of each other, they do not communicate. They are completely isolated from the other.
 
-  It's called routing because it looks kind of like routing, so what else are we going to call it?
-
 2. There is a TON you can do with routing.
 
-  We'll get into redirecting to different views from your controller later. You can pass parameters via a thing called $stateParams.
+  We'll get into redirecting to different views from your controller later. You can pass parameters via the $stateParams.
 
   This is the minimum you need to know, but don't let us stop you from reading the ui-router docs and learning more about it. It's a very powerful and useful tool.
 
