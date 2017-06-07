@@ -230,19 +230,19 @@ That very, very simply is how to route on the front end in Angular.
 
 2. There is a TON you can do with routing.
 
-  We'll get into redirecting to different views from your controller later. You can pass parameters via the $stateParams.
+  As you have seen, you can pass parameters via the $stateParams.
 
-  This is the minimum you need to know, but don't let us stop you from reading the ui-router docs and learning more about it. It's a very powerful and useful tool.
+  Read the ui-router docs to learn more. UI Router is a very powerful and useful tool.
 
-3. What the eff is that hashbang thing in our url?
+<!-- 3. What is the hashtag in our url?
 
   Don't worry about it for now. Remember that we're creating the illusion of routes for the user. We also need to trick the browser a little so it doesn't accidentally try to make requests to our backend for html that doesn't exist.
 
-  In order to escape that front-end routing will preface all of our paths with that `#` so the browser doesn't get confused and just treats our nice looking routes as decoration rather than commands to make HTTP GET requests.
+  In order to escape that front-end routing will preface all of our paths with that `#` so the browser doesn't get confused and just treats our nice looking routes as decoration rather than commands to make HTTP GET requests. -->
 
-#### Helpful Extra - Which state am I on?
+### Helpful Extra - Which state am I on?
 
-`ui.router` actually gives us another really useful custom directive. Throw it on whichever links are using `ui-sref`:
+`ui.router` actually gives us another really useful custom directive. Throw it on any links that are using `ui-sref`:
 
 ```html
 <nav class="tabs">
@@ -251,15 +251,15 @@ That very, very simply is how to route on the front end in Angular.
 </nav>
 ```
 
-This is a really nice helper that will apply the class of "active" (or whatever you put in quotes) to the link that's currently active, depending on what state you're looking at.
+This directive will apply the class of "active" to the link that's currently active, depending on what state you're looking at.
 
 And suddenly, your interface makes a ton more sense. Super helpful.
 
-### CodePen walk-through
+### CodePen You Do
 
-Let's navigate to [an example CodePen](http://codepen.io/rgpass/pen/XMGvOL/#/) so we can play around.
+Navigate to [an example CodePen](http://codepen.io/rgpass/pen/XMGvOL/#/), so you can play around.
 
-It may be helpful for you to signup for CodePen, and then Fork this CodePen. This way you can take notes on your copy.
+It may be helpful for you to signup for CodePen, and then Fork this CodePen. There are some starter notes there, but take any other notes on your copy and note what is happening.
 
 Bonus: `ui-sref-active='active'`
 
