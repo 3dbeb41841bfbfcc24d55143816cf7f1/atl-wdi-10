@@ -43,48 +43,48 @@ You will be writing your code in:
 
 ### Server-side Controllers
 
-`controllers/quotes.js`  
+`/controllers/quotes.js`  
 - This is where you will write your CRUD routes for the quotes state 
 `controllers/netflix.js`  
     - This is where you will write your CRUD routes for the Netflix and quotes state- with express + ajax
 
 ### Front-end Scripts 
-`client`
+- `/client` folder
     - Set up your components and ui-router here. 
 
 #### For Your Home page
-`client/components/home.component.js`
-`client/components/home.html`
+- `/client/components/home.component.js` 
+- `/client/components/home.html`
     - Set up your home.html state here
 
 #### For Swanson Quotes
-`client/components/quotes.component.js`
-`client/components/quotes.controller.js`
+- `/client/components/quotes.component.js` 
+- `/client/components/quotes.controller.js`
     - Set up your Angular controller here for the quotes state 
-`client/components/quotes.html`
+- `/client/components/quotes.html`
     - Set up your quotes.html state here
 
 #### For Netflix
-`client/components/netflix.component.js`
-`client/components/netflix.controller.js`
-    - Set up your ui-router here
-`client/components/netflix.html`
+- `/client/components/netflix.component.js` 
+- `/client/components/netflix.controller.js` 
+    - Set up your ui-router here 
+- `/client/components/netflix.html` 
     - Set up your netflix.html state here
 
 ### Front-end Views** - 
-`index.html`
+- `index.html`
     - This is where you will bootstrap Angular to the app. All views will render within `<ui-view></ui-view>`
 
 <!-- `partials/home.html` -->
-`<home></home>`
+- `<home></home>`
     - This is your home page view.
 
 <!-- `partials/quotes.html` -->
-`<quotes></quotes>`
+- `<quotes></quotes>`
     - This is your Quotes view.
 
 <!-- `partials/netflix.html` -->
-`<netflix></netflix>`
+- `<netflix></netflix>`
     - This is your Netflix page view.
 
 ## Directions
