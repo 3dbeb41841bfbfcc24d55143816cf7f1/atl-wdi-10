@@ -20,25 +20,25 @@ In this assignment, you'll have a chance to work with a Single Page App (SPA) th
 
 Filename - Content
 **Server-side Controllers** - `controllers/quotes.js`  
-    - This is where you will write your CRUD routes for the quotes state 
-    `controllers/netflix.js`  
-        - This is where you will write your CRUD routes for the Netflix state
+- This is where you will write your CRUD routes for the quotes state 
+`controllers/netflix.js`  
+    - This is where you will write your CRUD routes for the Netflix state
 
 **Front-end Scripts** - `public/js/router.js`
-    - Set up your ui-router here. 
-    `public/js/quotesController.js`
-        - Set up your Angular controller here for the quotes state 
-    `public/js/netflixController.js`
-        - Set up your ui-router here
+- Set up your ui-router here. 
+`public/js/quotesController.js`
+    - Set up your Angular controller here for the quotes state 
+`public/js/netflixController.js`
+    - Set up your ui-router here
 
 **Front-end Views** - `index.html`
-    - This is where you will bootstrap Angular to the app. All views will render within `<ui-view></ui-view>`
-    `partials/home.html`
-        - This is your home page view.
-    `partials/quotes.html`
-        - This is your Quotes view.
-    `partials/netflix.html`
-        - This is your Netflix page view.
+- This is where you will bootstrap Angular to the app. All views will render within `<ui-view></ui-view>`
+`partials/home.html`
+    - This is your home page view.
+`partials/quotes.html`
+    - This is your Quotes view.
+`partials/netflix.html`
+    - This is your Netflix page view.
 
 ## Directions
 
@@ -76,9 +76,9 @@ Filename - Content
 - Each movie will also have a `<p>Delete Movie</p>`. When clicked, the quote is removed from the local database and removed from the page.
 - :dart: Commit often!
 
-### Reach Goals
+<!-- ### Reach Goals
 
-- Add a 4th state with a 3rd party API of your choice!
+- Add a 4th state with a 3rd party API of your choice! -->
 
 ## :bug: Bug Report
 
