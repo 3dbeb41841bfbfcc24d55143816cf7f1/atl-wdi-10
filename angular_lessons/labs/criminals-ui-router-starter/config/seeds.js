@@ -6,22 +6,18 @@ mongoose.Promise = global.Promise;
 var db = mongoose.connect('mongodb://localhost:27017/criminals-app');
 
 var criminals = [
-  { name: 'Gerry', crime:'Arson' },
-  { name: 'Danny', crime:'Comfy Violation' },
-  { name: 'Ray', crime: 'Lasagna Theft' },
-  { name: 'Harry', crime: 'Too Much BBQ' },
+  { name: 'Maren', crime: 'Arson' },
+  { name: 'Danny', crime: 'Comfy Violation' },
+  { name: 'Jamie', crime: 'Newbie Ritual' },
+  { name: 'Christy', crime: 'Baby Carriage Theft' },
+  { name: 'William', crime: 'Nap Time Burglar' },
   { name: 'Pookie', crime: 'Failure To Report' },
-  { name: 'Kush', crime: 'Purp' },
-  { name: 'Rush', crime: 'Damn!' },
-  { name: 'Ashley', crime: 'Kidnapping Pokemon' },
-  { name: 'Liam', crime: 'Scope Creep' },
-  { name: 'Ryan', crime: 'Trolling The Class' },
-  { name: 'Erin', crime: 'Counterfeit Backpacks' },
-  { name: 'Matt', crime: 'Copying Off Aylin' },
-  { name: 'Michael', crime: 'Drunk In Public' },
-  { name: 'Brandon', crime: 'Illegal Concert Footage' },
-  { name: 'Randy', crime: 'Poop' },
-  { name: 'Julian', crime: 'Golfing While Intoxicated' },
+  { name: 'Chris', crime: 'Vegan food crime' },
+  { name: 'Kate', crime: 'Stole your Cheers' },
+  { name: 'Ben', crime: 'Scope Creep' },
+  { name: 'Yeni', crime: 'Counterfeit Macs' },
+  { name: 'Jeff', crime: 'Battle Royale' },
+  { name: 'Clark', crime: 'PB Sandwich Thief' }
 ];
 
 Criminal.remove({})
