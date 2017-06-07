@@ -25,8 +25,8 @@ In this assignment, you'll have a chance to work with a Single Page App (SPA) th
 - I have run `npm install --save angular`
     - now we don't have to add that script to the index.html page
     - remember that when you do this, you have to require angular (just like in our express apps), in our app.js (which I have done for you)
-<!-- - I have run `npm install --save-dev babel-core babel-loader babel-preset-env`
-    - now we can use ES2015 in our app and babel will transpile it for us -->
+- I have run `npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-es2015`
+    - now we can use ES2015 in our app and babel will transpile it for us
 - I have run `npm install angular-ui-router --save`
     - now we don't have to add the script to the index.html page
 

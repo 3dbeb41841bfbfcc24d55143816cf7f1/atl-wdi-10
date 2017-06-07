@@ -8788,7 +8788,10 @@ exports.UrlRouterProvider = UrlRouterProvider;
 /* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const angular = __webpack_require__(30);
+"use strict";
+
+
+var angular = __webpack_require__(30);
 __webpack_require__(87);
 
 angular.module('RonSwansonApp', ['ui.router']);
@@ -8797,25 +8800,31 @@ angular.module('RonSwansonApp', ['ui.router']);
 
 /***/ }),
 /* 59 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
 
 
 /***/ }),
 /* 60 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
 
 
 /***/ }),
 /* 61 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
 
 
 /***/ }),
 /* 62 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 console.log("Netflix Controller works!");
 
@@ -8823,13 +8832,17 @@ console.log("Netflix Controller works!");
 
 /***/ }),
 /* 63 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
 
 
 /***/ }),
 /* 64 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 console.log("Quotes Controller Works!"
 

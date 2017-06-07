@@ -5112,24 +5112,30 @@ module.exports = angular;
 
 /***/ }),
 /* 31 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 AboutController.$inject = [];
 
 function AboutController() {
-	const vm = this;
+	var vm = this;
 }
 
 module.exports = AboutController;
 
 /***/ }),
 /* 32 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 CriminalsNewController.$inject = ['$state', 'CriminalsService'];
 
 function CriminalsNewController($state, CriminalsService) {
-	const vm = this;
+	var vm = this;
 
 	vm.createCriminal = createCriminal;
 	vm.newCriminal = {};
@@ -5140,7 +5146,7 @@ function CriminalsNewController($state, CriminalsService) {
 
 	function createCriminal() {
 		CriminalsService.create(vm.newCriminal).then(function resolve(response) {
-			const id = response.data.criminal._id;
+			var id = response.data.criminal._id;
 			$state.go('criminalsShow', { criminalId: id });
 		});
 	}
@@ -5150,12 +5156,15 @@ module.exports = CriminalsNewController;
 
 /***/ }),
 /* 33 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 CriminalsShowController.$inject = ['$stateParams', 'CriminalsService'];
 
 function CriminalsShowController($stateParams, CriminalsService) {
-	const vm = this;
+	var vm = this;
 
 	vm.current = {};
 
@@ -5178,12 +5187,15 @@ module.exports = CriminalsShowController;
 
 /***/ }),
 /* 34 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 CriminalsController.$inject = ['CriminalsService'];
 
 function CriminalsController(CriminalsService) {
-	const vm = this;
+	var vm = this;
 
 	// WHAT THIS CONTROLLER HAS / DOES THAT IS CONNECTED TO THE VIEW
 	vm.criminals = [];
@@ -5210,14 +5222,17 @@ module.exports = CriminalsController;
 
 /***/ }),
 /* 35 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 HomeController.$inject = [];
 
 function HomeController() {
 
   // WHAT THIS CONTROLLER HAS / DOES THAT IS CONNECTED TO THE VIEW
-  const vm = this;
+  var vm = this;
 
   // activate === BEST PRACTICE, ALWAYS DO IT, EVEN IF EMPTY
   activate();
@@ -8905,12 +8920,16 @@ exports.UrlRouterProvider = UrlRouterProvider;
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const angular = __webpack_require__(30);
+"use strict";
+
+
+var angular = __webpack_require__(30);
 __webpack_require__(92);
 
 angular.module('criminalsApp', ['ui.router']).config(uiRouterSetup);
 
 uiRouterSetup.$inject = ['$stateProvider', '$urlRouterProvider'];
+
 function uiRouterSetup($stateProvider, $urlRouterProvider) {
 	$stateProvider.state('home', {
 		url: '/',
@@ -8937,10 +8956,13 @@ function uiRouterSetup($stateProvider, $urlRouterProvider) {
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const controller = __webpack_require__(31);
-const template = __webpack_require__(100);
+"use strict";
 
-const component = {
+
+var controller = __webpack_require__(31);
+var template = __webpack_require__(100);
+
+var component = {
 	controller: controller,
 	template: template
 };
@@ -8951,10 +8973,13 @@ angular.module('criminals').component('about', component);
 /* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const controller = __webpack_require__(32);
-const template = __webpack_require__(101);
+"use strict";
 
-const component = {
+
+var controller = __webpack_require__(32);
+var template = __webpack_require__(101);
+
+var component = {
 	controller: controller,
 	template: template
 };
@@ -8965,10 +8990,13 @@ angular.module('criminals').component('criminalsNew', component);
 /* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const controller = __webpack_require__(33);
-const template = __webpack_require__(102);
+"use strict";
 
-const component = {
+
+var controller = __webpack_require__(33);
+var template = __webpack_require__(102);
+
+var component = {
   controller: controller,
   template: template
 };
@@ -8979,10 +9007,13 @@ angular.module('criminals').component('criminalsShow', component);
 /* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const controller = __webpack_require__(34);
-const template = __webpack_require__(103);
+"use strict";
 
-const component = {
+
+var controller = __webpack_require__(34);
+var template = __webpack_require__(103);
+
+var component = {
 	controller: controller,
 	template: template
 };
@@ -8993,10 +9024,13 @@ angular.module('criminals').component('criminals', component);
 /* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const controller = __webpack_require__(35);
-const template = __webpack_require__(104);
+"use strict";
 
-const component = {
+
+var controller = __webpack_require__(35);
+var template = __webpack_require__(104);
+
+var component = {
   controller: controller,
   template: template
 };
@@ -9005,14 +9039,17 @@ angular.module('criminals').component('home', component);
 
 /***/ }),
 /* 69 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 angular.module('criminals').service('CriminalsService', CriminalsService);
 
 CriminalsService.$inject = ['$http'];
 
 function CriminalsService($http) {
-	const self = this;
+	var self = this;
 
 	// WHAT THIS SERVICE DOES / HAS AVAILABLE TO CALL
 	self.create = create;
