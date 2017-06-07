@@ -41,11 +41,11 @@ Here is the [gist](https://gist.github.com/dphurley/f94813ab20e7baf8b325867a6f11
 
 You will be writing your code in:
 
-### Server-side Controllers
+### Server-side Routes
 
-- `/controllers/quotes.js`  
+- `/server/routes/quotes.js`  
     - This is where you will write your CRUD routes for the quotes state 
-- `/controllers/netflix.js`  
+- `/server/routes/netflix.js`  
     - This is where you will write your CRUD routes for the Netflix and quotes state- with express + ajax
 
 ### Front-end Scripts 
@@ -71,7 +71,7 @@ You will be writing your code in:
 - `/client/components/netflix.html` 
     - Set up your netflix.html state here
 
-### Front-end Views** - 
+### Front-end Views
 - `index.html`
     - This is where you will bootstrap Angular to the app. All views will render within `<ui-view></ui-view>`
 
