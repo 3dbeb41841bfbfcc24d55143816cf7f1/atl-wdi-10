@@ -14,35 +14,76 @@ In this assignment, you'll have a chance to work with a Single Page App (SPA) th
 
 ## Setup
 
-- cd into the `angular-ui-router` folder,  run `npm install` to install and save all of the app's dependencies.
+- cd into the `atl-wdi-10/homework/unit_03/angular/ron-swanson/angular-ui-router` folder,  run `npm install` to install and save all of the app's dependencies.
 
-- Your app is set up for you. You will be writing your code in:
+#### To add on to what you did yesterday
+- I have run `npm install --save-dev webpack`
+- I have run `npm install --save glob`
+    - this will easily grab all of the files within a folder
+- I have run `npm install --save-dev html-loader`
+    - this will allow you require your component html files
+- I have run `npm install --save angular`
+    - now we don't have to require that script in your index.html
+    - remember that when you do this, you have to require angular (just like in our express apps), in our app.js (which I have done for you)
+- I have run `npm install --save-dev babel-core babel-loader babel-preset-env`
+    - now we can use ES2015 in our app and babel will transpile it for us
 
-Filename - Content
-**Server-side Controllers** - `controllers/quotes.js`  
+**You should be able to see all of these npm packages in your package.json after you run npm install**
+Here is the [gist](https://gist.github.com/dphurley/f94813ab20e7baf8b325867a6f1179f1) for setting up webpack if you would like to reference it
+
+- Use `npm start` to run nodemon
+    - I have added the nodemon.json for you, so that nodemon doesn't restart when we make client-side changes
+- Use `webpack --watch` to watch for changes on our client-side
+
+<br />
+
+## Your app is set up for you!!!
+
+You will be writing your code in:
+
+### Server-side Controllers
+
+`controllers/quotes.js`  
 - This is where you will write your CRUD routes for the quotes state 
 `controllers/netflix.js`  
     - This is where you will write your CRUD routes for the Netflix and quotes state- with express + ajax
 
-**Front-end Scripts** - `public/js/router.js`
-- Set up your component and ui-router here. 
-`public/js/quotes.component.js`
-`public/js/quotes.controller.js`
+### Front-end Scripts 
+`client`
+    - Set up your components and ui-router here. 
+
+#### For Your Home page
+`client/components/home.component.js`
+`client/components/home.html`
+    - Set up your home.html state here
+
+#### For Swanson Quotes
+`client/components/quotes.component.js`
+`client/components/quotes.controller.js`
     - Set up your Angular controller here for the quotes state 
-`public/js/quotes.html`
+`client/components/quotes.html`
     - Set up your quotes.html state here
-`public/js/netflix.component.js`
-`public/js/netflix.controller.js`
+
+#### For Netflix
+`client/components/netflix.component.js`
+`client/components/netflix.controller.js`
     - Set up your ui-router here
-`public/js/netflix.html`
+`client/components/netflix.html`
     - Set up your netflix.html state here
 
-**Front-end Views** - `index.html`
-- This is where you will bootstrap Angular to the app. All views will render within `<ui-view></ui-view>`
-`partials/home.html`
+### Front-end Views** - 
+`index.html`
+    - This is where you will bootstrap Angular to the app. All views will render within `<ui-view></ui-view>`
+
+<!-- `partials/home.html` -->
+`<home></home>`
     - This is your home page view.
+
+<!-- `partials/quotes.html` -->
 `<quotes></quotes>`
     - This is your Quotes view.
+
+<!-- `partials/netflix.html` -->
 `<netflix></netflix>`
     - This is your Netflix page view.
 
@@ -88,7 +129,11 @@ Filename - Content
 
 ## :bug: Bug Report
 
-You will come across a ton of bugs and error messages. Don't forget to submit 1 bug report through Github Issues.
+You will come across a ton of bugs and error messages. Don't forget to submit a bug report through Github Issues.  
+
+## How to succeed
+
+Work together, help each other, and also use the debugging slack channel.  
 
 ## Submitting Your Work
 
