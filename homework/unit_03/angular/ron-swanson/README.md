@@ -90,6 +90,8 @@ You will be writing your code in:
 - `<netflix></netflix>`
     - This is your Netflix page view.
 
+<br />
+
 ## Directions
 
 1. Set up your app with Angular. Add `ng-app="myApp"` to the `<html>` tag `index.html`.
@@ -129,6 +131,8 @@ You will be writing your code in:
 <!-- ### Reach Goals
 
 - Add a 4th state with a 3rd party API of your choice! -->
+
+<br />
 
 ## How to succeed
 
