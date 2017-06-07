@@ -9,9 +9,9 @@ uiRouterSetup.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 function uiRouterSetup($stateProvider, $urlRouterProvider) {
 	$stateProvider
-		.state('home', {
-			url: '/',
-			template: '<home></home>'
+		.state('homePage', {
+			url: '/', // telling the browser where to go
+			template: '<home></home>' // calling the component that we have created
 		})
 		.state('about', {
 			url: '/about',
@@ -31,5 +31,6 @@ function uiRouterSetup($stateProvider, $urlRouterProvider) {
 			template: '<criminals-show></criminals-show>'
 		});
 
+	// default state
 	$urlRouterProvider.otherwise('/');
 }

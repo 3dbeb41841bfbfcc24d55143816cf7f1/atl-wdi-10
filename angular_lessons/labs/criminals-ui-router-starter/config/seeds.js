@@ -17,7 +17,8 @@ var criminals = [
   { name: 'Ben', crime: 'Scope Creep' },
   { name: 'Yeni', crime: 'Counterfeit Macs' },
   { name: 'Jeff', crime: 'Battle Royale' },
-  { name: 'Clark', crime: 'PB Sandwich Thief' }
+  { name: 'Clark', crime: 'PB Sandwich Thief' },
+  { name: 'Monica', crime: 'Stole your exercise ball' }
 ];
 
 Criminal.remove({})

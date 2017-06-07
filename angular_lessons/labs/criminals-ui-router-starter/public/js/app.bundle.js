@@ -8931,9 +8931,9 @@ angular.module('criminals', ['ui.router']).config(uiRouterSetup);
 uiRouterSetup.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 function uiRouterSetup($stateProvider, $urlRouterProvider) {
-	$stateProvider.state('home', {
-		url: '/',
-		template: '<home></home>'
+	$stateProvider.state('homePage', {
+		url: '/', // telling the browser where to go
+		template: '<home></home>' // calling the component that we have created
 	}).state('about', {
 		url: '/about',
 		// template: '<about></about>' // LAB Goal #1 -- get this line to work
@@ -8949,6 +8949,7 @@ function uiRouterSetup($stateProvider, $urlRouterProvider) {
 		template: '<criminals-show></criminals-show>'
 	});
 
+	// default state
 	$urlRouterProvider.otherwise('/');
 }
 
