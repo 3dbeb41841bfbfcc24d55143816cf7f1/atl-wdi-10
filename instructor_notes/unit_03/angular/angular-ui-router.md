@@ -43,7 +43,8 @@ Let's walk through it.
 
 #### Step One: UI-Router
 
-We'll need the UI-Router source. It's not an official, core library, and it's not hosted on Google's site. CDNJS [has the file](https://cdnjs.com/libraries/angular-ui-router)
+We'll need the UI-Router source. It's not an official, core library, and it's not hosted on Google's site. 
+<!-- CDNJS [has the file](https://cdnjs.com/libraries/angular-ui-router)
 
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
@@ -51,17 +52,17 @@ We'll need the UI-Router source. It's not an official, core library, and it's no
 
 Make sure your script tag is _after_ including Angular, and before you try to use it.
 
-In public/index.html
+In public/index.html -->
 
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<!-- ```html
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> -->
 
 <!-- new router script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script> -->
 <!-- end new router script -->
 
-<script src="js/app.js"></script>
-```
+<!-- <script src="js/app.js"></script>
+``` -->
 
 #### Step Two: Adding a Dependency
 

@@ -16,19 +16,22 @@ In this assignment, you'll have a chance to work with a Single Page App (SPA) th
 
 - cd into the `atl-wdi-10/homework/unit_03/angular/ron-swanson/angular-ui-router` folder,  run `npm install` to install and save all of the app's dependencies.
 
-#### To add on to what you did yesterday
+#### To add on what you did yesterday
 - I have run `npm install --save-dev webpack`
 - I have run `npm install --save glob`
     - this will easily grab all of the files within a folder
 - I have run `npm install --save-dev html-loader`
     - this will allow you require your component html files
 - I have run `npm install --save angular`
-    - now we don't have to require that script in your index.html
+    - now we don't have to add that script to the index.html page
     - remember that when you do this, you have to require angular (just like in our express apps), in our app.js (which I have done for you)
 - I have run `npm install --save-dev babel-core babel-loader babel-preset-env`
     - now we can use ES2015 in our app and babel will transpile it for us
+- I have run `npm install @uirouter/angularjs --save`
+    - now we don't have to add the script to the index.html page
 
 **You should be able to see all of these npm packages in your package.json after you run npm install**
+
 Here is the [gist](https://gist.github.com/dphurley/f94813ab20e7baf8b325867a6f1179f1) for setting up webpack if you would like to reference it
 
 - Use `npm start` to run nodemon
