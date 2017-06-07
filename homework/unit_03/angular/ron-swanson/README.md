@@ -102,7 +102,7 @@ You will be writing your code in:
 
 ### State 1: The Home Page
 
-- When the page loads `localhost:3000/` the view simply renders: "This is the homepage!" In the navbar, clicking on the `Home` tab will also show this view. There is no controller associated with this view.
+- When the page loads `localhost:3000/` the view simply renders: "This is the homepage!" In the navbar, clicking on the `Home` tab will also show this view. There is no controller associated with this view, however, it is a best practice to always add one, and add an activate function, even if it is empty.
 - :dart: Make sure to Commit Often!
 
 ### State 2: Ron Swanson Quote of the Day
@@ -137,6 +137,8 @@ You will be writing your code in:
 ## How to succeed
 
 Work together, help each other, and also use the debugging slack channel.
+
+You can use the criminals app as your guide: https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/angular_lessons/labs/criminals-ui-router-starter
 
 ## :bug: Bug Report
 

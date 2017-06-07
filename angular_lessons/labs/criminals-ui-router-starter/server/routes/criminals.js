@@ -2,10 +2,10 @@ var express = require('express')
 var router = express.Router()
 var bodyParser = require('body-parser') //parses information from POST
 var methodOverride = require('method-override') //used to manipulate POST
-var Criminal = require('../models/Criminal');
+var Criminal = require('../../models/Criminal');
 
 // GET
-router.get('/', function indexAction(request, response) {
+router.get('/', function(request, response) {
   Criminal.find(function(error, criminals) {
     if(error) response.json({message: 'Could not find any criminal'});
 
@@ -14,7 +14,7 @@ router.get('/', function indexAction(request, response) {
 });
 
 // POST
-router.post('/', function createAction(request, response) {
+router.post('/', function(request, response) {
   console.log('in POST');
   console.log('body:',request.body);
 
@@ -28,7 +28,7 @@ router.post('/', function createAction(request, response) {
 });
 
 // GET
-router.get('/:id', function showAction(request, response) {
+router.get('/:id', function(request, response) {
   var id = request.params.id;
 
   Criminal.findById({_id: id}, function(error, criminal) {
@@ -38,7 +38,7 @@ router.get('/:id', function showAction(request, response) {
   }).select('-__v');
 });
 
-router.patch('/:id', function updateAction(request, response) {
+router.patch('/:id', function(request, response) {
   var id = request.params.id;
 
   Criminal.findById({_id: id}, function(error, criminal) {
@@ -56,7 +56,7 @@ router.patch('/:id', function updateAction(request, response) {
   }).select('-__v');
 });
 
-router.delete('/:id', function destroyAction(request, response) {
+router.delete('/:id', function(request, response) {
   var id = request.params.id;
 
   Criminal.remove({_id: id}, function(error) {

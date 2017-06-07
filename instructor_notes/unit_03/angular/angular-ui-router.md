@@ -23,21 +23,39 @@ competencies: Front-end Frameworks
 
 ## Intro (5 mins)
 
-Routing, as you saw in our last unit, is the process of constructing a system that renders different pages in an application based on the url.
+Routing, as you saw in our last unit, is the process of constructing a system that renders different pages in an application based on a RESTful url.
 
-We can think about displaying views to the user in jQuery, and even in angular, by showing and hiding different parts of the DOM. The problem with this is that users can't really navigate through your application, share urls, bookmark parts of your website etc.
+We _could_ display views to the user by showing/hiding different parts of the DOM. The problem with this is that users can't really navigate through your application, share urls, bookmark parts of your website etc.  
 
-So we need a solution. A way to maintain our Single Page architecture while giving the illusion that the user is navigating to different pages.
+So we need a solution. A way to maintain our Single Page Architecture (SPA) while giving the illusion that the user is navigating to different pages.
 
 This all comes down to storing our views on our main page and turning them on and off as we need.
 
-But what's the benefit? Why even make it single page? Why add that complexity? The main use case for front-end frameworks is added speed – by loading everything upfront, and just switching sections on and off, our page will seem wonderfully speedy because we'll be skipping quite a few steps that a more traditional framework has to run through.
+But what is the benefit? Why even make it single page? Why add that complexity? The main use case for front-end frameworks is added speed – by loading everything upfront, and just switching sections on and off, our page will seem wonderfully speedy because we'll be skipping quite a few steps that a more traditional framework has to run through.
 
-Now, Angular comes with a basic routing mechanism, `ngRoute`, which you can read about [here](https://docs.angularjs.org/api/ngRoute/service/$route)
+## Identify the puzzle pieces of UI Router
 
-But today we're looking at an even more beefed up router: a third-party plugin called `ui-router`: https://github.com/angular-ui/ui-router
+Note: Angular comes with its default router called `ngRouter`. 
+You can read about [here](https://docs.angularjs.org/api/ngRoute/service/$route)
 
-Let's walk through it.
+However, the community realized there was a lot missing so they made their own solution. Enter in [UI Router](https://github.com/angular-ui/ui-router)!
+
+Let's navigate to [an example CodePen](http://codepen.io/rgpass/pen/XMGvOL/#/) so we can play around.
+
+It may be helpful for you to signup for CodePen, and then Fork this CodePen. This way you can take notes on your copy.
+
+Bonus: `ui-sref-active='active'`
+
+Showcase your skills: Add a new route and link to it.
+
+* Load up the CodePen
+* Sign up if you haven't already
+* Fork the pen
+* Add a state called `aboutState`
+* Add a link to it on the home page
+* If the link is not showing up as a hyperlink, you may have a typo
+
+Let's get to it.
 
 ## Seven Steps to UI-Router - Codealong (40 mins)
 
