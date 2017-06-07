@@ -8926,7 +8926,7 @@ exports.UrlRouterProvider = UrlRouterProvider;
 var angular = __webpack_require__(30);
 __webpack_require__(92);
 
-angular.module('criminalsApp', ['ui.router']).config(uiRouterSetup);
+angular.module('criminals', ['ui.router']).config(uiRouterSetup);
 
 uiRouterSetup.$inject = ['$stateProvider', '$urlRouterProvider'];
 
