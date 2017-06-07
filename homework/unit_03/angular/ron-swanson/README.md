@@ -14,7 +14,7 @@ In this assignment, you'll have a chance to work with a Single Page App (SPA) th
 
 ## Setup
 
-- In the `angular-ui-router` folder,  run `npm install` to install and save all of the app's dependencies.
+- cd into the `angular-ui-router` folder,  run `npm install` to install and save all of the app's dependencies.
 
 - Your app is set up for you. You will be writing your code in:
 
@@ -22,22 +22,28 @@ Filename - Content
 **Server-side Controllers** - `controllers/quotes.js`  
 - This is where you will write your CRUD routes for the quotes state 
 `controllers/netflix.js`  
-    - This is where you will write your CRUD routes for the Netflix state
+    - This is where you will write your CRUD routes for the Netflix and quotes state- with express + ajax
 
 **Front-end Scripts** - `public/js/router.js`
-- Set up your ui-router here. 
-`public/js/quotesController.js`
+- Set up your component and ui-router here. 
+`public/js/quotes.component.js`
+`public/js/quotes.controller.js`
     - Set up your Angular controller here for the quotes state 
-`public/js/netflixController.js`
+`public/js/quotes.html`
+    - Set up your quotes.html state here
+`public/js/netflix.component.js`
+`public/js/netflix.controller.js`
     - Set up your ui-router here
+`public/js/netflix.html`
+    - Set up your netflix.html state here
 
 **Front-end Views** - `index.html`
 - This is where you will bootstrap Angular to the app. All views will render within `<ui-view></ui-view>`
 `partials/home.html`
     - This is your home page view.
-`partials/quotes.html`
+`<quotes></quotes>`
     - This is your Quotes view.
-`partials/netflix.html`
+`<netflix></netflix>`
     - This is your Netflix page view.
 
 ## Directions
@@ -46,17 +52,17 @@ Filename - Content
 
 2. Set up your router for the following states: `home`, `quotes`, `netflix` using the information provided above.
 
-3. Follow the specs for each of the following states and build the **component** with the **js** and **view** for each of them:
+3. Follow the specs for each of the following states and build the **component** with the **js** and **view** for each of them.
 
 ### State 1: The Home Page
 
-- When the page loads `localhost:3000/` the view simply renders: "This is the homepage!" Clicking on the `Home` tab will also show this view. There is no controller associated with this view.
+- When the page loads `localhost:3000/` the view simply renders: "This is the homepage!" In the navbar, clicking on the `Home` tab will also show this view. There is no controller associated with this view.
 - :dart: Make sure to Commit Often!
 
 ### State 2: Ron Swanson Quote of the Day
 
-- Clicking on the `Quotes` tab will render the Quotes partial.
-- Clicking on the `Get Swansonized` button will make an $http call to http://ron-swanson-quotes.herokuapp.com/v2/quotes . The quote in the response will show in the page where the bullet point is. Each time you click, a new quote will render.
+- In the navbar, clicking on the `Quotes` tab will render the Quotes partial.
+- In the navbar, clicking on the `Get Swansonized` button will make an $http call to http://ron-swanson-quotes.herokuapp.com/v2/quotes . The quote in the response will show in the page where the bullet point is. Each time you click, a new quote will render.
 - Once a quote is generated, a button `Save Me!` will also render on the page.
 - Clicking on the `Save Me!` button will save the quote to your local database. (Check out the quote Schema)
 - Clicking on the `<h3>See All my saved quotes</h3>` will show a list of all our saved quotes.
