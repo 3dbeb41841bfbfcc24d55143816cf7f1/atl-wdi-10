@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 105);
+/******/ 	return __webpack_require__(__webpack_require__.s = 95);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1055,17 +1055,17 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(16));
-__export(__webpack_require__(80));
-__export(__webpack_require__(81));
-__export(__webpack_require__(82));
-__export(__webpack_require__(83));
-__export(__webpack_require__(84));
-__export(__webpack_require__(85));
-__export(__webpack_require__(89));
-__export(__webpack_require__(36));
-__export(__webpack_require__(41));
-__export(__webpack_require__(86));
+__export(__webpack_require__(75));
+__export(__webpack_require__(76));
+__export(__webpack_require__(77));
+__export(__webpack_require__(78));
 __export(__webpack_require__(79));
+__export(__webpack_require__(80));
+__export(__webpack_require__(84));
+__export(__webpack_require__(31));
+__export(__webpack_require__(36));
+__export(__webpack_require__(81));
+__export(__webpack_require__(74));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -2669,7 +2669,7 @@ var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
 var trace_1 = __webpack_require__(6);
 var coreservices_1 = __webpack_require__(3);
-var interface_1 = __webpack_require__(40);
+var interface_1 = __webpack_require__(35);
 var resolvable_1 = __webpack_require__(11);
 var pathFactory_1 = __webpack_require__(17);
 var strings_1 = __webpack_require__(5);
@@ -2882,7 +2882,7 @@ var hof_1 = __webpack_require__(2);
 var interface_1 = __webpack_require__(9); // has or is using
 var transitionHook_1 = __webpack_require__(13);
 var hookRegistry_1 = __webpack_require__(26);
-var hookBuilder_1 = __webpack_require__(47);
+var hookBuilder_1 = __webpack_require__(42);
 var pathFactory_1 = __webpack_require__(17);
 var targetState_1 = __webpack_require__(7);
 var param_1 = __webpack_require__(8);
@@ -4635,21 +4635,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var interface_1 = __webpack_require__(9);
 var transition_1 = __webpack_require__(19);
 var hookRegistry_1 = __webpack_require__(26);
-var coreResolvables_1 = __webpack_require__(70);
-var redirectTo_1 = __webpack_require__(74);
-var onEnterExitRetain_1 = __webpack_require__(73);
-var resolve_1 = __webpack_require__(75);
-var views_1 = __webpack_require__(78);
-var updateGlobals_1 = __webpack_require__(76);
-var url_1 = __webpack_require__(77);
-var lazyLoad_1 = __webpack_require__(37);
-var transitionEventType_1 = __webpack_require__(48);
+var coreResolvables_1 = __webpack_require__(65);
+var redirectTo_1 = __webpack_require__(69);
+var onEnterExitRetain_1 = __webpack_require__(68);
+var resolve_1 = __webpack_require__(70);
+var views_1 = __webpack_require__(73);
+var updateGlobals_1 = __webpack_require__(71);
+var url_1 = __webpack_require__(72);
+var lazyLoad_1 = __webpack_require__(32);
+var transitionEventType_1 = __webpack_require__(43);
 var transitionHook_1 = __webpack_require__(13);
 var predicates_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
-var ignoredTransition_1 = __webpack_require__(71);
-var invalidTransition_1 = __webpack_require__(72);
+var ignoredTransition_1 = __webpack_require__(66);
+var invalidTransition_1 = __webpack_require__(67);
 /**
  * The default [[Transition]] options.
  *
@@ -4887,11 +4887,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var angular_1 = __webpack_require__(10);
 var core_1 = __webpack_require__(4);
 var views_1 = __webpack_require__(29);
-var templateFactory_1 = __webpack_require__(97);
-var stateProvider_1 = __webpack_require__(61);
-var onEnterExitRetain_1 = __webpack_require__(96);
-var locationServices_1 = __webpack_require__(94);
-var urlRouterProvider_1 = __webpack_require__(62);
+var templateFactory_1 = __webpack_require__(92);
+var stateProvider_1 = __webpack_require__(56);
+var onEnterExitRetain_1 = __webpack_require__(91);
+var locationServices_1 = __webpack_require__(89);
+var urlRouterProvider_1 = __webpack_require__(57);
 angular_1.ng.module("ui.router.angular1", []);
 var mod_init = angular_1.ng.module('ui.router.init', []);
 var mod_util = angular_1.ng.module('ui.router.util', ['ng', 'ui.router.init']);
@@ -5106,129 +5106,12 @@ exports.Ng1ViewConfig = Ng1ViewConfig;
 /* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(99);
+__webpack_require__(94);
 module.exports = angular;
 
 
 /***/ }),
 /* 31 */
-/***/ (function(module, exports) {
-
-AboutController.$inject = [];
-
-function AboutController() {
-	const vm = this;
-}
-
-module.exports = AboutController;
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports) {
-
-CriminalsNewController.$inject = ['$state', 'CriminalsService'];
-
-function CriminalsNewController($state, CriminalsService) {
-	const vm = this;
-
-	vm.createCriminal = createCriminal;
-	vm.newCriminal = {};
-
-	activate();
-
-	function activate() {}
-
-	function createCriminal() {
-		CriminalsService.create(vm.newCriminal).then(function resolve(response) {
-			const id = response.data.criminal._id;
-			$state.go('criminalsShow', { criminalId: id });
-		});
-	}
-}
-
-module.exports = CriminalsNewController;
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports) {
-
-CriminalsShowController.$inject = ['$stateParams', 'CriminalsService'];
-
-function CriminalsShowController($stateParams, CriminalsService) {
-	const vm = this;
-
-	vm.current = {};
-
-	activate();
-
-	function activate() {
-		loadCurrentCriminal();
-	}
-
-	function loadCurrentCriminal() {
-		console.log($stateParams);
-
-		CriminalsService.loadCurrent($stateParams.criminalId).then(function resolve(response) {
-			vm.current = response.data.criminal;
-		});
-	}
-}
-
-module.exports = CriminalsShowController;
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports) {
-
-CriminalsController.$inject = ['CriminalsService'];
-
-function CriminalsController(CriminalsService) {
-	const vm = this;
-
-	// WHAT THIS CONTROLLER HAS / DOES THAT IS CONNECTED TO THE VIEW
-	vm.criminals = [];
-	vm.loading = true;
-
-	// activate === BEST PRACTICE, ALWAYS DO IT, EVEN IF EMPTY
-	activate();
-
-	function activate() {
-		loadAllCriminals();
-	}
-
-	// HOW IT DOES STUFF
-	function loadAllCriminals() {
-		CriminalsService.loadAll().then(function resolve(response) {
-			console.log(response);
-			vm.criminals = response.data.criminals; // array of criminals
-			vm.loading = false;
-		});
-	}
-}
-
-module.exports = CriminalsController;
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports) {
-
-HomeController.$inject = [];
-
-function HomeController() {
-
-  // WHAT THIS CONTROLLER HAS / DOES THAT IS CONNECTED TO THE VIEW
-  const vm = this;
-
-  // activate === BEST PRACTICE, ALWAYS DO IT, EVEN IF EMPTY
-  activate();
-
-  function activate() {}
-}
-
-module.exports = HomeController;
-
-/***/ }),
-/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5238,7 +5121,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @coreapi
  * @module core
  */ /** */
-var stateParams_1 = __webpack_require__(39);
+var stateParams_1 = __webpack_require__(34);
 var queue_1 = __webpack_require__(22);
 /**
  * Global router state
@@ -5272,7 +5155,7 @@ exports.UIRouterGlobals = UIRouterGlobals;
 //# sourceMappingURL=globals.js.map
 
 /***/ }),
-/* 37 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5375,7 +5258,7 @@ exports.lazyLoadState = lazyLoadState;
 //# sourceMappingURL=lazyLoad.js.map
 
 /***/ }),
-/* 38 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5537,7 +5420,7 @@ initDefaultTypes();
 //# sourceMappingURL=paramTypes.js.map
 
 /***/ }),
-/* 39 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5587,7 +5470,7 @@ exports.StateParams = StateParams;
 //# sourceMappingURL=stateParams.js.map
 
 /***/ }),
-/* 40 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5608,7 +5491,7 @@ exports.resolvePolicies = {
 //# sourceMappingURL=interface.js.map
 
 /***/ }),
-/* 41 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5618,16 +5501,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @coreapi
  * @module core
  */ /** */
-var urlMatcherFactory_1 = __webpack_require__(49);
-var urlRouter_1 = __webpack_require__(50);
+var urlMatcherFactory_1 = __webpack_require__(44);
+var urlRouter_1 = __webpack_require__(45);
 var transitionService_1 = __webpack_require__(27);
-var view_1 = __webpack_require__(60);
-var stateRegistry_1 = __webpack_require__(45);
-var stateService_1 = __webpack_require__(46);
-var globals_1 = __webpack_require__(36);
+var view_1 = __webpack_require__(55);
+var stateRegistry_1 = __webpack_require__(40);
+var stateService_1 = __webpack_require__(41);
+var globals_1 = __webpack_require__(31);
 var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
-var urlService_1 = __webpack_require__(52);
+var urlService_1 = __webpack_require__(47);
 var trace_1 = __webpack_require__(6);
 /** @hidden */
 var _routerInstance = 0;
@@ -5798,7 +5681,7 @@ exports.UIRouter = UIRouter;
 //# sourceMappingURL=router.js.map
 
 /***/ }),
-/* 42 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6079,7 +5962,7 @@ exports.StateBuilder = StateBuilder;
 //# sourceMappingURL=stateBuilder.js.map
 
 /***/ }),
-/* 43 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6148,7 +6031,7 @@ exports.StateMatcher = StateMatcher;
 //# sourceMappingURL=stateMatcher.js.map
 
 /***/ }),
-/* 44 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6246,7 +6129,7 @@ exports.StateQueueManager = StateQueueManager;
 //# sourceMappingURL=stateQueueManager.js.map
 
 /***/ }),
-/* 45 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6256,9 +6139,9 @@ exports.StateQueueManager = StateQueueManager;
  * @module state
  */ /** for typedoc */
 Object.defineProperty(exports, "__esModule", { value: true });
-var stateMatcher_1 = __webpack_require__(43);
-var stateBuilder_1 = __webpack_require__(42);
-var stateQueueManager_1 = __webpack_require__(44);
+var stateMatcher_1 = __webpack_require__(38);
+var stateBuilder_1 = __webpack_require__(37);
+var stateQueueManager_1 = __webpack_require__(39);
 var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
 var StateRegistry = (function () {
@@ -6408,7 +6291,7 @@ exports.StateRegistry = StateRegistry;
 //# sourceMappingURL=stateRegistry.js.map
 
 /***/ }),
-/* 46 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6431,7 +6314,7 @@ var targetState_1 = __webpack_require__(7);
 var param_1 = __webpack_require__(8);
 var glob_1 = __webpack_require__(15);
 var resolveContext_1 = __webpack_require__(18);
-var lazyLoad_1 = __webpack_require__(37);
+var lazyLoad_1 = __webpack_require__(32);
 var hof_1 = __webpack_require__(2);
 /**
  * Provides state related service functions
@@ -6987,7 +6870,7 @@ exports.StateService = StateService;
 //# sourceMappingURL=stateService.js.map
 
 /***/ }),
-/* 47 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7112,7 +6995,7 @@ function tupleSort(reverseDepthSort) {
 //# sourceMappingURL=hookBuilder.js.map
 
 /***/ }),
-/* 48 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7146,7 +7029,7 @@ exports.TransitionEventType = TransitionEventType;
 //# sourceMappingURL=transitionEventType.js.map
 
 /***/ }),
-/* 49 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7160,7 +7043,7 @@ var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
 var urlMatcher_1 = __webpack_require__(20);
 var param_1 = __webpack_require__(8);
-var paramTypes_1 = __webpack_require__(38);
+var paramTypes_1 = __webpack_require__(33);
 /**
  * Factory for [[UrlMatcher]] instances.
  *
@@ -7279,7 +7162,7 @@ exports.UrlMatcherFactory = UrlMatcherFactory;
 //# sourceMappingURL=urlMatcherFactory.js.map
 
 /***/ }),
-/* 50 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7294,7 +7177,7 @@ var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
 var urlMatcher_1 = __webpack_require__(20);
 var hof_1 = __webpack_require__(2);
-var urlRule_1 = __webpack_require__(51);
+var urlRule_1 = __webpack_require__(46);
 var targetState_1 = __webpack_require__(7);
 /** @hidden */
 function appendBasePath(url, isHtml5, absolute, baseHref) {
@@ -7558,7 +7441,7 @@ function getHandlerFn(handler) {
 //# sourceMappingURL=urlRouter.js.map
 
 /***/ }),
-/* 51 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7773,7 +7656,7 @@ exports.BaseUrlRule = BaseUrlRule;
 //# sourceMappingURL=urlRule.js.map
 
 /***/ }),
-/* 52 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7859,7 +7742,7 @@ exports.UrlService = UrlService;
 //# sourceMappingURL=urlService.js.map
 
 /***/ }),
-/* 53 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7912,7 +7795,7 @@ exports.BrowserLocationConfig = BrowserLocationConfig;
 //# sourceMappingURL=browserLocationConfig.js.map
 
 /***/ }),
-/* 54 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7959,7 +7842,7 @@ exports.HashLocationService = HashLocationService;
 //# sourceMappingURL=hashLocationService.js.map
 
 /***/ }),
-/* 55 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8065,7 +7948,7 @@ exports.$injector = {
 //# sourceMappingURL=injector.js.map
 
 /***/ }),
-/* 56 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8096,7 +7979,7 @@ exports.MemoryLocationConfig = MemoryLocationConfig;
 //# sourceMappingURL=memoryLocationConfig.js.map
 
 /***/ }),
-/* 57 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8136,7 +8019,7 @@ exports.MemoryLocationService = MemoryLocationService;
 //# sourceMappingURL=memoryLocationService.js.map
 
 /***/ }),
-/* 58 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8194,7 +8077,7 @@ exports.PushStateLocationService = PushStateLocationService;
 //# sourceMappingURL=pushStateLocationService.js.map
 
 /***/ }),
-/* 59 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8255,7 +8138,7 @@ exports.$q = {
 //# sourceMappingURL=q.js.map
 
 /***/ }),
-/* 60 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8544,7 +8427,7 @@ exports.ViewService = ViewService;
 //# sourceMappingURL=view.js.map
 
 /***/ }),
-/* 61 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8690,7 +8573,7 @@ exports.StateProvider = StateProvider;
 //# sourceMappingURL=stateProvider.js.map
 
 /***/ }),
-/* 62 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8902,139 +8785,59 @@ exports.UrlRouterProvider = UrlRouterProvider;
 //# sourceMappingURL=urlRouterProvider.js.map
 
 /***/ }),
-/* 63 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const angular = __webpack_require__(30);
-__webpack_require__(92);
+__webpack_require__(87);
 
-angular.module('criminalsApp', ['ui.router']).config(uiRouterSetup);
+angular.module('RonSwansonApp', ['ui.router']);
 
-uiRouterSetup.$inject = ['$stateProvider', '$urlRouterProvider'];
-function uiRouterSetup($stateProvider, $urlRouterProvider) {
-	$stateProvider.state('home', {
-		url: '/',
-		template: '<home></home>'
-	}).state('about', {
-		url: '/about',
-		// template: '<about></about>' // LAB Goal #1 -- get this line to work
-		template: '<h1>About</h1><a ui-sref="home">Home</a>'
-	}).state('criminals', {
-		url: '/criminals',
-		template: '<criminals></criminals>'
-	}).state('criminalsNew', {
-		url: '/criminals/new',
-		template: '<criminals-new></criminals-new>'
-	}).state('criminalsShow', {
-		url: '/criminals/:criminalId',
-		template: '<criminals-show></criminals-show>'
-	});
+// Set up your UI Router HERE
 
-	$urlRouterProvider.otherwise('/');
-}
+/***/ }),
+/* 59 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports) {
+
+console.log("Netflix Controller works!");
+
+//your Netflix Controller Here
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 /* 64 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-const controller = __webpack_require__(31);
-const template = __webpack_require__(100);
+console.log("Quotes Controller Works!"
 
-const component = {
-	controller: controller,
-	template: template
-};
-
-angular.module('criminals').component('about', component);
+//Your QUOTES CONTROLLER HERE!
+);
 
 /***/ }),
 /* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-const controller = __webpack_require__(32);
-const template = __webpack_require__(101);
-
-const component = {
-	controller: controller,
-	template: template
-};
-
-angular.module('criminals').component('criminalsNew', component);
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-const controller = __webpack_require__(33);
-const template = __webpack_require__(102);
-
-const component = {
-  controller: controller,
-  template: template
-};
-
-angular.module('criminals').component('criminalsShow', component);
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-const controller = __webpack_require__(34);
-const template = __webpack_require__(103);
-
-const component = {
-	controller: controller,
-	template: template
-};
-
-angular.module('criminals').component('criminals', component);
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports, __webpack_require__) {
-
-const controller = __webpack_require__(35);
-const template = __webpack_require__(104);
-
-const component = {
-  controller: controller,
-  template: template
-};
-
-angular.module('criminals').component('home', component);
-
-/***/ }),
-/* 69 */
-/***/ (function(module, exports) {
-
-angular.module('criminals').service('CriminalsService', CriminalsService);
-
-CriminalsService.$inject = ['$http'];
-
-function CriminalsService($http) {
-	const self = this;
-
-	// WHAT THIS SERVICE DOES / HAS AVAILABLE TO CALL
-	self.create = create;
-	self.loadAll = loadAll;
-	self.loadCurrent = loadCurrent;
-
-	// HOW IT DOES STUFF
-	function create(criminalData) {
-		return $http.post('/api/criminals', criminalData);
-	}
-
-	function loadAll() {
-		return $http.get('/api/criminals');
-	}
-
-	function loadCurrent(id) {
-		return $http.get('/api/criminals/' + id);
-	}
-}
-
-/***/ }),
-/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9042,7 +8845,7 @@ function CriminalsService($http) {
 Object.defineProperty(exports, "__esModule", { value: true });
 /** @module hooks */ /** */
 var transition_1 = __webpack_require__(19);
-var router_1 = __webpack_require__(41);
+var router_1 = __webpack_require__(36);
 function addCoreResolvables(trans) {
     trans.addResolvable({ token: router_1.UIRouter, deps: [], resolveFn: function () { return trans.router; }, data: trans.router }, "");
     trans.addResolvable({ token: transition_1.Transition, deps: [], resolveFn: function () { return trans; }, data: trans }, "");
@@ -9058,7 +8861,7 @@ exports.registerAddCoreResolvables = function (transitionService) {
 //# sourceMappingURL=coreResolvables.js.map
 
 /***/ }),
-/* 71 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9095,7 +8898,7 @@ exports.registerIgnoredTransitionHook = function (transitionService) {
 //# sourceMappingURL=ignoredTransition.js.map
 
 /***/ }),
-/* 72 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9120,7 +8923,7 @@ exports.registerInvalidTransitionHook = function (transitionService) {
 //# sourceMappingURL=invalidTransition.js.map
 
 /***/ }),
-/* 73 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9183,7 +8986,7 @@ exports.registerOnEnterHook = function (transitionService) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 74 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9226,7 +9029,7 @@ exports.registerRedirectToHook = function (transitionService) {
 //# sourceMappingURL=redirectTo.js.map
 
 /***/ }),
-/* 75 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9275,7 +9078,7 @@ exports.registerLazyResolveState = function (transitionService) {
 //# sourceMappingURL=resolve.js.map
 
 /***/ }),
-/* 76 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9316,7 +9119,7 @@ exports.registerUpdateGlobalState = function (transitionService) {
 //# sourceMappingURL=updateGlobals.js.map
 
 /***/ }),
-/* 77 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9347,7 +9150,7 @@ exports.registerUpdateUrl = function (transitionService) {
 //# sourceMappingURL=url.js.map
 
 /***/ }),
-/* 78 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9400,7 +9203,7 @@ exports.registerActivateViews = function (transitionService) {
 //# sourceMappingURL=views.js.map
 
 /***/ }),
-/* 79 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9427,7 +9230,7 @@ exports.UIRouterPluginBase = UIRouterPluginBase;
 //# sourceMappingURL=interface.js.map
 
 /***/ }),
-/* 80 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9437,13 +9240,13 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(8));
-__export(__webpack_require__(38));
-__export(__webpack_require__(39));
+__export(__webpack_require__(33));
+__export(__webpack_require__(34));
 __export(__webpack_require__(23));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 81 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9458,7 +9261,7 @@ __export(__webpack_require__(17));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 82 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9468,13 +9271,13 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 /** @module resolve */ /** for typedoc */
-__export(__webpack_require__(40));
+__export(__webpack_require__(35));
 __export(__webpack_require__(11));
 __export(__webpack_require__(18));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 83 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9483,17 +9286,17 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(42));
+__export(__webpack_require__(37));
 __export(__webpack_require__(25));
-__export(__webpack_require__(43));
-__export(__webpack_require__(44));
-__export(__webpack_require__(45));
-__export(__webpack_require__(46));
+__export(__webpack_require__(38));
+__export(__webpack_require__(39));
+__export(__webpack_require__(40));
+__export(__webpack_require__(41));
 __export(__webpack_require__(7));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 84 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9517,17 +9320,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module transition
  */ /** for typedoc */
 __export(__webpack_require__(9));
-__export(__webpack_require__(47));
+__export(__webpack_require__(42));
 __export(__webpack_require__(26));
 __export(__webpack_require__(12));
 __export(__webpack_require__(19));
 __export(__webpack_require__(13));
-__export(__webpack_require__(48));
+__export(__webpack_require__(43));
 __export(__webpack_require__(27));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 85 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9537,14 +9340,14 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(20));
-__export(__webpack_require__(49));
-__export(__webpack_require__(50));
-__export(__webpack_require__(51));
-__export(__webpack_require__(52));
+__export(__webpack_require__(44));
+__export(__webpack_require__(45));
+__export(__webpack_require__(46));
+__export(__webpack_require__(47));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 86 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9558,11 +9361,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module vanilla
  */
 /** */
-__export(__webpack_require__(87));
+__export(__webpack_require__(82));
 //# sourceMappingURL=vanilla.js.map
 
 /***/ }),
-/* 87 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9571,20 +9374,20 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(59));
-__export(__webpack_require__(55));
-__export(__webpack_require__(21));
 __export(__webpack_require__(54));
-__export(__webpack_require__(57));
-__export(__webpack_require__(58));
-__export(__webpack_require__(56));
+__export(__webpack_require__(50));
+__export(__webpack_require__(21));
+__export(__webpack_require__(49));
+__export(__webpack_require__(52));
 __export(__webpack_require__(53));
+__export(__webpack_require__(51));
+__export(__webpack_require__(48));
 __export(__webpack_require__(14));
-__export(__webpack_require__(88));
+__export(__webpack_require__(83));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 88 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9595,14 +9398,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module vanilla
  */
 /** */
-var browserLocationConfig_1 = __webpack_require__(53);
-var hashLocationService_1 = __webpack_require__(54);
+var browserLocationConfig_1 = __webpack_require__(48);
+var hashLocationService_1 = __webpack_require__(49);
 var utils_1 = __webpack_require__(14);
-var pushStateLocationService_1 = __webpack_require__(58);
-var memoryLocationService_1 = __webpack_require__(57);
-var memoryLocationConfig_1 = __webpack_require__(56);
-var injector_1 = __webpack_require__(55);
-var q_1 = __webpack_require__(59);
+var pushStateLocationService_1 = __webpack_require__(53);
+var memoryLocationService_1 = __webpack_require__(52);
+var memoryLocationConfig_1 = __webpack_require__(51);
+var injector_1 = __webpack_require__(50);
+var q_1 = __webpack_require__(54);
 var coreservices_1 = __webpack_require__(3);
 function servicesPlugin(router) {
     coreservices_1.services.$injector = injector_1.$injector;
@@ -9619,7 +9422,7 @@ exports.memoryLocationPlugin = utils_1.locationPluginFactory("vanilla.memoryLoca
 //# sourceMappingURL=plugins.js.map
 
 /***/ }),
-/* 89 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9628,11 +9431,11 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(60));
+__export(__webpack_require__(55));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 90 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10209,7 +10012,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateDirectives.js.map
 
 /***/ }),
-/* 91 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10505,7 +10308,7 @@ angular_1.ng.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
 //# sourceMappingURL=viewDirective.js.map
 
 /***/ }),
-/* 92 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10523,18 +10326,18 @@ exports.core = core;
 __export(__webpack_require__(4));
 __export(__webpack_require__(28));
 __export(__webpack_require__(29));
-__export(__webpack_require__(61));
-__export(__webpack_require__(62));
-__webpack_require__(93);
+__export(__webpack_require__(56));
+__export(__webpack_require__(57));
+__webpack_require__(88);
+__webpack_require__(85);
 __webpack_require__(90);
-__webpack_require__(95);
-__webpack_require__(91);
-__webpack_require__(98);
+__webpack_require__(86);
+__webpack_require__(93);
 exports.default = "ui.router";
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 93 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10908,7 +10711,7 @@ var $urlMatcherFactoryProvider;
 //# sourceMappingURL=injectables.js.map
 
 /***/ }),
-/* 94 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10989,7 +10792,7 @@ exports.Ng1LocationServices = Ng1LocationServices;
 //# sourceMappingURL=locationServices.js.map
 
 /***/ }),
-/* 95 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11041,7 +10844,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateFilters.js.map
 
 /***/ }),
-/* 96 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11072,7 +10875,7 @@ exports.getStateHookBuilder = function (hookName) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 97 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11272,7 +11075,7 @@ var scopeBindings = function (bindingsObj) { return Object.keys(bindingsObj || {
 //# sourceMappingURL=templateFactory.js.map
 
 /***/ }),
-/* 98 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11301,7 +11104,7 @@ angular_1.ng.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProv
 //# sourceMappingURL=viewScroll.js.map
 
 /***/ }),
-/* 99 */
+/* 94 */
 /***/ (function(module, exports) {
 
 /**
@@ -44678,51 +44481,16 @@ $provide.value("$locale", {
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 
 /***/ }),
-/* 100 */
-/***/ (function(module, exports) {
-
-module.exports = "<h1>About</h1>\n";
-
-/***/ }),
-/* 101 */
-/***/ (function(module, exports) {
-
-module.exports = "<div>\n\t<form ng-submit=\"$ctrl.createCriminal()\">\n\t\t<label for=\"name\">Name:</label>\n\t\t<input id=\"name\" type=\"text\" ng-model=\"$ctrl.newCriminal.name\" />\n\n\t\t<label for=\"name\">Crime:</label>\n\t\t<input id=\"crime\" type=\"text\" ng-model=\"$ctrl.newCriminal.crime\" />\n\n\t\t<button type=\"submit\">Create</button>\n\t</form>\n</div>\n";
-
-/***/ }),
-/* 102 */
-/***/ (function(module, exports) {
-
-module.exports = "<div>\n\tName: {{ $ctrl.current.name }}\n\t<br />\n\tCrime: {{ $ctrl.current.crime }}\n</div>\n";
-
-/***/ }),
-/* 103 */
-/***/ (function(module, exports) {
-
-module.exports = "<ul class=\"criminals\">\n\t<li ng-show=\"$ctrl.loading\">\n\t\t<strong>Loading...</strong>\n\t</li>\n\n  <li ng-hide=\"$ctrl.loading\" ng-repeat=\"criminal in $ctrl.criminals\">\n    <strong>{{criminal.name}}</strong>\n\n\t\t<!-- Reference for Gerry -->\n    <!-- <em>{{criminal.crime}}</em> -->\n\n    <span ng-if=\"criminal.status\" class='status {{criminal.status | lowercase }}'>{{criminal.status | uppercase}}</span>\n\n    <a ui-sref=\"criminalsShow({criminalId: criminal._id})\">{Click to see their crime (in users#show)</a>\n  </li>\n</ul>\n";
-
-/***/ }),
-/* 104 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"home\">\n  <h1>Home!!</h1>\n</div>\n";
-
-/***/ }),
-/* 105 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(58);
+__webpack_require__(59);
+__webpack_require__(60);
+__webpack_require__(61);
+__webpack_require__(62);
 __webpack_require__(63);
-__webpack_require__(64);
-__webpack_require__(31);
-__webpack_require__(65);
-__webpack_require__(32);
-__webpack_require__(66);
-__webpack_require__(33);
-__webpack_require__(67);
-__webpack_require__(34);
-__webpack_require__(68);
-__webpack_require__(35);
-module.exports = __webpack_require__(69);
+module.exports = __webpack_require__(64);
 
 
 /***/ })

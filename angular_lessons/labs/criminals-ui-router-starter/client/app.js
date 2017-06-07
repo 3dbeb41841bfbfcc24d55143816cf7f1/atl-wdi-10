@@ -6,6 +6,7 @@ angular
 	.config(uiRouterSetup);
 
 uiRouterSetup.$inject = ['$stateProvider', '$urlRouterProvider'];
+
 function uiRouterSetup($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('home', {

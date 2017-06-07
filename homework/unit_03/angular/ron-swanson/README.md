@@ -25,9 +25,9 @@ In this assignment, you'll have a chance to work with a Single Page App (SPA) th
 - I have run `npm install --save angular`
     - now we don't have to add that script to the index.html page
     - remember that when you do this, you have to require angular (just like in our express apps), in our app.js (which I have done for you)
-- I have run `npm install --save-dev babel-core babel-loader babel-preset-env`
-    - now we can use ES2015 in our app and babel will transpile it for us
-- I have run `npm install @uirouter/angularjs --save`
+<!-- - I have run `npm install --save-dev babel-core babel-loader babel-preset-env`
+    - now we can use ES2015 in our app and babel will transpile it for us -->
+- I have run `npm install angular-ui-router --save`
     - now we don't have to add the script to the index.html page
 
 **You should be able to see all of these npm packages in your package.json after you run npm install**
@@ -36,7 +36,8 @@ Here is the [gist](https://gist.github.com/dphurley/f94813ab20e7baf8b325867a6f11
 
 - Use `npm start` to run nodemon
     - I have added the nodemon.json for you, so that nodemon doesn't restart when we make client-side changes
-- Use `webpack --watch` to watch for changes on our client-side
+- Run `npm run build` to build out your webpack
+- In another tab run `npm run build:dev` which will have webpack watch for changes on the client-side
 
 <br />
 

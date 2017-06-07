@@ -74,14 +74,18 @@ Let's load up a Webpack-ready project-
 - run `npm install`
 - run `node config/seeds`
 - run `npm start`
+- run `npm run build`
+- in another tab run `npm run build:dev`
 
 #### To add UI-Router:
 
-The name of the `npm` package is `@uirouter/angularjs`, so we need to install it and `--save` it to our dependencies.
+The name of the `npm` package is `angular-ui-router`, so we need to install it and `--save` it to our dependencies.
 
 ```bash
-npm install @uirouter/angularjs --save
+npm install angular-ui-router --save
 ```
+
+You will get a warning when you do this about angular-ui-router is deprecated.  Don't worry about it.
 
 ### Step Two: Adding a Dependency
 
