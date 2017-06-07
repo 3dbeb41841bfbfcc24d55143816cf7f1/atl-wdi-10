@@ -127,13 +127,13 @@ You will be writing your code in:
 
 - Add a 4th state with a 3rd party API of your choice! -->
 
-## :bug: Bug Report
-
-You will come across a ton of bugs and error messages. Don't forget to submit a bug report through Github Issues.  
-
 ## How to succeed
 
-Work together, help each other, and also use the debugging slack channel.  
+Work together, help each other, and also use the debugging slack channel.
+
+## :bug: Bug Report
+
+You will come across a ton of bugs and error messages. Don't forget to submit a bug report through Github Issues.    
 
 ## Submitting Your Work
 
