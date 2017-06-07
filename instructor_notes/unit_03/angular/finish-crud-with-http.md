@@ -312,6 +312,7 @@ We will just push that new gif onto our array of gifs:
 ```js
 vm.savedGifs.push(giphyResponse.data.data);
 
+// acting as a redirect
 $state.go('savedGifs');
 ```
 
@@ -338,8 +339,8 @@ function getSavedGifs() {
 <div class="all-gifs-container">
   <div ng-repeat="gif in giphyCtrl.savedGifs">
     <div>
-      <h4>{{gif.gifName}}</h4>
-      <img src="{{gif.gifUrl}}" alt=""></img>
+      <h4>{{gif.name}}</h4>
+      <img src="{{gif.url}}" alt="{{gif.name}}"></img>
     </div>
   </div>
 </div>
@@ -404,8 +405,8 @@ It's going to call a function we haven't built yet called populateFormData and w
 
 ```js
 function populateFormData(gif) {
-  vm.gifUrl = gif.gifUrl;
-  vm.gifName = gif.gifName;
+  vm.url = gif.url;
+  vm.name = gif.name;
 
   $state.go('updateGif', { gifId: gif._id })
  }
@@ -438,12 +439,12 @@ Two, it's one less piece we need to keep track of in the dom. I'm sure all of yo
 <div>
   <form ng-submit="giphyCtrl.updateGif()">
     <div>
-      <label for="gifName">name</label>
-      <input ng-model="giphyCtrl.gifName" name="gifName" type="text">
+      <label for="name">name</label>
+      <input ng-model="giphyCtrl.name" name="name" type="text">
     </div>
     <div>
-      <label for="gifUrl">url</label>
-      <input ng-model="giphyCtrl.gifUrl" name="gifUrl" type="text">
+      <label for="url">url</label>
+      <input ng-model="giphyCtrl.url" name="url" type="text">
     </div>
 
     <button type="submit"> Update Gif</button>
@@ -459,12 +460,12 @@ Then we can access the name and the url from where they are defined on the contr
 
 ```js
 function updateGif() {
-  $http.put(`/gifs/${$stateParams.gifId}`, { gifName: vm.gifName, gifUrl: vm.gifUrl } )
+  $http.put(`/gifs/${$stateParams.gifId}`, { name: vm.name, url: vm.url } )
     .then(function(giphyResponse) {
       vm.savedGifs = giphyResponse.data.gifs;
 
-      vm.gifUrl = '';
-      vm.gifName = '';
+      vm.url = '';
+      vm.name = '';
 
       $state.go('savedGifs');
     })

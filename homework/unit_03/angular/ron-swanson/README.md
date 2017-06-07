@@ -2,7 +2,7 @@
 
 ![image](https://media.giphy.com/media/jKcZoEyfReNYQ/giphy.gif)
 
-In this weekend assignment, you'll have a chance to work with a Single Page App (SPA) that uses 3 states using ui-router: a home page, a Ron Swanson quote generator, and a Netflix movie poster generator. You'll be making calls to 2 external APIs, along with our own back-end.
+In this assignment, you'll have a chance to work with a Single Page App (SPA) that uses 3 states using ui-router: a home page, a Ron Swanson quote generator, and a Netflix movie poster generator. You will be making calls to 2 external APIs, along with our own back-end.
 
 
 
@@ -18,17 +18,27 @@ In this weekend assignment, you'll have a chance to work with a Single Page App 
 
 - Your app is set up for you. You will be writing your code in:
 
-|   |Filename |   Content|  
-|---|---|---|---|---|
-|  **Server-side Controllers** | `controllers/quotes.js`  |  This is where you will write your CRUD routes for the quotes state |   
-|   | `controllers/netflix.js`  |  This is where you will write your CRUD routes for the Netflix state  |  
-|  **Front-end Scripts** |  `public/js/router.js` |  Set up your ui-router here. |
-|  |  `public/js/quotesController.js` |  Set up your Angular controller here for the quotes state |   
-|  |  `public/js/netflixController.js`|  Set up your ui-router here. |   
-|    **Front-end Views**|  `index.html` |  This is where you will bootstrap Angular to the app. All views will render within `<ui-view></ui-view>` |
-|  |  `partials/home.html`|  This is your home page view. |  
-|  |  `partials/quotes.html`|  This is your Quotes view. |   
-|  |  `partials/netflix.html`|  This is your Netflix page view. |    
+Filename - Content
+**Server-side Controllers** - `controllers/quotes.js`  
+    - This is where you will write your CRUD routes for the quotes state 
+    `controllers/netflix.js`  
+        - This is where you will write your CRUD routes for the Netflix state
+
+**Front-end Scripts** - `public/js/router.js`
+    - Set up your ui-router here. 
+    `public/js/quotesController.js`
+        - Set up your Angular controller here for the quotes state 
+    `public/js/netflixController.js`
+        - Set up your ui-router here
+
+**Front-end Views** - `index.html`
+    - This is where you will bootstrap Angular to the app. All views will render within `<ui-view></ui-view>`
+    `partials/home.html`
+        - This is your home page view.
+    `partials/quotes.html`
+        - This is your Quotes view.
+    `partials/netflix.html`
+        - This is your Netflix page view.
 
 ## Directions
 
@@ -36,12 +46,12 @@ In this weekend assignment, you'll have a chance to work with a Single Page App 
 
 2. Set up your router for the following states: `home`, `quotes`, `netflix` using the information provided above.
 
-3. Follow the specs for each of the following states and build the **controller** and **view** for each of them:
+3. Follow the specs for each of the following states and build the **component** with the **js** and **view** for each of them:
 
 ### State 1: The Home Page
 
-- When the page loads `localhost:3000/` the view simply renders "This is the homepage!" Clicking on the `Home` tab will also show this view. There is no controller associated with this view.
-- :dart: Commit often!
+- When the page loads `localhost:3000/` the view simply renders: "This is the homepage!" Clicking on the `Home` tab will also show this view. There is no controller associated with this view.
+- :dart: Make sure to Commit Often!
 
 ### State 2: Ron Swanson Quote of the Day
 
@@ -79,9 +89,9 @@ You will come across a ton of bugs and error messages. Don't forget to submit 1 
   When you're ready to submit your work,
 
   1.  Add, commit, and push your code to your fork of the class repo.
-  2.  File an issue on the class repo titled "Your Name -- wXXdXX".
+  2.  Add your submission to schoology.
 
-  The issue should include:
+  The submission should include:
 
   -   A link that points back to your fork.
 
