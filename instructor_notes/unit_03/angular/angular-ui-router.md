@@ -53,11 +53,11 @@ When a request comes in that matches `'/'`, send your request and get your respo
 
 We want to have multiple pages! And we don't want to have a bunch of `<div ng-show="isOnHomePage">...</div>`, `<div ng-show="isOnAboutPage">...</div>` -- this is terrible and makes me sad. :(
 
-Using a router with a front-end framework is how we can simulate a multi-page application, but just load HTML, CSS, and JS once. Once those are loaded (just that one time), every time we change pages it will be lightning fast.  It makes AJAX (Asynchronous JavaScript and XML) calls to the backend for any other data/views that it needs).
+Using a router with a front-end framework is how we can simulate a multi-page application, but just load HTML, CSS, and JS once. Once those are loaded (just that one time), every time we change pages it will be lightning fast. Our router just sets up which routes we want to exist and points our code where to make it happen. It makes AJAX (Asynchronous JavaScript and XML) calls to the backend for any other data/views that it needs). 
 
 All that a front-end router does is toggle which page to show. This is much faster than having to reload the HTML, CSS, and JS every time.
 
-To better understand this, let's walk through the puzzle pieces.
+To better understand this, let's walk through the puzzle pieces. 
 
 ## Identify the puzzle pieces of UI Router
 
@@ -69,27 +69,21 @@ However, the community realized there was a lot of missing functionality, so the
 
 ## Seven Steps to UI-Router - Codealong (40 mins)
 
-#### Step One: UI-Router
+### Step One: UI-Router
 
 We'll need the UI-Router source. It's not an official, core library, and it's not hosted on Google's site. 
 
-Let's load up [a Webpack-ready project](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/angular_lessons/labs/criminals-ui-router-starter).
+Let's load up a Webpack-ready project-
+- cd into `atl-wdi-10/angular-lessons/labs/criminals-ui-router-starter`
+- npm install
 
-The name of the `npm` package was `@uirouter/angularjs` so we need to install it and `--save` it to our dependencies.
+#### To add UI-Router:
+
+The name of the `npm` package is `@uirouter/angularjs`, so we need to install it and `--save` it to our dependencies.
 
 ```bash
 npm install @uirouter/angularjs --save
 ```
-
-Now inside our main JavaScript file (often times called `app.js`, `main.js`, or `index.js`), let's `require` the UI Router module then inject it as a dependency (aka tell Angular that we depend on this module).
-
-```javascript
-require('angular-ui-router');
-
-angular.module('myApp', ['ui.router']);
-```
-
-Now we're _almost_ ready to rock!
 
 <!-- CDNJS [has the file](https://cdnjs.com/libraries/angular-ui-router)
 
@@ -111,9 +105,21 @@ In public/index.html -->
 <!-- <script src="js/app.js"></script>
 ``` -->
 
-#### Step Two: Adding a Dependency
+### Step Two: Adding a Dependency
 
-Because we're adding in a new library, it'll be a dependency – we'll need to make sure Angular knows about our library, so we can use it.
+Now inside our main JavaScript file (in our `/client/app.js`), let's `require` the UI Router module then inject it as a dependency (aka tell Angular that we depend on this module).
+
+```javascript
+require('angular-ui-router');
+
+angular.module('criminalsApp', ['ui.router']);
+```
+
+`'ui.router'` is what the library is called at it's source. Most libraries will tell you how to add the dependency in their documentation. If you need more than one dependency, just list them like any array.
+
+Now we're _almost_ ready to rock!
+
+<!-- Because we're adding in a new library, it'll be a dependency – we'll need to make sure Angular knows about our library, so we can use it.
 
 We're going to touch a new file called `router.js` inside of our public directory
 ```javascript
@@ -122,9 +128,9 @@ angular
   .module('giphyAngularApp', ['ui.router']);
 ```
 
-`'ui.router'` just happens to be what the library is called in it's source. Most libraries will tell you what to write here in their documentation, and if you need more than one, just list them like any array.
+`'ui.router'` just happens to be what the library is called in it's source. Most libraries will tell you what to write here in their documentation, and if you need more than one, just list them like any array. -->
 
-#### Philosophically, what is routing?
+<!-- #### Philosophically, what is routing?
 
 A route, in general, is just the path you take to get somewhere. That's not specific to web development, but it's one of those words we've latched on because it's a good description – when you're changing URL, when that location bar changes, you're on a new route.
 
@@ -132,75 +138,96 @@ Our router just sets up which routes we want to exist and points our code where 
 
 This means our Angular app can simulate having multiple pages, which gives us the ability to make more complex applications...which is awesome!
 
-Let's open up our `app.js` and add some routes.
+Let's open up our `app.js` and add some routes. -->
 
-#### Step Three: Add Some Configuration
+### Step Three: Add Some Configuration
 
-In `router.js`, we had this:
+In our `/client/app.js`, this is what we started with:
 
 ```javascript
-angular.module('giphyAngularApp', ['ui.router'])
+angular.module('criminalsApp', ['ui.router'])
 ```
 
-Let's add on to it:
+We have added on to it:
 
 ```javascript
-angular.module('giphyAngularApp', ['ui.router'])
-  .config(GiphyRouter);
+angular.module('criminalsApp', ['ui.router'])
+  .config(uiRouterSetup);
 ```
 
-Of course, now we need a `GiphyRouter()` function, so let's build one:
+Of course, now we need a `uiRouterSetup()` function, so let's build one:
 
 ```javascript
-GiphyRouter.$inject = ['$stateProvider', '$urlRouterProvider'];
+uiRouterSetup.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-function GiphyRouter($stateProvider, $urlRouterProvider) {
+function uiRouterSetup($stateProvider, $urlRouterProvider) {
   // ROUTE
 }
 ```
 
-The arguments in the function are necessary parts for our router to do its work, however, we're specifically injecting using the `$inject` syntax to ensure that the file will work after minification.
+The arguments in the function are the necessary pieces that our router needs in order to do its work, however, we are specifically injecting it using the `$inject` syntax to ensure that the file will work after minification.
 
-#### Step Four: Add Some Routes
+### Step Four: Add Some Routes
 
-When using Angular, we're not really changing locations (single-page apps, here), lets, instead of calling them _routes_, call them **states**. Same idea as routes, but we're just trying to be more descriptive. We're changing the current _state_ of the app, as in a snapshot of the stuff we're looking at and working with, at a particular moment.
+When using Angular, we are not really changing locations (single-page apps, here), lets, instead of calling them _routes_, call them **states**. States is the same idea as routes, but it is more descriptive. We are changing the current **state** of the app, as in a snapshot the data/view that we are looking at and working with, at any particular moment.
 
 ```javascript
-function GiphyRouter($stateProvider, $urlRouterProvider) {
-  $stateProvider
-    .state('routingTest', {
-      url: "/test",
-      templateUrl: "/partials/test.html",
-    });
+$stateProvider
+  .state('criminalsShow', {
+    url: '/criminals/:criminalId',
+    template: '<criminals-show></criminals-show>'
+  });
+
+// Inside the criminals-show component's controller
+CriminalsShowController.$inject = ['$stateParams', 'CriminalsService'];
+
+function CriminalsShowController($stateParams, CriminalsService) {
+  console.log($stateParams);
 }
 ```
 
-That weird `$stateProvider` argument comes from our library, and it allows us to add a state to our application.
+Static pages are great, but we are going to want to do more with our app. When we have more CRUD info, we will have to pull info from the URL.
 
-We define a **name** for the state. This is important because it's how we can refer to it later.
+Remember RESTful routes? Where `users#show` is accessed by going to `/users/:userId`?
 
-We also define a **relative url** for each state to tell the browser how to simulate navigating different pages. A `/` here says it'll be the default homepage, basically.
+UI Router acknowledges RESTful standards and the fact that we need to get values from the URL, such as `/:userId` or `/:articleId`. It makes it easy to use in our code.
+
+UI Router makes this available in the controller as an injectable `$stateParams` object.
+
+#### Pieces of state
+
+We define a **name** for the state. This is important because it's how we can refer to it later, followed by a comma and an object.
+
+In the objecy, we define a **relative url** for each state to tell the browser how to simulate navigating different pages. A `/` here says it'll be the default homepage, basically.
 
 And finally, we add a **templateURL**, which is sort of a partial HTML file. We'll fill a partial with _just_ the code we'd need to change on the page, here.  Remember, it's just a part of a larger HTML page with parts that we can hide.
 
+**Side Note:** Some docs will mention `$state.params` -- this is _the exact same object_. UI Router just added `$stateParams` for readability.
+
 #### Otherwise
 
-Let's also add a catch-all to ensure that we route to the home if a state is not found:
+Let's also add a catch-all using the .otherwise method, on the $urlRouterProvider, to ensure that we route to the home if a state is not found:
 
 ```javascript
-function GiphyRouter($stateProvider, $urlRouterProvider) {
+function uiRouterSetup($stateProvider, $urlRouterProvider) {
+  $stateProvider
+    ...
+    .state('criminalsShow', {
+      url: '/criminals/:criminalId',
+      template: '<criminals-show></criminals-show>'
+    });
 
   $urlRouterProvider.otherwise('/');
-
-  $stateProvider
-    .state('routingTest', {
-      url: "/test",
-      templateUrl: "/partials/test.html",
-    });
 }
 ```
 
-#### Step Five: Building Partials
+#### Looking at that `console.log`ged state
+
+Now if we were to go to `url.com/#/criminals/1`, the following would be `console.log`ged:
+
+`{ criminalId: '1' }`
+
+### Step Five: Building Partials
 
 Before our route can work we actually need to create the partial we're trying to render, just like in server side rendering.
 

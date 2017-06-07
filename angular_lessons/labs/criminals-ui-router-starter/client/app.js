@@ -2,7 +2,7 @@ const angular = require('angular');
 require('angular-ui-router');
 
 angular
-	.module('criminals', ['ui.router'])
+	.module('criminalsApp', ['ui.router'])
 	.config(uiRouterSetup);
 
 uiRouterSetup.$inject = ['$stateProvider', '$urlRouterProvider'];
