@@ -45,7 +45,7 @@ You will be writing your code in:
 
 - `/controllers/quotes.js`  
     - This is where you will write your CRUD routes for the quotes state 
-- `controllers/netflix.js`  
+- `/controllers/netflix.js`  
     - This is where you will write your CRUD routes for the Netflix and quotes state- with express + ajax
 
 ### Front-end Scripts 
