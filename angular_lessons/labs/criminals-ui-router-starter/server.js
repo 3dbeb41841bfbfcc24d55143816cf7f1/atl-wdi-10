@@ -2,6 +2,7 @@ var express = require('express');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var app = express();
+var port = 3000;
 
 var mongoose = require('mongoose');
 
@@ -16,4 +17,6 @@ app.use(express.static('public'));
 var criminalsController = require('./server/routes/criminals.js');
 app.use('/api/criminals', criminalsController);
 
-app.listen(3000);
+app.listen(port, function(){
+    console.log("Listening on port " + port);
+});

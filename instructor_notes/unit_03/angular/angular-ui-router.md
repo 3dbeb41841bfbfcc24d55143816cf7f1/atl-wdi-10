@@ -21,47 +21,76 @@ competencies: Front-end Frameworks
 - Build a basic Angular app
 - Interact with an API
 
-## Intro (5 mins)
+## Hook (5 mins)
 
 Routing, as you saw in our last unit, is the process of constructing a system that renders different pages in an application based on a RESTful url.
 
-We _could_ display views to the user by showing/hiding different parts of the DOM. The problem with this is that users can't really navigate through your application, share urls, bookmark parts of your website etc.  
+<!-- In Angular, we _could_ display views to the user by showing/hiding different parts of the DOM. The problem with this is that users can't really navigate through your application, share urls, bookmark parts of your website etc.  --> 
 
-So we need a solution. A way to maintain our Single Page Architecture (SPA) while giving the illusion that the user is navigating to different pages.
+So far, we have only dealt with a single page. What websites do you go to daily that only has _one page_ and doesn't change with interaction?
 
-This all comes down to storing our views on our main page and turning them on and off as we need.
+Comparatively, how many websites do you go to daily that have multiple pages (aka views)?
 
-But what is the benefit? Why even make it single page? Why add that complexity? The main use case for front-end frameworks is added speed – by loading everything upfront, and just switching sections on and off, our page will seem wonderfully speedy because we'll be skipping quite a few steps that a more traditional framework has to run through.
+We still need a solution. A way to maintain our Single Page Architecture (SPA) while giving the illusion that the user is navigating to different pages.  That's where UI-Router comes in.  But before that...
+
+<!-- What is the benefit of this? Why even make it single page? Why add that complexity? The main use case for front-end frameworks is speed – by loading everything upfront, and using AJAX to grab the sections that we need, our page will be super speedy. -->
+
+## Review: Routes
+
+Routing in a nutshell: When we hit a URL, what happens? 
+
+Routing is the server's way of saying "When you hit `<SOME URL HERE>`, call `<SOME CONTROLLER CODE HERE>`"
+
+```javascript
+router.get('/', function(req, res) {
+  res.render('home');
+});
+```
+
+When a request comes in that matches `'/'`, send your request and get your response from the server through the callback function.
+
+## Explain why we need a router
+
+We want to have multiple pages! And we don't want to have a bunch of `<div ng-show="isOnHomePage">...</div>`, `<div ng-show="isOnAboutPage">...</div>` -- this is terrible and makes me sad. :(
+
+Using a router with a front-end framework is how we can simulate a multi-page application, but just load HTML, CSS, and JS once. Once those are loaded (just that one time), every time we change pages it will be lightning fast.  It makes AJAX (Asynchronous JavaScript and XML) calls to the backend for any other data/views that it needs).
+
+All that a front-end router does is toggle which page to show. This is much faster than having to reload the HTML, CSS, and JS every time.
+
+To better understand this, let's walk through the puzzle pieces.
 
 ## Identify the puzzle pieces of UI Router
 
-Note: Angular comes with its default router called `ngRouter`. 
-You can read about [here](https://docs.angularjs.org/api/ngRoute/service/$route)
+Note: Angular comes with its default router called `ngRouter`.
 
-However, the community realized there was a lot missing so they made their own solution. Enter in [UI Router](https://github.com/angular-ui/ui-router)!
+You can read more about [here](https://docs.angularjs.org/api/ngRoute/service/$route).
 
-Let's navigate to [an example CodePen](http://codepen.io/rgpass/pen/XMGvOL/#/) so we can play around.
-
-It may be helpful for you to signup for CodePen, and then Fork this CodePen. This way you can take notes on your copy.
-
-Bonus: `ui-sref-active='active'`
-
-Showcase your skills: Add a new route and link to it.
-
-* Load up the CodePen
-* Sign up if you haven't already
-* Fork the pen
-* Add a state called `aboutState`
-* Add a link to it on the home page
-* If the link is not showing up as a hyperlink, you may have a typo
-
-Let's get to it.
+However, the community realized there was a lot of missing functionality, so they made their own solution. Enter in [UI Router](https://github.com/angular-ui/ui-router)!
 
 ## Seven Steps to UI-Router - Codealong (40 mins)
 
 #### Step One: UI-Router
 
 We'll need the UI-Router source. It's not an official, core library, and it's not hosted on Google's site. 
+
+Let's load up [a Webpack-ready project](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/angular_lessons/labs/criminals-ui-router-starter).
+
+The name of the `npm` package was `@uirouter/angularjs` so we need to install it and `--save` it to our dependencies.
+
+```bash
+npm install @uirouter/angularjs --save
+```
+
+Now inside our main JavaScript file (often times called `app.js`, `main.js`, or `index.js`), let's `require` the UI Router module then inject it as a dependency (aka tell Angular that we depend on this module).
+
+```javascript
+require('angular-ui-router');
+
+angular.module('myApp', ['ui.router']);
+```
+
+Now we're _almost_ ready to rock!
+
 <!-- CDNJS [has the file](https://cdnjs.com/libraries/angular-ui-router)
 
 ```
@@ -228,13 +257,6 @@ That very, very simply is how to route on the front end in Angular.
 
   In order to escape that front-end routing will preface all of our paths with that `#` so the browser doesn't get confused and just treats our nice looking routes as decoration rather than commands to make HTTP GET requests.
 
-
-
-
-  #### The Docs:
-
-  https://github.com/angular-ui/ui-router/wiki/URL-Routing
-
 #### Helpful Extra - Which state am I on?
 
 `ui.router` actually gives us another really useful custom directive. Throw it on whichever links are using `ui-sref`:
@@ -245,11 +267,35 @@ That very, very simply is how to route on the front end in Angular.
   <a ui-sref-active="active" ui-sref="archive">Archive</a>
 </nav>
 ```
+
 This is a really nice helper that will apply the class of "active" (or whatever you put in quotes) to the link that's currently active, depending on what state you're looking at.
 
 And suddenly, your interface makes a ton more sense. Super helpful.
 
-#### Get rid of the hash bang in the URL
+### CodePen walk-through
+
+Let's navigate to [an example CodePen](http://codepen.io/rgpass/pen/XMGvOL/#/) so we can play around.
+
+It may be helpful for you to signup for CodePen, and then Fork this CodePen. This way you can take notes on your copy.
+
+Bonus: `ui-sref-active='active'`
+
+Showcase your skills: Add a new route and link to it.
+
+* Load up the CodePen
+* Sign up if you haven't already
+* Fork the pen
+* Add a state called `aboutState`
+* Add a link to it on the home page
+* If the link is not showing up as a hyperlink, you may have a typo
+
+Let's get to it.
+
+### The Docs:
+
+https://github.com/angular-ui/ui-router/wiki/URL-Routing
+
+<!-- #### Get rid of the hash bang in the URL
 
 Browsers have a difficult time keeping track of browsing history when dealing with state so they insert an extra `#` into the URL. To clean that up, we'll inject `$locationProvider` into our Main Router.
 
@@ -270,4 +316,4 @@ function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
 }
 ```
 
-Here we're setting html5mode to true and telling Angular we don't need to specify a base tag (`/`) in the head of our html. Read more about it [here](https://docs.angularjs.org/error/$location/nobase)
+Here we're setting html5mode to true and telling Angular we don't need to specify a base tag (`/`) in the head of our html. Read more about it [here](https://docs.angularjs.org/error/$location/nobase) -->
