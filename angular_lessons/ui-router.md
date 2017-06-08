@@ -28,22 +28,22 @@ Routing in a nutshell: When we hit a URL, what happens?
 Routing is the server's way of saying "When you hit `<SOME URL HERE>`, call `<SOME CONTROLLER CODE HERE>`"
 
 ```javascript
-router.get('/', function homeAction(req, res) {
+router.get('/', function(req, res) {
 	res.render('home');
 });
 ```
 
-When a request comes in that matches `'/'`, call `homeAction`.
+When a request comes in that matches `'/'`, send your request and get your response from the server through the callback function.
 
 ## Explain why we need a router
 
 We want to have multiple pages! And we don't want to have a bunch of `<div ng-show="isOnHomePage">...</div>`, `<div ng-show="isOnAboutPage">...</div>` -- this is terrible and makes me sad. :(
 
-Using a router with a FE framework is how we can simulate a multi-page application but just load HTML, CSS, and JS once. Once those are loaded _just once_, every time we change pages it'll be lightning quick.
+Using a router with a front-end framework is how we can simulate a multi-page application, but just load HTML, CSS, and JS once. Once those are loaded (just that one time), every time we change pages it will be lightning fast.  It makes AJAX (Asynchronous JavaScript and XML) calls to the backend for any other data that it needs).
 
-All that a FE router does is toggle what page to show. This is much faster than having to reload the HTML, CSS, and JS every time.
+All that a front-end router does is toggle which page to show. This is much faster than having to reload the HTML, CSS, and JS every time.
 
-To better understand, let's check out the puzzle pieces.
+To further understand this, let's walk through the puzzle pieces.
 
 ## Identify the puzzle pieces of UI Router
 
@@ -51,7 +51,7 @@ Note: Angular comes with its default router called `ngRouter`. However, the comm
 
 Let's navigate to [an example CodePen](http://codepen.io/rgpass/pen/XMGvOL/#/) so we can play around.
 
-It may be helpful for you to signup for CodePen then Fork this CodePen. This way you can take notes on your copy.
+It may be helpful for you to signup for CodePen, and then Fork this CodePen. This way you can take notes on your copy.
 
 Bonus: `ui-sref-active='active'`
 
@@ -66,12 +66,12 @@ Showcase your skills: Add a new route and link to it.
 
 ## Use UI Router with Webpack
 
-Let's load up [a Webpack-ready project](https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/angular_lessons/labs/criminals-ui-router-starter).
+Let's load up [a Webpack-ready project](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/angular_lessons/labs/criminals-ui-router-starter).
 
-The name of the `npm` package is `angular-ui-router` so let's install that and `--save` it to our dependencies.
+The name of the `npm` package was `@uirouter/angularjs` so let's install that and `--save` it to our dependencies.
 
 ```bash
-npm i angular-ui-router --save
+npm install @uirouter/angularjs --save
 ```
 
 Now inside our main JavaScript file (often times called `app.js`, `main.js`, or `index.js`), let's `require` the UI Router module then inject it as a dependency (aka tell Angular that we depend on this module).
@@ -98,14 +98,13 @@ $stateProvider
 	});
 ```
 
-Let's make a couple of static pages as components. For example, let's make `home`, `about`, and `contact`.
+Let's walk through a couple of static pages as components in CodePen.
 
-I'll make a `home` page and a route. Together we'll make an `about` page and route. Then you'll make a `contact` page on your own.
-
+Then you can make a `contact` page on your own.
 
 ## Leverage `$stateParams`
 
-Static pages are great, but we're going to want to do more with our app. When we have more CRUD info, we will have to pull info from the URL.
+Static pages are great, but we are going to want to do more with our app. When we have more CRUD info, we will have to pull info from the URL.
 
 Remember RESTful routes? Where `users#show` is accessed by going to `/users/:userId`?
 

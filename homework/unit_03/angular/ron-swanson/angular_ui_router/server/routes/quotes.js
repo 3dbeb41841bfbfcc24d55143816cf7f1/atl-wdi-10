@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Quote = require('../models/quote.js');
+var Quote = require('../../models/quote.js');
 
 //your routes here
 

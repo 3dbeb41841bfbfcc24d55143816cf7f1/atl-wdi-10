@@ -2,13 +2,14 @@
   "name": "express-routing-lab",
   "version": "0.0.0",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon app.js",
     "build": "webpack",
     "build:dev": "webpack --watch"
   },
   "dependencies": {
     "angular": "^1.6.4",
-    "angular-ui-router": "^0.4.2",
+    "angular-ui-router": "^1.0.3",
+    "babel-preset-es2015": "^6.24.1",
     "body-parser": "^1.13.2",
     "cookie-parser": "~1.3.5",
     "cors": "^2.7.1",
