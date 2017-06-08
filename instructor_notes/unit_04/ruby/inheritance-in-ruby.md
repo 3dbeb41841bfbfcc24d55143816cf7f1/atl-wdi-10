@@ -56,9 +56,11 @@ In Rails we'll build classes that inherit behavior of a controller, a model, a r
 ## build a Pet class
 
  - Should start with
-   house_trained as boolean
+   * house_trained as boolean
  - initialized with
-   rescued, sex, disposition
+   * age as an integer
+   * sex as a string
+   * disposition as a string
 
  - a method called sleep on the couch that logs something
 
@@ -69,10 +71,10 @@ In Rails we'll build classes that inherit behavior of a controller, a model, a r
 ## build a Cat class
 
   - should be initialized with:
-    breed as a string
-    snark as a boolean
+    * breed as a string
+    * snark as a boolean
 
-  method meoww => logs "meoww"
+  method meow => logs "meoww"
 
   - add attr_accessor to all attributes
 

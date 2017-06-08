@@ -92,7 +92,7 @@ class BananaStand
     "yellow"
   end
   def opened_in
-    2015
+    2003
   end
   def manager
     "George Michael"
@@ -192,7 +192,7 @@ class BananaStand
 
 end
 
-new_stand = BananaStand.new('red', 2015, 'Colin', -500)
+new_stand = BananaStand.new('red', 2017, 'Jamie', -500)
 ```
 
 The `initialize` method is called immediately right after `.new` is called on a class.
@@ -207,7 +207,7 @@ var BananaStand = function(color, openedIn, manager, money) {
   this.money = money;
 }
 
-var myStand = new BananaStand('Zebra stripes', 2015, 'Colin\'s Evil Twin', 500)
+var myStand = new BananaStand('Zebra stripes', 2017, 'Jamie\'s Evil Twin', 500)
 ```
 
 Back to Ruby for a second:
@@ -225,7 +225,7 @@ class BananaStand
 
 end
 
-new_stand = BananaStand.new('red', 2015, 'Colin', -500)
+new_stand = BananaStand.new('red', 2017, 'Jamie', -500)
 ```
 
 # Instance variables and methods

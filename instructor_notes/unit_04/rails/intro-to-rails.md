@@ -592,14 +592,14 @@ DO NOT TRY TO MIGRATE YET. We need to set up our migrations first.
     > The name of the migration should be in camelcase, start with the name
     > of what your script does, and end with the (plural) name of your resource.
     >
-    > BAD
-    > `rails g migration users`
-    > `rails g migration AddUser`
-    > `rails g migration CreateUser`
-    > GOOD
-    > `rails g migration CreateUsers`
-    > `rails g migration AddFieldToUsers`
-    > `rails g migration RemoveFieldFromUsers`
+    > BAD <br/>
+    > `rails g migration users` <br/>
+    > `rails g migration AddUser` <br/>
+    > `rails g migration CreateUser` <br/>
+    > GOOD <br/>
+    > `rails g migration CreateUsers` <br/>
+    > `rails g migration AddFieldToUsers` <br/>
+    > `rails g migration RemoveFieldFromUsers` <br/>
 
     We can see from the output that it has created a new directory, `migrate`,
     and a file for us inside of the `db` directory. This file is a migration

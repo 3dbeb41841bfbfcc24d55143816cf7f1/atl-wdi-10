@@ -401,7 +401,7 @@ user.save
 You can learn more about validations in the [Active Record Validations
 guide](http://guides.rubyonrails.org/active_record_validations.html).
 
-####Validate User Model
+#### Validate User Model
 
 We set our [validations](http://guides.rubyonrails.org/active_record_validations.html) in our app/models/user.rb model.
 

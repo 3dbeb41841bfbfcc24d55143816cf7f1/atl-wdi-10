@@ -78,10 +78,10 @@ git checkout -b inclass
 After you start working on a new branch, from the terminal run:
 ```
 bundle install
-rake db:drop
-rake db:create
-rake db:migrate
-rake db:seed
+rails db:drop
+rails db:create
+rails db:migrate
+rails db:seed
 ```
 
 > Postgres troubles? Is your blue elephant running?
@@ -318,9 +318,10 @@ In `app/controllers/artists_controller.rb`:
 ```ruby
 # Artists#Create
 def create
-  @artist = Artist.create!(name: params[:name], nationality: params[:nationality], photo_url: params[:photo_url])
-  redirect_to "/artists/#{@artist.id}"
-end
+    form_artist = params[:artist]
+    @artist = Artist.create!(name: form_artist[:name], nationality: form_artist[:nationality], photo_url: form_artist[:photo_url])
+    redirect_to "/artists/#{@artist.id}"
+  end
  ```
 
 With this action, we want to create an instance using the params the user entered into the form, and we also set up a check to see whether or not the model was stored in our database.
