@@ -90,9 +90,9 @@ DELETE     /artists/:id      artists#destroy
 
 ```
 
-### `rake routes`
+### `rails routes`
 
-* Open up your terminal and, in the same folder as your application, type in `rake routes`.  You should see something like this.
+* Open up your terminal and, in the same folder as your application, type in `rails routes`.  You should see something like this.
 
 ```bash
 Prefix        Verb   URI Pattern                 Controller#Action
@@ -130,9 +130,9 @@ Q: What are Helpers, in general, in Rails?  How do Path Helpers fit into that ca
 
 > **Helpers** codify Rails conventions.  They write html using Rails or, in the case of custom Helpers, our project's conventions.
 
-> **Path helpers** are methods which provide the urls (and paths) to a Resource.  We build them using the prefixes from `rake routes`.
+> **Path helpers** are methods which provide the urls (and paths) to a Resource.  We build them using the prefixes from `rails routes`.
 
-Looking at this output from `rake routes`,
+Looking at this output from `rails routes`,
 
 ```bash
 Prefix        Verb   URI Pattern                 Controller#Action
@@ -145,13 +145,17 @@ edit_artist   GET    /artists/:id/edit(.:format) artists#edit
 artist        GET    /artists/:id(.:format)      artists#show
 ```
 
-Q: What named route helper will return the url to list all Artists?
+Q: What named route helper will return the entire url to list all Artists?
 
 > A. `artists_url`
+
+> This will return 'localhost:3000/artists'
 
 Q: What named route helper will return the path to show an Artist?
 
 > A. `artist_path(@artist)`
+
+> This will return '/artists/**:id**'
 
 Note that to indicate which artist we should show, we need to pass a reference to an artist.
 
@@ -229,7 +233,7 @@ resources :songs
 
 * `resources` creates routes using a combination of REST and Rails conventions.  It assumes properly named controllers -- in this case, `artists_controller.rb` and `songs_controller.rb` -- and actions.
 
-Review the output of `rake routes`.
+Review the output of `rails routes`.
 
 
 ## Nested Resources (15 min)
@@ -244,8 +248,8 @@ Q. What would it mean to have a URL like that? Why do we do it this way?
 ---
 
 > A.
-  * It concisely reflects our data structure: all songs are dependent on an artist.
-  * Also allows users to access specific information using the URL.
+>  * It concisely reflects our data structure: all songs are dependent on an artist.
+>  * Also allows users to access specific information using the URL.
 
 Ultimately, we want to structure our routes so that all Songs exist in the context of a parent Artist.
 
