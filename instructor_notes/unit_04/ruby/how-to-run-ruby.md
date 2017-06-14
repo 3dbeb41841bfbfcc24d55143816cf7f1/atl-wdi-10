@@ -4,7 +4,7 @@
 
 You'll interact with your .rb files in a very similar way to your .js files.
 
-You'll use the $`ruby` command and the repl `pry` instead of using $`node` like you did for Javascript.
+You'll use the `ruby` command and the repl `pry` instead of using $`node` like you did for Javascript.
 
 ### REALLY IMPORTANT
 
@@ -58,7 +58,6 @@ You can also load ruby files into the `pry` repl using the `load`
 3. In `pry` run `load 'test.rb'` it should return `true`. If it doesn't you likely did not specify the path correctly.
 
 4. You should now have access to all the code in test.rb.
-
   - try invoking the `hello` method
 
 5. Add a new method to test.rb
