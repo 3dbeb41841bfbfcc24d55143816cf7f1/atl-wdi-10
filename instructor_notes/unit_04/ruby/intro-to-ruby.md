@@ -307,7 +307,7 @@ end
 The big distinction here is the `do`, `end`, and the `|pipes|`
 
 
-### .map is greate for mutating your data
+### .map is great for mutating your data
 
 .map is very similar to .each, except this one transforms your Array or Hash into whatever is returned in the body of your method
 
