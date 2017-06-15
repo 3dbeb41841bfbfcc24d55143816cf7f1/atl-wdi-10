@@ -238,52 +238,6 @@ genius = "me"
 
 Important to know how to use 'em. But that's only one type of variable, and there are a few.
 
-### Types of Variables
-
-Variables, of course, are just placeholders.
-
-Let's talk about the different types of variables you'll encounter in Ruby. You'll need to use all of them at some point, but some more than others.
-
-In these examples, we'll defined a variable, and then we'll write a tiny quick method that just spits that variable out, to see if it works.
-
-#### Local Variable
-
-A local variable (lower_snake_case) is a quick placeholder, and gets forgotten as soon as your method or function is over.
-
-```ruby
-some_variable = "donuts"
-
-def some_method
-  some_variable
-end
-
-some_variable # => "donuts"
-              # because we're using it in the same place we defined it
-
-some_method   # Run our method, when it was defined outside that method –
-              # NameError: undefined local variable [blah blah blah]
-```
-
-These are great when you just need to temporarily store something or quickly give something a readable variable name, but won't need it later.
-
-#### Instance Variable
-
-An instance variable (lower_snake_case) is a variable that is defined in an instance of an object. That's not meant to be a fancy term - an instance is just an example of an object, one thingy in the great world of things.
-
-```ruby
-@some_variable = "donuts" # "donuts"
-
-def some_method
-  @some_variable
-end
-
-@some_variable # => "donuts"
-some_method # => "donuts"
-```
-
-Remember that it works this way, because when we get to Objects/Classes later this week, you'll see that instance variables let us store a variable once and use it however many methods we need inside an Class.
-
-
 ## Loop syntax: Differences between JS and Ruby
 
 Loops work almost exactly the same as JS, but use a slightly different syntax.
@@ -434,7 +388,7 @@ Two new ones
 
 #### Duck-typing
 
-Unlike JavaScript, Ruby has both and Integer and a Float class. This creates some interesting results! Let's take a look in IRB:
+Unlike JavaScript, Ruby has both and Integer and a Float class. This creates some interesting results! Let's take a look in Pry:
 
 What happens if we do:
 
@@ -591,7 +545,7 @@ end
 
 #### Extra Detail: Dem Blocks Tho!
 
-That `do`/`end` thing you're messing with is called a _block_, and it just runs the code in between, almost like a little function without a name - like anonymous functions in JavaScript or lambdas in Python.
+The code between `do`/`end` is called a _block_. Almost like a little function without a name - think anonymous functions in JavaScript or lambdas in Python.
 
 You'll see blocks all the time, and you'll use `.each` like it's your job. It just loops through each value in your array and assigns a local variable (that you decide) to each object. You come up with what you want it called in the "pipes", aka those tall neighbors surrounding the variable: `|a_variable_of_my_choosing|`.
 
