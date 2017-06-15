@@ -119,9 +119,24 @@ my_favorite_animal = "flying squirrel"
 
 Although we don't use var, there is still syntax to designate whether a variable is local or global.
 
-* @ creates an instance variable (more on this later)
+* @ creates an instance variable (see below)
 * Undesignated implies local (e.g., my_number)
 * All-caps implies that your value is constant. Ruby will give you warnings if you try to change the value (e.g., PI = 3.14).
+
+### Instance Variable
+
+An instance variable (lower_snake_case) is a variable that is usable within in an instance of an object. That's not meant to be a fancy term - an instance is just an example of an object.  This is used often when writing classes. (We'll see this more later)
+
+```ruby
+@some_variable = "donuts" # "donuts"
+
+def some_method
+  @some_variable
+end
+
+@some_variable # => "donuts"
+some_method # => "donuts"
+```
 
 ### puts
 

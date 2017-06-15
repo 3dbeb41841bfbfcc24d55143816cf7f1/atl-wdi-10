@@ -1,221 +1,475 @@
-# Objectives
+# Ruby Iteration & Enumerables
 
-* Questions and response using `gets.chomp`
-* Instance Variables
-* Pry gem
+<!-- [![Build Status](https://travis-ci.org/ga-wdi-lessons/ruby-enumerables.svg?branch=master)](https://travis-ci.org/ga-wdi-lessons/ruby-enumerables) -->
 
-## gets.chomp
+## Learning Objectives
 
-This command will issue a prompt in the terminal.  The entered answer can be set to a variable.  The `gets` will prompt the user, and the `.chomp` will remove the 'return' separator.
+- Review Ruby arrays and hashes
+- Use Ruby loops to iterate over code blocks.
+- Define what a Ruby enumerable method is.
+- Use enumerables to traverse, sort and modify collections.
+- Identify useful Ruby enumerables, including `.each`, `.map` and `.select`.
 
-```ruby
-puts "Hey what's your name?"
-name = gets.chomp
+## Framing (10 / 10)
 
-puts "Hey #{name}! Nice to meet you!"
+One of the most common things we do as developers is to iterate through data structures.
+
+Whenever we talk about data in Ruby, its important to review how Ruby handles groups of data.
+
+We learned how to iterate over collections in Javascript using loops and then higher order functions.
+Now we're going to learn the same in Ruby.
+Just like in Javascript, we'll start talking about loops before talking about how to execute a particular code block for each element of a collection.
+
+## Review: Ruby Collections
+
+<details>
+<summary>What are the different types of collections in Ruby?</summary>
+Arrays <code>[]</code> and hashes <code>{}</code>
+</details>
+
+### [Arrays](http://ruby-doc.org/core-2.3.0/Array.html)
+
+Consider:
+
+```rb
+users = ["Alice", "Bob", "Carol"]
 ```
 
-Let's use it in a script and run it!
+#### What do each of the following do?
 
-## Types of Variables
+- `users.length`
+- `users.push("David")`
+- `users[0]`
+- `users[2]`
+- `users.join(" ")`
+- `users.join(", ")`
+- `users.join(" and ")`
 
-Let's talk about the different types of variables you'll encounter in Ruby. You'll need to use all of them at some point, but some more than others.
+<details>
+<summary>What are two ways of adding an item to the end of an array of unknown length in Ruby?</summary>
+<code>.push</code> and <code><<</code>
+</details>
 
-In these examples, we'll define a variable, and then we'll write a tiny quick method that just spits that variable out, to see if it works.
+<!-- Specifying "unknown length" because users[n] should not be one of the methods. -->
 
-### Local Variable
+### [Hashes](http://ruby-doc.org/core-2.3.0/Hash.html)
 
-A local variable (lower_snake_case) is a quick placeholder, and gets forgotten as soon as your method or function is over.
+Hashes are like Javascript Object Literals, but with a somewhat different syntax.
+
+Consider:
 
 ```ruby
-some_variable = "donuts"
+user = {
+  name: "Alice",
+  skills: ["development", "public speaking", "physics"],
+  'age' => 30,  #Hashrockets are also valid
+}
+```
 
-def some_method
-  some_variable
+#### What do each of the following do?
+
+- `user[:name]`
+- `user[:age]`
+- `user[:name] = "Bob"`
+- `user[:zip] = 55408`
+- `user[:skills].last`
+- `user[:skills] << "design"`
+
+### Quick Quiz
+
+1.  What's another "rubyist" way to add items to an array?
+2.  What is one main difference between Ruby's **hashes** and Javascript's **object literals**?
+3.  What are some useful methods we can call on collections?
+4.  Where would I go look if I wanted to find more methods?
+
+<details>
+  <summary>
+    Answers
+  </summary>
+  <ol>
+    <li> <code> [1,2,3] + [4,5] </code></li>
+    <li> The syntax for referencing properties differs.
+      <ul>
+        <li>JS: <code>user.name</code> or <code>user["name"]</code> </li>
+        <li>Ruby: <code>user[:name]</code> </li>
+      </ul>
+    </li>
+    <li>.push, .pop, .join</li>
+    <li> <a href="https://ruby-doc.org/core-2.2.3/Enumerable.html">Ruby Docs!</a> </li>
+  </ol>
+</details>
+
+## Loops (20 / 30)
+
+Another similarity Ruby shares with Javascript is base support for various types of loops.
+
+### Review JS Loops
+
+<details>
+<summary>What loops did we use in Javascript?</summary>
+<code>while</code>, <code>do...while</code>, <code>for</code>, <code>for...in</code>, <code>.forEach</code>
+</details>
+
+### Looping with Ruby
+
+The closest equivalent to Javascript's `for` loop is Rubys `for...in` loop
+
+```rb
+users = ["Alice", "Bob", "Carol"]
+for user in users do
+  puts user
 end
-
-some_variable # => "donuts"
-              # because we're using it in the same place we defined it
-
-some_method   # Run our method, when it was defined outside that method –
-              # NameError: undefined local variable [blah blah blah]
 ```
 
-These are great when you just need to temporarily store something or quickly give something a readable variable name, but won't need it later.
+<details>
+<summary>What happens if you change it to <code>for person in users do</code>? What other change will you need to make?</summary>
+<code>puts person</code> instead of <code>puts user</code>
+</details>
 
-### Instance Variable
+> *In English*, describe the differences between `while`, `until`, `loop`, and `.times`.
 
-An instance variable (lower_snake_case) is a variable that is defined in an instance of an object. That's not meant to be a fancy term - an instance is just an example of an object.  A Table Class will create instances of tables.
 
-```ruby
-@some_variable = "donuts" # "donuts"
+Set up your development environment for testing out the different types of loops found in the code snippets below...
 
-def some_method
-  @some_variable
+1. Create a new file in your "sandbox" directory called `loops.rb`
+2. Copy and paste **one** of the snippets into the file
+3. Run the file with `$ ruby loops.rb`
+4. Observe the result
+5. Delete the contents of the file
+6. Replace the contents with the next snippet
+7. Repeat
+
+
+#### [while](https://ruby-doc.org/core-2.2.0/doc/syntax/control_expressions_rdoc.html#label-while+Loop)
+
+```rb
+input = ""
+puts "You must guess the Magic Words to exit the while loop!"
+while input != "Magic Words" do
+  puts "What are the Magic Words?"
+  input = gets.chomp
 end
-
-@some_variable # => "donuts"
-some_method # => "donuts"
+puts "You made it out! Congrats!"
 ```
 
-Remember that it works this way, because when we get to Objects/Classes later this week, you'll see that instance variables let us store a variable once and use it however many methods we need inside an Class.
+#### [until](https://ruby-doc.org/core-2.2.0/doc/syntax/control_expressions_rdoc.html#label-until+Loop)
 
-```ruby
-class Person
-  def initialize(first_name, last_name)
-    @first_name = first_name
-    @last_name = last_name    
-  end
-  
-  def full_name
-    "#{@first_name} #{@last_name}"
-  end
+
+```rb
+input = ""
+puts "You must guess the Magic Words to exit the while loop!"
+until input == "Magic Words" do
+  puts "What are the Magic Words?"
+  input = gets.chomp
 end
-
-josh = Person.new("Josh", "Kushner")
-
-josh.full_name # => "Josh Kushner"
+puts "You made it out! Congrats!"
 ```
 
+#### [loop](https://ruby-doc.org/core-2.2.0/Kernel.html#method-i-loop)
 
-## Gems and Bundler
-
-Gems are similar to npm packages that we used in our NodeJS projects.  Gems are libraries created by other developers in the Ruby community.  There are two ways to install gems.
-
-`gem install pry`
-
-OR
-
-We install Bundler.  Bundler is a gem that allows us to manage other gems in Ruby.  It's similar to how we installed multiple packages from an `npm install` when we kept different packages in our `package.json`
-
-`gem install bundler`
-
-Then we create our Gemfile in our app directory
-
-`touch Gemfile`
-
-```ruby
-source 'https://rubygems.org'
-
-gem "pry"
-```
-
-`bundle install`
-
-
-## pry
-
-In Ruby, gems are libaries we can use in our Ruby code.
-
-`pry` is a super helpful tool for debugging.
-
-We've previously used pry as a REPL in the command line to mess with Ruby.
-
-Pry can be invoked in the middle of your code and it starts a 'Pry Session'.  You can then check variable values, run other methods, etc. at that specific point in your program.
-
-Here's the documentation: <a href="https://github.com/pry/pry">Pry Documentation</a>
-
-And here's how we use it in the code.
-
-`binding.pry`
-
-Let's see how it work in our script.
-
-```ruby
-require 'pry'
-
-class Bomb
-  @fuse_active = false
-  def light_fuse
-    @fuse_active = true
-    puts "oh no! someone stop the bomb"
-  end
-
-  def explode
-    return "BOOM!!!" if @fuse_active
-
-    "You stopped the bomb! You're a hero!"
-
-  end
-
-  def save_the_day
-    @fuse_active = false
-
-    puts "That was close!"
-  end    
+```rb
+puts "You must guess the Magic Words to exit the while loop!"
+loop do
+  puts "What are the Magic Words?"
+  input = gets.chomp
+  break if input == "Magic Words"
 end
-
-bomb = Bomb.new
-bomb.light_fuse
-
-# Pry can freeze time and allow you to debug your program 
-binding.pry
-
-# program resumes here (after pry session)
-puts bomb.explode
-
-
+puts "You made it out! Congrats!"
 ```
 
+#### [.times](https://ruby-doc.org/core-2.2.0/Integer.html#method-i-times)
 
-# Shopping List Lab
+```rb
+users = ["Alice", "Bob", "Carol"]
+users.length.times do |index|
+  puts users[index]  
+end
+```
 
-Now you know how to use Ruby iterators, arrays, conditionals, and so many other awesome Ruby tools.  Let's put them to use and create our first shopping list script!
+<details>
+<summary>If we change <code>puts users[index]</code> to <code>puts index</code>, what will the result be?</summary>
+<code>1 2 3</code>
+</details>
 
-<b>Two things:</b><br>
-1) Use `pry` when you get stuck!
+<details>
+<summary>What is the purpose of <code>break</code>? What loops can you use it inside?</summary>
+<code>break</code> halts the current iteration of the loop. It can be used with any loop.
+</details>
 
-2) Don't be afraid to use Ruby documentation to figure it out.  Some of these questions require some googling.
+#### next
+
+Try this code:
+
+```rb
+10.times do |i|
+  if i % 2 == 0
+    next
+  end
+  puts i
+end
+```
+
+<details>
+<summary>What is <code>next</code>, and how is it different from <code>break</code>?</summary>
+<code>next</code> tells the computer to skip the rest of the code inside the loop for this iteration, and go to the next iteration of the loop. <code>break</code> stops the loop iterating altogether.
+</details>
+
+> [Further Reading on Ruby loops](http://www.tutorialspoint.com/ruby/ruby_loops.htm)
+
+## Exercise: Club Ruby (20 / 50)
+As the new manager of Club Ruby, you been tasked with creating an automated bouncing system.
+
+The club's rules state:
+
+* Only people 18 and over are allowed in the door
+* No more than 8 people should be inside the club at any time
+
+Using what you know about loops and collections in Ruby, write a script that when given an array of people waiting outside the club...:
+
+* Creates a new array of people inside the club
+* Allows the appropriate people into the club
+* Stops once 8 people have been admitted
+* Some sample people have been provided for you in script.rb.
+
+**Hint**
+How could you use `next` and `break` to alter the behavior of a loop?
+
+**Bonuses**
+
+* Determine whether or not a person can be served alcohol (that is: whether they're 21 or over)
+* Create a new key/value pair for each person with served as a boolean
+* Create an array for all people rejected from the club for being too young to enter
 
 
-<br>
-In a directory of your choice, `touch shopping_list.rb`
+## Enumerables
 
-Run the file by using the ruby command: `ruby shopping_list.rb`
+### What Are Enumerables? (5 / 65)
+
+Loops execute a certain block of code a certain number of times.
+
+**Enumerables** are loops *used specifically to do something to or with each item in an collection.*
+
+Enumerables are great at traversing, searching, filtering, and modifying collections of data in Ruby.
+
+Ruby enumerables are **higher order functions**. They're similar to the ones we've already seen in Javascript, but with a slightly different syntax. In Ruby, there are **many** more enumerables available to us. A list of them can be found in the [Ruby Docs](http://ruby-doc.org/core-2.2.3/Enumerable.html).
+
+Enumerables **DRY** up your code considerably and enhance readability. Consider:
+
+#### `while` is a loop
+
+```rb
+users = ["Alice", "Bob", "Carol"]
+index = 0
+while index < users.length
+  puts users[index]
+  index += 1
+end
+```
+
+#### `each` is an enumerator and `users` is an enumberable
+
+```rb
+users = ["Alice", "Bob", "Carol"]
+users.each do |user|
+  puts user
+end
+```
+
+- [Enumerable Documentation](http://ruby-doc.org/core-2.2.3/Enumerable.html)
+
+### Syntax
+
+Try running these two code snippets:
+
+> This one is same as above
+
+```rb
+users = ["Alice", "Bob", "Carol"]
+users.each do |user|
+  puts user
+end
+```
+
+```rb
+users = ["Alice", "Bob", "Carol"]
+users.each{ |user| puts user }
+```
+
+<details>
+<summary>What is the difference between these two snippets?</summary>
+They are equivalent, though the 'do' 'end' is said to be more semantic and closer to natural language.
+</details>
+
+<details>
+<summary>What happens if you change <code>users.each do |user|</code> to <code>users.each do |person|</code>? What else needs to change?</summary>
+<code>puts user</code> needs to become <code>puts person</code>.
+</details>
+
+### Exercise: Practice Each (10 / 95)
+
+Use `each` to do the following...
+
+- Say hello to everybody in the below array of names (sample output: `Hello Donald!`).
+
+  ```ruby
+  names = [ "Donald", "Daisy", "Huey", "Duey", "Luey" ]
+  ```
+
+- Print out the squared values of every number in this numbers array.
+
+  ```ruby
+  numbers = [ 1, 3, 9, 11, 100 ]
+  ```
+
+- Print out the Celsius values for an array containing Fahrenheit values.
+
+  > Hint: `C = (F - 32) * (5 / 9)`
+
+  ```ruby
+  fahrenheit_temps = [ -128.6, 0, 32, 140, 212 ]
+  ```
+
+- Insert all the values in the `artists` array into the `ninja_turtles` array.
+
+  ```ruby
+  artists = [ "Leonardo", "Donatello", "Raphael", "Michelangelo" ]
+  ninja_turtles = []
+  ```
+
+- **Bonus:** Print out every possible combination of the below ice cream flavors and toppings.
+
+  ```ruby
+  flavors = [ "vanilla", "chocolate", "strawberry", "butter pecan", "cookies and cream", "rainbow" ]
+  toppings = [ "gummi bears", "hot fudge", "butterscotch", "rainbow sprinkles", "chocolate sprinkles" ]
+  ```
+<details>
+  <summary>
+    Hint
+  </summary>
+  Use nested enumerable methods or check out <a href="http://apidock.com/ruby/Array/product">product</a>.
+</details>
+
+### Map (10 / 105)
+
+#### Explore 1
+
+Run these two snippets separately:
+
+```rb
+cart = ["shoes", "watch", "computer"]
+uppercase = cart.each do |product|
+  caps_product = product.upcase
+  puts caps_product
+  caps_product
+end
+puts uppercase.join(", ")
+```
+
+```rb
+cart = ["shoes", "watch", "computer"]
+uppercase = cart.map do |product|
+  caps_product = product.upcase
+  puts caps_product
+  caps_product
+end
+puts uppercase.join(", ")
+```
+
+<details>
+<summary>How would you explain the difference in the result?</summary>
+<ul>
+  <li><code>.each</code> executes the code block for each item in the original array and returns the original array regardless of what the block returns.</li>
+  <li><code>.map</code> returns a new array with the changes in the block applied to each element.</li>
+</ul>
+</details>
+
+#### Explore 2
+
+Consider:
 
 ```ruby
-shopping_list = ['peanuts', 'pretzels', 'coffee', 'pretzel sticks', 'fruit snacks', 'pretzel nuggets']
+cart = ["shoes", "watch", "computer"]
+uppercase = []
+cart.each{|product| uppercase.push(product.upcase) }
+puts uppercase.join(", ")
 ```
 
-Do these exercises in order:
-
-* Add an item to the shopping list based on prompt response
-* Remove from our shopping list based on prompt response
-* Replace the second item on your list with `ice cream`
-* Iterate and `puts` each item from the shopping list in reverse
-* Iterate and `puts` a numbered shopping list
-
-```ruby
-1. peanuts
-2. pretzels
-3. coffee
-...
+```rb
+cart = ["shoes", "watch", "computer"]
+uppercase = cart.map{|product| product.upcase }
+puts uppercase.join(", ")
 ```
-HINT: use ruby's <a href="https://apidock.com/ruby/Enumerator/each_with_index">`.each_with_index`</a> iterator
 
-* Find the word length of the 1st item in the shopping list and square it. Then, prompt the user for a number.  Take the user's response and add it to the squared number.
-* Take the length of the shopping list and return a boolean value if the length is an even number.
-* Take the first letter of the 2nd item and if it is the letter "a" then
-  * `puts` "The second item starts with the letter A!".
+<details>
+<summary>What is the difference in the result of these two snippets?</summary>
+Nothing: they have the same result. They are two ways of doing the same thing.
+</details>
 
-  If not, then
+#### Explore 3: Bang
 
-  * `puts` "Nope, starts with a different letter"
-  
+Consider:
 
-# Actual Interview Question Lab
+```rb
+cart = ["shoes", "watch", "computer"]
+uppercase = cart.map{|product| product.upcase }
+puts cart
+puts uppercase
+```
 
-### FizzBuzz
+Below is the same snippet, but with `.map!` instead of `.map`.
 
-HINT: Use Ruby Range
+<details>
+<summary>What does <code>!</code> often indicate in Ruby?</summary>
+That this method is "dangerous", usually because it will modify, or <strong>mutate</strong> the object upon which it was called.
+</details>
 
-1) Create a method that will count to 20.  It should `puts` each number on the terminal.
-2) Now for every number divisible by 3, the method should `puts` "Fizz" instead of the number.
-3) Now for every number divisible by 5, the method should `puts` "Buzz" instead of the number.
-4) Now for every number divisible by 3 AND 5, the method should `puts` "FizzBuzz" instead of the number.
-5) Refactor if needed.
+```rb
+cart = ["shoes", "watch", "computer"]
+uppercase = cart.map!{|product| product.upcase }
+puts cart
+puts uppercase
+```
 
+<details>
+<summary>What's the difference between <code>.map</code> and <code>.map!</code>?</summary>
+<code>.map</code> leaves the original array alone, whereas <code>.map!</code> changes it.
+</details>
 
+### Exercise: Practice Map (5 / 120)
 
-### Bonus
-Use Ruby methods to clean up your code in the Shopping List lab! Each exercise in the Shopping List lab should have it's own method.  Don't forget to use instance variables to communicate values within and outside of methods.
+Use `map` to do the following...  
+
+1. Create an array that appends "Duck" to everybody in this array of first names
+
+  ```ruby
+  first_names = [ "Donald", "Daisy", "Daffy" ]
+
+  #= ["Donald Duck", "Daisy Duck", "Daffy Duck"]
+  ```
+
+2. Create an array containing the squared values of every number in this array.
+
+  ```ruby
+  numbers = [ 1, 3, 9, 11, 100 ]
+
+  # => [1, 9, 81, 121, 10000]
+  ```
+
+3. Create an array with the Celsius values for these Fahrenheit values.
+
+  > Hint: `C = (F - 32) * (5 / 9)`
+
+  ```ruby
+  fahrenheit_temps = [ -128.6, 0, 32, 140, 212 ]
+
+  #=> [-89.2, -17.8, 0, 60, 100]
+  ```
+
+## Resources
+
+- [Intro to Ruby Enumerables](http://jamesgolick.com/2008/1/5/an-introduction-to-ruby-s-enumerable-module.html)
+- [Ruby Monk on Enumerables](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/44-collections/lessons/96-enumerators-and-enumerables)
+- [Ruby Explained: Awesome Enumerables](http://www.eriktrautman.com/posts/ruby-explained-map-select-and-other-enumerable-methods)
+- [Ruby Magic](http://ruby.bastardsbook.com/chapters/enumerables/)
+- [Ruby Loops and Iterators](https://launchschool.com/books/ruby/read/loops_iterators)
+
