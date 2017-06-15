@@ -95,7 +95,10 @@ def hello(name, salutation, small_talk, punctuation)
 end
 ```
 
+
 Well that looks pretty similar, is there any behavior differences?
+
+Notice the built in string templating! No more `"string" + "math!"`
 
 First, define the behaviors of arguments in JS
 
@@ -522,6 +525,35 @@ end
 
 Isn't that just so incredibly readable?
 
+#### Ranges
+Another new feature we will find in Ruby is ranges.  Ranges look like this
+`(1..5)` and signifies all of the values between the start and end numbers.  This is really usefull when getting several items from an array.
+
+```ruby
+days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+
+puts days[3..5]
+``` 
+
+Check out some of the other things ranges can do:
+
+In pry run:
+
+$`(1..5).to_a`
+$`(1...5).to_a`
+
+And ridiculously:
+
+$`("a"..."z").to_a`
+
+```ruby
+alphabet = ("a"..."z").to_a
+
+alphabet.each do |letter|
+  puts letter
+end
+```
+
 #### Extra Detail: Dem Blocks Tho!
 
 That `do`/`end` thing you're messing with is called a _block_, and it just runs the code in between, almost like a little function without a name - like anonymous functions in JavaScript or lambdas in Python.
@@ -555,6 +587,7 @@ To see it in action, let's pick something random in the room and try to describe
 > **Note:** just to prove hashes can hold all kinds of great data, let's see how many different data types we can describe our object with!
 
 For example, let's describe a fan in the room.
+
 ```ruby
 fan = {
   type: 'freestanding',
@@ -643,21 +676,3 @@ Given we just learned to do this with arrays, it's okay to be unsurprised.
 fan.delete(:color)
 ```
 
-## Ranges
-
-In pry run:
-
-$`(1..5).to_a`
-$`(1...5).to_a`
-
-And ridiculously:
-
-$`("a"..."z").to_a`
-
-```ruby
-alphabet = ("a"..."z").to_a
-
-alphabet.each do |letter|
-  puts letter
-end
-```
