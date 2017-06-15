@@ -29,6 +29,38 @@ competencies: Programming
 
 ## Intro (15 mins)
 
+## What is OOP?
+
+Ruby is an object-oriented language. That means it's based on the idea that you'll build your application with objects in mind.
+
+As you learned earlier in the class, an object is a collection of related attributes (properties) and methods (behavior). You can think of an object as a little machine: it has displays you can read and buttons you can push.
+
+When you write an object-oriented application, the idea is that you write the blueprints for these machines, and then you write a sequence of events your users can initiate in which these machines interact with each other.
+
+Much of the code you see today will be very similar to what you encountered when reviewing OOP in the past. That's because classes are a concept that have been around for decades! Use this pre-existing knowledge to your advantage in today's class!
+
+
+## OOP Design
+We've talked quite a bit about object oriented programming as a paradigm, but we haven't talked much about how to break a problem down into object components.
+
+Example: Monopoly 
+> "Monopoly is a game where players try to accumulate wealth through property ownership and money"
+* Game Board
+* Players
+* Game Tokens
+* Property Cards
+* Money
+
+Spend 10 minutes working with a partner to come up with at least three types of objects that you might define when creating the following examples. We'll go over your answers as a class.
+
+* Amazon
+* A Homework Grading App
+* An Attendance Taking App
+* Lyft
+
+> A helpful approach might be to take the "nouns" involved in the application and say they are objects.
+
+<!--WIP-->
 ## Structure of a Class
 
 What were the key components of a constructor function in javascript?
