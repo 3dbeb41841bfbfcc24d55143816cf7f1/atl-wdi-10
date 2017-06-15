@@ -31,7 +31,7 @@ Ruby comes with a REPL called `irb` (Interactive Ruby Shell).  This is similart 
 
 ```bash
   gem install pry
-  gem install pry-docs
+  gem install pry-doc
 ```
 
 2. To start pry, simply type `pry` in the command line.  You should now see something like this.
