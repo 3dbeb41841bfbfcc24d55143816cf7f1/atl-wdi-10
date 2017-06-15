@@ -4,7 +4,7 @@
 
 ![image](http://www.nothomesyndrome.com/uploads/2/1/0/0/21007102/281547392.jpg?405)
 
-We are going kick off the week enjoying our favorite past-time -- reading [ documentation](http://ruby-doc.org/)!!
+We are going finish up the week enjoying our favorite past-time -- reading [ documentation](http://ruby-doc.org/)!!
 For this exercise, we'd like you to _only_ use the Ruby's docs -- that way, you get
 very comfortable looking things up there.
 
