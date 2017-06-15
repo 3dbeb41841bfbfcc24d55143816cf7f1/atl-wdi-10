@@ -157,6 +157,25 @@ In Ruby, returns are implicit by design. Ruby will always assume that the last l
 
 Can you read it in English? One of Ruby's biggest benefitsis that it reads pretty closely to English
 
+Additionally, you can add the statements `if` and `unless` to your return statement, which acts similarly to an if block.
+
+```javascript
+function apiCall(err, data){
+  if (err){
+    return err;
+  } 
+  //Do stuff
+}
+```
+
+vs.
+
+```ruby
+def api_call(err, data)
+  return err if err
+  #Do Stuff
+end
+```
 
 ## Bang methods and predicate methods
 #### bang methods
@@ -271,6 +290,7 @@ Loops work almost exactly the same as JS, but use a slightly different syntax.
 
 What are some different ways that you can loop in JavaScript?
 
+While there are plenty of ways to loop in Ruby, we're going to focus on 2 specific ways to write loops.
 
 ### .each is going to be your go to
 
@@ -285,6 +305,21 @@ end
 ```
 
 The big distinction here is the `do`, `end`, and the `|pipes|`
+
+
+### .map is greate for mutating your data
+
+.map is very similar to .each, except this one transforms your Array or Hash into whatever is returned in the body of your method
+
+```ruby
+alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+double_alphabet = alphabet.map do |letter|
+  letter * 2
+end
+
+puts double_alphabet
+```
 
 #### Do and end
 
