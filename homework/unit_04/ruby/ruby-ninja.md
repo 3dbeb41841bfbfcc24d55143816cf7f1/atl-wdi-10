@@ -8,8 +8,6 @@ Tonight you're going to get the basics down and put your Ruby skills to the test
 
 Include all of your code in the file called ```ninja_skills.rb```.  You can run the file by typing in ```ruby ninja_skills.rb``` in your terminal. You may comment out pieces of code when you're not using them.
 
-Try messing around with the Ruby REPL, IRB.  You can run IRB by typing ```irb``` in your terminal.
-
 ## Directions
 
 Get to the end of the challenges and be crowned Ruby Ninja Warrior.
