@@ -1,5 +1,6 @@
+# Intro to Ruby
 
-# Lesson Objectives
+## Lesson Objectives
 
 - Compare/contrast Ruby and Javascript as programming languages
 - Identify specific differences between Ruby and Javascript in the following areas...
@@ -14,7 +15,7 @@
 - Interact with symbols and explain their significance
 - Concretize scope in Ruby by interacting with different variables
 
-# Intro   
+## Intro   (10/10)
 
 Ruby is a server-side scripting language written on top of C.
 
@@ -30,7 +31,7 @@ This brought about a motto that is common among the Ruby community.
 
 Performing everyday tasks, while intricate and complex, come to you naturally.
 
-> Ruby is simple in appearance, but is very complex inside, just like our human body. — Yukihiro "Matz" Matsumoto
+> "Ruby is simple in appearance, but is very complex inside, just like our human body." — Yukihiro "Matz" Matsumoto
 
 ### You Do: Ruby vs. JavaScript
 Think back to the [homework you started yesterday](https://github.com/ATL-WDI-Curriculum/atl-wdi-10/tree/master/homework/unit_04/ruby/ruby-intro/1_Learn_Ruby_the_Hard_Way).
@@ -101,7 +102,7 @@ Ruby has a smaller framework called Sinatra, which syntactically is _very_ simil
  
 Find out more about Sinatra [here](https://github.com/sinatra/sinatra).
 
-## Ruby Basics
+## Ruby Basics (15/25)
 
 ### Variables
 
@@ -182,7 +183,7 @@ $ ruby app.rb
 $ ruby app.rb
 # => How old are you?:
 ```
-## Data Types 
+## Data Types (20/45)
 
 Spend 15 minutes reading through everything up until the bang method.
 
@@ -440,13 +441,13 @@ Every string you create is unique and takes up space on your computer, even if t
 :your_name.object_id
 #=> the same number!
 ```
-## You Do: Data Type Exercise/Break (15 min) 
+## You Do: Data Type Exercise/Break (15/60) 
 Complete the exercises in [this repo](https://github.com/ga-wdi-exercises/ruby-basics-exercises/blob/master/data-types.md
 )
 
 
-## Data Collections (20 min)
-Spend 15 minutes reading through everything up until Hashes.
+## Data Collections (20/80)
+Spend 10 minutes reading through everything up until Hashes.
 
 ### Arrays
 
@@ -676,10 +677,10 @@ Generate array using .to_a method
 # => ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 ```
 
-## You Do: Data Collection Exercise (20 min)
+## You Do: Data Collection Exercise (20/100)
 Complete the exercises on [this repo](https://github.com/ga-wdi-exercises/ruby-basics-exercises/blob/master/data-collections.md)
 
-## Methods
+## Methods (20/120)
 
 As stated before, everything in Ruby is an object so there is no distinction in this language between functions and methods. Under the hood, even seemingly stand-alone functions are in fact associated with an object. The convention, however, is to call these methods.
 
