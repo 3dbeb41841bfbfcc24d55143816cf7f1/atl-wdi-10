@@ -8,8 +8,6 @@ Tonight you're going to get the basics down and put your Ruby skills to the test
 
 Include all of your code in the file called ```ninja_skills.rb```.  You can run the file by typing in ```ruby ninja_skills.rb``` in your terminal. You may comment out pieces of code when you're not using them.
 
-Try messing around with the Ruby REPL, IRB.  You can run IRB by typing ```irb``` in your terminal.
-
 ## Directions
 
 Get to the end of the challenges and be crowned Ruby Ninja Warrior.
@@ -122,11 +120,4 @@ Check out Ruby's `Prime` class: http://ruby-doc.org/stdlib-1.9.3/libdoc/prime/rd
   When you're ready to submit your work,
 
   1.  Add, commit, and push your code to your fork of the class repo.
-  2.  File an issue on the class repo titled "Your Name -- wXXdXX".
-
-  The issue should include:
-
-  -   A link that points back to your fork.
-
-  -   A 'comfort' score on how you feel about the material, from 1 (very
-      uncomfortable) to 5 (very comfortable)
+  2.  Send a link that points back to your fork as a submission in Schoology
