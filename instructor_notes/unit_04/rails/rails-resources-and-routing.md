@@ -6,7 +6,7 @@
 * Identify the role a router (`routes.rb`) plays in the Rails MVC model.
 * Create routes for individual pages in Rails.
 * Use resources to define routes for a RESTful controller.
-* Use rake routes to display RESTful routes.
+* Use rails routes to display RESTful routes.
 * Implement route names in Rails link helpers.
 * Implement nested routes in a Rails application.
 * Describe how path helpers work for nested routes.
@@ -30,7 +30,7 @@ Q: Who can walk me through the rMVC pattern, highlighting where the router is an
 
 ## Routes (10 min)
 
-Fork/clone the [tunr_rails_routes_resources repo](https://github.com/ATL-WDI-Exercises/tunr_rails_routes_resources).  This provides starter code for this lesson. This repo also contains a solution branch containing all the code we'll be executing today.
+Fork/clone the [tunr link here](https://github.com/ATL-WDI-Curriculum/tunr-views-and-controllers/tree/routes-starter-code).  This provides starter code for this lesson. This repo also contains a solution branch containing all the code we'll be executing today.
 
 You guys dove into Rails' `config/routes.rb` file in the MVC class and created individual routes for pages.
 
@@ -70,7 +70,7 @@ Rails docs are awesome!  Familiarize yourself with the command and the output.
 
 http://guides.rubyonrails.org/routing.html#inspecting-and-testing-routes
 
-> To get a complete list of the available routes in your application, visit http://localhost:3000/rails/info/routes in your browser while your server is running in the **development** environment. You can also execute the `rake routes` command in your terminal.
+> To get a complete list of the available routes in your application, visit http://localhost:3000/rails/info/routes in your browser while your server is running in the **development** environment. You can also execute the `rails routes` command in your terminal.
 
 Here's some simplified output.  We've removed some data to focus on the HTTP Verb, the URI Pattern, and the Controller Action.
 Note the "root" route and the duplication.  A combination of HTTP Verb (or Method) and URI (or Path) are required to identify a specific Controller Action.
@@ -292,9 +292,9 @@ Docs are your friend: [Nested Resources](http://guides.rubyonrails.org/routing.h
 
 1. Write out the individual routes for our nested resources model
   * We will not be replacing our resources statements in the `routes.rb` file with this.
-  * **DO NOT** check our answers with `rake routes` quite yet...
+  * **DO NOT** check our answers with `rails routes` quite yet...
 - Once you have them written out, update "config/routes.rb".  Indicate that the Song resources are nested within an Artist.
-- Check your answers above against with `rake routes`.
+- Check your answers above against with `rails routes`.
 
 
 
@@ -331,7 +331,7 @@ That's okay. You're going to spend the next hour fixing it!
 * Don't worry about solving the problem immediately. Start by identifying files we need to change.
 
 
-### Let's look at `rake routes` again...
+### Let's look at `rails routes` again...
 
 Q. Has anything changed?
 ---
@@ -406,7 +406,7 @@ Our app does not like the `new_song_path` we used in a link helper in our `artis
 ```
 
 What do we need to replace this path helper with?
-* **HINT:** Look at `rake routes`!
+* **HINT:** Look at `rails routes`!
 
 ```html
 # /views/artists/show.html.erb
