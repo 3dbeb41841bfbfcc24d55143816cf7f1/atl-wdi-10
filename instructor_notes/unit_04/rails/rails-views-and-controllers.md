@@ -70,22 +70,18 @@ To get started, clone down the following repo:
 **Note**: If you have trouble setting up, please "#SlackTheBack"
 
 ```bash
-git clone https://github.com/ga-wdi-exercises/tunr_rails_models_and_migrations.git
-cd tunr_rails_models_and_migrations
-git checkout views-controllers-starter
+git clone https://github.com/ATL-WDI-Curriculum/tunr-views-and-controllers
+cd tunr-views-and-controllers
+git checkout starter-code
 git checkout -b inclass
 ```
 After you start working on a new branch, from the terminal run:
 ```
 bundle install
-rails db:drop
 rails db:create
 rails db:migrate
 rails db:seed
 ```
-
-> Postgres troubles? Is your blue elephant running?
-
 Here, we are just installing our app's dependencies, and running the set up for our app's database locally.
 
 To test that it works, try starting the server:
@@ -94,11 +90,7 @@ To test that it works, try starting the server:
 rails s
 ```
 
-Then in your browser, navigate to the `http:localhost:3000` to visit your app in its default development environment and you should be greeted by Ruby on Rails welcome page. Success!
-
-What does it mean to "start a server"?
-
-It means you've told your computer to start listening for requests being made to a specific URL. In this case, the URL is `localhost:3000`. The 3000 is a "port". Your computer can listen for requests coming from thousands of directions, as if it was a secretary holding thousands of office phones. 3000 is one of them.
+Then in your browser, navigate to `localhost:3000` to visit your app in its default development environment and you should be greeted by Ruby on Rails welcome page. Success!
 
 ----
 
@@ -107,7 +99,7 @@ A good place to start reviewing our code base so far, in any rails app, is our a
 ## Route-Controller-Action Relationship (10 / 40)
 
 Make sure you are in the applications directory and in your terminal run:
- `$ rake routes`
+ `$ rails routes`
 
 ```bash
 Prefix      Verb   URI Pattern                 Controller#Action
@@ -119,7 +111,7 @@ artists_new GET    /artists/new(.:format)      artists#new
             PUT    /artists/:id(.:format)      artists#update
             DELETE /artists/:id(.:format)      artists#destroy
 ```
-Rake routes allows us at any time to view the current routes of this app and see the controller actions mapped to each route.
+Rails routes allows us at any time to view the current routes of this app and see the controller actions mapped to each route.
 
 For example, let's look at the request/response life cycle of a get request hitting the `artists` `index` action.
 
@@ -133,7 +125,7 @@ When a user visits: `http:localhost:3000/artists`
 
 Let's write the code to make this response a reality.
 
-## WE-Do: Define an Index Action and View (15 / 55)
+## Define an Index Action and View (15 / 55)
 
 We need to first create a controller for our artists. In your terminal:
 
@@ -205,7 +197,7 @@ However, let's think about what we really want to see when we visit this page. W
 
 So now the question is how can we dynamically generate a view for all of our data about artists?
 
-**(STWG)**: What does it mean to have our view update dynamically?
+What does it mean to have our view update dynamically?
 
 > Means we can write abstractive code that will update and render the appropriate data for all the records in our query. Can you imagine if you were a store with 5000 products, having to write out or hard code all those listings?
 
