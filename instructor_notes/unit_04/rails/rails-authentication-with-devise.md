@@ -9,7 +9,7 @@ Adding authentication
 |Register a new user|
 
 
-Adding authentication and authorization is extremely vital to any modern web application.  The need for basic security and authenticaiton is essential for good data and customer experience.  We will spend today adding the 'Devise' gem to our blog appliction.  This is a program that will help us integrate the tools needed to authenticate and authorize users.  With this gem we will not need to write the complicated code needed to add security to our pages.
+Adding authentication and authorization is extremely vital to any modern web application.  The need for basic security and authenticaiton is essential for good data and customer experience.  We will spend today adding the 'Devise' gem to our Tunr appliction.  This is a program that will help us integrate the tools needed to authenticate and authorize users.  With this gem we will not need to write the complicated code needed to add security to our pages.
 
 
 ## Add devise gem
@@ -38,6 +38,9 @@ Ensure you have defined default url options in your environments files. Open up 
 ```
 before the end keyword.
 
+**Important** Take note that you are adding this to the DEVELOPMENT environment.  You will need to change this for your production environment.
+
+## Add Notices and Alerts
 
 Open up app/views/layouts/application.html.erb and add:
 
@@ -59,15 +62,14 @@ At this point we have effectively implemented the 'Devise' gem into the applicat
 We’ll use a bundled generator script to create the User model.
 ```rb
    rails g devise user
-   rails generate devise:install
-   rake db:migrate
+   rails db:migrate
 ```
 
 ### Create your first user
 
 Now that you have set everything up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
 
-Make sure your rails server is running, 'YOUR_CLOUD_NINE_ADDRESS/users/sign_up' and create your user account.
+Make sure your rails server is running. Navigate to 'localhost:3000/users/sign_up' and create your user account.
 
 **You can test whether the user was registered by going to the rails console and typing 'User.all'.  If your registration was successful you should see the user in the records of the User model**
 
