@@ -48,7 +48,7 @@ Add a new row to the table.
 <details>
 
 <summary>
-  **SQL**
+  SQL
 </summary>
 
   ```
@@ -59,7 +59,7 @@ Add a new row to the table.
 <details>
 
 <summary>
-  **ActiveRecord**
+  ActiveRecord
 </summary>
 
   ```ruby
@@ -75,7 +75,7 @@ Get the row with an ID of 2.
 <details>
 
 <summary>
-  **SQL**
+  SQL
 </summary>
 
   ```
@@ -86,7 +86,7 @@ Get the row with an ID of 2.
 <details>
 
 <summary>
-  **ActiveRecord**
+  ActiveRecord
 </summary>
 
   ```ruby
@@ -102,7 +102,7 @@ Change Scooby Doo's age to 14.
 <details>
 
 <summary>
-  **SQL**
+  SQL
 </summary>
 
   ```
@@ -113,7 +113,7 @@ Change Scooby Doo's age to 14.
 <details>
 
 <summary>
-  **ActiveRecord**
+  ActiveRecord
 </summary>
 
   ```ruby
@@ -129,7 +129,7 @@ Delete Garfield.
 <details>
 
 <summary>
-  **SQL**
+  SQL
 </summary>
 
   ```
@@ -140,7 +140,7 @@ Delete Garfield.
 <details>
 
 <summary>
-  **ActiveRecord**
+  ActiveRecord
 </summary>
 
   ```ruby
@@ -151,7 +151,7 @@ Delete Garfield.
 <details>
 
 <summary>
-  _Note_
+  Note
 </summary>
 
   ```ruby
@@ -187,9 +187,9 @@ It allows you to work with Ruby objects in Ruby code, while persisting the data 
 <br>
 
 ### Accessing attributes
-Using ActiveRecord in a model is super simple, it just needs to inherit `ActiveRecord::Base`.
+Using ActiveRecord in a model is super simple, it just needs to inherit `ApplicationRecord`.
 ```ruby
-class Person < ActiveRecord::Base
+class Person < ApplicationRecord
 end
 ```
 
@@ -219,7 +219,7 @@ puts terry.age # => 54
 puts terry.occupation # => 'Pilot'
 ```
 
-Remember Inheritance? When a model inherits from ActiveRecord::Base, it gets a lot of methods that allow it to interface with your SQL database. It provides getters and setters for all the columns in your table.
+Remember Inheritance? When a model inherits from ApplicationRecord, it gets a lot of methods that allow it to interface with your SQL database. It provides getters and setters for all the columns in your table.
 
 <br>
 
@@ -265,7 +265,7 @@ $ rails generate migration CreatePeople name:string age:integer occupation:strin
 
 This creates a Migration file that looks like this:
 ```ruby
-class CreatePeople < ActiveRecord::Migration[5.0]
+class CreatePeople < ActiveRecord::Migration[5.1]
   def change
     create_table :people do |t|
       t.string :name
@@ -293,7 +293,7 @@ Notice that the SQL example has a primary key called `id`. ActiveRecord automati
 
 We can run our Migrations by calling:
 ```
-$ rake db:migrate
+$ rails db:migrate
 ```
 
 

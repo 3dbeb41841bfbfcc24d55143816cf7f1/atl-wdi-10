@@ -1,13 +1,13 @@
-#Day 1: Tip Calculator
+# Day 1: Tip Calculator
 ___
 We all know the struggles that come at the end of a delicious meal when dining out. Splitting the bill. Luckily for you and your possé, you're a brilliant developer that has finished Learning Ruby the Hard Way over the weekend and can create an application that allows you to split the bill, WITH TAX && TIP!
 
 You can't wait to demonstrate your prowess and live up to your street name as `The Ruby Maestro`, so you bust out your brand new Macbook in the middle of a 3-star Michelin restaurant, open up Atom, and begin to code in your `main.rb`.
 ___
-##The objectives
+## The objectives
 Your calculator will ask for 4 inputs:
 - The subtotal
-- # of people
+- Number of people
 - Give an option of how much tip to leave
 - % tax
 
