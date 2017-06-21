@@ -48,7 +48,7 @@ Add a new row to the table.
 <details>
 
 <summary>
-  **SQL**
+  SQL
 </summary>
 
   ```
@@ -59,7 +59,7 @@ Add a new row to the table.
 <details>
 
 <summary>
-  **ActiveRecord**
+  ActiveRecord
 </summary>
 
   ```ruby
@@ -75,7 +75,7 @@ Get the row with an ID of 2.
 <details>
 
 <summary>
-  **SQL**
+  SQL
 </summary>
 
   ```
@@ -86,7 +86,7 @@ Get the row with an ID of 2.
 <details>
 
 <summary>
-  **ActiveRecord**
+  ActiveRecord
 </summary>
 
   ```ruby
@@ -102,7 +102,7 @@ Change Scooby Doo's age to 14.
 <details>
 
 <summary>
-  **SQL**
+  SQL
 </summary>
 
   ```
@@ -113,7 +113,7 @@ Change Scooby Doo's age to 14.
 <details>
 
 <summary>
-  **ActiveRecord**
+  ActiveRecord
 </summary>
 
   ```ruby
@@ -129,7 +129,7 @@ Delete Garfield.
 <details>
 
 <summary>
-  **SQL**
+  SQL
 </summary>
 
   ```
@@ -140,7 +140,7 @@ Delete Garfield.
 <details>
 
 <summary>
-  **ActiveRecord**
+  ActiveRecord
 </summary>
 
   ```ruby
@@ -151,7 +151,7 @@ Delete Garfield.
 <details>
 
 <summary>
-  _Note_
+  Note
 </summary>
 
   ```ruby
