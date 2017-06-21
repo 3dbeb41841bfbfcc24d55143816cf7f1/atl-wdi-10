@@ -30,7 +30,7 @@ Q: Who can walk me through the rMVC pattern, highlighting where the router is an
 
 ## Routes (10 min)
 
-Fork/clone the [tunr link here](https://github.com/ATL-WDI-Curriculum/tunr-views-and-controllers/tree/routes-starter-code).  This provides starter code for this lesson. This repo also contains a solution branch containing all the code we'll be executing today.
+Checkout the `routes-starter-code` branch of our repo.  If you don't have the tunr repo we've been working through clone the [project here](https://github.com/ATL-WDI-Curriculum/tunr-views-and-controllers/tree/routes-starter-code).  This provides starter code for this lesson. 
 
 You guys dove into Rails' `config/routes.rb` file in the MVC class and created individual routes for pages.
 
