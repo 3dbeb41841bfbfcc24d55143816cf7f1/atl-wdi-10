@@ -80,7 +80,15 @@ Path helpers can be used in controllers & views.
 
 ### Exercise (10 minutes - 00:25)
 
-1. Clone our starter code for [tunr-rails-helpers](https://github.com/ga-dc/tunr-rails-helpers)
+1. Check out `tunr-rails-helpers` [here](https://github.com/ATL-WDI-Curriculum/tunr_rails_helpers)
+2. Run the following commands
+```
+  rbenv 2.2.0
+  rbenv local 2.2.0
+  bundle install
+  bundle exec rake db:drop db:create db:migrate db:seed
+  bundle exec rails s
+```
 2. Replace the routes with `resources`.
 3. Replace all hard-coded paths in the controllers with path helpers.
 
@@ -123,7 +131,7 @@ the second object is an instance of an ActiveRecord Model:
 
 ### Exercise (15 minutes - 00:50)
 
-Replace all links (<a> tags) in tunr-rails-helpers with `link_to`.
+Replace all links (`<a>` tags) in tunr-rails-helpers with `link_to`.
 
 ## HTML Options (10 minutes - 01:00)
 
