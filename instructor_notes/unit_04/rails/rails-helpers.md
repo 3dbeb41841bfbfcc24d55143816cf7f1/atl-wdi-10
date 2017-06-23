@@ -83,7 +83,7 @@ Path helpers can be used in controllers & views.
 1. Check out `tunr-rails-helpers` [here](https://github.com/ATL-WDI-Curriculum/tunr_rails_helpers)
 2. Run the following commands
 ```
-  rbenv 2.2.0
+  rbenv install 2.2.0
   rbenv local 2.2.0
   bundle install
   bundle exec rake db:drop db:create db:migrate db:seed
