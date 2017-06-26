@@ -123,7 +123,7 @@ To do this, we'll be using these 2 easy to set up APIs
 - [Star Wars API](http://swapi.co/)
 - [Pokemon API](http://pokeapi.co/)
 
-## Set-Up (5 / 30)
+## Codealong
 
 We're going to be building this app from scratch!  Let's get started by going to the directory where we want our app to live and run the rails new command.
 
@@ -145,22 +145,21 @@ Now let's think about how to architect our application.
 
 1. Get a random Pokemon from the API
 2. Get a random Star Wars character from the API 
-3. Make the 2 characters Fight each other
+3. Make the 2 characters "fight" each other (User clicks a button to choose the winner)
 4. Log the victors in the database
 
 
-Let's create a Model for each fight. That way we can log the victors in our database. Let's also generate the controller and view
+For the sake of time, we will only worry about 2 models.  Let's go ahead and create a controller/view for the page where the 2 characters will "fight"
 
 ``` bash
-  rails g model Fight pokemon star_wars victor
   rails g controller Fights index
 ```
 
-Let's also create a Model for our Star Wars and Pokemon
+Now, let's create a Model for our Star Wars and Pokemon
 
 ``` bash
-  rails g model Pokemon name image wins
-  rails g model StarWars name image wins
+  rails g model Pokemon name image wins:integer
+  rails g model StarWar name image wins:integer
 ```
 
 Now we run a migration, and now it's time to use HTTParty to fetch data for us instead of relying on our model.  Let's do this for the StarWars model.
