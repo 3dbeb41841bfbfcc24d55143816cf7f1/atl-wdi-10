@@ -139,34 +139,129 @@ end
 ```
 
 ### Generate Controllers
-We now need to create controllers that can serve information from Postgres to our Angular front-end through an API call.  In order to do that, we need to take a slightly different approach than we have taken in the past.
+We now need to create controllers that can serve information from Postgres to our Angular front-end through an API call.  In order to do that, we need to make a minor change to the actions that we've been creating up to this point.
 
-
-### Single-Page on Multi-Page
-
-The app we're creating today will be a single-page app that could fit into a greater multi-page app, not unlike Google Maps and Google.
-
-We'll cover how to make specific assets -- stylesheets and Javascripts -- apply to specific pages. Until now, every page in your Rails apps used the same stylesheet.
-
-## [Walkthrough: Inventory Tracker](walkthrough.md)
-
-Today, we will be building off of Inventory Tracker, the angular app we built in the intro.
-
-<details>
-<summary>
-**Q**. Thinking back, what was missing from or application when we left off?
-</summary>
-<br>
+```bash
+    rails g controller artists
 ```
-Data Persistence
+
+```ruby
+  def index
+    @artists = Artist.all
+    render json: @artists  
+    #Overwrites the assumption to render an index.html.erb
+  end
 ```
-</details>
 
-<br>
+We have to use this `render json:` method throughout our RESTful routes.  By the end we will have something that looks like the following.
 
-We are going to take that same app, really not change anything, but just have our data come from and persist to our Rails app. This will make sure that when we refresh the page in the browser, the updated data will still be there.
+```ruby
+class ArtistsController < ApplicationController
+  def index
+    @artists = Artist.all
+    render json: @artists
+  end
 
-For the structure of this walkthrough, I'm going to ask that you watch me code a few steps, without worrying about following along, then you'll have an opportunity to catch-up and build out the application. Then we'll bring it back as a group and discuss any questions after each step.
+  def create
+    @artist = Artist.create!(artist_params)
+    redirect_to artist_path(@artist)
+  end
+
+  def show
+    @artist = Artist.find(params[:id])
+    render json: @artist
+  end
+
+  def update
+    @artist = Artist.find(params[:id])
+    @artist.update!(artist_params)
+    redirect_to artist_path(@artist)
+  end
+
+  def destroy
+    @artist = Artist.find(params[:id])
+    @artist.destroy
+    redirect_to artists_path
+  end
+
+  private
+
+  def artist_params
+    params.require(:artist).permit(:name, :photo_url, :nationality)
+  end
+end
+```
+
+Notice the lack of a `new` and `edit` action.  We don't need these actions, because we will not need individual views for a user to create or update their model. 
+
+We should now have a working API.  Let's use Postman to test our actions.
+
+![Invalid Auth](../images/invalid.png)
+
+Oh no! Rails is not allowing any requests that don't match localhost:3000. This is because of the Authorization Token that is normally sent over when a request is made.  For the sake of this demonstration, let's loosen the requirements for the Auth Token.
+
+```ruby
+class ApplicationController < ActionController::Base
+  protect_from_forgery unless: -> { request.format.json? }
+end
+```
+
+If we go back into Postman, we can now validate that our JSON API is working as intended.
+
+## Front End: AngularJS
+
+Now we have a working API. Let's use webpack to bundle our JS code and use Angular components to drive our UI.
+
+### Angular Hello World
+
+We installed Angular during an earlier step, but we still have a couple steps to go through in order for the application to work.
+
+First, let's create a Welcome controller to serve as the root of the page.  We won't need to add any thing to the erb file, but we do need something other than the 'Welcome to Rails' page.
+
+```bash
+    rails g controller Welcome index
+```
+
+```ruby
+# routes.rb
+  get 'welcome/index'
+  root "welcome#index"
+```
+
+Now if we reload the page, we should get a blank screen.  Let's add the `ng-app` tag to the `application.html.erb`.
+
+```html
+<html ng-app="TunrApp">
+    ...
+</html>
+```
+
+Next up, let's create an Angular module named "TunrApp"
+
+```js
+const angular = require('angular');
+angular.module('TunrApp', []);
+```
+
+Finally, we need to make sure our application is updating the webpack bundler and the rails server at the same time.  To do this, we will take advantage of a gem called Foreman.  Foreman is a cli-tool which allows us to run multiple processes in one terminal window.  
+
+```bash
+    gem install foreman
+```
+
+Let's create a file called `Procfile` (no file extension)
+
+```
+    web: rails s
+    webpack: webpack --watch 
+```
+
+```bash
+    foreman start
+```
+
+Now webpack and our rails server are running at the same time. We can begin work on creating our single-page app.
+
 
 ## Closing
 
@@ -175,22 +270,3 @@ Independently, take 3 minutes to jot down use-cases and reasons when you would:
  - Build an Angular app by itself
  - Build a Rails app by itself
  - Build an Angular and Rails app
-
-### Quiz Questions
-
-- Should Grumblr be a Rails-only app or a Angular-on-Rails app? Defend your answer.
-- You decide to use D3 in your Rails app, and you decide to download it rather than use a CDN. In which one of the following do you put `d3.js`, and **why**?
-  - `app/assets`
-  - `vendor/assets`
-  - `public/assets`
-  - `lib/assets`
-
-### Screencasts
-
-- WDI8
-  - [Part 1](https://youtu.be/EP1RO_AX9kE)
-  - [Part 2](https://youtu.be/efQoUcQwyLY)
-  - [Part 3](https://youtu.be/4Kc5AwEc028)
-  - [Part 4](https://youtu.be/KElJ2nhYoOg)
-  - [Part 5](https://youtu.be/KqHFxIWGXIE)
-  - [Part 6](https://youtu.be/a21SsRQFKIo)
