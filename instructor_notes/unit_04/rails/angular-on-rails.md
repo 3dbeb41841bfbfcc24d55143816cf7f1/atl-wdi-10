@@ -262,6 +262,55 @@ Let's create a file called `Procfile` (no file extension)
 
 Now webpack and our rails server are running at the same time. We can begin work on creating our single-page app.
 
+### Writing Cleaner Front-End Code w/ ESLint
+Eslint is a linting tool that allows you to write cleaner and easier to read code through providing error and warning messages when you write code that doesn't match up established best practices.  It's one of the big reasons I am a fan of VSCode (I believe there is also a plugin available for Sublime Text)
+
+To install ESLint, we'll first need to globally install it. Then we will navigate to the root of the project and run the CLI.
+```bash
+  npm i -g eslint
+  eslint --init
+```
+
+We'll then tell the CLI to answer questions about our style and after a few questions it will create an .eslintrc.js file.  If you're using VSCode, you will now automatically see error messages pop up with tips on how to clean up your code.
+
+### Creating an Artist Controller
+Let's create a component's folder, and an artists folder inside of that. We'll follow the web component standards that we learned during the Angular unit to create our controllers.
+
+```js
+  import artistController from "./artist.controller";
+  import artistTemplate from "./artist.html";
+
+  const artistComponent = {
+  	controller: artistController,
+  	template: artistTemplate
+  };
+
+  angular.module("TunrApp").component("tunrArtist",   artistComponent);
+```
+
+```js
+  ArtistController.$inject = [];
+  function ArtistController(){
+  	var vm = this;
+
+  	activate();
+
+  	function activate(){
+      vm.artists = [{
+        name: "Test artist",
+        photo_url: "http://www.fillmurray.com/200/200",
+        nationality: "USA"
+      }, {
+        name: "Test artist 2",
+        photo_url: "http://www.fillmurray.com/205/205",
+        nationality: "USA"
+      }]
+  	}
+  }
+  export default ArtistController;
+```
+
+
 
 ## Closing
 
