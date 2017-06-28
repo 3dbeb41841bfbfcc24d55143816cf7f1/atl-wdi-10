@@ -277,20 +277,20 @@ We'll then tell the CLI to answer questions about our style and after a few ques
 Let's create a component's folder, and an artists folder inside of that. We'll follow the web component standards that we learned during the Angular unit to create our controllers.
 
 ```js
-  import artistController from "./artist.controller";
-  import artistTemplate from "./artist.html";
+  import artistsController from "./artists.controller";
+  import artistsTemplate from "./artists.html";
 
-  const artistComponent = {
-  	controller: artistController,
-  	template: artistTemplate
+  const artistsComponent = {
+  	controller: artistsController,
+  	template: artistsTemplate
   };
 
-  angular.module("TunrApp").component("tunrArtist",   artistComponent);
+  angular.module("TunrApp").component("tunrArtists",   artistComponent);
 ```
 
 ```js
-  ArtistController.$inject = [];
-  function ArtistController(){
+  ArtistsController.$inject = [];
+  function ArtistsController(){
   	var vm = this;
 
   	activate();
@@ -307,10 +307,115 @@ Let's create a component's folder, and an artists folder inside of that. We'll f
       }]
   	}
   }
-  export default ArtistController;
+  export default ArtistsController;
 ```
 
+```html
+<h1>Artists</h1>
+<div class="btn btn-large" ui-sref="newArtist">+ New Artist</div>
+<div class="artist-container flex">
+    <div class="artist flex" ng-repeat="artist in $ctrl.artists" ui-sref="artist({id: artist.id})">
+        <img ng-src={{artist.photo_url}}></img>
+        <div class="info">
+            <h4>{{artist.name}}</h4>
+            <div>{{artist.genre}}</div>
+            <div>{{artist.origin}}</div>
+        </div>
+    </div>
+</div>
+```
 
+### Setting up Angular UI-Router
+
+Let's use UI-router to controll the flow of our front-end app.
+
+```bash
+npm i angular-ui-router --save
+```
+
+```js
+const angular = require("angular");
+require("angular-ui-router");
+
+angular.module("TunrApp", ["ui.router"]).config(router);
+
+router.$inject = ["$stateProvider", "$urlRouterProvider"];
+
+function router ($stateProvider, $urlRouterProvider) {
+	$stateProvider
+		.state("home", {
+			url: "/",
+			template: "<tunr-artists></tunr-artists>"
+		})
+		.state("artist", {
+			url: "/artist/:id",
+			template: "<tunr-artist></tunr-artist>"
+		})
+		.state("newArtist", {
+			url: "/artist/new",
+			template: "<tunr-new-artist></tunr-new-artist>"
+		});
+
+	$urlRouterProvider.otherwise("/");
+}
+```
+
+### You Do: (45 min)
+Create a show, new, and edit page for artists using Angular.  Use test info for now.
+
+### Connecting to the Rails API
+So we now have a working front-end with multiple routes, and an API with data ready to serve. Let's connect them by using `$http`.
+
+```js
+const angular = require("angular");
+
+artistService.$inject = ["$http"];
+
+function artistService ($http) {
+	const service = this;
+
+	service.getAllArtists = function () {
+		return $http.get("/artist").then(res => {
+			return res.data;
+		});
+	};
+
+	service.getArtist = function (id) {
+		return $http.get("/artist/" + id).then(res => {
+			return res.data;
+		});
+	};
+
+	service.saveArtist = function (newArtist) {
+		return $http.post("/artist", newArtist).then(res => {
+			return res.data;
+		});
+	};
+
+	return service;
+}
+
+angular.module("TunrApp").service("artistService", artistService);
+
+```
+
+Now we can inject the Artist service into our controllers to retrieve data from our Rails API.
+
+### You do: 20min
+Inject the Artist service into your controllers to retrieve info from the API
+
+CONGRATS!! You've just built an application using Angular On Rails. Let's deploy to Heroku.
+
+### Deployment
+Before deploying the app, let's make sure to run `webpack` one last time to make sure that everything is bundled into the production code.  After we feel comfortable with our project, we deploy using the following commands.
+
+```
+  heroku create
+  git push heroku master
+  heroku run rails db:migrate db:seed
+```
+
+Voila, if all goes well you should have your app up and running in production.
 
 ## Closing
 
