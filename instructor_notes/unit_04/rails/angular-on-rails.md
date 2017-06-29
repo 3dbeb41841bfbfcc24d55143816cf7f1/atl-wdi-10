@@ -19,11 +19,11 @@ We *have* made Angular apps that use *someone else's* back-end: APIs. This is di
 
 In a typical Rails app the user interacts with data through some combination of links, forms, and Javascript.
 
-![Typical Rails](images/request-normal.png)
+![Typical Rails](../images/request-normal.png)
 
 In an Angular-on-Rails app the user interacts with data just through Javascript.
 
-![Angular and Rails](images/request-angular.png)
+![Angular and Rails](../images/request-angular.png)
 
 This means they have a "single point of contact" with your data. This has two advantages: the user experience may have more consistency (AJAX vs page refreshes), and you have fewer moving parts to worry about.
 
