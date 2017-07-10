@@ -95,7 +95,7 @@ Write a _BlackJack_ game to try to beat the dealer. Allow the user to "Hit" or "
 
 ### Up for a real challenge? Simon
 
-**You will need to figure out promises in order to make this work**
+**You will need to figure out "asynchronous programming" in order to make this work**
 
 ![Simon Game](images/simon-game.jpg)
 
