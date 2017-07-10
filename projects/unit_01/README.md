@@ -17,16 +17,13 @@ The objectives of this project are to:
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: The Game
 ​
 
-## Make a new repo!
-Before you begin, make a new github repo for your project. **Do not** begin your project within the class repo.
-
 ## Project Ideas
 
 ### Jeopardy
 
 ![Jeopardy Game](images/jeopardy-game.jpg)
 
-Write a _Jepardy_ game that allows the user to play the game of _Jeopardy_. This is basically a quiz where the user gets to choose the next question by choosing from a category and then choosing a point amount (100 to 500). The questions are phrased as answers and the user chooses from a list of 4 questions that match the answer. For instance:
+Write a _Jeopardy_ game that allows the user to play the game of _Jeopardy_. This is a quiz game where the user gets to choose the next question by choosing from a category and then choosing a point amount (100 to 500). The questions are phrased as answers and the user chooses from a list of 4 questions that match the answer. For instance:
 
 The User sees this: `A programming construct for easily looping through the elements in an array`
 The User chooses this: `What is a for loop`
@@ -143,6 +140,9 @@ Have a unique sound for each colored button and play the sound both when the com
 
 * [Tic-Tac-Toe](https://github.com/iamsydsmith/tic-tac-toe)
 * [FootUp](https://github.com/wschaeferiii/footup)
+
+## Make a new repo!
+Before you begin, make a new github repo for your project. **Do not** begin your project within the class repo.
 
 ## Technical Requirements
 
